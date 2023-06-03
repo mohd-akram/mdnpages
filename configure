@@ -1,0 +1,45 @@
+#!/bin/sh
+
+set -euo pipefail
+
+dir=content/files/en-us/web/javascript/reference/global_objects
+
+get_name() {
+	sed -n '/^---$/,/^---$/{
+		/^title: Set.prototype.keys()/{
+			s/.*/Set.keys/
+			p
+			q
+		}
+		/^title: "Function: prototype"/{
+			s/.*/Function.prototype/
+			p
+			q
+		}
+		/^browser-compat:/{
+			s/browser-compat:[[:space:]]*//
+			s/javascript\.builtins\.//
+			p
+		}
+	}' "$1"
+}
+
+>files.mk
+
+files=""
+for d in "$dir"/* "$dir"/*/*; do
+	if [ -f "$d" ]; then continue; fi
+	f=$d/index.md
+	name=$(get_name "$f")
+	if ! printf '%s' "$name" | grep -qE '^[^[:space:]]+$'; then
+		echo >&2 failed to get name for "$f"
+		exit 1
+	fi
+	out='$(mansectdir)'/$name.'$(mansect)'
+	files="$files $out"
+	printf '%s: %s\n\t%s\n' "$out" "$f" "\$(MD2MAN) '$f' > \$@" >> files.mk
+done
+
+printf 'DATE=%s\n' "$(git -C content show -s --format=%cs)" >>files.mk
+
+printf 'files=%s\n' "$files" >> files.mk

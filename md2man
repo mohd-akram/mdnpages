@@ -1,0 +1,110 @@
+#!/bin/sh
+
+set -euo pipefail
+
+get_name() {
+	sed -n '/^---$/,/^---$/{
+		/^title: Set.prototype.keys()/{
+			s/.*/Set.keys/
+			p
+			q
+		}
+		/^title: "Function: prototype"/{
+			s/.*/Function.prototype/
+			p
+			q
+		}
+		/^browser-compat:/{
+			s/browser-compat:[[:space:]]*//
+			s/javascript\.builtins\.//
+			p
+		}
+	}' "$1"
+}
+
+yn() {
+	case $1 in
+	0) echo no;;
+	1) echo yes;;
+	esac
+}
+
+js_property_attributes() {
+	for i in 0 1; do
+	for j in 0 1; do
+	for k in 0 1; do
+		printf '/^{{js_property_attributes(%d, %d, %d)}}$/c\\\n| | |\\\n|-|-|\\\n|Writable|%s|\\\n|Enumerable|%s|\\\n|Configurable|%s|\\\n\n' \
+			"$i" "$j" "$k" "$(yn "$i")" "$(yn "$j")" "$(yn "$k")"
+	done
+	done
+	done
+}
+
+clean() {
+	sed "
+	/^---$/,/^---$/c\\
+---\\
+title: $(get_name "$1")\\
+section: JS\\
+header: JavaScript Reference Manual\\
+footer: JavaScript\\
+date: $DATE\\
+---\\
+# Synopsis
+
+	/^## Specifications/,/{{Specifications}}/d
+	/^## Browser compatibility/,/{{Compat}}/d
+
+	s/\(.*\)\(\`\`\`js\) example-bad/\1**Bad**\n\1\2/
+	s/\(.*\)\(\`\`\`js\) example-good/\1**Good**\n\1\2/
+
+	s/^#//
+
+	$(js_property_attributes)
+
+	s/^\([[:space:]]*-\) :/\1/
+
+	/{{[^}]*$/N
+
+	s/{{deprecated_header}}/*(deprecated)*/ig
+	s/{{Deprecated_Inline}}/*(deprecated)*/ig
+
+	s/{{domxref(\"\([^\"]*\)\")}}/\`\1\`/ig
+	s/{{domxref(\"\([^\"]*\)\",[[:space:]]*\"\([^\"]*\)\"[^)]*)}}/\`\2\`/ig
+
+	s/{{EmbedInteractiveExample([^)]*)}}//ig
+	s/{{EmbedLiveSample([^)]*)}}//ig
+
+	s/{{Experimental_Inline}}/*(experimental)*/ig
+
+	s/{{Glossary(\"\([^\"]*\)\")}}/\1/ig
+	s/{{Glossary(\"\([^\"]*\)\",[[:space:]]*\"\([^\"]*\)\")}}/\2/ig
+
+	s/{{HTMLElement(\"\([^\"]*\)\")}}/\`<\1>\`/ig
+
+	s/{{HTTPHeader(\"\([^\"]*\)\")}}/\`\1\`/ig
+	s/{{HTTPMethod(\"\([^\"]*\)\")}}/\`\1\`/ig
+
+	s/{{JSRef}}//ig
+	s/{{jsSidebar([^)]*)}}//ig
+	s/{{jsxref(\"\([^\"]*\)\")}}/\`\1\`/ig
+	s/{{jsxref('\([^']*\)')}}/\`\1\`/ig
+	s/{{jsxref(\"\([^\"]*\)\",[[:space:]]*\"\([^\"]*\)\"[^)]*)}}/\`\2\`/ig
+	s/{{jsxref('\([^']*\)',[[:space:]]*'\([^']*\)'[^)]*)}}/\`\2\`/ig
+
+	s/{{non-standard_header}}/*(non-standard)*/ig
+	s/{{non-standard_inline}}/*(non-standard)*/ig
+
+	s/{{optional_inline}}/*(optional)*/ig
+
+	s/{{rfc(\([^)]*\))}}/RFC \1/ig
+
+	s/{{SeeCompatTable}}//ig
+	" "$1"
+}
+
+convert() {
+	pandoc -s -t man
+}
+
+clean "$1" | convert
