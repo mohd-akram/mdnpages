@@ -14,9 +14,12 @@
 . ftr VB CB
 . ftr VBI CBI
 .\}
-.TH "String.fontsize" "JS" "2023-06-02" "JavaScript" "JavaScript Reference Manual"
+.TH "String.fontsize" "JS" "June 2, 2023" "JavaScript" "JavaScript Reference Manual"
 .hy
-.SH Synopsis
+.SH NAME
+.PP
+String.fontsize - String.prototype.fontsize()
+.SH SYNOPSIS
 .PP
 \f[I](deprecated)\f[R]
 .PP
@@ -32,7 +35,7 @@ For the case of \f[V]fontsize()\f[R], the \f[V]<font>\f[R] element
 itself has been removed in HTML5 and shouldn\[cq]t be used anymore.
 Web developers should use CSS properties instead.
 .RE
-.SH Syntax
+.SH SYNTAX
 .IP
 .nf
 \f[C]
@@ -40,19 +43,16 @@ fontsize(size)
 \f[R]
 .fi
 .SS Parameters
-.IP \[bu] 2
-\f[V]size\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]size\f[R]
 An integer between 1 and 7, or a string representing a signed integer
 between 1 and 7.
-.RE
 .SS Return value
 .PP
 A string beginning with a \f[V]<font size=\[dq]size\[dq]>\f[R] start tag
 (double quotes in \f[V]size\f[R] are replaced with \f[V]&quot;\f[R]),
 then the text \f[V]str\f[R], and then a \f[V]</font>\f[R] end tag.
-.SH Description
+.SH DESCRIPTION
 .PP
 The \f[V]fontsize()\f[R] method itself simply joins the string parts
 together without any validation or normalization.
@@ -62,7 +62,7 @@ size as an integer, you set the font size of \f[V]str\f[R] to one of the
 You can specify \f[V]size\f[R] as a string such as
 \f[V]\[dq]-2\[dq]\f[R] or \f[V]\[dq]+3\[dq]\f[R] to adjust the font size
 of \f[V]str\f[R] relative to 3, the default value.
-.SH Examples
+.SH EXAMPLES
 .SS Using fontsize()
 .PP
 The following example uses string methods to change the size of a
@@ -87,7 +87,7 @@ example:
 document.getElementById(\[dq]yourElemId\[dq]).style.fontSize = \[dq]0.7em\[dq];
 \f[R]
 .fi
-.SH See also
+.SH SEE ALSO
 .IP \[bu] 2
 Polyfill of \f[V]String.prototype.fontsize\f[R] in
 \f[V]core-js\f[R] (https://github.com/zloirock/core-js#ecmascript-string-and-regexp)

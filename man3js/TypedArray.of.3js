@@ -14,14 +14,17 @@
 . ftr VB CB
 . ftr VBI CBI
 .\}
-.TH "TypedArray.of" "JS" "2023-06-02" "JavaScript" "JavaScript Reference Manual"
+.TH "TypedArray.of" "JS" "June 2, 2023" "JavaScript" "JavaScript Reference Manual"
 .hy
-.SH Synopsis
+.SH NAME
+.PP
+TypedArray.of - TypedArray.of()
+.SH SYNOPSIS
 .PP
 The \f[B]\f[VB]TypedArray.of()\f[B]\f[R] static method creates a new
 typed array from a variable number of arguments.
 This method is nearly the same as \f[V]Array.of()\f[R].
-.SH Syntax
+.SH SYNTAX
 .IP
 .nf
 \f[C]
@@ -56,16 +59,13 @@ Where \f[V]TypedArray\f[R] is one of:
 .IP \[bu] 2
 \f[V]BigUint64Array\f[R]
 .SS Parameters
-.IP \[bu] 2
-\f[V]elementN\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]elementN\f[R]
 Elements of which to create the typed array.
-.RE
 .SS Return value
 .PP
 A new \f[V]TypedArray\f[R] instance.
-.SH Description
+.SH DESCRIPTION
 .PP
 Some subtle distinctions between \f[V]Array.of()\f[R] and
 \f[V]TypedArray.of()\f[R]:
@@ -79,7 +79,7 @@ where \f[V]Array.of()\f[R] defaults to creating a new \f[V]Array\f[R].
 Hence, when working with \f[V]Proxy\f[R] objects, it calls
 \f[V]handler.set()\f[R] to create new elements rather than
 \f[V]handler.defineProperty()\f[R].
-.SH Examples
+.SH EXAMPLES
 .SS Using of()
 .IP
 .nf
@@ -90,7 +90,7 @@ Float32Array.of(1, 2, 3); // Float32Array [ 1, 2, 3 ]
 Int16Array.of(undefined); // Int16Array [ 0 ]
 \f[R]
 .fi
-.SH See also
+.SH SEE ALSO
 .IP \[bu] 2
 Polyfill of \f[V]TypedArray.of\f[R] in
 \f[V]core-js\f[R] (https://github.com/zloirock/core-js#ecmascript-typed-arrays)

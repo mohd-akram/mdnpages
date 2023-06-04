@@ -14,9 +14,12 @@
 . ftr VB CB
 . ftr VBI CBI
 .\}
-.TH "TypedArray.at" "JS" "2023-06-02" "JavaScript" "JavaScript Reference Manual"
+.TH "TypedArray.at" "JS" "June 2, 2023" "JavaScript" "JavaScript Reference Manual"
 .hy
-.SH Synopsis
+.SH NAME
+.PP
+TypedArray.at - TypedArray.prototype.at()
+.SH SYNOPSIS
 .PP
 The \f[B]\f[VB]at()\f[B]\f[R] method takes an integer value and returns
 the item at that index, allowing for positive and negative integers.
@@ -29,7 +32,7 @@ However instead of using \f[V]array.length\f[R] for latter items;
 e.g.\ \f[V]array[array.length-1]\f[R] for the last item, you can call
 \f[V]array.at(-1)\f[R].
 (See the examples below)
-.SH Syntax
+.SH SYNTAX
 .IP
 .nf
 \f[C]
@@ -37,20 +40,17 @@ at(index)
 \f[R]
 .fi
 .SS Parameters
-.IP \[bu] 2
-\f[V]index\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]index\f[R]
 The index (position) of the array element to be returned.
 Supports relative indexing from the end of the array when passed a
 negative index; that is, if a negative number is used, the element
 returned will be found by counting back from the end of the array.
-.RE
 .SS Return value
 .PP
 The element in the array matching the given index.
 Returns \f[V]undefined\f[R] if the given index can not be found.
-.SH Examples
+.SH EXAMPLES
 .SS Return the last value of a typed array
 .PP
 The following example provides a function which returns the last element
@@ -94,7 +94,7 @@ const atWay = uint8.at(-2);
 console.log(atWay); // 11
 \f[R]
 .fi
-.SH See also
+.SH SEE ALSO
 .IP \[bu] 2
 Polyfill of \f[V]TypedArray.prototype.at\f[R] in
 \f[V]core-js\f[R] (https://github.com/zloirock/core-js#relative-indexing-method)

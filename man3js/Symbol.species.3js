@@ -15,9 +15,12 @@
 . ftr VB CB
 . ftr VBI CBI
 .\}
-.TH "Symbol.species" "JS" "2023-06-02" "JavaScript" "JavaScript Reference Manual"
+.TH "Symbol.species" "JS" "June 2, 2023" "JavaScript" "JavaScript Reference Manual"
 .hy
-.SH Synopsis
+.SH NAME
+.PP
+Symbol.species - Symbol.species
+.SH SYNOPSIS
 .PP
 The \f[B]\f[VB]Symbol.species\f[B]\f[R] static data property represents
 the well-known symbol \f[V]\[at]\[at]species\f[R].
@@ -32,7 +35,7 @@ Engine implementers are investigating whether to remove this
 feature (https://github.com/tc39/proposal-rm-builtin-subclassing).
 Avoid relying on it if possible.
 .RE
-.SH Value
+.SH VALUE
 .PP
 The well-known symbol \f[V]\[at]\[at]species\f[R].
 .PP
@@ -55,7 +58,7 @@ T}@T{
 no
 T}
 .TE
-.SH Description
+.SH DESCRIPTION
 .PP
 The \f[V]\[at]\[at]species\f[R] accessor property allows subclasses to
 override the default constructor for objects.
@@ -72,7 +75,7 @@ All built-in implementations of \f[V]\[at]\[at]species\f[R] return the
 This allows copying methods to create instances of derived classes
 rather than the base class \[em] for example, \f[V]map()\f[R] will
 return an array of the same type as the original array.
-.SH Examples
+.SH EXAMPLES
 .SS Using species
 .PP
 You might want to return \f[V]Array\f[R] objects in your derived array
@@ -97,7 +100,7 @@ console.log(mapped instanceof MyArray); // false
 console.log(mapped instanceof Array); // true
 \f[R]
 .fi
-.SH See also
+.SH SEE ALSO
 .IP \[bu] 2
 \f[V]Array[\[at]\[at]species]\f[R]
 .IP \[bu] 2

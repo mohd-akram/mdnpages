@@ -15,13 +15,16 @@
 . ftr VB CB
 . ftr VBI CBI
 .\}
-.TH "Function.length" "JS" "2023-06-02" "JavaScript" "JavaScript Reference Manual"
+.TH "Function.length" "JS" "June 2, 2023" "JavaScript" "JavaScript Reference Manual"
 .hy
-.SH Synopsis
+.SH NAME
+.PP
+Function.length - Function: length
+.SH SYNOPSIS
 .PP
 The \f[B]\f[VB]length\f[B]\f[R] data property of a \f[V]Function\f[R]
 instance indicates the number of parameters expected by the function.
-.SH Value
+.SH VALUE
 .PP
 A number.
 .PP
@@ -44,7 +47,7 @@ T}@T{
 yes
 T}
 .TE
-.SH Description
+.SH DESCRIPTION
 .PP
 A \f[V]Function\f[R] object\[cq]s \f[V]length\f[R] property indicates
 how many arguments the function expects, i.e.\ the number of formal
@@ -62,7 +65,7 @@ Due to historical reasons, \f[V]Function.prototype\f[R] is a callable
 itself.
 The \f[V]length\f[R] property of \f[V]Function.prototype\f[R] has a
 value of \f[V]0\f[R].
-.SH Examples
+.SH EXAMPLES
 .SS Using function length
 .IP
 .nf
@@ -81,6 +84,6 @@ console.log(((a, b = 1, c) => {}).length);
 // a default value are counted
 \f[R]
 .fi
-.SH See also
+.SH SEE ALSO
 .IP \[bu] 2
 \f[V]Function\f[R]

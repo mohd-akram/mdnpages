@@ -14,9 +14,13 @@
 . ftr VB CB
 . ftr VBI CBI
 .\}
-.TH "AsyncIterator.\[at]\[at]asyncIterator" "JS" "2023-06-02" "JavaScript" "JavaScript Reference Manual"
+.TH "AsyncIterator.\[at]\[at]asyncIterator" "JS" "June 2, 2023" "JavaScript" "JavaScript Reference Manual"
 .hy
-.SH Synopsis
+.SH NAME
+.PP
+AsyncIterator.\[at]\[at]asyncIterator -
+AsyncIterator.prototype\[at]\[at]asyncIterator
+.SH SYNOPSIS
 .PP
 The \f[B]\f[VB][\[at]\[at]asyncIterator]()\f[B]\f[R] method of
 \f[V]AsyncIterator\f[R] instances implements the async iterable protocol
@@ -24,7 +28,7 @@ and allows built-in async iterators to be consumed by most syntaxes
 expecting async iterables, such as \f[V]for await...of\f[R] loops.
 It returns the value of \f[V]this\f[R], which is the async iterator
 object itself.
-.SH Syntax
+.SH SYNTAX
 .IP
 .nf
 \f[C]
@@ -34,7 +38,7 @@ asyncIterator[Symbol.asyncIterator]()
 .SS Return value
 .PP
 The value of \f[V]this\f[R], which is the async iterator object itself.
-.SH Examples
+.SH EXAMPLES
 .SS Iteration using for await\&...of loop
 .PP
 Note that you seldom need to call this method directly.
@@ -58,6 +62,6 @@ const asyncIterator = (async function* () {
 // Logs: 1, 2, 3
 \f[R]
 .fi
-.SH See also
+.SH SEE ALSO
 .IP \[bu] 2
 \f[V]for await...of\f[R]

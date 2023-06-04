@@ -14,9 +14,12 @@
 . ftr VB CB
 . ftr VBI CBI
 .\}
-.TH "Object.lookupGetter" "JS" "2023-06-02" "JavaScript" "JavaScript Reference Manual"
+.TH "Object.lookupGetter" "JS" "June 2, 2023" "JavaScript" "JavaScript Reference Manual"
 .hy
-.SH Synopsis
+.SH NAME
+.PP
+Object.lookupGetter - Object.prototype.__lookupGetter__()
+.SH SYNOPSIS
 .PP
 \f[I](deprecated)\f[R]
 .RS
@@ -30,7 +33,7 @@ It may not work everywhere.
 .PP
 The \f[B]\f[VB]__lookupGetter__()\f[B]\f[R] method returns the function
 bound as a getter to the specified property.
-.SH Syntax
+.SH SYNTAX
 .IP
 .nf
 \f[C]
@@ -38,19 +41,16 @@ __lookupGetter__(prop)
 \f[R]
 .fi
 .SS Parameters
-.IP \[bu] 2
-\f[V]prop\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]prop\f[R]
 A string containing the name of the property whose getter should be
 returned.
-.RE
 .SS Return value
 .PP
 The function bound as a getter to the specified property.
 Returns \f[V]undefined\f[R] if no such property is found, or the
 property is a data property.
-.SH Description
+.SH DESCRIPTION
 .PP
 All objects that inherit from \f[V]Object.prototype\f[R] (that is, all
 except \f[V]null\f[R]-prototype objects) inherit the
@@ -78,7 +78,7 @@ usage, it\[cq]s unlikely to be removed.
 If a browser implements \f[V]__lookupGetter__()\f[R], it also needs to
 implement the \f[V]__lookupSetter__()\f[R],
 \f[V]__defineGetter__()\f[R], and \f[V]__defineSetter__()\f[R] methods.
-.SH Examples
+.SH EXAMPLES
 .SS Using __lookupGetter__()
 .IP
 .nf
@@ -143,7 +143,7 @@ function findGetter(obj, prop) {
 console.log(findGetter(obj2, \[dq]foo\[dq])); // [Function: get foo]
 \f[R]
 .fi
-.SH See also
+.SH SEE ALSO
 .IP \[bu] 2
 Polyfill of \f[V]Object.prototype.__lookupGetter__\f[R] in
 \f[V]core-js\f[R] (https://github.com/zloirock/core-js#ecmascript-object)

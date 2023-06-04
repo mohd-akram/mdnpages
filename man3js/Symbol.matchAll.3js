@@ -15,9 +15,12 @@
 . ftr VB CB
 . ftr VBI CBI
 .\}
-.TH "Symbol.matchAll" "JS" "2023-06-02" "JavaScript" "JavaScript Reference Manual"
+.TH "Symbol.matchAll" "JS" "June 2, 2023" "JavaScript" "JavaScript Reference Manual"
 .hy
-.SH Synopsis
+.SH NAME
+.PP
+Symbol.matchAll - Symbol.matchAll
+.SH SYNOPSIS
 .PP
 The \f[B]\f[VB]Symbol.matchAll\f[B]\f[R] static data property represents
 the well-known symbol \f[V]\[at]\[at]matchAll\f[R].
@@ -28,7 +31,7 @@ matches of the current object against a string.
 For more information, see
 \f[V]RegExp.prototype[\[at]\[at]matchAll]()\f[R] and
 \f[V]String.prototype.matchAll()\f[R].
-.SH Value
+.SH VALUE
 .PP
 The well-known symbol \f[V]\[at]\[at]matchAll\f[R].
 .PP
@@ -51,7 +54,7 @@ T}@T{
 no
 T}
 .TE
-.SH Examples
+.SH EXAMPLES
 .SS Using Symbol.matchAll
 .IP
 .nf
@@ -68,7 +71,7 @@ console.log(Array.from(str.matchAll(numbers)));
 // [\[dq]2016\[dq], \[dq]01\[dq], \[dq]02\[dq], \[dq]2019\[dq], \[dq]03\[dq], \[dq]07\[dq]]
 \f[R]
 .fi
-.SH See also
+.SH SEE ALSO
 .IP \[bu] 2
 Polyfill of \f[V]Symbol.matchAll\f[R] in
 \f[V]core-js\f[R] (https://github.com/zloirock/core-js#ecmascript-symbol)

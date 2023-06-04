@@ -14,14 +14,17 @@
 . ftr VB CB
 . ftr VBI CBI
 .\}
-.TH "Object.getPrototypeOf" "JS" "2023-06-02" "JavaScript" "JavaScript Reference Manual"
+.TH "Object.getPrototypeOf" "JS" "June 2, 2023" "JavaScript" "JavaScript Reference Manual"
 .hy
-.SH Synopsis
+.SH NAME
+.PP
+Object.getPrototypeOf - Object.getPrototypeOf()
+.SH SYNOPSIS
 .PP
 The \f[B]\f[VB]Object.getPrototypeOf()\f[B]\f[R] static method returns
 the prototype (i.e.\ the value of the internal \f[V][[Prototype]]\f[R]
 property) of the specified object.
-.SH Syntax
+.SH SYNTAX
 .IP
 .nf
 \f[C]
@@ -29,16 +32,13 @@ Object.getPrototypeOf(obj)
 \f[R]
 .fi
 .SS Parameters
-.IP \[bu] 2
-\f[V]obj\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]obj\f[R]
 The object whose prototype is to be returned.
-.RE
 .SS Return value
 .PP
 The prototype of the given object, which may be \f[V]null\f[R].
-.SH Examples
+.SH EXAMPLES
 .SS Using getPrototypeOf
 .IP
 .nf
@@ -62,7 +62,7 @@ Object.getPrototypeOf(\[dq]foo\[dq]);
 // String.prototype                  (ES2015 code)
 \f[R]
 .fi
-.SH See also
+.SH SEE ALSO
 .IP \[bu] 2
 Polyfill of \f[V]Object.getPrototypeOf\f[R] in
 \f[V]core-js\f[R] (https://github.com/zloirock/core-js#ecmascript-object)

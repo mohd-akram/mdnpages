@@ -14,13 +14,16 @@
 . ftr VB CB
 . ftr VBI CBI
 .\}
-.TH "Object.values" "JS" "2023-06-02" "JavaScript" "JavaScript Reference Manual"
+.TH "Object.values" "JS" "June 2, 2023" "JavaScript" "JavaScript Reference Manual"
 .hy
-.SH Synopsis
+.SH NAME
+.PP
+Object.values - Object.values()
+.SH SYNOPSIS
 .PP
 The \f[B]\f[VB]Object.values()\f[B]\f[R] static method returns an array
 of a given object\[cq]s own enumerable string-keyed property values.
-.SH Syntax
+.SH SYNTAX
 .IP
 .nf
 \f[C]
@@ -28,17 +31,14 @@ Object.values(obj)
 \f[R]
 .fi
 .SS Parameters
-.IP \[bu] 2
-\f[V]obj\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]obj\f[R]
 An object.
-.RE
 .SS Return value
 .PP
 An array containing the given object\[cq]s own enumerable string-keyed
 property values.
-.SH Description
+.SH DESCRIPTION
 .PP
 \f[V]Object.values()\f[R] returns an array whose elements are values of
 enumerable string-keyed properties found directly upon \f[V]object\f[R].
@@ -51,7 +51,7 @@ as that provided by a \f[V]for...in\f[R] loop.
 If you need the property keys, use \f[V]Object.keys()\f[R] instead.
 If you need both the property keys and values, use
 \f[V]Object.entries()\f[R] instead.
-.SH Examples
+.SH EXAMPLES
 .SS Using Object.values()
 .IP
 .nf
@@ -98,7 +98,7 @@ console.log(Object.values(\[dq]foo\[dq])); // [\[aq]f\[aq], \[aq]o\[aq], \[aq]o\
 console.log(Object.values(100)); // []
 \f[R]
 .fi
-.SH See also
+.SH SEE ALSO
 .IP \[bu] 2
 Polyfill of \f[V]Object.values\f[R] in
 \f[V]core-js\f[R] (https://github.com/zloirock/core-js#ecmascript-object)

@@ -14,14 +14,17 @@
 . ftr VB CB
 . ftr VBI CBI
 .\}
-.TH "Date.getUTCMilliseconds" "JS" "2023-06-02" "JavaScript" "JavaScript Reference Manual"
+.TH "Date.getUTCMilliseconds" "JS" "June 2, 2023" "JavaScript" "JavaScript Reference Manual"
 .hy
-.SH Synopsis
+.SH NAME
+.PP
+Date.getUTCMilliseconds - Date.prototype.getUTCMilliseconds()
+.SH SYNOPSIS
 .PP
 The \f[B]\f[VB]getUTCMilliseconds()\f[B]\f[R] method of \f[V]Date\f[R]
 instances returns the milliseconds for this date according to universal
 time.
-.SH Syntax
+.SH SYNTAX
 .IP
 .nf
 \f[C]
@@ -37,7 +40,7 @@ Returns \f[V]NaN\f[R] if the date is invalid.
 Not to be confused with the timestamp.
 To get the total milliseconds since the epoch, use the
 \f[V]getTime()\f[R] method.
-.SH Examples
+.SH EXAMPLES
 .SS Using getUTCMilliseconds()
 .PP
 The following example assigns the milliseconds portion of the current
@@ -49,7 +52,7 @@ const today = new Date();
 const milliseconds = today.getUTCMilliseconds();
 \f[R]
 .fi
-.SH See also
+.SH SEE ALSO
 .IP \[bu] 2
 \f[V]Date.prototype.getMilliseconds()\f[R]
 .IP \[bu] 2

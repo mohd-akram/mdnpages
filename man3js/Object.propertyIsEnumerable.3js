@@ -14,14 +14,17 @@
 . ftr VB CB
 . ftr VBI CBI
 .\}
-.TH "Object.propertyIsEnumerable" "JS" "2023-06-02" "JavaScript" "JavaScript Reference Manual"
+.TH "Object.propertyIsEnumerable" "JS" "June 2, 2023" "JavaScript" "JavaScript Reference Manual"
 .hy
-.SH Synopsis
+.SH NAME
+.PP
+Object.propertyIsEnumerable - Object.prototype.propertyIsEnumerable()
+.SH SYNOPSIS
 .PP
 The \f[B]\f[VB]propertyIsEnumerable()\f[B]\f[R] method returns a boolean
 indicating whether the specified property is the object\[cq]s enumerable
 own property.
-.SH Syntax
+.SH SYNTAX
 .IP
 .nf
 \f[C]
@@ -29,18 +32,15 @@ propertyIsEnumerable(prop)
 \f[R]
 .fi
 .SS Parameters
-.IP \[bu] 2
-\f[V]prop\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]prop\f[R]
 The name of the property to test.
 Can be a string or a \f[V]Symbol\f[R].
-.RE
 .SS Return value
 .PP
 A boolean value indicating whether the specified property is enumerable
 and is the object\[cq]s own property.
-.SH Description
+.SH DESCRIPTION
 .PP
 All objects that inherit from \f[V]Object.prototype\f[R] (that is, all
 except \f[V]null\f[R]-prototype objects) inherit the
@@ -52,7 +52,7 @@ If the object does not have the specified property, this method returns
 .PP
 This method is equivalent to
 \f[V]Object.getOwnPropertyDescriptor(obj, prop)?.enumerable ?? false\f[R].
-.SH Examples
+.SH EXAMPLES
 .SS Using propertyIsEnumerable()
 .PP
 The following example shows the use of \f[V]propertyIsEnumerable()\f[R]
@@ -177,7 +177,7 @@ Object.getOwnPropertyDescriptor(o, \[dq]enumerableOwn\[dq])?.enumerable; // true
 Object.getOwnPropertyDescriptor(o, \[dq]nonExistent\[dq])?.enumerable; // undefined
 \f[R]
 .fi
-.SH See also
+.SH SEE ALSO
 .IP \[bu] 2
 Enumerability and ownership of properties
 .IP \[bu] 2

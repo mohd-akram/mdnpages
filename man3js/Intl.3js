@@ -14,9 +14,12 @@
 . ftr VB CB
 . ftr VBI CBI
 .\}
-.TH "Intl" "JS" "2023-06-02" "JavaScript" "JavaScript Reference Manual"
+.TH "Intl" "JS" "June 2, 2023" "JavaScript" "JavaScript Reference Manual"
 .hy
-.SH Synopsis
+.SH NAME
+.PP
+Intl - Intl
+.SH SYNOPSIS
 .PP
 The \f[B]\f[VB]Intl\f[B]\f[R] namespace object contains several
 constructors as well as functionality common to the internationalization
@@ -24,7 +27,7 @@ constructors and other language sensitive functions.
 Collectively, they comprise the ECMAScript Internationalization API,
 which provides language sensitive string comparison, number formatting,
 date and time formatting, and more.
-.SH Description
+.SH DESCRIPTION
 .PP
 Unlike most global objects, \f[V]Intl\f[R] is not a constructor.
 You cannot use it with the \f[V]new\f[R] operator or invoke the
@@ -198,98 +201,59 @@ locale identifier.
 For example, the \f[V]\[dq]co\[dq]\f[R] key (collation) is only
 supported by \f[V]Intl.Collator\f[R], and its
 \f[V]\[dq]phonebk\[dq]\f[R] value is only supported for German.
-.SH Static properties
-.IP \[bu] 2
-\f[V]Intl.Collator\f[R]
-.RS 2
-.IP \[bu] 2
+.SH STATIC PROPERTIES
+.TP
+\f[B]Intl.Collator\f[R]
 Constructor for collators, which are objects that enable
 language-sensitive string comparison.
-.RE
-.IP \[bu] 2
-\f[V]Intl.DateTimeFormat\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]Intl.DateTimeFormat\f[R]
 Constructor for objects that enable language-sensitive date and time
 formatting.
-.RE
-.IP \[bu] 2
-\f[V]Intl.DisplayNames\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]Intl.DisplayNames\f[R]
 Constructor for objects that enable the consistent translation of
 language, region and script display names.
-.RE
-.IP \[bu] 2
-\f[V]Intl.DurationFormat\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]Intl.DurationFormat\f[R]
 Constructor for objects that enable locale-sensitive duration
 formatting.
-.RE
-.IP \[bu] 2
-\f[V]Intl.ListFormat\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]Intl.ListFormat\f[R]
 Constructor for objects that enable language-sensitive list formatting.
-.RE
-.IP \[bu] 2
-\f[V]Intl.Locale\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]Intl.Locale\f[R]
 Constructor for objects that represents a Unicode locale identifier.
-.RE
-.IP \[bu] 2
-\f[V]Intl.NumberFormat\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]Intl.NumberFormat\f[R]
 Constructor for objects that enable language-sensitive number
 formatting.
-.RE
-.IP \[bu] 2
-\f[V]Intl.PluralRules\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]Intl.PluralRules\f[R]
 Constructor for objects that enable plural-sensitive formatting and
 language-specific rules for plurals.
-.RE
-.IP \[bu] 2
-\f[V]Intl.RelativeTimeFormat\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]Intl.RelativeTimeFormat\f[R]
 Constructor for objects that enable language-sensitive relative time
 formatting.
-.RE
-.IP \[bu] 2
-\f[V]Intl.Segmenter\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]Intl.Segmenter\f[R]
 Constructor for objects that enable locale-sensitive text segmentation.
-.RE
-.IP \[bu] 2
-\f[V]Intl[\[at]\[at]toStringTag]\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]Intl[\[at]\[at]toStringTag]\f[R]
 The initial value of the \f[V]\[at]\[at]toStringTag\f[R] property is the
 string \f[V]\[dq]Intl\[dq]\f[R].
 This property is used in \f[V]Object.prototype.toString()\f[R].
-.RE
-.SH Static methods
-.IP \[bu] 2
-\f[V]Intl.getCanonicalLocales()\f[R]
-.RS 2
-.IP \[bu] 2
+.SH STATIC METHODS
+.TP
+\f[B]Intl.getCanonicalLocales()\f[R]
 Returns canonical locale names.
-.RE
-.IP \[bu] 2
-\f[V]Intl.supportedValuesOf()\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]Intl.supportedValuesOf()\f[R]
 Returns a sorted array containing the supported unique calendar,
 collation, currency, numbering systems, or unit values supported by the
 implementation.
-.RE
-.SH Examples
+.SH EXAMPLES
 .SS Formatting dates and numbers
 .PP
 You can use \f[V]Intl\f[R] to format dates and numbers in a form
@@ -313,7 +277,7 @@ log(\[dq]en-US\[dq]); // 5/24/2012 26,254.39
 log(\[dq]de-DE\[dq]); // 24.5.2012 26.254,39
 \f[R]
 .fi
-.SH See also
+.SH SEE ALSO
 .IP \[bu] 2
 Introduction: The ECMAScript Internationalization
 API (https://norbertlindenberg.com/2012/12/ecmascript-internationalization-api/index.html)

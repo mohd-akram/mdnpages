@@ -14,13 +14,16 @@
 . ftr VB CB
 . ftr VBI CBI
 .\}
-.TH "WeakSet.delete" "JS" "2023-06-02" "JavaScript" "JavaScript Reference Manual"
+.TH "WeakSet.delete" "JS" "June 2, 2023" "JavaScript" "JavaScript Reference Manual"
 .hy
-.SH Synopsis
+.SH NAME
+.PP
+WeakSet.delete - WeakSet.prototype.delete()
+.SH SYNOPSIS
 .PP
 The \f[B]\f[VB]delete()\f[B]\f[R] method removes the specified element
 from a \f[V]WeakSet\f[R] object.
-.SH Syntax
+.SH SYNTAX
 .IP
 .nf
 \f[C]
@@ -28,12 +31,9 @@ delete(value)
 \f[R]
 .fi
 .SS Parameters
-.IP \[bu] 2
-\f[V]value\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]value\f[R]
 The value to remove from the \f[V]WeakSet\f[R] object.
-.RE
 .SS Return value
 .PP
 \f[V]true\f[R] if an element in the \f[V]WeakSet\f[R] object has been
@@ -42,7 +42,7 @@ removed successfully.
 \f[V]WeakSet\f[R].
 Always returns \f[V]false\f[R] if \f[V]value\f[R] is not an object or a
 non-registered symbol.
-.SH Examples
+.SH EXAMPLES
 .SS Using the delete() method
 .IP
 .nf
@@ -58,7 +58,7 @@ ws.delete(window); // Returns true. Successfully removed.
 ws.has(window); // Returns false. The window is no longer present in the WeakSet.
 \f[R]
 .fi
-.SH See also
+.SH SEE ALSO
 .IP \[bu] 2
 \f[V]WeakSet\f[R]
 .IP \[bu] 2

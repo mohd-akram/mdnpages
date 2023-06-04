@@ -14,14 +14,17 @@
 . ftr VB CB
 . ftr VBI CBI
 .\}
-.TH "Object.isExtensible" "JS" "2023-06-02" "JavaScript" "JavaScript Reference Manual"
+.TH "Object.isExtensible" "JS" "June 2, 2023" "JavaScript" "JavaScript Reference Manual"
 .hy
-.SH Synopsis
+.SH NAME
+.PP
+Object.isExtensible - Object.isExtensible()
+.SH SYNOPSIS
 .PP
 The \f[B]\f[VB]Object.isExtensible()\f[B]\f[R] static method determines
 if an object is extensible (whether it can have new properties added to
 it).
-.SH Syntax
+.SH SYNTAX
 .IP
 .nf
 \f[C]
@@ -29,24 +32,21 @@ Object.isExtensible(obj)
 \f[R]
 .fi
 .SS Parameters
-.IP \[bu] 2
-\f[V]obj\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]obj\f[R]
 The object which should be checked.
-.RE
 .SS Return value
 .PP
 A \f[V]Boolean\f[R] indicating whether or not the given object is
 extensible.
-.SH Description
+.SH DESCRIPTION
 .PP
 Objects are extensible by default: they can have new properties added to
 them, and their \f[V][[Prototype]]\f[R] can be re-assigned.
 An object can be marked as non-extensible using one of
 \f[V]Object.preventExtensions()\f[R], \f[V]Object.seal()\f[R],
 \f[V]Object.freeze()\f[R], or \f[V]Reflect.preventExtensions()\f[R].
-.SH Examples
+.SH EXAMPLES
 .SS Using Object.isExtensible
 .IP
 .nf
@@ -85,7 +85,7 @@ Object.isExtensible(1);
 // false                         (ES2015 code)
 \f[R]
 .fi
-.SH See also
+.SH SEE ALSO
 .IP \[bu] 2
 \f[V]Object.preventExtensions()\f[R]
 .IP \[bu] 2

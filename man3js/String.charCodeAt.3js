@@ -14,9 +14,12 @@
 . ftr VB CB
 . ftr VBI CBI
 .\}
-.TH "String.charCodeAt" "JS" "2023-06-02" "JavaScript" "JavaScript Reference Manual"
+.TH "String.charCodeAt" "JS" "June 2, 2023" "JavaScript" "JavaScript Reference Manual"
 .hy
-.SH Synopsis
+.SH NAME
+.PP
+String.charCodeAt - String.prototype.charCodeAt()
+.SH SYNOPSIS
 .PP
 The \f[B]\f[VB]charCodeAt()\f[B]\f[R] method returns an integer between
 \f[V]0\f[R] and \f[V]65535\f[R] representing the UTF-16 code unit at the
@@ -29,7 +32,7 @@ unit (because its value is greater than \f[V]0xFFFF\f[R]) then the code
 unit returned will be \f[I]the first part of a surrogate pair\f[R] for
 the code point.
 If you want the entire code point value, use \f[V]codePointAt()\f[R].
-.SH Syntax
+.SH SYNTAX
 .IP
 .nf
 \f[C]
@@ -37,21 +40,18 @@ charCodeAt(index)
 \f[R]
 .fi
 .SS Parameters
-.IP \[bu] 2
-\f[V]index\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]index\f[R]
 An integer greater than or equal to \f[V]0\f[R] and less than the
 \f[V]length\f[R] of the string.
 If \f[V]index\f[R] is not a number, it defaults to \f[V]0\f[R].
-.RE
 .SS Return value
 .PP
 A number representing the UTF-16 code unit value of the character at the
 given \f[V]index\f[R].
 If \f[V]index\f[R] is out of range, \f[V]charCodeAt()\f[R] returns
 \f[V]NaN\f[R].
-.SH Description
+.SH DESCRIPTION
 .PP
 Unicode code points range from \f[V]0\f[R] to \f[V]1114111\f[R]
 (\f[V]0x10FFFF\f[R]).
@@ -86,7 +86,7 @@ ISO-Latin-1 codeset value of the character at the given index.
 The ISO-Latin-1 codeset ranges from \f[V]0\f[R] to \f[V]255\f[R].
 The first \f[V]0\f[R] to \f[V]127\f[R] are a direct match of the ASCII
 character set.
-.SH Examples
+.SH EXAMPLES
 .SS Using charCodeAt()
 .PP
 The following example returns \f[V]65\f[R], the Unicode value for A.
@@ -173,7 +173,7 @@ function knownCharCodeAt(str, idx) {
 }
 \f[R]
 .fi
-.SH See also
+.SH SEE ALSO
 .IP \[bu] 2
 \f[V]String.fromCharCode()\f[R]
 .IP \[bu] 2

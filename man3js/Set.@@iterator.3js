@@ -14,9 +14,12 @@
 . ftr VB CB
 . ftr VBI CBI
 .\}
-.TH "Set.\[at]\[at]iterator" "JS" "2023-06-02" "JavaScript" "JavaScript Reference Manual"
+.TH "Set.\[at]\[at]iterator" "JS" "June 2, 2023" "JavaScript" "JavaScript Reference Manual"
 .hy
-.SH Synopsis
+.SH NAME
+.PP
+Set.\[at]\[at]iterator - Set.prototype\[at]\[at]iterator
+.SH SYNOPSIS
 .PP
 The \f[B]\f[VB][\[at]\[at]iterator]()\f[B]\f[R] method of \f[V]Set\f[R]
 instances implements the iterable protocol and allows sets to be
@@ -27,7 +30,7 @@ insertion order.
 .PP
 The initial value of this property is the same function object as the
 initial value of the \f[V]Set.prototype.values\f[R] property.
-.SH Syntax
+.SH SYNTAX
 .IP
 .nf
 \f[C]
@@ -38,7 +41,7 @@ set[Symbol.iterator]()
 .PP
 The same return value as \f[V]Set.prototype.values()\f[R]: a new
 iterable iterator object that yields the values of the set.
-.SH Examples
+.SH EXAMPLES
 .SS Iteration using for\&...of loop
 .PP
 Note that you seldom need to call this method directly.
@@ -78,7 +81,7 @@ console.log(setIter.next().value); // 1
 console.log(setIter.next().value); // Object
 \f[R]
 .fi
-.SH See also
+.SH SEE ALSO
 .IP \[bu] 2
 \f[V]Set.prototype.entries()\f[R]
 .IP \[bu] 2

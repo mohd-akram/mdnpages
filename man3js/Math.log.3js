@@ -14,9 +14,12 @@
 . ftr VB CB
 . ftr VBI CBI
 .\}
-.TH "Math.log" "JS" "2023-06-02" "JavaScript" "JavaScript Reference Manual"
+.TH "Math.log" "JS" "June 2, 2023" "JavaScript" "JavaScript Reference Manual"
 .hy
-.SH Synopsis
+.SH NAME
+.PP
+Math.log - Math.log()
+.SH SYNOPSIS
 .PP
 The \f[B]\f[VB]Math.log()\f[B]\f[R] static method returns the natural
 logarithm (base e) of a number.
@@ -24,7 +27,7 @@ That is
 .PP
 ∀x>0,𝙼𝚊𝚝𝚑.𝚕𝚘𝚐(𝚡)=ln(x)=the unique\ y\ such that\ ey=xx > 0,; = (x) = y
 e\[ha]y = x
-.SH Syntax
+.SH SYNTAX
 .IP
 .nf
 \f[C]
@@ -32,18 +35,15 @@ Math.log(x)
 \f[R]
 .fi
 .SS Parameters
-.IP \[bu] 2
-\f[V]x\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]x\f[R]
 A number greater than or equal to 0.
-.RE
 .SS Return value
 .PP
 The natural logarithm (base e) of \f[V]x\f[R].
 If \f[V]x\f[R] is ±0, returns \f[V]-Infinity\f[R].
 If \f[V]x < 0\f[R], returns \f[V]NaN\f[R].
-.SH Description
+.SH DESCRIPTION
 .PP
 Because \f[V]log()\f[R] is a static method of \f[V]Math\f[R], you always
 use it as \f[V]Math.log()\f[R], rather than as a method of a
@@ -61,7 +61,7 @@ multiplication in \f[V]Math.log(x) * constant\f[R] is much faster.
 Beware that positive numbers very close to 1 can suffer from loss of
 precision and make its natural logarithm less accurate.
 In this case, you may want to use \f[V]Math.log1p\f[R] instead.
-.SH Examples
+.SH EXAMPLES
 .SS Using Math.log()
 .IP
 .nf
@@ -90,7 +90,7 @@ function getBaseLog(x, y) {
 If you run \f[V]getBaseLog(10, 1000)\f[R], it returns
 \f[V]2.9999999999999996\f[R] due to floating-point rounding, but still
 very close to the actual answer of 3.
-.SH See also
+.SH SEE ALSO
 .IP \[bu] 2
 \f[V]Math.exp()\f[R]
 .IP \[bu] 2

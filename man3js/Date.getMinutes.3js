@@ -14,13 +14,16 @@
 . ftr VB CB
 . ftr VBI CBI
 .\}
-.TH "Date.getMinutes" "JS" "2023-06-02" "JavaScript" "JavaScript Reference Manual"
+.TH "Date.getMinutes" "JS" "June 2, 2023" "JavaScript" "JavaScript Reference Manual"
 .hy
-.SH Synopsis
+.SH NAME
+.PP
+Date.getMinutes - Date.prototype.getMinutes()
+.SH SYNOPSIS
 .PP
 The \f[B]\f[VB]getMinutes()\f[B]\f[R] method of \f[V]Date\f[R] instances
 returns the minutes for this date according to local time.
-.SH Syntax
+.SH SYNTAX
 .IP
 .nf
 \f[C]
@@ -32,7 +35,7 @@ getMinutes()
 An integer, between 0 and 59, representing the minutes for the given
 date according to local time.
 Returns \f[V]NaN\f[R] if the date is invalid.
-.SH Examples
+.SH EXAMPLES
 .SS Using getMinutes()
 .PP
 The \f[V]minutes\f[R] variable has value \f[V]15\f[R], based on the
@@ -46,7 +49,7 @@ const minutes = xmas95.getMinutes();
 console.log(minutes); // 15
 \f[R]
 .fi
-.SH See also
+.SH SEE ALSO
 .IP \[bu] 2
 \f[V]Date.prototype.getUTCMinutes()\f[R]
 .IP \[bu] 2

@@ -15,13 +15,16 @@
 . ftr VB CB
 . ftr VBI CBI
 .\}
-.TH "NaN" "JS" "2023-06-02" "JavaScript" "JavaScript Reference Manual"
+.TH "NaN" "JS" "June 2, 2023" "JavaScript" "JavaScript Reference Manual"
 .hy
-.SH Synopsis
+.SH NAME
+.PP
+NaN - NaN
+.SH SYNOPSIS
 .PP
 The \f[B]\f[VB]NaN\f[B]\f[R] global property is a value representing
 Not-A-Number.
-.SH Value
+.SH VALUE
 .PP
 The same number value as \f[V]Number.NaN\f[R].
 .PP
@@ -44,7 +47,7 @@ T}@T{
 no
 T}
 .TE
-.SH Description
+.SH DESCRIPTION
 .PP
 \f[V]NaN\f[R] is a property of the \f[I]global object\f[R].
 In other words, it is a variable in global scope.
@@ -93,7 +96,7 @@ always \f[V]false\f[R].
 another \f[V]NaN\f[R] value.
 .PP
 \f[V]NaN\f[R] is also one of the falsy values in JavaScript.
-.SH Examples
+.SH EXAMPLES
 .SS Testing against NaN
 .PP
 To tell if a value is \f[V]NaN\f[R], use \f[V]Number.isNaN()\f[R] or
@@ -200,7 +203,7 @@ returns \f[V]1\f[R] without testing the base\[cq]s value.
 NaN ** 0 === 1; // true
 \f[R]
 .fi
-.SH See also
+.SH SEE ALSO
 .IP \[bu] 2
 \f[V]Number.NaN\f[R]
 .IP \[bu] 2

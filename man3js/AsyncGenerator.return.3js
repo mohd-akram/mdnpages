@@ -14,16 +14,19 @@
 . ftr VB CB
 . ftr VBI CBI
 .\}
-.TH "AsyncGenerator.return" "JS" "2023-06-02" "JavaScript" "JavaScript Reference Manual"
+.TH "AsyncGenerator.return" "JS" "June 2, 2023" "JavaScript" "JavaScript Reference Manual"
 .hy
-.SH Synopsis
+.SH NAME
+.PP
+AsyncGenerator.return - AsyncGenerator.prototype.return()
+.SH SYNOPSIS
 .PP
 The \f[B]\f[VB]return()\f[B]\f[R] method of \f[V]AsyncGenerator\f[R]
 instances acts as if a \f[V]return\f[R] statement is inserted in the
 generator\[cq]s body at the current suspended position, which finishes
 the generator and allows the generator to perform any cleanup tasks when
 combined with a \f[V]try...finally\f[R] block.
-.SH Syntax
+.SH SYNTAX
 .IP
 .nf
 \f[C]
@@ -31,22 +34,17 @@ asyncGeneratorObject.return(value)
 \f[R]
 .fi
 .SS Parameters
-.IP \[bu] 2
-\f[V]value\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]value\f[R]
 The value to return.
-.RE
 .SS Return value
 .PP
 A \f[V]Promise\f[R] which resolves with an \f[V]Object\f[R] with two
 properties:
-.IP \[bu] 2
-\f[V]done\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]done\f[R]
 A boolean value:
-.RS 2
+.RS
 .IP \[bu] 2
 \f[V]true\f[R] if the generator function\[cq]s control flow has reached
 the end.
@@ -57,16 +55,12 @@ This can only happen if the \f[V]return\f[R] is captured in a
 \f[V]try...finally\f[R] and there are more \f[V]yield\f[R] expressions
 in the \f[V]finally\f[R] block.
 .RE
-.RE
-.IP \[bu] 2
-\f[V]value\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]value\f[R]
 The value that is given as an argument, or, if the \f[V]yield\f[R]
 expression is wrapped in a \f[V]try...finally\f[R], the value
 yielded/returned from the \f[V]finally\f[R] block.
-.RE
-.SH Description
+.SH DESCRIPTION
 .PP
 The \f[V]return()\f[R] method, when called, can be seen as if a
 \f[V]return value;\f[R] statement is inserted in the generator\[cq]s
@@ -80,7 +74,7 @@ function body, but proceeds to the \f[V]finally\f[R] block instead.
 In this case, the value returned may be different, and \f[V]done\f[R]
 may even be \f[V]false\f[R], if there are more \f[V]yield\f[R]
 expressions within the \f[V]finally\f[R] block.
-.SH Examples
+.SH EXAMPLES
 .SS Using return()
 .PP
 The following example shows a simple async generator and the
@@ -137,7 +131,7 @@ asyncGen.return().then((res) => console.log(res)); // { value: undefined, done: 
 asyncGen.return(1).then((res) => console.log(res)); // { value: 1, done: true }
 \f[R]
 .fi
-.SH See also
+.SH SEE ALSO
 .IP \[bu] 2
 \f[V]async function*\f[R]
 .IP \[bu] 2

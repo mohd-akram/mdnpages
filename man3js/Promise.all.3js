@@ -14,9 +14,12 @@
 . ftr VB CB
 . ftr VBI CBI
 .\}
-.TH "Promise.all" "JS" "2023-06-02" "JavaScript" "JavaScript Reference Manual"
+.TH "Promise.all" "JS" "June 2, 2023" "JavaScript" "JavaScript Reference Manual"
 .hy
-.SH Synopsis
+.SH NAME
+.PP
+Promise.all - Promise.all()
+.SH SYNOPSIS
 .PP
 The \f[B]\f[VB]Promise.all()\f[B]\f[R] static method takes an iterable
 of promises as input and returns a single \f[V]Promise\f[R].
@@ -25,7 +28,7 @@ fulfill (including when an empty iterable is passed), with an array of
 the fulfillment values.
 It rejects when any of the input\[cq]s promises rejects, with this first
 rejection reason.
-.SH Syntax
+.SH SYNTAX
 .IP
 .nf
 \f[C]
@@ -33,12 +36,9 @@ Promise.all(iterable)
 \f[R]
 .fi
 .SS Parameters
-.IP \[bu] 2
-\f[V]iterable\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]iterable\f[R]
 An iterable (such as an \f[V]Array\f[R]) of promises.
-.RE
 .SS Return value
 .PP
 A \f[V]Promise\f[R] that is:
@@ -57,7 +57,7 @@ synchronously) fulfilled.
 \f[V]iterable\f[R] rejects.
 The rejection reason is the rejection reason of the first promise that
 was rejected.
-.SH Description
+.SH DESCRIPTION
 .PP
 The \f[V]Promise.all()\f[R] method is one of the promise concurrency
 methods.
@@ -73,7 +73,7 @@ will wait for all input promises to complete, regardless of whether or
 not one rejects.
 Use \f[V]allSettled()\f[R] if you need the final result of every promise
 in the input iterable.
-.SH Examples
+.SH EXAMPLES
 .SS Using Promise.all()
 .PP
 \f[V]Promise.all\f[R] waits for all fulfillments (or the first
@@ -357,7 +357,7 @@ Promise.all([p1.catch((error) => error), p2.catch((error) => error)]).then(
 );
 \f[R]
 .fi
-.SH See also
+.SH SEE ALSO
 .IP \[bu] 2
 \f[V]Promise\f[R]
 .IP \[bu] 2

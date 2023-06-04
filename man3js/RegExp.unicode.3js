@@ -14,14 +14,17 @@
 . ftr VB CB
 . ftr VBI CBI
 .\}
-.TH "RegExp.unicode" "JS" "2023-06-02" "JavaScript" "JavaScript Reference Manual"
+.TH "RegExp.unicode" "JS" "June 2, 2023" "JavaScript" "JavaScript Reference Manual"
 .hy
-.SH Synopsis
+.SH NAME
+.PP
+RegExp.unicode - RegExp.prototype.unicode
+.SH SYNOPSIS
 .PP
 The \f[B]\f[VB]unicode\f[B]\f[R] accessor property of \f[V]RegExp\f[R]
 instances returns whether or not the \f[V]u\f[R] flag is used with this
 regular expression.
-.SH Description
+.SH DESCRIPTION
 .PP
 \f[V]RegExp.prototype.unicode\f[R] has the value \f[V]true\f[R] if the
 \f[V]u\f[R] flag was used; otherwise, \f[V]false\f[R].
@@ -52,7 +55,7 @@ and you should not rely on them.
 .PP
 The set accessor of \f[V]unicode\f[R] is \f[V]undefined\f[R].
 You cannot change this property directly.
-.SH Examples
+.SH EXAMPLES
 .SS Using the unicode property
 .IP
 .nf
@@ -62,7 +65,7 @@ const regex = /\[rs]u{61}/u;
 console.log(regex.unicode); // true
 \f[R]
 .fi
-.SH See also
+.SH SEE ALSO
 .IP \[bu] 2
 \f[V]RegExp.prototype.lastIndex\f[R]
 .IP \[bu] 2

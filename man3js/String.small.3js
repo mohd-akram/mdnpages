@@ -14,9 +14,12 @@
 . ftr VB CB
 . ftr VBI CBI
 .\}
-.TH "String.small" "JS" "2023-06-02" "JavaScript" "JavaScript Reference Manual"
+.TH "String.small" "JS" "June 2, 2023" "JavaScript" "JavaScript Reference Manual"
 .hy
-.SH Synopsis
+.SH NAME
+.PP
+String.small - String.prototype.small()
+.SH SYNOPSIS
 .PP
 \f[I](deprecated)\f[R]
 .PP
@@ -29,7 +32,7 @@ which causes a string to be displayed in a small font.
 standardized for compatibility purposes.
 Use DOM APIs such as \f[V]document.createElement()\f[R] instead.
 .RE
-.SH Syntax
+.SH SYNTAX
 .IP
 .nf
 \f[C]
@@ -40,7 +43,7 @@ small()
 .PP
 A string beginning with a \f[V]<small>\f[R] start tag, then the text
 \f[V]str\f[R], and then a \f[V]</small>\f[R] end tag.
-.SH Examples
+.SH EXAMPLES
 .SS Using small()
 .PP
 The following example uses string methods to change the size of a
@@ -65,7 +68,7 @@ example:
 document.getElementById(\[dq]yourElemId\[dq]).style.fontSize = \[dq]0.7em\[dq];
 \f[R]
 .fi
-.SH See also
+.SH SEE ALSO
 .IP \[bu] 2
 Polyfill of \f[V]String.prototype.small\f[R] in
 \f[V]core-js\f[R] (https://github.com/zloirock/core-js#ecmascript-string-and-regexp)

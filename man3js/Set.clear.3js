@@ -14,13 +14,16 @@
 . ftr VB CB
 . ftr VBI CBI
 .\}
-.TH "Set.clear" "JS" "2023-06-02" "JavaScript" "JavaScript Reference Manual"
+.TH "Set.clear" "JS" "June 2, 2023" "JavaScript" "JavaScript Reference Manual"
 .hy
-.SH Synopsis
+.SH NAME
+.PP
+Set.clear - Set.prototype.clear()
+.SH SYNOPSIS
 .PP
 The \f[B]\f[VB]clear()\f[B]\f[R] method removes all elements from a
 \f[V]Set\f[R] object.
-.SH Syntax
+.SH SYNTAX
 .IP
 .nf
 \f[C]
@@ -30,7 +33,7 @@ clear()
 .SS Return value
 .PP
 \f[V]undefined\f[R].
-.SH Examples
+.SH EXAMPLES
 .SS Using the clear() method
 .IP
 .nf
@@ -48,7 +51,7 @@ console.log(mySet.size); // 0
 console.log(mySet.has(\[dq]bar\[dq])); // false
 \f[R]
 .fi
-.SH See also
+.SH SEE ALSO
 .IP \[bu] 2
 \f[V]Set\f[R]
 .IP \[bu] 2

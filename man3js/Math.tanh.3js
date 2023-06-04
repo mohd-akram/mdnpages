@@ -14,16 +14,19 @@
 . ftr VB CB
 . ftr VBI CBI
 .\}
-.TH "Math.tanh" "JS" "2023-06-02" "JavaScript" "JavaScript Reference Manual"
+.TH "Math.tanh" "JS" "June 2, 2023" "JavaScript" "JavaScript Reference Manual"
 .hy
-.SH Synopsis
+.SH NAME
+.PP
+Math.tanh - Math.tanh()
+.SH SYNOPSIS
 .PP
 The \f[B]\f[VB]Math.tanh()\f[B]\f[R] static method returns the
 hyperbolic tangent of a number.
 That is,
 .PP
 𝙼𝚊𝚝𝚑.𝚝𝚊𝚗𝚑(𝚡)=tanh(x)=sinh(x)cosh(x)=ex−e−xex+e−x=e2x−1e2x+1 = (x) = = =
-.SH Syntax
+.SH SYNTAX
 .IP
 .nf
 \f[C]
@@ -31,21 +34,18 @@ Math.tanh(x)
 \f[R]
 .fi
 .SS Parameters
-.IP \[bu] 2
-\f[V]x\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]x\f[R]
 A number.
-.RE
 .SS Return value
 .PP
 The hyperbolic tangent of \f[V]x\f[R].
-.SH Description
+.SH DESCRIPTION
 .PP
 Because \f[V]tanh()\f[R] is a static method of \f[V]Math\f[R], you
 always use it as \f[V]Math.tanh()\f[R], rather than as a method of a
 \f[V]Math\f[R] object you created (\f[V]Math\f[R] is not a constructor).
-.SH Examples
+.SH EXAMPLES
 .SS Using Math.tanh()
 .IP
 .nf
@@ -57,7 +57,7 @@ Math.tanh(1); // 0.7615941559557649
 Math.tanh(Infinity); // 1
 \f[R]
 .fi
-.SH See also
+.SH SEE ALSO
 .IP \[bu] 2
 Polyfill of \f[V]Math.tanh\f[R] in
 \f[V]core-js\f[R] (https://github.com/zloirock/core-js#ecmascript-math)

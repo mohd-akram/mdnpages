@@ -14,14 +14,17 @@
 . ftr VB CB
 . ftr VBI CBI
 .\}
-.TH "SharedArrayBuffer.growable" "JS" "2023-06-02" "JavaScript" "JavaScript Reference Manual"
+.TH "SharedArrayBuffer.growable" "JS" "June 2, 2023" "JavaScript" "JavaScript Reference Manual"
 .hy
-.SH Synopsis
+.SH NAME
+.PP
+SharedArrayBuffer.growable - SharedArrayBuffer.prototype.growable
+.SH SYNOPSIS
 .PP
 The \f[B]\f[VB]growable\f[B]\f[R] accessor property of
 \f[V]SharedArrayBuffer\f[R] instances returns whether this
 \f[V]SharedArrayBuffer\f[R] can be grow or not.
-.SH Description
+.SH DESCRIPTION
 .PP
 The \f[V]growable\f[R] property is an accessor property whose set
 accessor function is \f[V]undefined\f[R], meaning that you can only read
@@ -30,7 +33,7 @@ The value is established when the array is constructed.
 If a \f[V]maxByteLength\f[R] option was set in the constructor,
 \f[V]growable\f[R] will return \f[V]true\f[R]; if not, it will return
 \f[V]false\f[R].
-.SH Examples
+.SH EXAMPLES
 .SS Using growable
 .PP
 In this example, we create a 8-byte buffer that is growable to a max
@@ -47,7 +50,7 @@ if (buffer.growable) {
 }
 \f[R]
 .fi
-.SH See also
+.SH SEE ALSO
 .IP \[bu] 2
 \f[V]SharedArrayBuffer\f[R]
 .IP \[bu] 2

@@ -14,15 +14,18 @@
 . ftr VB CB
 . ftr VBI CBI
 .\}
-.TH "Promise.race" "JS" "2023-06-02" "JavaScript" "JavaScript Reference Manual"
+.TH "Promise.race" "JS" "June 2, 2023" "JavaScript" "JavaScript Reference Manual"
 .hy
-.SH Synopsis
+.SH NAME
+.PP
+Promise.race - Promise.race()
+.SH SYNOPSIS
 .PP
 The \f[B]\f[VB]Promise.race()\f[B]\f[R] static method takes an iterable
 of promises as input and returns a single \f[V]Promise\f[R].
 This returned promise settles with the eventual state of the first
 promise that settles.
-.SH Syntax
+.SH SYNTAX
 .IP
 .nf
 \f[C]
@@ -30,12 +33,9 @@ Promise.race(iterable)
 \f[R]
 .fi
 .SS Parameters
-.IP \[bu] 2
-\f[V]iterable\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]iterable\f[R]
 An iterable (such as an \f[V]Array\f[R]) of promises.
-.RE
 .SS Return value
 .PP
 A \f[V]Promise\f[R] that \f[B]asynchronously settles\f[R] with the
@@ -47,7 +47,7 @@ passed is empty.
 If the \f[V]iterable\f[R] passed is non-empty but contains no pending
 promises, the returned promise is still asynchronously (instead of
 synchronously) settled.
-.SH Description
+.SH DESCRIPTION
 .PP
 The \f[V]Promise.race()\f[R] method is one of the promise concurrency
 methods.
@@ -57,7 +57,7 @@ not care about its eventual state (i.e.\ it can either succeed or fail).
 If the iterable contains one or more non-promise values and/or an
 already settled promise, then \f[V]Promise.race()\f[R] will settle to
 the first of these values found in the iterable.
-.SH Examples
+.SH EXAMPLES
 .SS Using Promise.race()
 .PP
 This example shows how \f[V]Promise.race()\f[R] can be used to race
@@ -334,7 +334,7 @@ Promise.any([promise1, promise2])
 // succeeded with value: one
 \f[R]
 .fi
-.SH See also
+.SH SEE ALSO
 .IP \[bu] 2
 \f[V]Promise\f[R]
 .IP \[bu] 2

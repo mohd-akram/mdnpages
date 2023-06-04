@@ -14,13 +14,16 @@
 . ftr VB CB
 . ftr VBI CBI
 .\}
-.TH "Math.abs" "JS" "2023-06-02" "JavaScript" "JavaScript Reference Manual"
+.TH "Math.abs" "JS" "June 2, 2023" "JavaScript" "JavaScript Reference Manual"
 .hy
-.SH Synopsis
+.SH NAME
+.PP
+Math.abs - Math.abs()
+.SH SYNOPSIS
 .PP
 The \f[B]\f[VB]Math.abs()\f[B]\f[R] static method returns the absolute
 value of a number.
-.SH Syntax
+.SH SYNTAX
 .IP
 .nf
 \f[C]
@@ -28,12 +31,9 @@ Math.abs(x)
 \f[R]
 .fi
 .SS Parameters
-.IP \[bu] 2
-\f[V]x\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]x\f[R]
 A number.
-.RE
 .SS Return value
 .PP
 The absolute value of \f[V]x\f[R].
@@ -41,12 +41,12 @@ If \f[V]x\f[R] is negative (including \f[V]-0\f[R]), returns
 \f[V]-x\f[R].
 Otherwise, returns \f[V]x\f[R].
 The result is therefore always a positive number or \f[V]0\f[R].
-.SH Description
+.SH DESCRIPTION
 .PP
 Because \f[V]abs()\f[R] is a static method of \f[V]Math\f[R], you always
 use it as \f[V]Math.abs()\f[R], rather than as a method of a
 \f[V]Math\f[R] object you created (\f[V]Math\f[R] is not a constructor).
-.SH Examples
+.SH EXAMPLES
 .SS Using Math.abs()
 .IP
 .nf
@@ -79,7 +79,7 @@ Math.abs(\[dq]string\[dq]); // NaN
 Math.abs(); // NaN
 \f[R]
 .fi
-.SH See also
+.SH SEE ALSO
 .IP \[bu] 2
 \f[V]Math.ceil()\f[R]
 .IP \[bu] 2

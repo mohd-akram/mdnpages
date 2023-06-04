@@ -14,16 +14,19 @@
 . ftr VB CB
 . ftr VBI CBI
 .\}
-.TH "Array.toLocaleString" "JS" "2023-06-02" "JavaScript" "JavaScript Reference Manual"
+.TH "Array.toLocaleString" "JS" "June 2, 2023" "JavaScript" "JavaScript Reference Manual"
 .hy
-.SH Synopsis
+.SH NAME
+.PP
+Array.toLocaleString - Array.prototype.toLocaleString()
+.SH SYNOPSIS
 .PP
 The \f[B]\f[VB]toLocaleString()\f[B]\f[R] method returns a string
 representing the elements of the array.
 The elements are converted to Strings using their
 \f[V]toLocaleString\f[R] methods and these Strings are separated by a
 locale-specific String (such as a comma \[lq],\[rq]).
-.SH Syntax
+.SH SYNTAX
 .IP
 .nf
 \f[C]
@@ -33,26 +36,20 @@ toLocaleString(locales, options)
 \f[R]
 .fi
 .SS Parameters
-.IP \[bu] 2
-\f[V]locales\f[R] \f[I](optional)\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]locales\f[R] \f[I](optional)\f[R]
 A string with a BCP 47 language tag, or an array of such strings.
 For the general form and interpretation of the \f[V]locales\f[R]
 argument, see the parameter description on the \f[V]Intl\f[R] main page.
-.RE
-.IP \[bu] 2
-\f[V]options\f[R] \f[I](optional)\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]options\f[R] \f[I](optional)\f[R]
 An object with configuration properties.
 For numbers, see \f[V]Number.prototype.toLocaleString()\f[R]; for dates,
 see \f[V]Date.prototype.toLocaleString()\f[R].
-.RE
 .SS Return value
 .PP
 A string representing the elements of the array.
-.SH Description
+.SH DESCRIPTION
 .PP
 The \f[V]Array.prototype.toLocaleString\f[R] method traverses its
 content, calling the \f[V]toLocaleString\f[R] method of every element
@@ -74,7 +71,7 @@ iterates empty slots as if they have the value \f[V]undefined\f[R].
 The \f[V]toLocaleString()\f[R] method is generic.
 It only expects the \f[V]this\f[R] value to have a \f[V]length\f[R]
 property and integer-keyed properties.
-.SH Examples
+.SH EXAMPLES
 .SS Using locales and options
 .PP
 The elements of the array are converted to strings using their
@@ -127,7 +124,7 @@ console.log(Array.prototype.toLocaleString.call(arrayLike));
 // 1,2,3
 \f[R]
 .fi
-.SH See also
+.SH SEE ALSO
 .IP \[bu] 2
 Indexed collections
 .IP \[bu] 2

@@ -14,14 +14,17 @@
 . ftr VB CB
 . ftr VBI CBI
 .\}
-.TH "RegExp.source" "JS" "2023-06-02" "JavaScript" "JavaScript Reference Manual"
+.TH "RegExp.source" "JS" "June 2, 2023" "JavaScript" "JavaScript Reference Manual"
 .hy
-.SH Synopsis
+.SH NAME
+.PP
+RegExp.source - RegExp.prototype.source
+.SH SYNOPSIS
 .PP
 The \f[B]\f[VB]source\f[B]\f[R] accessor property of \f[V]RegExp\f[R]
 instances returns a string containing the source text of this regular
 expression, without the two forward slashes on both sides or any flags.
-.SH Description
+.SH DESCRIPTION
 .PP
 Conceptually, the \f[V]source\f[R] property is the text between the two
 forward slashes in the regular expression literal.
@@ -36,7 +39,7 @@ Similarly, all line terminators will be escaped because line terminator
 There\[cq]s no requirement for other characters, as long as the result
 is parsable.
 For empty regular expressions, the string \f[V](?:)\f[R] is returned.
-.SH Examples
+.SH EXAMPLES
 .SS Using source
 .IP
 .nf
@@ -55,6 +58,6 @@ new RegExp().source; // \[dq](?:)\[dq]
 new RegExp(\[dq]\[rs]n\[dq]).source === \[dq]\[rs]\[rs]n\[dq]; // true, starting with ES5
 \f[R]
 .fi
-.SH See also
+.SH SEE ALSO
 .IP \[bu] 2
 \f[V]RegExp.prototype.flags\f[R]

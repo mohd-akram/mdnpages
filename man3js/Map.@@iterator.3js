@@ -14,9 +14,12 @@
 . ftr VB CB
 . ftr VBI CBI
 .\}
-.TH "Map.\[at]\[at]iterator" "JS" "2023-06-02" "JavaScript" "JavaScript Reference Manual"
+.TH "Map.\[at]\[at]iterator" "JS" "June 2, 2023" "JavaScript" "JavaScript Reference Manual"
 .hy
-.SH Synopsis
+.SH NAME
+.PP
+Map.\[at]\[at]iterator - Map.prototype\[at]\[at]iterator
+.SH SYNOPSIS
 .PP
 The \f[B]\f[VB][\[at]\[at]iterator]()\f[B]\f[R] method of \f[V]Map\f[R]
 instances implements the iterable protocol and allows maps to be
@@ -27,7 +30,7 @@ map in insertion order.
 .PP
 The initial value of this property is the same function object as the
 initial value of the \f[V]Map.prototype.entries\f[R] property.
-.SH Syntax
+.SH SYNTAX
 .IP
 .nf
 \f[C]
@@ -38,7 +41,7 @@ map[Symbol.iterator]()
 .PP
 The same return value as \f[V]Map.prototype.entries()\f[R]: a new
 iterable iterator object that yields the key-value pairs of the map.
-.SH Examples
+.SH EXAMPLES
 .SS Iteration using for\&...of loop
 .PP
 Note that you seldom need to call this method directly.
@@ -88,7 +91,7 @@ console.log(mapIter.next().value); // [1, \[dq]bar\[dq]]
 console.log(mapIter.next().value); // [Object, \[dq]baz\[dq]]
 \f[R]
 .fi
-.SH See also
+.SH SEE ALSO
 .IP \[bu] 2
 \f[V]Map.prototype.entries()\f[R]
 .IP \[bu] 2

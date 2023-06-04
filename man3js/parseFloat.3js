@@ -14,13 +14,16 @@
 . ftr VB CB
 . ftr VBI CBI
 .\}
-.TH "parseFloat" "JS" "2023-06-02" "JavaScript" "JavaScript Reference Manual"
+.TH "parseFloat" "JS" "June 2, 2023" "JavaScript" "JavaScript Reference Manual"
 .hy
-.SH Synopsis
+.SH NAME
+.PP
+parseFloat - parseFloat()
+.SH SYNOPSIS
 .PP
 The \f[B]\f[VB]parseFloat()\f[B]\f[R] function parses a string argument
 and returns a floating point number.
-.SH Syntax
+.SH SYNTAX
 .IP
 .nf
 \f[C]
@@ -28,13 +31,10 @@ parseFloat(string)
 \f[R]
 .fi
 .SS Parameters
-.IP \[bu] 2
-\f[V]string\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]string\f[R]
 The value to parse, coerced to a string.
 Leading whitespace in this argument is ignored.
-.RE
 .SS Return value
 .PP
 A floating point number parsed from the given \f[V]string\f[R], or
@@ -51,7 +51,7 @@ For example, \f[V]parseInt(\[dq]42\[dq])\f[R] and
 \f[V]parseFloat(\[dq]42\[dq])\f[R] would return the same value: a
 \f[V]Number\f[R] 42.
 .RE
-.SH Description
+.SH DESCRIPTION
 .PP
 The \f[V]parseFloat\f[R] function converts its first argument to a
 string, parses that string as a decimal number literal, then returns a
@@ -105,7 +105,7 @@ For numbers outside the \f[V]-1.7976931348623158e+308\f[R] \[en]
 \f[V]1.7976931348623158e+308\f[R] range (see
 \f[V]Number.MAX_VALUE\f[R]), \f[V]-Infinity\f[R] or \f[V]Infinity\f[R]
 is returned.
-.SH Examples
+.SH EXAMPLES
 .SS Using parseFloat()
 .PP
 The following examples all return \f[V]3.14\f[R]:
@@ -194,7 +194,7 @@ BigInt(\[dq]900719925474099267\[dq]);
 // 900719925474099267n
 \f[R]
 .fi
-.SH See also
+.SH SEE ALSO
 .IP \[bu] 2
 \f[V]parseInt()\f[R]
 .IP \[bu] 2

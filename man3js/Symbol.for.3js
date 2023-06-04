@@ -14,16 +14,19 @@
 . ftr VB CB
 . ftr VBI CBI
 .\}
-.TH "Symbol.for" "JS" "2023-06-02" "JavaScript" "JavaScript Reference Manual"
+.TH "Symbol.for" "JS" "June 2, 2023" "JavaScript" "JavaScript Reference Manual"
 .hy
-.SH Synopsis
+.SH NAME
+.PP
+Symbol.for - Symbol.for()
+.SH SYNOPSIS
 .PP
 The \f[B]\f[VB]Symbol.for()\f[B]\f[R] static method searches for
 existing symbols in a runtime-wide symbol registry with the given key
 and returns it if found.
 Otherwise a new symbol gets created in the global symbol registry with
 this key.
-.SH Syntax
+.SH SYNTAX
 .IP
 .nf
 \f[C]
@@ -31,19 +34,16 @@ Symbol.for(key)
 \f[R]
 .fi
 .SS Parameters
-.IP \[bu] 2
-\f[V]key\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]key\f[R]
 String, required.
 The key for the symbol (and also used for the description of the
 symbol).
-.RE
 .SS Return value
 .PP
 An existing symbol with the given key if found; otherwise, a new symbol
 is created and returned.
-.SH Description
+.SH DESCRIPTION
 .PP
 In contrast to \f[V]Symbol()\f[R], the \f[V]Symbol.for()\f[R] function
 creates a symbol available in a global symbol registry list.
@@ -53,7 +53,7 @@ already present in the registry.
 In that case, that symbol is returned.
 If no symbol with the given key is found, \f[V]Symbol.for()\f[R] will
 create a new global symbol.
-.SH Examples
+.SH EXAMPLES
 .SS Using Symbol.for()
 .IP
 .nf
@@ -80,6 +80,6 @@ Symbol.for(\[dq]mdn.foo\[dq]);
 Symbol.for(\[dq]mdn.bar\[dq]);
 \f[R]
 .fi
-.SH See also
+.SH SEE ALSO
 .IP \[bu] 2
 \f[V]Symbol.keyFor()\f[R]

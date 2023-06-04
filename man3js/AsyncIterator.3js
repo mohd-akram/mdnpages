@@ -14,9 +14,12 @@
 . ftr VB CB
 . ftr VBI CBI
 .\}
-.TH "AsyncIterator" "JS" "2023-06-02" "JavaScript" "JavaScript Reference Manual"
+.TH "AsyncIterator" "JS" "June 2, 2023" "JavaScript" "JavaScript Reference Manual"
 .hy
-.SH Synopsis
+.SH NAME
+.PP
+AsyncIterator - AsyncIterator
+.SH SYNOPSIS
 .PP
 An \f[B]\f[VB]AsyncIterator\f[B]\f[R] object is an object that conforms
 to the async iterator protocol by providing a \f[V]next()\f[R] method
@@ -40,7 +43,7 @@ const AsyncIteratorPrototype = Object.getPrototypeOf(
 );
 \f[R]
 .fi
-.SH Description
+.SH DESCRIPTION
 .PP
 Currently, the only built-in JavaScript async iterator is the
 \f[V]AsyncGenerator\f[R] object returned by async generator functions.
@@ -60,15 +63,12 @@ object itself, making the async iterator also async iterable.
 \f[V]\[at]\[at]iterator\f[R], so async iterators are not sync iterable
 by default.
 .RE
-.SH Instance methods
-.IP \[bu] 2
-\f[V]AsyncIterator.prototype[\[at]\[at]asyncIterator]()\f[R]
-.RS 2
-.IP \[bu] 2
+.SH INSTANCE METHODS
+.TP
+\f[B]AsyncIterator.prototype[\[at]\[at]asyncIterator]()\f[R]
 Returns the async iterator object itself.
 This allows async iterator objects to also be async iterable.
-.RE
-.SH Examples
+.SH EXAMPLES
 .SS Using an async iterator as an async iterable
 .PP
 All built-in async iterators are also async iterable, so you can use
@@ -89,7 +89,7 @@ const asyncIterator = (async function* () {
 // Logs: 1, 2, 3
 \f[R]
 .fi
-.SH See also
+.SH SEE ALSO
 .IP \[bu] 2
 \f[V]async function*\f[R]
 .IP \[bu] 2

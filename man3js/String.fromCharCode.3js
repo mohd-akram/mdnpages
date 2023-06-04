@@ -14,13 +14,16 @@
 . ftr VB CB
 . ftr VBI CBI
 .\}
-.TH "String.fromCharCode" "JS" "2023-06-02" "JavaScript" "JavaScript Reference Manual"
+.TH "String.fromCharCode" "JS" "June 2, 2023" "JavaScript" "JavaScript Reference Manual"
 .hy
-.SH Synopsis
+.SH NAME
+.PP
+String.fromCharCode - String.fromCharCode()
+.SH SYNOPSIS
 .PP
 The \f[B]\f[VB]String.fromCharCode()\f[B]\f[R] static method returns a
 string created from the specified sequence of UTF-16 code units.
-.SH Syntax
+.SH SYNTAX
 .IP
 .nf
 \f[C]
@@ -30,20 +33,17 @@ String.fromCharCode(num1, num2, /* \&..., */ numN)
 \f[R]
 .fi
 .SS Parameters
-.IP \[bu] 2
-\f[V]num1, ..., numN\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]num1, ..., numN\f[R]
 A sequence of numbers that are UTF-16 code units.
 The range is between \f[V]0\f[R] and \f[V]65535\f[R] (\f[V]0xFFFF\f[R]).
 Numbers greater than \f[V]0xFFFF\f[R] are truncated.
 No validity checks are performed.
-.RE
 .SS Return value
 .PP
 A string of length \f[V]N\f[R] consisting of the \f[V]N\f[R] specified
 UTF-16 code units.
-.SH Description
+.SH DESCRIPTION
 .PP
 This method returns a string and not a \f[V]String\f[R] object.
 .PP
@@ -82,7 +82,7 @@ For this reason, it\[cq]s more convenient to use
 supplementary characters based on their actual code point value.
 For example, \f[V]String.fromCodePoint(0x1F303)\f[R] returns code point
 \f[V]U+1F303\f[R] \[lq]Night with Stars\[rq].
-.SH Examples
+.SH EXAMPLES
 .SS Using fromCharCode()
 .PP
 BMP characters, in UTF-16, use a single code unit:
@@ -107,7 +107,7 @@ String.fromCharCode(55356, 57091); // Stars\[dq] === \[dq]\[rs]uD83C\[rs]uDF03\[
 String.fromCharCode(0xd834, 0xdf06, 0x61, 0xd834, 0xdf07); // \[dq]\[rs]uD834\[rs]uDF06a\[rs]uD834\[rs]uDF07\[dq]
 \f[R]
 .fi
-.SH See also
+.SH SEE ALSO
 .IP \[bu] 2
 \f[V]String.fromCodePoint()\f[R]
 .IP \[bu] 2

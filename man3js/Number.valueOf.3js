@@ -14,13 +14,16 @@
 . ftr VB CB
 . ftr VBI CBI
 .\}
-.TH "Number.valueOf" "JS" "2023-06-02" "JavaScript" "JavaScript Reference Manual"
+.TH "Number.valueOf" "JS" "June 2, 2023" "JavaScript" "JavaScript Reference Manual"
 .hy
-.SH Synopsis
+.SH NAME
+.PP
+Number.valueOf - Number.prototype.valueOf()
+.SH SYNOPSIS
 .PP
 The \f[B]\f[VB]valueOf()\f[B]\f[R] method returns the wrapped primitive
 value of a \f[V]Number\f[R] object.
-.SH Syntax
+.SH SYNTAX
 .IP
 .nf
 \f[C]
@@ -31,11 +34,11 @@ valueOf()
 .PP
 A number representing the primitive value of the specified
 \f[V]Number\f[R] object.
-.SH Description
+.SH DESCRIPTION
 .PP
 This method is usually called internally by JavaScript and not
 explicitly in web code.
-.SH Examples
+.SH EXAMPLES
 .SS Using valueOf
 .IP
 .nf
@@ -48,6 +51,6 @@ console.log(num); // 10
 console.log(typeof num); // number
 \f[R]
 .fi
-.SH See also
+.SH SEE ALSO
 .IP \[bu] 2
 \f[V]Object.prototype.valueOf()\f[R]

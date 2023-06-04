@@ -14,13 +14,16 @@
 . ftr VB CB
 . ftr VBI CBI
 .\}
-.TH "Symbol.toString" "JS" "2023-06-02" "JavaScript" "JavaScript Reference Manual"
+.TH "Symbol.toString" "JS" "June 2, 2023" "JavaScript" "JavaScript Reference Manual"
 .hy
-.SH Synopsis
+.SH NAME
+.PP
+Symbol.toString - Symbol.prototype.toString()
+.SH SYNOPSIS
 .PP
 The \f[B]\f[VB]toString()\f[B]\f[R] method returns a string representing
 the specified symbol value.
-.SH Syntax
+.SH SYNTAX
 .IP
 .nf
 \f[C]
@@ -30,7 +33,7 @@ toString()
 .SS Return value
 .PP
 A string representing the specified symbol value.
-.SH Description
+.SH DESCRIPTION
 .PP
 The \f[V]Symbol\f[R] object overrides the \f[V]toString\f[R] method of
 \f[V]Object\f[R]; it does not inherit
@@ -53,7 +56,7 @@ returns a symbol primitive, and symbol primitives throw a
 \f[V]toString()\f[R] method is never implicitly called by the language.
 To stringify a symbol, you must explicitly call its \f[V]toString()\f[R]
 method or use the \f[V]String()\f[R] function.
-.SH Examples
+.SH EXAMPLES
 .SS Using toString()
 .IP
 .nf
@@ -85,6 +88,6 @@ delete Symbol.prototype[Symbol.toPrimitive];
 console.log(\[ga]${Object(Symbol(\[dq]foo\[dq]))}\[ga]); // \[dq]Symbol(foo)\[dq]
 \f[R]
 .fi
-.SH See also
+.SH SEE ALSO
 .IP \[bu] 2
 \f[V]Object.prototype.toString()\f[R]

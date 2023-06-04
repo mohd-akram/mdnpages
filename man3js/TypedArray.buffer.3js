@@ -14,15 +14,18 @@
 . ftr VB CB
 . ftr VBI CBI
 .\}
-.TH "TypedArray.buffer" "JS" "2023-06-02" "JavaScript" "JavaScript Reference Manual"
+.TH "TypedArray.buffer" "JS" "June 2, 2023" "JavaScript" "JavaScript Reference Manual"
 .hy
-.SH Synopsis
+.SH NAME
+.PP
+TypedArray.buffer - TypedArray.prototype.buffer
+.SH SYNOPSIS
 .PP
 The \f[B]\f[VB]buffer\f[B]\f[R] accessor property of
 \f[V]TypedArray\f[R] instances returns the \f[V]ArrayBuffer\f[R] or
 \f[V]SharedArrayBuffer\f[R] referenced by this typed array at
 construction time.
-.SH Description
+.SH DESCRIPTION
 .PP
 The \f[V]buffer\f[R] property is an accessor property whose set accessor
 function is \f[V]undefined\f[R], meaning that you can only read this
@@ -33,7 +36,7 @@ and cannot be changed.
 .PP
 Because a typed array is a \f[I]view\f[R] of a buffer, the underlying
 buffer may be longer than the typed array itself.
-.SH Examples
+.SH EXAMPLES
 .SS Using the buffer property
 .IP
 .nf
@@ -54,7 +57,7 @@ console.log(arr.buffer.byteLength); // 1024
 console.log(arr.buffer === buffer); // true
 \f[R]
 .fi
-.SH See also
+.SH SEE ALSO
 .IP \[bu] 2
 JavaScript typed arrays
 .IP \[bu] 2

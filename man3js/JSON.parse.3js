@@ -14,16 +14,19 @@
 . ftr VB CB
 . ftr VBI CBI
 .\}
-.TH "JSON.parse" "JS" "2023-06-02" "JavaScript" "JavaScript Reference Manual"
+.TH "JSON.parse" "JS" "June 2, 2023" "JavaScript" "JavaScript Reference Manual"
 .hy
-.SH Synopsis
+.SH NAME
+.PP
+JSON.parse - JSON.parse()
+.SH SYNOPSIS
 .PP
 The \f[B]\f[VB]JSON.parse()\f[B]\f[R] static method parses a JSON
 string, constructing the JavaScript value or object described by the
 string.
 An optional \f[I]reviver\f[R] function can be provided to perform a
 transformation on the resulting object before it is returned.
-.SH Syntax
+.SH SYNTAX
 .IP
 .nf
 \f[C]
@@ -32,48 +35,33 @@ JSON.parse(text, reviver)
 \f[R]
 .fi
 .SS Parameters
-.IP \[bu] 2
-\f[V]text\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]text\f[R]
 The string to parse as JSON.
 See the \f[V]JSON\f[R] object for a description of JSON syntax.
-.RE
-.IP \[bu] 2
-\f[V]reviver\f[R] \f[I](optional)\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]reviver\f[R] \f[I](optional)\f[R]
 If a function, this prescribes how each value originally produced by
 parsing is transformed before being returned.
 Non-callable values are ignored.
 The function is called with the following arguments:
-.RS 2
-.IP \[bu] 2
-\f[V]key\f[R]
-.RS 2
-.IP \[bu] 2
+.RS
+.TP
+\f[B]key\f[R]
 The key associated with the value.
-.RE
-.IP \[bu] 2
-\f[V]value\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]value\f[R]
 The value produced by parsing.
-.RE
-.RE
 .RE
 .SS Return value
 .PP
 The \f[V]Object\f[R], \f[V]Array\f[R], string, number, boolean, or
 \f[V]null\f[R] value corresponding to the given JSON \f[V]text\f[R].
 .SS Exceptions
-.IP \[bu] 2
-\f[V]SyntaxError\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]SyntaxError\f[R]
 Thrown if the string to parse is not valid JSON.
-.RE
-.SH Description
+.SH DESCRIPTION
 .PP
 \f[V]JSON.parse()\f[R] parses a JSON string according to the JSON
 grammar, then evaluates the string as if it\[cq]s a JavaScript
@@ -116,7 +104,7 @@ to JavaScript numbers, and may lose precision in the process.
 To transfer large numbers without loss of precision, serialize them as
 strings, and revive them to BigInts, or other appropriate arbitrary
 precision formats.
-.SH Examples
+.SH EXAMPLES
 .SS Using JSON.parse()
 .IP
 .nf
@@ -221,6 +209,6 @@ JSON.parse(\[aq]{\[dq]foo\[dq] : 1, }\[aq]);
 JSON.parse(\[dq]{\[aq]foo\[aq]: 1}\[dq]);
 \f[R]
 .fi
-.SH See also
+.SH SEE ALSO
 .IP \[bu] 2
 \f[V]JSON.stringify()\f[R]

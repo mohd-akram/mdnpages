@@ -14,16 +14,19 @@
 . ftr VB CB
 . ftr VBI CBI
 .\}
-.TH "AsyncGenerator.throw" "JS" "2023-06-02" "JavaScript" "JavaScript Reference Manual"
+.TH "AsyncGenerator.throw" "JS" "June 2, 2023" "JavaScript" "JavaScript Reference Manual"
 .hy
-.SH Synopsis
+.SH NAME
+.PP
+AsyncGenerator.throw - AsyncGenerator.prototype.throw()
+.SH SYNOPSIS
 .PP
 The \f[B]\f[VB]throw()\f[B]\f[R] method of \f[V]AsyncGenerator\f[R]
 instances acts as if a \f[V]throw\f[R] statement is inserted in the
 generator\[cq]s body at the current suspended position, which informs
 the generator of an error condition and allows it to handle the error,
 or perform cleanup and close itself.
-.SH Syntax
+.SH SYNTAX
 .IP
 .nf
 \f[C]
@@ -31,14 +34,11 @@ asyncGeneratorObject.throw(exception)
 \f[R]
 .fi
 .SS Parameters
-.IP \[bu] 2
-\f[V]exception\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]exception\f[R]
 The exception to throw.
 For debugging purposes, it is useful to make it an \f[V]instanceof\f[R]
 \f[V]Error\f[R].
-.RE
 .SS Return value
 .PP
 If the thrown error is not caught, it will return a \f[V]Promise\f[R]
@@ -47,12 +47,10 @@ which rejects with the exception passed in.
 If the exception is caught by a \f[V]try...catch\f[R] and the generator
 resumes to yield more values, it will return a \f[V]Promise\f[R] which
 resolves with an \f[V]Object\f[R] with two properties:
-.IP \[bu] 2
-\f[V]done\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]done\f[R]
 A boolean value:
-.RS 2
+.RS
 .IP \[bu] 2
 \f[V]true\f[R] if the generator function\[cq]s control flow has reached
 the end.
@@ -60,14 +58,10 @@ the end.
 \f[V]false\f[R] if the generator function is able to produce more
 values.
 .RE
-.RE
-.IP \[bu] 2
-\f[V]value\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]value\f[R]
 The value yielded from the next \f[V]yield\f[R] expression.
-.RE
-.SH Examples
+.SH EXAMPLES
 .SS Using throw()
 .PP
 The following example shows a simple generator and an error that is
@@ -102,7 +96,7 @@ asyncGen
   .then((res) => console.log(res)); // { value: 42, done: false }
 \f[R]
 .fi
-.SH See also
+.SH SEE ALSO
 .IP \[bu] 2
 \f[V]async function*\f[R]
 .IP \[bu] 2

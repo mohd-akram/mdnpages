@@ -14,9 +14,12 @@
 . ftr VB CB
 . ftr VBI CBI
 .\}
-.TH "Iterator.\[at]\[at]iterator" "JS" "2023-06-02" "JavaScript" "JavaScript Reference Manual"
+.TH "Iterator.\[at]\[at]iterator" "JS" "June 2, 2023" "JavaScript" "JavaScript Reference Manual"
 .hy
-.SH Synopsis
+.SH NAME
+.PP
+Iterator.\[at]\[at]iterator - Iterator.prototype\[at]\[at]iterator
+.SH SYNOPSIS
 .PP
 The \f[B]\f[VB][\[at]\[at]iterator]()\f[B]\f[R] method of
 \f[V]Iterator\f[R] instances implements the iterable protocol and allows
@@ -24,7 +27,7 @@ built-in iterators to be consumed by most syntaxes expecting iterables,
 such as the spread syntax and \f[V]for...of\f[R] loops.
 It returns the value of \f[V]this\f[R], which is the iterator object
 itself.
-.SH Syntax
+.SH SYNTAX
 .IP
 .nf
 \f[C]
@@ -34,7 +37,7 @@ iterator[Symbol.iterator]()
 .SS Return value
 .PP
 The value of \f[V]this\f[R], which is the iterator object itself.
-.SH Examples
+.SH EXAMPLES
 .SS Iteration using for\&...of loop
 .PP
 Note that you seldom need to call this method directly.
@@ -52,6 +55,6 @@ for (const value of arrIterator) {
 // Logs: 1, 2, 3
 \f[R]
 .fi
-.SH See also
+.SH SEE ALSO
 .IP \[bu] 2
 \f[V]for...of\f[R]

@@ -14,14 +14,17 @@
 . ftr VB CB
 . ftr VBI CBI
 .\}
-.TH "String.charAt" "JS" "2023-06-02" "JavaScript" "JavaScript Reference Manual"
+.TH "String.charAt" "JS" "June 2, 2023" "JavaScript" "JavaScript Reference Manual"
 .hy
-.SH Synopsis
+.SH NAME
+.PP
+String.charAt - String.prototype.charAt()
+.SH SYNOPSIS
 .PP
 The \f[B]\f[VB]charAt()\f[B]\f[R] method of \f[V]String\f[R] values
 returns a new string consisting of the single UTF-16 code unit located
 at the specified offset into the string.
-.SH Syntax
+.SH SYNTAX
 .IP
 .nf
 \f[C]
@@ -29,22 +32,19 @@ charAt(index)
 \f[R]
 .fi
 .SS Parameters
-.IP \[bu] 2
-\f[V]index\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]index\f[R]
 An integer between \f[V]0\f[R] and \f[V]str.length - 1\f[R].
 If the \f[V]index\f[R] cannot be converted to the integer or no
 \f[V]index\f[R] is provided, the default is \f[V]0\f[R], so the first
 character of \f[V]str\f[R] is returned.
-.RE
 .SS Return value
 .PP
 A string representing the character (exactly one UTF-16 code unit) at
 the specified \f[V]index\f[R].
 If \f[V]index\f[R] is out of range, \f[V]charAt()\f[R] returns an empty
 string.
-.SH Description
+.SH DESCRIPTION
 .PP
 Characters in a string are indexed from left to right.
 The index of the first character is \f[V]0\f[R], and the index of the
@@ -55,7 +55,7 @@ returns an empty string.
 .PP
 If no \f[V]index\f[R] is provided to \f[V]charAt()\f[R], the default is
 \f[V]0\f[R].
-.SH Examples
+.SH EXAMPLES
 .SS Displaying characters at different locations in a string
 .PP
 The following example displays characters at different locations in the
@@ -192,7 +192,7 @@ function fixedCharAt(str, idx) {
 }
 \f[R]
 .fi
-.SH See also
+.SH SEE ALSO
 .IP \[bu] 2
 \f[V]String.prototype.indexOf()\f[R]
 .IP \[bu] 2

@@ -15,9 +15,12 @@
 . ftr VB CB
 . ftr VBI CBI
 .\}
-.TH "Error.cause" "JS" "2023-06-02" "JavaScript" "JavaScript Reference Manual"
+.TH "Error.cause" "JS" "June 2, 2023" "JavaScript" "JavaScript Reference Manual"
 .hy
-.SH Synopsis
+.SH NAME
+.PP
+Error.cause - Error: cause
+.SH SYNOPSIS
 .PP
 The \f[B]\f[VB]cause\f[B]\f[R] data property of an \f[V]Error\f[R]
 instance indicates the specific original cause of the error.
@@ -25,7 +28,7 @@ instance indicates the specific original cause of the error.
 It is used when catching and re-throwing an error with a more-specific
 or useful error message in order to still have access to the original
 error.
-.SH Value
+.SH VALUE
 .PP
 The value that was passed to the \f[V]Error()\f[R] constructor in the
 \f[V]options.cause\f[R] argument.
@@ -50,7 +53,7 @@ T}@T{
 yes
 T}
 .TE
-.SH Description
+.SH DESCRIPTION
 .PP
 The value of \f[V]cause\f[R] can be of any type.
 You should not make assumptions that the error you caught has an
@@ -59,7 +62,7 @@ be sure the variable bound in the \f[V]catch\f[R] statement is an
 \f[V]Error\f[R] either.
 The \[lq]Providing structured data as the error cause\[rq] example below
 shows a case where a non-error is deliberately provided as the cause.
-.SH Examples
+.SH EXAMPLES
 .SS Rethrowing an error with a cause
 .PP
 It is sometimes useful to catch an error and re-throw it with a new
@@ -106,7 +109,7 @@ function makeRSA(p, q) {
 }
 \f[R]
 .fi
-.SH See also
+.SH SEE ALSO
 .IP \[bu] 2
 \f[V]Error.prototype.message\f[R]
 .IP \[bu] 2

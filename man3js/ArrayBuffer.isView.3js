@@ -14,14 +14,17 @@
 . ftr VB CB
 . ftr VBI CBI
 .\}
-.TH "ArrayBuffer.isView" "JS" "2023-06-02" "JavaScript" "JavaScript Reference Manual"
+.TH "ArrayBuffer.isView" "JS" "June 2, 2023" "JavaScript" "JavaScript Reference Manual"
 .hy
-.SH Synopsis
+.SH NAME
+.PP
+ArrayBuffer.isView - ArrayBuffer.isView()
+.SH SYNOPSIS
 .PP
 The \f[B]\f[VB]ArrayBuffer.isView()\f[B]\f[R] static method determines
 whether the passed value is one of the \f[V]ArrayBuffer\f[R] views, such
 as typed array objects or a \f[V]DataView\f[R].
-.SH Syntax
+.SH SYNTAX
 .IP
 .nf
 \f[C]
@@ -29,17 +32,14 @@ ArrayBuffer.isView(value)
 \f[R]
 .fi
 .SS Parameters
-.IP \[bu] 2
-\f[V]value\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]value\f[R]
 The value to be checked.
-.RE
 .SS Return value
 .PP
 \f[V]true\f[R] if the given argument is one of the \f[V]ArrayBuffer\f[R]
 views; otherwise, \f[V]false\f[R].
-.SH Examples
+.SH EXAMPLES
 .SS Using isView
 .IP
 .nf
@@ -60,6 +60,6 @@ const dv = new DataView(buffer);
 ArrayBuffer.isView(dv); // true
 \f[R]
 .fi
-.SH See also
+.SH SEE ALSO
 .IP \[bu] 2
 JavaScript typed arrays

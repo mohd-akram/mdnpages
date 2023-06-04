@@ -15,14 +15,17 @@
 . ftr VB CB
 . ftr VBI CBI
 .\}
-.TH "undefined" "JS" "2023-06-02" "JavaScript" "JavaScript Reference Manual"
+.TH "undefined" "JS" "June 2, 2023" "JavaScript" "JavaScript Reference Manual"
 .hy
-.SH Synopsis
+.SH NAME
+.PP
+undefined - undefined
+.SH SYNOPSIS
 .PP
 The \f[B]\f[VB]undefined\f[B]\f[R] global property represents the
 primitive value \f[V]undefined\f[R].
 It is one of JavaScript\[cq]s primitive types.
-.SH Value
+.SH VALUE
 .PP
 The primitive value \f[V]undefined\f[R].
 .PP
@@ -45,7 +48,7 @@ T}@T{
 no
 T}
 .TE
-.SH Description
+.SH DESCRIPTION
 .PP
 \f[V]undefined\f[R] is a property of the \f[I]global object\f[R].
 That is, it is a variable in global scope.
@@ -84,7 +87,7 @@ that will make your code difficult to maintain and debug.
 \f[R]
 .fi
 .RE
-.SH Examples
+.SH EXAMPLES
 .SS Strict equality and undefined
 .PP
 You can use \f[V]undefined\f[R] and the strict equality and inequality
@@ -176,7 +179,7 @@ if (y === void 0) {
 }
 \f[R]
 .fi
-.SH See also
+.SH SEE ALSO
 .IP \[bu] 2
 JavaScript\[cq]s primitive types
 .IP \[bu] 2

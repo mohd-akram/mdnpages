@@ -14,14 +14,17 @@
 . ftr VB CB
 . ftr VBI CBI
 .\}
-.TH "Set.add" "JS" "2023-06-02" "JavaScript" "JavaScript Reference Manual"
+.TH "Set.add" "JS" "June 2, 2023" "JavaScript" "JavaScript Reference Manual"
 .hy
-.SH Synopsis
+.SH NAME
+.PP
+Set.add - Set.prototype.add()
+.SH SYNOPSIS
 .PP
 The \f[B]\f[VB]add()\f[B]\f[R] method inserts a new element with a
 specified value in to a \f[V]Set\f[R] object, if there isn\[cq]t an
 element with the same value already in the \f[V]Set\f[R].
-.SH Syntax
+.SH SYNTAX
 .IP
 .nf
 \f[C]
@@ -29,16 +32,13 @@ add(value)
 \f[R]
 .fi
 .SS Parameters
-.IP \[bu] 2
-\f[V]value\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]value\f[R]
 The value of the element to add to the \f[V]Set\f[R] object.
-.RE
 .SS Return value
 .PP
 The \f[V]Set\f[R] object with added value.
-.SH Examples
+.SH EXAMPLES
 .SS Using the add() method
 .IP
 .nf
@@ -52,7 +52,7 @@ console.log(mySet);
 // Set [1, 5, \[dq]some text\[dq]]
 \f[R]
 .fi
-.SH See also
+.SH SEE ALSO
 .IP \[bu] 2
 \f[V]Set\f[R]
 .IP \[bu] 2

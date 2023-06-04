@@ -14,71 +14,53 @@
 . ftr VB CB
 . ftr VBI CBI
 .\}
-.TH "Intl.PluralRules" "JS" "2023-06-02" "JavaScript" "JavaScript Reference Manual"
+.TH "Intl.PluralRules" "JS" "June 2, 2023" "JavaScript" "JavaScript Reference Manual"
 .hy
-.SH Synopsis
+.SH NAME
+.PP
+Intl.PluralRules - Intl.PluralRules
+.SH SYNOPSIS
 .PP
 The \f[B]\f[VB]Intl.PluralRules\f[B]\f[R] object enables
 plural-sensitive formatting and plural-related language rules.
-.SH Constructor
-.IP \[bu] 2
-\f[V]Intl.PluralRules()\f[R]
-.RS 2
-.IP \[bu] 2
+.SH CONSTRUCTOR
+.TP
+\f[B]Intl.PluralRules()\f[R]
 Creates a new \f[V]Intl.PluralRules\f[R] object.
-.RE
-.SH Static methods
-.IP \[bu] 2
-\f[V]Intl.PluralRules.supportedLocalesOf()\f[R]
-.RS 2
-.IP \[bu] 2
+.SH STATIC METHODS
+.TP
+\f[B]Intl.PluralRules.supportedLocalesOf()\f[R]
 Returns an array containing those of the provided locales that are
 supported without having to fall back to the runtime\[cq]s default
 locale.
-.RE
-.SH Instance properties
+.SH INSTANCE PROPERTIES
 .PP
 These properties are defined on \f[V]Intl.PluralRules.prototype\f[R] and
 shared by all \f[V]Intl.PluralRules\f[R] instances.
-.IP \[bu] 2
-\f[V]Intl.PluralRules.prototype.constructor\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]Intl.PluralRules.prototype.constructor\f[R]
 The constructor function that created the instance object.
 For \f[V]Intl.PluralRules\f[R] instances, the initial value is the
 \f[V]Intl.PluralRules\f[R] constructor.
-.RE
-.IP \[bu] 2
-\f[V]Intl.PluralRules.prototype[\[at]\[at]toStringTag]\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]Intl.PluralRules.prototype[\[at]\[at]toStringTag]\f[R]
 The initial value of the \f[V]\[at]\[at]toStringTag\f[R] property is the
 string \f[V]\[dq]Intl.PluralRules\[dq]\f[R].
 This property is used in \f[V]Object.prototype.toString()\f[R].
-.RE
-.SH Instance methods
-.IP \[bu] 2
-\f[V]Intl.PluralRules.prototype.resolvedOptions()\f[R]
-.RS 2
-.IP \[bu] 2
+.SH INSTANCE METHODS
+.TP
+\f[B]Intl.PluralRules.prototype.resolvedOptions()\f[R]
 Returns a new object with properties reflecting the locale and collation
 options computed during initialization of the object.
-.RE
-.IP \[bu] 2
-\f[V]Intl.PluralRules.prototype.select()\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]Intl.PluralRules.prototype.select()\f[R]
 Returns a string indicating which plural rule to use for locale-aware
 formatting.
-.RE
-.IP \[bu] 2
-\f[V]Intl.PluralRules.prototype.selectRange()\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]Intl.PluralRules.prototype.selectRange()\f[R]
 This method receives two values and returns a string indicating which
 plural rule to use for locale-aware formatting.
-.RE
-.SH Examples
+.SH EXAMPLES
 .SS Using locales
 .PP
 This example shows some of the variations in localized plural rules.
@@ -102,7 +84,7 @@ new Intl.PluralRules(\[dq]ar-EG\[dq]).select(18);
 // → \[aq]many\[aq]
 \f[R]
 .fi
-.SH See also
+.SH SEE ALSO
 .IP \[bu] 2
 \f[V]Intl\f[R]
 .IP \[bu] 2

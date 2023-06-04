@@ -14,13 +14,16 @@
 . ftr VB CB
 . ftr VBI CBI
 .\}
-.TH "String.fromCodePoint" "JS" "2023-06-02" "JavaScript" "JavaScript Reference Manual"
+.TH "String.fromCodePoint" "JS" "June 2, 2023" "JavaScript" "JavaScript Reference Manual"
 .hy
-.SH Synopsis
+.SH NAME
+.PP
+String.fromCodePoint - String.fromCodePoint()
+.SH SYNOPSIS
 .PP
 The \f[B]\f[VB]String.fromCodePoint()\f[B]\f[R] static method returns a
 string created by using the specified sequence of code points.
-.SH Syntax
+.SH SYNTAX
 .IP
 .nf
 \f[C]
@@ -30,23 +33,17 @@ String.fromCodePoint(num1, num2, /* \&..., */ numN)
 \f[R]
 .fi
 .SS Parameters
-.IP \[bu] 2
-\f[V]num1, ..., numN\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]num1, ..., numN\f[R]
 A sequence of code points.
-.RE
 .SS Return value
 .PP
 A string created by using the specified sequence of code points.
 .SS Exceptions
-.IP \[bu] 2
-\f[V]RangeError\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]RangeError\f[R]
 Thrown if an invalid Unicode code point is given.
-.RE
-.SH Description
+.SH DESCRIPTION
 .PP
 This method returns a string (and \f[I]not\f[R] a \f[V]String\f[R]
 object).
@@ -54,7 +51,7 @@ object).
 Because \f[V]fromCodePoint()\f[R] is a static method of
 \f[V]String\f[R], you must call it as \f[V]String.fromCodePoint()\f[R],
 rather than as a method of a \f[V]String\f[R] object you created.
-.SH Examples
+.SH EXAMPLES
 .SS Using fromCodePoint()
 .PP
 Valid input:
@@ -107,7 +104,7 @@ UTF-32 code unit):
 String.fromCodePoint(0x1f303); // or 127747 in decimal
 \f[R]
 .fi
-.SH See also
+.SH SEE ALSO
 .IP \[bu] 2
 Polyfill of \f[V]String.fromCodePoint\f[R] in
 \f[V]core-js\f[R] (https://github.com/zloirock/core-js#ecmascript-string-and-regexp)

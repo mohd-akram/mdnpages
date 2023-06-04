@@ -14,14 +14,17 @@
 . ftr VB CB
 . ftr VBI CBI
 .\}
-.TH "Uint8ClampedArray.Uint8ClampedArray" "JS" "2023-06-02" "JavaScript" "JavaScript Reference Manual"
+.TH "Uint8ClampedArray.Uint8ClampedArray" "JS" "June 2, 2023" "JavaScript" "JavaScript Reference Manual"
 .hy
-.SH Synopsis
+.SH NAME
+.PP
+Uint8ClampedArray.Uint8ClampedArray - Uint8ClampedArray() constructor
+.SH SYNOPSIS
 .PP
 The \f[B]\f[VB]Uint8ClampedArray()\f[B]\f[R] constructor creates
 \f[V]Uint8ClampedArray\f[R] objects.
 The contents are initialized to \f[V]0\f[R].
-.SH Syntax
+.SH SYNTAX
 .IP
 .nf
 \f[C]
@@ -48,7 +51,7 @@ See \f[V]TypedArray\f[R].
 .SS Exceptions
 .PP
 See \f[V]TypedArray\f[R].
-.SH Examples
+.SH EXAMPLES
 .SS Different ways to create a Uint8ClampedArray
 .IP
 .nf
@@ -84,7 +87,7 @@ console.log(uintc8FromIterable);
 // Uint8ClampedArray [1, 2, 3]
 \f[R]
 .fi
-.SH See also
+.SH SEE ALSO
 .IP \[bu] 2
 Polyfill of \f[V]Uint8ClampedArray\f[R] in
 \f[V]core-js\f[R] (https://github.com/zloirock/core-js#ecmascript-typed-arrays)

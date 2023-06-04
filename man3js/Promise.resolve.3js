@@ -14,9 +14,12 @@
 . ftr VB CB
 . ftr VBI CBI
 .\}
-.TH "Promise.resolve" "JS" "2023-06-02" "JavaScript" "JavaScript Reference Manual"
+.TH "Promise.resolve" "JS" "June 2, 2023" "JavaScript" "JavaScript Reference Manual"
 .hy
-.SH Synopsis
+.SH NAME
+.PP
+Promise.resolve - Promise.resolve()
+.SH SYNOPSIS
 .PP
 The \f[B]\f[VB]Promise.resolve()\f[B]\f[R] static method
 \[lq]resolves\[rq] a given value to a \f[V]Promise\f[R].
@@ -28,7 +31,7 @@ will be fulfilled with the value.
 This function flattens nested layers of promise-like objects (e.g.\ a
 promise that fulfills to a promise that fulfills to something) into a
 single layer \[em] a promise that fulfills to a non-thenable value.
-.SH Syntax
+.SH SYNTAX
 .IP
 .nf
 \f[C]
@@ -36,13 +39,10 @@ Promise.resolve(value)
 \f[R]
 .fi
 .SS Parameters
-.IP \[bu] 2
-\f[V]value\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]value\f[R]
 Argument to be resolved by this \f[V]Promise\f[R].
 Can also be a \f[V]Promise\f[R] or a thenable to resolve.
-.RE
 .SS Return value
 .PP
 A \f[V]Promise\f[R] that is resolved with the given value, or the
@@ -51,7 +51,7 @@ A resolved promise can be in any of the states \[em] fulfilled,
 rejected, or pending.
 For example, resolving a rejected promise will still result in a
 rejected promise.
-.SH Description
+.SH DESCRIPTION
 .PP
 \f[V]Promise.resolve()\f[R] \f[I]resolves\f[R] a promise, which is not
 the same as fulfilling or rejecting the promise.
@@ -92,7 +92,7 @@ resolving functions as arguments.
 If the resolver function receives another thenable object, it will be
 resolved again, so that the eventual fulfillment value of the promise
 will never be thenable.
-.SH Examples
+.SH EXAMPLES
 .SS Using the static Promise.resolve method
 .IP
 .nf
@@ -289,6 +289,6 @@ const thenable = {
 Promise.resolve.call(NotPromise, thenable); // Logs \[dq]Resolved { then: [Function: then] }\[dq]
 \f[R]
 .fi
-.SH See also
+.SH SEE ALSO
 .IP \[bu] 2
 \f[V]Promise\f[R]

@@ -14,13 +14,16 @@
 . ftr VB CB
 . ftr VBI CBI
 .\}
-.TH "Map.Map" "JS" "2023-06-02" "JavaScript" "JavaScript Reference Manual"
+.TH "Map.Map" "JS" "June 2, 2023" "JavaScript" "JavaScript Reference Manual"
 .hy
-.SH Synopsis
+.SH NAME
+.PP
+Map.Map - Map() constructor
+.SH SYNOPSIS
 .PP
 The \f[B]\f[VB]Map()\f[B]\f[R] constructor creates \f[V]Map\f[R]
 objects.
-.SH Syntax
+.SH SYNTAX
 .IP
 .nf
 \f[C]
@@ -36,17 +39,14 @@ Attempting to call it without \f[V]new\f[R] throws a
 \f[V]TypeError\f[R].
 .RE
 .SS Parameters
-.IP \[bu] 2
-\f[V]iterable\f[R] \f[I](optional)\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]iterable\f[R] \f[I](optional)\f[R]
 An \f[V]Array\f[R] or other iterable object whose elements are key-value
 pairs.
 (For example, arrays with two elements, such as
 \f[V][[ 1, \[aq]one\[aq] ],[ 2, \[aq]two\[aq] ]]\f[R].)
 Each key-value pair is added to the new \f[V]Map\f[R].
-.RE
-.SH Examples
+.SH EXAMPLES
 .SS Creating a new Map
 .IP
 .nf
@@ -58,7 +58,7 @@ const myMap = new Map([
 ]);
 \f[R]
 .fi
-.SH See also
+.SH SEE ALSO
 .IP \[bu] 2
 A polyfill of \f[V]Map\f[R] is available in
 \f[V]core-js\f[R] (https://github.com/zloirock/core-js#map)

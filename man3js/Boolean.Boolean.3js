@@ -14,14 +14,17 @@
 . ftr VB CB
 . ftr VBI CBI
 .\}
-.TH "Boolean.Boolean" "JS" "2023-06-02" "JavaScript" "JavaScript Reference Manual"
+.TH "Boolean.Boolean" "JS" "June 2, 2023" "JavaScript" "JavaScript Reference Manual"
 .hy
-.SH Synopsis
+.SH NAME
+.PP
+Boolean.Boolean - Boolean() constructor
+.SH SYNOPSIS
 .PP
 The \f[B]\f[VB]Boolean()\f[B]\f[R] constructor creates \f[V]Boolean\f[R]
 objects.
 When called as a function, it returns primitive values of type Boolean.
-.SH Syntax
+.SH SYNTAX
 .IP
 .nf
 \f[C]
@@ -36,12 +39,9 @@ Boolean(value)
 See Return value.
 .RE
 .SS Parameters
-.IP \[bu] 2
-\f[V]value\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]value\f[R]
 The initial value of the \f[V]Boolean\f[R] object.
-.RE
 .SS Return value
 .PP
 When \f[V]Boolean()\f[R] is called as a constructor (with
@@ -55,7 +55,7 @@ When \f[V]Boolean()\f[R] is called as a function (without
 \f[B]Warning:\f[R] You should rarely find yourself using
 \f[V]Boolean\f[R] as a constructor.
 .RE
-.SH Description
+.SH DESCRIPTION
 .PP
 The value passed as the first parameter is converted to a boolean value.
 If the value is omitted or is \f[V]0\f[R], \f[V]-0\f[R], \f[V]0n\f[R],
@@ -72,7 +72,7 @@ used as an argument for this constructor, the result is a
 \f[V]Boolean\f[R] object with the value \f[V]false\f[R].
 This property is legacy and non-standard and should not be used.
 .RE
-.SH Examples
+.SH EXAMPLES
 .SS Creating Boolean objects with an initial value of false
 .IP
 .nf
@@ -116,6 +116,6 @@ const bArrayProto = new Boolean([]);
 const bObjProto = new Boolean({});
 \f[R]
 .fi
-.SH See also
+.SH SEE ALSO
 .IP \[bu] 2
 Boolean

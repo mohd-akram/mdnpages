@@ -15,13 +15,16 @@
 . ftr VB CB
 . ftr VBI CBI
 .\}
-.TH "Number.MAX_VALUE" "JS" "2023-06-02" "JavaScript" "JavaScript Reference Manual"
+.TH "Number.MAX_VALUE" "JS" "June 2, 2023" "JavaScript" "JavaScript Reference Manual"
 .hy
-.SH Synopsis
+.SH NAME
+.PP
+Number.MAX_VALUE - Number.MAX_VALUE
+.SH SYNOPSIS
 .PP
 The \f[B]\f[VB]Number.MAX_VALUE\f[B]\f[R] static data property
 represents the maximum numeric value representable in JavaScript.
-.SH Value
+.SH VALUE
 .PP
 21024 - 1, or approximately \f[V]1.7976931348623157E+308\f[R].
 .PP
@@ -44,7 +47,7 @@ T}@T{
 no
 T}
 .TE
-.SH Description
+.SH DESCRIPTION
 .PP
 Values larger than \f[V]MAX_VALUE\f[R] are represented as
 \f[V]Infinity\f[R] and will lose their actual value.
@@ -52,7 +55,7 @@ Values larger than \f[V]MAX_VALUE\f[R] are represented as
 Because \f[V]MAX_VALUE\f[R] is a static property of \f[V]Number\f[R],
 you always use it as \f[V]Number.MAX_VALUE\f[R], rather than as a
 property of a number value.
-.SH Examples
+.SH EXAMPLES
 .SS Using MAX_VALUE
 .PP
 The following code multiplies two numeric values.
@@ -69,7 +72,7 @@ if (num1 * num2 <= Number.MAX_VALUE) {
 }
 \f[R]
 .fi
-.SH See also
+.SH SEE ALSO
 .IP \[bu] 2
 \f[V]Number.MIN_VALUE\f[R]
 .IP \[bu] 2

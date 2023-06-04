@@ -14,9 +14,12 @@
 . ftr VB CB
 . ftr VBI CBI
 .\}
-.TH "Date.toISOString" "JS" "2023-06-02" "JavaScript" "JavaScript Reference Manual"
+.TH "Date.toISOString" "JS" "June 2, 2023" "JavaScript" "JavaScript Reference Manual"
 .hy
-.SH Synopsis
+.SH NAME
+.PP
+Date.toISOString - Date.prototype.toISOString()
+.SH SYNOPSIS
 .PP
 The \f[B]\f[VB]toISOString()\f[B]\f[R] method of \f[V]Date\f[R]
 instances returns a string representing this date in the date time
@@ -25,7 +28,7 @@ string format, a \f[I]simplified\f[R] format based on ISO
 characters long (\f[V]YYYY-MM-DDTHH:mm:ss.sssZ\f[R] or
 \f[V]±YYYYYY-MM-DDTHH:mm:ss.sssZ\f[R], respectively).
 The timezone is always UTC, as denoted by the suffix \f[V]Z\f[R].
-.SH Syntax
+.SH SYNTAX
 .IP
 .nf
 \f[C]
@@ -39,14 +42,11 @@ according to universal time.
 It\[cq]s the same format as the one required to be recognized by
 \f[V]Date.parse()\f[R].
 .SS Exceptions
-.IP \[bu] 2
-\f[V]RangeError\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]RangeError\f[R]
 Thrown if the date is invalid or if it corresponds to a year that cannot
 be represented in the date string format.
-.RE
-.SH Examples
+.SH EXAMPLES
 .SS Using toISOString()
 .IP
 .nf
@@ -56,7 +56,7 @@ const d = new Date(0);
 console.log(d.toISOString()); // \[dq]1970-01-01T00:00:00.000Z\[dq]
 \f[R]
 .fi
-.SH See also
+.SH SEE ALSO
 .IP \[bu] 2
 \f[V]Date.prototype.toLocaleDateString()\f[R]
 .IP \[bu] 2

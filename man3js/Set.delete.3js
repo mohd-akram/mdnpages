@@ -14,13 +14,16 @@
 . ftr VB CB
 . ftr VBI CBI
 .\}
-.TH "Set.delete" "JS" "2023-06-02" "JavaScript" "JavaScript Reference Manual"
+.TH "Set.delete" "JS" "June 2, 2023" "JavaScript" "JavaScript Reference Manual"
 .hy
-.SH Synopsis
+.SH NAME
+.PP
+Set.delete - Set.prototype.delete()
+.SH SYNOPSIS
 .PP
 The \f[B]\f[VB]delete()\f[B]\f[R] method removes a specified value from
 a \f[V]Set\f[R] object, if it is in the set.
-.SH Syntax
+.SH SYNTAX
 .IP
 .nf
 \f[C]
@@ -28,17 +31,14 @@ delete(value)
 \f[R]
 .fi
 .SS Parameters
-.IP \[bu] 2
-\f[V]value\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]value\f[R]
 The value to remove from \f[V]Set\f[R].
-.RE
 .SS Return value
 .PP
 Returns \f[V]true\f[R] if \f[V]value\f[R] was already in \f[V]Set\f[R];
 otherwise \f[V]false\f[R].
-.SH Examples
+.SH EXAMPLES
 .SS Using the delete() method
 .IP
 .nf
@@ -74,7 +74,7 @@ setObj.forEach((point) => {
 });
 \f[R]
 .fi
-.SH See also
+.SH SEE ALSO
 .IP \[bu] 2
 \f[V]Set\f[R]
 .IP \[bu] 2

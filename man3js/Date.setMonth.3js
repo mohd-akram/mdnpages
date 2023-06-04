@@ -14,14 +14,17 @@
 . ftr VB CB
 . ftr VBI CBI
 .\}
-.TH "Date.setMonth" "JS" "2023-06-02" "JavaScript" "JavaScript Reference Manual"
+.TH "Date.setMonth" "JS" "June 2, 2023" "JavaScript" "JavaScript Reference Manual"
 .hy
-.SH Synopsis
+.SH NAME
+.PP
+Date.setMonth - Date.prototype.setMonth()
+.SH SYNOPSIS
 .PP
 The \f[B]\f[VB]setMonth()\f[B]\f[R] method of \f[V]Date\f[R] instances
 changes the month and/or day of the month for this date according to
 local time.
-.SH Syntax
+.SH SYNTAX
 .IP
 .nf
 \f[C]
@@ -30,19 +33,13 @@ setMonth(monthValue, dateValue)
 \f[R]
 .fi
 .SS Parameters
-.IP \[bu] 2
-\f[V]monthValue\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]monthValue\f[R]
 An integer representing the month: 0 for January, 1 for February, and so
 on.
-.RE
-.IP \[bu] 2
-\f[V]dateValue\f[R] \f[I](optional)\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]dateValue\f[R] \f[I](optional)\f[R]
 An integer from 1 to 31 representing the day of the month.
-.RE
 .SS Return value
 .PP
 Changes the \f[V]Date\f[R] object in place, and returns its new
@@ -50,7 +47,7 @@ timestamp.
 If a parameter is \f[V]NaN\f[R] (or other values that get coerced to
 \f[V]NaN\f[R], such as \f[V]undefined\f[R]), the date is set to Invalid
 Date and \f[V]NaN\f[R] is returned.
-.SH Description
+.SH DESCRIPTION
 .PP
 If you do not specify the \f[V]dateValue\f[R] parameter, the same value
 as what is returned by \f[V]getDate()\f[R] is used.
@@ -69,7 +66,7 @@ return the new date.
 For example, if the current value is 31st January 2016, calling setMonth
 with a value of 1 will return 2nd March 2016.
 This is because in 2016 February had 29 days.
-.SH Examples
+.SH EXAMPLES
 .SS Using setMonth()
 .IP
 .nf
@@ -83,7 +80,7 @@ endOfMonth.setMonth(1);
 console.log(endOfMonth); //Wed Mar 02 2016 00:00:00
 \f[R]
 .fi
-.SH See also
+.SH SEE ALSO
 .IP \[bu] 2
 \f[V]Date.prototype.getMonth()\f[R]
 .IP \[bu] 2

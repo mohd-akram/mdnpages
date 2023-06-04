@@ -15,13 +15,16 @@
 . ftr VB CB
 . ftr VBI CBI
 .\}
-.TH "Infinity" "JS" "2023-06-02" "JavaScript" "JavaScript Reference Manual"
+.TH "Infinity" "JS" "June 2, 2023" "JavaScript" "JavaScript Reference Manual"
 .hy
-.SH Synopsis
+.SH NAME
+.PP
+Infinity - Infinity
+.SH SYNOPSIS
 .PP
 The \f[B]\f[VB]Infinity\f[B]\f[R] global property is a numeric value
 representing infinity.
-.SH Value
+.SH VALUE
 .PP
 The same number value as \f[V]Number.POSITIVE_INFINITY\f[R].
 .PP
@@ -44,7 +47,7 @@ T}@T{
 no
 T}
 .TE
-.SH Description
+.SH DESCRIPTION
 .PP
 \f[V]Infinity\f[R] is a property of the \f[I]global object\f[R].
 In other words, it is a variable in global scope.
@@ -54,7 +57,7 @@ other number.
 .PP
 This value behaves slightly differently than mathematical infinity; see
 \f[V]Number.POSITIVE_INFINITY\f[R] for details.
-.SH Examples
+.SH EXAMPLES
 .SS Using Infinity
 .IP
 .nf
@@ -67,7 +70,7 @@ console.log(1 / Infinity); /* 0 */
 console.log(1 / 0); /* Infinity */
 \f[R]
 .fi
-.SH See also
+.SH SEE ALSO
 .IP \[bu] 2
 \f[V]Number.NEGATIVE_INFINITY\f[R]
 .IP \[bu] 2

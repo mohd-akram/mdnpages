@@ -14,14 +14,17 @@
 . ftr VB CB
 . ftr VBI CBI
 .\}
-.TH "ArrayBuffer.byteLength" "JS" "2023-06-02" "JavaScript" "JavaScript Reference Manual"
+.TH "ArrayBuffer.byteLength" "JS" "June 2, 2023" "JavaScript" "JavaScript Reference Manual"
 .hy
-.SH Synopsis
+.SH NAME
+.PP
+ArrayBuffer.byteLength - ArrayBuffer.prototype.byteLength
+.SH SYNOPSIS
 .PP
 The \f[B]\f[VB]byteLength\f[B]\f[R] accessor property of
 \f[V]ArrayBuffer\f[R] instances returns the length (in bytes) of this
 array buffer.
-.SH Description
+.SH DESCRIPTION
 .PP
 The \f[V]byteLength\f[R] property is an accessor property whose set
 accessor function is \f[V]undefined\f[R], meaning that you can only read
@@ -29,7 +32,7 @@ this property.
 The value is established when the array is constructed and cannot be
 changed.
 This property returns 0 if this \f[V]ArrayBuffer\f[R] has been detached.
-.SH Examples
+.SH EXAMPLES
 .SS Using byteLength
 .IP
 .nf
@@ -38,6 +41,6 @@ const buffer = new ArrayBuffer(8);
 buffer.byteLength; // 8
 \f[R]
 .fi
-.SH See also
+.SH SEE ALSO
 .IP \[bu] 2
 \f[V]ArrayBuffer\f[R]

@@ -14,14 +14,17 @@
 . ftr VB CB
 . ftr VBI CBI
 .\}
-.TH "RegExp.\[at]\[at]split" "JS" "2023-06-02" "JavaScript" "JavaScript Reference Manual"
+.TH "RegExp.\[at]\[at]split" "JS" "June 2, 2023" "JavaScript" "JavaScript Reference Manual"
 .hy
-.SH Synopsis
+.SH NAME
+.PP
+RegExp.\[at]\[at]split - RegExp.prototype\[at]\[at]split
+.SH SYNOPSIS
 .PP
 The \f[B]\f[VB][\[at]\[at]split]()\f[B]\f[R] method of \f[V]RegExp\f[R]
 instances specifies how \f[V]String.prototype.split\f[R] should behave
 when the regular expression is passed in as the separator.
-.SH Syntax
+.SH SYNTAX
 .IP
 .nf
 \f[C]
@@ -30,27 +33,21 @@ regexp[Symbol.split](str, limit)
 \f[R]
 .fi
 .SS Parameters
-.IP \[bu] 2
-\f[V]str\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]str\f[R]
 The target of the split operation.
-.RE
-.IP \[bu] 2
-\f[V]limit\f[R] \f[I](optional)\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]limit\f[R] \f[I](optional)\f[R]
 Integer specifying a limit on the number of splits to be found.
 The \f[V][\[at]\[at]split]()\f[R] method still splits on every match of
 \f[V]this\f[R] RegExp pattern (or, in the Syntax above,
 \f[V]regexp\f[R]), until the number of split items match the
 \f[V]limit\f[R] or the string falls short of \f[V]this\f[R] pattern.
-.RE
 .SS Return value
 .PP
 An \f[V]Array\f[R] containing substrings as its elements.
 Capturing groups are included.
-.SH Description
+.SH DESCRIPTION
 .PP
 This method is called internally in \f[V]String.prototype.split()\f[R]
 when a \f[V]RegExp\f[R] is passed as the separator.
@@ -104,7 +101,7 @@ The returned array\[cq]s length will never exceed the \f[V]limit\f[R]
 parameter, if provided, while trying to be as close as possible.
 Therefore, the last match and its capturing groups may not all be
 present in the returned array if the array is already filled.
-.SH Examples
+.SH EXAMPLES
 .SS Direct call
 .PP
 This method can be used in almost the same way as
@@ -139,7 +136,7 @@ const result = str.split(re); // String.prototype.split calls re[\[at]\[at]split
 console.log(result); // [\[dq](2016)\[dq], \[dq](01)\[dq], \[dq](02)\[dq]]
 \f[R]
 .fi
-.SH See also
+.SH SEE ALSO
 .IP \[bu] 2
 Polyfill of \f[V]RegExp.prototype[\[at]\[at]split]\f[R] in
 \f[V]core-js\f[R] (https://github.com/zloirock/core-js#ecmascript-string-and-regexp)

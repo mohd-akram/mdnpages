@@ -14,16 +14,19 @@
 . ftr VB CB
 . ftr VBI CBI
 .\}
-.TH "RegExp.\[at]\[at]replace" "JS" "2023-06-02" "JavaScript" "JavaScript Reference Manual"
+.TH "RegExp.\[at]\[at]replace" "JS" "June 2, 2023" "JavaScript" "JavaScript Reference Manual"
 .hy
-.SH Synopsis
+.SH NAME
+.PP
+RegExp.\[at]\[at]replace - RegExp.prototype\[at]\[at]replace
+.SH SYNOPSIS
 .PP
 The \f[B]\f[VB][\[at]\[at]replace]()\f[B]\f[R] method of
 \f[V]RegExp\f[R] instances specifies how
 \f[V]String.prototype.replace()\f[R] and
 \f[V]String.prototype.replaceAll()\f[R] should behave when the regular
 expression is passed in as the pattern.
-.SH Syntax
+.SH SYNTAX
 .IP
 .nf
 \f[C]
@@ -31,18 +34,13 @@ regexp[Symbol.replace](str, replacement)
 \f[R]
 .fi
 .SS Parameters
-.IP \[bu] 2
-\f[V]str\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]str\f[R]
 A \f[V]String\f[R] that is a target of the replacement.
-.RE
-.IP \[bu] 2
-\f[V]replacement\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]replacement\f[R]
 Can be a string or a function.
-.RS 2
+.RS
 .IP \[bu] 2
 If it\[cq]s a string, it will replace the substring matched by the
 current regexp.
@@ -56,12 +54,11 @@ The arguments supplied to this function are described in the Specifying
 a function as the replacement section of
 \f[V]String.prototype.replace\f[R].
 .RE
-.RE
 .SS Return value
 .PP
 A new string, with one, some, or all matches of the pattern replaced by
 the specified replacement.
-.SH Description
+.SH DESCRIPTION
 .PP
 This method is called internally in \f[V]String.prototype.replace()\f[R]
 and \f[V]String.prototype.replaceAll()\f[R] if the \f[V]pattern\f[R]
@@ -133,7 +130,7 @@ console.log(\[dq]😄\[dq].replace(/(?:)/gu, \[dq] \[dq])); // \[dq] 😄 \[dq]
 .PP
 This method exists for customizing replace behavior in \f[V]RegExp\f[R]
 subclasses.
-.SH Examples
+.SH EXAMPLES
 .SS Direct call
 .PP
 This method can be used in almost the same way as
@@ -176,7 +173,7 @@ const newstr = str.replace(re, \[dq]#\[dq]); // String.prototype.replace calls r
 console.log(newstr); // ###34567
 \f[R]
 .fi
-.SH See also
+.SH SEE ALSO
 .IP \[bu] 2
 Polyfill of \f[V]RegExp.prototype[\[at]\[at]replace]\f[R] in
 \f[V]core-js\f[R] (https://github.com/zloirock/core-js#ecmascript-string-and-regexp)

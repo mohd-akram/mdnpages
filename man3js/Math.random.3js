@@ -14,9 +14,12 @@
 . ftr VB CB
 . ftr VBI CBI
 .\}
-.TH "Math.random" "JS" "2023-06-02" "JavaScript" "JavaScript Reference Manual"
+.TH "Math.random" "JS" "June 2, 2023" "JavaScript" "JavaScript Reference Manual"
 .hy
-.SH Synopsis
+.SH NAME
+.PP
+Math.random - Math.random()
+.SH SYNOPSIS
 .PP
 The \f[B]\f[VB]Math.random()\f[B]\f[R] static method returns a
 floating-point, pseudo-random number that\[cq]s greater than or equal to
@@ -32,7 +35,7 @@ Do not use them for anything related to security.
 Use the Web Crypto API instead, and more precisely the
 \f[V]window.crypto.getRandomValues()\f[R] method.
 .RE
-.SH Syntax
+.SH SYNTAX
 .IP
 .nf
 \f[C]
@@ -43,7 +46,7 @@ Math.random()
 .PP
 A floating-point, pseudo-random number between 0 (inclusive) and 1
 (exclusive).
-.SH Examples
+.SH EXAMPLES
 .PP
 Note that as numbers in JavaScript are IEEE 754 floating point numbers
 with round-to-nearest-even behavior, the ranges claimed for the
@@ -114,6 +117,6 @@ function getRandomIntInclusive(min, max) {
 }
 \f[R]
 .fi
-.SH See also
+.SH SEE ALSO
 .IP \[bu] 2
 \f[V]window.crypto.getRandomValues()\f[R]

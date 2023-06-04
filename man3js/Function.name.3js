@@ -15,15 +15,18 @@
 . ftr VB CB
 . ftr VBI CBI
 .\}
-.TH "Function.name" "JS" "2023-06-02" "JavaScript" "JavaScript Reference Manual"
+.TH "Function.name" "JS" "June 2, 2023" "JavaScript" "JavaScript Reference Manual"
 .hy
-.SH Synopsis
+.SH NAME
+.PP
+Function.name - Function: name
+.SH SYNOPSIS
 .PP
 The \f[B]\f[VB]name\f[B]\f[R] data property of a \f[V]Function\f[R]
 instance indicates the function\[cq]s name as specified when it was
 created, or it may be either \f[V]anonymous\f[R] or \f[V]\[aq]\[aq]\f[R]
 (an empty string) for functions created anonymously.
-.SH Value
+.SH VALUE
 .PP
 A string.
 .PP
@@ -51,7 +54,7 @@ T}
 \f[B]Note:\f[R] In non-standard, pre-ES2015 implementations the
 \f[V]configurable\f[R] attribute was \f[V]false\f[R] as well.
 .RE
-.SH Description
+.SH DESCRIPTION
 .PP
 The function\[cq]s \f[V]name\f[R] property can be used to identify the
 function in debugging tools or error messages.
@@ -304,7 +307,7 @@ new Foo().getNames();
 // \[dq]#method\[dq]
 \f[R]
 .fi
-.SH Examples
+.SH EXAMPLES
 .SS Telling the constructor name of an object
 .PP
 You can use \f[V]obj.constructor.name\f[R] to check the \[lq]class\[rq]
@@ -420,7 +423,7 @@ branch.
 If you rely on the \f[V]name\f[R] property, like in the example above,
 make sure your build pipeline doesn\[cq]t change function names, or
 don\[cq]t assume a function has a particular name.
-.SH See also
+.SH SEE ALSO
 .IP \[bu] 2
 A polyfill for functions\[cq] \f[V].name\f[R] property is available in
 \f[V]core-js\f[R] (https://github.com/zloirock/core-js#ecmascript-function)

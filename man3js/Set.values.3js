@@ -14,14 +14,17 @@
 . ftr VB CB
 . ftr VBI CBI
 .\}
-.TH "Set.values" "JS" "2023-06-02" "JavaScript" "JavaScript Reference Manual"
+.TH "Set.values" "JS" "June 2, 2023" "JavaScript" "JavaScript Reference Manual"
 .hy
-.SH Synopsis
+.SH NAME
+.PP
+Set.values - Set.prototype.values()
+.SH SYNOPSIS
 .PP
 The \f[B]\f[VB]values()\f[B]\f[R] method returns a new \f[I]set
 iterator\f[R] object that contains the values for each element in the
 \f[V]Set\f[R] object in insertion order.
-.SH Syntax
+.SH SYNTAX
 .IP
 .nf
 \f[C]
@@ -31,7 +34,7 @@ values()
 .SS Return value
 .PP
 A new iterable iterator object.
-.SH Examples
+.SH EXAMPLES
 .SS Using values()
 .IP
 .nf
@@ -48,7 +51,7 @@ console.log(setIter.next().value); // \[dq]bar\[dq]
 console.log(setIter.next().value); // \[dq]baz\[dq]
 \f[R]
 .fi
-.SH See also
+.SH SEE ALSO
 .IP \[bu] 2
 \f[V]Set.prototype.entries()\f[R]
 .IP \[bu] 2

@@ -14,9 +14,12 @@
 . ftr VB CB
 . ftr VBI CBI
 .\}
-.TH "TypedArray.\[at]\[at]species" "JS" "2023-06-02" "JavaScript" "JavaScript Reference Manual"
+.TH "TypedArray.\[at]\[at]species" "JS" "June 2, 2023" "JavaScript" "JavaScript Reference Manual"
 .hy
-.SH Synopsis
+.SH NAME
+.PP
+TypedArray.\[at]\[at]species - TypedArray[\[at]\[at]species]
+.SH SYNOPSIS
 .PP
 The \f[B]\f[VB]TypedArray[\[at]\[at]species]\f[B]\f[R] static accessor
 property returns the constructor used to construct return values from
@@ -30,7 +33,7 @@ Engine implementers are investigating whether to remove this
 feature (https://github.com/tc39/proposal-rm-builtin-subclassing).
 Avoid relying on it if possible.
 .RE
-.SH Syntax
+.SH SYNTAX
 .IP
 .nf
 \f[C]
@@ -43,7 +46,7 @@ The value of the constructor (\f[V]this\f[R]) on which
 \f[V]get \[at]\[at]species\f[R] was called.
 The return value is used to construct return values from typed array
 methods that create new typed arrays.
-.SH Description
+.SH DESCRIPTION
 .PP
 The \f[V]\[at]\[at]species\f[R] accessor property returns the default
 constructor for typed array objects.
@@ -113,7 +116,7 @@ SpiderMonkey (https://bugzil.la/1640194) and V8, the content type match
 is not checked.
 Only Safari will throw a \f[V]TypeError\f[R] in the second example.
 .RE
-.SH Examples
+.SH EXAMPLES
 .SS Species in ordinary objects
 .PP
 The \f[V]\[at]\[at]species\f[R] property returns the default constructor
@@ -145,7 +148,7 @@ class MyTypedArray extends Uint8Array {
 }
 \f[R]
 .fi
-.SH See also
+.SH SEE ALSO
 .IP \[bu] 2
 \f[V]TypedArray\f[R]
 .IP \[bu] 2

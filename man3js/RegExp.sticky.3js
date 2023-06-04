@@ -14,14 +14,17 @@
 . ftr VB CB
 . ftr VBI CBI
 .\}
-.TH "RegExp.sticky" "JS" "2023-06-02" "JavaScript" "JavaScript Reference Manual"
+.TH "RegExp.sticky" "JS" "June 2, 2023" "JavaScript" "JavaScript Reference Manual"
 .hy
-.SH Synopsis
+.SH NAME
+.PP
+RegExp.sticky - RegExp.prototype.sticky
+.SH SYNOPSIS
 .PP
 The \f[B]\f[VB]sticky\f[B]\f[R] accessor property of \f[V]RegExp\f[R]
 instances returns whether or not the \f[V]y\f[R] flag is used with this
 regular expression.
-.SH Description
+.SH DESCRIPTION
 .PP
 \f[V]RegExp.prototype.sticky\f[R] has the value \f[V]true\f[R] if the
 \f[V]y\f[R] flag was used; otherwise, \f[V]false\f[R].
@@ -128,7 +131,7 @@ For \f[V]y\f[R] regexes: \f[V]replaceAll()\f[R] throws.
 For \f[V]g\f[R] and \f[V]gy\f[R] regexes: replaces all occurrences
 matched by \f[V]exec()\f[R].
 .RE
-.SH Examples
+.SH EXAMPLES
 .SS Using a regular expression with the sticky flag
 .IP
 .nf
@@ -177,7 +180,7 @@ regex2.lastIndex = 2;
 regex2.test(\[dq].\[rs]nfoo\[dq]); // true - index 2 is the beginning of a line
 \f[R]
 .fi
-.SH See also
+.SH SEE ALSO
 .IP \[bu] 2
 Polyfill of the \f[V]sticky\f[R] flag in
 \f[V]core-js\f[R] (https://github.com/zloirock/core-js#ecmascript-string-and-regexp)

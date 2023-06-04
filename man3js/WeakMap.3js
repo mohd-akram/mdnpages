@@ -14,9 +14,12 @@
 . ftr VB CB
 . ftr VBI CBI
 .\}
-.TH "WeakMap" "JS" "2023-06-02" "JavaScript" "JavaScript Reference Manual"
+.TH "WeakMap" "JS" "June 2, 2023" "JavaScript" "JavaScript Reference Manual"
 .hy
-.SH Synopsis
+.SH NAME
+.PP
+WeakMap - WeakMap
+.SH SYNOPSIS
 .PP
 A \f[B]\f[VB]WeakMap\f[B]\f[R] is a collection of key/value pairs whose
 keys must be objects or non-registered symbols, with values of any
@@ -45,7 +48,7 @@ rather than a \f[V]WeakMap\f[R].
 .PP
 You can learn more about \f[V]WeakMap\f[R] in the WeakMap object section
 of the Keyed collections guide.
-.SH Description
+.SH DESCRIPTION
 .PP
 Keys of WeakMaps must be garbage-collectable.
 Most primitive data types can be arbitrarily created and don\[cq]t have
@@ -98,65 +101,44 @@ There is no method to obtain a list of the keys.
 If there were, the list would depend on the state of garbage collection,
 introducing non-determinism.
 If you want to have a list of keys, you should use a \f[V]Map\f[R].
-.SH Constructor
-.IP \[bu] 2
-\f[V]WeakMap()\f[R]
-.RS 2
-.IP \[bu] 2
+.SH CONSTRUCTOR
+.TP
+\f[B]WeakMap()\f[R]
 Creates a new \f[V]WeakMap\f[R] object.
-.RE
-.SH Instance properties
+.SH INSTANCE PROPERTIES
 .PP
 These properties are defined on \f[V]WeakMap.prototype\f[R] and shared
 by all \f[V]WeakMap\f[R] instances.
-.IP \[bu] 2
-\f[V]WeakMap.prototype.constructor\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]WeakMap.prototype.constructor\f[R]
 The constructor function that created the instance object.
 For \f[V]WeakMap\f[R] instances, the initial value is the
 \f[V]WeakMap\f[R] constructor.
-.RE
-.IP \[bu] 2
-\f[V]WeakMap.prototype[\[at]\[at]toStringTag]\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]WeakMap.prototype[\[at]\[at]toStringTag]\f[R]
 The initial value of the \f[V]\[at]\[at]toStringTag\f[R] property is the
 string \f[V]\[dq]WeakMap\[dq]\f[R].
 This property is used in \f[V]Object.prototype.toString()\f[R].
-.RE
-.SH Instance methods
-.IP \[bu] 2
-\f[V]WeakMap.prototype.delete()\f[R]
-.RS 2
-.IP \[bu] 2
+.SH INSTANCE METHODS
+.TP
+\f[B]WeakMap.prototype.delete()\f[R]
 Removes any value associated to the \f[V]key\f[R].
 \f[V]WeakMap.prototype.has(key)\f[R] will return \f[V]false\f[R]
 afterwards.
-.RE
-.IP \[bu] 2
-\f[V]WeakMap.prototype.get()\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]WeakMap.prototype.get()\f[R]
 Returns the value associated to the \f[V]key\f[R], or
 \f[V]undefined\f[R] if there is none.
-.RE
-.IP \[bu] 2
-\f[V]WeakMap.prototype.has()\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]WeakMap.prototype.has()\f[R]
 Returns a Boolean asserting whether a value has been associated to the
 \f[V]key\f[R] in the \f[V]WeakMap\f[R] object or not.
-.RE
-.IP \[bu] 2
-\f[V]WeakMap.prototype.set()\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]WeakMap.prototype.set()\f[R]
 Sets the \f[V]value\f[R] for the \f[V]key\f[R] in the \f[V]WeakMap\f[R]
 object.
 Returns the \f[V]WeakMap\f[R] object.
-.RE
-.SH Examples
+.SH EXAMPLES
 .SS Using WeakMap
 .IP
 .nf
@@ -400,7 +382,7 @@ A more effective way is to use a \f[V]Map\f[R] paired with
 \f[V]WeakRef\f[R] objects, which allows you to associate any type of
 input value with its respective (potentially large) computation result.
 See the WeakRefs and FinalizationRegistry example for more details.
-.SH See also
+.SH SEE ALSO
 .IP \[bu] 2
 Polyfill of \f[V]WeakMap\f[R] in
 \f[V]core-js\f[R] (https://github.com/zloirock/core-js#weakmap)

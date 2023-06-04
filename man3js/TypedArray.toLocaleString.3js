@@ -14,9 +14,12 @@
 . ftr VB CB
 . ftr VBI CBI
 .\}
-.TH "TypedArray.toLocaleString" "JS" "2023-06-02" "JavaScript" "JavaScript Reference Manual"
+.TH "TypedArray.toLocaleString" "JS" "June 2, 2023" "JavaScript" "JavaScript Reference Manual"
 .hy
-.SH Synopsis
+.SH NAME
+.PP
+TypedArray.toLocaleString - TypedArray.prototype.toLocaleString()
+.SH SYNOPSIS
 .PP
 The \f[B]\f[VB]toLocaleString()\f[B]\f[R] method returns a string
 representing the elements of the typed array.
@@ -27,7 +30,7 @@ This method has the same algorithm as
 elements are numbers, the same algorithm as
 \f[V]Number.prototype.toLocaleString()\f[R] applies for each element.
 \f[I]TypedArray\f[R] is one of the typed array types here.
-.SH Syntax
+.SH SYNTAX
 .IP
 .nf
 \f[C]
@@ -50,7 +53,7 @@ parameters and how to use them.
 .SS Return value
 .PP
 A string representing the elements of the typed array.
-.SH Examples
+.SH EXAMPLES
 .SS Using toLocaleString
 .IP
 .nf
@@ -68,7 +71,7 @@ uint.toLocaleString(\[dq]ja-JP\[dq], { style: \[dq]currency\[dq], currency: \[dq
 // \[dq]￥2,000,￥500,￥8,123,￥12,￥4,212\[dq]
 \f[R]
 .fi
-.SH See also
+.SH SEE ALSO
 .IP \[bu] 2
 \f[V]Array.prototype.toLocaleString()\f[R]
 .IP \[bu] 2

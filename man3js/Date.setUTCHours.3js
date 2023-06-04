@@ -14,14 +14,17 @@
 . ftr VB CB
 . ftr VBI CBI
 .\}
-.TH "Date.setUTCHours" "JS" "2023-06-02" "JavaScript" "JavaScript Reference Manual"
+.TH "Date.setUTCHours" "JS" "June 2, 2023" "JavaScript" "JavaScript Reference Manual"
 .hy
-.SH Synopsis
+.SH NAME
+.PP
+Date.setUTCHours - Date.prototype.setUTCHours()
+.SH SYNOPSIS
 .PP
 The \f[B]\f[VB]setUTCHours()\f[B]\f[R] method of \f[V]Date\f[R]
 instances changes the hours, minutes, seconds, and/or milliseconds for
 this date according to universal time.
-.SH Syntax
+.SH SYNTAX
 .IP
 .nf
 \f[C]
@@ -32,34 +35,22 @@ setUTCHours(hoursValue, minutesValue, secondsValue, msValue)
 \f[R]
 .fi
 .SS Parameters
-.IP \[bu] 2
-\f[V]hoursValue\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]hoursValue\f[R]
 An integer between 0 and 23 representing the hours.
-.RE
-.IP \[bu] 2
-\f[V]minutesValue\f[R] \f[I](optional)\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]minutesValue\f[R] \f[I](optional)\f[R]
 An integer between 0 and 59 representing the minutes.
-.RE
-.IP \[bu] 2
-\f[V]secondsValue\f[R] \f[I](optional)\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]secondsValue\f[R] \f[I](optional)\f[R]
 An integer between 0 and 59 representing the seconds.
 If you specify \f[V]secondsValue\f[R], you must also specify
 \f[V]minutesValue\f[R].
-.RE
-.IP \[bu] 2
-\f[V]msValue\f[R] \f[I](optional)\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]msValue\f[R] \f[I](optional)\f[R]
 An integer between 0 and 999 representing the milliseconds.
 If you specify \f[V]msValue\f[R], you must also specify
 \f[V]minutesValue\f[R] and \f[V]secondsValue\f[R].
-.RE
 .SS Return value
 .PP
 Changes the \f[V]Date\f[R] object in place, and returns its new
@@ -67,7 +58,7 @@ timestamp.
 If a parameter is \f[V]NaN\f[R] (or other values that get coerced to
 \f[V]NaN\f[R], such as \f[V]undefined\f[R]), the date is set to Invalid
 Date and \f[V]NaN\f[R] is returned.
-.SH Description
+.SH DESCRIPTION
 .PP
 If you do not specify the \f[V]minutesValue\f[R],
 \f[V]secondsValue\f[R], and \f[V]msValue\f[R] parameters, the values
@@ -80,7 +71,7 @@ If a parameter you specify is outside of the expected range,
 For example, if you use 100 for \f[V]secondsValue\f[R], the minutes will
 be incremented by 1 (\f[V]minutesValue + 1\f[R]), and 40 will be used
 for seconds.
-.SH Examples
+.SH EXAMPLES
 .SS Using setUTCHours()
 .IP
 .nf
@@ -89,7 +80,7 @@ const theBigDay = new Date();
 theBigDay.setUTCHours(8);
 \f[R]
 .fi
-.SH See also
+.SH SEE ALSO
 .IP \[bu] 2
 \f[V]Date.prototype.getUTCHours()\f[R]
 .IP \[bu] 2

@@ -14,9 +14,12 @@
 . ftr VB CB
 . ftr VBI CBI
 .\}
-.TH "ReferenceError" "JS" "2023-06-02" "JavaScript" "JavaScript Reference Manual"
+.TH "ReferenceError" "JS" "June 2, 2023" "JavaScript" "JavaScript Reference Manual"
 .hy
-.SH Synopsis
+.SH NAME
+.PP
+ReferenceError - ReferenceError
+.SH SYNOPSIS
 .PP
 The \f[B]\f[VB]ReferenceError\f[B]\f[R] object represents an error when
 a variable that doesn\[cq]t exist (or hasn\[cq]t yet been initialized)
@@ -27,40 +30,31 @@ with \f[V]structuredClone()\f[R] or copied between Workers using
 \f[V]postMessage()\f[R].
 .PP
 \f[V]ReferenceError\f[R] is a subclass of \f[V]Error\f[R].
-.SH Constructor
-.IP \[bu] 2
-\f[V]ReferenceError()\f[R]
-.RS 2
-.IP \[bu] 2
+.SH CONSTRUCTOR
+.TP
+\f[B]ReferenceError()\f[R]
 Creates a new \f[V]ReferenceError\f[R] object.
-.RE
-.SH Instance properties
+.SH INSTANCE PROPERTIES
 .PP
 \f[I]Also inherits instance properties from its parent
 \f[VI]Error\f[I]\f[R].
 .PP
 These properties are defined on \f[V]ReferenceError.prototype\f[R] and
 shared by all \f[V]ReferenceError\f[R] instances.
-.IP \[bu] 2
-\f[V]ReferenceError.prototype.constructor\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]ReferenceError.prototype.constructor\f[R]
 The constructor function that created the instance object.
 For \f[V]ReferenceError\f[R] instances, the initial value is the
 \f[V]ReferenceError\f[R] constructor.
-.RE
-.IP \[bu] 2
-\f[V]ReferenceError.prototype.name\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]ReferenceError.prototype.name\f[R]
 Represents the name for the type of error.
 For \f[V]ReferenceError.prototype.name\f[R], the initial value is
 \f[V]\[dq]ReferenceError\[dq]\f[R].
-.RE
-.SH Instance methods
+.SH INSTANCE METHODS
 .PP
 \f[I]Inherits instance methods from its parent \f[VI]Error\f[I]\f[R].
-.SH Examples
+.SH EXAMPLES
 .SS Catching a ReferenceError
 .IP
 .nf
@@ -89,6 +83,6 @@ try {
 }
 \f[R]
 .fi
-.SH See also
+.SH SEE ALSO
 .IP \[bu] 2
 \f[V]Error\f[R]

@@ -14,15 +14,18 @@
 . ftr VB CB
 . ftr VBI CBI
 .\}
-.TH "Reflect.getOwnPropertyDescriptor" "JS" "2023-06-02" "JavaScript" "JavaScript Reference Manual"
+.TH "Reflect.getOwnPropertyDescriptor" "JS" "June 2, 2023" "JavaScript" "JavaScript Reference Manual"
 .hy
-.SH Synopsis
+.SH NAME
+.PP
+Reflect.getOwnPropertyDescriptor - Reflect.getOwnPropertyDescriptor()
+.SH SYNOPSIS
 .PP
 The \f[B]\f[VB]Reflect.getOwnPropertyDescriptor()\f[B]\f[R] static
 method is like \f[V]Object.getOwnPropertyDescriptor()\f[R].
 It returns a property descriptor of the given property if it exists on
 the object, \f[V]undefined\f[R] otherwise.
-.SH Syntax
+.SH SYNTAX
 .IP
 .nf
 \f[C]
@@ -30,30 +33,21 @@ Reflect.getOwnPropertyDescriptor(target, propertyKey)
 \f[R]
 .fi
 .SS Parameters
-.IP \[bu] 2
-\f[V]target\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]target\f[R]
 The target object in which to look for the property.
-.RE
-.IP \[bu] 2
-\f[V]propertyKey\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]propertyKey\f[R]
 The name of the property to get an own property descriptor for.
-.RE
 .SS Return value
 .PP
 A property descriptor object if the property exists as an own property
 of \f[V]target\f[R]; otherwise, \f[V]undefined\f[R].
 .SS Exceptions
-.IP \[bu] 2
-\f[V]TypeError\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]TypeError\f[R]
 Thrown if \f[V]target\f[R] is not an object.
-.RE
-.SH Description
+.SH DESCRIPTION
 .PP
 \f[V]Reflect.getOwnPropertyDescriptor()\f[R] provides the reflective
 semantic of retrieving the property descriptor of an object.
@@ -65,7 +59,7 @@ how non-object targets are handled.
 .PP
 \f[V]Reflect.getOwnPropertyDescriptor()\f[R] invokes the
 \f[V][[GetOwnProperty]]\f[R] object internal method of \f[V]target\f[R].
-.SH Examples
+.SH EXAMPLES
 .SS Using Reflect.getOwnPropertyDescriptor()
 .IP
 .nf
@@ -96,7 +90,7 @@ Object.getOwnPropertyDescriptor(\[dq]foo\[dq], 0);
 // { value: \[dq]f\[dq], writable: false, enumerable: true, configurable: false }
 \f[R]
 .fi
-.SH See also
+.SH SEE ALSO
 .IP \[bu] 2
 Polyfill of \f[V]Reflect.getOwnPropertyDescriptor\f[R] in
 \f[V]core-js\f[R] (https://github.com/zloirock/core-js#ecmascript-reflect)

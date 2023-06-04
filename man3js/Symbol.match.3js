@@ -15,9 +15,12 @@
 . ftr VB CB
 . ftr VBI CBI
 .\}
-.TH "Symbol.match" "JS" "2023-06-02" "JavaScript" "JavaScript Reference Manual"
+.TH "Symbol.match" "JS" "June 2, 2023" "JavaScript" "JavaScript Reference Manual"
 .hy
-.SH Synopsis
+.SH NAME
+.PP
+Symbol.match - Symbol.match
+.SH SYNOPSIS
 .PP
 The \f[B]\f[VB]Symbol.match\f[B]\f[R] static data property represents
 the well-known symbol \f[V]\[at]\[at]match\f[R].
@@ -29,7 +32,7 @@ a regex.
 .PP
 For more information, see \f[V]RegExp.prototype[\[at]\[at]match]()\f[R]
 and \f[V]String.prototype.match()\f[R].
-.SH Value
+.SH VALUE
 .PP
 The well-known symbol \f[V]\[at]\[at]match\f[R].
 .PP
@@ -52,7 +55,7 @@ T}@T{
 no
 T}
 .TE
-.SH Description
+.SH DESCRIPTION
 .PP
 This function is also used to identify if objects have the behavior of
 regular expressions.
@@ -63,7 +66,7 @@ a regular expression and will throw a \f[V]TypeError\f[R] if they are.
 Now, if the \f[V]match\f[R] symbol is set to \f[V]false\f[R] (or a Falsy
 value except \f[V]undefined\f[R]), it indicates that the object is not
 intended to be used as a regular expression object.
-.SH Examples
+.SH EXAMPLES
 .SS Marking a RegExp as not a regex
 .PP
 The following code will throw a \f[V]TypeError\f[R]:
@@ -90,7 +93,7 @@ re[Symbol.match] = false;
 \[dq]/baz/\[dq].endsWith(re); // false
 \f[R]
 .fi
-.SH See also
+.SH SEE ALSO
 .IP \[bu] 2
 Polyfill of \f[V]Symbol.match\f[R] in
 \f[V]core-js\f[R] (https://github.com/zloirock/core-js#ecmascript-symbol)

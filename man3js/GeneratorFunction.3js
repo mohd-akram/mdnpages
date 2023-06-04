@@ -14,9 +14,12 @@
 . ftr VB CB
 . ftr VBI CBI
 .\}
-.TH "GeneratorFunction" "JS" "2023-06-02" "JavaScript" "JavaScript Reference Manual"
+.TH "GeneratorFunction" "JS" "June 2, 2023" "JavaScript" "JavaScript Reference Manual"
 .hy
-.SH Synopsis
+.SH NAME
+.PP
+GeneratorFunction - GeneratorFunction
+.SH SYNOPSIS
 .PP
 The \f[B]\f[VB]GeneratorFunction\f[B]\f[R] object provides methods for
 generator functions.
@@ -33,32 +36,24 @@ const GeneratorFunction = function* () {}.constructor;
 .fi
 .PP
 \f[V]GeneratorFunction\f[R] is a subclass of \f[V]Function\f[R].
-.SH Constructor
-.IP \[bu] 2
-\f[V]GeneratorFunction()\f[R]
-.RS 2
-.IP \[bu] 2
+.SH CONSTRUCTOR
+.TP
+\f[B]GeneratorFunction()\f[R]
 Creates a new \f[V]GeneratorFunction\f[R] object.
-.RE
-.SH Instance properties
+.SH INSTANCE PROPERTIES
 .PP
 \f[I]Also inherits instance properties from its parent
 \f[VI]Function\f[I]\f[R].
 .PP
 These properties are defined on \f[V]GeneratorFunction.prototype\f[R]
 and shared by all \f[V]GeneratorFunction\f[R] instances.
-.IP \[bu] 2
-\f[V]GeneratorFunction.prototype.constructor\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]GeneratorFunction.prototype.constructor\f[R]
 The constructor function that created the instance object.
 For \f[V]GeneratorFunction\f[R] instances, the initial value is the
 \f[V]GeneratorFunction\f[R] constructor.
-.RE
-.IP \[bu] 2
-\f[V]GeneratorFunction.prototype.prototype\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]GeneratorFunction.prototype.prototype\f[R]
 All generator functions share the same \f[V]prototype\f[R] property,
 which is \f[V]Generator.prototype\f[R].
 Each generator function instance also has its own \f[V]prototype\f[R]
@@ -67,19 +62,15 @@ When the generator function is called, the returned generator object
 inherits from the generator function\[cq]s \f[V]prototype\f[R] property,
 which in turn inherits from
 \f[V]GeneratorFunction.prototype.prototype\f[R].
-.RE
-.IP \[bu] 2
-\f[V]GeneratorFunction.prototype[\[at]\[at]toStringTag]\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]GeneratorFunction.prototype[\[at]\[at]toStringTag]\f[R]
 The initial value of the \f[V]\[at]\[at]toStringTag\f[R] property is the
 string \f[V]\[dq]GeneratorFunction\[dq]\f[R].
 This property is used in \f[V]Object.prototype.toString()\f[R].
-.RE
-.SH Instance methods
+.SH INSTANCE METHODS
 .PP
 \f[I]Inherits instance methods from its parent \f[VI]Function\f[I]\f[R].
-.SH See also
+.SH SEE ALSO
 .IP \[bu] 2
 \f[V]function*\f[R] declaration
 .IP \[bu] 2

@@ -14,16 +14,19 @@
 . ftr VB CB
 . ftr VBI CBI
 .\}
-.TH "Math.atan" "JS" "2023-06-02" "JavaScript" "JavaScript Reference Manual"
+.TH "Math.atan" "JS" "June 2, 2023" "JavaScript" "JavaScript Reference Manual"
 .hy
-.SH Synopsis
+.SH NAME
+.PP
+Math.atan - Math.atan()
+.SH SYNOPSIS
 .PP
 The \f[B]\f[VB]Math.atan()\f[B]\f[R] static method returns the inverse
 tangent (in radians) of a number, that is
 .PP
 𝙼𝚊𝚝𝚑.𝚊𝚝𝚊𝚗(𝚡)=arctan(x)=the unique\ y∊[−π2,π2]\ such that\ tan(y)=x = (x)
 = y (y) = x
-.SH Syntax
+.SH SYNTAX
 .IP
 .nf
 \f[C]
@@ -31,24 +34,21 @@ Math.atan(x)
 \f[R]
 .fi
 .SS Parameters
-.IP \[bu] 2
-\f[V]x\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]x\f[R]
 A number.
-.RE
 .SS Return value
 .PP
 The inverse tangent (angle in radians between -π2- and π2, inclusive) of
 \f[V]x\f[R].
 If \f[V]x\f[R] is \f[V]Infinity\f[R], it returns π2.
 If \f[V]x\f[R] is \f[V]-Infinity\f[R], it returns -π2-.
-.SH Description
+.SH DESCRIPTION
 .PP
 Because \f[V]atan()\f[R] is a static method of \f[V]Math\f[R], you
 always use it as \f[V]Math.atan()\f[R], rather than as a method of a
 \f[V]Math\f[R] object you created (\f[V]Math\f[R] is not a constructor).
-.SH Examples
+.SH EXAMPLES
 .SS Using Math.atan()
 .IP
 .nf
@@ -68,7 +68,7 @@ Note that you may want to avoid the \f[V]theta\f[R] function and use
 \f[V]Math.atan2()\f[R] instead, which has a wider range (between -π and
 π) and avoids outputting \f[V]NaN\f[R] for cases such as when
 \f[V]x\f[R] is \f[V]0\f[R].
-.SH See also
+.SH SEE ALSO
 .IP \[bu] 2
 \f[V]Math.acos()\f[R]
 .IP \[bu] 2

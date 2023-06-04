@@ -14,13 +14,16 @@
 . ftr VB CB
 . ftr VBI CBI
 .\}
-.TH "Symbol.\[at]\[at]toPrimitive" "JS" "2023-06-02" "JavaScript" "JavaScript Reference Manual"
+.TH "Symbol.\[at]\[at]toPrimitive" "JS" "June 2, 2023" "JavaScript" "JavaScript Reference Manual"
 .hy
-.SH Synopsis
+.SH NAME
+.PP
+Symbol.\[at]\[at]toPrimitive - Symbol.prototype\[at]\[at]toPrimitive
+.SH SYNOPSIS
 .PP
 The \f[B]\f[VB][\[at]\[at]toPrimitive]()\f[B]\f[R] method converts a
 Symbol object to a primitive value.
-.SH Syntax
+.SH SYNTAX
 .IP
 .nf
 \f[C]
@@ -30,7 +33,7 @@ Symbol()[Symbol.toPrimitive](hint)
 .SS Return value
 .PP
 The primitive value of the specified \f[V]Symbol\f[R] object.
-.SH Description
+.SH DESCRIPTION
 .PP
 The \f[V][\[at]\[at]toPrimitive]()\f[R] method of \f[V]Symbol\f[R]
 returns the primitive value of a Symbol object as a Symbol data type.
@@ -41,7 +44,7 @@ convert an object to a primitive value.
 You rarely need to invoke the \f[V][\[at]\[at]toPrimitive]()\f[R] method
 yourself; JavaScript automatically invokes it when encountering an
 object where a primitive value is expected.
-.SH Examples
+.SH EXAMPLES
 .SS Using \[at]\[at]toPrimitive
 .IP
 .nf
@@ -50,6 +53,6 @@ const sym = Symbol(\[dq]example\[dq]);
 sym === sym[Symbol.toPrimitive](); // true
 \f[R]
 .fi
-.SH See also
+.SH SEE ALSO
 .IP \[bu] 2
 \f[V]Symbol.toPrimitive\f[R]

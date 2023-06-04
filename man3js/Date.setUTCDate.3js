@@ -14,13 +14,16 @@
 . ftr VB CB
 . ftr VBI CBI
 .\}
-.TH "Date.setUTCDate" "JS" "2023-06-02" "JavaScript" "JavaScript Reference Manual"
+.TH "Date.setUTCDate" "JS" "June 2, 2023" "JavaScript" "JavaScript Reference Manual"
 .hy
-.SH Synopsis
+.SH NAME
+.PP
+Date.setUTCDate - Date.prototype.setUTCDate()
+.SH SYNOPSIS
 .PP
 The \f[B]\f[VB]setUTCDate()\f[B]\f[R] method of \f[V]Date\f[R] instances
 changes the day of the month for this date according to universal time.
-.SH Syntax
+.SH SYNTAX
 .IP
 .nf
 \f[C]
@@ -28,12 +31,9 @@ setUTCDate(dateValue)
 \f[R]
 .fi
 .SS Parameters
-.IP \[bu] 2
-\f[V]dateValue\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]dateValue\f[R]
 An integer from 1 to 31 representing the day of the month.
-.RE
 .SS Return value
 .PP
 Changes the \f[V]Date\f[R] object in place, and returns its new
@@ -41,7 +41,7 @@ timestamp.
 If \f[V]dateValue\f[R] is \f[V]NaN\f[R] (or other values that get
 coerced to \f[V]NaN\f[R], such as \f[V]undefined\f[R]), the date is set
 to Invalid Date and \f[V]NaN\f[R] is returned.
-.SH Description
+.SH DESCRIPTION
 .PP
 If the \f[V]dateValue\f[R] is outside of the range of date values for
 the month, \f[V]setDate()\f[R] will update the \f[V]Date\f[R] object
@@ -57,7 +57,7 @@ If a negative number is provided for \f[V]dateValue\f[R], the date will
 be set counting backwards from the last day of the previous month.
 -1 would result in the date being set to 1 day before the last day of
 the previous month.
-.SH Examples
+.SH EXAMPLES
 .SS Using setUTCDate()
 .IP
 .nf
@@ -66,7 +66,7 @@ const theBigDay = new Date();
 theBigDay.setUTCDate(20);
 \f[R]
 .fi
-.SH See also
+.SH SEE ALSO
 .IP \[bu] 2
 \f[V]Date.prototype.getUTCDate()\f[R]
 .IP \[bu] 2

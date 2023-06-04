@@ -14,9 +14,12 @@
 . ftr VB CB
 . ftr VBI CBI
 .\}
-.TH "RegExp.input" "JS" "2023-06-02" "JavaScript" "JavaScript Reference Manual"
+.TH "RegExp.input" "JS" "June 2, 2023" "JavaScript" "JavaScript Reference Manual"
 .hy
-.SH Synopsis
+.SH NAME
+.PP
+RegExp.input - RegExp.input ($_)
+.SH SYNOPSIS
 .PP
 \f[I](deprecated)\f[R]
 .RS
@@ -29,7 +32,7 @@ See deprecated RegExp features for more information.
 The \f[B]\f[VB]RegExp.input\f[B]\f[R] static accessor property returns
 the string against which a regular expression is matched.
 \f[V]RegExp.$_\f[R] is an alias for this property.
-.SH Description
+.SH DESCRIPTION
 .PP
 Because \f[V]input\f[R] is a static property of \f[V]RegExp\f[R], you
 always use it as \f[V]RegExp.input\f[R] or \f[V]RegExp.$_\f[R], rather
@@ -41,7 +44,7 @@ If no matches have been made, \f[V]input\f[R] is an empty string.
 You can set the value of \f[V]input\f[R], but this does not affect other
 behaviors of the regex, and the value will be overwritten again when the
 next successful match is made.
-.SH Examples
+.SH EXAMPLES
 .SS Using input and $_
 .IP
 .nf
@@ -55,7 +58,7 @@ re.test(\[dq]hi world!\[dq]); // new test, matching
 RegExp.$_; // \[dq]hi world!\[dq]
 \f[R]
 .fi
-.SH See also
+.SH SEE ALSO
 .IP \[bu] 2
 \f[V]RegExp.lastMatch ($&amp;)\f[R]
 .IP \[bu] 2

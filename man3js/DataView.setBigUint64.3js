@@ -14,14 +14,17 @@
 . ftr VB CB
 . ftr VBI CBI
 .\}
-.TH "DataView.setBigUint64" "JS" "2023-06-02" "JavaScript" "JavaScript Reference Manual"
+.TH "DataView.setBigUint64" "JS" "June 2, 2023" "JavaScript" "JavaScript Reference Manual"
 .hy
-.SH Synopsis
+.SH NAME
+.PP
+DataView.setBigUint64 - DataView.prototype.setBigUint64()
+.SH SYNOPSIS
 .PP
 The \f[B]\f[VB]setBigUint64()\f[B]\f[R] method stores an unsigned 64-bit
 integer (unsigned long long) value at the specified byte offset from the
 start of the \f[V]DataView\f[R].
-.SH Syntax
+.SH SYNTAX
 .IP
 .nf
 \f[C]
@@ -30,42 +33,30 @@ setBigUint64(byteOffset, value, littleEndian)
 \f[R]
 .fi
 .SS Parameters
-.IP \[bu] 2
-\f[V]byteOffset\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]byteOffset\f[R]
 The offset, in bytes, from the start of the view to store the data from.
-.RE
-.IP \[bu] 2
-\f[V]value\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]value\f[R]
 The value to set as a \f[V]BigInt\f[R].
 The highest possible value that fits in an unsigned 64-bit integer is
 \f[V]2n ** 64n - 1n\f[R] (\f[V]18446744073709551615n\f[R]).
 Upon overflow, it will be zero (\f[V]0n\f[R]).
-.RE
-.IP \[bu] 2
-\f[V]littleEndian\f[R] \f[I](optional)\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]littleEndian\f[R] \f[I](optional)\f[R]
 Indicates whether the 64-bit int is stored in little- or big-endian
 format.
 If \f[V]false\f[R] or \f[V]undefined\f[R], a big-endian value is
 written.
-.RE
 .SS Return value
 .PP
 \f[V]undefined\f[R].
 .SS Errors thrown
-.IP \[bu] 2
-\f[V]RangeError\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]RangeError\f[R]
 Thrown if the \f[V]byteOffset\f[R] is set such that it would store
 beyond the end of the view.
-.RE
-.SH Examples
+.SH EXAMPLES
 .SS Using the setBigUint64() method
 .IP
 .nf
@@ -76,7 +67,7 @@ dataview.setBigUint64(0, 3n);
 dataview.getBigUint64(0); // 3n
 \f[R]
 .fi
-.SH See also
+.SH SEE ALSO
 .IP \[bu] 2
 \f[V]DataView\f[R]
 .IP \[bu] 2

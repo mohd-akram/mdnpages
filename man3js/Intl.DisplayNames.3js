@@ -14,65 +14,50 @@
 . ftr VB CB
 . ftr VBI CBI
 .\}
-.TH "Intl.DisplayNames" "JS" "2023-06-02" "JavaScript" "JavaScript Reference Manual"
+.TH "Intl.DisplayNames" "JS" "June 2, 2023" "JavaScript" "JavaScript Reference Manual"
 .hy
-.SH Synopsis
+.SH NAME
+.PP
+Intl.DisplayNames - Intl.DisplayNames
+.SH SYNOPSIS
 .PP
 The \f[B]\f[VB]Intl.DisplayNames\f[B]\f[R] object enables the consistent
 translation of language, region and script display names.
-.SH Constructor
-.IP \[bu] 2
-\f[V]Intl.DisplayNames()\f[R]
-.RS 2
-.IP \[bu] 2
+.SH CONSTRUCTOR
+.TP
+\f[B]Intl.DisplayNames()\f[R]
 Creates a new \f[V]Intl.DisplayNames\f[R] object.
-.RE
-.SH Static methods
-.IP \[bu] 2
-\f[V]Intl.DisplayNames.supportedLocalesOf()\f[R]
-.RS 2
-.IP \[bu] 2
+.SH STATIC METHODS
+.TP
+\f[B]Intl.DisplayNames.supportedLocalesOf()\f[R]
 Returns an array containing those of the provided locales that are
 supported without having to fall back to the runtime\[cq]s default
 locale.
-.RE
-.SH Instance properties
+.SH INSTANCE PROPERTIES
 .PP
 These properties are defined on \f[V]Intl.DisplayNames.prototype\f[R]
 and shared by all \f[V]Intl.DisplayNames\f[R] instances.
-.IP \[bu] 2
-\f[V]Intl.DisplayNames.prototype.constructor\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]Intl.DisplayNames.prototype.constructor\f[R]
 The constructor function that created the instance object.
 For \f[V]Intl.DisplayNames\f[R] instances, the initial value is the
 \f[V]Intl.DisplayNames\f[R] constructor.
-.RE
-.IP \[bu] 2
-\f[V]Intl.DisplayNames.prototype[\[at]\[at]toStringTag]\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]Intl.DisplayNames.prototype[\[at]\[at]toStringTag]\f[R]
 The initial value of the \f[V]\[at]\[at]toStringTag\f[R] property is the
 string \f[V]\[dq]Intl.DisplayNames\[dq]\f[R].
 This property is used in \f[V]Object.prototype.toString()\f[R].
-.RE
-.SH Instance methods
-.IP \[bu] 2
-\f[V]Intl.DisplayNames.prototype.of()\f[R]
-.RS 2
-.IP \[bu] 2
+.SH INSTANCE METHODS
+.TP
+\f[B]Intl.DisplayNames.prototype.of()\f[R]
 This method receives a \f[V]code\f[R] and returns a string based on the
 locale and options provided when instantiating
 \f[V]Intl.DisplayNames\f[R].
-.RE
-.IP \[bu] 2
-\f[V]Intl.DisplayNames.prototype.resolvedOptions()\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]Intl.DisplayNames.prototype.resolvedOptions()\f[R]
 Returns a new object with properties reflecting the locale and
 formatting options computed during initialization of the object.
-.RE
-.SH Examples
+.SH EXAMPLES
 .SS Region Code Display Names
 .PP
 To create an \f[V]Intl.DisplayNames\f[R] for a locale and get the
@@ -164,6 +149,6 @@ currencyNames.of(\[dq]TWD\[dq]); // \[dq]新台幣\[dq]
 currencyNames.of(\[dq]CNY\[dq]); // \[dq]人民幣\[dq]
 \f[R]
 .fi
-.SH See also
+.SH SEE ALSO
 .IP \[bu] 2
 \f[V]Intl\f[R]

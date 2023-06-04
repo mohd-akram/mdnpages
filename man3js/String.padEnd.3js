@@ -14,15 +14,18 @@
 . ftr VB CB
 . ftr VBI CBI
 .\}
-.TH "String.padEnd" "JS" "2023-06-02" "JavaScript" "JavaScript Reference Manual"
+.TH "String.padEnd" "JS" "June 2, 2023" "JavaScript" "JavaScript Reference Manual"
 .hy
-.SH Synopsis
+.SH NAME
+.PP
+String.padEnd - String.prototype.padEnd()
+.SH SYNOPSIS
 .PP
 The \f[B]\f[VB]padEnd()\f[B]\f[R] method pads the current string with a
 given string (repeated, if needed) so that the resulting string reaches
 a given length.
 The padding is applied from the end of the current string.
-.SH Syntax
+.SH SYNTAX
 .IP
 .nf
 \f[C]
@@ -31,31 +34,25 @@ padEnd(targetLength, padString)
 \f[R]
 .fi
 .SS Parameters
-.IP \[bu] 2
-\f[V]targetLength\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]targetLength\f[R]
 The length of the resulting string once the current \f[V]str\f[R] has
 been padded.
 If the value is less than or equal to \f[V]str.length\f[R], the current
 string will be returned as-is.
-.RE
-.IP \[bu] 2
-\f[V]padString\f[R] \f[I](optional)\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]padString\f[R] \f[I](optional)\f[R]
 The string to pad the current \f[V]str\f[R] with.
 If \f[V]padString\f[R] is too long to stay within
 \f[V]targetLength\f[R], it will be truncated: for left-to-right
 languages the left-most part and for right-to-left languages the
 right-most will be applied.
 The default value for this parameter is \[rq] \[rq] (\f[V]U+0020\f[R]).
-.RE
 .SS Return value
 .PP
 A \f[V]String\f[R] of the specified \f[V]targetLength\f[R] with the
 \f[V]padString\f[R] applied at the end of the current \f[V]str\f[R].
-.SH Examples
+.SH EXAMPLES
 .SS Using padEnd
 .IP
 .nf
@@ -66,7 +63,7 @@ A \f[V]String\f[R] of the specified \f[V]targetLength\f[R] with the
 \[dq]abc\[dq].padEnd(1); // \[dq]abc\[dq]
 \f[R]
 .fi
-.SH See also
+.SH SEE ALSO
 .IP \[bu] 2
 Polyfill of \f[V]String.prototype.padEnd\f[R] in
 \f[V]core-js\f[R] (https://github.com/zloirock/core-js#ecmascript-string-and-regexp)

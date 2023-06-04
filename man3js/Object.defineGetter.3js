@@ -14,9 +14,12 @@
 . ftr VB CB
 . ftr VBI CBI
 .\}
-.TH "Object.defineGetter" "JS" "2023-06-02" "JavaScript" "JavaScript Reference Manual"
+.TH "Object.defineGetter" "JS" "June 2, 2023" "JavaScript" "JavaScript Reference Manual"
 .hy
-.SH Synopsis
+.SH NAME
+.PP
+Object.defineGetter - Object.prototype.__defineGetter__()
+.SH SYNOPSIS
 .PP
 \f[I](deprecated)\f[R]
 .RS
@@ -31,7 +34,7 @@ It may not work everywhere.
 .PP
 The \f[B]\f[VB]__defineGetter__()\f[B]\f[R] method binds an object\[cq]s
 property to a function to be called when that property is looked up.
-.SH Syntax
+.SH SYNTAX
 .IP
 .nf
 \f[C]
@@ -39,30 +42,21 @@ __defineGetter__(prop, func)
 \f[R]
 .fi
 .SS Parameters
-.IP \[bu] 2
-\f[V]prop\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]prop\f[R]
 A string containing the name of the property that the getter
 \f[V]func\f[R] is bound to.
-.RE
-.IP \[bu] 2
-\f[V]func\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]func\f[R]
 A function to be bound to a lookup of the specified property.
-.RE
 .SS Return value
 .PP
 \f[V]undefined\f[R].
 .SS Exceptions
-.IP \[bu] 2
-\f[V]TypeError\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]TypeError\f[R]
 Thrown if \f[V]func\f[R] is not a function.
-.RE
-.SH Description
+.SH DESCRIPTION
 .PP
 All objects that inherit from \f[V]Object.prototype\f[R] (that is, all
 except \f[V]null\f[R]-prototype objects) inherit the
@@ -81,7 +75,7 @@ usage, it\[cq]s unlikely to be removed.
 If a browser implements \f[V]__defineGetter__()\f[R], it also needs to
 implement the \f[V]__lookupGetter__()\f[R],
 \f[V]__lookupSetter__()\f[R], and \f[V]__defineSetter__()\f[R] methods.
-.SH Examples
+.SH EXAMPLES
 .SS Using __defineGetter__()
 .IP
 .nf
@@ -132,7 +126,7 @@ Object.defineProperty(o, \[dq]gimmeFive\[dq], {
 console.log(o.gimmeFive); // 5
 \f[R]
 .fi
-.SH See also
+.SH SEE ALSO
 .IP \[bu] 2
 Polyfill of \f[V]Object.prototype.__defineGetter__\f[R] in
 \f[V]core-js\f[R] (https://github.com/zloirock/core-js#ecmascript-object)

@@ -14,14 +14,17 @@
 . ftr VB CB
 . ftr VBI CBI
 .\}
-.TH "BigInt.asUintN" "JS" "2023-06-02" "JavaScript" "JavaScript Reference Manual"
+.TH "BigInt.asUintN" "JS" "June 2, 2023" "JavaScript" "JavaScript Reference Manual"
 .hy
-.SH Synopsis
+.SH NAME
+.PP
+BigInt.asUintN - BigInt.asUintN()
+.SH SYNOPSIS
 .PP
 The \f[B]\f[VB]BigInt.asUintN()\f[B]\f[R] static method truncates a
 \f[V]BigInt\f[R] value to the given number of least significant bits and
 returns that value as an unsigned integer.
-.SH Syntax
+.SH SYNTAX
 .IP
 .nf
 \f[C]
@@ -29,31 +32,22 @@ BigInt.asUintN(bits, bigint)
 \f[R]
 .fi
 .SS Parameters
-.IP \[bu] 2
-\f[V]bits\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]bits\f[R]
 The amount of bits available for the returned BigInt.
 Should be an integer between 0 and 253 - 1, inclusive.
-.RE
-.IP \[bu] 2
-\f[V]bigint\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]bigint\f[R]
 The BigInt value to truncate to fit into the supplied bits.
-.RE
 .SS Return value
 .PP
 The value of \f[V]bigint\f[R] modulo 2\[ha]\f[V]bits\f[R], as an
 unsigned integer.
 .SS Exceptions
-.IP \[bu] 2
-\f[V]RangeError\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]RangeError\f[R]
 Thrown if \f[V]bits\f[R] is negative or greater than 253 - 1.
-.RE
-.SH Description
+.SH DESCRIPTION
 .PP
 The \f[V]BigInt.asUintN\f[R] method truncates a \f[V]BigInt\f[R] value
 to the given number of bits, and interprets the result as an unsigned
@@ -82,7 +76,7 @@ static property of \f[V]BigInt\f[R], so you always use it as
 Exposing \f[V]asUintN()\f[R] as a \[lq]standard library function\[rq]
 allows interop with
 asm.js (https://github.com/tc39/proposal-bigint/blob/master/ADVANCED.md#dont-break-asmjs).
-.SH Examples
+.SH EXAMPLES
 .SS Staying in 64-bit ranges
 .PP
 The \f[V]BigInt.asUintN()\f[R] method can be useful to stay in the range
@@ -98,7 +92,7 @@ BigInt.asUintN(64, max + 1n); // 0n
 // zero because of overflow: the lowest 64 bits are all zeros
 \f[R]
 .fi
-.SH See also
+.SH SEE ALSO
 .IP \[bu] 2
 \f[V]BigInt\f[R]
 .IP \[bu] 2

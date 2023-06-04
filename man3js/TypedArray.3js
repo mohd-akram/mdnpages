@@ -15,9 +15,12 @@
 . ftr VB CB
 . ftr VBI CBI
 .\}
-.TH "TypedArray" "JS" "2023-06-02" "JavaScript" "JavaScript Reference Manual"
+.TH "TypedArray" "JS" "June 2, 2023" "JavaScript" "JavaScript Reference Manual"
 .hy
-.SH Synopsis
+.SH NAME
+.PP
+TypedArray - TypedArray
+.SH SYNOPSIS
 .PP
 A \f[B]\f[BI]TypedArray\f[B]\f[R] object describes an array-like view of
 an underlying binary data buffer.
@@ -27,7 +30,7 @@ Instead, there are a number of different global properties, whose values
 are typed array constructors for specific element types, listed below.
 On the following pages you will find common properties and methods that
 can be used with any typed array containing elements of any type.
-.SH Description
+.SH DESCRIPTION
 .PP
 The \f[V]TypedArray\f[R] constructor (often referred to as
 \f[V]%TypedArray%\f[R] to indicate its \[lq]intrinsicness\[rq], since it
@@ -310,7 +313,7 @@ buffer.resize(3);
 console.log(float32.byteLength); // 0
 \f[R]
 .fi
-.SH Constructor
+.SH CONSTRUCTOR
 .PP
 This object cannot be instantiated directly \[em] attempting to
 construct it with \f[V]new\f[R] throws a \f[V]TypeError\f[R].
@@ -349,10 +352,8 @@ Attempting to call one without \f[V]new\f[R] throws a
 \f[V]TypeError\f[R].
 .RE
 .SS Parameters
-.IP \[bu] 2
-\f[V]typedArray\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]typedArray\f[R]
 When called with an instance of a \f[V]TypedArray\f[R] subclass, the
 \f[V]typedArray\f[R] gets copied into a new typed array.
 For a non-bigint \f[V]TypedArray\f[R] constructor, the
@@ -365,31 +366,21 @@ Each value in \f[V]typedArray\f[R] is converted to the corresponding
 type of the constructor before being copied into the new array.
 The length of the new typed array will be same as the length of the
 \f[V]typedArray\f[R] argument.
-.RE
-.IP \[bu] 2
-\f[V]object\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]object\f[R]
 When called with an object that\[cq]s not a \f[V]TypedArray\f[R]
 instance, a new typed array is created in the same way as the
 \f[V]TypedArray.from()\f[R] method.
-.RE
-.IP \[bu] 2
-\f[V]length\f[R] \f[I](optional)\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]length\f[R] \f[I](optional)\f[R]
 When called with a non-object, the parameter will be treated as a number
 specifying the length of the typed array.
 An internal array buffer is created in memory, of size \f[V]length\f[R]
 multiplied by \f[V]BYTES_PER_ELEMENT\f[R] bytes, filled with zeros.
 Omitting all parameters is equivalent to using \f[V]0\f[R] as
 \f[V]length\f[R].
-.RE
-.IP \[bu] 2
-\f[V]buffer\f[R], \f[V]byteOffset\f[R] \f[I](optional)\f[R],
-\f[V]length\f[R] \f[I](optional)\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]buffer\f[R], \f[B]byteOffset\f[R] \f[I](optional)\f[R], \f[B]length\f[R] \f[I](optional)\f[R]
 When called with an \f[V]ArrayBuffer\f[R] or \f[V]SharedArrayBuffer\f[R]
 instance, and optionally a \f[V]byteOffset\f[R] and a \f[V]length\f[R]
 argument, a new typed array view is created that views the specified
@@ -401,17 +392,14 @@ If both are omitted, all of \f[V]buffer\f[R] is viewed; if only
 \f[V]length\f[R] is omitted, the remainder of \f[V]buffer\f[R] starting
 from \f[V]byteOffset\f[R] is viewed.
 If \f[V]length\f[R] is omitted, the typed array becomes length-tracking.
-.RE
 .SS Exceptions
 .PP
 All \f[V]TypeArray\f[R] subclass constructors operate in the same way.
 They would all throw the following exceptions:
-.IP \[bu] 2
-\f[V]TypeError\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]TypeError\f[R]
 Thrown in one of the following cases:
-.RS 2
+.RS
 .IP \[bu] 2
 A \f[V]typedArray\f[R] is passed but it is a bigint type while the
 current constructor is not, or vice versa.
@@ -419,13 +407,10 @@ current constructor is not, or vice versa.
 A \f[V]typedArray\f[R] is passed but the buffer it\[cq]s viewing is
 detached, or a detached \f[V]buffer\f[R] is directly passed.
 .RE
-.RE
-.IP \[bu] 2
-\f[V]RangeError\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]RangeError\f[R]
 Thrown in one of the following cases:
-.RS 2
+.RS
 .IP \[bu] 2
 The new typed array\[cq]s length is too large.
 .IP \[bu] 2
@@ -440,89 +425,59 @@ When creating a view from a buffer, the bounds are outside the buffer.
 In other words,
 \f[V]byteOffset + length * TypedArray.BYTES_PER_ELEMENT > buffer.byteLength\f[R].
 .RE
-.RE
-.SH Static properties
+.SH STATIC PROPERTIES
 .PP
 These properties are defined on the \f[V]TypedArray\f[R] constructor
 object and are thus shared by all \f[V]TypedArray\f[R] subclass
 constructors.
-.IP \[bu] 2
-\f[V]TypedArray[\[at]\[at]species]\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]TypedArray[\[at]\[at]species]\f[R]
 The constructor function used to create derived objects.
-.RE
 .PP
 All \f[V]TypedArray\f[R] subclasses also have the following static
 properties:
-.IP \[bu] 2
-\f[V]TypedArray.BYTES_PER_ELEMENT\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]TypedArray.BYTES_PER_ELEMENT\f[R]
 Returns a number value of the element size for the different
 \f[V]TypedArray\f[R] objects.
-.RE
-.SH Static methods
+.SH STATIC METHODS
 .PP
 These methods are defined on the \f[V]TypedArray\f[R] constructor object
 and are thus shared by all \f[V]TypedArray\f[R] subclass constructors.
-.IP \[bu] 2
-\f[V]TypedArray.from()\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]TypedArray.from()\f[R]
 Creates a new \f[V]TypedArray\f[R] from an array-like or iterable
 object.
 See also \f[V]Array.from()\f[R].
-.RE
-.IP \[bu] 2
-\f[V]TypedArray.of()\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]TypedArray.of()\f[R]
 Creates a new \f[V]TypedArray\f[R] with a variable number of arguments.
 See also \f[V]Array.of()\f[R].
-.RE
-.SH Instance properties
+.SH INSTANCE PROPERTIES
 .PP
 These properties are defined on \f[V]TypedArray.prototype\f[R] and
 shared by all \f[V]TypedArray\f[R] subclass instances.
-.IP \[bu] 2
-\f[V]TypedArray.prototype.buffer\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]TypedArray.prototype.buffer\f[R]
 Returns the \f[V]ArrayBuffer\f[R] referenced by the typed array.
-.RE
-.IP \[bu] 2
-\f[V]TypedArray.prototype.byteLength\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]TypedArray.prototype.byteLength\f[R]
 Returns the length (in bytes) of the typed array.
-.RE
-.IP \[bu] 2
-\f[V]TypedArray.prototype.byteOffset\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]TypedArray.prototype.byteOffset\f[R]
 Returns the offset (in bytes) of the typed array from the start of its
 \f[V]ArrayBuffer\f[R].
-.RE
-.IP \[bu] 2
-\f[V]TypedArray.prototype.constructor\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]TypedArray.prototype.constructor\f[R]
 The constructor function that created the instance object.
 \f[V]TypedArray.prototype.constructor\f[R] is the hidden
 \f[V]TypedArray\f[R] constructor function, but each typed array subclass
 also defines its own \f[V]constructor\f[R] property.
-.RE
-.IP \[bu] 2
-\f[V]TypedArray.prototype.length\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]TypedArray.prototype.length\f[R]
 Returns the number of elements held in the typed array.
-.RE
-.IP \[bu] 2
-\f[V]TypedArray.prototype[\[at]\[at]toStringTag]\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]TypedArray.prototype[\[at]\[at]toStringTag]\f[R]
 The initial value of the
 \f[V]TypedArray.prototype[\[at]\[at]toStringTag]\f[R] property is a
 getter that returns the same string as the typed array constructor\[cq]s
@@ -534,269 +489,169 @@ However, because \f[V]TypedArray\f[R] also has its own
 \f[V]toString()\f[R] method, this property is not used unless you call
 \f[V]Object.prototype.toString.call()\f[R] with a typed array as
 \f[V]thisArg\f[R].
-.RE
 .PP
 All \f[V]TypedArray\f[R] subclasses also have the following instance
 properties:
-.IP \[bu] 2
-\f[V]TypedArray.prototype.BYTES_PER_ELEMENT\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]TypedArray.prototype.BYTES_PER_ELEMENT\f[R]
 Returns a number value of the element size for the different
 \f[V]TypedArray\f[R] objects.
-.RE
-.SH Instance methods
+.SH INSTANCE METHODS
 .PP
 These methods are defined on the \f[V]TypedArray\f[R] prototype object
 and are thus shared by all \f[V]TypedArray\f[R] subclass instances.
-.IP \[bu] 2
-\f[V]TypedArray.prototype.at()\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]TypedArray.prototype.at()\f[R]
 Takes an integer value and returns the item at that index.
 This method allows for negative integers, which count back from the last
 item.
-.RE
-.IP \[bu] 2
-\f[V]TypedArray.prototype.copyWithin()\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]TypedArray.prototype.copyWithin()\f[R]
 Copies a sequence of array elements within the array.
 See also \f[V]Array.prototype.copyWithin()\f[R].
-.RE
-.IP \[bu] 2
-\f[V]TypedArray.prototype.entries()\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]TypedArray.prototype.entries()\f[R]
 Returns a new \f[I]array iterator\f[R] object that contains the
 key/value pairs for each index in the array.
 See also \f[V]Array.prototype.entries()\f[R].
-.RE
-.IP \[bu] 2
-\f[V]TypedArray.prototype.every()\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]TypedArray.prototype.every()\f[R]
 Tests whether all elements in the array pass the test provided by a
 function.
 See also \f[V]Array.prototype.every()\f[R].
-.RE
-.IP \[bu] 2
-\f[V]TypedArray.prototype.fill()\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]TypedArray.prototype.fill()\f[R]
 Fills all the elements of an array from a start index to an end index
 with a static value.
 See also \f[V]Array.prototype.fill()\f[R].
-.RE
-.IP \[bu] 2
-\f[V]TypedArray.prototype.filter()\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]TypedArray.prototype.filter()\f[R]
 Creates a new array with all of the elements of this array for which the
 provided filtering function returns \f[V]true\f[R].
 See also \f[V]Array.prototype.filter()\f[R].
-.RE
-.IP \[bu] 2
-\f[V]TypedArray.prototype.find()\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]TypedArray.prototype.find()\f[R]
 Returns the first \f[V]element\f[R] in the array that satisfies a
 provided testing function, or \f[V]undefined\f[R] if no appropriate
 element is found.
 See also \f[V]Array.prototype.find()\f[R].
-.RE
-.IP \[bu] 2
-\f[V]TypedArray.prototype.findIndex()\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]TypedArray.prototype.findIndex()\f[R]
 Returns the first index value in the array that has an element that
 satisfies a provided testing function, or \f[V]-1\f[R] if no appropriate
 element was found.
 See also \f[V]Array.prototype.findIndex()\f[R].
-.RE
-.IP \[bu] 2
-\f[V]TypedArray.prototype.findLast()\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]TypedArray.prototype.findLast()\f[R]
 Returns the value of the last element in the array that satisfies a
 provided testing function, or \f[V]undefined\f[R] if no appropriate
 element is found.
 See also \f[V]Array.prototype.findLast()\f[R].
-.RE
-.IP \[bu] 2
-\f[V]TypedArray.prototype.findLastIndex()\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]TypedArray.prototype.findLastIndex()\f[R]
 Returns the index of the last element in the array that satisfies a
 provided testing function, or \f[V]-1\f[R] if no appropriate element was
 found.
 See also \f[V]Array.prototype.findLastIndex()\f[R].
-.RE
-.IP \[bu] 2
-\f[V]TypedArray.prototype.forEach()\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]TypedArray.prototype.forEach()\f[R]
 Calls a function for each element in the array.
 See also \f[V]Array.prototype.forEach()\f[R].
-.RE
-.IP \[bu] 2
-\f[V]TypedArray.prototype.includes()\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]TypedArray.prototype.includes()\f[R]
 Determines whether a typed array includes a certain element, returning
 \f[V]true\f[R] or \f[V]false\f[R] as appropriate.
 See also \f[V]Array.prototype.includes()\f[R].
-.RE
-.IP \[bu] 2
-\f[V]TypedArray.prototype.indexOf()\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]TypedArray.prototype.indexOf()\f[R]
 Returns the first (least) index of an element within the array equal to
 the specified value, or \f[V]-1\f[R] if none is found.
 See also \f[V]Array.prototype.indexOf()\f[R].
-.RE
-.IP \[bu] 2
-\f[V]TypedArray.prototype.join()\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]TypedArray.prototype.join()\f[R]
 Joins all elements of an array into a string.
 See also \f[V]Array.prototype.join()\f[R].
-.RE
-.IP \[bu] 2
-\f[V]TypedArray.prototype.keys()\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]TypedArray.prototype.keys()\f[R]
 Returns a new array iterator that contains the keys for each index in
 the array.
 See also \f[V]Array.prototype.keys()\f[R].
-.RE
-.IP \[bu] 2
-\f[V]TypedArray.prototype.lastIndexOf()\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]TypedArray.prototype.lastIndexOf()\f[R]
 Returns the last (greatest) index of an element within the array equal
 to the specified value, or \f[V]-1\f[R] if none is found.
 See also \f[V]Array.prototype.lastIndexOf()\f[R].
-.RE
-.IP \[bu] 2
-\f[V]TypedArray.prototype.map()\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]TypedArray.prototype.map()\f[R]
 Creates a new array with the results of calling a provided function on
 every element in this array.
 See also \f[V]Array.prototype.map()\f[R].
-.RE
-.IP \[bu] 2
-\f[V]TypedArray.prototype.reduce()\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]TypedArray.prototype.reduce()\f[R]
 Apply a function against an accumulator and each value of the array
 (from left-to-right) as to reduce it to a single value.
 See also \f[V]Array.prototype.reduce()\f[R].
-.RE
-.IP \[bu] 2
-\f[V]TypedArray.prototype.reduceRight()\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]TypedArray.prototype.reduceRight()\f[R]
 Apply a function against an accumulator and each value of the array
 (from right-to-left) as to reduce it to a single value.
 See also \f[V]Array.prototype.reduceRight()\f[R].
-.RE
-.IP \[bu] 2
-\f[V]TypedArray.prototype.reverse()\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]TypedArray.prototype.reverse()\f[R]
 Reverses the order of the elements of an array \[em] the first becomes
 the last, and the last becomes the first.
 See also \f[V]Array.prototype.reverse()\f[R].
-.RE
-.IP \[bu] 2
-\f[V]TypedArray.prototype.set()\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]TypedArray.prototype.set()\f[R]
 Stores multiple values in the typed array, reading input values from a
 specified array.
-.RE
-.IP \[bu] 2
-\f[V]TypedArray.prototype.slice()\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]TypedArray.prototype.slice()\f[R]
 Extracts a section of an array and returns a new array.
 See also \f[V]Array.prototype.slice()\f[R].
-.RE
-.IP \[bu] 2
-\f[V]TypedArray.prototype.some()\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]TypedArray.prototype.some()\f[R]
 Returns \f[V]true\f[R] if at least one element in this array satisfies
 the provided testing function.
 See also \f[V]Array.prototype.some()\f[R].
-.RE
-.IP \[bu] 2
-\f[V]TypedArray.prototype.sort()\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]TypedArray.prototype.sort()\f[R]
 Sorts the elements of an array in place and returns the array.
 See also \f[V]Array.prototype.sort()\f[R].
-.RE
-.IP \[bu] 2
-\f[V]TypedArray.prototype.subarray()\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]TypedArray.prototype.subarray()\f[R]
 Returns a new \f[V]TypedArray\f[R] from the given start and end element
 index.
-.RE
-.IP \[bu] 2
-\f[V]TypedArray.prototype.toLocaleString()\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]TypedArray.prototype.toLocaleString()\f[R]
 Returns a localized string representing the array and its elements.
 See also \f[V]Array.prototype.toLocaleString()\f[R].
-.RE
-.IP \[bu] 2
-\f[V]TypedArray.prototype.toReversed()\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]TypedArray.prototype.toReversed()\f[R]
 Returns a new array with the elements in reversed order, without
 modifying the original array.
-.RE
-.IP \[bu] 2
-\f[V]TypedArray.prototype.toSorted()\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]TypedArray.prototype.toSorted()\f[R]
 Returns a new array with the elements sorted in ascending order, without
 modifying the original array.
-.RE
-.IP \[bu] 2
-\f[V]TypedArray.prototype.toString()\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]TypedArray.prototype.toString()\f[R]
 Returns a string representing the array and its elements.
 See also \f[V]Array.prototype.toString()\f[R].
-.RE
-.IP \[bu] 2
-\f[V]TypedArray.prototype.values()\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]TypedArray.prototype.values()\f[R]
 Returns a new \f[I]array iterator\f[R] object that contains the values
 for each index in the array.
 See also \f[V]Array.prototype.values()\f[R].
-.RE
-.IP \[bu] 2
-\f[V]TypedArray.prototype.with()\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]TypedArray.prototype.with()\f[R]
 Returns a new array with the element at the given index replaced with
 the given value, without modifying the original array.
-.RE
-.IP \[bu] 2
-\f[V]TypedArray.prototype[\[at]\[at]iterator]()\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]TypedArray.prototype[\[at]\[at]iterator]()\f[R]
 Returns a new \f[I]array iterator\f[R] object that contains the values
 for each index in the array.
-.RE
-.SH Examples
+.SH EXAMPLES
 .SS Property access
 .PP
 You can reference elements in the array using standard array index
@@ -892,7 +747,7 @@ const i32 = new Int32Array(new ArrayBuffer(3));
 const i32 = new Int32Array(new ArrayBuffer(4));
 \f[R]
 .fi
-.SH See also
+.SH SEE ALSO
 .IP \[bu] 2
 Polyfill of typed arrays in
 \f[V]core-js\f[R] (https://github.com/zloirock/core-js#ecmascript-typed-arrays)

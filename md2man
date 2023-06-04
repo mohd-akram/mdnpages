@@ -15,9 +15,21 @@ get_name() {
 			q
 		}
 		/^browser-compat:/{
-			s/browser-compat:[[:space:]]*//
-			s/javascript\.builtins\.//
+			s/^browser-compat:[[:space:]]*javascript\.builtins\.//
 			p
+			q
+		}
+	}' "$1"
+}
+
+get_title() {
+	sed -n '/^---$/,/^---$/{
+		/^title:/{
+			s/^title:[[:space:]]*//
+			s/^"//g
+			s/"$//g
+			p
+			q
 		}
 	}' "$1"
 }
@@ -50,6 +62,9 @@ header: JavaScript Reference Manual\\
 footer: JavaScript\\
 date: $DATE\\
 ---\\
+# Name\\
+$(get_name "$1") - $(get_title "$1")\\
+\\
 # Synopsis
 
 	/^## Specifications/,/{{Specifications}}/d
@@ -61,8 +76,6 @@ date: $DATE\\
 	s/^#//
 
 	$(js_property_attributes)
-
-	s/^\([[:space:]]*-\) :/\1/
 
 	/{{[^}]*$/N
 
@@ -104,7 +117,7 @@ date: $DATE\\
 }
 
 convert() {
-	pandoc -s -t man
+	pandoc --lua-filter=filter.lua -s -t man
 }
 
 clean "$1" | convert

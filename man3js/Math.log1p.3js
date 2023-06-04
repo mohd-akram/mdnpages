@@ -14,9 +14,12 @@
 . ftr VB CB
 . ftr VBI CBI
 .\}
-.TH "Math.log1p" "JS" "2023-06-02" "JavaScript" "JavaScript Reference Manual"
+.TH "Math.log1p" "JS" "June 2, 2023" "JavaScript" "JavaScript Reference Manual"
 .hy
-.SH Synopsis
+.SH NAME
+.PP
+Math.log1p - Math.log1p()
+.SH SYNOPSIS
 .PP
 The \f[B]\f[VB]Math.log1p()\f[B]\f[R] static method returns the natural
 logarithm (base e) of \f[V]1 + x\f[R], where \f[V]x\f[R] is the
@@ -24,7 +27,7 @@ argument.
 That is:
 .PP
 ∀x>−1,𝙼𝚊𝚝𝚑.𝚕𝚘𝚐𝟷𝚙(𝚡)=ln(1+x)x > -1,; = (1 + x)
-.SH Syntax
+.SH SYNTAX
 .IP
 .nf
 \f[C]
@@ -32,18 +35,15 @@ Math.log1p(x)
 \f[R]
 .fi
 .SS Parameters
-.IP \[bu] 2
-\f[V]x\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]x\f[R]
 A number greater than or equal to -1.
-.RE
 .SS Return value
 .PP
 The natural logarithm (base e) of \f[V]x + 1\f[R].
 If \f[V]x\f[R] is -1, returns \f[V]-Infinity\f[R].
 If \f[V]x < -1\f[R], returns \f[V]NaN\f[R].
-.SH Description
+.SH DESCRIPTION
 .PP
 For very small values of \f[I]x\f[R], adding 1 can reduce or eliminate
 precision.
@@ -71,7 +71,7 @@ If the value of \f[V]x\f[R] is less than -1, the return value is always
 Because \f[V]log1p()\f[R] is a static method of \f[V]Math\f[R], you
 always use it as \f[V]Math.log1p()\f[R], rather than as a method of a
 \f[V]Math\f[R] object you created (\f[V]Math\f[R] is not a constructor).
-.SH Examples
+.SH EXAMPLES
 .SS Using Math.log1p()
 .IP
 .nf
@@ -84,7 +84,7 @@ Math.log1p(1); // 0.6931471805599453
 Math.log1p(Infinity); // Infinity
 \f[R]
 .fi
-.SH See also
+.SH SEE ALSO
 .IP \[bu] 2
 Polyfill of \f[V]Math.log1p\f[R] in
 \f[V]core-js\f[R] (https://github.com/zloirock/core-js#ecmascript-math)

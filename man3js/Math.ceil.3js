@@ -14,13 +14,16 @@
 . ftr VB CB
 . ftr VBI CBI
 .\}
-.TH "Math.ceil" "JS" "2023-06-02" "JavaScript" "JavaScript Reference Manual"
+.TH "Math.ceil" "JS" "June 2, 2023" "JavaScript" "JavaScript Reference Manual"
 .hy
-.SH Synopsis
+.SH NAME
+.PP
+Math.ceil - Math.ceil()
+.SH SYNOPSIS
 .PP
 The \f[B]\f[VB]Math.ceil()\f[B]\f[R] static method always rounds up and
 returns the smaller integer greater than or equal to a given number.
-.SH Syntax
+.SH SYNTAX
 .IP
 .nf
 \f[C]
@@ -28,22 +31,19 @@ Math.ceil(x)
 \f[R]
 .fi
 .SS Parameters
-.IP \[bu] 2
-\f[V]x\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]x\f[R]
 A number.
-.RE
 .SS Return value
 .PP
 The smallest integer greater than or equal to \f[V]x\f[R].
 It\[cq]s the same value as \f[V]-Math.floor(-x)\f[R].
-.SH Description
+.SH DESCRIPTION
 .PP
 Because \f[V]ceil()\f[R] is a static method of \f[V]Math\f[R], you
 always use it as \f[V]Math.ceil()\f[R], rather than as a method of a
 \f[V]Math\f[R] object you created (\f[V]Math\f[R] is not a constructor).
-.SH Examples
+.SH EXAMPLES
 .SS Using Math.ceil()
 .IP
 .nf
@@ -60,7 +60,7 @@ Math.ceil(7.004); // 8
 Math.ceil(Infinity); // Infinity
 \f[R]
 .fi
-.SH See also
+.SH SEE ALSO
 .IP \[bu] 2
 \f[V]Math.abs()\f[R]
 .IP \[bu] 2

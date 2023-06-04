@@ -15,13 +15,16 @@
 . ftr VB CB
 . ftr VBI CBI
 .\}
-.TH "RegExp.lastIndex" "JS" "2023-06-02" "JavaScript" "JavaScript Reference Manual"
+.TH "RegExp.lastIndex" "JS" "June 2, 2023" "JavaScript" "JavaScript Reference Manual"
 .hy
-.SH Synopsis
+.SH NAME
+.PP
+RegExp.lastIndex - RegExp: lastIndex
+.SH SYNOPSIS
 .PP
 The \f[B]\f[VB]lastIndex\f[B]\f[R] data property of a \f[V]RegExp\f[R]
 instance specifies the index at which to start the next match.
-.SH Value
+.SH VALUE
 .PP
 A non-negative integer.
 .PP
@@ -44,7 +47,7 @@ T}@T{
 no
 T}
 .TE
-.SH Description
+.SH DESCRIPTION
 .PP
 This property is set only if the regular expression instance used the
 \f[V]g\f[R] flag to indicate a global search, or the \f[V]y\f[R] flag to
@@ -68,7 +71,7 @@ matched string in the input.
 If \f[V]exec()\f[R] or \f[V]test()\f[R] do not find a match, then
 \f[V]lastIndex\f[R] will be set to 0.
 .RE
-.SH Examples
+.SH EXAMPLES
 .SS Using lastIndex
 .PP
 Consider the following sequence of statements:
@@ -102,7 +105,7 @@ Returns \f[V][\[dq]\[dq], undefined]\f[R], an empty array whose zeroth
 element is the match string.
 In this case, the empty string because \f[V]lastIndex\f[R] was 2 (and
 still is 2) and \f[V]hi\f[R] has length 2.
-.SH See also
+.SH SEE ALSO
 .IP \[bu] 2
 \f[V]RegExp.prototype.dotAll\f[R]
 .IP \[bu] 2

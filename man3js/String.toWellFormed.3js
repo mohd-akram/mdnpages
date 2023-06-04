@@ -14,14 +14,17 @@
 . ftr VB CB
 . ftr VBI CBI
 .\}
-.TH "String.toWellFormed" "JS" "2023-06-02" "JavaScript" "JavaScript Reference Manual"
+.TH "String.toWellFormed" "JS" "June 2, 2023" "JavaScript" "JavaScript Reference Manual"
 .hy
-.SH Synopsis
+.SH NAME
+.PP
+String.toWellFormed - String.prototype.toWellFormed()
+.SH SYNOPSIS
 .PP
 The \f[B]\f[VB]toWellFormed()\f[B]\f[R] method of \f[V]String\f[R]
 values returns a string where all lone surrogates of this string are
 replaced with the Unicode replacement character U+FFFD.
-.SH Syntax
+.SH SYNTAX
 .IP
 .nf
 \f[C]
@@ -34,7 +37,7 @@ A new string that is a copy of this string, with all lone surrogates
 replaced with the Unicode replacement character U+FFFD.
 If \f[V]str\f[R] is well formed, a new string is still returned
 (essentially a copy of \f[V]str\f[R]).
-.SH Description
+.SH DESCRIPTION
 .PP
 Strings in JavaScript are UTF-16 encoded.
 UTF-16 encoding has the concept of \f[I]surrogate pairs\f[R], which is
@@ -56,7 +59,7 @@ When ill-formed strings are used in certain contexts, such as
 strings using the same replacement character.
 When lone surrogates are rendered, they are also rendered as the
 replacement character (a diamond with a question mark inside).
-.SH Examples
+.SH EXAMPLES
 .SS Using toWellFormed()
 .IP
 .nf
@@ -105,7 +108,7 @@ try {
 console.log(encodeURI(illFormed.toWellFormed())); // \[dq]https://example.com/search?q=%EF%BF%BD\[dq]
 \f[R]
 .fi
-.SH See also
+.SH SEE ALSO
 .IP \[bu] 2
 Polyfill of \f[V]String.prototype.toWellFormed\f[R] in
 \f[V]core-js\f[R] (https://github.com/zloirock/core-js#well-formed-unicode-strings)

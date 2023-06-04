@@ -14,9 +14,12 @@
 . ftr VB CB
 . ftr VBI CBI
 .\}
-.TH "TypedArray.copyWithin" "JS" "2023-06-02" "JavaScript" "JavaScript Reference Manual"
+.TH "TypedArray.copyWithin" "JS" "June 2, 2023" "JavaScript" "JavaScript Reference Manual"
 .hy
-.SH Synopsis
+.SH NAME
+.PP
+TypedArray.copyWithin - TypedArray.prototype.copyWithin()
+.SH SYNOPSIS
 .PP
 The \f[B]\f[VB]copyWithin()\f[B]\f[R] method copies the sequence of
 array elements within the array to the position starting at
@@ -28,7 +31,7 @@ array.
 This method has the same algorithm as
 \f[V]Array.prototype.copyWithin\f[R].
 \f[I]TypedArray\f[R] is one of the typed array types here.
-.SH Syntax
+.SH SYNTAX
 .IP
 .nf
 \f[C]
@@ -37,32 +40,23 @@ copyWithin(target, start, end)
 \f[R]
 .fi
 .SS Parameters
-.IP \[bu] 2
-\f[V]target\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]target\f[R]
 Target start index position where to copy the elements to.
-.RE
-.IP \[bu] 2
-\f[V]start\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]start\f[R]
 Source start index position where to start copying elements from.
-.RE
-.IP \[bu] 2
-\f[V]end\f[R] \f[I](optional)\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]end\f[R] \f[I](optional)\f[R]
 Optional.
 Source end index position where to end copying elements from.
-.RE
 .SS Return value
 .PP
 The modified array.
-.SH Description
+.SH DESCRIPTION
 .PP
 See \f[V]Array.prototype.copyWithin\f[R] for more details.
-.SH Examples
+.SH EXAMPLES
 .SS Using copyWithin
 .IP
 .nf
@@ -75,7 +69,7 @@ uint8.copyWithin(3, 0, 3);
 console.log(uint8); // Uint8Array [ 1, 2, 3, 1, 2, 3, 0, 0 ]
 \f[R]
 .fi
-.SH See also
+.SH SEE ALSO
 .IP \[bu] 2
 Polyfill of \f[V]TypedArray.prototype.copyWithin\f[R] in
 \f[V]core-js\f[R] (https://github.com/zloirock/core-js#ecmascript-typed-arrays)

@@ -14,9 +14,12 @@
 . ftr VB CB
 . ftr VBI CBI
 .\}
-.TH "Math.asin" "JS" "2023-06-02" "JavaScript" "JavaScript Reference Manual"
+.TH "Math.asin" "JS" "June 2, 2023" "JavaScript" "JavaScript Reference Manual"
 .hy
-.SH Synopsis
+.SH NAME
+.PP
+Math.asin - Math.asin()
+.SH SYNOPSIS
 .PP
 The \f[B]\f[VB]Math.asin()\f[B]\f[R] static method returns the inverse
 sine (in radians) of a number.
@@ -24,7 +27,7 @@ That is,
 .PP
 ∀x∊[−1,1],𝙼𝚊𝚝𝚑.𝚊𝚜𝚒𝚗(𝚡)=arcsin(x)=the unique\ y∊[−π2,π2]\ such
 that\ sin(y)=xx ,; = (x) = y (y) = x
-.SH Syntax
+.SH SYNTAX
 .IP
 .nf
 \f[C]
@@ -32,24 +35,21 @@ Math.asin(x)
 \f[R]
 .fi
 .SS Parameters
-.IP \[bu] 2
-\f[V]x\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]x\f[R]
 A number between -1 and 1, inclusive, representing the angle\[cq]s sine
 value.
-.RE
 .SS Return value
 .PP
 The inverse sine (angle in radians between -π2- and π2, inclusive) of
 \f[V]x\f[R].
 If \f[V]x\f[R] is less than -1 or greater than 1, returns \f[V]NaN\f[R].
-.SH Description
+.SH DESCRIPTION
 .PP
 Because \f[V]asin()\f[R] is a static method of \f[V]Math\f[R], you
 always use it as \f[V]Math.asin()\f[R], rather than as a method of a
 \f[V]Math\f[R] object you created (\f[V]Math\f[R] is not a constructor).
-.SH Examples
+.SH EXAMPLES
 .SS Using Math.asin()
 .IP
 .nf
@@ -63,7 +63,7 @@ Math.asin(1); // 1.5707963267948966 (π/2)
 Math.asin(2); // NaN
 \f[R]
 .fi
-.SH See also
+.SH SEE ALSO
 .IP \[bu] 2
 \f[V]Math.acos()\f[R]
 .IP \[bu] 2

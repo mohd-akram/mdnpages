@@ -14,14 +14,17 @@
 . ftr VB CB
 . ftr VBI CBI
 .\}
-.TH "Object.create" "JS" "2023-06-02" "JavaScript" "JavaScript Reference Manual"
+.TH "Object.create" "JS" "June 2, 2023" "JavaScript" "JavaScript Reference Manual"
 .hy
-.SH Synopsis
+.SH NAME
+.PP
+Object.create - Object.create()
+.SH SYNOPSIS
 .PP
 The \f[B]\f[VB]Object.create()\f[B]\f[R] static method creates a new
 object, using an existing object as the prototype of the newly created
 object.
-.SH Syntax
+.SH SYNTAX
 .IP
 .nf
 \f[C]
@@ -30,34 +33,25 @@ Object.create(proto, propertiesObject)
 \f[R]
 .fi
 .SS Parameters
-.IP \[bu] 2
-\f[V]proto\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]proto\f[R]
 The object which should be the prototype of the newly-created object.
-.RE
-.IP \[bu] 2
-\f[V]propertiesObject\f[R] \f[I](optional)\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]propertiesObject\f[R] \f[I](optional)\f[R]
 If specified and not \f[V]undefined\f[R], an object whose enumerable own
 properties specify property descriptors to be added to the newly-created
 object, with the corresponding property names.
 These properties correspond to the second argument of
 \f[V]Object.defineProperties()\f[R].
-.RE
 .SS Return value
 .PP
 A new object with the specified prototype object and properties.
 .SS Exceptions
-.IP \[bu] 2
-\f[V]TypeError\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]TypeError\f[R]
 Thrown if \f[V]proto\f[R] is neither \f[V]null\f[R] nor an
 \f[V]Object\f[R].
-.RE
-.SH Examples
+.SH EXAMPLES
 .SS Classical inheritance with Object.create()
 .PP
 Below is an example of how to use \f[V]Object.create()\f[R] to achieve
@@ -228,7 +222,7 @@ o = Object.create(Constructor.prototype);
 Of course, if there is actual initialization code in the
 \f[V]Constructor\f[R] function, the \f[V]Object.create()\f[R] method
 cannot reflect it.
-.SH See also
+.SH SEE ALSO
 .IP \[bu] 2
 Polyfill of \f[V]Object.create\f[R] in
 \f[V]core-js\f[R] (https://github.com/zloirock/core-js#ecmascript-object)

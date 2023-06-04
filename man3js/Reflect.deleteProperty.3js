@@ -14,14 +14,17 @@
 . ftr VB CB
 . ftr VBI CBI
 .\}
-.TH "Reflect.deleteProperty" "JS" "2023-06-02" "JavaScript" "JavaScript Reference Manual"
+.TH "Reflect.deleteProperty" "JS" "June 2, 2023" "JavaScript" "JavaScript Reference Manual"
 .hy
-.SH Synopsis
+.SH NAME
+.PP
+Reflect.deleteProperty - Reflect.deleteProperty()
+.SH SYNOPSIS
 .PP
 The \f[B]\f[VB]Reflect.deleteProperty()\f[B]\f[R] static method is like
 the \f[V]delete\f[R] operator, but as a function.
 It deletes a property from an object.
-.SH Syntax
+.SH SYNTAX
 .IP
 .nf
 \f[C]
@@ -29,30 +32,21 @@ Reflect.deleteProperty(target, propertyKey)
 \f[R]
 .fi
 .SS Parameters
-.IP \[bu] 2
-\f[V]target\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]target\f[R]
 The target object on which to delete the property.
-.RE
-.IP \[bu] 2
-\f[V]propertyKey\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]propertyKey\f[R]
 The name of the property to be deleted.
-.RE
 .SS Return value
 .PP
 A boolean indicating whether or not the property was successfully
 deleted.
 .SS Exceptions
-.IP \[bu] 2
-\f[V]TypeError\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]TypeError\f[R]
 Thrown if \f[V]target\f[R] is not an object.
-.RE
-.SH Description
+.SH DESCRIPTION
 .PP
 \f[V]Reflect.deleteProperty()\f[R] provides the reflective semantic of
 the \f[V]delete\f[R] operator.
@@ -75,7 +69,7 @@ In non-strict mode, \f[V]delete\f[R] and
 .PP
 \f[V]Reflect.deleteProperty()\f[R] invokes the \f[V][[Delete]]\f[R]
 object internal method of \f[V]target\f[R].
-.SH Examples
+.SH EXAMPLES
 .SS Using Reflect.deleteProperty()
 .IP
 .nf
@@ -95,7 +89,7 @@ Reflect.deleteProperty({}, \[dq]foo\[dq]); // true
 Reflect.deleteProperty(Object.freeze({ foo: 1 }), \[dq]foo\[dq]); // false
 \f[R]
 .fi
-.SH See also
+.SH SEE ALSO
 .IP \[bu] 2
 Polyfill of \f[V]Reflect.deleteProperty\f[R] in
 \f[V]core-js\f[R] (https://github.com/zloirock/core-js#ecmascript-reflect)

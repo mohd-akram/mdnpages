@@ -14,13 +14,16 @@
 . ftr VB CB
 . ftr VBI CBI
 .\}
-.TH "Object.is" "JS" "2023-06-02" "JavaScript" "JavaScript Reference Manual"
+.TH "Object.is" "JS" "June 2, 2023" "JavaScript" "JavaScript Reference Manual"
 .hy
-.SH Synopsis
+.SH NAME
+.PP
+Object.is - Object.is()
+.SH SYNOPSIS
 .PP
 The \f[B]\f[VB]Object.is()\f[B]\f[R] static method determines whether
 two values are the same value.
-.SH Syntax
+.SH SYNTAX
 .IP
 .nf
 \f[C]
@@ -28,23 +31,17 @@ Object.is(value1, value2)
 \f[R]
 .fi
 .SS Parameters
-.IP \[bu] 2
-\f[V]value1\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]value1\f[R]
 The first value to compare.
-.RE
-.IP \[bu] 2
-\f[V]value2\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]value2\f[R]
 The second value to compare.
-.RE
 .SS Return value
 .PP
 A boolean indicating whether or not the two arguments are the same
 value.
-.SH Description
+.SH DESCRIPTION
 .PP
 \f[V]Object.is()\f[R] determines whether two values are the same value.
 Two values are the same if one of the following holds:
@@ -90,7 +87,7 @@ in their treatment of signed zeros and \f[V]NaN\f[R] values.
 The \f[V]===\f[R] operator (and the \f[V]==\f[R] operator) treats the
 number values \f[V]-0\f[R] and \f[V]+0\f[R] as equal, but treats
 \f[V]NaN\f[R] as not equal to each other.
-.SH Examples
+.SH EXAMPLES
 .SS Using Object.is()
 .IP
 .nf
@@ -120,7 +117,7 @@ Object.is(NaN, 0 / 0); // true
 Object.is(NaN, Number.NaN); // true
 \f[R]
 .fi
-.SH See also
+.SH SEE ALSO
 .IP \[bu] 2
 Polyfill of \f[V]Object.is\f[R] in
 \f[V]core-js\f[R] (https://github.com/zloirock/core-js#ecmascript-object)

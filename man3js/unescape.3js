@@ -14,9 +14,12 @@
 . ftr VB CB
 . ftr VBI CBI
 .\}
-.TH "unescape" "JS" "2023-06-02" "JavaScript" "JavaScript Reference Manual"
+.TH "unescape" "JS" "June 2, 2023" "JavaScript" "JavaScript Reference Manual"
 .hy
-.SH Synopsis
+.SH NAME
+.PP
+unescape - unescape()
+.SH SYNOPSIS
 .PP
 \f[I](deprecated)\f[R]
 .RS
@@ -34,7 +37,7 @@ which hexadecimal escape sequences are replaced with the characters that
 they represent.
 The escape sequences might be introduced by a function like
 \f[V]escape()\f[R].
-.SH Syntax
+.SH SYNTAX
 .IP
 .nf
 \f[C]
@@ -42,16 +45,13 @@ unescape(str)
 \f[R]
 .fi
 .SS Parameters
-.IP \[bu] 2
-\f[V]str\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]str\f[R]
 A string to be decoded.
-.RE
 .SS Return value
 .PP
 A new string in which certain characters have been unescaped.
-.SH Description
+.SH DESCRIPTION
 .PP
 \f[V]unescape()\f[R] is a function property of the global object.
 .PP
@@ -74,7 +74,7 @@ You can replace \f[V]\[rs]xXX\f[R] with \f[V]%XX\f[R] and
 \f[V]\[rs]uXXXX\f[R] with \f[V]%uXXXX\f[R] to get a string that can be
 handled by \f[V]unescape()\f[R].
 .RE
-.SH Examples
+.SH EXAMPLES
 .SS Using unescape()
 .IP
 .nf
@@ -84,7 +84,7 @@ unescape(\[dq]%E4%F6%FC\[dq]); // \[dq]äöü\[dq]
 unescape(\[dq]%u0107\[dq]); // \[dq]ć\[dq]
 \f[R]
 .fi
-.SH See also
+.SH SEE ALSO
 .IP \[bu] 2
 Polyfill of \f[V]unescape\f[R] in
 \f[V]core-js\f[R] (https://github.com/zloirock/core-js#ecmascript-string-and-regexp)

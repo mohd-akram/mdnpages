@@ -14,9 +14,12 @@
 . ftr VB CB
 . ftr VBI CBI
 .\}
-.TH "RegExp.\[at]\[at]species" "JS" "2023-06-02" "JavaScript" "JavaScript Reference Manual"
+.TH "RegExp.\[at]\[at]species" "JS" "June 2, 2023" "JavaScript" "JavaScript Reference Manual"
 .hy
-.SH Synopsis
+.SH NAME
+.PP
+RegExp.\[at]\[at]species - RegExp[\[at]\[at]species]
+.SH SYNOPSIS
 .PP
 The \f[B]\f[VB]RegExp[\[at]\[at]species]\f[B]\f[R] static accessor
 property returns the constructor used to construct copied regular
@@ -30,7 +33,7 @@ Engine implementers are investigating whether to remove this
 feature (https://github.com/tc39/proposal-rm-builtin-subclassing).
 Avoid relying on it if possible.
 .RE
-.SH Syntax
+.SH SYNTAX
 .IP
 .nf
 \f[C]
@@ -42,7 +45,7 @@ RegExp[Symbol.species]
 The value of the constructor (\f[V]this\f[R]) on which
 \f[V]get \[at]\[at]species\f[R] was called.
 The return value is used to construct copied \f[V]RegExp\f[R] instances.
-.SH Description
+.SH DESCRIPTION
 .PP
 The \f[V]\[at]\[at]species\f[R] accessor property returns the default
 constructor for \f[V]RegExp\f[R] objects.
@@ -82,7 +85,7 @@ The methods that copy the current regex instance are:
 \f[V][\[at]\[at]matchAll]()\f[R]
 .IP \[bu] 2
 \f[V][\[at]\[at]split]()\f[R]
-.SH Examples
+.SH EXAMPLES
 .SS Species in ordinary objects
 .PP
 The \f[V]\[at]\[at]species\f[R] property returns the default constructor
@@ -143,7 +146,7 @@ Array.from(\[dq]aabbccdd\[dq].matchAll(new MyRegExp(\[dq][ac]\[dq], \[dq]g\[dq])
 // Executing with lastIndex: 6
 \f[R]
 .fi
-.SH See also
+.SH SEE ALSO
 .IP \[bu] 2
 \f[V]RegExp\f[R]
 .IP \[bu] 2

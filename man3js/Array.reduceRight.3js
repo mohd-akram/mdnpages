@@ -15,16 +15,19 @@
 . ftr VB CB
 . ftr VBI CBI
 .\}
-.TH "Array.reduceRight" "JS" "2023-06-02" "JavaScript" "JavaScript Reference Manual"
+.TH "Array.reduceRight" "JS" "June 2, 2023" "JavaScript" "JavaScript Reference Manual"
 .hy
-.SH Synopsis
+.SH NAME
+.PP
+Array.reduceRight - Array.prototype.reduceRight()
+.SH SYNOPSIS
 .PP
 The \f[B]\f[VB]reduceRight()\f[B]\f[R] method applies a function against
 an accumulator and each value of the array (from right-to-left) to
 reduce it to a single value.
 .PP
 See also \f[V]Array.prototype.reduce()\f[R] for left-to-right.
-.SH Syntax
+.SH SYNTAX
 .IP
 .nf
 \f[C]
@@ -33,60 +36,42 @@ reduceRight(callbackFn, initialValue)
 \f[R]
 .fi
 .SS Parameters
-.IP \[bu] 2
-\f[V]callbackFn\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]callbackFn\f[R]
 A function to execute for each element in the array.
 Its return value becomes the value of the \f[V]accumulator\f[R]
 parameter on the next invocation of \f[V]callbackFn\f[R].
 For the last invocation, the return value becomes the return value of
 \f[V]reduceRight()\f[R].
 The function is called with the following arguments:
-.RS 2
-.IP \[bu] 2
-\f[V]accumulator\f[R]
-.RS 2
-.IP \[bu] 2
+.RS
+.TP
+\f[B]accumulator\f[R]
 The value resulting from the previous call to \f[V]callbackFn\f[R].
 On first call, \f[V]initialValue\f[R] if specified, otherwise the
 array\[cq]s last element\[cq]s value.
-.RE
-.IP \[bu] 2
-\f[V]currentValue\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]currentValue\f[R]
 The current element being processed in the array.
-.RE
-.IP \[bu] 2
-\f[V]index\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]index\f[R]
 The index of the current element being processed in the array.
-.RE
-.IP \[bu] 2
-\f[V]array\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]array\f[R]
 The array \f[V]reduceRight()\f[R] was called upon.
 .RE
-.RE
-.RE
-.IP \[bu] 2
-\f[V]initialValue\f[R] \f[I](optional)\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]initialValue\f[R] \f[I](optional)\f[R]
 Value to use as accumulator to the first call of the
 \f[V]callbackFn\f[R].
 If no initial value is supplied, the last element in the array will be
 used and skipped.
 Calling \f[V]reduceRight()\f[R] on an empty array without an initial
 value creates a \f[V]TypeError\f[R].
-.RE
 .SS Return value
 .PP
 The value that results from the reduction.
-.SH Description
+.SH DESCRIPTION
 .PP
 The \f[V]reduceRight()\f[R] method is an iterative method.
 It runs a \[lq]reducer\[rq] callback function over all elements in the
@@ -130,7 +115,7 @@ avoided (except in special cases).
 The \f[V]reduceRight()\f[R] method is generic.
 It only expects the \f[V]this\f[R] value to have a \f[V]length\f[R]
 property and integer-keyed properties.
-.SH Examples
+.SH EXAMPLES
 .SS How reduceRight() works without an initial value
 .PP
 The call to the reduceRight \f[V]callbackFn\f[R] would look something
@@ -456,7 +441,7 @@ console.log(Array.prototype.reduceRight.call(arrayLike, (x, y) => x - y));
 // -1, which is 4 - 3 - 2
 \f[R]
 .fi
-.SH See also
+.SH SEE ALSO
 .IP \[bu] 2
 Polyfill of \f[V]Array.prototype.reduceRight\f[R] in
 \f[V]core-js\f[R] (https://github.com/zloirock/core-js#ecmascript-array)

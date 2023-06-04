@@ -14,9 +14,12 @@
 . ftr VB CB
 . ftr VBI CBI
 .\}
-.TH "Object.defineSetter" "JS" "2023-06-02" "JavaScript" "JavaScript Reference Manual"
+.TH "Object.defineSetter" "JS" "June 2, 2023" "JavaScript" "JavaScript Reference Manual"
 .hy
-.SH Synopsis
+.SH NAME
+.PP
+Object.defineSetter - Object.prototype.__defineSetter__()
+.SH SYNOPSIS
 .PP
 \f[I](deprecated)\f[R]
 .RS
@@ -32,7 +35,7 @@ It may not work everywhere.
 The \f[B]\f[VB]__defineSetter__()\f[B]\f[R] method binds an object\[cq]s
 property to a function to be called when an attempt is made to set that
 property.
-.SH Syntax
+.SH SYNTAX
 .IP
 .nf
 \f[C]
@@ -40,40 +43,28 @@ __defineSetter__(prop, func)
 \f[R]
 .fi
 .SS Parameters
-.IP \[bu] 2
-\f[V]prop\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]prop\f[R]
 A string containing the name of the property that the setter
 \f[V]func\f[R] is bound to.
-.RE
-.IP \[bu] 2
-\f[V]func\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]func\f[R]
 A function to be called when there is an attempt to set the specified
 property.
 This function receives the following parameter:
-.RS 2
-.IP \[bu] 2
-\f[V]val\f[R]
-.RS 2
-.IP \[bu] 2
+.RS
+.TP
+\f[B]val\f[R]
 The value attempted to be assigned to \f[V]prop\f[R].
-.RE
-.RE
 .RE
 .SS Return value
 .PP
 \f[V]undefined\f[R].
 .SS Exceptions
-.IP \[bu] 2
-\f[V]TypeError\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]TypeError\f[R]
 Thrown if \f[V]func\f[R] is not a function.
-.RE
-.SH Description
+.SH DESCRIPTION
 .PP
 All objects that inherit from \f[V]Object.prototype\f[R] (that is, all
 except \f[V]null\f[R]-prototype objects) inherit the
@@ -92,7 +83,7 @@ usage, it\[cq]s unlikely to be removed.
 If a browser implements \f[V]__defineSetter__()\f[R], it also needs to
 implement the \f[V]__lookupGetter__()\f[R],
 \f[V]__lookupSetter__()\f[R], and \f[V]__defineGetter__()\f[R] methods.
-.SH Examples
+.SH EXAMPLES
 .SS Using __defineSetter__()
 .IP
 .nf
@@ -149,7 +140,7 @@ console.log(o.value); // undefined
 console.log(o.anotherValue); // 5
 \f[R]
 .fi
-.SH See also
+.SH SEE ALSO
 .IP \[bu] 2
 Polyfill of \f[V]Object.prototype.__defineSetter__\f[R] in
 \f[V]core-js\f[R] (https://github.com/zloirock/core-js#ecmascript-object)

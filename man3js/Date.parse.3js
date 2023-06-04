@@ -14,9 +14,12 @@
 . ftr VB CB
 . ftr VBI CBI
 .\}
-.TH "Date.parse" "JS" "2023-06-02" "JavaScript" "JavaScript Reference Manual"
+.TH "Date.parse" "JS" "June 2, 2023" "JavaScript" "JavaScript Reference Manual"
 .hy
-.SH Synopsis
+.SH NAME
+.PP
+Date.parse - Date.parse()
+.SH SYNOPSIS
 .PP
 The \f[B]\f[VB]Date.parse()\f[B]\f[R] static method parses a string
 representation of a date, and returns the date\[cq]s timestamp.
@@ -26,7 +29,7 @@ supported.
 Other formats are implementation-defined and may not work across all
 browsers.
 A library can help if many different formats are to be accommodated.
-.SH Syntax
+.SH SYNTAX
 .IP
 .nf
 \f[C]
@@ -34,19 +37,16 @@ Date.parse(dateString)
 \f[R]
 .fi
 .SS Parameters
-.IP \[bu] 2
-\f[V]dateString\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]dateString\f[R]
 A string in the date time string format.
 See the linked reference for caveats on using different formats.
-.RE
 .SS Return value
 .PP
 A number representing the timestamp of the given date.
 If \f[V]dateString\f[R] fails to be parsed as a valid date,
 \f[V]NaN\f[R] is returned.
-.SH Description
+.SH DESCRIPTION
 .PP
 This function is useful for setting date values based on string values,
 for example in conjunction with the \f[V]setTime()\f[R] method.
@@ -54,7 +54,7 @@ for example in conjunction with the \f[V]setTime()\f[R] method.
 Because \f[V]parse()\f[R] is a static method of \f[V]Date\f[R], you
 always use it as \f[V]Date.parse()\f[R], rather than as a method of a
 \f[V]Date\f[R] object you created.
-.SH Examples
+.SH EXAMPLES
 .SS Using Date.parse()
 .PP
 The following calls all return \f[V]1546300800000\f[R].
@@ -128,6 +128,6 @@ Date.parse(\[dq]2014-02-30\[dq]);
 Date.parse(\[dq]02/30/2014\[dq]); // 1393718400000 in all implementations
 \f[R]
 .fi
-.SH See also
+.SH SEE ALSO
 .IP \[bu] 2
 \f[V]Date.UTC()\f[R]

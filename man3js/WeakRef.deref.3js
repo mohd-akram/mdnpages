@@ -14,14 +14,17 @@
 . ftr VB CB
 . ftr VBI CBI
 .\}
-.TH "WeakRef.deref" "JS" "2023-06-02" "JavaScript" "JavaScript Reference Manual"
+.TH "WeakRef.deref" "JS" "June 2, 2023" "JavaScript" "JavaScript Reference Manual"
 .hy
-.SH Synopsis
+.SH NAME
+.PP
+WeakRef.deref - WeakRef.prototype.deref()
+.SH SYNOPSIS
 .PP
 The \f[B]\f[VB]deref()\f[B]\f[R] method returns the \f[V]WeakRef\f[R]
 instance\[cq]s target value, or \f[V]undefined\f[R] if the target value
 has been garbage-collected.
-.SH Syntax
+.SH SYNTAX
 .IP
 .nf
 \f[C]
@@ -33,11 +36,11 @@ deref()
 The target value of the WeakRef, which is either an object or a
 non-registered symbol.
 Returns \f[V]undefined\f[R] if the value has been garbage-collected.
-.SH Description
+.SH DESCRIPTION
 .PP
 See the Notes on WeakRefs section of the \f[V]WeakRef\f[R] page for some
 important notes.
-.SH Examples
+.SH EXAMPLES
 .SS Using deref()
 .PP
 See the Examples section of the \f[V]WeakRef\f[R] page for the complete
@@ -59,6 +62,6 @@ const tick = () => {
 };
 \f[R]
 .fi
-.SH See also
+.SH SEE ALSO
 .IP \[bu] 2
 \f[V]WeakRef\f[R]

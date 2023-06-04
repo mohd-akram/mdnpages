@@ -14,16 +14,19 @@
 . ftr VB CB
 . ftr VBI CBI
 .\}
-.TH "Function.\[at]\[at]hasInstance" "JS" "2023-06-02" "JavaScript" "JavaScript Reference Manual"
+.TH "Function.\[at]\[at]hasInstance" "JS" "June 2, 2023" "JavaScript" "JavaScript Reference Manual"
 .hy
-.SH Synopsis
+.SH NAME
+.PP
+Function.\[at]\[at]hasInstance - Function.prototype\[at]\[at]hasInstance
+.SH SYNOPSIS
 .PP
 The \f[B]\f[VB][\[at]\[at]hasInstance]()\f[B]\f[R] method of
 \f[V]Function\f[R] instances specifies the default procedure for
 determining if a constructor function recognizes an object as one of the
 constructor\[cq]s instances.
 It is called by the \f[V]instanceof\f[R] operator.
-.SH Syntax
+.SH SYNTAX
 .IP
 .nf
 \f[C]
@@ -31,13 +34,10 @@ func[Symbol.hasInstance](value)
 \f[R]
 .fi
 .SS Parameters
-.IP \[bu] 2
-\f[V]value\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]value\f[R]
 The object to test.
 Primitive values always return \f[V]false\f[R].
-.RE
 .SS Return value
 .PP
 \f[V]true\f[R] if \f[V]func.prototype\f[R] is in the prototype chain of
@@ -48,14 +48,11 @@ If \f[V]this\f[R] is a bound function, returns the result of a
 \f[V]instanceof\f[R] test on \f[V]value\f[R] and the underlying target
 function.
 .SS Exceptions
-.IP \[bu] 2
-\f[V]TypeError\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]TypeError\f[R]
 Thrown if \f[V]this\f[R] is not a bound function and
 \f[V]this.prototype\f[R] is not an object.
-.RE
-.SH Description
+.SH DESCRIPTION
 .PP
 The \f[V]instanceof\f[R] operator calls the
 \f[V][\[at]\[at]hasInstance]()\f[R] method of the right-hand side
@@ -77,7 +74,7 @@ a bound function from being obtainable.
 See this StackOverflow
 answer (https://stackoverflow.com/questions/38215027/trying-to-understand-the-official-es6-spec-regarding-symbol-hasinstance/38215392#38215392)
 for an example.
-.SH Examples
+.SH EXAMPLES
 .SS Reverting to default instanceof behavior
 .PP
 You would rarely need to call this method directly.
@@ -110,7 +107,7 @@ console.log(foo instanceof Foo); // false
 console.log(Function.prototype[Symbol.hasInstance].call(Foo, foo)); // true
 \f[R]
 .fi
-.SH See also
+.SH SEE ALSO
 .IP \[bu] 2
 \f[V]instanceof\f[R]
 .IP \[bu] 2

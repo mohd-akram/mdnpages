@@ -14,9 +14,12 @@
 . ftr VB CB
 . ftr VBI CBI
 .\}
-.TH "Array.\[at]\[at]species" "JS" "2023-06-02" "JavaScript" "JavaScript Reference Manual"
+.TH "Array.\[at]\[at]species" "JS" "June 2, 2023" "JavaScript" "JavaScript Reference Manual"
 .hy
-.SH Synopsis
+.SH NAME
+.PP
+Array.\[at]\[at]species - Array[\[at]\[at]species]
+.SH SYNOPSIS
 .PP
 The \f[B]\f[VB]Array[\[at]\[at]species]\f[B]\f[R] static accessor
 property returns the constructor used to construct return values from
@@ -33,7 +36,7 @@ Modern array methods, such as \f[V]toReversed()\f[R], do not use
 \f[V]\[at]\[at]species\f[R] and always return a new \f[V]Array\f[R] base
 class instance.
 .RE
-.SH Syntax
+.SH SYNTAX
 .IP
 .nf
 \f[C]
@@ -46,7 +49,7 @@ The value of the constructor (\f[V]this\f[R]) on which
 \f[V]get \[at]\[at]species\f[R] was called.
 The return value is used to construct return values from array methods
 that create new arrays.
-.SH Description
+.SH DESCRIPTION
 .PP
 The \f[V]\[at]\[at]species\f[R] accessor property returns the default
 constructor for \f[V]Array\f[R] objects.
@@ -100,7 +103,7 @@ arr.filter((i) => i); // NotAnArray { \[aq]0\[aq]: 1, \[aq]1\[aq]: 2, length: 0 
 arr.concat([1, 2]); // NotAnArray { \[aq]0\[aq]: 0, \[aq]1\[aq]: 1, \[aq]2\[aq]: 2, \[aq]3\[aq]: 1, \[aq]4\[aq]: 2, length: 5 }
 \f[R]
 .fi
-.SH Examples
+.SH EXAMPLES
 .SS Species in ordinary objects
 .PP
 The \f[V]\[at]\[at]species\f[R] property returns the default constructor
@@ -129,7 +132,7 @@ class MyArray extends Array {
 }
 \f[R]
 .fi
-.SH See also
+.SH SEE ALSO
 .IP \[bu] 2
 Polyfill of \f[V]Array[\[at]\[at]species]\f[R] and support of
 \f[V]\[at]\[at]species\f[R] in all affected \f[V]Array\f[R] methods in

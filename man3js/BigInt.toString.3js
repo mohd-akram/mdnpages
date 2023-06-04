@@ -14,14 +14,17 @@
 . ftr VB CB
 . ftr VBI CBI
 .\}
-.TH "BigInt.toString" "JS" "2023-06-02" "JavaScript" "JavaScript Reference Manual"
+.TH "BigInt.toString" "JS" "June 2, 2023" "JavaScript" "JavaScript Reference Manual"
 .hy
-.SH Synopsis
+.SH NAME
+.PP
+BigInt.toString - BigInt.prototype.toString()
+.SH SYNOPSIS
 .PP
 The \f[B]\f[VB]toString()\f[B]\f[R] method returns a string representing
 the specified \f[V]BigInt\f[R] value.
 The trailing \[lq]n\[rq] is not part of the string.
-.SH Syntax
+.SH SYNTAX
 .IP
 .nf
 \f[C]
@@ -30,25 +33,19 @@ toString(radix)
 \f[R]
 .fi
 .SS Parameters
-.IP \[bu] 2
-\f[V]radix\f[R] \f[I](optional)\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]radix\f[R] \f[I](optional)\f[R]
 An integer in the range 2 through 36 specifying the base to use for
 representing the BigInt value.
 Defaults to 10.
-.RE
 .SS Return value
 .PP
 A string representing the specified \f[V]BigInt\f[R] value.
 .SS Exceptions
-.IP \[bu] 2
-\f[V]RangeError\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]RangeError\f[R]
 Thrown if \f[V]radix\f[R] is less than 2 or greater than 36.
-.RE
-.SH Description
+.SH DESCRIPTION
 .PP
 The \f[V]BigInt\f[R] object overrides the \f[V]toString\f[R] method of
 \f[V]Object\f[R]; it does not inherit
@@ -89,7 +86,7 @@ console.log(\[ga]${1n}\[ga]); // \[dq]1\[dq]
 console.log(\[ga]${Object(1n)}\[ga]); // \[dq]Overridden\[dq]
 \f[R]
 .fi
-.SH Examples
+.SH EXAMPLES
 .SS Using toString()
 .IP
 .nf
@@ -114,7 +111,7 @@ the JavaScript \f[V]Number\f[R] type.
 BigInt(-0).toString(); // \[dq]0\[dq]
 \f[R]
 .fi
-.SH See also
+.SH SEE ALSO
 .IP \[bu] 2
 \f[V]BigInt.prototype.toLocaleString()\f[R]
 .IP \[bu] 2

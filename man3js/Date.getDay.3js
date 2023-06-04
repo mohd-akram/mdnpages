@@ -14,15 +14,18 @@
 . ftr VB CB
 . ftr VBI CBI
 .\}
-.TH "Date.getDay" "JS" "2023-06-02" "JavaScript" "JavaScript Reference Manual"
+.TH "Date.getDay" "JS" "June 2, 2023" "JavaScript" "JavaScript Reference Manual"
 .hy
-.SH Synopsis
+.SH NAME
+.PP
+Date.getDay - Date.prototype.getDay()
+.SH SYNOPSIS
 .PP
 The \f[B]\f[VB]getDay()\f[B]\f[R] method of \f[V]Date\f[R] instances
 returns the day of the week for this date according to local time, where
 0 represents Sunday.
 For the day of the month, see \f[V]Date.prototype.getDate()\f[R].
-.SH Syntax
+.SH SYNTAX
 .IP
 .nf
 \f[C]
@@ -35,7 +38,7 @@ An integer, between 0 and 6, representing the day of the week for the
 given date according to local time: 0 for Sunday, 1 for Monday, 2 for
 Tuesday, and so on.
 Returns \f[V]NaN\f[R] if the date is invalid.
-.SH Description
+.SH DESCRIPTION
 .PP
 The return value of \f[V]getDay()\f[R] is zero-based, which is useful
 for indexing into arrays of days, for example:
@@ -63,7 +66,7 @@ console.log(new Intl.DateTimeFormat(\[dq]de-DE\[dq], options).format(valentines)
 // \[dq]Montag\[dq]
 \f[R]
 .fi
-.SH Examples
+.SH EXAMPLES
 .SS Using getDay()
 .PP
 The \f[V]weekday\f[R] variable has value \f[V]1\f[R], based on the value
@@ -78,7 +81,7 @@ const weekday = xmas95.getDay();
 console.log(weekday); // 1
 \f[R]
 .fi
-.SH See also
+.SH SEE ALSO
 .IP \[bu] 2
 \f[V]Date.prototype.getUTCDate()\f[R]
 .IP \[bu] 2

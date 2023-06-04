@@ -14,14 +14,17 @@
 . ftr VB CB
 . ftr VBI CBI
 .\}
-.TH "RegExp.\[at]\[at]matchAll" "JS" "2023-06-02" "JavaScript" "JavaScript Reference Manual"
+.TH "RegExp.\[at]\[at]matchAll" "JS" "June 2, 2023" "JavaScript" "JavaScript Reference Manual"
 .hy
-.SH Synopsis
+.SH NAME
+.PP
+RegExp.\[at]\[at]matchAll - RegExp.prototype\[at]\[at]matchAll
+.SH SYNOPSIS
 .PP
 The \f[B]\f[VB][\[at]\[at]matchAll]()\f[B]\f[R] method of
 \f[V]RegExp\f[R] instances specifies how
 \f[V]String.prototype.matchAll\f[R] should behave.
-.SH Syntax
+.SH SYNTAX
 .IP
 .nf
 \f[C]
@@ -29,18 +32,15 @@ regexp[Symbol.matchAll](str)
 \f[R]
 .fi
 .SS Parameters
-.IP \[bu] 2
-\f[V]str\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]str\f[R]
 A \f[V]String\f[R] that is a target of the match.
-.RE
 .SS Return value
 .PP
 An iterable iterator object (which is not restartable) of matches.
 Each match is an array with the same shape as the return value of
 \f[V]RegExp.prototype.exec()\f[R].
-.SH Description
+.SH DESCRIPTION
 .PP
 This method is called internally in
 \f[V]String.prototype.matchAll()\f[R].
@@ -106,7 +106,7 @@ console.log(Array.from(\[dq]😄\[dq].matchAll(/(?:)/gu)));
 .PP
 This method exists for customizing the behavior of \f[V]matchAll()\f[R]
 in \f[V]RegExp\f[R] subclasses.
-.SH Examples
+.SH EXAMPLES
 .SS Direct call
 .PP
 This method can be used in almost the same way as
@@ -150,7 +150,7 @@ console.log(result[1]);
 // [ \[dq]2019-03-07\[dq], \[dq]2019\[dq], \[dq]03\[dq], \[dq]07\[dq] ]
 \f[R]
 .fi
-.SH See also
+.SH SEE ALSO
 .IP \[bu] 2
 Polyfill of \f[V]RegExp.prototype[\[at]\[at]matchAll]\f[R] in
 \f[V]core-js\f[R] (https://github.com/zloirock/core-js#ecmascript-string-and-regexp)

@@ -14,14 +14,17 @@
 . ftr VB CB
 . ftr VBI CBI
 .\}
-.TH "Array.every" "JS" "2023-06-02" "JavaScript" "JavaScript Reference Manual"
+.TH "Array.every" "JS" "June 2, 2023" "JavaScript" "JavaScript Reference Manual"
 .hy
-.SH Synopsis
+.SH NAME
+.PP
+Array.every - Array.prototype.every()
+.SH SYNOPSIS
 .PP
 The \f[B]\f[VB]every()\f[B]\f[R] method tests whether all elements in
 the array pass the test implemented by the provided function.
 It returns a Boolean value.
-.SH Syntax
+.SH SYNTAX
 .IP
 .nf
 \f[C]
@@ -30,48 +33,33 @@ every(callbackFn, thisArg)
 \f[R]
 .fi
 .SS Parameters
-.IP \[bu] 2
-\f[V]callbackFn\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]callbackFn\f[R]
 A function to execute for each element in the array.
 It should return a truthy value to indicate the element passes the test,
 and a falsy value otherwise.
 The function is called with the following arguments:
-.RS 2
-.IP \[bu] 2
-\f[V]element\f[R]
-.RS 2
-.IP \[bu] 2
+.RS
+.TP
+\f[B]element\f[R]
 The current element being processed in the array.
-.RE
-.IP \[bu] 2
-\f[V]index\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]index\f[R]
 The index of the current element being processed in the array.
-.RE
-.IP \[bu] 2
-\f[V]array\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]array\f[R]
 The array \f[V]every()\f[R] was called upon.
 .RE
-.RE
-.RE
-.IP \[bu] 2
-\f[V]thisArg\f[R] \f[I](optional)\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]thisArg\f[R] \f[I](optional)\f[R]
 A value to use as \f[V]this\f[R] when executing \f[V]callbackFn\f[R].
 See iterative methods.
-.RE
 .SS Return value
 .PP
 \f[V]true\f[R] if \f[V]callbackFn\f[R] returns a truthy value for every
 array element.
 Otherwise, \f[V]false\f[R].
-.SH Description
+.SH DESCRIPTION
 .PP
 The \f[V]every()\f[R] method is an iterative method.
 It calls a provided \f[V]callbackFn\f[R] function once for each element
@@ -119,7 +107,7 @@ avoided (except in special cases).
 The \f[V]every()\f[R] method is generic.
 It only expects the \f[V]this\f[R] value to have a \f[V]length\f[R]
 property and integer-keyed properties.
-.SH Examples
+.SH EXAMPLES
 .SS Testing size of all array elements
 .PP
 The following example tests whether all elements in the array are bigger
@@ -234,7 +222,7 @@ console.log(
 ); // true
 \f[R]
 .fi
-.SH See also
+.SH SEE ALSO
 .IP \[bu] 2
 Polyfill of \f[V]Array.prototype.every\f[R] in
 \f[V]core-js\f[R] (https://github.com/zloirock/core-js#ecmascript-array)

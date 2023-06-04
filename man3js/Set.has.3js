@@ -14,14 +14,17 @@
 . ftr VB CB
 . ftr VBI CBI
 .\}
-.TH "Set.has" "JS" "2023-06-02" "JavaScript" "JavaScript Reference Manual"
+.TH "Set.has" "JS" "June 2, 2023" "JavaScript" "JavaScript Reference Manual"
 .hy
-.SH Synopsis
+.SH NAME
+.PP
+Set.has - Set.prototype.has()
+.SH SYNOPSIS
 .PP
 The \f[B]\f[VB]has()\f[B]\f[R] method returns a boolean indicating
 whether an element with the specified value exists in a \f[V]Set\f[R]
 object or not.
-.SH Syntax
+.SH SYNTAX
 .IP
 .nf
 \f[C]
@@ -29,17 +32,14 @@ has(value)
 \f[R]
 .fi
 .SS Parameters
-.IP \[bu] 2
-\f[V]value\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]value\f[R]
 The value to test for presence in the \f[V]Set\f[R] object.
-.RE
 .SS Return value
 .PP
 Returns \f[V]true\f[R] if an element with the specified value exists in
 the \f[V]Set\f[R] object; otherwise \f[V]false\f[R].
-.SH Examples
+.SH EXAMPLES
 .SS Using the has() method
 .IP
 .nf
@@ -59,7 +59,7 @@ console.log(set1.has({ key1: 1 })); // false, because they are different object 
 console.log(set1.add({ key1: 1 })); // now set1 contains 2 entries
 \f[R]
 .fi
-.SH See also
+.SH SEE ALSO
 .IP \[bu] 2
 \f[V]Set\f[R]
 .IP \[bu] 2

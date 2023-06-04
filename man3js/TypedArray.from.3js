@@ -14,14 +14,17 @@
 . ftr VB CB
 . ftr VBI CBI
 .\}
-.TH "TypedArray.from" "JS" "2023-06-02" "JavaScript" "JavaScript Reference Manual"
+.TH "TypedArray.from" "JS" "June 2, 2023" "JavaScript" "JavaScript Reference Manual"
 .hy
-.SH Synopsis
+.SH NAME
+.PP
+TypedArray.from - TypedArray.from()
+.SH SYNOPSIS
 .PP
 The \f[B]\f[VB]TypedArray.from()\f[B]\f[R] static method creates a new
 typed array from an array-like or iterable object.
 This method is nearly the same as \f[V]Array.from()\f[R].
-.SH Syntax
+.SH SYNTAX
 .IP
 .nf
 \f[C]
@@ -54,46 +57,31 @@ Where \f[V]TypedArray\f[R] is one of:
 .IP \[bu] 2
 \f[V]BigUint64Array\f[R]
 .SS Parameters
-.IP \[bu] 2
-\f[V]arrayLike\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]arrayLike\f[R]
 An iterable or array-like object to convert to a typed array.
-.RE
-.IP \[bu] 2
-\f[V]mapFn\f[R] \f[I](optional)\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]mapFn\f[R] \f[I](optional)\f[R]
 A function to call on every element of the typed array.
 If provided, every value to be added to the array is first passed
 through this function, and \f[V]mapFn\f[R]\[cq]s return value is added
 to the typed array instead.
 The function is called with the following arguments:
-.RS 2
-.IP \[bu] 2
-\f[V]element\f[R]
-.RS 2
-.IP \[bu] 2
+.RS
+.TP
+\f[B]element\f[R]
 The current element being processed in the typed array.
-.RE
-.IP \[bu] 2
-\f[V]index\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]index\f[R]
 The index of the current element being processed in the typed array.
 .RE
-.RE
-.RE
-.IP \[bu] 2
-\f[V]thisArg\f[R] \f[I](optional)\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]thisArg\f[R] \f[I](optional)\f[R]
 Value to use as \f[V]this\f[R] when executing \f[V]mapFn\f[R].
-.RE
 .SS Return value
 .PP
 A new \f[V]TypedArray\f[R] instance.
-.SH Description
+.SH DESCRIPTION
 .PP
 See \f[V]Array.from()\f[R] for more details.
 .PP
@@ -128,7 +116,7 @@ Hence, when working with \f[V]Proxy\f[R] objects, it calls
 When \f[V]Array.from()\f[R] gets an array-like which isn\[cq]t an
 iterator, it respects holes.
 \f[V]TypedArray.from()\f[R] will ensure the result is dense.
-.SH Examples
+.SH EXAMPLES
 .SS From an iterable object (Set)
 .IP
 .nf
@@ -193,7 +181,7 @@ console.log(Int8Array.from.call(NotArray2, [1, 2, 3]));
 // Uint8Array(3) [ 1, 2, 3 ]
 \f[R]
 .fi
-.SH See also
+.SH SEE ALSO
 .IP \[bu] 2
 Polyfill of \f[V]TypedArray.from\f[R] in
 \f[V]core-js\f[R] (https://github.com/zloirock/core-js#ecmascript-typed-arrays)

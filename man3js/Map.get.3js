@@ -14,16 +14,19 @@
 . ftr VB CB
 . ftr VBI CBI
 .\}
-.TH "Map.get" "JS" "2023-06-02" "JavaScript" "JavaScript Reference Manual"
+.TH "Map.get" "JS" "June 2, 2023" "JavaScript" "JavaScript Reference Manual"
 .hy
-.SH Synopsis
+.SH NAME
+.PP
+Map.get - Map.prototype.get()
+.SH SYNOPSIS
 .PP
 The \f[B]\f[VB]get()\f[B]\f[R] method returns a specified element from a
 \f[V]Map\f[R] object.
 If the value that is associated to the provided key is an object, then
 you will get a reference to that object and any change made to that
 object will effectively modify it inside the \f[V]Map\f[R] object.
-.SH Syntax
+.SH SYNTAX
 .IP
 .nf
 \f[C]
@@ -31,17 +34,14 @@ get(key)
 \f[R]
 .fi
 .SS Parameters
-.IP \[bu] 2
-\f[V]key\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]key\f[R]
 The key of the element to return from the \f[V]Map\f[R] object.
-.RE
 .SS Return value
 .PP
 The element associated with the specified key, or \f[V]undefined\f[R] if
 the key can\[cq]t be found in the \f[V]Map\f[R] object.
-.SH Examples
+.SH EXAMPLES
 .SS Using get()
 .IP
 .nf
@@ -73,7 +73,7 @@ means the object cannot be garbage-collected, which may lead to
 unexpected memory issues.
 If you want the object stored in the map to have the same lifespan as
 the original one, consider using a \f[V]WeakMap\f[R].
-.SH See also
+.SH SEE ALSO
 .IP \[bu] 2
 \f[V]Map\f[R]
 .IP \[bu] 2

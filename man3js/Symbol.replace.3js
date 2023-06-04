@@ -15,9 +15,12 @@
 . ftr VB CB
 . ftr VBI CBI
 .\}
-.TH "Symbol.replace" "JS" "2023-06-02" "JavaScript" "JavaScript Reference Manual"
+.TH "Symbol.replace" "JS" "June 2, 2023" "JavaScript" "JavaScript Reference Manual"
 .hy
-.SH Synopsis
+.SH NAME
+.PP
+Symbol.replace - Symbol.replace
+.SH SYNOPSIS
 .PP
 The \f[B]\f[VB]Symbol.replace\f[B]\f[R] static data property represents
 the well-known symbol \f[V]\[at]\[at]replace\f[R].
@@ -28,7 +31,7 @@ the current object.
 For more information, see
 \f[V]RegExp.prototype[\[at]\[at]replace]()\f[R] and
 \f[V]String.prototype.replace()\f[R].
-.SH Value
+.SH VALUE
 .PP
 The well-known symbol \f[V]\[at]\[at]replace\f[R].
 .PP
@@ -51,7 +54,7 @@ T}@T{
 no
 T}
 .TE
-.SH Examples
+.SH EXAMPLES
 .SS Using Symbol.replace
 .IP
 .nf
@@ -68,7 +71,7 @@ class CustomReplacer {
 console.log(\[dq]football\[dq].replace(new CustomReplacer(\[dq]foo\[dq]))); // \[dq]#!\[at]?tball\[dq]
 \f[R]
 .fi
-.SH See also
+.SH SEE ALSO
 .IP \[bu] 2
 Polyfill of \f[V]Symbol.replace\f[R] in
 \f[V]core-js\f[R] (https://github.com/zloirock/core-js#ecmascript-symbol)

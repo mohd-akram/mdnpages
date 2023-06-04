@@ -14,9 +14,12 @@
 . ftr VB CB
 . ftr VBI CBI
 .\}
-.TH "TypedArray.findLast" "JS" "2023-06-02" "JavaScript" "JavaScript Reference Manual"
+.TH "TypedArray.findLast" "JS" "June 2, 2023" "JavaScript" "JavaScript Reference Manual"
 .hy
-.SH Synopsis
+.SH NAME
+.PP
+TypedArray.findLast - TypedArray.prototype.findLast()
+.SH SYNOPSIS
 .PP
 The \f[B]\f[VB]findLast()\f[B]\f[R] method iterates a typed array in
 reverse order and returns the value of the first element that satisfies
@@ -26,7 +29,7 @@ returned.
 .PP
 See also the \f[V]findLastIndex()\f[R] method, which returns the index
 of the found element instead of its value.
-.SH Syntax
+.SH SYNTAX
 .IP
 .nf
 \f[C]
@@ -35,48 +38,33 @@ findLast(callbackFn, thisArg)
 \f[R]
 .fi
 .SS Parameters
-.IP \[bu] 2
-\f[V]callbackFn\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]callbackFn\f[R]
 A function to execute for each element in the typed array.
 It should return a truthy value to indicate a matching element has been
 found, and a falsy value otherwise.
 The function is called with the following arguments:
-.RS 2
-.IP \[bu] 2
-\f[V]element\f[R]
-.RS 2
-.IP \[bu] 2
+.RS
+.TP
+\f[B]element\f[R]
 The current element being processed in the typed array.
-.RE
-.IP \[bu] 2
-\f[V]index\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]index\f[R]
 The index of the current element being processed in the typed array.
-.RE
-.IP \[bu] 2
-\f[V]array\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]array\f[R]
 The typed array \f[V]findLast()\f[R] was called upon.
 .RE
-.RE
-.RE
-.IP \[bu] 2
-\f[V]thisArg\f[R] \f[I](optional)\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]thisArg\f[R] \f[I](optional)\f[R]
 A value to use as \f[V]this\f[R] when executing \f[V]callbackFn\f[R].
 See iterative methods.
-.RE
 .SS Return value
 .PP
 The element in the typed array with the highest index value that
 satisfies the provided testing function; \f[V]undefined\f[R] if no
 matching value is found.
-.SH Description
+.SH DESCRIPTION
 .PP
 The \f[V]findLast()\f[R] method executes the \f[V]callbackFn\f[R]
 function once for each index of the typed array in descending-index
@@ -112,7 +100,7 @@ If an existing, unvisited element of the typed array is changed by
 previous paragraph frequently leads to hard-to-understand code and is
 generally to be avoided (except in special cases).
 .RE
-.SH Examples
+.SH EXAMPLES
 .SS Find a prime number in a typed array
 .PP
 The following example finds the value of the last element in the typed
@@ -183,7 +171,7 @@ uint8.findLast((value, index) => {
 // Visited index 0 with value 0
 \f[R]
 .fi
-.SH See also
+.SH SEE ALSO
 .IP \[bu] 2
 Polyfill of \f[V]TypedArray.prototype.findLast()\f[R] in
 \f[V]core-js\f[R] (https://github.com/zloirock/core-js#ecmascript-typed-arrays)

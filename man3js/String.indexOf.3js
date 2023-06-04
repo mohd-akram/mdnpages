@@ -14,9 +14,12 @@
 . ftr VB CB
 . ftr VBI CBI
 .\}
-.TH "String.indexOf" "JS" "2023-06-02" "JavaScript" "JavaScript Reference Manual"
+.TH "String.indexOf" "JS" "June 2, 2023" "JavaScript" "JavaScript Reference Manual"
 .hy
-.SH Synopsis
+.SH NAME
+.PP
+String.indexOf - String.prototype.indexOf()
+.SH SYNOPSIS
 .PP
 The \f[B]\f[VB]indexOf()\f[B]\f[R] method of \f[V]String\f[R] values
 searches this string and returns the index of the first occurrence of
@@ -24,7 +27,7 @@ the specified substring.
 It takes an optional starting position and returns the first occurrence
 of the specified substring at an index greater than or equal to the
 specified number.
-.SH Syntax
+.SH SYNTAX
 .IP
 .nf
 \f[C]
@@ -33,19 +36,14 @@ indexOf(searchString, position)
 \f[R]
 .fi
 .SS Parameters
-.IP \[bu] 2
-\f[V]searchString\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]searchString\f[R]
 Substring to search for.
 All values are coerced to strings, so omitting it or passing
 \f[V]undefined\f[R] causes \f[V]indexOf()\f[R] to search for the string
 \f[V]\[dq]undefined\[dq]\f[R], which is rarely what you want.
-.RE
-.IP \[bu] 2
-\f[V]position\f[R] \f[I](optional)\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]position\f[R] \f[I](optional)\f[R]
 The method returns the index of the first occurrence of the specified
 substring at a position greater than or equal to \f[V]position\f[R],
 which defaults to \f[V]0\f[R].
@@ -53,7 +51,7 @@ If \f[V]position\f[R] is greater than the length of the calling string,
 the method doesn\[cq]t search the calling string at all.
 If \f[V]position\f[R] is less than zero, the method behaves as it would
 if \f[V]position\f[R] were \f[V]0\f[R].
-.RS 2
+.RS
 .IP \[bu] 2
 \f[V]\[aq]hello world hello\[aq].indexOf(\[aq]o\[aq], -5)\f[R] returns
 \f[V]4\f[R] \[em] because it causes the method to behave as if the
@@ -70,7 +68,6 @@ greater than or equal to \f[V]12\f[R].
 \f[V]-1\f[R] \[em] because \f[V]99\f[R] is greater than the length of
 \f[V]hello world hello\f[R], which causes the method to not search the
 string at all.
-.RE
 .RE
 .SS Return value
 .PP
@@ -107,7 +104,7 @@ In the former instance, the method behaves as if it found an empty
 string just after the position specified in the second argument.
 In the latter instance, the method behaves as if it found an empty
 string at the end of the calling string.
-.SH Description
+.SH DESCRIPTION
 .PP
 Strings are zero-indexed: The index of a string\[cq]s first character is
 \f[V]0\f[R], and the index of a string\[cq]s last character is the
@@ -146,7 +143,7 @@ correct way to check is test whether the return value is \f[V]-1\f[R]:
 \[dq]Blue Whale\[dq].indexOf(\[dq]Bloe\[dq]) !== -1; // false; no \[aq]Bloe\[aq] in \[aq]Blue Whale\[aq]
 \f[R]
 .fi
-.SH Examples
+.SH EXAMPLES
 .SS Using indexOf()
 .PP
 The following example uses \f[V]indexOf()\f[R] to locate substrings in
@@ -199,7 +196,7 @@ while (position !== -1) {
 console.log(count); // 4
 \f[R]
 .fi
-.SH See also
+.SH SEE ALSO
 .IP \[bu] 2
 \f[V]String.prototype.charAt()\f[R]
 .IP \[bu] 2

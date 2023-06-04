@@ -14,13 +14,16 @@
 . ftr VB CB
 . ftr VBI CBI
 .\}
-.TH "Math.sin" "JS" "2023-06-02" "JavaScript" "JavaScript Reference Manual"
+.TH "Math.sin" "JS" "June 2, 2023" "JavaScript" "JavaScript Reference Manual"
 .hy
-.SH Synopsis
+.SH NAME
+.PP
+Math.sin - Math.sin()
+.SH SYNOPSIS
 .PP
 The \f[B]\f[VB]Math.sin()\f[B]\f[R] static method returns the sine of a
 number in radians.
-.SH Syntax
+.SH SYNTAX
 .IP
 .nf
 \f[C]
@@ -28,23 +31,20 @@ Math.sin(x)
 \f[R]
 .fi
 .SS Parameters
-.IP \[bu] 2
-\f[V]x\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]x\f[R]
 A number representing an angle in radians.
-.RE
 .SS Return value
 .PP
 The sine of \f[V]x\f[R], between -1 and 1, inclusive.
 If \f[V]x\f[R] is \f[V]Infinity\f[R], \f[V]-Infinity\f[R], or
 \f[V]NaN\f[R], returns \f[V]NaN\f[R].
-.SH Description
+.SH DESCRIPTION
 .PP
 Because \f[V]sin()\f[R] is a static method of \f[V]Math\f[R], you always
 use it as \f[V]Math.sin()\f[R], rather than as a method of a
 \f[V]Math\f[R] object you created (\f[V]Math\f[R] is not a constructor).
-.SH Examples
+.SH EXAMPLES
 .SS Using Math.sin()
 .IP
 .nf
@@ -57,7 +57,7 @@ Math.sin(Math.PI / 2); // 1
 Math.sin(Infinity); // NaN
 \f[R]
 .fi
-.SH See also
+.SH SEE ALSO
 .IP \[bu] 2
 \f[V]Math.acos()\f[R]
 .IP \[bu] 2

@@ -14,15 +14,18 @@
 . ftr VB CB
 . ftr VBI CBI
 .\}
-.TH "parseInt" "JS" "2023-06-02" "JavaScript" "JavaScript Reference Manual"
+.TH "parseInt" "JS" "June 2, 2023" "JavaScript" "JavaScript Reference Manual"
 .hy
-.SH Synopsis
+.SH NAME
+.PP
+parseInt - parseInt()
+.SH SYNOPSIS
 .PP
 The \f[B]\f[VB]parseInt()\f[B]\f[R] function parses a string argument
 and returns an integer of the specified
 radix (https://en.wikipedia.org/wiki/Radix) (the base in mathematical
 numeral systems).
-.SH Syntax
+.SH SYNTAX
 .IP
 .nf
 \f[C]
@@ -31,17 +34,12 @@ parseInt(string, radix)
 \f[R]
 .fi
 .SS Parameters
-.IP \[bu] 2
-\f[V]string\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]string\f[R]
 A string starting with an integer.
 Leading whitespace in this argument is ignored.
-.RE
-.IP \[bu] 2
-\f[V]radix\f[R] \f[I](optional)\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]radix\f[R] \f[I](optional)\f[R]
 An integer between \f[V]2\f[R] and \f[V]36\f[R] that represents the
 \f[I]radix\f[R] (the base in mathematical numeral systems) of the
 \f[V]string\f[R].
@@ -53,7 +51,6 @@ If \f[V]0\f[R] or not provided, the radix will be inferred based on
 Be careful \[em] this does \f[I]not\f[R] always default to \f[V]10\f[R]!
 The description below explains in more detail what happens when
 \f[V]radix\f[R] is not provided.
-.RE
 .SS Return value
 .PP
 An integer parsed from the given \f[V]string\f[R], or \f[V]NaN\f[R] when
@@ -73,7 +70,7 @@ For example, \f[V]parseInt(\[dq]42\[dq])\f[R] and
 \f[V]parseFloat(\[dq]42\[dq])\f[R] would return the same value: a
 \f[V]Number\f[R] 42.
 .RE
-.SH Description
+.SH DESCRIPTION
 .PP
 The \f[V]parseInt\f[R] function converts its first argument to a string,
 parses that string, then returns an integer or \f[V]NaN\f[R].
@@ -165,7 +162,7 @@ of precision if the integer represented by the string is outside the
 safe range.
 The \f[V]BigInt()\f[R] function supports parsing integers of arbitrary
 length accurately, by returning a \f[V]BigInt\f[R].
-.SH Examples
+.SH EXAMPLES
 .SS Using parseInt()
 .PP
 The following examples all return \f[V]15\f[R]:
@@ -304,7 +301,7 @@ parseInt(123000000000000000000000, 10); // 1
 parseInt(1e21, 10); // 1
 \f[R]
 .fi
-.SH See also
+.SH SEE ALSO
 .IP \[bu] 2
 \f[V]parseFloat()\f[R]
 .IP \[bu] 2

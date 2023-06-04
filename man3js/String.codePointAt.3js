@@ -14,15 +14,18 @@
 . ftr VB CB
 . ftr VBI CBI
 .\}
-.TH "String.codePointAt" "JS" "2023-06-02" "JavaScript" "JavaScript Reference Manual"
+.TH "String.codePointAt" "JS" "June 2, 2023" "JavaScript" "JavaScript Reference Manual"
 .hy
-.SH Synopsis
+.SH NAME
+.PP
+String.codePointAt - String.prototype.codePointAt()
+.SH SYNOPSIS
 .PP
 The \f[B]\f[VB]codePointAt()\f[B]\f[R] method returns a non-negative
 integer that is the Unicode code point value at the given position.
 Note that this function does not give the nth code point in a string,
 but the code point starting at the specified string index.
-.SH Syntax
+.SH SYNTAX
 .IP
 .nf
 \f[C]
@@ -30,13 +33,10 @@ codePointAt(pos)
 \f[R]
 .fi
 .SS Parameters
-.IP \[bu] 2
-\f[V]pos\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]pos\f[R]
 Position of an element in \f[V]str\f[R] to return the code point value
 from.
-.RE
 .SS Return value
 .PP
 A decimal number representing the code point value of the character at
@@ -49,7 +49,7 @@ code point of the surrogate \f[I]pair\f[R].
 .IP \[bu] 2
 If the element at \f[V]pos\f[R] is a UTF-16 low surrogate, returns
 \f[I]only\f[R] the low surrogate code point.
-.SH Examples
+.SH EXAMPLES
 .SS Using codePointAt()
 .IP
 .nf
@@ -87,7 +87,7 @@ for (const codePoint of \[dq]\[rs]ud83d\[rs]udc0e\[rs]ud83d\[rs]udc71\[rs]u2764\
 // \[aq]1f40e\[aq], \[aq]1f471\[aq], \[aq]2764\[aq]
 \f[R]
 .fi
-.SH See also
+.SH SEE ALSO
 .IP \[bu] 2
 Polyfill of \f[V]String.prototype.codePointAt\f[R] in
 \f[V]core-js\f[R] (https://github.com/zloirock/core-js#ecmascript-string-and-regexp)

@@ -14,13 +14,16 @@
 . ftr VB CB
 . ftr VBI CBI
 .\}
-.TH "Promise.reject" "JS" "2023-06-02" "JavaScript" "JavaScript Reference Manual"
+.TH "Promise.reject" "JS" "June 2, 2023" "JavaScript" "JavaScript Reference Manual"
 .hy
-.SH Synopsis
+.SH NAME
+.PP
+Promise.reject - Promise.reject()
+.SH SYNOPSIS
 .PP
 The \f[B]\f[VB]Promise.reject()\f[B]\f[R] static method returns a
 \f[V]Promise\f[R] object that is rejected with a given reason.
-.SH Syntax
+.SH SYNTAX
 .IP
 .nf
 \f[C]
@@ -28,16 +31,13 @@ Promise.reject(reason)
 \f[R]
 .fi
 .SS Parameters
-.IP \[bu] 2
-\f[V]reason\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]reason\f[R]
 Reason why this \f[V]Promise\f[R] rejected.
-.RE
 .SS Return value
 .PP
 A \f[V]Promise\f[R] that is rejected with the given reason.
-.SH Description
+.SH DESCRIPTION
 .PP
 The static \f[V]Promise.reject\f[R] function returns a \f[V]Promise\f[R]
 that is rejected.
@@ -57,7 +57,7 @@ single \f[V]executor\f[R] function that can be called with the
 Unlike \f[V]Promise.resolve()\f[R], \f[V]Promise.reject()\f[R] always
 wraps \f[V]reason\f[R] in a new \f[V]Promise\f[R] object, even when
 \f[V]reason\f[R] is already a \f[V]Promise\f[R].
-.SH Examples
+.SH EXAMPLES
 .SS Using the static Promise.reject() method
 .IP
 .nf
@@ -113,6 +113,6 @@ class NotPromise {
 Promise.reject.call(NotPromise, \[dq]foo\[dq]); // Logs \[dq]Rejected foo\[dq]
 \f[R]
 .fi
-.SH See also
+.SH SEE ALSO
 .IP \[bu] 2
 \f[V]Promise\f[R]

@@ -14,13 +14,16 @@
 . ftr VB CB
 . ftr VBI CBI
 .\}
-.TH "Date.setMinutes" "JS" "2023-06-02" "JavaScript" "JavaScript Reference Manual"
+.TH "Date.setMinutes" "JS" "June 2, 2023" "JavaScript" "JavaScript Reference Manual"
 .hy
-.SH Synopsis
+.SH NAME
+.PP
+Date.setMinutes - Date.prototype.setMinutes()
+.SH SYNOPSIS
 .PP
 The \f[B]\f[VB]setMinutes()\f[B]\f[R] method of \f[V]Date\f[R] instances
 changes the minutes for this date according to local time.
-.SH Syntax
+.SH SYNTAX
 .IP
 .nf
 \f[C]
@@ -30,28 +33,19 @@ setMinutes(minutesValue, secondsValue, msValue)
 \f[R]
 .fi
 .SS Parameters
-.IP \[bu] 2
-\f[V]minutesValue\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]minutesValue\f[R]
 An integer between 0 and 59 representing the minutes.
-.RE
-.IP \[bu] 2
-\f[V]secondsValue\f[R] \f[I](optional)\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]secondsValue\f[R] \f[I](optional)\f[R]
 An integer between 0 and 59 representing the seconds.
 If you specify \f[V]secondsValue\f[R], you must also specify
 \f[V]minutesValue\f[R].
-.RE
-.IP \[bu] 2
-\f[V]msValue\f[R] \f[I](optional)\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]msValue\f[R] \f[I](optional)\f[R]
 An integer between 0 and 999 representing the milliseconds.
 If you specify \f[V]msValue\f[R], you must also specify
 \f[V]minutesValue\f[R] and \f[V]secondsValue\f[R].
-.RE
 .SS Return value
 .PP
 Changes the \f[V]Date\f[R] object in place, and returns its new
@@ -59,7 +53,7 @@ timestamp.
 If a parameter is \f[V]NaN\f[R] (or other values that get coerced to
 \f[V]NaN\f[R], such as \f[V]undefined\f[R]), the date is set to Invalid
 Date and \f[V]NaN\f[R] is returned.
-.SH Description
+.SH DESCRIPTION
 .PP
 If you do not specify the \f[V]secondsValue\f[R] and \f[V]msValue\f[R]
 parameters, the same values as what are returned by
@@ -71,7 +65,7 @@ updated accordingly.
 For example, if you specify 100 for \f[V]secondsValue\f[R], the minutes
 is incremented by 1 (\f[V]minutesValue + 1\f[R]), and 40 is used for
 seconds.
-.SH Examples
+.SH EXAMPLES
 .SS Using setMinutes()
 .IP
 .nf
@@ -80,7 +74,7 @@ const theBigDay = new Date();
 theBigDay.setMinutes(45);
 \f[R]
 .fi
-.SH See also
+.SH SEE ALSO
 .IP \[bu] 2
 \f[V]Date.prototype.getMinutes()\f[R]
 .IP \[bu] 2

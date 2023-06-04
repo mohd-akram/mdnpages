@@ -14,14 +14,17 @@
 . ftr VB CB
 . ftr VBI CBI
 .\}
-.TH "ArrayBuffer.maxByteLength" "JS" "2023-06-02" "JavaScript" "JavaScript Reference Manual"
+.TH "ArrayBuffer.maxByteLength" "JS" "June 2, 2023" "JavaScript" "JavaScript Reference Manual"
 .hy
-.SH Synopsis
+.SH NAME
+.PP
+ArrayBuffer.maxByteLength - ArrayBuffer.prototype.maxByteLength
+.SH SYNOPSIS
 .PP
 The \f[B]\f[VB]maxByteLength\f[B]\f[R] accessor property of
 \f[V]ArrayBuffer\f[R] instances returns the maximum length (in bytes)
 that this array buffer can be resized to.
-.SH Description
+.SH DESCRIPTION
 .PP
 The \f[V]maxByteLength\f[R] property is an accessor property whose set
 accessor function is \f[V]undefined\f[R], meaning that you can only read
@@ -34,7 +37,7 @@ This property returns 0 if this \f[V]ArrayBuffer\f[R] has been detached.
 If this \f[V]ArrayBuffer\f[R] was constructed without specifying a
 \f[V]maxByteLength\f[R] value, this property returns a value equal to
 the value of the \f[V]ArrayBuffer\f[R]\[cq]s \f[V]byteLength\f[R].
-.SH Examples
+.SH EXAMPLES
 .SS Using maxByteLength
 .PP
 In this example, we create an 8-byte buffer that is resizable to a max
@@ -47,7 +50,7 @@ const buffer = new ArrayBuffer(8, { maxByteLength: 16 });
 buffer.maxByteLength; // 16
 \f[R]
 .fi
-.SH See also
+.SH SEE ALSO
 .IP \[bu] 2
 \f[V]ArrayBuffer\f[R]
 .IP \[bu] 2

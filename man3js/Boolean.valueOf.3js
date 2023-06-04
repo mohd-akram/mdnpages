@@ -14,13 +14,16 @@
 . ftr VB CB
 . ftr VBI CBI
 .\}
-.TH "Boolean.valueOf" "JS" "2023-06-02" "JavaScript" "JavaScript Reference Manual"
+.TH "Boolean.valueOf" "JS" "June 2, 2023" "JavaScript" "JavaScript Reference Manual"
 .hy
-.SH Synopsis
+.SH NAME
+.PP
+Boolean.valueOf - Boolean.prototype.valueOf()
+.SH SYNOPSIS
 .PP
 The \f[B]\f[VB]valueOf()\f[B]\f[R] method returns the primitive value of
 a \f[V]Boolean\f[R] object.
-.SH Syntax
+.SH SYNTAX
 .IP
 .nf
 \f[C]
@@ -30,7 +33,7 @@ valueOf()
 .SS Return value
 .PP
 The primitive value of the given \f[V]Boolean\f[R] object.
-.SH Description
+.SH DESCRIPTION
 .PP
 The \f[V]valueOf()\f[R] method of \f[V]Boolean\f[R] returns the
 primitive value of a \f[V]Boolean\f[R] object or literal
@@ -38,7 +41,7 @@ primitive value of a \f[V]Boolean\f[R] object or literal
 .PP
 This method is usually called internally by JavaScript and not
 explicitly in code.
-.SH Examples
+.SH EXAMPLES
 .SS Using \f[V]valueOf()\f[R]
 .IP
 .nf
@@ -47,6 +50,6 @@ x = new Boolean();
 myVar = x.valueOf(); // assigns false to myVar
 \f[R]
 .fi
-.SH See also
+.SH SEE ALSO
 .IP \[bu] 2
 \f[V]Object.prototype.valueOf()\f[R]

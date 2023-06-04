@@ -14,14 +14,17 @@
 . ftr VB CB
 . ftr VBI CBI
 .\}
-.TH "Date.getMilliseconds" "JS" "2023-06-02" "JavaScript" "JavaScript Reference Manual"
+.TH "Date.getMilliseconds" "JS" "June 2, 2023" "JavaScript" "JavaScript Reference Manual"
 .hy
-.SH Synopsis
+.SH NAME
+.PP
+Date.getMilliseconds - Date.prototype.getMilliseconds()
+.SH SYNOPSIS
 .PP
 The \f[B]\f[VB]getMilliseconds()\f[B]\f[R] method of \f[V]Date\f[R]
 instances returns the milliseconds for this date according to local
 time.
-.SH Syntax
+.SH SYNTAX
 .IP
 .nf
 \f[C]
@@ -33,7 +36,7 @@ getMilliseconds()
 An integer, between 0 and 999, representing the milliseconds for the
 given date according to local time.
 Returns \f[V]NaN\f[R] if the date is invalid.
-.SH Examples
+.SH EXAMPLES
 .SS Using getMilliseconds()
 .PP
 The \f[V]milliseconds\f[R] variable has value \f[V]0\f[R], based on the
@@ -48,7 +51,7 @@ const milliseconds = xmas95.getMilliseconds();
 console.log(milliseconds); // 0
 \f[R]
 .fi
-.SH See also
+.SH SEE ALSO
 .IP \[bu] 2
 \f[V]Date.prototype.getUTCMilliseconds()\f[R]
 .IP \[bu] 2

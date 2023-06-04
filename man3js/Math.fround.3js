@@ -14,15 +14,18 @@
 . ftr VB CB
 . ftr VBI CBI
 .\}
-.TH "Math.fround" "JS" "2023-06-02" "JavaScript" "JavaScript Reference Manual"
+.TH "Math.fround" "JS" "June 2, 2023" "JavaScript" "JavaScript Reference Manual"
 .hy
-.SH Synopsis
+.SH NAME
+.PP
+Math.fround - Math.fround()
+.SH SYNOPSIS
 .PP
 The \f[B]\f[VB]Math.fround()\f[B]\f[R] static method returns the nearest
 32-bit single
 precision (https://en.wikipedia.org/wiki/Single-precision_floating-point_format)
 float representation of a number.
-.SH Syntax
+.SH SYNTAX
 .IP
 .nf
 \f[C]
@@ -30,18 +33,15 @@ Math.fround(doubleFloat)
 \f[R]
 .fi
 .SS Parameters
-.IP \[bu] 2
-\f[V]doubleFloat\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]doubleFloat\f[R]
 A number.
-.RE
 .SS Return value
 .PP
 The nearest 32-bit single
 precision (https://en.wikipedia.org/wiki/Single-precision_floating-point_format)
 float representation of \f[V]x\f[R].
-.SH Description
+.SH DESCRIPTION
 .PP
 JavaScript uses 64-bit double floating-point numbers internally, which
 offer a very high precision.
@@ -62,7 +62,7 @@ or \f[V]-Infinity\f[R] is returned.
 Because \f[V]fround()\f[R] is a static method of \f[V]Math\f[R], you
 always use it as \f[V]Math.fround()\f[R], rather than as a method of a
 \f[V]Math\f[R] object you created (\f[V]Math\f[R] is not a constructor).
-.SH Examples
+.SH EXAMPLES
 .SS Using Math.fround()
 .PP
 The number 1.5 can be precisely represented in the binary numeral
@@ -94,7 +94,7 @@ returned:
 Math.fround(2 ** 150); // Infinity
 \f[R]
 .fi
-.SH See also
+.SH SEE ALSO
 .IP \[bu] 2
 Polyfill of \f[V]Math.fround\f[R] in
 \f[V]core-js\f[R] (https://github.com/zloirock/core-js#ecmascript-math)

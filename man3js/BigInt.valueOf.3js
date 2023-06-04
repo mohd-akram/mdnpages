@@ -14,13 +14,16 @@
 . ftr VB CB
 . ftr VBI CBI
 .\}
-.TH "BigInt.valueOf" "JS" "2023-06-02" "JavaScript" "JavaScript Reference Manual"
+.TH "BigInt.valueOf" "JS" "June 2, 2023" "JavaScript" "JavaScript Reference Manual"
 .hy
-.SH Synopsis
+.SH NAME
+.PP
+BigInt.valueOf - BigInt.prototype.valueOf()
+.SH SYNOPSIS
 .PP
 The \f[B]\f[VB]valueOf()\f[B]\f[R] method returns the wrapped primitive
 value of a \f[V]BigInt\f[R] object.
-.SH Syntax
+.SH SYNTAX
 .IP
 .nf
 \f[C]
@@ -31,7 +34,7 @@ bigIntObj.valueOf()
 .PP
 A BigInt representing the primitive value of the specified
 \f[V]BigInt\f[R] object.
-.SH Examples
+.SH EXAMPLES
 .SS Using \f[V]valueOf\f[R]
 .IP
 .nf
@@ -40,6 +43,6 @@ typeof Object(1n); // object
 typeof Object(1n).valueOf(); // bigint
 \f[R]
 .fi
-.SH See also
+.SH SEE ALSO
 .IP \[bu] 2
 \f[V]BigInt.prototype.toString()\f[R]

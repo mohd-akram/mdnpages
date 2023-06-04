@@ -14,14 +14,17 @@
 . ftr VB CB
 . ftr VBI CBI
 .\}
-.TH "Math.sign" "JS" "2023-06-02" "JavaScript" "JavaScript Reference Manual"
+.TH "Math.sign" "JS" "June 2, 2023" "JavaScript" "JavaScript Reference Manual"
 .hy
-.SH Synopsis
+.SH NAME
+.PP
+Math.sign - Math.sign()
+.SH SYNOPSIS
 .PP
 The \f[B]\f[VB]Math.sign()\f[B]\f[R] static method returns 1 or -1,
 indicating the sign of the number passed as argument.
 If the input is 0 or -0, it will be returned as-is.
-.SH Syntax
+.SH SYNTAX
 .IP
 .nf
 \f[C]
@@ -29,12 +32,9 @@ Math.sign(x)
 \f[R]
 .fi
 .SS Parameters
-.IP \[bu] 2
-\f[V]x\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]x\f[R]
 A number.
-.RE
 .SS Return value
 .PP
 A number representing the sign of \f[V]x\f[R]:
@@ -48,12 +48,12 @@ If \f[V]x\f[R] is positive zero, returns \f[V]0\f[R].
 If \f[V]x\f[R] is negative zero, returns \f[V]-0\f[R].
 .IP \[bu] 2
 Otherwise, returns \f[V]NaN\f[R].
-.SH Description
+.SH DESCRIPTION
 .PP
 Because \f[V]sign()\f[R] is a static method of \f[V]Math\f[R], you
 always use it as \f[V]Math.sign()\f[R], rather than as a method of a
 \f[V]Math\f[R] object you created (\f[V]Math\f[R] is not a constructor).
-.SH Examples
+.SH EXAMPLES
 .SS Using Math.sign()
 .IP
 .nf
@@ -68,7 +68,7 @@ Math.sign(\[dq]foo\[dq]); // NaN
 Math.sign(); // NaN
 \f[R]
 .fi
-.SH See also
+.SH SEE ALSO
 .IP \[bu] 2
 Polyfill of \f[V]Math.sign\f[R] in
 \f[V]core-js\f[R] (https://github.com/zloirock/core-js#ecmascript-math)

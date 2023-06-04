@@ -14,14 +14,17 @@
 . ftr VB CB
 . ftr VBI CBI
 .\}
-.TH "Int32Array.Int32Array" "JS" "2023-06-02" "JavaScript" "JavaScript Reference Manual"
+.TH "Int32Array.Int32Array" "JS" "June 2, 2023" "JavaScript" "JavaScript Reference Manual"
 .hy
-.SH Synopsis
+.SH NAME
+.PP
+Int32Array.Int32Array - Int32Array() constructor
+.SH SYNOPSIS
 .PP
 The \f[B]\f[VB]Int32Array()\f[B]\f[R] constructor creates
 \f[V]Int32Array\f[R] objects.
 The contents are initialized to \f[V]0\f[R].
-.SH Syntax
+.SH SYNTAX
 .IP
 .nf
 \f[C]
@@ -48,7 +51,7 @@ See \f[V]TypedArray\f[R].
 .SS Exceptions
 .PP
 See \f[V]TypedArray\f[R].
-.SH Examples
+.SH EXAMPLES
 .SS Different ways to create an Int32Array
 .IP
 .nf
@@ -82,7 +85,7 @@ console.log(int32FromIterable);
 // Int32Array [1, 2, 3]
 \f[R]
 .fi
-.SH See also
+.SH SEE ALSO
 .IP \[bu] 2
 Polyfill of \f[V]Int32Array\f[R] in
 \f[V]core-js\f[R] (https://github.com/zloirock/core-js#ecmascript-typed-arrays)

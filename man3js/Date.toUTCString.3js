@@ -15,9 +15,12 @@
 . ftr VB CB
 . ftr VBI CBI
 .\}
-.TH "Date.toUTCString" "JS" "2023-06-02" "JavaScript" "JavaScript Reference Manual"
+.TH "Date.toUTCString" "JS" "June 2, 2023" "JavaScript" "JavaScript Reference Manual"
 .hy
-.SH Synopsis
+.SH NAME
+.PP
+Date.toUTCString - Date.prototype.toUTCString()
+.SH SYNOPSIS
 .PP
 The \f[B]\f[VB]toUTCString()\f[B]\f[R] method of \f[V]Date\f[R]
 instances returns a string representing this date in the RFC
@@ -25,7 +28,7 @@ instances returns a string representing this date in the RFC
 format, with negative years allowed.
 The timezone is always UTC.
 \f[V]toGMTString()\f[R] is an alias of this method.
-.SH Syntax
+.SH SYNTAX
 .IP
 .nf
 \f[C]
@@ -37,7 +40,7 @@ toUTCString()
 A string representing the given date using the UTC time zone (see
 description for the format).
 Returns \f[V]\[dq]Invalid Date\[dq]\f[R] if the date is invalid.
-.SH Description
+.SH DESCRIPTION
 .PP
 The value returned by \f[V]toUTCString()\f[R] is a string in the form
 \f[V]Www, dd Mmm yyyy hh:mm:ss GMT\f[R], where:
@@ -108,7 +111,7 @@ This means:
 Date.prototype.toGMTString.name === \[dq]toUTCString\[dq];
 \f[R]
 .fi
-.SH Examples
+.SH EXAMPLES
 .SS Using toUTCString()
 .IP
 .nf
@@ -117,7 +120,7 @@ const d = new Date(0);
 console.log(d.toUTCString()); // \[aq]Thu, 01 Jan 1970 00:00:00 GMT\[aq]
 \f[R]
 .fi
-.SH See also
+.SH SEE ALSO
 .IP \[bu] 2
 \f[V]Date.prototype.toLocaleString()\f[R]
 .IP \[bu] 2

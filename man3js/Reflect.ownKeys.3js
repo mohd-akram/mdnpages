@@ -14,13 +14,16 @@
 . ftr VB CB
 . ftr VBI CBI
 .\}
-.TH "Reflect.ownKeys" "JS" "2023-06-02" "JavaScript" "JavaScript Reference Manual"
+.TH "Reflect.ownKeys" "JS" "June 2, 2023" "JavaScript" "JavaScript Reference Manual"
 .hy
-.SH Synopsis
+.SH NAME
+.PP
+Reflect.ownKeys - Reflect.ownKeys()
+.SH SYNOPSIS
 .PP
 The \f[B]\f[VB]Reflect.ownKeys()\f[B]\f[R] static method returns an
 array of the \f[V]target\f[R] object\[cq]s own property keys.
-.SH Syntax
+.SH SYNTAX
 .IP
 .nf
 \f[C]
@@ -28,12 +31,9 @@ Reflect.ownKeys(target)
 \f[R]
 .fi
 .SS Parameters
-.IP \[bu] 2
-\f[V]target\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]target\f[R]
 The target object from which to get the own keys.
-.RE
 .SS Return value
 .PP
 An \f[V]Array\f[R] of the \f[V]target\f[R] object\[cq]s own property
@@ -47,13 +47,10 @@ Other string keys in the order of property creation
 .IP "3." 3
 Symbol keys in the order of property creation.
 .SS Exceptions
-.IP \[bu] 2
-\f[V]TypeError\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]TypeError\f[R]
 Thrown if \f[V]target\f[R] is not an object.
-.RE
-.SH Description
+.SH DESCRIPTION
 .PP
 \f[V]Reflect.ownKeys()\f[R] provides the reflective semantic of
 retrieving all property keys of an object.
@@ -74,7 +71,7 @@ the keys may be different.
 .PP
 \f[V]Reflect.ownKeys()\f[R] invokes the \f[V][[OwnPropertyKeys]]\f[R]
 object internal method of \f[V]target\f[R].
-.SH Examples
+.SH EXAMPLES
 .SS Using Reflect.ownKeys()
 .IP
 .nf
@@ -101,7 +98,7 @@ Reflect.ownKeys(obj);
 // symbols in insertion order
 \f[R]
 .fi
-.SH See also
+.SH SEE ALSO
 .IP \[bu] 2
 Polyfill of \f[V]Reflect.ownKeys\f[R] in
 \f[V]core-js\f[R] (https://github.com/zloirock/core-js#ecmascript-reflect)

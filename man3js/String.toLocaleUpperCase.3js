@@ -14,14 +14,17 @@
 . ftr VB CB
 . ftr VBI CBI
 .\}
-.TH "String.toLocaleUpperCase" "JS" "2023-06-02" "JavaScript" "JavaScript Reference Manual"
+.TH "String.toLocaleUpperCase" "JS" "June 2, 2023" "JavaScript" "JavaScript Reference Manual"
 .hy
-.SH Synopsis
+.SH NAME
+.PP
+String.toLocaleUpperCase - String.prototype.toLocaleUpperCase()
+.SH SYNOPSIS
 .PP
 The \f[B]\f[VB]toLocaleUpperCase()\f[B]\f[R] method returns the calling
 string value converted to upper case, according to any locale-specific
 case mappings.
-.SH Syntax
+.SH SYNTAX
 .IP
 .nf
 \f[C]
@@ -30,16 +33,14 @@ toLocaleUpperCase(locales)
 \f[R]
 .fi
 .SS Parameters
-.IP \[bu] 2
-\f[V]locales\f[R] \f[I](optional)\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]locales\f[R] \f[I](optional)\f[R]
 A string with a BCP 47 language tag, or an array of such strings.
 Indicates the locale to be used to convert to upper case according to
 any locale-specific case mappings.
 For the general form and interpretation of the \f[V]locales\f[R]
 argument, see the parameter description on the \f[V]Intl\f[R] main page.
-.RS 2
+.RS
 .PP
 Unlike other methods that use the \f[V]locales\f[R] argument,
 \f[V]toLocaleLowerCase()\f[R] does not allow locale matching.
@@ -48,12 +49,11 @@ argument, \f[V]toLocaleLowerCase()\f[R] always uses the first locale in
 the list (or the default locale if the list is empty), even if this
 locale is not supported by the implementation.
 .RE
-.RE
 .SS Return value
 .PP
 A new string representing the calling string converted to upper case,
 according to any locale-specific case mappings.
-.SH Description
+.SH DESCRIPTION
 .PP
 The \f[V]toLocaleUpperCase()\f[R] method returns the value of the string
 converted to upper case according to any locale-specific case mappings.
@@ -72,7 +72,7 @@ length.
 This also implies that the conversion is not stable, so i.E.
 the following can return \f[V]false\f[R]:
 \f[V]x.toLocaleLowerCase() === x.toLocaleUpperCase().toLocaleLowerCase()\f[R]
-.SH Examples
+.SH EXAMPLES
 .SS Using toLocaleUpperCase()
 .IP
 .nf
@@ -87,7 +87,7 @@ const locales = [\[dq]lt\[dq], \[dq]LT\[dq], \[dq]lt-LT\[dq], \[dq]lt-u-co-phone
 \[dq]i\[rs]u0307\[dq].toLocaleUpperCase(locales); // \[aq]I\[aq]
 \f[R]
 .fi
-.SH See also
+.SH SEE ALSO
 .IP \[bu] 2
 \f[V]String.prototype.toLocaleLowerCase()\f[R]
 .IP \[bu] 2

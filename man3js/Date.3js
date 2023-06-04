@@ -14,9 +14,12 @@
 . ftr VB CB
 . ftr VBI CBI
 .\}
-.TH "Date" "JS" "2023-06-02" "JavaScript" "JavaScript Reference Manual"
+.TH "Date" "JS" "June 2, 2023" "JavaScript" "JavaScript Reference Manual"
 .hy
-.SH Synopsis
+.SH NAME
+.PP
+Date - Date
+.SH SYNOPSIS
 .PP
 JavaScript \f[B]\f[VB]Date\f[B]\f[R] objects represent a single moment
 in time in a platform-independent format.
@@ -32,7 +35,7 @@ Read more about it on the Igalia
 blog (https://blogs.igalia.com/compilers/2020/06/23/dates-and-times-in-javascript/).
 It is not yet ready for production use!
 .RE
-.SH Description
+.SH DESCRIPTION
 .SS The epoch, timestamps, and invalid date
 .PP
 A JavaScript date is fundamentally specified as the time in milliseconds
@@ -329,366 +332,213 @@ usually provided by the \f[V]Intl\f[R] API.
 .PP
 See the Formats of \f[V]toString\f[R] method return values section for
 examples.
-.SH Constructor
-.IP \[bu] 2
-\f[V]Date()\f[R]
-.RS 2
-.IP \[bu] 2
+.SH CONSTRUCTOR
+.TP
+\f[B]Date()\f[R]
 When called as a constructor, returns a new \f[V]Date\f[R] object.
 When called as a function, returns a string representation of the
 current date and time.
-.RE
-.SH Static methods
-.IP \[bu] 2
-\f[V]Date.now()\f[R]
-.RS 2
-.IP \[bu] 2
+.SH STATIC METHODS
+.TP
+\f[B]Date.now()\f[R]
 Returns the numeric value corresponding to the current time\[em]the
 number of milliseconds elapsed since January 1, 1970 00:00:00 UTC, with
 leap seconds ignored.
-.RE
-.IP \[bu] 2
-\f[V]Date.parse()\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]Date.parse()\f[R]
 Parses a string representation of a date and returns the number of
 milliseconds since 1 January, 1970, 00:00:00 UTC, with leap seconds
 ignored.
-.RE
-.IP \[bu] 2
-\f[V]Date.UTC()\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]Date.UTC()\f[R]
 Accepts the same parameters as the longest form of the constructor
 (i.e.\ 2 to 7) and returns the number of milliseconds since January 1,
 1970, 00:00:00 UTC, with leap seconds ignored.
-.RE
-.SH Instance properties
+.SH INSTANCE PROPERTIES
 .PP
 These properties are defined on \f[V]Date.prototype\f[R] and shared by
 all \f[V]Date\f[R] instances.
-.IP \[bu] 2
-\f[V]Date.prototype.constructor\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]Date.prototype.constructor\f[R]
 The constructor function that created the instance object.
 For \f[V]Date\f[R] instances, the initial value is the \f[V]Date\f[R]
 constructor.
-.RE
-.SH Instance methods
-.IP \[bu] 2
-\f[V]Date.prototype.getDate()\f[R]
-.RS 2
-.IP \[bu] 2
+.SH INSTANCE METHODS
+.TP
+\f[B]Date.prototype.getDate()\f[R]
 Returns the day of the month (\f[V]1\f[R] \[en] \f[V]31\f[R]) for the
 specified date according to local time.
-.RE
-.IP \[bu] 2
-\f[V]Date.prototype.getDay()\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]Date.prototype.getDay()\f[R]
 Returns the day of the week (\f[V]0\f[R] \[en] \f[V]6\f[R]) for the
 specified date according to local time.
-.RE
-.IP \[bu] 2
-\f[V]Date.prototype.getFullYear()\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]Date.prototype.getFullYear()\f[R]
 Returns the year (4 digits for 4-digit years) of the specified date
 according to local time.
-.RE
-.IP \[bu] 2
-\f[V]Date.prototype.getHours()\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]Date.prototype.getHours()\f[R]
 Returns the hour (\f[V]0\f[R] \[en] \f[V]23\f[R]) in the specified date
 according to local time.
-.RE
-.IP \[bu] 2
-\f[V]Date.prototype.getMilliseconds()\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]Date.prototype.getMilliseconds()\f[R]
 Returns the milliseconds (\f[V]0\f[R] \[en] \f[V]999\f[R]) in the
 specified date according to local time.
-.RE
-.IP \[bu] 2
-\f[V]Date.prototype.getMinutes()\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]Date.prototype.getMinutes()\f[R]
 Returns the minutes (\f[V]0\f[R] \[en] \f[V]59\f[R]) in the specified
 date according to local time.
-.RE
-.IP \[bu] 2
-\f[V]Date.prototype.getMonth()\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]Date.prototype.getMonth()\f[R]
 Returns the month (\f[V]0\f[R] \[en] \f[V]11\f[R]) in the specified date
 according to local time.
-.RE
-.IP \[bu] 2
-\f[V]Date.prototype.getSeconds()\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]Date.prototype.getSeconds()\f[R]
 Returns the seconds (\f[V]0\f[R] \[en] \f[V]59\f[R]) in the specified
 date according to local time.
-.RE
-.IP \[bu] 2
-\f[V]Date.prototype.getTime()\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]Date.prototype.getTime()\f[R]
 Returns the numeric value of the specified date as the number of
 milliseconds since January 1, 1970, 00:00:00 UTC.
 (Negative values are returned for prior times.)
-.RE
-.IP \[bu] 2
-\f[V]Date.prototype.getTimezoneOffset()\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]Date.prototype.getTimezoneOffset()\f[R]
 Returns the time-zone offset in minutes for the current locale.
-.RE
-.IP \[bu] 2
-\f[V]Date.prototype.getUTCDate()\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]Date.prototype.getUTCDate()\f[R]
 Returns the day (date) of the month (\f[V]1\f[R] \[en] \f[V]31\f[R]) in
 the specified date according to universal time.
-.RE
-.IP \[bu] 2
-\f[V]Date.prototype.getUTCDay()\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]Date.prototype.getUTCDay()\f[R]
 Returns the day of the week (\f[V]0\f[R] \[en] \f[V]6\f[R]) in the
 specified date according to universal time.
-.RE
-.IP \[bu] 2
-\f[V]Date.prototype.getUTCFullYear()\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]Date.prototype.getUTCFullYear()\f[R]
 Returns the year (4 digits for 4-digit years) in the specified date
 according to universal time.
-.RE
-.IP \[bu] 2
-\f[V]Date.prototype.getUTCHours()\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]Date.prototype.getUTCHours()\f[R]
 Returns the hours (\f[V]0\f[R] \[en] \f[V]23\f[R]) in the specified date
 according to universal time.
-.RE
-.IP \[bu] 2
-\f[V]Date.prototype.getUTCMilliseconds()\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]Date.prototype.getUTCMilliseconds()\f[R]
 Returns the milliseconds (\f[V]0\f[R] \[en] \f[V]999\f[R]) in the
 specified date according to universal time.
-.RE
-.IP \[bu] 2
-\f[V]Date.prototype.getUTCMinutes()\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]Date.prototype.getUTCMinutes()\f[R]
 Returns the minutes (\f[V]0\f[R] \[en] \f[V]59\f[R]) in the specified
 date according to universal time.
-.RE
-.IP \[bu] 2
-\f[V]Date.prototype.getUTCMonth()\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]Date.prototype.getUTCMonth()\f[R]
 Returns the month (\f[V]0\f[R] \[en] \f[V]11\f[R]) in the specified date
 according to universal time.
-.RE
-.IP \[bu] 2
-\f[V]Date.prototype.getUTCSeconds()\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]Date.prototype.getUTCSeconds()\f[R]
 Returns the seconds (\f[V]0\f[R] \[en] \f[V]59\f[R]) in the specified
 date according to universal time.
-.RE
-.IP \[bu] 2
-\f[V]Date.prototype.getYear()\f[R] \f[I](deprecated)\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]Date.prototype.getYear()\f[R] \f[I](deprecated)\f[R]
 Returns the year (usually 2\[en]3 digits) in the specified date
 according to local time.
 Use \f[V]getFullYear()\f[R] instead.
-.RE
-.IP \[bu] 2
-\f[V]Date.prototype.setDate()\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]Date.prototype.setDate()\f[R]
 Sets the day of the month for a specified date according to local time.
-.RE
-.IP \[bu] 2
-\f[V]Date.prototype.setFullYear()\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]Date.prototype.setFullYear()\f[R]
 Sets the full year (e.g.\ 4 digits for 4-digit years) for a specified
 date according to local time.
-.RE
-.IP \[bu] 2
-\f[V]Date.prototype.setHours()\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]Date.prototype.setHours()\f[R]
 Sets the hours for a specified date according to local time.
-.RE
-.IP \[bu] 2
-\f[V]Date.prototype.setMilliseconds()\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]Date.prototype.setMilliseconds()\f[R]
 Sets the milliseconds for a specified date according to local time.
-.RE
-.IP \[bu] 2
-\f[V]Date.prototype.setMinutes()\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]Date.prototype.setMinutes()\f[R]
 Sets the minutes for a specified date according to local time.
-.RE
-.IP \[bu] 2
-\f[V]Date.prototype.setMonth()\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]Date.prototype.setMonth()\f[R]
 Sets the month for a specified date according to local time.
-.RE
-.IP \[bu] 2
-\f[V]Date.prototype.setSeconds()\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]Date.prototype.setSeconds()\f[R]
 Sets the seconds for a specified date according to local time.
-.RE
-.IP \[bu] 2
-\f[V]Date.prototype.setTime()\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]Date.prototype.setTime()\f[R]
 Sets the \f[V]Date\f[R] object to the time represented by a number of
 milliseconds since January 1, 1970, 00:00:00 UTC.
 Use negative numbers for times prior.
-.RE
-.IP \[bu] 2
-\f[V]Date.prototype.setUTCDate()\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]Date.prototype.setUTCDate()\f[R]
 Sets the day of the month for a specified date according to universal
 time.
-.RE
-.IP \[bu] 2
-\f[V]Date.prototype.setUTCFullYear()\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]Date.prototype.setUTCFullYear()\f[R]
 Sets the full year (e.g.\ 4 digits for 4-digit years) for a specified
 date according to universal time.
-.RE
-.IP \[bu] 2
-\f[V]Date.prototype.setUTCHours()\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]Date.prototype.setUTCHours()\f[R]
 Sets the hour for a specified date according to universal time.
-.RE
-.IP \[bu] 2
-\f[V]Date.prototype.setUTCMilliseconds()\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]Date.prototype.setUTCMilliseconds()\f[R]
 Sets the milliseconds for a specified date according to universal time.
-.RE
-.IP \[bu] 2
-\f[V]Date.prototype.setUTCMinutes()\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]Date.prototype.setUTCMinutes()\f[R]
 Sets the minutes for a specified date according to universal time.
-.RE
-.IP \[bu] 2
-\f[V]Date.prototype.setUTCMonth()\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]Date.prototype.setUTCMonth()\f[R]
 Sets the month for a specified date according to universal time.
-.RE
-.IP \[bu] 2
-\f[V]Date.prototype.setUTCSeconds()\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]Date.prototype.setUTCSeconds()\f[R]
 Sets the seconds for a specified date according to universal time.
-.RE
-.IP \[bu] 2
-\f[V]Date.prototype.setYear()\f[R] \f[I](deprecated)\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]Date.prototype.setYear()\f[R] \f[I](deprecated)\f[R]
 Sets the year (usually 2\[en]3 digits) for a specified date according to
 local time.
 Use \f[V]setFullYear()\f[R] instead.
-.RE
-.IP \[bu] 2
-\f[V]Date.prototype.toDateString()\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]Date.prototype.toDateString()\f[R]
 Returns the \[lq]date\[rq] portion of the \f[V]Date\f[R] as a
 human-readable string like \f[V]\[aq]Thu Apr 12 2018\[aq]\f[R].
-.RE
-.IP \[bu] 2
-\f[V]Date.prototype.toISOString()\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]Date.prototype.toISOString()\f[R]
 Converts a date to a string following the ISO 8601 Extended Format.
-.RE
-.IP \[bu] 2
-\f[V]Date.prototype.toJSON()\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]Date.prototype.toJSON()\f[R]
 Returns a string representing the \f[V]Date\f[R] using
 \f[V]toISOString()\f[R].
 Intended for use by \f[V]JSON.stringify()\f[R].
-.RE
-.IP \[bu] 2
-\f[V]Date.prototype.toLocaleDateString()\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]Date.prototype.toLocaleDateString()\f[R]
 Returns a string with a locality sensitive representation of the date
 portion of this date based on system settings.
-.RE
-.IP \[bu] 2
-\f[V]Date.prototype.toLocaleString()\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]Date.prototype.toLocaleString()\f[R]
 Returns a string with a locality-sensitive representation of this date.
 Overrides the \f[V]Object.prototype.toLocaleString()\f[R] method.
-.RE
-.IP \[bu] 2
-\f[V]Date.prototype.toLocaleTimeString()\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]Date.prototype.toLocaleTimeString()\f[R]
 Returns a string with a locality-sensitive representation of the time
 portion of this date, based on system settings.
-.RE
-.IP \[bu] 2
-\f[V]Date.prototype.toString()\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]Date.prototype.toString()\f[R]
 Returns a string representing the specified \f[V]Date\f[R] object.
 Overrides the \f[V]Object.prototype.toString()\f[R] method.
-.RE
-.IP \[bu] 2
-\f[V]Date.prototype.toTimeString()\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]Date.prototype.toTimeString()\f[R]
 Returns the \[lq]time\[rq] portion of the \f[V]Date\f[R] as a
 human-readable string.
-.RE
-.IP \[bu] 2
-\f[V]Date.prototype.toUTCString()\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]Date.prototype.toUTCString()\f[R]
 Converts a date to a string using the UTC timezone.
-.RE
-.IP \[bu] 2
-\f[V]Date.prototype.valueOf()\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]Date.prototype.valueOf()\f[R]
 Returns the primitive value of a \f[V]Date\f[R] object.
 Overrides the \f[V]Object.prototype.valueOf()\f[R] method.
-.RE
-.IP \[bu] 2
-\f[V]Date.prototype[\[at]\[at]toPrimitive]()\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]Date.prototype[\[at]\[at]toPrimitive]()\f[R]
 Converts this \f[V]Date\f[R] object to a primitive value.
-.RE
-.SH Examples
+.SH EXAMPLES
 .SS Several ways to create a Date object
 .PP
 The following examples show several ways to create JavaScript dates:
@@ -855,6 +705,6 @@ simple division won\[cq]t do.
 It\[cq]s also important to only return actually elapsed seconds.
 (That\[cq]s why this code uses \f[V]Math.floor()\f[R], and \f[I]not\f[R]
 \f[V]Math.round()\f[R].)
-.SH See also
+.SH SEE ALSO
 .IP \[bu] 2
 \f[V]Date()\f[R] constructor

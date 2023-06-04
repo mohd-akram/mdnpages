@@ -14,9 +14,12 @@
 . ftr VB CB
 . ftr VBI CBI
 .\}
-.TH "String.localeCompare" "JS" "2023-06-02" "JavaScript" "JavaScript Reference Manual"
+.TH "String.localeCompare" "JS" "June 2, 2023" "JavaScript" "JavaScript Reference Manual"
 .hy
-.SH Synopsis
+.SH NAME
+.PP
+String.localeCompare - String.prototype.localeCompare()
+.SH SYNOPSIS
 .PP
 The \f[B]\f[VB]localeCompare()\f[B]\f[R] method returns a number
 indicating whether a reference string comes before, or after, or is the
@@ -27,7 +30,7 @@ simply calls \f[V]Intl.Collator\f[R].
 When comparing large numbers of strings, such as in sorting large
 arrays, it is better to create an \f[V]Intl.Collator\f[R] object and use
 the function provided by its \f[V]compare()\f[R] method.
-.SH Syntax
+.SH SYNTAX
 .IP
 .nf
 \f[C]
@@ -49,40 +52,31 @@ Implementations without \f[V]Intl.Collator\f[R] support are asked to
 ignore both parameters, making the comparison result returned entirely
 implementation-dependent \[em] it\[cq]s only required to be
 \f[I]consistent\f[R].
-.IP \[bu] 2
-\f[V]compareString\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]compareString\f[R]
 The string against which the \f[V]referenceStr\f[R] is compared.
 All values are coerced to strings, so omitting it or passing
 \f[V]undefined\f[R] causes \f[V]localeCompare()\f[R] to compare against
 the string \f[V]\[dq]undefined\[dq]\f[R], which is rarely what you want.
-.RE
-.IP \[bu] 2
-\f[V]locales\f[R] \f[I](optional)\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]locales\f[R] \f[I](optional)\f[R]
 A string with a BCP 47 language tag, or an array of such strings.
 Corresponds to the \f[V]locales\f[R] parameter of the
 \f[V]Intl.Collator()\f[R] constructor.
-.RS 2
+.RS
 .PP
 In implementations without \f[V]Intl.Collator\f[R] support, this
 parameter is ignored and the host\[cq]s locale is usually used.
 .RE
-.RE
-.IP \[bu] 2
-\f[V]options\f[R] \f[I](optional)\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]options\f[R] \f[I](optional)\f[R]
 An object adjusting the output format.
 Corresponds to the \f[V]options\f[R] parameter of the
 \f[V]Intl.Collator()\f[R] constructor.
-.RS 2
+.RS
 .PP
 In implementations without \f[V]Intl.Collator\f[R] support, this
 parameter is ignored.
-.RE
 .RE
 .PP
 See the \f[V]Intl.Collator()\f[R] constructor for details on the
@@ -96,7 +90,7 @@ if they are equivalent.
 .PP
 In implementations with \f[V]Intl.Collator\f[R], this is equivalent to
 \f[V]new Intl.Collator(locales, options).compare(referenceStr, compareString)\f[R].
-.SH Description
+.SH DESCRIPTION
 .PP
 Returns an integer indicating whether the \f[V]referenceStr\f[R] comes
 before, after or is equivalent to the \f[V]compareString\f[R].
@@ -119,7 +113,7 @@ mandates negative and positive values.
 Some browsers may return \f[V]-2\f[R] or \f[V]2\f[R], or even some other
 negative or positive value.
 .RE
-.SH Examples
+.SH EXAMPLES
 .SS Using localeCompare()
 .IP
 .nf
@@ -208,6 +202,6 @@ console.log(\[dq]2\[dq].localeCompare(\[dq]10\[dq], undefined, { numeric: true }
 console.log(\[dq]2\[dq].localeCompare(\[dq]10\[dq], \[dq]en-u-kn-true\[dq])); // -1
 \f[R]
 .fi
-.SH See also
+.SH SEE ALSO
 .IP \[bu] 2
 \f[V]Intl.Collator\f[R]

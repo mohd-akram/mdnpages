@@ -14,13 +14,16 @@
 . ftr VB CB
 . ftr VBI CBI
 .\}
-.TH "Boolean" "JS" "2023-06-02" "JavaScript" "JavaScript Reference Manual"
+.TH "Boolean" "JS" "June 2, 2023" "JavaScript" "JavaScript Reference Manual"
 .hy
-.SH Synopsis
+.SH NAME
+.PP
+Boolean - Boolean
+.SH SYNOPSIS
 .PP
 The \f[B]\f[VB]Boolean\f[B]\f[R] object represents a truth value:
 \f[V]true\f[R] or \f[V]false\f[R].
-.SH Description
+.SH DESCRIPTION
 .SS Boolean primitives and Boolean objects
 .PP
 Do not confuse the primitive \f[V]Boolean\f[R] values \f[V]true\f[R] and
@@ -175,42 +178,30 @@ Truthy values are even more unlikely to be loosely equal to
 \f[V]true\f[R].
 All values are either truthy or falsy, but most values are loosely equal
 to neither \f[V]true\f[R] nor \f[V]false\f[R].
-.SH Constructor
-.IP \[bu] 2
-\f[V]Boolean()\f[R]
-.RS 2
-.IP \[bu] 2
+.SH CONSTRUCTOR
+.TP
+\f[B]Boolean()\f[R]
 Creates a new \f[V]Boolean\f[R] object.
-.RE
-.SH Instance properties
+.SH INSTANCE PROPERTIES
 .PP
 These properties are defined on \f[V]Boolean.prototype\f[R] and shared
 by all \f[V]Boolean\f[R] instances.
-.IP \[bu] 2
-\f[V]Boolean.prototype.constructor\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]Boolean.prototype.constructor\f[R]
 The constructor function that created the instance object.
 For \f[V]Boolean\f[R] instances, the initial value is the
 \f[V]Boolean\f[R] constructor.
-.RE
-.SH Instance methods
-.IP \[bu] 2
-\f[V]Boolean.prototype.toString()\f[R]
-.RS 2
-.IP \[bu] 2
+.SH INSTANCE METHODS
+.TP
+\f[B]Boolean.prototype.toString()\f[R]
 Returns a string of either \f[V]true\f[R] or \f[V]false\f[R] depending
 upon the value of the object.
 Overrides the \f[V]Object.prototype.toString()\f[R] method.
-.RE
-.IP \[bu] 2
-\f[V]Boolean.prototype.valueOf()\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]Boolean.prototype.valueOf()\f[R]
 Returns the primitive value of the \f[V]Boolean\f[R] object.
 Overrides the \f[V]Object.prototype.valueOf()\f[R] method.
-.RE
-.SH Examples
+.SH EXAMPLES
 .SS Creating Boolean objects with an initial value of false
 .IP
 .nf
@@ -234,7 +225,7 @@ const bArrayProto = new Boolean([]);
 const bObjProto = new Boolean({});
 \f[R]
 .fi
-.SH See also
+.SH SEE ALSO
 .IP \[bu] 2
 Boolean
 .IP \[bu] 2

@@ -14,9 +14,13 @@
 . ftr VB CB
 . ftr VBI CBI
 .\}
-.TH "SharedArrayBuffer.\[at]\[at]species" "JS" "2023-06-02" "JavaScript" "JavaScript Reference Manual"
+.TH "SharedArrayBuffer.\[at]\[at]species" "JS" "June 2, 2023" "JavaScript" "JavaScript Reference Manual"
 .hy
-.SH Synopsis
+.SH NAME
+.PP
+SharedArrayBuffer.\[at]\[at]species -
+SharedArrayBuffer[\[at]\[at]species]
+.SH SYNOPSIS
 .PP
 The \f[B]\f[VB]SharedArrayBuffer[\[at]\[at]species]\f[B]\f[R] static
 accessor property returns the constructor used to construct return
@@ -30,7 +34,7 @@ Engine implementers are investigating whether to remove this
 feature (https://github.com/tc39/proposal-rm-builtin-subclassing).
 Avoid relying on it if possible.
 .RE
-.SH Syntax
+.SH SYNTAX
 .IP
 .nf
 \f[C]
@@ -43,7 +47,7 @@ The value of the constructor (\f[V]this\f[R]) on which
 \f[V]get \[at]\[at]species\f[R] was called.
 The return value is used to construct return values from array buffer
 methods that create new array buffer.
-.SH Description
+.SH DESCRIPTION
 .PP
 The \f[V]\[at]\[at]species\f[R] accessor property returns the default
 constructor for \f[V]SharedArrayBuffer\f[R] objects.
@@ -79,7 +83,7 @@ the array\[cq]s \f[V]constructor[\[at]\[at]species]\f[R] will be
 accessed.
 The returned constructor will be used to construct the return value of
 the array buffer method.
-.SH Examples
+.SH EXAMPLES
 .SS Species in ordinary objects
 .PP
 The \f[V]\[at]\[at]species\f[R] property returns the default constructor
@@ -109,7 +113,7 @@ class MySharedArrayBuffer extends SharedArrayBuffer {
 }
 \f[R]
 .fi
-.SH See also
+.SH SEE ALSO
 .IP \[bu] 2
 \f[V]SharedArrayBuffer\f[R]
 .IP \[bu] 2

@@ -14,14 +14,17 @@
 . ftr VB CB
 . ftr VBI CBI
 .\}
-.TH "String.isWellFormed" "JS" "2023-06-02" "JavaScript" "JavaScript Reference Manual"
+.TH "String.isWellFormed" "JS" "June 2, 2023" "JavaScript" "JavaScript Reference Manual"
 .hy
-.SH Synopsis
+.SH NAME
+.PP
+String.isWellFormed - String.prototype.isWellFormed()
+.SH SYNOPSIS
 .PP
 The \f[B]\f[VB]isWellFormed()\f[B]\f[R] method of \f[V]String\f[R]
 values returns a boolean indicating whether this string contains any
 lone surrogates.
-.SH Syntax
+.SH SYNTAX
 .IP
 .nf
 \f[C]
@@ -32,7 +35,7 @@ isWellFormed()
 .PP
 Returns \f[V]true\f[R] if this string does not contain any lone
 surrogates, \f[V]false\f[R] otherwise.
-.SH Description
+.SH DESCRIPTION
 .PP
 Strings in JavaScript are UTF-16 encoded.
 UTF-16 encoding has the concept of \f[I]surrogate pairs\f[R], which is
@@ -49,7 +52,7 @@ If you need to convert a string to a well-formed string, use the
 \f[V]isWellFormed()\f[R] allows you to handle ill-formed strings
 differently from well-formed strings, such as throwing an error or
 marking it as invalid.
-.SH Examples
+.SH EXAMPLES
 .SS Using isWellFormed()
 .IP
 .nf
@@ -102,7 +105,7 @@ if (illFormed.isWellFormed()) {
 }
 \f[R]
 .fi
-.SH See also
+.SH SEE ALSO
 .IP \[bu] 2
 Polyfill of \f[V]String.prototype.isWellFormed\f[R] in
 \f[V]core-js\f[R] (https://github.com/zloirock/core-js#well-formed-unicode-strings)

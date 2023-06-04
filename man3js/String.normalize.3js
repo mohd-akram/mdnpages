@@ -14,13 +14,16 @@
 . ftr VB CB
 . ftr VBI CBI
 .\}
-.TH "String.normalize" "JS" "2023-06-02" "JavaScript" "JavaScript Reference Manual"
+.TH "String.normalize" "JS" "June 2, 2023" "JavaScript" "JavaScript Reference Manual"
 .hy
-.SH Synopsis
+.SH NAME
+.PP
+String.normalize - String.prototype.normalize()
+.SH SYNOPSIS
 .PP
 The \f[B]\f[VB]normalize()\f[B]\f[R] method returns the Unicode
 Normalization Form of the string.
-.SH Syntax
+.SH SYNTAX
 .IP
 .nf
 \f[C]
@@ -29,55 +32,37 @@ normalize(form)
 \f[R]
 .fi
 .SS Parameters
-.IP \[bu] 2
-\f[V]form\f[R] \f[I](optional)\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]form\f[R] \f[I](optional)\f[R]
 One of \f[V]\[dq]NFC\[dq]\f[R], \f[V]\[dq]NFD\[dq]\f[R],
 \f[V]\[dq]NFKC\[dq]\f[R], or \f[V]\[dq]NFKD\[dq]\f[R], specifying the
 Unicode Normalization Form.
 If omitted or \f[V]undefined\f[R], \f[V]\[dq]NFC\[dq]\f[R] is used.
-.RS 2
+.RS
 .PP
 These values have the following meanings:
-.IP \[bu] 2
-\f[V]\[dq]NFC\[dq]\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]\[dq]NFC\[dq]\f[R]
 Canonical Decomposition, followed by Canonical Composition.
-.RE
-.IP \[bu] 2
-\f[V]\[dq]NFD\[dq]\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]\[dq]NFD\[dq]\f[R]
 Canonical Decomposition.
-.RE
-.IP \[bu] 2
-\f[V]\[dq]NFKC\[dq]\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]\[dq]NFKC\[dq]\f[R]
 Compatibility Decomposition, followed by Canonical Composition.
-.RE
-.IP \[bu] 2
-\f[V]\[dq]NFKD\[dq]\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]\[dq]NFKD\[dq]\f[R]
 Compatibility Decomposition.
-.RE
-.RE
 .RE
 .SS Return value
 .PP
 A string containing the Unicode Normalization Form of the given string.
 .SS Errors thrown
-.IP \[bu] 2
-\f[V]RangeError\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]RangeError\f[R]
 A \f[V]RangeError\f[R] is thrown if \f[V]form\f[R] isn\[cq]t one of the
 values specified above.
-.RE
-.SH Description
+.SH DESCRIPTION
 .PP
 Unicode assigns a unique numerical value, called a \f[I]code point\f[R],
 to each character.
@@ -239,7 +224,7 @@ representation is different.
 As with canonical normalization, you can ask for decomposed or composed
 compatible forms by passing \f[V]\[dq]NFKD\[dq]\f[R] or
 \f[V]\[dq]NFKC\[dq]\f[R], respectively.
-.SH Examples
+.SH EXAMPLES
 .SS Using normalize()
 .IP
 .nf
@@ -277,7 +262,7 @@ str.normalize(\[dq]NFKC\[dq]); // \[aq]\[rs]u1E69\[aq]
 str.normalize(\[dq]NFKD\[dq]); // \[aq]\[rs]u0073\[rs]u0323\[rs]u0307\[aq]
 \f[R]
 .fi
-.SH See also
+.SH SEE ALSO
 .IP \[bu] 2
 Unicode Standard Annex #15, Unicode Normalization
 Forms (https://www.unicode.org/reports/tr15/)

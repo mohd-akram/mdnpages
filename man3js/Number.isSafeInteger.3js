@@ -14,13 +14,16 @@
 . ftr VB CB
 . ftr VBI CBI
 .\}
-.TH "Number.isSafeInteger" "JS" "2023-06-02" "JavaScript" "JavaScript Reference Manual"
+.TH "Number.isSafeInteger" "JS" "June 2, 2023" "JavaScript" "JavaScript Reference Manual"
 .hy
-.SH Synopsis
+.SH NAME
+.PP
+Number.isSafeInteger - Number.isSafeInteger()
+.SH SYNOPSIS
 .PP
 The \f[B]\f[VB]Number.isSafeInteger()\f[B]\f[R] static method determines
 whether the provided value is a number that is a \f[I]safe integer\f[R].
-.SH Syntax
+.SH SYNTAX
 .IP
 .nf
 \f[C]
@@ -28,18 +31,15 @@ Number.isSafeInteger(testValue)
 \f[R]
 .fi
 .SS Parameters
-.IP \[bu] 2
-\f[V]testValue\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]testValue\f[R]
 The value to be tested for being a safe integer.
-.RE
 .SS Return value
 .PP
 The boolean value \f[V]true\f[R] if the given value is a number that is
 a safe integer.
 Otherwise \f[V]false\f[R].
-.SH Description
+.SH DESCRIPTION
 .PP
 The safe integers consist of all integers from -(253 - 1) to 253 - 1,
 inclusive (±9,007,199,254,740,991).
@@ -65,7 +65,7 @@ Arithmetic (https://floating-point-gui.de/) for more information on
 floating point representations of numbers.
 .PP
 For larger integers, consider using the \f[V]BigInt\f[R] type.
-.SH Examples
+.SH EXAMPLES
 .SS Using isSafeInteger()
 .IP
 .nf
@@ -80,7 +80,7 @@ Number.isSafeInteger(3.1); // false
 Number.isSafeInteger(3.0); // true
 \f[R]
 .fi
-.SH See also
+.SH SEE ALSO
 .IP \[bu] 2
 Polyfill of \f[V]Number.isSafeInteger\f[R] in
 \f[V]core-js\f[R] (https://github.com/zloirock/core-js#ecmascript-number)

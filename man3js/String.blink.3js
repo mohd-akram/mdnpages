@@ -14,9 +14,12 @@
 . ftr VB CB
 . ftr VBI CBI
 .\}
-.TH "String.blink" "JS" "2023-06-02" "JavaScript" "JavaScript Reference Manual"
+.TH "String.blink" "JS" "June 2, 2023" "JavaScript" "JavaScript Reference Manual"
 .hy
-.SH Synopsis
+.SH NAME
+.PP
+String.blink - String.prototype.blink()
+.SH SYNOPSIS
 .PP
 \f[I](deprecated)\f[R]
 .PP
@@ -32,7 +35,7 @@ is removed from modern browsers, and blinking text is frowned upon by
 several accessibility standards.
 Avoid using the element in any way.
 .RE
-.SH Syntax
+.SH SYNTAX
 .IP
 .nf
 \f[C]
@@ -43,7 +46,7 @@ blink()
 .PP
 A string beginning with a \f[V]<blink>\f[R] start tag, then the text
 \f[V]str\f[R], and then a \f[V]</blink>\f[R] end tag.
-.SH Examples
+.SH EXAMPLES
 .SS Using blink()
 .PP
 The following example uses deprecated string methods to change the
@@ -59,7 +62,7 @@ console.log(worldString.italics()); // <i>Hello, world</i>
 console.log(worldString.strike()); // <strike>Hello, world</strike>
 \f[R]
 .fi
-.SH See also
+.SH SEE ALSO
 .IP \[bu] 2
 Polyfill of \f[V]String.prototype.blink\f[R] in
 \f[V]core-js\f[R] (https://github.com/zloirock/core-js#ecmascript-string-and-regexp)

@@ -15,13 +15,16 @@
 . ftr VB CB
 . ftr VBI CBI
 .\}
-.TH "Math.LOG10E" "JS" "2023-06-02" "JavaScript" "JavaScript Reference Manual"
+.TH "Math.LOG10E" "JS" "June 2, 2023" "JavaScript" "JavaScript Reference Manual"
 .hy
-.SH Synopsis
+.SH NAME
+.PP
+Math.LOG10E - Math.LOG10E
+.SH SYNOPSIS
 .PP
 The \f[B]\f[VB]Math.LOG10E\f[B]\f[R] static data property represents the
 base 10 logarithm of e, approximately 0.434.
-.SH Value
+.SH VALUE
 .PP
 𝙼𝚊𝚝𝚑.𝙻𝙾𝙶𝟷𝟶𝙴=log10(e)≈0.434 = _{10}()
 .PP
@@ -44,12 +47,12 @@ T}@T{
 no
 T}
 .TE
-.SH Description
+.SH DESCRIPTION
 .PP
 Because \f[V]LOG10E\f[R] is a static property of \f[V]Math\f[R], you
 always use it as \f[V]Math.LOG10E\f[R], rather than as a property of a
 \f[V]Math\f[R] object you created (\f[V]Math\f[R] is not a constructor).
-.SH Examples
+.SH EXAMPLES
 .SS Using Math.LOG10E
 .PP
 The following function returns the base 10 logarithm of e:
@@ -63,7 +66,7 @@ function getLog10e() {
 getLog10e(); // 0.4342944819032518
 \f[R]
 .fi
-.SH See also
+.SH SEE ALSO
 .IP \[bu] 2
 \f[V]Math.exp()\f[R]
 .IP \[bu] 2

@@ -14,15 +14,18 @@
 . ftr VB CB
 . ftr VBI CBI
 .\}
-.TH "Object.valueOf" "JS" "2023-06-02" "JavaScript" "JavaScript Reference Manual"
+.TH "Object.valueOf" "JS" "June 2, 2023" "JavaScript" "JavaScript Reference Manual"
 .hy
-.SH Synopsis
+.SH NAME
+.PP
+Object.valueOf - Object.prototype.valueOf()
+.SH SYNOPSIS
 .PP
 The \f[B]\f[VB]valueOf()\f[B]\f[R] method of \f[V]Object\f[R] instances
 converts the \f[V]this\f[R] value to an object.
 This method is meant to be overridden by derived objects for custom type
 conversion logic.
-.SH Syntax
+.SH SYNTAX
 .IP
 .nf
 \f[C]
@@ -43,7 +46,7 @@ Because all primitive types have their own \f[V]valueOf()\f[R] methods,
 calling \f[V]aPrimitiveValue.valueOf()\f[R] generally does not invoke
 \f[V]Object.prototype.valueOf()\f[R].
 .RE
-.SH Description
+.SH DESCRIPTION
 .PP
 JavaScript calls the \f[V]valueOf\f[R] method to convert an object to a
 primitive value.
@@ -76,7 +79,7 @@ Alternatively, you can add a \f[V]\[at]\[at]toPrimitive\f[R] method,
 which allows even more control over the conversion process, and will
 always be preferred over \f[V]valueOf\f[R] or \f[V]toString\f[R] for any
 type conversion.
-.SH Examples
+.SH EXAMPLES
 .SS Using valueOf()
 .PP
 The base \f[V]valueOf()\f[R] method returns the \f[V]this\f[R] value
@@ -158,7 +161,7 @@ ignored and the return value of \f[V]toString()\f[R] to be used instead.
 +{ valueOf: () => 42 }; // 42
 \f[R]
 .fi
-.SH See also
+.SH SEE ALSO
 .IP \[bu] 2
 \f[V]Object.prototype.toString()\f[R]
 .IP \[bu] 2

@@ -14,15 +14,18 @@
 . ftr VB CB
 . ftr VBI CBI
 .\}
-.TH "Reflect.setPrototypeOf" "JS" "2023-06-02" "JavaScript" "JavaScript Reference Manual"
+.TH "Reflect.setPrototypeOf" "JS" "June 2, 2023" "JavaScript" "JavaScript Reference Manual"
 .hy
-.SH Synopsis
+.SH NAME
+.PP
+Reflect.setPrototypeOf - Reflect.setPrototypeOf()
+.SH SYNOPSIS
 .PP
 The \f[B]\f[VB]Reflect.setPrototypeOf()\f[B]\f[R] static method is like
 \f[V]Object.setPrototypeOf()\f[R] but returns a \f[V]Boolean\f[R].
 It sets the prototype (i.e., the internal \f[V][[Prototype]]\f[R]
 property) of a specified object.
-.SH Syntax
+.SH SYNTAX
 .IP
 .nf
 \f[C]
@@ -30,31 +33,22 @@ Reflect.setPrototypeOf(target, prototype)
 \f[R]
 .fi
 .SS Parameters
-.IP \[bu] 2
-\f[V]target\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]target\f[R]
 The target object of which to set the prototype.
-.RE
-.IP \[bu] 2
-\f[V]prototype\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]prototype\f[R]
 The object\[cq]s new prototype (an object or \f[V]null\f[R]).
-.RE
 .SS Return value
 .PP
 A \f[V]Boolean\f[R] indicating whether or not the prototype was
 successfully set.
 .SS Exceptions
-.IP \[bu] 2
-\f[V]TypeError\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]TypeError\f[R]
 Thrown if \f[V]target\f[R] is not an object or if \f[V]prototype\f[R] is
 neither an object nor \f[V]null\f[R].
-.RE
-.SH Description
+.SH DESCRIPTION
 .PP
 \f[V]Reflect.setPrototypeOf()\f[R] provides the reflective semantic of
 setting the prototype of an object.
@@ -67,7 +61,7 @@ directly returns the status.
 .PP
 \f[V]Reflect.setPrototypeOf()\f[R] invokes the
 \f[V][[SetPrototypeOf]]\f[R] object internal method of \f[V]target\f[R].
-.SH Examples
+.SH EXAMPLES
 .SS Using Reflect.setPrototypeOf()
 .IP
 .nf
@@ -86,7 +80,7 @@ const proto = Object.create(target);
 Reflect.setPrototypeOf(target, proto); // false
 \f[R]
 .fi
-.SH See also
+.SH SEE ALSO
 .IP \[bu] 2
 Polyfill of \f[V]Reflect.setPrototypeOf\f[R] in
 \f[V]core-js\f[R] (https://github.com/zloirock/core-js#ecmascript-reflect)

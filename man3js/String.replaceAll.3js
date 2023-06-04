@@ -14,9 +14,12 @@
 . ftr VB CB
 . ftr VBI CBI
 .\}
-.TH "String.replaceAll" "JS" "2023-06-02" "JavaScript" "JavaScript Reference Manual"
+.TH "String.replaceAll" "JS" "June 2, 2023" "JavaScript" "JavaScript Reference Manual"
 .hy
-.SH Synopsis
+.SH NAME
+.PP
+String.replaceAll - String.prototype.replaceAll()
+.SH SYNOPSIS
 .PP
 The \f[B]\f[VB]replaceAll()\f[B]\f[R] method returns a new string with
 all matches of a \f[V]pattern\f[R] replaced by a \f[V]replacement\f[R].
@@ -24,7 +27,7 @@ The \f[V]pattern\f[R] can be a string or a \f[V]RegExp\f[R], and the
 \f[V]replacement\f[R] can be a string or a function to be called for
 each match.
 The original string is left unchanged.
-.SH Syntax
+.SH SYNTAX
 .IP
 .nf
 \f[C]
@@ -32,41 +35,32 @@ replaceAll(pattern, replacement)
 \f[R]
 .fi
 .SS Parameters
-.IP \[bu] 2
-\f[V]pattern\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]pattern\f[R]
 Can be a string or an object with a \f[V]Symbol.replace\f[R] method
 \[em] the typical example being a regular expression.
 Any value that doesn\[cq]t have the \f[V]Symbol.replace\f[R] method will
 be coerced to a string.
-.RS 2
+.RS
 .PP
 If \f[V]pattern\f[R] is a regex, then it must have the global
 (\f[V]g\f[R]) flag set, or a \f[V]TypeError\f[R] is thrown.
 .RE
-.RE
-.IP \[bu] 2
-\f[V]replacement\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]replacement\f[R]
 Can be a string or a function.
 The replacement has the same semantics as that of
 \f[V]String.prototype.replace()\f[R].
-.RE
 .SS Return value
 .PP
 A new string, with all matches of a pattern replaced by a replacement.
 .SS Exceptions
-.IP \[bu] 2
-\f[V]TypeError\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]TypeError\f[R]
 Thrown if the \f[V]pattern\f[R] is a regex that does not have the global
 (\f[V]g\f[R]) flag set (its \f[V]flags\f[R] property does not contain
 \f[V]\[dq]g\[dq]\f[R]).
-.RE
-.SH Description
+.SH DESCRIPTION
 .PP
 This method does not mutate the string value it\[cq]s called on.
 It returns a new string.
@@ -116,7 +110,7 @@ behavior.
 For more information about how regex properties (especially the sticky
 flag) interact with \f[V]replaceAll()\f[R], see
 \f[V]RegExp.prototype[\[at]\[at]replace]()\f[R].
-.SH Examples
+.SH EXAMPLES
 .SS Using replaceAll()
 .IP
 .nf
@@ -149,7 +143,7 @@ This will work:
 (\[dq]aa..cc\[dq]);
 \f[R]
 .fi
-.SH See also
+.SH SEE ALSO
 .IP \[bu] 2
 Polyfill of \f[V]String.prototype.replaceAll\f[R] in
 \f[V]core-js\f[R] (https://github.com/zloirock/core-js#ecmascript-string-and-regexp)

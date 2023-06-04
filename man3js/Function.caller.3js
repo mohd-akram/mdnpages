@@ -14,9 +14,12 @@
 . ftr VB CB
 . ftr VBI CBI
 .\}
-.TH "Function.caller" "JS" "2023-06-02" "JavaScript" "JavaScript Reference Manual"
+.TH "Function.caller" "JS" "June 2, 2023" "JavaScript" "JavaScript Reference Manual"
 .hy
-.SH Synopsis
+.SH NAME
+.PP
+Function.caller - Function.prototype.caller
+.SH SYNOPSIS
 .PP
 *(non-standard)**(deprecated)*
 .RS
@@ -34,7 +37,7 @@ The \f[B]\f[VB]caller\f[B]\f[R] accessor property of \f[V]Function\f[R]
 instances returns the function that invoked this function.
 For strict, arrow, async, and generator functions, accessing the
 \f[V]caller\f[R] property throws a \f[V]TypeError\f[R].
-.SH Description
+.SH DESCRIPTION
 .PP
 If the function \f[V]f\f[R] was invoked by the top-level code, the value
 of \f[V]f.caller\f[R] is \f[V]null\f[R]; otherwise it\[cq]s the function
@@ -92,7 +95,7 @@ of the \f[V]arguments\f[R] object.
 The special property \f[V]__caller__\f[R], which returned the activation
 object of the caller thus allowing to reconstruct the stack, was removed
 for security reasons.
-.SH Examples
+.SH EXAMPLES
 .SS Checking the value of a function\[cq]s caller property
 .PP
 The following code checks the value a function\[cq]s \f[V]caller\f[R]

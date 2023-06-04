@@ -14,15 +14,18 @@
 . ftr VB CB
 . ftr VBI CBI
 .\}
-.TH "InternalError.InternalError" "JS" "2023-06-02" "JavaScript" "JavaScript Reference Manual"
+.TH "InternalError.InternalError" "JS" "June 2, 2023" "JavaScript" "JavaScript Reference Manual"
 .hy
-.SH Synopsis
+.SH NAME
+.PP
+InternalError.InternalError - InternalError() constructor
+.SH SYNOPSIS
 .PP
 \f[I](non-standard)\f[R]
 .PP
 The \f[B]\f[VB]InternalError()\f[B]\f[R] constructor creates
 \f[V]InternalError\f[R] objects.
-.SH Syntax
+.SH SYNTAX
 .IP
 .nf
 \f[C]
@@ -46,41 +49,26 @@ InternalError(message, fileName, lineNumber)
 Both create a new \f[V]InternalError\f[R] instance.
 .RE
 .SS Parameters
-.IP \[bu] 2
-\f[V]message\f[R] \f[I](optional)\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]message\f[R] \f[I](optional)\f[R]
 Human-readable description of the error.
-.RE
-.IP \[bu] 2
-\f[V]options\f[R] \f[I](optional)\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]options\f[R] \f[I](optional)\f[R]
 An object that has the following properties:
-.RS 2
-.IP \[bu] 2
-\f[V]cause\f[R] \f[I](optional)\f[R]
-.RS 2
-.IP \[bu] 2
+.RS
+.TP
+\f[B]cause\f[R] \f[I](optional)\f[R]
 A property indicating the specific cause of the error.
 When catching and re-throwing an error with a more-specific or useful
 error message, this property can be used to pass the original error.
 .RE
-.RE
-.RE
-.IP \[bu] 2
-\f[V]fileName\f[R] \f[I](optional)\f[R] \f[I](non-standard)\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]fileName\f[R] \f[I](optional)\f[R] \f[I](non-standard)\f[R]
 The name of the file containing the code that caused the exception
-.RE
-.IP \[bu] 2
-\f[V]lineNumber\f[R] \f[I](optional)\f[R] \f[I](non-standard)\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]lineNumber\f[R] \f[I](optional)\f[R] \f[I](non-standard)\f[R]
 The line number of the code that caused the exception
-.RE
-.SH Examples
+.SH EXAMPLES
 .SS Creating a new InternalError
 .IP
 .nf

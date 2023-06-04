@@ -14,9 +14,12 @@
 . ftr VB CB
 . ftr VBI CBI
 .\}
-.TH "String.\[at]\[at]iterator" "JS" "2023-06-02" "JavaScript" "JavaScript Reference Manual"
+.TH "String.\[at]\[at]iterator" "JS" "June 2, 2023" "JavaScript" "JavaScript Reference Manual"
 .hy
-.SH Synopsis
+.SH NAME
+.PP
+String.\[at]\[at]iterator - String.prototype\[at]\[at]iterator
+.SH SYNOPSIS
 .PP
 The \f[B]\f[VB][\[at]\[at]iterator]()\f[B]\f[R] method of
 \f[V]String\f[R] values implements the iterable protocol and allows
@@ -24,7 +27,7 @@ strings to be consumed by most syntaxes expecting iterables, such as the
 spread syntax and \f[V]for...of\f[R] loops.
 It returns a string iterator object that yields the Unicode code points
 of the string value as individual strings.
-.SH Syntax
+.SH SYNTAX
 .IP
 .nf
 \f[C]
@@ -35,7 +38,7 @@ string[Symbol.iterator]()
 .PP
 A new iterable iterator object that yields the Unicode code points of
 the string value as individual strings.
-.SH Description
+.SH DESCRIPTION
 .PP
 Strings are iterated by Unicode code points.
 This means grapheme clusters will be split, but surrogate pairs will be
@@ -53,7 +56,7 @@ preserved.
 // splits into the \[dq]Man\[dq] and \[dq]Boy\[dq] emoji, joined by a ZWJ
 \f[R]
 .fi
-.SH Examples
+.SH EXAMPLES
 .SS Iteration using for\&...of loop
 .PP
 Note that you seldom need to call this method directly.
@@ -91,7 +94,7 @@ console.log(strIter.next().value); // \[dq]A\[dq]
 console.log(strIter.next().value); // \[dq]\[rs]uD835\[rs]uDC68\[dq]
 \f[R]
 .fi
-.SH See also
+.SH SEE ALSO
 .IP \[bu] 2
 Polyfill of \f[V]String.prototype[\[at]\[at]iterator]\f[R] in
 \f[V]core-js\f[R] (https://github.com/zloirock/core-js#ecmascript-string-and-regexp)

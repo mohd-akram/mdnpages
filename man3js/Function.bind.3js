@@ -14,15 +14,18 @@
 . ftr VB CB
 . ftr VBI CBI
 .\}
-.TH "Function.bind" "JS" "2023-06-02" "JavaScript" "JavaScript Reference Manual"
+.TH "Function.bind" "JS" "June 2, 2023" "JavaScript" "JavaScript Reference Manual"
 .hy
-.SH Synopsis
+.SH NAME
+.PP
+Function.bind - Function.prototype.bind()
+.SH SYNOPSIS
 .PP
 The \f[B]\f[VB]bind()\f[B]\f[R] method creates a new function that, when
 called, has its \f[V]this\f[R] keyword set to the provided value, with a
 given sequence of arguments preceding any provided when the new function
 is called.
-.SH Syntax
+.SH SYNTAX
 .IP
 .nf
 \f[C]
@@ -33,10 +36,8 @@ bind(thisArg, arg1, arg2, /* \&..., */ argN)
 \f[R]
 .fi
 .SS Parameters
-.IP \[bu] 2
-\f[V]thisArg\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]thisArg\f[R]
 The value to be passed as the \f[V]this\f[R] parameter to the target
 function \f[V]func\f[R] when the bound function is called.
 If the function is not in strict mode, \f[V]null\f[R] and
@@ -44,19 +45,15 @@ If the function is not in strict mode, \f[V]null\f[R] and
 primitive values will be converted to objects.
 The value is ignored if the bound function is constructed using the
 \f[V]new\f[R] operator.
-.RE
-.IP \[bu] 2
-\f[V]arg1, \&..., argN\f[R] \f[I](optional)\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]arg1, \&..., argN\f[R] \f[I](optional)\f[R]
 Arguments to prepend to arguments provided to the bound function when
 invoking \f[V]func\f[R].
-.RE
 .SS Return value
 .PP
 A copy of the given function with the specified \f[V]this\f[R] value,
 and initial arguments (if provided).
-.SH Description
+.SH DESCRIPTION
 .PP
 The \f[V]bind()\f[R] function creates a new \f[I]bound function\f[R].
 Calling the bound function generally results in the execution of the
@@ -151,27 +148,21 @@ console.log(new Base() instanceof BoundBase); // true
 .fi
 .PP
 The bound function has the following properties:
-.IP \[bu] 2
-\f[V]length\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]length\f[R]
 The \f[V]length\f[R] of the target function minus the number of
 arguments being bound (not counting the \f[V]thisArg\f[R] parameter),
 with 0 being the minimum value.
-.RE
-.IP \[bu] 2
-\f[V]name\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]name\f[R]
 The \f[V]name\f[R] of the target function plus a
 \f[V]\[dq]bound \[dq]\f[R] prefix.
-.RE
 .PP
 The bound function also inherits the prototype chain of the target
 function.
 However, it doesn\[cq]t have other own properties of the target function
 (such as static properties if the target function is a class).
-.SH Examples
+.SH EXAMPLES
 .SS Creating a bound function
 .PP
 The simplest use of \f[V]bind()\f[R] is to make a function that, no
@@ -456,7 +447,7 @@ const slice = Function.prototype.call.bind(unboundSlice);
 slice(arguments);
 \f[R]
 .fi
-.SH See also
+.SH SEE ALSO
 .IP \[bu] 2
 Polyfill of \f[V]Function.prototype.bind\f[R] in
 \f[V]core-js\f[R] (https://github.com/zloirock/core-js#ecmascript-function)

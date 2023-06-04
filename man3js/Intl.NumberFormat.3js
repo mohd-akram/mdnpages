@@ -14,86 +14,62 @@
 . ftr VB CB
 . ftr VBI CBI
 .\}
-.TH "Intl.NumberFormat" "JS" "2023-06-02" "JavaScript" "JavaScript Reference Manual"
+.TH "Intl.NumberFormat" "JS" "June 2, 2023" "JavaScript" "JavaScript Reference Manual"
 .hy
-.SH Synopsis
+.SH NAME
+.PP
+Intl.NumberFormat - Intl.NumberFormat
+.SH SYNOPSIS
 .PP
 The \f[B]\f[VB]Intl.NumberFormat\f[B]\f[R] object enables
 language-sensitive number formatting.
-.SH Constructor
-.IP \[bu] 2
-\f[V]Intl.NumberFormat()\f[R]
-.RS 2
-.IP \[bu] 2
+.SH CONSTRUCTOR
+.TP
+\f[B]Intl.NumberFormat()\f[R]
 Creates a new \f[V]NumberFormat\f[R] object.
-.RE
-.SH Static methods
-.IP \[bu] 2
-\f[V]Intl.NumberFormat.supportedLocalesOf()\f[R]
-.RS 2
-.IP \[bu] 2
+.SH STATIC METHODS
+.TP
+\f[B]Intl.NumberFormat.supportedLocalesOf()\f[R]
 Returns an array containing those of the provided locales that are
 supported without having to fall back to the runtime\[cq]s default
 locale.
-.RE
-.SH Instance properties
+.SH INSTANCE PROPERTIES
 .PP
 These properties are defined on \f[V]Intl.NumberFormat.prototype\f[R]
 and shared by all \f[V]Intl.NumberFormat\f[R] instances.
-.IP \[bu] 2
-\f[V]Intl.NumberFormat.prototype.constructor\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]Intl.NumberFormat.prototype.constructor\f[R]
 The constructor function that created the instance object.
 For \f[V]Intl.NumberFormat\f[R] instances, the initial value is the
 \f[V]Intl.NumberFormat\f[R] constructor.
-.RE
-.IP \[bu] 2
-\f[V]Intl.NumberFormat.prototype[\[at]\[at]toStringTag]\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]Intl.NumberFormat.prototype[\[at]\[at]toStringTag]\f[R]
 The initial value of the \f[V]\[at]\[at]toStringTag\f[R] property is the
 string \f[V]\[dq]Intl.NumberFormat\[dq]\f[R].
 This property is used in \f[V]Object.prototype.toString()\f[R].
-.RE
-.SH Instance methods
-.IP \[bu] 2
-\f[V]Intl.NumberFormat.prototype.format()\f[R]
-.RS 2
-.IP \[bu] 2
+.SH INSTANCE METHODS
+.TP
+\f[B]Intl.NumberFormat.prototype.format()\f[R]
 Getter function that formats a number according to the locale and
 formatting options of this \f[V]Intl.NumberFormat\f[R] object.
-.RE
-.IP \[bu] 2
-\f[V]Intl.NumberFormat.prototype.formatRange()\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]Intl.NumberFormat.prototype.formatRange()\f[R]
 Getter function that formats a range of numbers according to the locale
 and formatting options of the \f[V]Intl.NumberFormat\f[R] object from
 which the method is called.
-.RE
-.IP \[bu] 2
-\f[V]Intl.NumberFormat.prototype.formatRangeToParts()\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]Intl.NumberFormat.prototype.formatRangeToParts()\f[R]
 Returns an \f[V]Array\f[R] of objects representing the range of number
 strings in parts that can be used for custom locale-aware formatting.
-.RE
-.IP \[bu] 2
-\f[V]Intl.NumberFormat.prototype.formatToParts()\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]Intl.NumberFormat.prototype.formatToParts()\f[R]
 Returns an \f[V]Array\f[R] of objects representing the number string in
 parts that can be used for custom locale-aware formatting.
-.RE
-.IP \[bu] 2
-\f[V]Intl.NumberFormat.prototype.resolvedOptions()\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]Intl.NumberFormat.prototype.resolvedOptions()\f[R]
 Returns a new object with properties reflecting the locale and collation
 options computed during initialization of the object.
-.RE
-.SH Examples
+.SH EXAMPLES
 .SS Basic usage
 .PP
 In basic use without specifying a locale, a formatted string in the
@@ -194,7 +170,7 @@ console.log(
 .PP
 For an exhaustive list of options, see the \f[V]Intl.NumberFormat()\f[R]
 constructor page.
-.SH See also
+.SH SEE ALSO
 .IP \[bu] 2
 \f[V]Intl\f[R]
 .IP \[bu] 2

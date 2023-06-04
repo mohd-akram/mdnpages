@@ -14,9 +14,12 @@
 . ftr VB CB
 . ftr VBI CBI
 .\}
-.TH "String.trim" "JS" "2023-06-02" "JavaScript" "JavaScript Reference Manual"
+.TH "String.trim" "JS" "June 2, 2023" "JavaScript" "JavaScript Reference Manual"
 .hy
-.SH Synopsis
+.SH NAME
+.PP
+String.trim - String.prototype.trim()
+.SH SYNOPSIS
 .PP
 The \f[B]\f[VB]trim()\f[B]\f[R] method removes whitespace from both ends
 of a string and returns a new string, without modifying the original
@@ -24,7 +27,7 @@ string.
 .PP
 To return a new string with whitespace trimmed from just one end, use
 \f[V]trimStart()\f[R] or \f[V]trimEnd()\f[R].
-.SH Syntax
+.SH SYNTAX
 .IP
 .nf
 \f[C]
@@ -39,7 +42,7 @@ Whitespace is defined as white space characters plus line terminators.
 .PP
 If neither the beginning or end of \f[V]str\f[R] has any whitespace, a
 new string is still returned (essentially a copy of \f[V]str\f[R]).
-.SH Examples
+.SH EXAMPLES
 .SS Using trim()
 .PP
 The following example trims whitespace from both ends of \f[V]str\f[R].
@@ -50,7 +53,7 @@ const str = \[dq]   foo  \[dq];
 console.log(str.trim()); // \[aq]foo\[aq]
 \f[R]
 .fi
-.SH See also
+.SH SEE ALSO
 .IP \[bu] 2
 \f[V]String.prototype.trimStart()\f[R]
 .IP \[bu] 2

@@ -14,9 +14,12 @@
 . ftr VB CB
 . ftr VBI CBI
 .\}
-.TH "String.fontcolor" "JS" "2023-06-02" "JavaScript" "JavaScript Reference Manual"
+.TH "String.fontcolor" "JS" "June 2, 2023" "JavaScript" "JavaScript Reference Manual"
 .hy
-.SH Synopsis
+.SH NAME
+.PP
+String.fontcolor - String.prototype.fontcolor()
+.SH SYNOPSIS
 .PP
 \f[I](deprecated)\f[R]
 .PP
@@ -32,7 +35,7 @@ For the case of \f[V]fontcolor()\f[R], the \f[V]<font>\f[R] element
 itself has been removed in HTML5 and shouldn\[cq]t be used anymore.
 Web developers should use CSS properties instead.
 .RE
-.SH Syntax
+.SH SYNTAX
 .IP
 .nf
 \f[C]
@@ -40,21 +43,18 @@ fontcolor(color)
 \f[R]
 .fi
 .SS Parameters
-.IP \[bu] 2
-\f[V]color\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]color\f[R]
 A string expressing the color as a hexadecimal RGB triplet or as a
 string literal.
 String literals for color names are listed in the CSS color reference.
-.RE
 .SS Return value
 .PP
 A string beginning with a \f[V]<font color=\[dq]color\[dq]>\f[R] start
 tag (double quotes in \f[V]color\f[R] are replaced with
 \f[V]&quot;\f[R]), then the text \f[V]str\f[R], and then a
 \f[V]</font>\f[R] end tag.
-.SH Description
+.SH DESCRIPTION
 .PP
 The \f[V]fontcolor()\f[R] method itself simply joins the string parts
 together without any validation or normalization.
@@ -63,7 +63,7 @@ as a hexadecimal RGB triplet, you must use the format \f[V]rrggbb\f[R].
 For example, the hexadecimal RGB values for salmon are red=FA, green=80,
 and blue=72, so the RGB triplet for salmon is
 \f[V]\[dq]FA8072\[dq]\f[R].
-.SH Examples
+.SH EXAMPLES
 .SS Using fontcolor()
 .PP
 The following example uses the \f[V]fontcolor()\f[R] method to change
@@ -93,7 +93,7 @@ example:
 document.getElementById(\[dq]yourElemId\[dq]).style.color = \[dq]red\[dq];
 \f[R]
 .fi
-.SH See also
+.SH SEE ALSO
 .IP \[bu] 2
 Polyfill of \f[V]String.prototype.fontcolor\f[R] in
 \f[V]core-js\f[R] (https://github.com/zloirock/core-js#ecmascript-string-and-regexp)

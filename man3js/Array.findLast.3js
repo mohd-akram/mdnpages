@@ -14,9 +14,12 @@
 . ftr VB CB
 . ftr VBI CBI
 .\}
-.TH "Array.findLast" "JS" "2023-06-02" "JavaScript" "JavaScript Reference Manual"
+.TH "Array.findLast" "JS" "June 2, 2023" "JavaScript" "JavaScript Reference Manual"
 .hy
-.SH Synopsis
+.SH NAME
+.PP
+Array.findLast - Array.prototype.findLast()
+.SH SYNOPSIS
 .PP
 The \f[B]\f[VB]findLast()\f[B]\f[R] method iterates the array in reverse
 order and returns the value of the first element that satisfies the
@@ -41,7 +44,7 @@ using a testing function.
 .IP \[bu] 2
 if any element satisfies the provided testing function, use
 \f[V]some()\f[R].
-.SH Syntax
+.SH SYNTAX
 .IP
 .nf
 \f[C]
@@ -50,48 +53,33 @@ findLast(callbackFn, thisArg)
 \f[R]
 .fi
 .SS Parameters
-.IP \[bu] 2
-\f[V]callbackFn\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]callbackFn\f[R]
 A function to execute for each element in the array.
 It should return a truthy value to indicate a matching element has been
 found, and a falsy value otherwise.
 The function is called with the following arguments:
-.RS 2
-.IP \[bu] 2
-\f[V]element\f[R]
-.RS 2
-.IP \[bu] 2
+.RS
+.TP
+\f[B]element\f[R]
 The current element being processed in the array.
-.RE
-.IP \[bu] 2
-\f[V]index\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]index\f[R]
 The index of the current element being processed in the array.
-.RE
-.IP \[bu] 2
-\f[V]array\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]array\f[R]
 The array \f[V]findLast()\f[R] was called upon.
 .RE
-.RE
-.RE
-.IP \[bu] 2
-\f[V]thisArg\f[R] \f[I](optional)\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]thisArg\f[R] \f[I](optional)\f[R]
 A value to use as \f[V]this\f[R] when executing \f[V]callbackFn\f[R].
 See iterative methods.
-.RE
 .SS Return value
 .PP
 The value of the element in the array with the highest index value that
 satisfies the provided testing function; \f[V]undefined\f[R] if no
 matching element is found.
-.SH Description
+.SH DESCRIPTION
 .PP
 The \f[V]findLast()\f[R] method is an iterative method.
 It calls a provided \f[V]callbackFn\f[R] function once for each element
@@ -132,7 +120,7 @@ avoided (except in special cases).
 The \f[V]findLast()\f[R] method is generic.
 It only expects the \f[V]this\f[R] value to have a \f[V]length\f[R]
 property and integer-keyed properties.
-.SH Examples
+.SH EXAMPLES
 .SS Find last object in an array matching on element properties
 .PP
 This example shows how you might create a test based on the properties
@@ -260,7 +248,7 @@ console.log(
 ); // 4
 \f[R]
 .fi
-.SH See also
+.SH SEE ALSO
 .IP \[bu] 2
 Polyfill of \f[V]Array.prototype.findLast\f[R] in
 \f[V]core-js\f[R] (https://github.com/zloirock/core-js#ecmascript-array)

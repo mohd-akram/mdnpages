@@ -14,15 +14,18 @@
 . ftr VB CB
 . ftr VBI CBI
 .\}
-.TH "Date.getUTCMonth" "JS" "2023-06-02" "JavaScript" "JavaScript Reference Manual"
+.TH "Date.getUTCMonth" "JS" "June 2, 2023" "JavaScript" "JavaScript Reference Manual"
 .hy
-.SH Synopsis
+.SH NAME
+.PP
+Date.getUTCMonth - Date.prototype.getUTCMonth()
+.SH SYNOPSIS
 .PP
 The \f[B]\f[VB]getUTCMonth()\f[B]\f[R] method of \f[V]Date\f[R]
 instances returns the month for this date according to universal time,
 as a zero-based value (where zero indicates the first month of the
 year).
-.SH Syntax
+.SH SYNTAX
 .IP
 .nf
 \f[C]
@@ -34,7 +37,7 @@ getUTCMonth()
 An integer, between 0 and 11, representing the month for the given date
 according to universal time: 0 for January, 1 for February, and so on.
 Returns \f[V]NaN\f[R] if the date is invalid.
-.SH Examples
+.SH EXAMPLES
 .SS Using getUTCMonth()
 .PP
 The following example assigns the month portion of the current date to
@@ -46,7 +49,7 @@ const today = new Date();
 const month = today.getUTCMonth();
 \f[R]
 .fi
-.SH See also
+.SH SEE ALSO
 .IP \[bu] 2
 \f[V]Date.prototype.getMonth()\f[R]
 .IP \[bu] 2

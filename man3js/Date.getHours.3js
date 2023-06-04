@@ -14,13 +14,16 @@
 . ftr VB CB
 . ftr VBI CBI
 .\}
-.TH "Date.getHours" "JS" "2023-06-02" "JavaScript" "JavaScript Reference Manual"
+.TH "Date.getHours" "JS" "June 2, 2023" "JavaScript" "JavaScript Reference Manual"
 .hy
-.SH Synopsis
+.SH NAME
+.PP
+Date.getHours - Date.prototype.getHours()
+.SH SYNOPSIS
 .PP
 The \f[B]\f[VB]getHours()\f[B]\f[R] method of \f[V]Date\f[R] instances
 returns the hours for this date according to local time.
-.SH Syntax
+.SH SYNTAX
 .IP
 .nf
 \f[C]
@@ -32,7 +35,7 @@ getHours()
 An integer, between 0 and 23, representing the hours for the given date
 according to local time.
 Returns \f[V]NaN\f[R] if the date is invalid.
-.SH Examples
+.SH EXAMPLES
 .SS Using getHours()
 .PP
 The \f[V]hours\f[R] variable has value \f[V]23\f[R], based on the value
@@ -46,7 +49,7 @@ const hours = xmas95.getHours();
 console.log(hours); // 23
 \f[R]
 .fi
-.SH See also
+.SH SEE ALSO
 .IP \[bu] 2
 \f[V]Date.prototype.getUTCHours()\f[R]
 .IP \[bu] 2

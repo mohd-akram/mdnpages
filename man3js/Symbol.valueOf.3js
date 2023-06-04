@@ -14,13 +14,16 @@
 . ftr VB CB
 . ftr VBI CBI
 .\}
-.TH "Symbol.valueOf" "JS" "2023-06-02" "JavaScript" "JavaScript Reference Manual"
+.TH "Symbol.valueOf" "JS" "June 2, 2023" "JavaScript" "JavaScript Reference Manual"
 .hy
-.SH Synopsis
+.SH NAME
+.PP
+Symbol.valueOf - Symbol.prototype.valueOf()
+.SH SYNOPSIS
 .PP
 The \f[B]\f[VB]valueOf()\f[B]\f[R] method returns the primitive value of
 a Symbol object.
-.SH Syntax
+.SH SYNTAX
 .IP
 .nf
 \f[C]
@@ -30,7 +33,7 @@ valueOf()
 .SS Return value
 .PP
 The primitive value of the specified \f[V]Symbol\f[R] object.
-.SH Description
+.SH DESCRIPTION
 .PP
 The \f[V]valueOf()\f[R] method of \f[V]Symbol\f[R] returns the primitive
 value of a Symbol object as a Symbol data type.
@@ -40,7 +43,7 @@ a primitive value.
 You rarely need to invoke the \f[V]valueOf()\f[R] method yourself;
 JavaScript automatically invokes it when encountering an object where a
 primitive value is expected.
-.SH Examples
+.SH EXAMPLES
 .SS Using valueOf()
 .IP
 .nf
@@ -49,6 +52,6 @@ const sym = Symbol(\[dq]example\[dq]);
 sym === sym.valueOf(); // true
 \f[R]
 .fi
-.SH See also
+.SH SEE ALSO
 .IP \[bu] 2
 \f[V]Object.prototype.valueOf()\f[R]

@@ -14,13 +14,16 @@
 . ftr VB CB
 . ftr VBI CBI
 .\}
-.TH "String.slice" "JS" "2023-06-02" "JavaScript" "JavaScript Reference Manual"
+.TH "String.slice" "JS" "June 2, 2023" "JavaScript" "JavaScript Reference Manual"
 .hy
-.SH Synopsis
+.SH NAME
+.PP
+String.slice - String.prototype.slice()
+.SH SYNOPSIS
 .PP
 The \f[B]\f[VB]slice()\f[B]\f[R] method extracts a section of a string
 and returns it as a new string, without modifying the original string.
-.SH Syntax
+.SH SYNTAX
 .IP
 .nf
 \f[C]
@@ -29,22 +32,16 @@ slice(indexStart, indexEnd)
 \f[R]
 .fi
 .SS Parameters
-.IP \[bu] 2
-\f[V]indexStart\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]indexStart\f[R]
 The index of the first character to include in the returned substring.
-.RE
-.IP \[bu] 2
-\f[V]indexEnd\f[R] \f[I](optional)\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]indexEnd\f[R] \f[I](optional)\f[R]
 The index of the first character to exclude from the returned substring.
-.RE
 .SS Return value
 .PP
 A new string containing the extracted section of the string.
-.SH Description
+.SH DESCRIPTION
 .PP
 \f[V]slice()\f[R] extracts the text from one string and returns a new
 string.
@@ -79,7 +76,7 @@ More formally, in this case, the substring ends at
 If \f[V]indexEnd <= indexStart\f[R] after normalizing negative values
 (i.e.\ \f[V]indexEnd\f[R] represents a character that\[cq]s before
 \f[V]indexStart\f[R]), an empty string is returned.
-.SH Examples
+.SH EXAMPLES
 .SS Using slice() to create a new string
 .PP
 The following example uses \f[V]slice()\f[R] to create a new string.
@@ -139,7 +136,7 @@ index.
 console.log(str.slice(-5, -1)); // \[dq]n us\[dq]
 \f[R]
 .fi
-.SH See also
+.SH SEE ALSO
 .IP \[bu] 2
 \f[V]String.prototype.substr()\f[R]
 .IP \[bu] 2

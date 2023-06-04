@@ -15,13 +15,16 @@
 . ftr VB CB
 . ftr VBI CBI
 .\}
-.TH "globalThis" "JS" "2023-06-02" "JavaScript" "JavaScript Reference Manual"
+.TH "globalThis" "JS" "June 2, 2023" "JavaScript" "JavaScript Reference Manual"
 .hy
-.SH Synopsis
+.SH NAME
+.PP
+globalThis - globalThis
+.SH SYNOPSIS
 .PP
 The \f[B]\f[VB]globalThis\f[B]\f[R] global property contains the global
 \f[V]this\f[R] value, which is usually akin to the global object.
-.SH Value
+.SH VALUE
 .PP
 The global \f[V]this\f[R] object.
 .PP
@@ -50,7 +53,7 @@ T}
 writable so that code authors can hide it when executing untrusted code
 and prevent exposing the global object.
 .RE
-.SH Description
+.SH DESCRIPTION
 .PP
 Historically, accessing the global object has required different syntax
 in different JavaScript environments.
@@ -105,7 +108,7 @@ It\[cq]s the same value as the \f[V]this\f[R] value in a non-strict
 function called without an object.
 It\[cq]s also the value of \f[V]this\f[R] in the global scope of a
 script.
-.SH Examples
+.SH EXAMPLES
 .SS Search for the global across environments
 .PP
 Usually, the global object does not need to be explicitly specified
@@ -183,7 +186,7 @@ if (typeof globalThis.Intl === \[dq]undefined\[dq]) {
 }
 \f[R]
 .fi
-.SH See also
+.SH SEE ALSO
 .IP \[bu] 2
 Polyfill of \f[V]globalThis\f[R] in
 \f[V]core-js\f[R] (https://github.com/zloirock/core-js#ecmascript-globalthis)

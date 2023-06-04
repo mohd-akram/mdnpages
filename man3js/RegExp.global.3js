@@ -14,14 +14,17 @@
 . ftr VB CB
 . ftr VBI CBI
 .\}
-.TH "RegExp.global" "JS" "2023-06-02" "JavaScript" "JavaScript Reference Manual"
+.TH "RegExp.global" "JS" "June 2, 2023" "JavaScript" "JavaScript Reference Manual"
 .hy
-.SH Synopsis
+.SH NAME
+.PP
+RegExp.global - RegExp.prototype.global
+.SH SYNOPSIS
 .PP
 The \f[B]\f[VB]global\f[B]\f[R] accessor property of \f[V]RegExp\f[R]
 instances returns whether or not the \f[V]g\f[R] flag is used with this
 regular expression.
-.SH Description
+.SH DESCRIPTION
 .PP
 \f[V]RegExp.prototype.global\f[R] has the value \f[V]true\f[R] if the
 \f[V]g\f[R] flag was used; otherwise, \f[V]false\f[R].
@@ -42,7 +45,7 @@ behaviors when the regex is global.
 .PP
 The set accessor of \f[V]global\f[R] is \f[V]undefined\f[R].
 You cannot change this property directly.
-.SH Examples
+.SH EXAMPLES
 .SS Using global
 .IP
 .nf
@@ -59,7 +62,7 @@ const str2 = str.replace(regex1, \[dq]\[dq]);
 console.log(str2); // examplefoo
 \f[R]
 .fi
-.SH See also
+.SH SEE ALSO
 .IP \[bu] 2
 \f[V]RegExp.prototype.lastIndex\f[R]
 .IP \[bu] 2

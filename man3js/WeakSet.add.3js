@@ -14,13 +14,16 @@
 . ftr VB CB
 . ftr VBI CBI
 .\}
-.TH "WeakSet.add" "JS" "2023-06-02" "JavaScript" "JavaScript Reference Manual"
+.TH "WeakSet.add" "JS" "June 2, 2023" "JavaScript" "JavaScript Reference Manual"
 .hy
-.SH Synopsis
+.SH NAME
+.PP
+WeakSet.add - WeakSet.prototype.add()
+.SH SYNOPSIS
 .PP
 The \f[B]\f[VB]add()\f[B]\f[R] method appends a new object to the end of
 a \f[V]WeakSet\f[R] object.
-.SH Syntax
+.SH SYNTAX
 .IP
 .nf
 \f[C]
@@ -28,24 +31,18 @@ add(value)
 \f[R]
 .fi
 .SS Parameters
-.IP \[bu] 2
-\f[V]value\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]value\f[R]
 Must be either an object or a non-registered symbol.
 The value to add to the \f[V]WeakSet\f[R] collection.
-.RE
 .SS Return value
 .PP
 The \f[V]WeakSet\f[R] object.
 .SS Exceptions
-.IP \[bu] 2
-\f[V]TypeError\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]TypeError\f[R]
 Thrown if \f[V]value\f[R] is not an object or a non-registered symbol.
-.RE
-.SH Examples
+.SH EXAMPLES
 .SS Using add
 .IP
 .nf
@@ -62,7 +59,7 @@ ws.add(1);
 // and \[dq]TypeError: 1 is not a non-null object\[dq] in Firefox
 \f[R]
 .fi
-.SH See also
+.SH SEE ALSO
 .IP \[bu] 2
 \f[V]WeakSet\f[R]
 .IP \[bu] 2

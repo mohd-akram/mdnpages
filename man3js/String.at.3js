@@ -14,16 +14,19 @@
 . ftr VB CB
 . ftr VBI CBI
 .\}
-.TH "String.at" "JS" "2023-06-02" "JavaScript" "JavaScript Reference Manual"
+.TH "String.at" "JS" "June 2, 2023" "JavaScript" "JavaScript Reference Manual"
 .hy
-.SH Synopsis
+.SH NAME
+.PP
+String.at - String.prototype.at()
+.SH SYNOPSIS
 .PP
 The \f[B]\f[VB]at()\f[B]\f[R] method takes an integer value and returns
 a new \f[V]String\f[R] consisting of the single UTF-16 code unit located
 at the specified offset.
 This method allows for positive and negative integers.
 Negative integers count back from the last string character.
-.SH Syntax
+.SH SYNTAX
 .IP
 .nf
 \f[C]
@@ -31,21 +34,18 @@ at(index)
 \f[R]
 .fi
 .SS Parameters
-.IP \[bu] 2
-\f[V]index\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]index\f[R]
 The index (position) of the string character to be returned.
 Supports relative indexing from the end of the string when passed a
 negative index; i.e.\ if a negative number is used, the character
 returned will be found by counting back from the end of the string.
-.RE
 .SS Return value
 .PP
 A \f[V]String\f[R] consisting of the single UTF-16 code unit located at
 the specified position.
 Returns \f[V]undefined\f[R] if the given index can not be found.
-.SH Examples
+.SH EXAMPLES
 .SS Return the last character of a string
 .PP
 The following example provides a function which returns the last
@@ -91,7 +91,7 @@ const atWay = myString.at(-2);
 console.log(atWay); // \[aq]t\[aq]
 \f[R]
 .fi
-.SH See also
+.SH SEE ALSO
 .IP \[bu] 2
 Polyfill of \f[V]String.prototype.at\f[R] in
 \f[V]core-js\f[R] (https://github.com/zloirock/core-js#ecmascript-string-and-regexp)

@@ -14,9 +14,12 @@
 . ftr VB CB
 . ftr VBI CBI
 .\}
-.TH "TypedArray.toReversed" "JS" "2023-06-02" "JavaScript" "JavaScript Reference Manual"
+.TH "TypedArray.toReversed" "JS" "June 2, 2023" "JavaScript" "JavaScript Reference Manual"
 .hy
-.SH Synopsis
+.SH NAME
+.PP
+TypedArray.toReversed - TypedArray.prototype.toReversed()
+.SH SYNOPSIS
 .PP
 The \f[B]\f[VB]toReversed()\f[B]\f[R] method is the copying counterpart
 of the \f[V]reverse()\f[R] method.
@@ -24,7 +27,7 @@ It returns a new array with the elements in reversed order.
 This method has the same algorithm as
 \f[V]Array.prototype.reverse()\f[R].
 \f[I]TypedArray\f[R] is one of the typed array types here.
-.SH Syntax
+.SH SYNTAX
 .IP
 .nf
 \f[C]
@@ -34,7 +37,7 @@ reverse()
 .SS Return value
 .PP
 A new typed array containing the elements in reversed order.
-.SH Examples
+.SH EXAMPLES
 .SS Using toReversed()
 .IP
 .nf
@@ -45,7 +48,7 @@ console.log(reversedUint8); // Uint8Array [3, 2, 1]
 console.log(uint8); // Uint8Array [1, 2, 3]
 \f[R]
 .fi
-.SH See also
+.SH SEE ALSO
 .IP \[bu] 2
 Polyfill of \f[V]TypedArray.prototype.toReversed\f[R] in
 \f[V]core-js\f[R] (https://github.com/zloirock/core-js#change-array-by-copy)

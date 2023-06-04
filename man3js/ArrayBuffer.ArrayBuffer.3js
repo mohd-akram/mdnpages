@@ -14,13 +14,16 @@
 . ftr VB CB
 . ftr VBI CBI
 .\}
-.TH "ArrayBuffer.ArrayBuffer" "JS" "2023-06-02" "JavaScript" "JavaScript Reference Manual"
+.TH "ArrayBuffer.ArrayBuffer" "JS" "June 2, 2023" "JavaScript" "JavaScript Reference Manual"
 .hy
-.SH Synopsis
+.SH NAME
+.PP
+ArrayBuffer.ArrayBuffer - ArrayBuffer() constructor
+.SH SYNOPSIS
 .PP
 The \f[B]\f[VB]ArrayBuffer()\f[B]\f[R] constructor creates
 \f[V]ArrayBuffer\f[R] objects.
-.SH Syntax
+.SH SYNTAX
 .IP
 .nf
 \f[C]
@@ -36,25 +39,16 @@ Attempting to call it without \f[V]new\f[R] throws a
 \f[V]TypeError\f[R].
 .RE
 .SS Parameters
-.IP \[bu] 2
-\f[V]length\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]length\f[R]
 The size, in bytes, of the array buffer to create.
-.RE
-.IP \[bu] 2
-\f[V]options\f[R] \f[I](optional)\f[R] \f[I](experimental)\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]options\f[R] \f[I](optional)\f[R] \f[I](experimental)\f[R]
 An object, which can contain the following properties:
-.RS 2
-.IP \[bu] 2
-\f[V]maxByteLength\f[R] \f[I](optional)\f[R] \f[I](experimental)\f[R]
-.RS 2
-.IP \[bu] 2
+.RS
+.TP
+\f[B]maxByteLength\f[R] \f[I](optional)\f[R] \f[I](experimental)\f[R]
 The maximum size, in bytes, that the array buffer can be resized to.
-.RE
-.RE
 .RE
 .SS Return value
 .PP
@@ -63,20 +57,17 @@ A new \f[V]ArrayBuffer\f[R] object of the specified size, with its
 \f[V]maxByteLength\f[R] if one was specified.
 Its contents are initialized to 0.
 .SS Exceptions
-.IP \[bu] 2
-\f[V]RangeError\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]RangeError\f[R]
 Thrown if one of the following is true:
-.RS 2
+.RS
 .IP \[bu] 2
 \f[V]length\f[R] or \f[V]maxByteLength\f[R] is larger than
 \f[V]Number.MAX_SAFE_INTEGER\f[R] (≥ 253) or negative.
 .IP \[bu] 2
 \f[V]length\f[R] is larger than \f[V]maxByteLength\f[R].
 .RE
-.RE
-.SH Examples
+.SH EXAMPLES
 .SS Creating an ArrayBuffer
 .PP
 In this example, we create a 8-byte buffer with a \f[V]Int32Array\f[R]
@@ -107,7 +98,7 @@ the smallest value possible for your use case.
 It should never exceed \f[V]1073741824\f[R] (1GB) to reduce the risk of
 out-of-memory errors.
 .RE
-.SH See also
+.SH SEE ALSO
 .IP \[bu] 2
 Polyfill of \f[V]ArrayBuffer\f[R] in
 \f[V]core-js\f[R] (https://github.com/zloirock/core-js#ecmascript-typed-arrays)

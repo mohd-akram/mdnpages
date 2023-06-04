@@ -14,13 +14,16 @@
 . ftr VB CB
 . ftr VBI CBI
 .\}
-.TH "Math.floor" "JS" "2023-06-02" "JavaScript" "JavaScript Reference Manual"
+.TH "Math.floor" "JS" "June 2, 2023" "JavaScript" "JavaScript Reference Manual"
 .hy
-.SH Synopsis
+.SH NAME
+.PP
+Math.floor - Math.floor()
+.SH SYNOPSIS
 .PP
 The \f[B]\f[VB]Math.floor()\f[B]\f[R] static method always rounds down
 and returns the largest integer less than or equal to a given number.
-.SH Syntax
+.SH SYNTAX
 .IP
 .nf
 \f[C]
@@ -28,22 +31,19 @@ Math.floor(x)
 \f[R]
 .fi
 .SS Parameters
-.IP \[bu] 2
-\f[V]x\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]x\f[R]
 A number.
-.RE
 .SS Return value
 .PP
 The largest integer smaller than or equal to \f[V]x\f[R].
 It\[cq]s the same value as \f[V]-Math.ceil(-x)\f[R].
-.SH Description
+.SH DESCRIPTION
 .PP
 Because \f[V]floor()\f[R] is a static method of \f[V]Math\f[R], you
 always use it as \f[V]Math.floor()\f[R], rather than as a method of a
 \f[V]Math\f[R] object you created (\f[V]Math\f[R] is not a constructor).
-.SH Examples
+.SH EXAMPLES
 .SS Using Math.floor()
 .IP
 .nf
@@ -139,7 +139,7 @@ ceil10(-55.59, -1); // -55.5
 ceil10(-59, 1); // -50
 \f[R]
 .fi
-.SH See also
+.SH SEE ALSO
 .IP \[bu] 2
 \f[V]Math.abs()\f[R]
 .IP \[bu] 2

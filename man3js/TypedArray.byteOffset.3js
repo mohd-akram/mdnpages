@@ -14,15 +14,18 @@
 . ftr VB CB
 . ftr VBI CBI
 .\}
-.TH "TypedArray.byteOffset" "JS" "2023-06-02" "JavaScript" "JavaScript Reference Manual"
+.TH "TypedArray.byteOffset" "JS" "June 2, 2023" "JavaScript" "JavaScript Reference Manual"
 .hy
-.SH Synopsis
+.SH NAME
+.PP
+TypedArray.byteOffset - TypedArray.prototype.byteOffset
+.SH SYNOPSIS
 .PP
 The \f[B]\f[VB]byteOffset\f[B]\f[R] accessor property of
 \f[V]TypedArray\f[R] instances returns the offset (in bytes) of this
 typed array from the start of its \f[V]ArrayBuffer\f[R] or
 \f[V]SharedArrayBuffer\f[R].
-.SH Description
+.SH DESCRIPTION
 .PP
 The \f[V]byteOffset\f[R] property is an accessor property whose set
 accessor function is \f[V]undefined\f[R], meaning that you can only read
@@ -30,7 +33,7 @@ this property.
 The value is established when a \f[I]TypedArray\f[R] is constructed and
 cannot be changed.
 \f[I]TypedArray\f[R] is one of the TypedArray objects.
-.SH Examples
+.SH EXAMPLES
 .SS Using the byteOffset property
 .IP
 .nf
@@ -44,7 +47,7 @@ const uint8array2 = new Uint8Array(buffer, 3);
 uint8array2.byteOffset; // 3 (as specified when constructing Uint8Array)
 \f[R]
 .fi
-.SH See also
+.SH SEE ALSO
 .IP \[bu] 2
 JavaScript typed arrays
 .IP \[bu] 2

@@ -14,13 +14,16 @@
 . ftr VB CB
 . ftr VBI CBI
 .\}
-.TH "Date.getDate" "JS" "2023-06-02" "JavaScript" "JavaScript Reference Manual"
+.TH "Date.getDate" "JS" "June 2, 2023" "JavaScript" "JavaScript Reference Manual"
 .hy
-.SH Synopsis
+.SH NAME
+.PP
+Date.getDate - Date.prototype.getDate()
+.SH SYNOPSIS
 .PP
 The \f[B]\f[VB]getDate()\f[B]\f[R] method of \f[V]Date\f[R] instances
 returns the day of the month for this date according to local time.
-.SH Syntax
+.SH SYNTAX
 .IP
 .nf
 \f[C]
@@ -32,7 +35,7 @@ getDate()
 An integer, between 1 and 31, representing the day of the month for the
 given date according to local time.
 Returns \f[V]NaN\f[R] if the date is invalid.
-.SH Examples
+.SH EXAMPLES
 .SS Using getDate()
 .PP
 The \f[V]day\f[R] variable has value \f[V]25\f[R], based on the value of
@@ -46,7 +49,7 @@ const day = xmas95.getDate();
 console.log(day); // 25
 \f[R]
 .fi
-.SH See also
+.SH SEE ALSO
 .IP \[bu] 2
 \f[V]Date.prototype.getUTCDate()\f[R]
 .IP \[bu] 2

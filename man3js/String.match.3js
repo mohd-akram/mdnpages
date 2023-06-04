@@ -14,13 +14,16 @@
 . ftr VB CB
 . ftr VBI CBI
 .\}
-.TH "String.match" "JS" "2023-06-02" "JavaScript" "JavaScript Reference Manual"
+.TH "String.match" "JS" "June 2, 2023" "JavaScript" "JavaScript Reference Manual"
 .hy
-.SH Synopsis
+.SH NAME
+.PP
+String.match - String.prototype.match()
+.SH SYNOPSIS
 .PP
 The \f[B]\f[VB]match()\f[B]\f[R] method retrieves the result of matching
 a string against a regular expression.
-.SH Syntax
+.SH SYNTAX
 .IP
 .nf
 \f[C]
@@ -28,13 +31,11 @@ match(regexp)
 \f[R]
 .fi
 .SS Parameters
-.IP \[bu] 2
-\f[V]regexp\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]regexp\f[R]
 A regular expression object, or any object that has a
 \f[V]Symbol.match\f[R] method.
-.RS 2
+.RS
 .PP
 If \f[V]regexp\f[R] is not a \f[V]RegExp\f[R] object and does not have a
 \f[V]Symbol.match\f[R] method, it is implicitly converted to a
@@ -44,7 +45,6 @@ If you don\[cq]t give any parameter and use the \f[V]match()\f[R] method
 directly, you will get an \f[V]Array\f[R] with an empty string:
 \f[V][\[dq]\[dq]]\f[R], because this is equivalent to
 \f[V]match(/(?:)/)\f[R].
-.RE
 .RE
 .SS Return value
 .PP
@@ -60,7 +60,7 @@ If the \f[V]g\f[R] flag is not used, only the first complete match and
 its related capturing groups are returned.
 In this case, \f[V]match()\f[R] will return the same result as
 \f[V]RegExp.prototype.exec()\f[R] (an array with some extra properties).
-.SH Description
+.SH DESCRIPTION
 .PP
 The implementation of \f[V]String.prototype.match\f[R] itself is very
 simple \[em] it simply calls the \f[V]Symbol.match\f[R] method of the
@@ -80,7 +80,7 @@ need to use \f[V]RegExp.prototype.exec()\f[R] or
 .PP
 For more information about the semantics of \f[V]match()\f[R] when a
 regex is passed, see \f[V]RegExp.prototype[\[at]\[at]match]()\f[R].
-.SH Examples
+.SH EXAMPLES
 .SS Using match()
 .PP
 In the following example, \f[V]match()\f[R] is used to find
@@ -223,7 +223,7 @@ escape the input.
 console.log(\[dq]123\[dq].match(\[dq]1\[rs]\[rs].3\[dq])); // null
 \f[R]
 .fi
-.SH See also
+.SH SEE ALSO
 .IP \[bu] 2
 Polyfill of \f[V]String.prototype.match\f[R] in \f[V]core-js\f[R] with
 fixes and implementation of modern behavior like \f[V]Symbol.match\f[R]

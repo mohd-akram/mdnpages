@@ -14,13 +14,16 @@
 . ftr VB CB
 . ftr VBI CBI
 .\}
-.TH "Date.getUTCMinutes" "JS" "2023-06-02" "JavaScript" "JavaScript Reference Manual"
+.TH "Date.getUTCMinutes" "JS" "June 2, 2023" "JavaScript" "JavaScript Reference Manual"
 .hy
-.SH Synopsis
+.SH NAME
+.PP
+Date.getUTCMinutes - Date.prototype.getUTCMinutes()
+.SH SYNOPSIS
 .PP
 The \f[B]\f[VB]getUTCMinutes()\f[B]\f[R] method of \f[V]Date\f[R]
 instances returns the minutes for this date according to universal time.
-.SH Syntax
+.SH SYNTAX
 .IP
 .nf
 \f[C]
@@ -32,7 +35,7 @@ getUTCMinutes()
 An integer, between 0 and 59, representing the minutes for the given
 date according to universal time.
 Returns \f[V]NaN\f[R] if the date is invalid.
-.SH Examples
+.SH EXAMPLES
 .SS Using getUTCMinutes()
 .PP
 The following example assigns the minutes portion of the current time to
@@ -44,7 +47,7 @@ const today = new Date();
 const minutes = today.getUTCMinutes();
 \f[R]
 .fi
-.SH See also
+.SH SEE ALSO
 .IP \[bu] 2
 \f[V]Date.prototype.getMinutes()\f[R]
 .IP \[bu] 2

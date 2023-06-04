@@ -14,14 +14,17 @@
 . ftr VB CB
 . ftr VBI CBI
 .\}
-.TH "Date.setHours" "JS" "2023-06-02" "JavaScript" "JavaScript Reference Manual"
+.TH "Date.setHours" "JS" "June 2, 2023" "JavaScript" "JavaScript Reference Manual"
 .hy
-.SH Synopsis
+.SH NAME
+.PP
+Date.setHours - Date.prototype.setHours()
+.SH SYNOPSIS
 .PP
 The \f[B]\f[VB]setHours()\f[B]\f[R] method of \f[V]Date\f[R] instances
 changes the hours, minutes, seconds, and/or milliseconds for this date
 according to local time.
-.SH Syntax
+.SH SYNTAX
 .IP
 .nf
 \f[C]
@@ -32,34 +35,22 @@ setHours(hoursValue, minutesValue, secondsValue, msValue)
 \f[R]
 .fi
 .SS Parameters
-.IP \[bu] 2
-\f[V]hoursValue\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]hoursValue\f[R]
 An integer between 0 and 23 representing the hours.
-.RE
-.IP \[bu] 2
-\f[V]minutesValue\f[R] \f[I](optional)\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]minutesValue\f[R] \f[I](optional)\f[R]
 An integer between 0 and 59 representing the minutes.
-.RE
-.IP \[bu] 2
-\f[V]secondsValue\f[R] \f[I](optional)\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]secondsValue\f[R] \f[I](optional)\f[R]
 An integer between 0 and 59 representing the seconds.
 If you specify \f[V]secondsValue\f[R], you must also specify
 \f[V]minutesValue\f[R].
-.RE
-.IP \[bu] 2
-\f[V]msValue\f[R] \f[I](optional)\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]msValue\f[R] \f[I](optional)\f[R]
 An integer between 0 and 999 representing the milliseconds.
 If you specify \f[V]msValue\f[R], you must also specify
 \f[V]minutesValue\f[R] and \f[V]secondsValue\f[R].
-.RE
 .SS Return value
 .PP
 Changes the \f[V]Date\f[R] object in place, and returns its new
@@ -67,7 +58,7 @@ timestamp.
 If a parameter is \f[V]NaN\f[R] (or other values that get coerced to
 \f[V]NaN\f[R], such as \f[V]undefined\f[R]), the date is set to Invalid
 Date and \f[V]NaN\f[R] is returned.
-.SH Description
+.SH DESCRIPTION
 .PP
 If you do not specify the \f[V]minutesValue\f[R],
 \f[V]secondsValue\f[R], and \f[V]msValue\f[R] parameters, the same
@@ -80,7 +71,7 @@ updated accordingly.
 For example, if you specify 100 for \f[V]secondsValue\f[R], the minutes
 are incremented by 1 (\f[V]minutesValue + 1\f[R]), and 40 is used for
 seconds.
-.SH Examples
+.SH EXAMPLES
 .SS Using setHours()
 .IP
 .nf
@@ -89,7 +80,7 @@ const theBigDay = new Date();
 theBigDay.setHours(7);
 \f[R]
 .fi
-.SH See also
+.SH SEE ALSO
 .IP \[bu] 2
 \f[V]Date.prototype.getHours()\f[R]
 .IP \[bu] 2

@@ -14,14 +14,17 @@
 . ftr VB CB
 . ftr VBI CBI
 .\}
-.TH "Number.Number" "JS" "2023-06-02" "JavaScript" "JavaScript Reference Manual"
+.TH "Number.Number" "JS" "June 2, 2023" "JavaScript" "JavaScript Reference Manual"
 .hy
-.SH Synopsis
+.SH NAME
+.PP
+Number.Number - Number() constructor
+.SH SYNOPSIS
 .PP
 The \f[B]\f[VB]Number()\f[B]\f[R] constructor creates \f[V]Number\f[R]
 objects.
 When called as a function, it returns primitive values of type Number.
-.SH Syntax
+.SH SYNTAX
 .IP
 .nf
 \f[C]
@@ -36,12 +39,9 @@ Number(value)
 See Return value.
 .RE
 .SS Parameters
-.IP \[bu] 2
-\f[V]value\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]value\f[R]
 The numeric value of the object being created.
-.RE
 .SS Return value
 .PP
 When \f[V]Number\f[R] is called as a constructor (with \f[V]new\f[R]),
@@ -57,7 +57,7 @@ If the value can\[cq]t be converted, it returns \f[V]NaN\f[R].
 \f[B]Warning:\f[R] You should rarely find yourself using
 \f[V]Number\f[R] as a constructor.
 .RE
-.SH Examples
+.SH EXAMPLES
 .SS Creating Number objects
 .IP
 .nf
@@ -100,7 +100,7 @@ large to be safely represented.
 BigInt(Number(2n ** 54n + 1n)) === 2n ** 54n + 1n; // false
 \f[R]
 .fi
-.SH See also
+.SH SEE ALSO
 .IP \[bu] 2
 Polyfill of modern \f[V]Number\f[R] behavior (with support binary and
 octal literals) in

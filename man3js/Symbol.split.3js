@@ -15,9 +15,12 @@
 . ftr VB CB
 . ftr VBI CBI
 .\}
-.TH "Symbol.split" "JS" "2023-06-02" "JavaScript" "JavaScript Reference Manual"
+.TH "Symbol.split" "JS" "June 2, 2023" "JavaScript" "JavaScript Reference Manual"
 .hy
-.SH Synopsis
+.SH NAME
+.PP
+Symbol.split - Symbol.split
+.SH SYNOPSIS
 .PP
 The \f[B]\f[VB]Symbol.split\f[B]\f[R] static data property represents
 the well-known symbol \f[V]\[at]\[at]split\f[R].
@@ -27,7 +30,7 @@ that match the current object.
 .PP
 For more information, see\f[V]RegExp.prototype[\[at]\[at]split]()\f[R]
 and \f[V]String.prototype.split()\f[R].
-.SH Value
+.SH VALUE
 .PP
 The well-known symbol \f[V]\[at]\[at]split\f[R].
 .PP
@@ -50,7 +53,7 @@ T}@T{
 no
 T}
 .TE
-.SH Examples
+.SH EXAMPLES
 .SS Custom reverse split
 .IP
 .nf
@@ -66,7 +69,7 @@ console.log(\[dq]Another one bites the dust\[dq].split(new ReverseSplit()));
 // [ \[dq]dust\[dq], \[dq]the\[dq], \[dq]bites\[dq], \[dq]one\[dq], \[dq]Another\[dq] ]
 \f[R]
 .fi
-.SH See also
+.SH SEE ALSO
 .IP \[bu] 2
 Polyfill of \f[V]Symbol.split\f[R] in
 \f[V]core-js\f[R] (https://github.com/zloirock/core-js#ecmascript-symbol)

@@ -14,9 +14,12 @@
 . ftr VB CB
 . ftr VBI CBI
 .\}
-.TH "BigInt64Array" "JS" "2023-06-02" "JavaScript" "JavaScript Reference Manual"
+.TH "BigInt64Array" "JS" "June 2, 2023" "JavaScript" "JavaScript Reference Manual"
 .hy
-.SH Synopsis
+.SH NAME
+.PP
+BigInt64Array - BigInt64Array
+.SH SYNOPSIS
 .PP
 The \f[B]\f[VB]BigInt64Array\f[B]\f[R] typed array represents an array
 of 64-bit signed integers in the platform byte order.
@@ -28,54 +31,42 @@ using bracket notation).
 .PP
 \f[V]BigInt64Array\f[R] is a subclass of the hidden \f[V]TypedArray\f[R]
 class.
-.SH Constructor
-.IP \[bu] 2
-\f[V]BigInt64Array()\f[R]
-.RS 2
-.IP \[bu] 2
+.SH CONSTRUCTOR
+.TP
+\f[B]BigInt64Array()\f[R]
 Creates a new \f[V]BigInt64Array\f[R] object.
-.RE
-.SH Static properties
+.SH STATIC PROPERTIES
 .PP
 \f[I]Also inherits static properties from its parent
 \f[VI]TypedArray\f[I]\f[R].
-.IP \[bu] 2
-\f[V]BigInt64Array.BYTES_PER_ELEMENT\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]BigInt64Array.BYTES_PER_ELEMENT\f[R]
 Returns a number value of the element size.
 \f[V]8\f[R] in the case of \f[V]BigInt64Array\f[R].
-.RE
-.SH Static methods
+.SH STATIC METHODS
 .PP
 \f[I]Inherits static methods from its parent \f[VI]TypedArray\f[I]\f[R].
-.SH Instance properties
+.SH INSTANCE PROPERTIES
 .PP
 \f[I]Also inherits instance properties from its parent
 \f[VI]TypedArray\f[I]\f[R].
 .PP
 These properties are defined on \f[V]BigInt64Array.prototype\f[R] and
 shared by all \f[V]BigInt64Array\f[R] instances.
-.IP \[bu] 2
-\f[V]BigInt64Array.prototype.BYTES_PER_ELEMENT\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]BigInt64Array.prototype.BYTES_PER_ELEMENT\f[R]
 Returns a number value of the element size.
 \f[V]8\f[R] in the case of a \f[V]BigInt64Array\f[R].
-.RE
-.IP \[bu] 2
-\f[V]BigInt64Array.prototype.constructor\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]BigInt64Array.prototype.constructor\f[R]
 The constructor function that created the instance object.
 For \f[V]BigInt64Array\f[R] instances, the initial value is the
 \f[V]BigInt64Array\f[R] constructor.
-.RE
-.SH Instance methods
+.SH INSTANCE METHODS
 .PP
 \f[I]Inherits instance methods from its parent
 \f[VI]TypedArray\f[I]\f[R].
-.SH Examples
+.SH EXAMPLES
 .SS Different ways to create a \f[V]BigInt64Array\f[R]
 .IP
 .nf
@@ -109,7 +100,7 @@ console.log(bigint64FromIterable);
 // BigInt64Array [1n, 2n, 3n]
 \f[R]
 .fi
-.SH See also
+.SH SEE ALSO
 .IP \[bu] 2
 JavaScript typed arrays
 .IP \[bu] 2

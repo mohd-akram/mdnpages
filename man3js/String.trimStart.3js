@@ -14,15 +14,18 @@
 . ftr VB CB
 . ftr VBI CBI
 .\}
-.TH "String.trimStart" "JS" "2023-06-02" "JavaScript" "JavaScript Reference Manual"
+.TH "String.trimStart" "JS" "June 2, 2023" "JavaScript" "JavaScript Reference Manual"
 .hy
-.SH Synopsis
+.SH NAME
+.PP
+String.trimStart - String.prototype.trimStart()
+.SH SYNOPSIS
 .PP
 The \f[B]\f[VB]trimStart()\f[B]\f[R] method removes whitespace from the
 beginning of a string and returns a new string, without modifying the
 original string.
 \f[V]trimLeft()\f[R] is an alias of this method.
-.SH Syntax
+.SH SYNTAX
 .IP
 .nf
 \f[C]
@@ -54,7 +57,7 @@ In some engines this means:
 String.prototype.trimLeft.name === \[dq]trimStart\[dq];
 \f[R]
 .fi
-.SH Examples
+.SH EXAMPLES
 .SS Using trimStart()
 .PP
 The following example trims whitespace from the start of \f[V]str\f[R],
@@ -71,7 +74,7 @@ console.log(str.length); // 5
 console.log(str); // \[aq]foo  \[aq]
 \f[R]
 .fi
-.SH See also
+.SH SEE ALSO
 .IP \[bu] 2
 Polyfill of \f[V]String.prototype.trimStart\f[R] in
 \f[V]core-js\f[R] (https://github.com/zloirock/core-js#ecmascript-string-and-regexp)

@@ -14,9 +14,12 @@
 . ftr VB CB
 . ftr VBI CBI
 .\}
-.TH "TypedArray.reduceRight" "JS" "2023-06-02" "JavaScript" "JavaScript Reference Manual"
+.TH "TypedArray.reduceRight" "JS" "June 2, 2023" "JavaScript" "JavaScript Reference Manual"
 .hy
-.SH Synopsis
+.SH NAME
+.PP
+TypedArray.reduceRight - TypedArray.prototype.reduceRight()
+.SH SYNOPSIS
 .PP
 The \f[B]\f[VB]reduceRight()\f[B]\f[R] method applies a function against
 an accumulator and each value of the typed array (from right-to-left)
@@ -24,7 +27,7 @@ has to reduce it to a single value.
 This method has the same algorithm as
 \f[V]Array.prototype.reduceRight()\f[R].
 \f[I]TypedArray\f[R] is one of the typed array types here.
-.SH Syntax
+.SH SYNTAX
 .IP
 .nf
 \f[C]
@@ -33,60 +36,42 @@ reduceRight(callbackFn, initialValue)
 \f[R]
 .fi
 .SS Parameters
-.IP \[bu] 2
-\f[V]callbackFn\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]callbackFn\f[R]
 A function to execute for each element in the typed array.
 Its return value becomes the value of the \f[V]accumulator\f[R]
 parameter on the next invocation of \f[V]callbackFn\f[R].
 For the last invocation, the return value becomes the return value of
 \f[V]reduceRight()\f[R].
 The function is called with the following arguments:
-.RS 2
-.IP \[bu] 2
-\f[V]accumulator\f[R]
-.RS 2
-.IP \[bu] 2
+.RS
+.TP
+\f[B]accumulator\f[R]
 The value previously returned in the last invocation of the callback, or
 \f[V]initialValue\f[R], if supplied.
 (See below.)
-.RE
-.IP \[bu] 2
-\f[V]currentValue\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]currentValue\f[R]
 The current element being processed in the typed array.
-.RE
-.IP \[bu] 2
-\f[V]index\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]index\f[R]
 The index of the current element being processed in the typed array.
-.RE
-.IP \[bu] 2
-\f[V]array\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]array\f[R]
 The typed array \f[V]reduceRight()\f[R] was called upon.
 .RE
-.RE
-.RE
-.IP \[bu] 2
-\f[V]initialValue\f[R] \f[I](optional)\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]initialValue\f[R] \f[I](optional)\f[R]
 Value to use as accumulator to the first call of the
 \f[V]callbackFn\f[R].
 If no initial value is supplied, the last element in the array will be
 used and skipped.
 Calling \f[V]reduceRight()\f[R] on an empty array without an initial
 value creates a \f[V]TypeError\f[R].
-.RE
 .SS Return value
 .PP
 The value that results from the reduction.
-.SH Description
+.SH DESCRIPTION
 .PP
 The \f[V]reduceRight\f[R] method executes the \f[V]callbackFn\f[R]
 function once for each element present in the typed array, excluding
@@ -122,7 +107,7 @@ If the typed array has only one element (regardless of position) and no
 \f[V]initialValue\f[R] was provided, or if \f[V]initialValue\f[R] is
 provided but the typed array is empty, the solo value would be returned
 without calling \f[V]callbackFn\f[R].
-.SH Examples
+.SH EXAMPLES
 .SS Sum up all values within an array
 .IP
 .nf
@@ -131,7 +116,7 @@ const total = new Uint8Array([0, 1, 2, 3]).reduceRight((a, b) => a + b);
 // total === 6
 \f[R]
 .fi
-.SH See also
+.SH SEE ALSO
 .IP \[bu] 2
 Polyfill of \f[V]TypedArray.prototype.reduceRight\f[R] in
 \f[V]core-js\f[R] (https://github.com/zloirock/core-js#ecmascript-typed-arrays)

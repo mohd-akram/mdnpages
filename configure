@@ -17,9 +17,9 @@ get_name() {
 			q
 		}
 		/^browser-compat:/{
-			s/browser-compat:[[:space:]]*//
-			s/javascript\.builtins\.//
+			s/^browser-compat:[[:space:]]*javascript\.builtins\.//
 			p
+			q
 		}
 	}' "$1"
 }

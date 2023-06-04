@@ -14,9 +14,12 @@
 . ftr VB CB
 . ftr VBI CBI
 .\}
-.TH "Object.seal" "JS" "2023-06-02" "JavaScript" "JavaScript Reference Manual"
+.TH "Object.seal" "JS" "June 2, 2023" "JavaScript" "JavaScript Reference Manual"
 .hy
-.SH Synopsis
+.SH NAME
+.PP
+Object.seal - Object.seal()
+.SH SYNOPSIS
 .PP
 The \f[B]\f[VB]Object.seal()\f[B]\f[R] static method \f[I]seals\f[R] an
 object.
@@ -29,7 +32,7 @@ re-assigned.
 Values of existing properties can still be changed as long as they are
 writable.
 \f[V]seal()\f[R] returns the same object that was passed in.
-.SH Syntax
+.SH SYNTAX
 .IP
 .nf
 \f[C]
@@ -37,16 +40,13 @@ Object.seal(obj)
 \f[R]
 .fi
 .SS Parameters
-.IP \[bu] 2
-\f[V]obj\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]obj\f[R]
 The object which should be sealed.
-.RE
 .SS Return value
 .PP
 The object being sealed.
-.SH Description
+.SH DESCRIPTION
 .PP
 Sealing an object is equivalent to preventing extensions and then
 changing all existing properties\[cq] descriptors to
@@ -68,7 +68,7 @@ However, due to the effect of preventing extensions, the
 Unlike \f[V]Object.freeze()\f[R], objects sealed with
 \f[V]Object.seal()\f[R] may have their existing properties changed, as
 long as they are writable.
-.SH Examples
+.SH EXAMPLES
 .SS Using Object.seal
 .IP
 .nf
@@ -143,7 +143,7 @@ Object.seal(1);
 // 1                             (ES2015 code)
 \f[R]
 .fi
-.SH See also
+.SH SEE ALSO
 .IP \[bu] 2
 \f[V]Object.isSealed()\f[R]
 .IP \[bu] 2

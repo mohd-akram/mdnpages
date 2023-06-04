@@ -14,9 +14,12 @@
 . ftr VB CB
 . ftr VBI CBI
 .\}
-.TH "Set.entries" "JS" "2023-06-02" "JavaScript" "JavaScript Reference Manual"
+.TH "Set.entries" "JS" "June 2, 2023" "JavaScript" "JavaScript Reference Manual"
 .hy
-.SH Synopsis
+.SH NAME
+.PP
+Set.entries - Set.prototype.entries()
+.SH SYNOPSIS
 .PP
 The \f[B]\f[VB]entries()\f[B]\f[R] method returns a new \f[I]set
 iterator\f[R] object that contains \f[B]an array of
@@ -28,7 +31,7 @@ However, to keep the API similar to the \f[V]Map\f[R] object, each
 \f[I]entry\f[R] has the same value for its \f[I]key\f[R] and
 \f[I]value\f[R] here, so that an array \f[V][value, value]\f[R] is
 returned.
-.SH Syntax
+.SH SYNTAX
 .IP
 .nf
 \f[C]
@@ -38,7 +41,7 @@ entries()
 .SS Return value
 .PP
 A new iterable iterator object.
-.SH Examples
+.SH EXAMPLES
 .SS Using entries()
 .IP
 .nf
@@ -55,7 +58,7 @@ console.log(setIter.next().value); // [1, 1]
 console.log(setIter.next().value); // [\[dq]baz\[dq], \[dq]baz\[dq]]
 \f[R]
 .fi
-.SH See also
+.SH SEE ALSO
 .IP \[bu] 2
 \f[V]Set.prototype.keys()\f[R]
 .IP \[bu] 2

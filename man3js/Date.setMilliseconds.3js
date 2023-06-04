@@ -14,14 +14,17 @@
 . ftr VB CB
 . ftr VBI CBI
 .\}
-.TH "Date.setMilliseconds" "JS" "2023-06-02" "JavaScript" "JavaScript Reference Manual"
+.TH "Date.setMilliseconds" "JS" "June 2, 2023" "JavaScript" "JavaScript Reference Manual"
 .hy
-.SH Synopsis
+.SH NAME
+.PP
+Date.setMilliseconds - Date.prototype.setMilliseconds()
+.SH SYNOPSIS
 .PP
 The \f[B]\f[VB]setMilliseconds()\f[B]\f[R] method of \f[V]Date\f[R]
 instances changes the milliseconds for this date according to local
 time.
-.SH Syntax
+.SH SYNTAX
 .IP
 .nf
 \f[C]
@@ -29,12 +32,9 @@ setMilliseconds(millisecondsValue)
 \f[R]
 .fi
 .SS Parameters
-.IP \[bu] 2
-\f[V]millisecondsValue\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]millisecondsValue\f[R]
 An integer between 0 and 999 representing the milliseconds.
-.RE
 .SS Return value
 .PP
 Changes the \f[V]Date\f[R] object in place, and returns its new
@@ -42,13 +42,13 @@ timestamp.
 If \f[V]millisecondsValue\f[R] is \f[V]NaN\f[R] (or other values that
 get coerced to \f[V]NaN\f[R], such as \f[V]undefined\f[R]), the date is
 set to Invalid Date and \f[V]NaN\f[R] is returned.
-.SH Description
+.SH DESCRIPTION
 .PP
 If you specify a number outside the expected range, the date information
 in the \f[V]Date\f[R] object is updated accordingly.
 For example, if you specify 1005, the number of seconds is incremented
 by 1, and 5 is used for the milliseconds.
-.SH Examples
+.SH EXAMPLES
 .SS Using setMilliseconds()
 .IP
 .nf
@@ -57,7 +57,7 @@ const theBigDay = new Date();
 theBigDay.setMilliseconds(100);
 \f[R]
 .fi
-.SH See also
+.SH SEE ALSO
 .IP \[bu] 2
 \f[V]Date.prototype.getMilliseconds()\f[R]
 .IP \[bu] 2

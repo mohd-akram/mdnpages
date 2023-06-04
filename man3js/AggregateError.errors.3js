@@ -15,14 +15,17 @@
 . ftr VB CB
 . ftr VBI CBI
 .\}
-.TH "AggregateError.errors" "JS" "2023-06-02" "JavaScript" "JavaScript Reference Manual"
+.TH "AggregateError.errors" "JS" "June 2, 2023" "JavaScript" "JavaScript Reference Manual"
 .hy
-.SH Synopsis
+.SH NAME
+.PP
+AggregateError.errors - AggregateError: errors
+.SH SYNOPSIS
 .PP
 The \f[B]\f[VB]errors\f[B]\f[R] data property of an
 \f[V]AggregateError\f[R] instance contains an array representing the
 errors that were aggregated.
-.SH Value
+.SH VALUE
 .PP
 An \f[V]Array\f[R] containing values in the same order as the iterable
 passed as the first argument of the \f[V]AggregateError()\f[R]
@@ -47,7 +50,7 @@ T}@T{
 yes
 T}
 .TE
-.SH Examples
+.SH EXAMPLES
 .SS Using errors
 .IP
 .nf
@@ -67,7 +70,7 @@ try {
 }
 \f[R]
 .fi
-.SH See also
+.SH SEE ALSO
 .IP \[bu] 2
 Control flow and error handling
 .IP \[bu] 2

@@ -14,9 +14,12 @@
 . ftr VB CB
 . ftr VBI CBI
 .\}
-.TH "Array.flatMap" "JS" "2023-06-02" "JavaScript" "JavaScript Reference Manual"
+.TH "Array.flatMap" "JS" "June 2, 2023" "JavaScript" "JavaScript Reference Manual"
 .hy
-.SH Synopsis
+.SH NAME
+.PP
+Array.flatMap - Array.prototype.flatMap()
+.SH SYNOPSIS
 .PP
 The \f[B]\f[VB]flatMap()\f[B]\f[R] method returns a new array formed by
 applying a given callback function to each element of the array, and
@@ -24,7 +27,7 @@ then flattening the result by one level.
 It is identical to a \f[V]map()\f[R] followed by a \f[V]flat()\f[R] of
 depth 1 (\f[V]arr.map(...args).flat()\f[R]), but slightly more efficient
 than calling those two methods separately.
-.SH Syntax
+.SH SYNTAX
 .IP
 .nf
 \f[C]
@@ -33,47 +36,32 @@ flatMap(callbackFn, thisArg)
 \f[R]
 .fi
 .SS Parameters
-.IP \[bu] 2
-\f[V]callbackFn\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]callbackFn\f[R]
 A function to execute for each element in the array.
 It should return an array containing new elements of the new array, or a
 single non-array value to be added to the new array.
 The function is called with the following arguments:
-.RS 2
-.IP \[bu] 2
-\f[V]element\f[R]
-.RS 2
-.IP \[bu] 2
+.RS
+.TP
+\f[B]element\f[R]
 The current element being processed in the array.
-.RE
-.IP \[bu] 2
-\f[V]index\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]index\f[R]
 The index of the current element being processed in the array.
-.RE
-.IP \[bu] 2
-\f[V]array\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]array\f[R]
 The array \f[V]flatMap()\f[R] was called upon.
 .RE
-.RE
-.RE
-.IP \[bu] 2
-\f[V]thisArg\f[R] \f[I](optional)\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]thisArg\f[R] \f[I](optional)\f[R]
 A value to use as \f[V]this\f[R] when executing \f[V]callbackFn\f[R].
 See iterative methods.
-.RE
 .SS Return value
 .PP
 A new array with each element being the result of the callback function
 and flattened by a depth of 1.
-.SH Description
+.SH DESCRIPTION
 .PP
 The \f[V]flatMap()\f[R] method is an iterative method.
 See \f[V]Array.prototype.map()\f[R] for a detailed description of the
@@ -114,7 +102,7 @@ arrays that must be garbage collected, as well as the return array not
 needing to be frequently resized.
 However, \f[V]flatMap\f[R] may still be the correct solution in cases
 where its flexibility and readability are desired.
-.SH Examples
+.SH EXAMPLES
 .SS map() and flatMap()
 .IP
 .nf
@@ -220,7 +208,7 @@ console.log(
 // [ { \[aq]0\[aq]: 1, length: 1 }, { \[aq]0\[aq]: 2, length: 1 }, { \[aq]0\[aq]: 3, length: 1 } ]
 \f[R]
 .fi
-.SH See also
+.SH SEE ALSO
 .IP \[bu] 2
 Polyfill of \f[V]Array.prototype.flatMap\f[R] in
 \f[V]core-js\f[R] (https://github.com/zloirock/core-js#ecmascript-array)

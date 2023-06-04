@@ -14,15 +14,18 @@
 . ftr VB CB
 . ftr VBI CBI
 .\}
-.TH "Date.Date" "JS" "2023-06-02" "JavaScript" "JavaScript Reference Manual"
+.TH "Date.Date" "JS" "June 2, 2023" "JavaScript" "JavaScript Reference Manual"
 .hy
-.SH Synopsis
+.SH NAME
+.PP
+Date.Date - Date() constructor
+.SH SYNOPSIS
 .PP
 The \f[B]\f[VB]Date()\f[B]\f[R] constructor creates \f[V]Date\f[R]
 objects.
 When called as a function, it returns a string representing the current
 time.
-.SH Syntax
+.SH SYNTAX
 .IP
 .nf
 \f[C]
@@ -57,34 +60,25 @@ represents the current date and time as of the time of instantiation.
 The returned date\[cq]s timestamp is the same as the number returned by
 \f[V]Date.now()\f[R].
 .SS Time value or timestamp number
-.IP \[bu] 2
-\f[V]value\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]value\f[R]
 An integer value representing the timestamp (the number of milliseconds
 since midnight at the beginning of January 1, 1970, UTC \[em] a.k.a.
 the epoch).
-.RE
 .SS Date string
-.IP \[bu] 2
-\f[V]dateString\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]dateString\f[R]
 A string value representing a date, parsed and interpreted using the
 same algorithm implemented by \f[V]Date.parse()\f[R].
 See date time string format for caveats on using different formats.
-.RE
 .SS Date object
-.IP \[bu] 2
-\f[V]dateObject\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]dateObject\f[R]
 An existing \f[V]Date\f[R] object.
 This effectively makes a copy of the existing \f[V]Date\f[R] object with
 the same date and time.
 This is equivalent to \f[V]new Date(dateObject.valueOf())\f[R], except
 the \f[V]valueOf()\f[R] method is not called.
-.RE
 .PP
 When one parameter is passed to the \f[V]Date()\f[R] constructor,
 \f[V]Date\f[R] instances are specially treated.
@@ -117,59 +111,38 @@ June 20th, 2020.
 Similarly, if any parameter underflows, it \[lq]borrows\[rq] from the
 higher positions.
 For example, \f[V]new Date(2020, 5, 0)\f[R] will return May 31st, 2020.
-.IP \[bu] 2
-\f[V]year\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]year\f[R]
 Integer value representing the year.
 Values from \f[V]0\f[R] to \f[V]99\f[R] map to the years \f[V]1900\f[R]
 to \f[V]1999\f[R].
 All other values are the actual year.
 See the example.
-.RE
-.IP \[bu] 2
-\f[V]monthIndex\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]monthIndex\f[R]
 Integer value representing the month, beginning with \f[V]0\f[R] for
 January to \f[V]11\f[R] for December.
-.RE
-.IP \[bu] 2
-\f[V]day\f[R] \f[I](optional)\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]day\f[R] \f[I](optional)\f[R]
 Integer value representing the day of the month.
 Defaults to \f[V]1\f[R].
-.RE
-.IP \[bu] 2
-\f[V]hours\f[R] \f[I](optional)\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]hours\f[R] \f[I](optional)\f[R]
 Integer value between \f[V]0\f[R] and \f[V]23\f[R] representing the hour
 of the day.
 Defaults to \f[V]0\f[R].
-.RE
-.IP \[bu] 2
-\f[V]minutes\f[R] \f[I](optional)\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]minutes\f[R] \f[I](optional)\f[R]
 Integer value representing the minute segment of a time.
 Defaults to \f[V]0\f[R].
-.RE
-.IP \[bu] 2
-\f[V]seconds\f[R] \f[I](optional)\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]seconds\f[R] \f[I](optional)\f[R]
 Integer value representing the second segment of a time.
 Defaults to \f[V]0\f[R].
-.RE
-.IP \[bu] 2
-\f[V]milliseconds\f[R] \f[I](optional)\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]milliseconds\f[R] \f[I](optional)\f[R]
 Integer value representing the millisecond segment of a time.
 Defaults to \f[V]0\f[R].
-.RE
 .SS Return value
 .PP
 Calling \f[V]new Date()\f[R] (the \f[V]Date()\f[R] constructor) returns
@@ -189,7 +162,7 @@ Any arguments given in a \f[V]Date()\f[R] function call (without the
 called with an invalid date string \[em] or even called with any
 arbitrary object or other primitive as an argument \[em] it always
 returns a string representation of the current date and time.
-.SH Examples
+.SH EXAMPLES
 .SS Several ways to create a Date object
 .PP
 The following examples show several ways to create JavaScript dates:
@@ -244,6 +217,6 @@ console.log(new Date([\[dq]2020-06-19\[dq], \[dq]17:13\[dq]]));
 // \[dq]Invalid Date\[dq] in Firefox
 \f[R]
 .fi
-.SH See also
+.SH SEE ALSO
 .IP \[bu] 2
 \f[V]Date\f[R]

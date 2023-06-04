@@ -14,14 +14,17 @@
 . ftr VB CB
 . ftr VBI CBI
 .\}
-.TH "JSON" "JS" "2023-06-02" "JavaScript" "JavaScript Reference Manual"
+.TH "JSON" "JS" "June 2, 2023" "JavaScript" "JavaScript Reference Manual"
 .hy
-.SH Synopsis
+.SH NAME
+.PP
+JSON - JSON
+.SH SYNOPSIS
 .PP
 The \f[B]\f[VB]JSON\f[B]\f[R] namespace object contains static methods
 for parsing values from and converting values to JavaScript Object
 Notation (https://json.org/) (JSON).
-.SH Description
+.SH DESCRIPTION
 .PP
 Unlike most global objects, \f[V]JSON\f[R] is not a constructor.
 You cannot use it with the \f[V]new\f[R] operator or invoke the
@@ -35,21 +38,15 @@ booleans, and \f[V]null\f[R].
 It is based upon JavaScript syntax, but is distinct from JavaScript:
 most of JavaScript is \f[I]not\f[R] JSON.
 For example:
-.IP \[bu] 2
+.TP
 Objects and Arrays
-.RS 2
-.IP \[bu] 2
 Property names must be double-quoted strings; trailing commas are
 forbidden.
-.RE
-.IP \[bu] 2
+.TP
 Numbers
-.RS 2
-.IP \[bu] 2
 Leading zeros are prohibited.
 A decimal point must be followed by at least one digit.
 \f[V]NaN\f[R] and \f[V]Infinity\f[R] are unsupported.
-.RE
 .PP
 Any JSON text is a valid JavaScript expression, but only after the JSON
 superset (https://github.com/tc39/proposal-json-superset) revision.
@@ -139,32 +136,23 @@ carriage return (U+000D (https://unicode-table.com/en/000D/)), line feed
 (U+000A (https://unicode-table.com/en/000A/)), and space
 (U+0020 (https://unicode-table.com/en/0020/)) characters are the only
 valid whitespace characters.
-.SH Static properties
-.IP \[bu] 2
-\f[V]JSON[\[at]\[at]toStringTag]\f[R]
-.RS 2
-.IP \[bu] 2
+.SH STATIC PROPERTIES
+.TP
+\f[B]JSON[\[at]\[at]toStringTag]\f[R]
 The initial value of the \f[V]\[at]\[at]toStringTag\f[R] property is the
 string \f[V]\[dq]JSON\[dq]\f[R].
 This property is used in \f[V]Object.prototype.toString()\f[R].
-.RE
-.SH Static methods
-.IP \[bu] 2
-\f[V]JSON.parse()\f[R]
-.RS 2
-.IP \[bu] 2
+.SH STATIC METHODS
+.TP
+\f[B]JSON.parse()\f[R]
 Parse a piece of string text as JSON, optionally transforming the
 produced value and its properties, and return the value.
-.RE
-.IP \[bu] 2
-\f[V]JSON.stringify()\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]JSON.stringify()\f[R]
 Return a JSON string corresponding to the specified value, optionally
 including only certain properties or replacing property values in a
 user-defined manner.
-.RE
-.SH Examples
+.SH EXAMPLES
 .SS Example JSON
 .IP
 .nf
@@ -213,7 +201,7 @@ const jsonText = \[ga]{
 console.log(JSON.parse(jsonText));
 \f[R]
 .fi
-.SH See also
+.SH SEE ALSO
 .IP \[bu] 2
 \f[V]Date.prototype.toJSON()\f[R]
 .IP \[bu] 2

@@ -15,14 +15,17 @@
 . ftr VB CB
 . ftr VBI CBI
 .\}
-.TH "Math.atan2" "JS" "2023-06-02" "JavaScript" "JavaScript Reference Manual"
+.TH "Math.atan2" "JS" "June 2, 2023" "JavaScript" "JavaScript Reference Manual"
 .hy
-.SH Synopsis
+.SH NAME
+.PP
+Math.atan2 - Math.atan2()
+.SH SYNOPSIS
 .PP
 The \f[B]\f[VB]Math.atan2()\f[B]\f[R] static method returns the angle in
 the plane (in radians) between the positive x-axis and the ray from (0,
 0) to the point (x, y), for \f[V]Math.atan2(y, x)\f[R].
-.SH Syntax
+.SH SYNTAX
 .IP
 .nf
 \f[C]
@@ -30,23 +33,17 @@ Math.atan2(y, x)
 \f[R]
 .fi
 .SS Parameters
-.IP \[bu] 2
-\f[V]y\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]y\f[R]
 The y coordinate of the point.
-.RE
-.IP \[bu] 2
-\f[V]x\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]x\f[R]
 The x coordinate of the point.
-.RE
 .SS Return value
 .PP
 The angle in radians (between -π and π, inclusive) between the positive
 x-axis and the ray from (0, 0) to the point (x, y).
-.SH Description
+.SH DESCRIPTION
 .PP
 The \f[V]Math.atan2()\f[R] method measures the counterclockwise angle θ,
 in radians, between the positive x-axis and the point \f[V](x, y)\f[R].
@@ -191,7 +188,7 @@ than -π2- or greater than π2.
 Because \f[V]atan2()\f[R] is a static method of \f[V]Math\f[R], you
 always use it as \f[V]Math.atan2()\f[R], rather than as a method of a
 \f[V]Math\f[R] object you created (\f[V]Math\f[R] is not a constructor).
-.SH Examples
+.SH EXAMPLES
 .SS Using Math.atan2()
 .IP
 .nf
@@ -277,7 +274,7 @@ The output is:
 | ∞     | ∞     | π/4   | NaN   |
 \f[R]
 .fi
-.SH See also
+.SH SEE ALSO
 .IP \[bu] 2
 \f[V]Math.acos()\f[R]
 .IP \[bu] 2

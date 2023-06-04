@@ -15,16 +15,19 @@
 . ftr VB CB
 . ftr VBI CBI
 .\}
-.TH "Symbol.toStringTag" "JS" "2023-06-02" "JavaScript" "JavaScript Reference Manual"
+.TH "Symbol.toStringTag" "JS" "June 2, 2023" "JavaScript" "JavaScript Reference Manual"
 .hy
-.SH Synopsis
+.SH NAME
+.PP
+Symbol.toStringTag - Symbol.toStringTag
+.SH SYNOPSIS
 .PP
 The \f[B]\f[VB]Symbol.toStringTag\f[B]\f[R] static data property
 represents the well-known symbol \f[V]\[at]\[at]toStringTag\f[R].
 \f[V]Object.prototype.toString()\f[R] looks up this symbol on the
 \f[V]this\f[R] value for the property containing a string that
 represents the type of the object.
-.SH Value
+.SH VALUE
 .PP
 The well-known symbol \f[V]\[at]\[at]toStringTag\f[R].
 .PP
@@ -47,7 +50,7 @@ T}@T{
 no
 T}
 .TE
-.SH Examples
+.SH EXAMPLES
 .SS Default tags
 .PP
 Some values do not have \f[V]Symbol.toStringTag\f[R], but have special
@@ -122,7 +125,7 @@ test.toString(); // \[dq][object HTMLButtonElement]\[dq]
 test[Symbol.toStringTag]; // \[dq]HTMLButtonElement\[dq]
 \f[R]
 .fi
-.SH See also
+.SH SEE ALSO
 .IP \[bu] 2
 Polyfill of \f[V]Symbol.toStringTag\f[R] in
 \f[V]core-js\f[R] (https://github.com/zloirock/core-js#ecmascript-symbol)

@@ -14,13 +14,16 @@
 . ftr VB CB
 . ftr VBI CBI
 .\}
-.TH "BigInt.BigInt" "JS" "2023-06-02" "JavaScript" "JavaScript Reference Manual"
+.TH "BigInt.BigInt" "JS" "June 2, 2023" "JavaScript" "JavaScript Reference Manual"
 .hy
-.SH Synopsis
+.SH NAME
+.PP
+BigInt.BigInt - BigInt() constructor
+.SH SYNOPSIS
 .PP
 The \f[B]\f[VB]BigInt()\f[B]\f[R] function returns primitive values of
 type BigInt.
-.SH Syntax
+.SH SYNTAX
 .IP
 .nf
 \f[C]
@@ -35,13 +38,10 @@ Attempting to construct it with \f[V]new\f[R] throws a
 \f[V]TypeError\f[R].
 .RE
 .SS Parameters
-.IP \[bu] 2
-\f[V]value\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]value\f[R]
 The numeric value of the object being created.
 It may be a string, an integer, a boolean, or another \f[V]BigInt\f[R].
-.RE
 .SS Return value
 .PP
 A \f[V]BigInt\f[R] value.
@@ -52,33 +52,24 @@ Strings are parsed as if they are source text for integer literals,
 which means they can have leading and trailing whitespaces and can be
 prefixed with \f[V]0b\f[R], \f[V]0o\f[R], or \f[V]0x\f[R].
 .SS Exceptions
-.IP \[bu] 2
-\f[V]RangeError\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]RangeError\f[R]
 Thrown if the parameter is a non-integral number.
-.RE
-.IP \[bu] 2
-\f[V]TypeError\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]TypeError\f[R]
 Thrown if at least one of these conditions is met:
-.RS 2
+.RS
 .IP \[bu] 2
 The parameter cannot be converted to a primitive.
 .IP \[bu] 2
 After conversion to a primitive, the result is \f[V]undefined\f[R],
 \f[V]null\f[R], \f[V]symbol\f[R].
 .RE
-.RE
-.IP \[bu] 2
-\f[V]SyntaxError\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]SyntaxError\f[R]
 Thrown if the parameter is a string that cannot be parsed as a
 \f[V]BigInt\f[R].
-.RE
-.SH Examples
+.SH EXAMPLES
 .SS Using BigInt() to convert a number to a BigInt
 .PP
 \f[V]BigInt()\f[R] is the only case where a number can be converted to a
@@ -102,6 +93,6 @@ BigInt(\[dq]0x123\[dq]); // 291n, which is 123 in hexadecimal
 BigInt(\[dq]  123  \[dq]); // 123n, leading and trailing whitespaces are allowed
 \f[R]
 .fi
-.SH See also
+.SH SEE ALSO
 .IP \[bu] 2
 \f[V]BigInt\f[R] class

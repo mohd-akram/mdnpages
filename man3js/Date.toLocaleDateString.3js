@@ -14,9 +14,12 @@
 . ftr VB CB
 . ftr VBI CBI
 .\}
-.TH "Date.toLocaleDateString" "JS" "2023-06-02" "JavaScript" "JavaScript Reference Manual"
+.TH "Date.toLocaleDateString" "JS" "June 2, 2023" "JavaScript" "JavaScript Reference Manual"
 .hy
-.SH Synopsis
+.SH NAME
+.PP
+Date.toLocaleDateString - Date.prototype.toLocaleDateString()
+.SH SYNOPSIS
 .PP
 The \f[B]\f[VB]toLocaleDateString()\f[B]\f[R] method returns a string
 with a language-sensitive representation of the date portion of the
@@ -27,7 +30,7 @@ method simply calls \f[V]Intl.DateTimeFormat\f[R].
 When formatting large numbers of dates, it is better to create an
 \f[V]Intl.DateTimeFormat\f[R] object and use its \f[V]format()\f[R]
 method.
-.SH Syntax
+.SH SYNTAX
 .IP
 .nf
 \f[C]
@@ -48,23 +51,18 @@ these parameters correspond exactly to the
 Implementations without \f[V]Intl.DateTimeFormat\f[R] support are asked
 to ignore both parameters, making the locale used and the form of the
 string returned entirely implementation-dependent.
-.IP \[bu] 2
-\f[V]locales\f[R] \f[I](optional)\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]locales\f[R] \f[I](optional)\f[R]
 A string with a BCP 47 language tag, or an array of such strings.
 Corresponds to the \f[V]locales\f[R] parameter of the
 \f[V]Intl.DateTimeFormat()\f[R] constructor.
-.RS 2
+.RS
 .PP
 In implementations without \f[V]Intl.DateTimeFormat\f[R] support, this
 parameter is ignored and the host\[cq]s locale is usually used.
 .RE
-.RE
-.IP \[bu] 2
-\f[V]options\f[R] \f[I](optional)\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]options\f[R] \f[I](optional)\f[R]
 An object adjusting the output format.
 Corresponds to the \f[V]options\f[R] parameter of the
 \f[V]Intl.DateTimeFormat()\f[R] constructor.
@@ -73,11 +71,10 @@ The \f[V]timeStyle\f[R] option must be undefined, or a
 If \f[V]weekday\f[R], \f[V]year\f[R], \f[V]month\f[R], and \f[V]day\f[R]
 are all undefined, then \f[V]year\f[R], \f[V]month\f[R], and
 \f[V]day\f[R] will be set to \f[V]\[dq]numeric\[dq]\f[R].
-.RS 2
+.RS
 .PP
 In implementations without \f[V]Intl.DateTimeFormat\f[R] support, this
 parameter is ignored.
-.RE
 .RE
 .PP
 See the \f[V]Intl.DateTimeFormat()\f[R] constructor for details on these
@@ -91,7 +88,7 @@ In implementations with \f[V]Intl.DateTimeFormat\f[R], this is
 equivalent to
 \f[V]new Intl.DateTimeFormat(locales, options).format(date)\f[R], where
 \f[V]options\f[R] has been normalized as described above.
-.SH Examples
+.SH EXAMPLES
 .SS Using toLocaleDateString()
 .PP
 In basic use without specifying a locale, a formatted string in the
@@ -202,7 +199,7 @@ console.log(date.toLocaleDateString(\[dq]en-US\[dq], options));
 // \[dq]Thursday, December 20, 2012, UTC\[dq]
 \f[R]
 .fi
-.SH See also
+.SH SEE ALSO
 .IP \[bu] 2
 \f[V]Intl.DateTimeFormat\f[R]
 .IP \[bu] 2

@@ -14,14 +14,17 @@
 . ftr VB CB
 . ftr VBI CBI
 .\}
-.TH "Reflect" "JS" "2023-06-02" "JavaScript" "JavaScript Reference Manual"
+.TH "Reflect" "JS" "June 2, 2023" "JavaScript" "JavaScript Reference Manual"
 .hy
-.SH Synopsis
+.SH NAME
+.PP
+Reflect - Reflect
+.SH SYNOPSIS
 .PP
 The \f[B]\f[VB]Reflect\f[B]\f[R] namespace object contains static
 methods for invoking interceptable JavaScript object internal methods.
 The methods are the same as those of proxy handlers.
-.SH Description
+.SH DESCRIPTION
 .PP
 Unlike most global objects, \f[V]Reflect\f[R] is not a constructor.
 You cannot use it with the \f[V]new\f[R] operator or invoke the
@@ -81,113 +84,71 @@ Some of these methods have corresponding static methods of the same name
 on \f[V]Object\f[R], although they do have some subtle differences.
 For the exact differences, see the description for each
 \f[V]Reflect\f[R] method.
-.SH Static properties
-.IP \[bu] 2
-\f[V]Reflect[\[at]\[at]toStringTag]\f[R]
-.RS 2
-.IP \[bu] 2
+.SH STATIC PROPERTIES
+.TP
+\f[B]Reflect[\[at]\[at]toStringTag]\f[R]
 The initial value of the \f[V]\[at]\[at]toStringTag\f[R] property is the
 string \f[V]\[dq]Reflect\[dq]\f[R].
 This property is used in \f[V]Object.prototype.toString()\f[R].
-.RE
-.SH Static methods
-.IP \[bu] 2
-\f[V]Reflect.apply()\f[R]
-.RS 2
-.IP \[bu] 2
+.SH STATIC METHODS
+.TP
+\f[B]Reflect.apply()\f[R]
 Calls a \f[V]target\f[R] function with arguments as specified by the
 \f[V]argumentsList\f[R] parameter.
 See also \f[V]Function.prototype.apply()\f[R].
-.RE
-.IP \[bu] 2
-\f[V]Reflect.construct()\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]Reflect.construct()\f[R]
 The \f[V]new\f[R] operator as a function.
 Equivalent to calling \f[V]new target(...argumentsList)\f[R].
 Also provides the option to specify a different prototype.
-.RE
-.IP \[bu] 2
-\f[V]Reflect.defineProperty()\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]Reflect.defineProperty()\f[R]
 Similar to \f[V]Object.defineProperty()\f[R].
 Returns a boolean that is \f[V]true\f[R] if the property was
 successfully defined.
-.RE
-.IP \[bu] 2
-\f[V]Reflect.deleteProperty()\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]Reflect.deleteProperty()\f[R]
 The \f[V]delete\f[R] operator as a function.
 Equivalent to calling \f[V]delete target[propertyKey]\f[R].
-.RE
-.IP \[bu] 2
-\f[V]Reflect.get()\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]Reflect.get()\f[R]
 Returns the value of the property.
 Works like getting a property from an object
 (\f[V]target[propertyKey]\f[R]) as a function.
-.RE
-.IP \[bu] 2
-\f[V]Reflect.getOwnPropertyDescriptor()\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]Reflect.getOwnPropertyDescriptor()\f[R]
 Similar to \f[V]Object.getOwnPropertyDescriptor()\f[R].
 Returns a property descriptor of the given property if it exists on the
 object, \f[V]undefined\f[R] otherwise.
-.RE
-.IP \[bu] 2
-\f[V]Reflect.getPrototypeOf()\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]Reflect.getPrototypeOf()\f[R]
 Same as \f[V]Object.getPrototypeOf()\f[R].
-.RE
-.IP \[bu] 2
-\f[V]Reflect.has()\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]Reflect.has()\f[R]
 Returns a boolean indicating whether the target has the property.
 Either as own or inherited.
 Works like the \f[V]in\f[R] operator as a function.
-.RE
-.IP \[bu] 2
-\f[V]Reflect.isExtensible()\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]Reflect.isExtensible()\f[R]
 Same as \f[V]Object.isExtensible()\f[R].
 Returns a boolean that is \f[V]true\f[R] if the target is extensible.
-.RE
-.IP \[bu] 2
-\f[V]Reflect.ownKeys()\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]Reflect.ownKeys()\f[R]
 Returns an array of the target object\[cq]s own (not inherited) property
 keys.
-.RE
-.IP \[bu] 2
-\f[V]Reflect.preventExtensions()\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]Reflect.preventExtensions()\f[R]
 Similar to \f[V]Object.preventExtensions()\f[R].
 Returns a boolean that is \f[V]true\f[R] if the update was successful.
-.RE
-.IP \[bu] 2
-\f[V]Reflect.set()\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]Reflect.set()\f[R]
 A function that assigns values to properties.
 Returns a boolean that is \f[V]true\f[R] if the update was successful.
-.RE
-.IP \[bu] 2
-\f[V]Reflect.setPrototypeOf()\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]Reflect.setPrototypeOf()\f[R]
 A function that sets the prototype of an object.
 Returns a boolean that is \f[V]true\f[R] if the update was successful.
-.RE
-.SH Examples
+.SH EXAMPLES
 .SS Detecting whether an object contains certain properties
 .IP
 .nf
@@ -223,7 +184,7 @@ Reflect.set(duck, \[dq]eyes\[dq], \[dq]black\[dq]);
 // \[dq]duck\[dq] now contains the property \[dq]eyes: \[aq]black\[aq]\[dq]
 \f[R]
 .fi
-.SH See also
+.SH SEE ALSO
 .IP \[bu] 2
 The \f[V]Proxy\f[R] global object
 .IP \[bu] 2

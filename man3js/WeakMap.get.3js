@@ -14,13 +14,16 @@
 . ftr VB CB
 . ftr VBI CBI
 .\}
-.TH "WeakMap.get" "JS" "2023-06-02" "JavaScript" "JavaScript Reference Manual"
+.TH "WeakMap.get" "JS" "June 2, 2023" "JavaScript" "JavaScript Reference Manual"
 .hy
-.SH Synopsis
+.SH NAME
+.PP
+WeakMap.get - WeakMap.prototype.get()
+.SH SYNOPSIS
 .PP
 The \f[B]\f[VB]get()\f[B]\f[R] method returns a specified element from a
 \f[V]WeakMap\f[R] object.
-.SH Syntax
+.SH SYNTAX
 .IP
 .nf
 \f[C]
@@ -28,12 +31,9 @@ get(key)
 \f[R]
 .fi
 .SS Parameters
-.IP \[bu] 2
-\f[V]key\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]key\f[R]
 The key of the element to return from the \f[V]WeakMap\f[R] object.
-.RE
 .SS Return value
 .PP
 The element associated with the specified key in the \f[V]WeakMap\f[R]
@@ -41,7 +41,7 @@ object.
 If the key can\[cq]t be found, \f[V]undefined\f[R] is returned.
 Always returns \f[V]undefined\f[R] if \f[V]key\f[R] is not an object or
 a non-registered symbol.
-.SH Examples
+.SH EXAMPLES
 .SS Using the get() method
 .IP
 .nf
@@ -53,7 +53,7 @@ wm.get(window); // Returns \[dq]foo\[dq].
 wm.get(\[dq]baz\[dq]); // Returns undefined.
 \f[R]
 .fi
-.SH See also
+.SH SEE ALSO
 .IP \[bu] 2
 \f[V]WeakMap\f[R]
 .IP \[bu] 2

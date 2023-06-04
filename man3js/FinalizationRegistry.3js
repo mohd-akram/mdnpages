@@ -14,13 +14,16 @@
 . ftr VB CB
 . ftr VBI CBI
 .\}
-.TH "FinalizationRegistry" "JS" "2023-06-02" "JavaScript" "JavaScript Reference Manual"
+.TH "FinalizationRegistry" "JS" "June 2, 2023" "JavaScript" "JavaScript Reference Manual"
 .hy
-.SH Synopsis
+.SH NAME
+.PP
+FinalizationRegistry - FinalizationRegistry
+.SH SYNOPSIS
 .PP
 A \f[B]\f[VB]FinalizationRegistry\f[B]\f[R] object lets you request a
 callback when a value is garbage-collected.
-.SH Description
+.SH DESCRIPTION
 .PP
 \f[V]FinalizationRegistry\f[R] provides a way to request that a
 \f[I]cleanup callback\f[R] get called at some point when a value
@@ -175,48 +178,33 @@ tab in a browser).
 When the \f[V]FinalizationRegistry\f[R] instance itself is no longer
 reachable by JavaScript code.
 .RE
-.SH Constructor
-.IP \[bu] 2
-\f[V]FinalizationRegistry()\f[R]
-.RS 2
-.IP \[bu] 2
+.SH CONSTRUCTOR
+.TP
+\f[B]FinalizationRegistry()\f[R]
 Creates a new \f[V]FinalizationRegistry\f[R] object.
-.RE
-.SH Instance properties
+.SH INSTANCE PROPERTIES
 .PP
 These properties are defined on \f[V]FinalizationRegistry.prototype\f[R]
 and shared by all \f[V]FinalizationRegistry\f[R] instances.
-.IP \[bu] 2
-\f[V]FinalizationRegistry.prototype.constructor\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]FinalizationRegistry.prototype.constructor\f[R]
 The constructor function that created the instance object.
 For \f[V]FinalizationRegistry\f[R] instances, the initial value is the
 \f[V]FinalizationRegistry\f[R] constructor.
-.RE
-.IP \[bu] 2
-\f[V]FinalizationRegistry.prototype[\[at]\[at]toStringTag]\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]FinalizationRegistry.prototype[\[at]\[at]toStringTag]\f[R]
 The initial value of the \f[V]\[at]\[at]toStringTag\f[R] property is the
 string \f[V]\[dq]FinalizationRegistry\[dq]\f[R].
 This property is used in \f[V]Object.prototype.toString()\f[R].
-.RE
-.SH Instance methods
-.IP \[bu] 2
-\f[V]FinalizationRegistry.prototype.register()\f[R]
-.RS 2
-.IP \[bu] 2
+.SH INSTANCE METHODS
+.TP
+\f[B]FinalizationRegistry.prototype.register()\f[R]
 Registers an object with the registry in order to get a cleanup callback
 when/if the object is garbage-collected.
-.RE
-.IP \[bu] 2
-\f[V]FinalizationRegistry.prototype.unregister()\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]FinalizationRegistry.prototype.unregister()\f[R]
 Unregisters an object from the registry.
-.RE
-.SH Examples
+.SH EXAMPLES
 .SS Creating a new registry
 .PP
 You create the registry passing in the callback:
@@ -239,7 +227,7 @@ value\f[R] for it:
 registry.register(theObject, \[dq]some value\[dq]);
 \f[R]
 .fi
-.SH See also
+.SH SEE ALSO
 .IP \[bu] 2
 \f[V]WeakRef\f[R]
 .IP \[bu] 2

@@ -14,14 +14,17 @@
 . ftr VB CB
 . ftr VBI CBI
 .\}
-.TH "String.substring" "JS" "2023-06-02" "JavaScript" "JavaScript Reference Manual"
+.TH "String.substring" "JS" "June 2, 2023" "JavaScript" "JavaScript Reference Manual"
 .hy
-.SH Synopsis
+.SH NAME
+.PP
+String.substring - String.prototype.substring()
+.SH SYNOPSIS
 .PP
 The \f[B]\f[VB]substring()\f[B]\f[R] method returns the part of the
 \f[V]string\f[R] from the start index up to and excluding the end index,
 or to the end of the string if no end index is supplied.
-.SH Syntax
+.SH SYNTAX
 .IP
 .nf
 \f[C]
@@ -30,22 +33,16 @@ substring(indexStart, indexEnd)
 \f[R]
 .fi
 .SS Parameters
-.IP \[bu] 2
-\f[V]indexStart\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]indexStart\f[R]
 The index of the first character to include in the returned substring.
-.RE
-.IP \[bu] 2
-\f[V]indexEnd\f[R] \f[I](optional)\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]indexEnd\f[R] \f[I](optional)\f[R]
 The index of the first character to exclude from the returned substring.
-.RE
 .SS Return value
 .PP
 A new string containing the specified part of the given string.
-.SH Description
+.SH DESCRIPTION
 .PP
 \f[V]substring()\f[R] extracts characters from \f[V]indexStart\f[R] up
 to \f[I]but not including\f[R] \f[V]indexEnd\f[R].
@@ -67,7 +64,7 @@ Any argument value that is less than \f[V]0\f[R] or greater than
 .PP
 Any argument value that is \f[V]NaN\f[R] is treated as if it were
 \f[V]0\f[R].
-.SH Examples
+.SH EXAMPLES
 .SS Using substring()
 .PP
 The following example uses \f[V]substring()\f[R] to display characters
@@ -222,7 +219,7 @@ function replaceString(oldS, newS, fullS) {
 The code above serves as an example for substring operations.
 If you need to replace substrings, most of the time you will want to use
 \f[V]String.prototype.replace()\f[R].
-.SH See also
+.SH SEE ALSO
 .IP \[bu] 2
 \f[V]String.prototype.substr()\f[R]
 .IP \[bu] 2

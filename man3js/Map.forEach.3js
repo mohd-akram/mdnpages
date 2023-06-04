@@ -14,14 +14,17 @@
 . ftr VB CB
 . ftr VBI CBI
 .\}
-.TH "Map.forEach" "JS" "2023-06-02" "JavaScript" "JavaScript Reference Manual"
+.TH "Map.forEach" "JS" "June 2, 2023" "JavaScript" "JavaScript Reference Manual"
 .hy
-.SH Synopsis
+.SH NAME
+.PP
+Map.forEach - Map.prototype.forEach()
+.SH SYNOPSIS
 .PP
 The \f[B]\f[VB]forEach()\f[B]\f[R] method executes a provided function
 once per each key/value pair in the \f[V]Map\f[R] object, in insertion
 order.
-.SH Syntax
+.SH SYNTAX
 .IP
 .nf
 \f[C]
@@ -30,43 +33,28 @@ forEach(callbackFn, thisArg)
 \f[R]
 .fi
 .SS Parameters
-.IP \[bu] 2
-\f[V]callbackFn\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]callbackFn\f[R]
 A function to execute for each entry in the map.
 The function is called with the following arguments:
-.RS 2
-.IP \[bu] 2
-\f[V]value\f[R]
-.RS 2
-.IP \[bu] 2
+.RS
+.TP
+\f[B]value\f[R]
 Value of each iteration.
-.RE
-.IP \[bu] 2
-\f[V]key\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]key\f[R]
 Key of each iteration.
-.RE
-.IP \[bu] 2
-\f[V]map\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]map\f[R]
 The map being iterated.
 .RE
-.RE
-.RE
-.IP \[bu] 2
-\f[V]thisArg\f[R] \f[I](optional)\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]thisArg\f[R] \f[I](optional)\f[R]
 A value to use as \f[V]this\f[R] when executing \f[V]callbackFn\f[R].
-.RE
 .SS Return value
 .PP
 \f[V]undefined\f[R].
-.SH Description
+.SH DESCRIPTION
 .PP
 The \f[V]forEach\f[R] method executes the provided \f[V]callback\f[R]
 once for each key of the map which actually exist.
@@ -96,7 +84,7 @@ re-added before \f[V]forEach\f[R] has finished.
 \f[V]callback\f[R] is not invoked for values deleted before being
 visited.
 New values added before \f[V]forEach\f[R] has finished will be visited.
-.SH Examples
+.SH EXAMPLES
 .SS Printing the contents of a Map object
 .PP
 The following code logs a line for each element in an \f[V]Map\f[R]
@@ -118,7 +106,7 @@ new Map([
 // \[dq]map.get(\[aq]baz\[aq]) = undefined\[dq]
 \f[R]
 .fi
-.SH See also
+.SH SEE ALSO
 .IP \[bu] 2
 \f[V]Array.prototype.forEach()\f[R]
 .IP \[bu] 2

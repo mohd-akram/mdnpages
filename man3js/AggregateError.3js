@@ -14,9 +14,12 @@
 . ftr VB CB
 . ftr VBI CBI
 .\}
-.TH "AggregateError" "JS" "2023-06-02" "JavaScript" "JavaScript Reference Manual"
+.TH "AggregateError" "JS" "June 2, 2023" "JavaScript" "JavaScript Reference Manual"
 .hy
-.SH Synopsis
+.SH NAME
+.PP
+AggregateError - AggregateError
+.SH SYNOPSIS
 .PP
 The \f[B]\f[VB]AggregateError\f[B]\f[R] object represents an error when
 several errors need to be wrapped in a single error.
@@ -25,49 +28,37 @@ for example by \f[V]Promise.any()\f[R], when all promises passed to it
 reject.
 .PP
 \f[V]AggregateError\f[R] is a subclass of \f[V]Error\f[R].
-.SH Constructor
-.IP \[bu] 2
-\f[V]AggregateError()\f[R]
-.RS 2
-.IP \[bu] 2
+.SH CONSTRUCTOR
+.TP
+\f[B]AggregateError()\f[R]
 Creates a new \f[V]AggregateError\f[R] object.
-.RE
-.SH Instance properties
+.SH INSTANCE PROPERTIES
 .PP
 \f[I]Also inherits instance properties from its parent
 \f[VI]Error\f[I]\f[R].
 .PP
 These properties are defined on \f[V]AggregateError.prototype\f[R] and
 shared by all \f[V]AggregateError\f[R] instances.
-.IP \[bu] 2
-\f[V]AggregateError.prototype.constructor\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]AggregateError.prototype.constructor\f[R]
 The constructor function that created the instance object.
 For \f[V]AggregateError\f[R] instances, the initial value is the
 \f[V]AggregateError\f[R] constructor.
-.RE
-.IP \[bu] 2
-\f[V]AggregateError.prototype.name\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]AggregateError.prototype.name\f[R]
 Represents the name for the type of error.
 For \f[V]AggregateError.prototype.name\f[R], the initial value is
 \f[V]\[dq]AggregateError\[dq]\f[R].
-.RE
 .PP
 These properties are own properties of each \f[V]AggregateError\f[R]
 instance.
-.IP \[bu] 2
-\f[V]errors\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]errors\f[R]
 An array representing the errors that were aggregated.
-.RE
-.SH Instance methods
+.SH INSTANCE METHODS
 .PP
 \f[I]Inherits instance methods from its parent \f[VI]Error\f[I]\f[R].
-.SH Examples
+.SH EXAMPLES
 .SS Catching an AggregateError
 .IP
 .nf
@@ -94,7 +85,7 @@ try {
 }
 \f[R]
 .fi
-.SH See also
+.SH SEE ALSO
 .IP \[bu] 2
 Polyfill of \f[V]AggregateError\f[R] in
 \f[V]core-js\f[R] (https://github.com/zloirock/core-js#ecmascript-promise)

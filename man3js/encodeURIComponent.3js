@@ -14,9 +14,12 @@
 . ftr VB CB
 . ftr VBI CBI
 .\}
-.TH "encodeURIComponent" "JS" "2023-06-02" "JavaScript" "JavaScript Reference Manual"
+.TH "encodeURIComponent" "JS" "June 2, 2023" "JavaScript" "JavaScript Reference Manual"
 .hy
-.SH Synopsis
+.SH NAME
+.PP
+encodeURIComponent - encodeURIComponent()
+.SH SYNOPSIS
 .PP
 The \f[B]\f[VB]encodeURIComponent()\f[B]\f[R] function encodes a URI by
 replacing each instance of certain characters by one, two, three, or
@@ -25,7 +28,7 @@ four escape sequences representing the UTF-8 encoding of the character
 surrogate characters).
 Compared to \f[V]encodeURI()\f[R], this function encodes more
 characters, including those that are part of the URI syntax.
-.SH Syntax
+.SH SYNTAX
 .IP
 .nf
 \f[C]
@@ -33,26 +36,20 @@ encodeURIComponent(uriComponent)
 \f[R]
 .fi
 .SS Parameters
-.IP \[bu] 2
-\f[V]uriComponent\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]uriComponent\f[R]
 A string to be encoded as a URI component (a path, query string,
 fragment, etc.).
 Other values are converted to strings.
-.RE
 .SS Return value
 .PP
 A new string representing the provided \f[V]uriComponent\f[R] encoded as
 a URI component.
 .SS Exceptions
-.IP \[bu] 2
-\f[V]URIError\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]URIError\f[R]
 Thrown if \f[V]uriComponent\f[R] contains a lone surrogate.
-.RE
-.SH Description
+.SH DESCRIPTION
 .PP
 \f[V]encodeURIComponent()\f[R] is a function property of the global
 object.
@@ -84,7 +81,7 @@ For
 spaces are to be replaced by \f[V]+\f[R], so one may wish to follow a
 \f[V]encodeURIComponent()\f[R] replacement with an additional
 replacement of \f[V]%20\f[R] with \f[V]+\f[R].
-.SH Examples
+.SH EXAMPLES
 .SS Encoding for Content-Disposition and Link headers
 .PP
 The following example provides the special encoding required within
@@ -167,7 +164,7 @@ avoid this error.
 You can also use \f[V]String.prototype.isWellFormed()\f[R] to check if a
 string contains lone surrogates before passing it to
 \f[V]encodeURIComponent()\f[R].
-.SH See also
+.SH SEE ALSO
 .IP \[bu] 2
 \f[V]decodeURI()\f[R]
 .IP \[bu] 2

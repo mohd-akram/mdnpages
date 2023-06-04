@@ -14,9 +14,12 @@
 . ftr VB CB
 . ftr VBI CBI
 .\}
-.TH "Number" "JS" "2023-06-02" "JavaScript" "JavaScript Reference Manual"
+.TH "Number" "JS" "June 2, 2023" "JavaScript" "JavaScript Reference Manual"
 .hy
-.SH Synopsis
+.SH NAME
+.PP
+Number - Number
+.SH SYNOPSIS
 .PP
 \f[B]\f[VB]Number\f[B]\f[R] values represent floating-point numbers like
 \f[V]37\f[R] or \f[V]-9.25\f[R].
@@ -25,7 +28,7 @@ The \f[V]Number\f[R] constructor contains constants and methods for
 working with numbers.
 Values of other types can be converted to numbers using the
 \f[V]Number()\f[R] function.
-.SH Description
+.SH DESCRIPTION
 .PP
 Numbers are most commonly expressed in literal forms like \f[V]255\f[R]
 or \f[V]3.14159\f[R].
@@ -223,13 +226,10 @@ new Uint8Array([257, -257]); // Uint8Array(2) [ 1, 255 ]
 //      = 255 (as unsigned integer)
 \f[R]
 .fi
-.SH Constructor
-.IP \[bu] 2
-\f[V]Number()\f[R]
-.RS 2
-.IP \[bu] 2
+.SH CONSTRUCTOR
+.TP
+\f[B]Number()\f[R]
 Creates a new \f[V]Number\f[R] value.
-.RE
 .PP
 When \f[V]Number\f[R] is called as a constructor (with \f[V]new\f[R]),
 it creates a \f[V]Number\f[R] object, which is \f[B]not\f[R] a
@@ -242,152 +242,89 @@ For example, \f[V]typeof new Number(42) === \[dq]object\[dq]\f[R], and
 \f[B]Warning:\f[R] You should rarely find yourself using
 \f[V]Number\f[R] as a constructor.
 .RE
-.SH Static properties
-.IP \[bu] 2
-\f[V]Number.EPSILON\f[R]
-.RS 2
-.IP \[bu] 2
+.SH STATIC PROPERTIES
+.TP
+\f[B]Number.EPSILON\f[R]
 The smallest interval between two representable numbers.
-.RE
-.IP \[bu] 2
-\f[V]Number.MAX_SAFE_INTEGER\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]Number.MAX_SAFE_INTEGER\f[R]
 The maximum safe integer in JavaScript (253 - 1).
-.RE
-.IP \[bu] 2
-\f[V]Number.MAX_VALUE\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]Number.MAX_VALUE\f[R]
 The largest positive representable number.
-.RE
-.IP \[bu] 2
-\f[V]Number.MIN_SAFE_INTEGER\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]Number.MIN_SAFE_INTEGER\f[R]
 The minimum safe integer in JavaScript (-(253 - 1)).
-.RE
-.IP \[bu] 2
-\f[V]Number.MIN_VALUE\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]Number.MIN_VALUE\f[R]
 The smallest positive representable number\[em]that is, the positive
 number closest to zero (without actually being zero).
-.RE
-.IP \[bu] 2
-\f[V]Number.NaN\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]Number.NaN\f[R]
 Special \[lq]\f[B]N\f[R]ot \f[B]a\f[R] \f[B]N\f[R]umber\[rq] value.
-.RE
-.IP \[bu] 2
-\f[V]Number.NEGATIVE_INFINITY\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]Number.NEGATIVE_INFINITY\f[R]
 Special value representing negative infinity.
 Returned on overflow.
-.RE
-.IP \[bu] 2
-\f[V]Number.POSITIVE_INFINITY\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]Number.POSITIVE_INFINITY\f[R]
 Special value representing infinity.
 Returned on overflow.
-.RE
-.SH Static methods
-.IP \[bu] 2
-\f[V]Number.isFinite()\f[R]
-.RS 2
-.IP \[bu] 2
+.SH STATIC METHODS
+.TP
+\f[B]Number.isFinite()\f[R]
 Determine whether the passed value is a finite number.
-.RE
-.IP \[bu] 2
-\f[V]Number.isInteger()\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]Number.isInteger()\f[R]
 Determine whether the passed value is an integer.
-.RE
-.IP \[bu] 2
-\f[V]Number.isNaN()\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]Number.isNaN()\f[R]
 Determine whether the passed value is \f[V]NaN\f[R].
-.RE
-.IP \[bu] 2
-\f[V]Number.isSafeInteger()\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]Number.isSafeInteger()\f[R]
 Determine whether the passed value is a safe integer (number between
 -(253 - 1) and 253 - 1).
-.RE
-.IP \[bu] 2
-\f[V]Number.parseFloat()\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]Number.parseFloat()\f[R]
 This is the same as the global \f[V]parseFloat()\f[R] function.
-.RE
-.IP \[bu] 2
-\f[V]Number.parseInt()\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]Number.parseInt()\f[R]
 This is the same as the global \f[V]parseInt()\f[R] function.
-.RE
-.SH Instance properties
+.SH INSTANCE PROPERTIES
 .PP
 These properties are defined on \f[V]Number.prototype\f[R] and shared by
 all \f[V]Number\f[R] instances.
-.IP \[bu] 2
-\f[V]Number.prototype.constructor\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]Number.prototype.constructor\f[R]
 The constructor function that created the instance object.
 For \f[V]Number\f[R] instances, the initial value is the
 \f[V]Number\f[R] constructor.
-.RE
-.SH Instance methods
-.IP \[bu] 2
-\f[V]Number.prototype.toExponential()\f[R]
-.RS 2
-.IP \[bu] 2
+.SH INSTANCE METHODS
+.TP
+\f[B]Number.prototype.toExponential()\f[R]
 Returns a string representing the number in exponential notation.
-.RE
-.IP \[bu] 2
-\f[V]Number.prototype.toFixed()\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]Number.prototype.toFixed()\f[R]
 Returns a string representing the number in fixed-point notation.
-.RE
-.IP \[bu] 2
-\f[V]Number.prototype.toLocaleString()\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]Number.prototype.toLocaleString()\f[R]
 Returns a string with a language sensitive representation of this
 number.
 Overrides the \f[V]Object.prototype.toLocaleString()\f[R] method.
-.RE
-.IP \[bu] 2
-\f[V]Number.prototype.toPrecision()\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]Number.prototype.toPrecision()\f[R]
 Returns a string representing the number to a specified precision in
 fixed-point or exponential notation.
-.RE
-.IP \[bu] 2
-\f[V]Number.prototype.toString()\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]Number.prototype.toString()\f[R]
 Returns a string representing the specified object in the specified
 \f[I]radix\f[R] (\[lq]base\[rq]).
 Overrides the \f[V]Object.prototype.toString()\f[R] method.
-.RE
-.IP \[bu] 2
-\f[V]Number.prototype.valueOf()\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]Number.prototype.valueOf()\f[R]
 Returns the primitive value of the specified object.
 Overrides the \f[V]Object.prototype.valueOf()\f[R] method.
-.RE
-.SH Examples
+.SH EXAMPLES
 .SS Using the Number object to assign values to numeric variables
 .PP
 The following example uses the \f[V]Number\f[R] object\[cq]s properties
@@ -453,7 +390,7 @@ Number(\[dq]100a\[dq]); // NaN
 Number(\[dq]-Infinity\[dq]); // -Infinity
 \f[R]
 .fi
-.SH See also
+.SH SEE ALSO
 .IP \[bu] 2
 Polyfill of modern \f[V]Number\f[R] behavior (with support binary and
 octal literals) in

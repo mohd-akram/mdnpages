@@ -14,14 +14,17 @@
 . ftr VB CB
 . ftr VBI CBI
 .\}
-.TH "Object.getOwnPropertySymbols" "JS" "2023-06-02" "JavaScript" "JavaScript Reference Manual"
+.TH "Object.getOwnPropertySymbols" "JS" "June 2, 2023" "JavaScript" "JavaScript Reference Manual"
 .hy
-.SH Synopsis
+.SH NAME
+.PP
+Object.getOwnPropertySymbols - Object.getOwnPropertySymbols()
+.SH SYNOPSIS
 .PP
 The \f[B]\f[VB]Object.getOwnPropertySymbols()\f[B]\f[R] static method
 returns an array of all symbol properties found directly upon a given
 object.
-.SH Syntax
+.SH SYNTAX
 .IP
 .nf
 \f[C]
@@ -29,16 +32,13 @@ Object.getOwnPropertySymbols(obj)
 \f[R]
 .fi
 .SS Parameters
-.IP \[bu] 2
-\f[V]obj\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]obj\f[R]
 The object whose symbol properties are to be returned.
-.RE
 .SS Return value
 .PP
 An array of all symbol properties found directly upon the given object.
-.SH Description
+.SH DESCRIPTION
 .PP
 Similar to \f[V]Object.getOwnPropertyNames()\f[R], you can get all
 symbol properties of a given object as an array of symbols.
@@ -48,7 +48,7 @@ the symbol properties of an object and only the string properties.
 As all objects have no own symbol properties initially,
 \f[V]Object.getOwnPropertySymbols()\f[R] returns an empty array unless
 you have set symbol properties on your object.
-.SH Examples
+.SH EXAMPLES
 .SS Using getOwnPropertySymbols
 .IP
 .nf
@@ -67,7 +67,7 @@ console.log(objectSymbols); // [Symbol(a), Symbol(b)]
 console.log(objectSymbols[0]); // Symbol(a)
 \f[R]
 .fi
-.SH See also
+.SH SEE ALSO
 .IP \[bu] 2
 Polyfill of \f[V]Object.getOwnPropertySymbols\f[R] in
 \f[V]core-js\f[R] (https://github.com/zloirock/core-js#ecmascript-symbol)

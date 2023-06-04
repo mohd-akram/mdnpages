@@ -14,14 +14,17 @@
 . ftr VB CB
 . ftr VBI CBI
 .\}
-.TH "BigUint64Array.BigUint64Array" "JS" "2023-06-02" "JavaScript" "JavaScript Reference Manual"
+.TH "BigUint64Array.BigUint64Array" "JS" "June 2, 2023" "JavaScript" "JavaScript Reference Manual"
 .hy
-.SH Synopsis
+.SH NAME
+.PP
+BigUint64Array.BigUint64Array - BigUint64Array() constructor
+.SH SYNOPSIS
 .PP
 The \f[B]\f[VB]BigUint64Array()\f[B]\f[R] constructor creates
 \f[V]BigUint64Array\f[R] objects.
 The contents are initialized to \f[V]0n\f[R].
-.SH Syntax
+.SH SYNTAX
 .IP
 .nf
 \f[C]
@@ -48,7 +51,7 @@ See \f[V]TypedArray\f[R].
 .SS Exceptions
 .PP
 See \f[V]TypedArray\f[R].
-.SH Examples
+.SH EXAMPLES
 .SS Different ways to create a BigUint64Array
 .IP
 .nf
@@ -82,7 +85,7 @@ console.log(biguint64FromIterable);
 // BigUint64Array [1n, 2n, 3n]
 \f[R]
 .fi
-.SH See also
+.SH SEE ALSO
 .IP \[bu] 2
 JavaScript typed arrays
 .IP \[bu] 2

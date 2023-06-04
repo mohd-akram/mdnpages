@@ -14,9 +14,12 @@
 . ftr VB CB
 . ftr VBI CBI
 .\}
-.TH "Atomics.notify" "JS" "2023-06-02" "JavaScript" "JavaScript Reference Manual"
+.TH "Atomics.notify" "JS" "June 2, 2023" "JavaScript" "JavaScript Reference Manual"
 .hy
-.SH Synopsis
+.SH NAME
+.PP
+Atomics.notify - Atomics.notify()
+.SH SYNOPSIS
 .PP
 The \f[B]\f[VB]Atomics.notify()\f[B]\f[R] static method notifies up some
 agents that are sleeping in the wait queue.
@@ -26,7 +29,7 @@ agents that are sleeping in the wait queue.
 only.
 It will return \f[V]0\f[R] on non-shared \f[V]ArrayBuffer\f[R] objects.
 .RE
-.SH Syntax
+.SH SYNTAX
 .IP
 .nf
 \f[C]
@@ -34,25 +37,16 @@ Atomics.notify(typedArray, index, count)
 \f[R]
 .fi
 .SS Parameters
-.IP \[bu] 2
-\f[V]typedArray\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]typedArray\f[R]
 A shared \f[V]Int32Array\f[R].
-.RE
-.IP \[bu] 2
-\f[V]index\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]index\f[R]
 The position in the \f[V]typedArray\f[R] to wake up on.
-.RE
-.IP \[bu] 2
-\f[V]count\f[R] \f[I](optional)\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]count\f[R] \f[I](optional)\f[R]
 The number of sleeping agents to notify.
 Defaults to \f[V]+Infinity\f[R].
-.RE
 .SS Return value
 .IP \[bu] 2
 Returns the number of woken up agents.
@@ -60,19 +54,13 @@ Returns the number of woken up agents.
 Returns \f[V]0\f[R], if a non-shared \f[V]ArrayBuffer\f[R] object is
 used.
 .SS Exceptions
-.IP \[bu] 2
-\f[V]TypeError\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]TypeError\f[R]
 Thrown if \f[V]typedArray\f[R] is not a \f[V]Int32Array\f[R].
-.RE
-.IP \[bu] 2
-\f[V]RangeError\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]RangeError\f[R]
 Thrown if \f[V]index\f[R] is out of bounds in the \f[V]typedArray\f[R].
-.RE
-.SH Examples
+.SH EXAMPLES
 .SS Using \f[V]notify\f[R]
 .PP
 Given a shared \f[V]Int32Array\f[R]:
@@ -107,7 +95,7 @@ Atomics.store(int32, 0, 123);
 Atomics.notify(int32, 0, 1);
 \f[R]
 .fi
-.SH See also
+.SH SEE ALSO
 .IP \[bu] 2
 \f[V]Atomics\f[R]
 .IP \[bu] 2

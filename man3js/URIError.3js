@@ -14,9 +14,12 @@
 . ftr VB CB
 . ftr VBI CBI
 .\}
-.TH "URIError" "JS" "2023-06-02" "JavaScript" "JavaScript Reference Manual"
+.TH "URIError" "JS" "June 2, 2023" "JavaScript" "JavaScript Reference Manual"
 .hy
-.SH Synopsis
+.SH NAME
+.PP
+URIError - URIError
+.SH SYNOPSIS
 .PP
 The \f[B]\f[VB]URIError\f[B]\f[R] object represents an error when a
 global URI handling function was used in a wrong way.
@@ -26,40 +29,31 @@ global URI handling function was used in a wrong way.
 \f[V]postMessage()\f[R].
 .PP
 \f[V]URIError\f[R] is a subclass of \f[V]Error\f[R].
-.SH Constructor
-.IP \[bu] 2
-\f[V]URIError()\f[R]
-.RS 2
-.IP \[bu] 2
+.SH CONSTRUCTOR
+.TP
+\f[B]URIError()\f[R]
 Creates a new \f[V]URIError\f[R] object.
-.RE
-.SH Instance properties
+.SH INSTANCE PROPERTIES
 .PP
 \f[I]Also inherits instance properties from its parent
 \f[VI]Error\f[I]\f[R].
 .PP
 These properties are defined on \f[V]URIError.prototype\f[R] and shared
 by all \f[V]URIError\f[R] instances.
-.IP \[bu] 2
-\f[V]URIError.prototype.constructor\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]URIError.prototype.constructor\f[R]
 The constructor function that created the instance object.
 For \f[V]URIError\f[R] instances, the initial value is the
 \f[V]URIError\f[R] constructor.
-.RE
-.IP \[bu] 2
-\f[V]URIError.prototype.name\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]URIError.prototype.name\f[R]
 Represents the name for the type of error.
 For \f[V]URIError.prototype.name\f[R], the initial value is
 \f[V]\[dq]URIError\[dq]\f[R].
-.RE
-.SH Instance methods
+.SH INSTANCE METHODS
 .PP
 \f[I]Inherits instance methods from its parent \f[VI]Error\f[I]\f[R].
-.SH Examples
+.SH EXAMPLES
 .SS Catching an URIError
 .IP
 .nf
@@ -88,7 +82,7 @@ try {
 }
 \f[R]
 .fi
-.SH See also
+.SH SEE ALSO
 .IP \[bu] 2
 \f[V]Error\f[R]
 .IP \[bu] 2

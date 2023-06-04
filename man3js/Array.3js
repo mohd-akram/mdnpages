@@ -15,15 +15,18 @@
 . ftr VB CB
 . ftr VBI CBI
 .\}
-.TH "Array" "JS" "2023-06-02" "JavaScript" "JavaScript Reference Manual"
+.TH "Array" "JS" "June 2, 2023" "JavaScript" "JavaScript Reference Manual"
 .hy
-.SH Synopsis
+.SH NAME
+.PP
+Array - Array
+.SH SYNOPSIS
 .PP
 The \f[B]\f[VB]Array\f[B]\f[R] object, as with arrays in other
 programming languages, enables storing a collection of multiple items
 under a single variable name, and has members for performing common
 array operations.
-.SH Description
+.SH DESCRIPTION
 .PP
 In JavaScript, arrays aren\[cq]t primitives but are instead
 \f[V]Array\f[R] objects with the following core characteristics:
@@ -369,24 +372,15 @@ method(callbackFn, thisArg)
 .fi
 .PP
 Where \f[V]callbackFn\f[R] takes three arguments:
-.IP \[bu] 2
-\f[V]element\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]element\f[R]
 The current element being processed in the array.
-.RE
-.IP \[bu] 2
-\f[V]index\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]index\f[R]
 The index of the current element being processed in the array.
-.RE
-.IP \[bu] 2
-\f[V]array\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]array\f[R]
 The array that the method was called upon.
-.RE
 .PP
 What \f[V]callbackFn\f[R] is expected to return depends on the array
 method that was called.
@@ -527,365 +521,215 @@ function f() {
 f(\[dq]a\[dq], \[dq]b\[dq]); // \[aq]a+b\[aq]
 \f[R]
 .fi
-.SH Constructor
-.IP \[bu] 2
-\f[V]Array()\f[R]
-.RS 2
-.IP \[bu] 2
+.SH CONSTRUCTOR
+.TP
+\f[B]Array()\f[R]
 Creates a new \f[V]Array\f[R] object.
-.RE
-.SH Static properties
-.IP \[bu] 2
-\f[V]Array[\[at]\[at]species]\f[R]
-.RS 2
-.IP \[bu] 2
+.SH STATIC PROPERTIES
+.TP
+\f[B]Array[\[at]\[at]species]\f[R]
 Returns the \f[V]Array\f[R] constructor.
-.RE
-.SH Static methods
-.IP \[bu] 2
-\f[V]Array.from()\f[R]
-.RS 2
-.IP \[bu] 2
+.SH STATIC METHODS
+.TP
+\f[B]Array.from()\f[R]
 Creates a new \f[V]Array\f[R] instance from an iterable or array-like
 object.
-.RE
-.IP \[bu] 2
-\f[V]Array.fromAsync()\f[R] \f[I](experimental)\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]Array.fromAsync()\f[R] \f[I](experimental)\f[R]
 Creates a new \f[V]Array\f[R] instance from an async iterable, iterable,
 or array-like object.
-.RE
-.IP \[bu] 2
-\f[V]Array.isArray()\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]Array.isArray()\f[R]
 Returns \f[V]true\f[R] if the argument is an array, or \f[V]false\f[R]
 otherwise.
-.RE
-.IP \[bu] 2
-\f[V]Array.of()\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]Array.of()\f[R]
 Creates a new \f[V]Array\f[R] instance with a variable number of
 arguments, regardless of number or type of the arguments.
-.RE
-.SH Instance properties
+.SH INSTANCE PROPERTIES
 .PP
 These properties are defined on \f[V]Array.prototype\f[R] and shared by
 all \f[V]Array\f[R] instances.
-.IP \[bu] 2
-\f[V]Array.prototype.constructor\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]Array.prototype.constructor\f[R]
 The constructor function that created the instance object.
 For \f[V]Array\f[R] instances, the initial value is the \f[V]Array\f[R]
 constructor.
-.RE
-.IP \[bu] 2
-\f[V]Array.prototype[\[at]\[at]unscopables]\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]Array.prototype[\[at]\[at]unscopables]\f[R]
 Contains property names that were not included in the ECMAScript
 standard prior to the ES2015 version and that are ignored for
 \f[V]with\f[R] statement-binding purposes.
-.RE
 .PP
 These properties are own properties of each \f[V]Array\f[R] instance.
-.IP \[bu] 2
-\f[V]length\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]length\f[R]
 Reflects the number of elements in an array.
-.RE
-.SH Instance methods
-.IP \[bu] 2
-\f[V]Array.prototype.at()\f[R]
-.RS 2
-.IP \[bu] 2
+.SH INSTANCE METHODS
+.TP
+\f[B]Array.prototype.at()\f[R]
 Returns the array item at the given index.
 Accepts negative integers, which count back from the last item.
-.RE
-.IP \[bu] 2
-\f[V]Array.prototype.concat()\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]Array.prototype.concat()\f[R]
 Returns a new array that is the calling array joined with other array(s)
 and/or value(s).
-.RE
-.IP \[bu] 2
-\f[V]Array.prototype.copyWithin()\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]Array.prototype.copyWithin()\f[R]
 Copies a sequence of array elements within an array.
-.RE
-.IP \[bu] 2
-\f[V]Array.prototype.entries()\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]Array.prototype.entries()\f[R]
 Returns a new \f[I]array iterator\f[R] object that contains the
 key/value pairs for each index in an array.
-.RE
-.IP \[bu] 2
-\f[V]Array.prototype.every()\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]Array.prototype.every()\f[R]
 Returns \f[V]true\f[R] if every element in the calling array satisfies
 the testing function.
-.RE
-.IP \[bu] 2
-\f[V]Array.prototype.fill()\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]Array.prototype.fill()\f[R]
 Fills all the elements of an array from a start index to an end index
 with a static value.
-.RE
-.IP \[bu] 2
-\f[V]Array.prototype.filter()\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]Array.prototype.filter()\f[R]
 Returns a new array containing all elements of the calling array for
 which the provided filtering function returns \f[V]true\f[R].
-.RE
-.IP \[bu] 2
-\f[V]Array.prototype.find()\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]Array.prototype.find()\f[R]
 Returns the value of the first element in the array that satisfies the
 provided testing function, or \f[V]undefined\f[R] if no appropriate
 element is found.
-.RE
-.IP \[bu] 2
-\f[V]Array.prototype.findIndex()\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]Array.prototype.findIndex()\f[R]
 Returns the index of the first element in the array that satisfies the
 provided testing function, or \f[V]-1\f[R] if no appropriate element was
 found.
-.RE
-.IP \[bu] 2
-\f[V]Array.prototype.findLast()\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]Array.prototype.findLast()\f[R]
 Returns the value of the last element in the array that satisfies the
 provided testing function, or \f[V]undefined\f[R] if no appropriate
 element is found.
-.RE
-.IP \[bu] 2
-\f[V]Array.prototype.findLastIndex()\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]Array.prototype.findLastIndex()\f[R]
 Returns the index of the last element in the array that satisfies the
 provided testing function, or \f[V]-1\f[R] if no appropriate element was
 found.
-.RE
-.IP \[bu] 2
-\f[V]Array.prototype.flat()\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]Array.prototype.flat()\f[R]
 Returns a new array with all sub-array elements concatenated into it
 recursively up to the specified depth.
-.RE
-.IP \[bu] 2
-\f[V]Array.prototype.flatMap()\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]Array.prototype.flatMap()\f[R]
 Returns a new array formed by applying a given callback function to each
 element of the calling array, and then flattening the result by one
 level.
-.RE
-.IP \[bu] 2
-\f[V]Array.prototype.forEach()\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]Array.prototype.forEach()\f[R]
 Calls a function for each element in the calling array.
-.RE
-.IP \[bu] 2
-\f[V]Array.prototype.group()\f[R] \f[I](experimental)\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]Array.prototype.group()\f[R] \f[I](experimental)\f[R]
 Groups the elements of an array into an object according to the strings
 returned by a test function.
-.RE
-.IP \[bu] 2
-\f[V]Array.prototype.groupToMap()\f[R] \f[I](experimental)\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]Array.prototype.groupToMap()\f[R] \f[I](experimental)\f[R]
 Groups the elements of an array into a \f[V]Map\f[R] according to values
 returned by a test function.
-.RE
-.IP \[bu] 2
-\f[V]Array.prototype.includes()\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]Array.prototype.includes()\f[R]
 Determines whether the calling array contains a value, returning
 \f[V]true\f[R] or \f[V]false\f[R] as appropriate.
-.RE
-.IP \[bu] 2
-\f[V]Array.prototype.indexOf()\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]Array.prototype.indexOf()\f[R]
 Returns the first (least) index at which a given element can be found in
 the calling array.
-.RE
-.IP \[bu] 2
-\f[V]Array.prototype.join()\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]Array.prototype.join()\f[R]
 Joins all elements of an array into a string.
-.RE
-.IP \[bu] 2
-\f[V]Array.prototype.keys()\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]Array.prototype.keys()\f[R]
 Returns a new \f[I]array iterator\f[R] that contains the keys for each
 index in the calling array.
-.RE
-.IP \[bu] 2
-\f[V]Array.prototype.lastIndexOf()\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]Array.prototype.lastIndexOf()\f[R]
 Returns the last (greatest) index at which a given element can be found
 in the calling array, or \f[V]-1\f[R] if none is found.
-.RE
-.IP \[bu] 2
-\f[V]Array.prototype.map()\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]Array.prototype.map()\f[R]
 Returns a new array containing the results of invoking a function on
 every element in the calling array.
-.RE
-.IP \[bu] 2
-\f[V]Array.prototype.pop()\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]Array.prototype.pop()\f[R]
 Removes the last element from an array and returns that element.
-.RE
-.IP \[bu] 2
-\f[V]Array.prototype.push()\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]Array.prototype.push()\f[R]
 Adds one or more elements to the end of an array, and returns the new
 \f[V]length\f[R] of the array.
-.RE
-.IP \[bu] 2
-\f[V]Array.prototype.reduce()\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]Array.prototype.reduce()\f[R]
 Executes a user-supplied \[lq]reducer\[rq] callback function on each
 element of the array (from left to right), to reduce it to a single
 value.
-.RE
-.IP \[bu] 2
-\f[V]Array.prototype.reduceRight()\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]Array.prototype.reduceRight()\f[R]
 Executes a user-supplied \[lq]reducer\[rq] callback function on each
 element of the array (from right to left), to reduce it to a single
 value.
-.RE
-.IP \[bu] 2
-\f[V]Array.prototype.reverse()\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]Array.prototype.reverse()\f[R]
 Reverses the order of the elements of an array \f[I]in place\f[R].
 (First becomes the last, last becomes first.)
-.RE
-.IP \[bu] 2
-\f[V]Array.prototype.shift()\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]Array.prototype.shift()\f[R]
 Removes the first element from an array and returns that element.
-.RE
-.IP \[bu] 2
-\f[V]Array.prototype.slice()\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]Array.prototype.slice()\f[R]
 Extracts a section of the calling array and returns a new array.
-.RE
-.IP \[bu] 2
-\f[V]Array.prototype.some()\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]Array.prototype.some()\f[R]
 Returns \f[V]true\f[R] if at least one element in the calling array
 satisfies the provided testing function.
-.RE
-.IP \[bu] 2
-\f[V]Array.prototype.sort()\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]Array.prototype.sort()\f[R]
 Sorts the elements of an array in place and returns the array.
-.RE
-.IP \[bu] 2
-\f[V]Array.prototype.splice()\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]Array.prototype.splice()\f[R]
 Adds and/or removes elements from an array.
-.RE
-.IP \[bu] 2
-\f[V]Array.prototype.toLocaleString()\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]Array.prototype.toLocaleString()\f[R]
 Returns a localized string representing the calling array and its
 elements.
 Overrides the \f[V]Object.prototype.toLocaleString()\f[R] method.
-.RE
-.IP \[bu] 2
-\f[V]Array.prototype.toReversed()\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]Array.prototype.toReversed()\f[R]
 Returns a new array with the elements in reversed order, without
 modifying the original array.
-.RE
-.IP \[bu] 2
-\f[V]Array.prototype.toSorted()\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]Array.prototype.toSorted()\f[R]
 Returns a new array with the elements sorted in ascending order, without
 modifying the original array.
-.RE
-.IP \[bu] 2
-\f[V]Array.prototype.toSpliced()\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]Array.prototype.toSpliced()\f[R]
 Returns a new array with some elements removed and/or replaced at a
 given index, without modifying the original array.
-.RE
-.IP \[bu] 2
-\f[V]Array.prototype.toString()\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]Array.prototype.toString()\f[R]
 Returns a string representing the calling array and its elements.
 Overrides the \f[V]Object.prototype.toString()\f[R] method.
-.RE
-.IP \[bu] 2
-\f[V]Array.prototype.unshift()\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]Array.prototype.unshift()\f[R]
 Adds one or more elements to the front of an array, and returns the new
 \f[V]length\f[R] of the array.
-.RE
-.IP \[bu] 2
-\f[V]Array.prototype.values()\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]Array.prototype.values()\f[R]
 Returns a new \f[I]array iterator\f[R] object that contains the values
 for each index in the array.
-.RE
-.IP \[bu] 2
-\f[V]Array.prototype.with()\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]Array.prototype.with()\f[R]
 Returns a new array with the element at the given index replaced with
 the given value, without modifying the original array.
-.RE
-.IP \[bu] 2
-\f[V]Array.prototype[\[at]\[at]iterator]()\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]Array.prototype[\[at]\[at]iterator]()\f[R]
 An alias for the \f[V]values()\f[R] method by default.
-.RE
-.SH Examples
+.SH EXAMPLES
 .PP
 This section provides some examples of common array operations in
 JavaScript.
@@ -1462,7 +1306,7 @@ console.log(execResult); // [ \[dq]dbBd\[dq], \[dq]bB\[dq], \[dq]d\[dq] ]
 For more information about the result of a match, see the
 \f[V]RegExp.prototype.exec()\f[R] and \f[V]String.prototype.match()\f[R]
 pages.
-.SH See also
+.SH SEE ALSO
 .IP \[bu] 2
 Indexed collections
 .IP \[bu] 2

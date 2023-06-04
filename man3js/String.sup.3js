@@ -14,9 +14,12 @@
 . ftr VB CB
 . ftr VBI CBI
 .\}
-.TH "String.sup" "JS" "2023-06-02" "JavaScript" "JavaScript Reference Manual"
+.TH "String.sup" "JS" "June 2, 2023" "JavaScript" "JavaScript Reference Manual"
 .hy
-.SH Synopsis
+.SH NAME
+.PP
+String.sup - String.prototype.sup()
+.SH SYNOPSIS
 .PP
 \f[I](deprecated)\f[R]
 .PP
@@ -29,7 +32,7 @@ causes a string to be displayed as superscript.
 standardized for compatibility purposes.
 Use DOM APIs such as \f[V]document.createElement()\f[R] instead.
 .RE
-.SH Syntax
+.SH SYNTAX
 .IP
 .nf
 \f[C]
@@ -40,7 +43,7 @@ sup()
 .PP
 A string beginning with a \f[V]<sup>\f[R] start tag, then the text
 \f[V]str\f[R], and then a \f[V]</sup>\f[R] end tag.
-.SH Examples
+.SH EXAMPLES
 .SS Using sub() and sup() methods
 .PP
 The following example uses the \f[V]sub()\f[R] and \f[V]sup()\f[R]
@@ -58,7 +61,7 @@ console.log(\[ga]This is what a ${subText.sub()} looks like.\[ga]);
 // \[dq]This is what a <sub>subscript</sub> looks like.\[dq]
 \f[R]
 .fi
-.SH See also
+.SH SEE ALSO
 .IP \[bu] 2
 Polyfill of \f[V]String.prototype.sup\f[R] in
 \f[V]core-js\f[R] (https://github.com/zloirock/core-js#ecmascript-string-and-regexp)

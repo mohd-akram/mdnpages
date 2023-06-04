@@ -14,15 +14,18 @@
 . ftr VB CB
 . ftr VBI CBI
 .\}
-.TH "isNaN" "JS" "2023-06-02" "JavaScript" "JavaScript Reference Manual"
+.TH "isNaN" "JS" "June 2, 2023" "JavaScript" "JavaScript Reference Manual"
 .hy
-.SH Synopsis
+.SH NAME
+.PP
+isNaN - isNaN()
+.SH SYNOPSIS
 .PP
 The \f[B]\f[VB]isNaN()\f[B]\f[R] function determines whether a value is
 \f[V]NaN\f[R] when converted to a number.
 Because coercion inside the \f[V]isNaN()\f[R] function can be
 surprising, you may alternatively want to use \f[V]Number.isNaN()\f[R].
-.SH Syntax
+.SH SYNTAX
 .IP
 .nf
 \f[C]
@@ -30,17 +33,14 @@ isNaN(value)
 \f[R]
 .fi
 .SS Parameters
-.IP \[bu] 2
-\f[V]value\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]value\f[R]
 The value to be tested.
-.RE
 .SS Return value
 .PP
 \f[V]true\f[R] if the given value is \f[V]NaN\f[R] after being converted
 to a number; otherwise, \f[V]false\f[R].
-.SH Description
+.SH DESCRIPTION
 .PP
 \f[V]isNaN()\f[R] is a function property of the global object.
 .PP
@@ -96,7 +96,7 @@ For example, \f[V]isNaN(\[dq]1\[dq])\f[R] returns \f[V]false\f[R], but
 To be sure that you are working with numbers, coerce the value to a
 number and use \f[V]Number.isNaN()\f[R] to test the result.
 .RE
-.SH Examples
+.SH EXAMPLES
 .PP
 Note how \f[V]isNaN()\f[R] returns \f[V]true\f[R] for values that are
 not the value \f[V]NaN\f[R] but are not numbers either:
@@ -124,7 +124,7 @@ isNaN(new Date()); // false; Date objects can be converted to a number (timestam
 isNaN(new Date().toString()); // true; the string representation of a Date object cannot be parsed as a number
 \f[R]
 .fi
-.SH See also
+.SH SEE ALSO
 .IP \[bu] 2
 \f[V]NaN\f[R]
 .IP \[bu] 2

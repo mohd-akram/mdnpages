@@ -14,15 +14,18 @@
 . ftr VB CB
 . ftr VBI CBI
 .\}
-.TH "WeakSet" "JS" "2023-06-02" "JavaScript" "JavaScript Reference Manual"
+.TH "WeakSet" "JS" "June 2, 2023" "JavaScript" "JavaScript Reference Manual"
 .hy
-.SH Synopsis
+.SH NAME
+.PP
+WeakSet - WeakSet
+.SH SYNOPSIS
 .PP
 A \f[B]\f[VB]WeakSet\f[B]\f[R] is a collection of garbage-collectable
 values, including objects and non-registered symbols.
 A value in the \f[V]WeakSet\f[R] may only occur once.
 It is unique in the \f[V]WeakSet\f[R]\[cq]s collection.
-.SH Description
+.SH DESCRIPTION
 .PP
 Values of WeakSets must be garbage-collectable.
 Most primitive data types can be arbitrarily created and don\[cq]t have
@@ -95,56 +98,38 @@ The number of objects or their traversal order is immaterial, so a
 \f[V]WeakSet\f[R] is more suitable (and performant) than a \f[V]Set\f[R]
 for tracking object references, especially if a very large number of
 objects is involved.
-.SH Constructor
-.IP \[bu] 2
-\f[V]WeakSet()\f[R]
-.RS 2
-.IP \[bu] 2
+.SH CONSTRUCTOR
+.TP
+\f[B]WeakSet()\f[R]
 Creates a new \f[V]WeakSet\f[R] object.
-.RE
-.SH Instance properties
+.SH INSTANCE PROPERTIES
 .PP
 These properties are defined on \f[V]WeakSet.prototype\f[R] and shared
 by all \f[V]WeakSet\f[R] instances.
-.IP \[bu] 2
-\f[V]WeakSet.prototype.constructor\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]WeakSet.prototype.constructor\f[R]
 The constructor function that created the instance object.
 For \f[V]WeakSet\f[R] instances, the initial value is the
 \f[V]WeakSet\f[R] constructor.
-.RE
-.IP \[bu] 2
-\f[V]WeakSet.prototype[\[at]\[at]toStringTag]\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]WeakSet.prototype[\[at]\[at]toStringTag]\f[R]
 The initial value of the \f[V]\[at]\[at]toStringTag\f[R] property is the
 string \f[V]\[dq]WeakSet\[dq]\f[R].
 This property is used in \f[V]Object.prototype.toString()\f[R].
-.RE
-.SH Instance methods
-.IP \[bu] 2
-\f[V]WeakSet.prototype.add()\f[R]
-.RS 2
-.IP \[bu] 2
+.SH INSTANCE METHODS
+.TP
+\f[B]WeakSet.prototype.add()\f[R]
 Appends \f[V]value\f[R] to the \f[V]WeakSet\f[R] object.
-.RE
-.IP \[bu] 2
-\f[V]WeakSet.prototype.delete()\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]WeakSet.prototype.delete()\f[R]
 Removes \f[V]value\f[R] from the \f[V]WeakSet\f[R].
 \f[V]WeakSet.prototype.has(value)\f[R] will return \f[V]false\f[R]
 afterwards.
-.RE
-.IP \[bu] 2
-\f[V]WeakSet.prototype.has()\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]WeakSet.prototype.has()\f[R]
 Returns a boolean asserting whether \f[V]value\f[R] is present in the
 \f[V]WeakSet\f[R] object or not.
-.RE
-.SH Examples
+.SH EXAMPLES
 .SS Using the WeakSet object
 .IP
 .nf
@@ -169,7 +154,7 @@ Note that \f[V]foo !== bar\f[R].
 While they are similar objects, \f[I]they are not \f[BI]the same
 object\f[I]\f[R].
 And so they are both added to the set.
-.SH See also
+.SH SEE ALSO
 .IP \[bu] 2
 Polyfill of \f[V]WeakSet\f[R] in
 \f[V]core-js\f[R] (https://github.com/zloirock/core-js#weakset)

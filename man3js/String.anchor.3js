@@ -14,9 +14,12 @@
 . ftr VB CB
 . ftr VBI CBI
 .\}
-.TH "String.anchor" "JS" "2023-06-02" "JavaScript" "JavaScript Reference Manual"
+.TH "String.anchor" "JS" "June 2, 2023" "JavaScript" "JavaScript Reference Manual"
 .hy
-.SH Synopsis
+.SH NAME
+.PP
+String.anchor - String.prototype.anchor()
+.SH SYNOPSIS
 .PP
 \f[I](deprecated)\f[R]
 .PP
@@ -33,7 +36,7 @@ The HTML specification no longer allows the \f[V]<a>\f[R] element to
 have a \f[V]name\f[R] attribute, so this method doesn\[cq]t even create
 valid markup.
 .RE
-.SH Syntax
+.SH SYNTAX
 .IP
 .nf
 \f[C]
@@ -41,19 +44,16 @@ anchor(name)
 \f[R]
 .fi
 .SS Parameters
-.IP \[bu] 2
-\f[V]name\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]name\f[R]
 A string representing a \f[V]name\f[R] value to put into the generated
 \f[V]<a name=\[dq]...\[dq]>\f[R] start tag.
-.RE
 .SS Return value
 .PP
 A string beginning with an \f[V]<a name=\[dq]name\[dq]>\f[R] start tag
 (double quotes in \f[V]name\f[R] are replaced with \f[V]&quot;\f[R]),
 then the text \f[V]str\f[R], and then an \f[V]</a>\f[R] end tag.
-.SH Examples
+.SH EXAMPLES
 .SS Using anchor()
 .IP
 .nf
@@ -71,7 +71,7 @@ will output the following HTML:
 <a name=\[dq]contents_anchor\[dq]>Table of Contents</a>
 \f[R]
 .fi
-.SH See also
+.SH SEE ALSO
 .IP \[bu] 2
 Polyfill of \f[V]String.prototype.anchor\f[R] in
 \f[V]core-js\f[R] (https://github.com/zloirock/core-js#ecmascript-string-and-regexp)

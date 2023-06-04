@@ -14,15 +14,18 @@
 . ftr VB CB
 . ftr VBI CBI
 .\}
-.TH "String.padStart" "JS" "2023-06-02" "JavaScript" "JavaScript Reference Manual"
+.TH "String.padStart" "JS" "June 2, 2023" "JavaScript" "JavaScript Reference Manual"
 .hy
-.SH Synopsis
+.SH NAME
+.PP
+String.padStart - String.prototype.padStart()
+.SH SYNOPSIS
 .PP
 The \f[B]\f[VB]padStart()\f[B]\f[R] method pads the current string with
 another string (multiple times, if needed) until the resulting string
 reaches the given length.
 The padding is applied from the start of the current string.
-.SH Syntax
+.SH SYNTAX
 .IP
 .nf
 \f[C]
@@ -31,29 +34,23 @@ padStart(targetLength, padString)
 \f[R]
 .fi
 .SS Parameters
-.IP \[bu] 2
-\f[V]targetLength\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]targetLength\f[R]
 The length of the resulting string once the current \f[V]str\f[R] has
 been padded.
 If the value is less than or equal to \f[V]str.length\f[R], then
 \f[V]str\f[R] is returned as-is.
-.RE
-.IP \[bu] 2
-\f[V]padString\f[R] \f[I](optional)\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]padString\f[R] \f[I](optional)\f[R]
 The string to pad the current \f[V]str\f[R] with.
 If \f[V]padString\f[R] is too long to stay within the
 \f[V]targetLength\f[R], it will be truncated from the end.
 The default value is the unicode \[lq]space\[rq] character (U+0020).
-.RE
 .SS Return value
 .PP
 A \f[V]String\f[R] of the specified \f[V]targetLength\f[R] with
 \f[V]padString\f[R] applied from the start.
-.SH Examples
+.SH EXAMPLES
 .SS Basic examples
 .IP
 .nf
@@ -79,7 +76,7 @@ const num = 123;
 console.log(leftFillNum(num, 5)); // \[dq]00123\[dq]
 \f[R]
 .fi
-.SH See also
+.SH SEE ALSO
 .IP \[bu] 2
 Polyfill of \f[V]String.prototype.padStart\f[R] in
 \f[V]core-js\f[R] (https://github.com/zloirock/core-js#ecmascript-string-and-regexp)

@@ -14,13 +14,16 @@
 . ftr VB CB
 . ftr VBI CBI
 .\}
-.TH "Number.toString" "JS" "2023-06-02" "JavaScript" "JavaScript Reference Manual"
+.TH "Number.toString" "JS" "June 2, 2023" "JavaScript" "JavaScript Reference Manual"
 .hy
-.SH Synopsis
+.SH NAME
+.PP
+Number.toString - Number.prototype.toString()
+.SH SYNOPSIS
 .PP
 The \f[B]\f[VB]toString()\f[B]\f[R] method returns a string representing
 the specified number value.
-.SH Syntax
+.SH SYNTAX
 .IP
 .nf
 \f[C]
@@ -29,25 +32,19 @@ toString(radix)
 \f[R]
 .fi
 .SS Parameters
-.IP \[bu] 2
-\f[V]radix\f[R] \f[I](optional)\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]radix\f[R] \f[I](optional)\f[R]
 An integer in the range \f[V]2\f[R] through \f[V]36\f[R] specifying the
 base to use for representing the number value.
 Defaults to 10.
-.RE
 .SS Return value
 .PP
 A string representing the specified number value.
 .SS Exceptions
-.IP \[bu] 2
-\f[V]RangeError\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]RangeError\f[R]
 Thrown if \f[V]radix\f[R] is less than 2 or greater than 36.
-.RE
-.SH Description
+.SH DESCRIPTION
 .PP
 The \f[V]Number\f[R] object overrides the \f[V]toString\f[R] method of
 \f[V]Object\f[R]; it does not inherit
@@ -108,7 +105,7 @@ console.log(\[ga]${1}\[ga]); // \[dq]1\[dq]
 console.log(\[ga]${new Number(1)}\[ga]); // \[dq]Overridden\[dq]
 \f[R]
 .fi
-.SH Examples
+.SH EXAMPLES
 .SS Using toString()
 .IP
 .nf
@@ -148,7 +145,7 @@ representing number literals (i.e.\ strings starting with \f[V]0b\f[R],
 In case your original radix is not one of binary, octal, decimal, or
 hexadecimal, you may need to hand-write your radix converter, or use a
 library.
-.SH See also
+.SH SEE ALSO
 .IP \[bu] 2
 \f[V]Number.prototype.toFixed()\f[R]
 .IP \[bu] 2

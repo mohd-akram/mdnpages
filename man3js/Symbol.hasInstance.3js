@@ -15,16 +15,19 @@
 . ftr VB CB
 . ftr VBI CBI
 .\}
-.TH "Symbol.hasInstance" "JS" "2023-06-02" "JavaScript" "JavaScript Reference Manual"
+.TH "Symbol.hasInstance" "JS" "June 2, 2023" "JavaScript" "JavaScript Reference Manual"
 .hy
-.SH Synopsis
+.SH NAME
+.PP
+Symbol.hasInstance - Symbol.hasInstance
+.SH SYNOPSIS
 .PP
 The \f[B]\f[VB]Symbol.hasInstance\f[B]\f[R] static data property
 represents the well-known symbol \f[V]\[at]\[at]hasInstance\f[R].
 The \f[V]instanceof\f[R] operator looks up this symbol on its right-hand
 operand for the method used to determine if the constructor object
 recognizes an object as its instance.
-.SH Value
+.SH VALUE
 .PP
 The well-known symbol \f[V]\[at]\[at]hasInstance\f[R].
 .PP
@@ -47,7 +50,7 @@ T}@T{
 no
 T}
 .TE
-.SH Description
+.SH DESCRIPTION
 .PP
 The \f[V]instanceof\f[R] operator uses the following algorithm to
 calculate the return value of \f[V]object instanceof constructor\f[R]:
@@ -70,7 +73,7 @@ Because all functions inherit from \f[V]Function.prototype\f[R] by
 default, most of the time, the
 \f[V]Function.prototype[\[at]\[at]hasInstance]\f[R] method specifies the
 behavior of \f[V]instanceof\f[R] when the right-hand side is a function.
-.SH Examples
+.SH EXAMPLES
 .SS Custom instanceof behavior
 .PP
 You could implement your custom \f[V]instanceof\f[R] behavior like this,
@@ -115,7 +118,7 @@ const cat = new Animal();
 console.log(Animal[Symbol.hasInstance](cat)); // true
 \f[R]
 .fi
-.SH See also
+.SH SEE ALSO
 .IP \[bu] 2
 \f[V]instanceof\f[R]
 .IP \[bu] 2

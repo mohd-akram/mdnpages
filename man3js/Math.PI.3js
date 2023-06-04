@@ -15,14 +15,17 @@
 . ftr VB CB
 . ftr VBI CBI
 .\}
-.TH "Math.PI" "JS" "2023-06-02" "JavaScript" "JavaScript Reference Manual"
+.TH "Math.PI" "JS" "June 2, 2023" "JavaScript" "JavaScript Reference Manual"
 .hy
-.SH Synopsis
+.SH NAME
+.PP
+Math.PI - Math.PI
+.SH SYNOPSIS
 .PP
 The \f[B]\f[VB]Math.PI\f[B]\f[R] static data property represents the
 ratio of the circumference of a circle to its diameter, approximately
 3.14159.
-.SH Value
+.SH VALUE
 .PP
 𝙼𝚊𝚝𝚑.𝙿𝙸=π≈3.14159 =
 .PP
@@ -45,12 +48,12 @@ T}@T{
 no
 T}
 .TE
-.SH Description
+.SH DESCRIPTION
 .PP
 Because \f[V]PI\f[R] is a static property of \f[V]Math\f[R], you always
 use it as \f[V]Math.PI\f[R], rather than as a property of a
 \f[V]Math\f[R] object you created (\f[V]Math\f[R] is not a constructor).
-.SH Examples
+.SH EXAMPLES
 .SS Using Math.PI
 .PP
 The following function uses \f[V]Math.PI\f[R] to calculate the
@@ -65,6 +68,6 @@ function calculateCircumference(radius) {
 calculateCircumference(1); // 6.283185307179586
 \f[R]
 .fi
-.SH See also
+.SH SEE ALSO
 .IP \[bu] 2
 \f[V]Math\f[R]

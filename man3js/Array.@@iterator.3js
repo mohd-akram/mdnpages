@@ -14,9 +14,12 @@
 . ftr VB CB
 . ftr VBI CBI
 .\}
-.TH "Array.\[at]\[at]iterator" "JS" "2023-06-02" "JavaScript" "JavaScript Reference Manual"
+.TH "Array.\[at]\[at]iterator" "JS" "June 2, 2023" "JavaScript" "JavaScript Reference Manual"
 .hy
-.SH Synopsis
+.SH NAME
+.PP
+Array.\[at]\[at]iterator - Array.prototype\[at]\[at]iterator
+.SH SYNOPSIS
 .PP
 The \f[B]\f[VB][\[at]\[at]iterator]()\f[B]\f[R] method of
 \f[V]Array\f[R] instances implements the iterable protocol and allows
@@ -27,7 +30,7 @@ in the array.
 .PP
 The initial value of this property is the same function object as the
 initial value of the \f[V]Array.prototype.values\f[R] property.
-.SH Syntax
+.SH SYNTAX
 .IP
 .nf
 \f[C]
@@ -39,7 +42,7 @@ array[Symbol.iterator]()
 The same return value as \f[V]Array.prototype.values()\f[R]: a new
 iterable iterator object that yields the value of each index in the
 array.
-.SH Examples
+.SH EXAMPLES
 .SS Iteration using for\&...of loop
 .PP
 Note that you seldom need to call this method directly.
@@ -121,7 +124,7 @@ logIterable(123);
 // 123 is not iterable.
 \f[R]
 .fi
-.SH See also
+.SH SEE ALSO
 .IP \[bu] 2
 Polyfill of \f[V]Array.prototype[\[at]\[at]iterator]\f[R] in
 \f[V]core-js\f[R] (https://github.com/zloirock/core-js#ecmascript-array)

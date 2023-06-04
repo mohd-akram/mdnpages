@@ -14,14 +14,17 @@
 . ftr VB CB
 . ftr VBI CBI
 .\}
-.TH "TypedArray.length" "JS" "2023-06-02" "JavaScript" "JavaScript Reference Manual"
+.TH "TypedArray.length" "JS" "June 2, 2023" "JavaScript" "JavaScript Reference Manual"
 .hy
-.SH Synopsis
+.SH NAME
+.PP
+TypedArray.length - TypedArray.prototype.length
+.SH SYNOPSIS
 .PP
 The \f[B]\f[VB]length\f[B]\f[R] accessor property of
 \f[V]TypedArray\f[R] instances returns the length (in elements) of this
 typed array.
-.SH Description
+.SH DESCRIPTION
 .PP
 The \f[V]length\f[R] property is an accessor property whose set accessor
 function is \f[V]undefined\f[R], meaning that you can only read this
@@ -32,7 +35,7 @@ If the \f[I]TypedArray\f[R] is not specifying a \f[V]byteOffset\f[R] or
 a \f[V]length\f[R], the length of the referenced \f[V]ArrayBuffer\f[R]
 will be returned.
 \f[I]TypedArray\f[R] is one of the TypedArray objects.
-.SH Examples
+.SH EXAMPLES
 .SS Using the \f[V]length\f[R] property
 .IP
 .nf
@@ -49,7 +52,7 @@ uint8 = new Uint8Array(buffer, 2);
 uint8.length; // 6 (due to the offset of the constructed Uint8Array)
 \f[R]
 .fi
-.SH See also
+.SH SEE ALSO
 .IP \[bu] 2
 JavaScript typed arrays
 .IP \[bu] 2

@@ -14,9 +14,12 @@
 . ftr VB CB
 . ftr VBI CBI
 .\}
-.TH "Object.proto" "JS" "2023-06-02" "JavaScript" "JavaScript Reference Manual"
+.TH "Object.proto" "JS" "June 2, 2023" "JavaScript" "JavaScript Reference Manual"
 .hy
-.SH Synopsis
+.SH NAME
+.PP
+Object.proto - Object.prototype.__proto__
+.SH SYNOPSIS
 .PP
 \f[I](deprecated)\f[R]
 .RS
@@ -56,7 +59,7 @@ alternative to \f[V]Object.create()\f[R].
 See: object initializer / literal syntax.
 That syntax is standard and optimized for in implementations, and quite
 different from \f[V]Object.prototype.__proto__\f[R].
-.SH Syntax
+.SH SYNTAX
 .IP
 .nf
 \f[C]
@@ -67,16 +70,13 @@ obj.__proto__
 .PP
 If used as a getter, returns the object\[cq]s \f[V][[Prototype]]\f[R].
 .SS Exceptions
-.IP \[bu] 2
-\f[V]TypeError\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]TypeError\f[R]
 Thrown if attempting to set the prototype of a non-extensible object or
 an immutable prototype exotic
 object (https://tc39.es/ecma262/#sec-immutable-prototype-exotic-objects),
 such as \f[V]Object.prototype\f[R] or \f[V]window\f[R].
-.RE
-.SH Description
+.SH DESCRIPTION
 .PP
 The \f[V]__proto__\f[R] getter function exposes the value of the
 internal \f[V][[Prototype]]\f[R] of an object.
@@ -124,7 +124,7 @@ In this case, \f[V]__proto__\f[R] will no longer be an accessor for
 Therefore, always prefer \f[V]Object.getPrototypeOf()\f[R] and
 \f[V]Object.setPrototypeOf()\f[R] for setting and getting the
 \f[V][[Prototype]]\f[R] of an object.
-.SH Examples
+.SH EXAMPLES
 .SS Using __proto__
 .IP
 .nf
@@ -192,7 +192,7 @@ obj.__proto__ = Test.prototype;
 obj.myName(); // myName
 \f[R]
 .fi
-.SH See also
+.SH SEE ALSO
 .IP \[bu] 2
 \f[V]Object.prototype.isPrototypeOf()\f[R]
 .IP \[bu] 2

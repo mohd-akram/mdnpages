@@ -15,16 +15,19 @@
 . ftr VB CB
 . ftr VBI CBI
 .\}
-.TH "Array.\[at]\[at]unscopables" "JS" "2023-06-02" "JavaScript" "JavaScript Reference Manual"
+.TH "Array.\[at]\[at]unscopables" "JS" "June 2, 2023" "JavaScript" "JavaScript Reference Manual"
 .hy
-.SH Synopsis
+.SH NAME
+.PP
+Array.\[at]\[at]unscopables - Array.prototype[\[at]\[at]unscopables]
+.SH SYNOPSIS
 .PP
 The \f[B]\f[VB]\[at]\[at]unscopables\f[B]\f[R] data property of
 \f[V]Array.prototype\f[R] is shared by all \f[V]Array\f[R] instances.
 It contains property names that were not included in the ECMAScript
 standard prior to the ES2015 version and that are ignored for
 \f[V]with\f[R] statement-binding purposes.
-.SH Value
+.SH VALUE
 .PP
 A \f[V]null\f[R]-prototype object with property names given below and
 their values set to \f[V]true\f[R].
@@ -48,7 +51,7 @@ T}@T{
 yes
 T}
 .TE
-.SH Description
+.SH DESCRIPTION
 .PP
 The default \f[V]Array\f[R] properties that are ignored for
 \f[V]with\f[R] statement-binding purposes are:
@@ -94,7 +97,7 @@ statement will continue to be called on the array.
 .PP
 See \f[V]Symbol.unscopables\f[R] for how to set unscopable properties
 for your own objects.
-.SH Examples
+.SH EXAMPLES
 .PP
 Imagine the \f[V]keys.push(\[aq]something\[aq])\f[R] call below is in
 code that was written prior to ECMAScript 2015.
@@ -121,7 +124,7 @@ So the \f[V]\[at]\[at]unscopables\f[R] data property for
 introduced in ECMAScript 2015 to be ignored for \f[V]with\f[R]
 statement-binding purposes \[em] allowing code that was written prior to
 ECMAScript 2015 to continue working as expected, rather than breaking.
-.SH See also
+.SH SEE ALSO
 .IP \[bu] 2
 Polyfill of \f[V]Array.prototype[\[at]\[at]unscopables]\f[R] in
 \f[V]core-js\f[R] (https://github.com/zloirock/core-js#ecmascript-array)

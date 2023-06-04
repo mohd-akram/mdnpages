@@ -14,14 +14,18 @@
 . ftr VB CB
 . ftr VBI CBI
 .\}
-.TH "FinalizationRegistry.register" "JS" "2023-06-02" "JavaScript" "JavaScript Reference Manual"
+.TH "FinalizationRegistry.register" "JS" "June 2, 2023" "JavaScript" "JavaScript Reference Manual"
 .hy
-.SH Synopsis
+.SH NAME
+.PP
+FinalizationRegistry.register -
+FinalizationRegistry.prototype.register()
+.SH SYNOPSIS
 .PP
 The \f[B]\f[VB]register()\f[B]\f[R] method registers an value with a
 \f[V]FinalizationRegistry\f[R] instance so that if the value is
 garbage-collected, the registry\[cq]s callback may get called.
-.SH Syntax
+.SH SYNTAX
 .IP
 .nf
 \f[C]
@@ -30,40 +34,29 @@ register(target, heldValue, unregisterToken)
 \f[R]
 .fi
 .SS Parameters
-.IP \[bu] 2
-\f[V]target\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]target\f[R]
 The target value to register.
-.RE
-.IP \[bu] 2
-\f[V]heldValue\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]heldValue\f[R]
 The value to pass to the finalizer for this \f[V]target\f[R].
 This cannot be the \f[V]target\f[R] itself but can be anything else,
 including functions and primitives.
-.RE
-.IP \[bu] 2
-\f[V]unregisterToken\f[R] \f[I](optional)\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]unregisterToken\f[R] \f[I](optional)\f[R]
 A token that may be used with the \f[V]unregister\f[R] method later to
 unregister the target value.
 If provided (and not \f[V]undefined\f[R]), this must be an object or a
 non-registered symbol.
 If not provided, the target cannot be unregistered.
-.RE
 .SS Return value
 .PP
 \f[V]undefined\f[R].
 .SS Exceptions
-.IP \[bu] 2
-\f[V]TypeError\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]TypeError\f[R]
 Thrown if one of the following is true:
-.RS 2
+.RS
 .IP \[bu] 2
 \f[V]target\f[R] is not an object or a non-registered symbol (object as
 opposed to primitives; functions are objects as well)
@@ -73,12 +66,11 @@ opposed to primitives; functions are objects as well)
 .IP \[bu] 2
 \f[V]unregisterToken\f[R] is not an object or a non-registered symbol
 .RE
-.RE
-.SH Description
+.SH DESCRIPTION
 .PP
 See the Avoid where possible and Notes on cleanup callbacks sections of
 the \f[V]FinalizationRegistry\f[R] page for important caveats.
-.SH Examples
+.SH EXAMPLES
 .SS Using register
 .PP
 The following registers the value referenced by \f[V]target\f[R],
@@ -101,6 +93,6 @@ unregistered):
 registry.register(target, { useful: \[dq]info about target\[dq] });
 \f[R]
 .fi
-.SH See also
+.SH SEE ALSO
 .IP \[bu] 2
 \f[V]FinalizationRegistry\f[R]

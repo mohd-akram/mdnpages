@@ -14,13 +14,16 @@
 . ftr VB CB
 . ftr VBI CBI
 .\}
-.TH "Number.toPrecision" "JS" "2023-06-02" "JavaScript" "JavaScript Reference Manual"
+.TH "Number.toPrecision" "JS" "June 2, 2023" "JavaScript" "JavaScript Reference Manual"
 .hy
-.SH Synopsis
+.SH NAME
+.PP
+Number.toPrecision - Number.prototype.toPrecision()
+.SH SYNOPSIS
 .PP
 The \f[B]\f[VB]toPrecision()\f[B]\f[R] method returns a string
 representing the \f[V]Number\f[R] object to the specified precision.
-.SH Syntax
+.SH SYNTAX
 .IP
 .nf
 \f[C]
@@ -29,12 +32,9 @@ toPrecision(precision)
 \f[R]
 .fi
 .SS Parameters
-.IP \[bu] 2
-\f[V]precision\f[R] \f[I](optional)\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]precision\f[R] \f[I](optional)\f[R]
 An integer specifying the number of significant digits.
-.RE
 .SS Return value
 .PP
 A string representing a \f[V]Number\f[R] object in fixed-point or
@@ -48,14 +48,11 @@ If the \f[V]precision\f[R] argument is omitted, behaves as
 If the \f[V]precision\f[R] argument is a non-integer value, it is
 rounded to the nearest integer.
 .SS Exceptions
-.IP \[bu] 2
-\f[V]RangeError\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]RangeError\f[R]
 Thrown if \f[V]precision\f[R] is not between \f[V]1\f[R] and
 \f[V]100\f[R] (inclusive).
-.RE
-.SH Examples
+.SH EXAMPLES
 .SS Using \f[V]toPrecision\f[R]
 .IP
 .nf
@@ -78,7 +75,7 @@ console.log(num.toPrecision(1)); // \[aq]0.0001\[aq]
 console.log((1234.5).toPrecision(2)); // \[aq]1.2e+3\[aq]
 \f[R]
 .fi
-.SH See also
+.SH SEE ALSO
 .IP \[bu] 2
 \f[V]Number.prototype.toFixed()\f[R]
 .IP \[bu] 2

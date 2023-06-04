@@ -15,14 +15,17 @@
 . ftr VB CB
 . ftr VBI CBI
 .\}
-.TH "Number.EPSILON" "JS" "2023-06-02" "JavaScript" "JavaScript Reference Manual"
+.TH "Number.EPSILON" "JS" "June 2, 2023" "JavaScript" "JavaScript Reference Manual"
 .hy
-.SH Synopsis
+.SH NAME
+.PP
+Number.EPSILON - Number.EPSILON
+.SH SYNOPSIS
 .PP
 The \f[B]\f[VB]Number.EPSILON\f[B]\f[R] static data property represents
 the difference between 1 and the smallest floating point number greater
 than 1.
-.SH Value
+.SH VALUE
 .PP
 2-52, or approximately \f[V]2.2204460492503130808472633361816E-16\f[R].
 .PP
@@ -45,7 +48,7 @@ T}@T{
 no
 T}
 .TE
-.SH Description
+.SH DESCRIPTION
 .PP
 \f[V]Number.EPSILON\f[R] is the difference between 1 and the next
 greater number representable in the Number format, because double
@@ -63,7 +66,7 @@ number, which is much smaller than \f[V]Number.EPSILON\f[R].
 Because \f[V]EPSILON\f[R] is a static property of \f[V]Number\f[R], you
 always use it as \f[V]Number.EPSILON\f[R], rather than as a property of
 a number value.
-.SH Examples
+.SH EXAMPLES
 .SS Testing equality
 .PP
 Any number encoding system occupying a finite number of bits, of
@@ -156,7 +159,7 @@ usually makes sense to allow a much larger tolerance, such as
 Use a threshold that is appropriate for the magnitude and accuracy of
 the numbers you are comparing.
 .RE
-.SH See also
+.SH SEE ALSO
 .IP \[bu] 2
 Polyfill of \f[V]Number.EPSILON\f[R] in
 \f[V]core-js\f[R] (https://github.com/zloirock/core-js#ecmascript-number)

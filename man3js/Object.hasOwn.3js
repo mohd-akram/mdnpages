@@ -14,9 +14,12 @@
 . ftr VB CB
 . ftr VBI CBI
 .\}
-.TH "Object.hasOwn" "JS" "2023-06-02" "JavaScript" "JavaScript Reference Manual"
+.TH "Object.hasOwn" "JS" "June 2, 2023" "JavaScript" "JavaScript Reference Manual"
 .hy
-.SH Synopsis
+.SH NAME
+.PP
+Object.hasOwn - Object.hasOwn()
+.SH SYNOPSIS
 .PP
 The \f[B]\f[VB]Object.hasOwn()\f[B]\f[R] static method returns
 \f[V]true\f[R] if the specified object has the indicated property as its
@@ -28,7 +31,7 @@ If the property is inherited, or does not exist, the method returns
 \f[B]Note:\f[R] \f[V]Object.hasOwn()\f[R] is intended as a replacement
 for \f[V]Object.prototype.hasOwnProperty()\f[R].
 .RE
-.SH Syntax
+.SH SYNTAX
 .IP
 .nf
 \f[C]
@@ -36,24 +39,18 @@ Object.hasOwn(obj, prop)
 \f[R]
 .fi
 .SS Parameters
-.IP \[bu] 2
-\f[V]obj\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]obj\f[R]
 The JavaScript object instance to test.
-.RE
-.IP \[bu] 2
-\f[V]prop\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]prop\f[R]
 The \f[V]String\f[R] name or Symbol of the property to test.
-.RE
 .SS Return value
 .PP
 \f[V]true\f[R] if the specified object has directly defined the
 specified property.
 Otherwise \f[V]false\f[R]
-.SH Description
+.SH DESCRIPTION
 .PP
 The \f[B]\f[VB]Object.hasOwn()\f[B]\f[R] method returns \f[V]true\f[R]
 if the specified property is a direct property of the object \[em] even
@@ -70,7 +67,7 @@ and with objects that have overridden the inherited
 While it is possible to workaround these problems by calling
 \f[V]Object.prototype.hasOwnProperty()\f[R] on an external object,
 \f[V]Object.hasOwn()\f[R] is more intuitive.
-.SH Examples
+.SH EXAMPLES
 .SS Using hasOwn to test for a property\[cq]s existence
 .PP
 The following code shows how to determine whether the \f[V]example\f[R]
@@ -188,7 +185,7 @@ if (Object.hasOwn(foo, \[dq]prop\[dq])) {
 }
 \f[R]
 .fi
-.SH See also
+.SH SEE ALSO
 .IP \[bu] 2
 Polyfill of \f[V]Object.hasOwn\f[R] in
 \f[V]core-js\f[R] (https://github.com/zloirock/core-js#ecmascript-object)

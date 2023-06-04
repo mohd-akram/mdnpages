@@ -14,14 +14,17 @@
 . ftr VB CB
 . ftr VBI CBI
 .\}
-.TH "String.split" "JS" "2023-06-02" "JavaScript" "JavaScript Reference Manual"
+.TH "String.split" "JS" "June 2, 2023" "JavaScript" "JavaScript Reference Manual"
 .hy
-.SH Synopsis
+.SH NAME
+.PP
+String.split - String.prototype.split()
+.SH SYNOPSIS
 .PP
 The \f[B]\f[VB]split()\f[B]\f[R] method takes a pattern and divides a
 \f[V]String\f[R] into an ordered list of substrings by searching for the
 pattern, puts these substrings into an array, and returns the array.
-.SH Syntax
+.SH SYNTAX
 .IP
 .nf
 \f[C]
@@ -30,10 +33,8 @@ split(separator, limit)
 \f[R]
 .fi
 .SS Parameters
-.IP \[bu] 2
-\f[V]separator\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]separator\f[R]
 The pattern describing where each split should occur.
 Can be \f[V]undefined\f[R], a string, or an object with a
 \f[V]Symbol.split\f[R] method \[em] the typical example being a
@@ -43,30 +44,26 @@ Omitting \f[V]separator\f[R] or passing \f[V]undefined\f[R] causes
 element.
 All values that are not \f[V]undefined\f[R] or objects with a
 \f[V]\[at]\[at]split\f[R] method are coerced to strings.
-.RE
-.IP \[bu] 2
-\f[V]limit\f[R] \f[I](optional)\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]limit\f[R] \f[I](optional)\f[R]
 A non-negative integer specifying a limit on the number of substrings to
 be included in the array.
 If provided, splits the string at each occurrence of the specified
 \f[V]separator\f[R], but stops when \f[V]limit\f[R] entries have been
 placed in the array.
 Any leftover text is not included in the array at all.
-.RS 2
+.RS
 .IP \[bu] 2
 The array may contain fewer entries than \f[V]limit\f[R] if the end of
 the string is reached before the limit is reached.
 .IP \[bu] 2
 If \f[V]limit\f[R] is \f[V]0\f[R], \f[V][]\f[R] is returned.
 .RE
-.RE
 .SS Return value
 .PP
 An \f[V]Array\f[R] of strings, split at each point where the
 \f[V]separator\f[R] occurs in the given string.
-.SH Description
+.SH DESCRIPTION
 .PP
 If \f[V]separator\f[R] is a non-empty string, the target string is split
 by all matches of the \f[V]separator\f[R] without including
@@ -132,7 +129,7 @@ Its return value becomes the return value of \f[V]split\f[R].
 .PP
 Any other value will be coerced to a string before being used as
 separator.
-.SH Examples
+.SH EXAMPLES
 .SS Using split()
 .PP
 When the string is empty and a non-empty separator is specified,
@@ -382,7 +379,7 @@ const commands =
 console.log(commands.split(splitCommands, 3)); // [\[dq]light on\[dq], \[dq]brightness up\[dq], \[dq]brightness down\[dq]]
 \f[R]
 .fi
-.SH See also
+.SH SEE ALSO
 .IP \[bu] 2
 Polyfill of \f[V]String.prototype.split\f[R] in \f[V]core-js\f[R] with
 fixes and implementation of modern behavior like \f[V]Symbol.split\f[R]

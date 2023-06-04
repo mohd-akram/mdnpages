@@ -14,16 +14,19 @@
 . ftr VB CB
 . ftr VBI CBI
 .\}
-.TH "Math.expm1" "JS" "2023-06-02" "JavaScript" "JavaScript Reference Manual"
+.TH "Math.expm1" "JS" "June 2, 2023" "JavaScript" "JavaScript Reference Manual"
 .hy
-.SH Synopsis
+.SH NAME
+.PP
+Math.expm1 - Math.expm1()
+.SH SYNOPSIS
 .PP
 The \f[B]\f[VB]Math.expm1()\f[B]\f[R] static method returns e raised to
 the power of a number, subtracted by 1.
 That is
 .PP
 𝙼𝚊𝚝𝚑.𝚎𝚡𝚙𝚖𝟷(𝚡)=ex−1 = \[ha]x - 1
-.SH Syntax
+.SH SYNTAX
 .IP
 .nf
 \f[C]
@@ -31,17 +34,14 @@ Math.expm1(x)
 \f[R]
 .fi
 .SS Parameters
-.IP \[bu] 2
-\f[V]x\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]x\f[R]
 A number.
-.RE
 .SS Return value
 .PP
 A number representing ex - 1, where e is the base of the natural
 logarithm.
-.SH Description
+.SH DESCRIPTION
 .PP
 For very small values of \f[I]x\f[R], adding 1 can reduce or eliminate
 precision.
@@ -66,7 +66,7 @@ with 11 correct digits of precision.
 Because \f[V]expm1()\f[R] is a static method of \f[V]Math\f[R], you
 always use it as \f[V]Math.expm1()\f[R], rather than as a method of a
 \f[V]Math\f[R] object you created (\f[V]Math\f[R] is not a constructor).
-.SH Examples
+.SH EXAMPLES
 .SS Using Math.expm1()
 .IP
 .nf
@@ -79,7 +79,7 @@ Math.expm1(1); // 1.718281828459045
 Math.expm1(Infinity); // Infinity
 \f[R]
 .fi
-.SH See also
+.SH SEE ALSO
 .IP \[bu] 2
 Polyfill of \f[V]Math.expm1\f[R] in
 \f[V]core-js\f[R] (https://github.com/zloirock/core-js#ecmascript-math)

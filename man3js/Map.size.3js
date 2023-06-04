@@ -14,19 +14,22 @@
 . ftr VB CB
 . ftr VBI CBI
 .\}
-.TH "Map.size" "JS" "2023-06-02" "JavaScript" "JavaScript Reference Manual"
+.TH "Map.size" "JS" "June 2, 2023" "JavaScript" "JavaScript Reference Manual"
 .hy
-.SH Synopsis
+.SH NAME
+.PP
+Map.size - Map.prototype.size
+.SH SYNOPSIS
 .PP
 The \f[B]\f[VB]size\f[B]\f[R] accessor property of \f[V]Map\f[R]
 instances returns the number of elements in this map.
-.SH Description
+.SH DESCRIPTION
 .PP
 The value of \f[V]size\f[R] is an integer representing how many entries
 the \f[V]Map\f[R] object has.
 A set accessor function for \f[V]size\f[R] is \f[V]undefined\f[R]; you
 can not change this property.
-.SH Examples
+.SH EXAMPLES
 .SS Using size
 .IP
 .nf
@@ -39,6 +42,6 @@ myMap.set(\[dq]g\[dq], \[dq]gamma\[dq]);
 console.log(myMap.size); // 3
 \f[R]
 .fi
-.SH See also
+.SH SEE ALSO
 .IP \[bu] 2
 \f[V]Map\f[R]

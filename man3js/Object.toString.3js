@@ -14,15 +14,18 @@
 . ftr VB CB
 . ftr VBI CBI
 .\}
-.TH "Object.toString" "JS" "2023-06-02" "JavaScript" "JavaScript Reference Manual"
+.TH "Object.toString" "JS" "June 2, 2023" "JavaScript" "JavaScript Reference Manual"
 .hy
-.SH Synopsis
+.SH NAME
+.PP
+Object.toString - Object.prototype.toString()
+.SH SYNOPSIS
 .PP
 The \f[B]\f[VB]toString()\f[B]\f[R] method returns a string representing
 the object.
 This method is meant to be overridden by derived objects for custom type
 conversion logic.
-.SH Syntax
+.SH SYNTAX
 .IP
 .nf
 \f[C]
@@ -40,7 +43,7 @@ For example, the \f[V]Number.prototype.toString()\f[R] and
 .SS Return value
 .PP
 A string representing the object.
-.SH Description
+.SH DESCRIPTION
 .PP
 JavaScript calls the \f[V]toString\f[R] method to convert an object to a
 primitive value.
@@ -122,7 +125,7 @@ Everything else, including user-defined classes, unless with a custom
 \f[V]Object.prototype.toString()\f[R] invoked on \f[V]null\f[R] and
 \f[V]undefined\f[R] returns \f[V][object Null]\f[R] and
 \f[V][object Undefined]\f[R], respectively.
-.SH Examples
+.SH EXAMPLES
 .SS Overriding toString for custom objects
 .PP
 You can create a function to be called in place of the default
@@ -229,7 +232,7 @@ Date.prototype[Symbol.toStringTag] = \[dq]prototype polluted\[dq];
 Object.prototype.toString.call(new Date()); // [object prototype polluted]
 \f[R]
 .fi
-.SH See also
+.SH SEE ALSO
 .IP \[bu] 2
 Polyfill of \f[V]Object.prototype.toString\f[R] with
 \f[V]Symbol.toStringTag\f[R] support in

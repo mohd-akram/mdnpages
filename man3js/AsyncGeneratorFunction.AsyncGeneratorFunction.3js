@@ -14,9 +14,13 @@
 . ftr VB CB
 . ftr VBI CBI
 .\}
-.TH "AsyncGeneratorFunction.AsyncGeneratorFunction" "JS" "2023-06-02" "JavaScript" "JavaScript Reference Manual"
+.TH "AsyncGeneratorFunction.AsyncGeneratorFunction" "JS" "June 2, 2023" "JavaScript" "JavaScript Reference Manual"
 .hy
-.SH Synopsis
+.SH NAME
+.PP
+AsyncGeneratorFunction.AsyncGeneratorFunction - AsyncGeneratorFunction()
+constructor
+.SH SYNOPSIS
 .PP
 The \f[B]\f[VB]AsyncGeneratorFunction()\f[B]\f[R] constructor creates
 \f[V]AsyncGeneratorFunction\f[R] objects.
@@ -33,7 +37,7 @@ const AsyncGeneratorFunction = async function* () {}.constructor;
 The \f[V]AsyncGeneratorFunction()\f[R] constructor is not intended to be
 used directly, and all caveats mentioned in the \f[V]Function()\f[R]
 description apply to \f[V]AsyncGeneratorFunction()\f[R].
-.SH Syntax
+.SH SYNTAX
 .IP
 .nf
 \f[C]
@@ -57,7 +61,7 @@ Both create a new \f[V]AsyncGeneratorFunction\f[R] instance.
 .SS Parameters
 .PP
 See \f[V]Function()\f[R].
-.SH Examples
+.SH EXAMPLES
 .SS Using the constructor
 .PP
 The following example uses the \f[V]AsyncGeneratorFunction\f[R]
@@ -71,7 +75,7 @@ const asyncGen = createAsyncGenerator(10);
 asyncGen.next().then((res) => console.log(res.value)); // 20
 \f[R]
 .fi
-.SH See also
+.SH SEE ALSO
 .IP \[bu] 2
 \f[V]async function*\f[R] declaration
 .IP \[bu] 2

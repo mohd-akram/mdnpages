@@ -14,15 +14,18 @@
 . ftr VB CB
 . ftr VBI CBI
 .\}
-.TH "Reflect.preventExtensions" "JS" "2023-06-02" "JavaScript" "JavaScript Reference Manual"
+.TH "Reflect.preventExtensions" "JS" "June 2, 2023" "JavaScript" "JavaScript Reference Manual"
 .hy
-.SH Synopsis
+.SH NAME
+.PP
+Reflect.preventExtensions - Reflect.preventExtensions()
+.SH SYNOPSIS
 .PP
 The \f[B]\f[VB]Reflect.preventExtensions()\f[B]\f[R] static method is
 like \f[V]Object.preventExtensions()\f[R].
 It prevents new properties from ever being added to an object (i.e.,
 prevents future extensions to the object).
-.SH Syntax
+.SH SYNTAX
 .IP
 .nf
 \f[C]
@@ -30,24 +33,18 @@ Reflect.preventExtensions(target)
 \f[R]
 .fi
 .SS Parameters
-.IP \[bu] 2
-\f[V]target\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]target\f[R]
 The target object on which to prevent extensions.
-.RE
 .SS Return value
 .PP
 A \f[V]Boolean\f[R] indicating whether or not the target was
 successfully set to prevent extensions.
 .SS Exceptions
-.IP \[bu] 2
-\f[V]TypeError\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]TypeError\f[R]
 Thrown if \f[V]target\f[R] is not an object.
-.RE
-.SH Description
+.SH DESCRIPTION
 .PP
 \f[V]Reflect.preventExtensions()\f[R] provides the reflective semantic
 of preventing extensions of an object.
@@ -65,7 +62,7 @@ target object.
 \f[V]Reflect.preventExtensions()\f[R] invokes the
 \f[V][[PreventExtensions]]\f[R] object internal method of
 \f[V]target\f[R].
-.SH Examples
+.SH EXAMPLES
 .SS Using Reflect.preventExtensions()
 .PP
 See also \f[V]Object.preventExtensions()\f[R].
@@ -97,7 +94,7 @@ Object.preventExtensions(1);
 // 1
 \f[R]
 .fi
-.SH See also
+.SH SEE ALSO
 .IP \[bu] 2
 Polyfill of \f[V]Reflect.preventExtensions\f[R] in
 \f[V]core-js\f[R] (https://github.com/zloirock/core-js#ecmascript-reflect)

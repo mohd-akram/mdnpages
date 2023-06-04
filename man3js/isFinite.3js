@@ -14,14 +14,17 @@
 . ftr VB CB
 . ftr VBI CBI
 .\}
-.TH "isFinite" "JS" "2023-06-02" "JavaScript" "JavaScript Reference Manual"
+.TH "isFinite" "JS" "June 2, 2023" "JavaScript" "JavaScript Reference Manual"
 .hy
-.SH Synopsis
+.SH NAME
+.PP
+isFinite - isFinite()
+.SH SYNOPSIS
 .PP
 The \f[B]\f[VB]isFinite()\f[B]\f[R] function determines whether the
 passed value is a finite number.
 If needed, the parameter is first converted to a number.
-.SH Syntax
+.SH SYNTAX
 .IP
 .nf
 \f[C]
@@ -29,18 +32,15 @@ isFinite(testValue)
 \f[R]
 .fi
 .SS Parameters
-.IP \[bu] 2
-\f[V]testValue\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]testValue\f[R]
 The value to be tested for finiteness.
-.RE
 .SS Return value
 .PP
 \f[B]\f[VB]false\f[B]\f[R] if the argument is (or will be coerced to)
 positive or negative \f[V]Infinity\f[R] or \f[V]NaN\f[R] or
 \f[V]undefined\f[R]; otherwise, \f[B]\f[VB]true\f[B]\f[R].
-.SH Description
+.SH DESCRIPTION
 .PP
 \f[V]isFinite\f[R] is a function property of the global object.
 .PP
@@ -50,7 +50,7 @@ The \f[V]isFinite\f[R] function examines the number in its argument.
 If the argument is \f[V]NaN\f[R], positive infinity, or negative
 infinity, this method returns \f[V]false\f[R]; otherwise, it returns
 \f[V]true\f[R].
-.SH Examples
+.SH EXAMPLES
 .SS Using isFinite
 .IP
 .nf
@@ -68,7 +68,7 @@ isFinite(null); // true
 isFinite(\[dq]0\[dq]); // true
 \f[R]
 .fi
-.SH See also
+.SH SEE ALSO
 .IP \[bu] 2
 \f[V]Number.isFinite()\f[R]
 .IP \[bu] 2

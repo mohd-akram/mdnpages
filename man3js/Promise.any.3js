@@ -14,9 +14,12 @@
 . ftr VB CB
 . ftr VBI CBI
 .\}
-.TH "Promise.any" "JS" "2023-06-02" "JavaScript" "JavaScript Reference Manual"
+.TH "Promise.any" "JS" "June 2, 2023" "JavaScript" "JavaScript Reference Manual"
 .hy
-.SH Synopsis
+.SH NAME
+.PP
+Promise.any - Promise.any()
+.SH SYNOPSIS
 .PP
 The \f[B]\f[VB]Promise.any()\f[B]\f[R] static method takes an iterable
 of promises as input and returns a single \f[V]Promise\f[R].
@@ -25,7 +28,7 @@ fulfills, with this first fulfillment value.
 It rejects when all of the input\[cq]s promises reject (including when
 an empty iterable is passed), with an \f[V]AggregateError\f[R]
 containing an array of rejection reasons.
-.SH Syntax
+.SH SYNTAX
 .IP
 .nf
 \f[C]
@@ -33,12 +36,9 @@ Promise.any(iterable)
 \f[R]
 .fi
 .SS Parameters
-.IP \[bu] 2
-\f[V]iterable\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]iterable\f[R]
 An iterable (such as an \f[V]Array\f[R]) of promises.
-.RE
 .SS Return value
 .PP
 A \f[V]Promise\f[R] that is:
@@ -59,7 +59,7 @@ completion order.
 If the \f[V]iterable\f[R] passed is non-empty but contains no pending
 promises, the returned promise is still asynchronously (instead of
 synchronously) rejected.
-.SH Description
+.SH DESCRIPTION
 .PP
 The \f[V]Promise.any()\f[R] method is one of the promise concurrency
 methods.
@@ -83,7 +83,7 @@ Also, unlike \f[V]Promise.race()\f[R], which returns the first
 returns the first \f[I]fulfilled\f[R] value.
 This method ignores all rejected promises up until the first promise
 that fulfills.
-.SH Examples
+.SH EXAMPLES
 .SS Using Promise.any()
 .PP
 \f[V]Promise.any()\f[R] fulfills with the first promise to fulfill, even
@@ -164,7 +164,7 @@ Promise.any([coffee, tea])
   });
 \f[R]
 .fi
-.SH See also
+.SH SEE ALSO
 .IP \[bu] 2
 Polyfill of \f[V]Promise.any\f[R] in
 \f[V]core-js\f[R] (https://github.com/zloirock/core-js#ecmascript-promise)

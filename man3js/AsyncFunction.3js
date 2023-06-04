@@ -14,9 +14,12 @@
 . ftr VB CB
 . ftr VBI CBI
 .\}
-.TH "AsyncFunction" "JS" "2023-06-02" "JavaScript" "JavaScript Reference Manual"
+.TH "AsyncFunction" "JS" "June 2, 2023" "JavaScript" "JavaScript Reference Manual"
 .hy
-.SH Synopsis
+.SH NAME
+.PP
+AsyncFunction - AsyncFunction
+.SH SYNOPSIS
 .PP
 The \f[B]\f[VB]AsyncFunction\f[B]\f[R] object provides methods for async
 functions.
@@ -33,45 +36,36 @@ const AsyncFunction = async function () {}.constructor;
 .fi
 .PP
 \f[V]AsyncFunction\f[R] is a subclass of \f[V]Function\f[R].
-.SH Constructor
-.IP \[bu] 2
-\f[V]AsyncFunction()\f[R]
-.RS 2
-.IP \[bu] 2
+.SH CONSTRUCTOR
+.TP
+\f[B]AsyncFunction()\f[R]
 Creates a new \f[V]AsyncFunction\f[R] object.
-.RE
-.SH Instance properties
+.SH INSTANCE PROPERTIES
 .PP
 \f[I]Also inherits instance properties from its parent
 \f[VI]Function\f[I]\f[R].
 .PP
 These properties are defined on \f[V]AsyncFunction.prototype\f[R] and
 shared by all \f[V]AsyncFunction\f[R] instances.
-.IP \[bu] 2
-\f[V]AsyncFunction.prototype.constructor\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]AsyncFunction.prototype.constructor\f[R]
 The constructor function that created the instance object.
 For \f[V]AsyncFunction\f[R] instances, the initial value is the
 \f[V]AsyncFunction\f[R] constructor.
-.RE
-.IP \[bu] 2
-\f[V]AsyncFunction.prototype[\[at]\[at]toStringTag]\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]AsyncFunction.prototype[\[at]\[at]toStringTag]\f[R]
 The initial value of the \f[V]\[at]\[at]toStringTag\f[R] property is the
 string \f[V]\[dq]AsyncFunction\[dq]\f[R].
 This property is used in \f[V]Object.prototype.toString()\f[R].
-.RE
 .RS
 .PP
 \f[B]Note:\f[R] \f[V]AsyncFunction\f[R] instances do not have the
 \f[V]prototype\f[R] property.
 .RE
-.SH Instance methods
+.SH INSTANCE METHODS
 .PP
 \f[I]Inherits instance methods from its parent \f[VI]Function\f[I]\f[R].
-.SH See also
+.SH SEE ALSO
 .IP \[bu] 2
 \f[V]async function\f[R] declaration
 .IP \[bu] 2

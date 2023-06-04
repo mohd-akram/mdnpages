@@ -15,9 +15,12 @@
 . ftr VB CB
 . ftr VBI CBI
 .\}
-.TH "Symbol.search" "JS" "2023-06-02" "JavaScript" "JavaScript Reference Manual"
+.TH "Symbol.search" "JS" "June 2, 2023" "JavaScript" "JavaScript Reference Manual"
 .hy
-.SH Synopsis
+.SH NAME
+.PP
+Symbol.search - Symbol.search
+.SH SYNOPSIS
 .PP
 The \f[B]\f[VB]Symbol.search\f[B]\f[R] static data property represents
 the well-known symbol \f[V]\[at]\[at]search\f[R].
@@ -27,7 +30,7 @@ that matches the current object.
 .PP
 For more information, see \f[V]RegExp.prototype[\[at]\[at]search]()\f[R]
 and \f[V]String.prototype.search()\f[R].
-.SH Value
+.SH VALUE
 .PP
 The well-known symbol \f[V]\[at]\[at]search\f[R].
 .PP
@@ -50,7 +53,7 @@ T}@T{
 no
 T}
 .TE
-.SH Examples
+.SH EXAMPLES
 .SS Custom string search
 .IP
 .nf
@@ -67,7 +70,7 @@ class caseInsensitiveSearch {
 console.log(\[dq]foobar\[dq].search(new caseInsensitiveSearch(\[dq]BaR\[dq]))); // 3
 \f[R]
 .fi
-.SH See also
+.SH SEE ALSO
 .IP \[bu] 2
 Polyfill of \f[V]Symbol.search\f[R] in
 \f[V]core-js\f[R] (https://github.com/zloirock/core-js#ecmascript-symbol)

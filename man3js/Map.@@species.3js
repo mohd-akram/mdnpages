@@ -14,14 +14,17 @@
 . ftr VB CB
 . ftr VBI CBI
 .\}
-.TH "Map.\[at]\[at]species" "JS" "2023-06-02" "JavaScript" "JavaScript Reference Manual"
+.TH "Map.\[at]\[at]species" "JS" "June 2, 2023" "JavaScript" "JavaScript Reference Manual"
 .hy
-.SH Synopsis
+.SH NAME
+.PP
+Map.\[at]\[at]species - Map[\[at]\[at]species]
+.SH SYNOPSIS
 .PP
 The \f[B]\f[VB]Map[\[at]\[at]species]\f[B]\f[R] static accessor property
 is an unused accessor property specifying how to copy \f[V]Map\f[R]
 objects.
-.SH Syntax
+.SH SYNTAX
 .IP
 .nf
 \f[C]
@@ -33,7 +36,7 @@ Map[Symbol.species]
 The value of the constructor (\f[V]this\f[R]) on which
 \f[V]get \[at]\[at]species\f[R] was called.
 The return value is used to construct copied \f[V]Map\f[R] instances.
-.SH Description
+.SH DESCRIPTION
 .PP
 The \f[V]\[at]\[at]species\f[R] accessor property returns the default
 constructor for \f[V]Map\f[R] objects.
@@ -44,7 +47,7 @@ assignment.
 \f[B]Note:\f[R] This property is currently unused by all \f[V]Map\f[R]
 methods.
 .RE
-.SH Examples
+.SH EXAMPLES
 .SS Species in ordinary objects
 .PP
 The \f[V]\[at]\[at]species\f[R] property returns the default constructor
@@ -73,7 +76,7 @@ class MyMap extends Map {
 }
 \f[R]
 .fi
-.SH See also
+.SH SEE ALSO
 .IP \[bu] 2
 \f[V]Map\f[R]
 .IP \[bu] 2

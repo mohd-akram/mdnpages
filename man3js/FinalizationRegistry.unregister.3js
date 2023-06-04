@@ -14,13 +14,17 @@
 . ftr VB CB
 . ftr VBI CBI
 .\}
-.TH "FinalizationRegistry.unregister" "JS" "2023-06-02" "JavaScript" "JavaScript Reference Manual"
+.TH "FinalizationRegistry.unregister" "JS" "June 2, 2023" "JavaScript" "JavaScript Reference Manual"
 .hy
-.SH Synopsis
+.SH NAME
+.PP
+FinalizationRegistry.unregister -
+FinalizationRegistry.prototype.unregister()
+.SH SYNOPSIS
 .PP
 The \f[B]\f[VB]unregister()\f[B]\f[R] method unregisters a target value
 from a \f[V]FinalizationRegistry\f[R] instance.
-.SH Syntax
+.SH SYNTAX
 .IP
 .nf
 \f[C]
@@ -28,35 +32,29 @@ unregister(unregisterToken)
 \f[R]
 .fi
 .SS Parameters
-.IP \[bu] 2
-\f[V]unregisterToken\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]unregisterToken\f[R]
 The token used with the \f[V]register\f[R] method when registering the
 target value.
 Multiple cells registered with the same \f[V]unregisterToken\f[R] will
 be unregistered together.
-.RE
 .SS Return value
 .PP
 A boolean value that is \f[V]true\f[R] if at least one cell was
 unregistered and \f[V]false\f[R] if no cell was unregistered.
 .SS Exceptions
-.IP \[bu] 2
-\f[V]TypeError\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]TypeError\f[R]
 Thrown if \f[V]unregisterToken\f[R] is not an object or a non-registered
 symbol.
-.RE
-.SH Description
+.SH DESCRIPTION
 .PP
 When a target value has been reclaimed, it is no longer registered in
 the registry.
 There is no need to call \f[V]unregister\f[R] in your cleanup callback.
 Only call \f[V]unregister\f[R] if you haven\[cq]t received a cleanup
 callback and no longer need to receive one.
-.SH Examples
+.SH EXAMPLES
 .SS Using unregister
 .PP
 This example shows registering a target object using that same object as
@@ -139,6 +137,6 @@ class Thingy {
 }
 \f[R]
 .fi
-.SH See also
+.SH SEE ALSO
 .IP \[bu] 2
 \f[V]FinalizationRegistry\f[R]

@@ -14,9 +14,12 @@
 . ftr VB CB
 . ftr VBI CBI
 .\}
-.TH "ArrayBuffer" "JS" "2023-06-02" "JavaScript" "JavaScript Reference Manual"
+.TH "ArrayBuffer" "JS" "June 2, 2023" "JavaScript" "JavaScript Reference Manual"
 .hy
-.SH Synopsis
+.SH NAME
+.PP
+ArrayBuffer - ArrayBuffer
+.SH SYNOPSIS
 .PP
 The \f[B]\f[VB]ArrayBuffer\f[B]\f[R] object is used to represent a
 generic raw binary data buffer.
@@ -34,7 +37,7 @@ You can also get an array buffer from existing data, for example, from a
 Base64 string or from a local file.
 .PP
 \f[V]ArrayBuffer\f[R] is a transferable object.
-.SH Description
+.SH DESCRIPTION
 .SS Resizing ArrayBuffers
 .PP
 \f[V]ArrayBuffer\f[R] objects can be made resizable by including the
@@ -52,92 +55,62 @@ otherwise, you have to make a copy of the buffer with a new size.
 It also gives JavaScript parity with WebAssembly in this regard (Wasm
 linear memory can be resized with
 \f[V]WebAssembly.Memory.prototype.grow()\f[R]).
-.SH Constructor
-.IP \[bu] 2
-\f[V]ArrayBuffer()\f[R]
-.RS 2
-.IP \[bu] 2
+.SH CONSTRUCTOR
+.TP
+\f[B]ArrayBuffer()\f[R]
 Creates a new \f[V]ArrayBuffer\f[R] object.
-.RE
-.SH Static properties
-.IP \[bu] 2
-\f[V]ArrayBuffer[\[at]\[at]species]\f[R]
-.RS 2
-.IP \[bu] 2
+.SH STATIC PROPERTIES
+.TP
+\f[B]ArrayBuffer[\[at]\[at]species]\f[R]
 The constructor function that is used to create derived objects.
-.RE
-.SH Static methods
-.IP \[bu] 2
-\f[V]ArrayBuffer.isView()\f[R]
-.RS 2
-.IP \[bu] 2
+.SH STATIC METHODS
+.TP
+\f[B]ArrayBuffer.isView()\f[R]
 Returns \f[V]true\f[R] if \f[V]arg\f[R] is one of the ArrayBuffer views,
 such as typed array objects or a \f[V]DataView\f[R].
 Returns \f[V]false\f[R] otherwise.
-.RE
-.SH Instance properties
+.SH INSTANCE PROPERTIES
 .PP
 These properties are defined on \f[V]ArrayBuffer.prototype\f[R] and
 shared by all \f[V]ArrayBuffer\f[R] instances.
-.IP \[bu] 2
-\f[V]ArrayBuffer.prototype.byteLength\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]ArrayBuffer.prototype.byteLength\f[R]
 The size, in bytes, of the \f[V]ArrayBuffer\f[R].
 This is established when the array is constructed and can only be
 changed using the \f[V]ArrayBuffer.prototype.resize()\f[R] method if the
 \f[V]ArrayBuffer\f[R] is resizable.
-.RE
-.IP \[bu] 2
-\f[V]ArrayBuffer.prototype.constructor\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]ArrayBuffer.prototype.constructor\f[R]
 The constructor function that created the instance object.
 For \f[V]ArrayBuffer\f[R] instances, the initial value is the
 \f[V]ArrayBuffer\f[R] constructor.
-.RE
-.IP \[bu] 2
-\f[V]ArrayBuffer.prototype.maxByteLength\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]ArrayBuffer.prototype.maxByteLength\f[R]
 The read-only maximum length, in bytes, that the \f[V]ArrayBuffer\f[R]
 can be resized to.
 This is established when the array is constructed and cannot be changed.
-.RE
-.IP \[bu] 2
-\f[V]ArrayBuffer.prototype.resizable\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]ArrayBuffer.prototype.resizable\f[R]
 Read-only.
 Returns \f[V]true\f[R] if the \f[V]ArrayBuffer\f[R] can be resized, or
 \f[V]false\f[R] if not.
-.RE
-.IP \[bu] 2
-\f[V]ArrayBuffer.prototype[\[at]\[at]toStringTag]\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]ArrayBuffer.prototype[\[at]\[at]toStringTag]\f[R]
 The initial value of the \f[V]\[at]\[at]toStringTag\f[R] property is the
 string \f[V]\[dq]ArrayBuffer\[dq]\f[R].
 This property is used in \f[V]Object.prototype.toString()\f[R].
-.RE
-.SH Instance methods
-.IP \[bu] 2
-\f[V]ArrayBuffer.prototype.resize()\f[R]
-.RS 2
-.IP \[bu] 2
+.SH INSTANCE METHODS
+.TP
+\f[B]ArrayBuffer.prototype.resize()\f[R]
 Resizes the \f[V]ArrayBuffer\f[R] to the specified size, in bytes.
-.RE
-.IP \[bu] 2
-\f[V]ArrayBuffer.prototype.slice()\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]ArrayBuffer.prototype.slice()\f[R]
 Returns a new \f[V]ArrayBuffer\f[R] whose contents are a copy of this
 \f[V]ArrayBuffer\f[R]\[cq]s bytes from \f[V]begin\f[R] (inclusive) up to
 \f[V]end\f[R] (exclusive).
 If either \f[V]begin\f[R] or \f[V]end\f[R] is negative, it refers to an
 index from the end of the array, as opposed to from the beginning.
-.RE
-.SH Examples
+.SH EXAMPLES
 .SS Creating an ArrayBuffer
 .PP
 In this example, we create a 8-byte buffer with a \f[V]Int32Array\f[R]
@@ -149,7 +122,7 @@ const buffer = new ArrayBuffer(8);
 const view = new Int32Array(buffer);
 \f[R]
 .fi
-.SH See also
+.SH SEE ALSO
 .IP \[bu] 2
 Polyfill of \f[V]ArrayBuffer\f[R] in
 \f[V]core-js\f[R] (https://github.com/zloirock/core-js#ecmascript-typed-arrays)

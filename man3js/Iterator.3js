@@ -14,9 +14,12 @@
 . ftr VB CB
 . ftr VBI CBI
 .\}
-.TH "Iterator" "JS" "2023-06-02" "JavaScript" "JavaScript Reference Manual"
+.TH "Iterator" "JS" "June 2, 2023" "JavaScript" "JavaScript Reference Manual"
 .hy
-.SH Synopsis
+.SH NAME
+.PP
+Iterator - Iterator
+.SH SYNOPSIS
 .PP
 An \f[B]\f[VB]Iterator\f[B]\f[R] object is an object that conforms to
 the iterator protocol by providing a \f[V]next()\f[R] method that
@@ -39,7 +42,7 @@ const IteratorPrototype = Object.getPrototypeOf(
 );
 \f[R]
 .fi
-.SH Description
+.SH DESCRIPTION
 .PP
 The following are all built-in JavaScript iterators:
 .IP \[bu] 2
@@ -91,15 +94,12 @@ All of these prototype objects inherit from
 \f[V]Iterator.prototype\f[R], which provides a
 \f[V]\[at]\[at]iterator\f[R] method that returns the iterator object
 itself, making the iterator also iterable.
-.SH Instance methods
-.IP \[bu] 2
-\f[V]Iterator.prototype[\[at]\[at]iterator]()\f[R]
-.RS 2
-.IP \[bu] 2
+.SH INSTANCE METHODS
+.TP
+\f[B]Iterator.prototype[\[at]\[at]iterator]()\f[R]
 Returns the iterator object itself.
 This allows iterator objects to also be iterable.
-.RE
-.SH Examples
+.SH EXAMPLES
 .SS Using an iterator as an iterable
 .PP
 All built-in iterators are also iterable, so you can use them in a
@@ -114,7 +114,7 @@ for (const value of arrIterator) {
 // Logs: 1, 2, 3
 \f[R]
 .fi
-.SH See also
+.SH SEE ALSO
 .IP \[bu] 2
 \f[V]function*\f[R]
 .IP \[bu] 2

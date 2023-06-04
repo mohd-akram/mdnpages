@@ -14,13 +14,16 @@
 . ftr VB CB
 . ftr VBI CBI
 .\}
-.TH "RegExp.toString" "JS" "2023-06-02" "JavaScript" "JavaScript Reference Manual"
+.TH "RegExp.toString" "JS" "June 2, 2023" "JavaScript" "JavaScript Reference Manual"
 .hy
-.SH Synopsis
+.SH NAME
+.PP
+RegExp.toString - RegExp.prototype.toString()
+.SH SYNOPSIS
 .PP
 The \f[B]\f[VB]toString()\f[B]\f[R] method returns a string representing
 the regular expression.
-.SH Syntax
+.SH SYNTAX
 .IP
 .nf
 \f[C]
@@ -30,7 +33,7 @@ toString()
 .SS Return value
 .PP
 A string representing the given object.
-.SH Description
+.SH DESCRIPTION
 .PP
 The \f[V]RegExp\f[R] object overrides the \f[V]toString()\f[R] method of
 the \f[V]Object\f[R] object; it does not inherit
@@ -45,7 +48,7 @@ The \f[V]toString()\f[R] return value is guaranteed to be a parsable
 regex literal, although it may not be the exact same text as what was
 originally specified for the regex (for example, the flags may be
 reordered).
-.SH Examples
+.SH EXAMPLES
 .SS Using toString()
 .PP
 The following example displays the string value of a \f[V]RegExp\f[R]
@@ -74,6 +77,6 @@ new RegExp().toString(); // \[dq]/(?:)/\[dq]
 new RegExp(\[dq]\[rs]n\[dq]).toString() === \[dq]/\[rs]\[rs]n/\[dq]; // true
 \f[R]
 .fi
-.SH See also
+.SH SEE ALSO
 .IP \[bu] 2
 \f[V]Object.prototype.toString()\f[R]

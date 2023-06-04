@@ -14,14 +14,17 @@
 . ftr VB CB
 . ftr VBI CBI
 .\}
-.TH "String.repeat" "JS" "2023-06-02" "JavaScript" "JavaScript Reference Manual"
+.TH "String.repeat" "JS" "June 2, 2023" "JavaScript" "JavaScript Reference Manual"
 .hy
-.SH Synopsis
+.SH NAME
+.PP
+String.repeat - String.prototype.repeat()
+.SH SYNOPSIS
 .PP
 The \f[B]\f[VB]repeat()\f[B]\f[R] method constructs and returns a new
 string which contains the specified number of copies of the string on
 which it was called, concatenated together.
-.SH Syntax
+.SH SYNTAX
 .IP
 .nf
 \f[C]
@@ -29,26 +32,20 @@ repeat(count)
 \f[R]
 .fi
 .SS Parameters
-.IP \[bu] 2
-\f[V]count\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]count\f[R]
 An integer between \f[V]0\f[R] and \f[V]+Infinity\f[R], indicating the
 number of times to repeat the string.
-.RE
 .SS Return value
 .PP
 A new string containing the specified number of copies of the given
 string.
 .SS Exceptions
-.IP \[bu] 2
-\f[V]RangeError\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]RangeError\f[R]
 Thrown if \f[V]count\f[R] is negative or if \f[V]count\f[R] overflows
 maximum string length.
-.RE
-.SH Examples
+.SH EXAMPLES
 .SS Using repeat()
 .IP
 .nf
@@ -64,7 +61,7 @@ maximum string length.
 // \[aq]abcabc\[aq] (repeat() is a generic method)
 \f[R]
 .fi
-.SH See also
+.SH SEE ALSO
 .IP \[bu] 2
 Polyfill of \f[V]String.prototype.repeat\f[R] in
 \f[V]core-js\f[R] (https://github.com/zloirock/core-js#ecmascript-string-and-regexp)

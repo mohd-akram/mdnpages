@@ -14,13 +14,16 @@
 . ftr VB CB
 . ftr VBI CBI
 .\}
-.TH "Number.isInteger" "JS" "2023-06-02" "JavaScript" "JavaScript Reference Manual"
+.TH "Number.isInteger" "JS" "June 2, 2023" "JavaScript" "JavaScript Reference Manual"
 .hy
-.SH Synopsis
+.SH NAME
+.PP
+Number.isInteger - Number.isInteger()
+.SH SYNOPSIS
 .PP
 The \f[B]\f[VB]Number.isInteger()\f[B]\f[R] static method determines
 whether the passed value is an integer.
-.SH Syntax
+.SH SYNTAX
 .IP
 .nf
 \f[C]
@@ -28,17 +31,14 @@ Number.isInteger(value)
 \f[R]
 .fi
 .SS Parameters
-.IP \[bu] 2
-\f[V]value\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]value\f[R]
 The value to be tested for being an integer.
-.RE
 .SS Return value
 .PP
 The boolean value \f[V]true\f[R] if the given value is an integer.
 Otherwise \f[V]false\f[R].
-.SH Description
+.SH DESCRIPTION
 .PP
 If the target value is an integer, return \f[V]true\f[R], otherwise
 return \f[V]false\f[R].
@@ -68,7 +68,7 @@ not an integer.
 represent the decimal \[em] for example,
 \f[V]Number.isInteger(4500000000000000.1)\f[R] is \f[V]true\f[R], but
 \f[V]Number.isInteger(4500000000000000.5)\f[R] is \f[V]false\f[R].)
-.SH Examples
+.SH EXAMPLES
 .SS Using isInteger
 .IP
 .nf
@@ -95,7 +95,7 @@ Number.isInteger(5.0000000000000001); // true, because of loss of precision
 Number.isInteger(4500000000000000.1); // true, because of loss of precision
 \f[R]
 .fi
-.SH See also
+.SH SEE ALSO
 .IP \[bu] 2
 Polyfill of \f[V]Number.isInteger\f[R] in
 \f[V]core-js\f[R] (https://github.com/zloirock/core-js#ecmascript-number)

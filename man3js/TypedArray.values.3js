@@ -14,14 +14,17 @@
 . ftr VB CB
 . ftr VBI CBI
 .\}
-.TH "TypedArray.values" "JS" "2023-06-02" "JavaScript" "JavaScript Reference Manual"
+.TH "TypedArray.values" "JS" "June 2, 2023" "JavaScript" "JavaScript Reference Manual"
 .hy
-.SH Synopsis
+.SH NAME
+.PP
+TypedArray.values - TypedArray.prototype.values()
+.SH SYNOPSIS
 .PP
 The \f[B]\f[VB]values()\f[B]\f[R] method returns a new \f[I]array
 iterator\f[R] object that contains the values for each index in the
 array.
-.SH Syntax
+.SH SYNTAX
 .IP
 .nf
 \f[C]
@@ -31,7 +34,7 @@ values()
 .SS Return value
 .PP
 A new iterable iterator object.
-.SH Examples
+.SH EXAMPLES
 .SS Iteration using for\&...of loop
 .IP
 .nf
@@ -56,7 +59,7 @@ console.log(values.next().value); // 40
 console.log(values.next().value); // 50
 \f[R]
 .fi
-.SH See also
+.SH SEE ALSO
 .IP \[bu] 2
 Polyfill of \f[V]TypedArray.prototype.values\f[R] in
 \f[V]core-js\f[R] (https://github.com/zloirock/core-js#ecmascript-typed-arrays)

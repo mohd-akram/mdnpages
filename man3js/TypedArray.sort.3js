@@ -14,9 +14,12 @@
 . ftr VB CB
 . ftr VBI CBI
 .\}
-.TH "TypedArray.sort" "JS" "2023-06-02" "JavaScript" "JavaScript Reference Manual"
+.TH "TypedArray.sort" "JS" "June 2, 2023" "JavaScript" "JavaScript Reference Manual"
 .hy
-.SH Synopsis
+.SH NAME
+.PP
+TypedArray.sort - TypedArray.prototype.sort()
+.SH SYNOPSIS
 .PP
 The \f[B]\f[VB]sort()\f[B]\f[R] method sorts the elements of a typed
 array numerically \f[I]in place\f[R] and returns the typed array.
@@ -24,7 +27,7 @@ This method has the same algorithm as \f[V]Array.prototype.sort()\f[R],
 except that it sorts the values numerically instead of as strings by
 default.
 \f[I]TypedArray\f[R] is one of the typed array types here.
-.SH Syntax
+.SH SYNTAX
 .IP
 .nf
 \f[C]
@@ -33,38 +36,29 @@ sort(compareFn)
 \f[R]
 .fi
 .SS Parameters
-.IP \[bu] 2
-\f[V]compareFunction\f[R] \f[I](optional)\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]compareFunction\f[R] \f[I](optional)\f[R]
 A function that defines the sort order.
 The return value should be a number whose positivity indicates the
 relative order of the two elements.
 The function is called with the following arguments:
-.RS 2
-.IP \[bu] 2
-\f[V]a\f[R]
-.RS 2
-.IP \[bu] 2
+.RS
+.TP
+\f[B]a\f[R]
 The first element for comparison.
 Will never be \f[V]undefined\f[R].
-.RE
-.IP \[bu] 2
-\f[V]b\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]b\f[R]
 The second element for comparison.
 Will never be \f[V]undefined\f[R].
-.RE
 .PP
 If omitted, the array elements are converted to strings, then sorted
 according to each character\[cq]s Unicode code point value.
 .RE
-.RE
 .SS Return value
 .PP
 The sorted typed array.
-.SH Examples
+.SH EXAMPLES
 .SS Using sort
 .PP
 For more examples, see also the \f[V]Array.prototype.sort()\f[R] method.
@@ -86,7 +80,7 @@ numbers.sort((a, b) => a - b); // compare numbers
 // [ 1, 5, 40, 200 ]
 \f[R]
 .fi
-.SH See also
+.SH SEE ALSO
 .IP \[bu] 2
 Polyfill of \f[V]TypedArray.prototype.sort\f[R] with modern behavior
 like stable sort in

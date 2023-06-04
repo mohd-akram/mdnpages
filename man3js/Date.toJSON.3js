@@ -14,14 +14,17 @@
 . ftr VB CB
 . ftr VBI CBI
 .\}
-.TH "Date.toJSON" "JS" "2023-06-02" "JavaScript" "JavaScript Reference Manual"
+.TH "Date.toJSON" "JS" "June 2, 2023" "JavaScript" "JavaScript Reference Manual"
 .hy
-.SH Synopsis
+.SH NAME
+.PP
+Date.toJSON - Date.prototype.toJSON()
+.SH SYNOPSIS
 .PP
 The \f[B]\f[VB]toJSON()\f[B]\f[R] method of \f[V]Date\f[R] instances
 returns a string representing this date in the same ISO format as
 \f[V]toISOString()\f[R].
-.SH Syntax
+.SH SYNTAX
 .IP
 .nf
 \f[C]
@@ -34,7 +37,7 @@ A string representing the given date in the date time string format
 according to universal time, or \f[V]null\f[R] when the date is invalid.
 For valid dates, the return value is the same as that of
 \f[V]toISOString()\f[R].
-.SH Description
+.SH DESCRIPTION
 .PP
 The \f[V]toJSON()\f[R] method is automatically called by
 \f[V]JSON.stringify()\f[R] when a \f[V]Date\f[R] object is stringified.
@@ -58,7 +61,7 @@ a valid \f[V]Date\f[R] object.
 However, calling \f[V]Date.prototype.toJSON()\f[R] on non-\f[V]Date\f[R]
 objects fails unless the object\[cq]s number primitive representation is
 \f[V]NaN\f[R], or the object also has a \f[V]toISOString()\f[R] method.
-.SH Examples
+.SH EXAMPLES
 .SS Using toJSON()
 .IP
 .nf
@@ -104,7 +107,7 @@ to the payload shape you expect, because the serialization is
 \f[I]lossy\f[R]: it\[cq]s not possible to distinguish between a string
 that represents a Date and a normal string.
 .RE
-.SH See also
+.SH SEE ALSO
 .IP \[bu] 2
 \f[V]Date.prototype.toLocaleDateString()\f[R]
 .IP \[bu] 2

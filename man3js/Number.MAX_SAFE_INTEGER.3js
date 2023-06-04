@@ -15,15 +15,18 @@
 . ftr VB CB
 . ftr VBI CBI
 .\}
-.TH "Number.MAX_SAFE_INTEGER" "JS" "2023-06-02" "JavaScript" "JavaScript Reference Manual"
+.TH "Number.MAX_SAFE_INTEGER" "JS" "June 2, 2023" "JavaScript" "JavaScript Reference Manual"
 .hy
-.SH Synopsis
+.SH NAME
+.PP
+Number.MAX_SAFE_INTEGER - Number.MAX_SAFE_INTEGER
+.SH SYNOPSIS
 .PP
 The \f[B]\f[VB]Number.MAX_SAFE_INTEGER\f[B]\f[R] static data property
 represents the maximum safe integer in JavaScript (253 \[en] 1).
 .PP
 For larger integers, consider using \f[V]BigInt\f[R].
-.SH Value
+.SH VALUE
 .PP
 \f[V]9007199254740991\f[R] (9,007,199,254,740,991, or \[ti]9
 quadrillion).
@@ -47,7 +50,7 @@ T}@T{
 no
 T}
 .TE
-.SH Description
+.SH DESCRIPTION
 .PP
 Double precision floating point
 format (https://en.wikipedia.org/wiki/Double_precision_floating-point_format)
@@ -64,7 +67,7 @@ Because \f[V]MAX_SAFE_INTEGER\f[R] is a static property of
 \f[V]Number\f[R], you always use it as
 \f[V]Number.MAX_SAFE_INTEGER\f[R], rather than as a property of a number
 value.
-.SH Examples
+.SH EXAMPLES
 .SS Return value of MAX_SAFE_INTEGER
 .IP
 .nf
@@ -85,7 +88,7 @@ to 2.
 Number.MAX_SAFE_INTEGER * Number.EPSILON; // 1.9999999999999998
 \f[R]
 .fi
-.SH See also
+.SH SEE ALSO
 .IP \[bu] 2
 Polyfill of \f[V]Number.MAX_SAFE_INTEGER\f[R] in
 \f[V]core-js\f[R] (https://github.com/zloirock/core-js#ecmascript-number)

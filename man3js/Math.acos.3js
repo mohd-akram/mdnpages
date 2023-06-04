@@ -14,9 +14,12 @@
 . ftr VB CB
 . ftr VBI CBI
 .\}
-.TH "Math.acos" "JS" "2023-06-02" "JavaScript" "JavaScript Reference Manual"
+.TH "Math.acos" "JS" "June 2, 2023" "JavaScript" "JavaScript Reference Manual"
 .hy
-.SH Synopsis
+.SH NAME
+.PP
+Math.acos - Math.acos()
+.SH SYNOPSIS
 .PP
 The \f[B]\f[VB]Math.acos()\f[B]\f[R] static method returns the inverse
 cosine (in radians) of a number.
@@ -24,7 +27,7 @@ That is,
 .PP
 ∀x∊[−1,1],𝙼𝚊𝚝𝚑.𝚊𝚌𝚘𝚜(𝚡)=arccos(x)=the unique\ y∊[0,π]\ such
 that\ cos(y)=xx ,; = (x) = y (y) = x
-.SH Syntax
+.SH SYNTAX
 .IP
 .nf
 \f[C]
@@ -32,24 +35,21 @@ Math.acos(x)
 \f[R]
 .fi
 .SS Parameters
-.IP \[bu] 2
-\f[V]x\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]x\f[R]
 A number between -1 and 1, inclusive, representing the angle\[cq]s
 cosine value.
-.RE
 .SS Return value
 .PP
 The inverse cosine (angle in radians between 0 and π, inclusive) of
 \f[V]x\f[R].
 If \f[V]x\f[R] is less than -1 or greater than 1, returns \f[V]NaN\f[R].
-.SH Description
+.SH DESCRIPTION
 .PP
 Because \f[V]acos()\f[R] is a static method of \f[V]Math\f[R], you
 always use it as \f[V]Math.acos()\f[R], rather than as a method of a
 \f[V]Math\f[R] object you created (\f[V]Math\f[R] is not a constructor).
-.SH Examples
+.SH EXAMPLES
 .SS Using Math.acos()
 .IP
 .nf
@@ -62,7 +62,7 @@ Math.acos(1); // 0
 Math.acos(2); // NaN
 \f[R]
 .fi
-.SH See also
+.SH SEE ALSO
 .IP \[bu] 2
 \f[V]Math.asin()\f[R]
 .IP \[bu] 2

@@ -14,16 +14,19 @@
 . ftr VB CB
 . ftr VBI CBI
 .\}
-.TH "Promise.allSettled" "JS" "2023-06-02" "JavaScript" "JavaScript Reference Manual"
+.TH "Promise.allSettled" "JS" "June 2, 2023" "JavaScript" "JavaScript Reference Manual"
 .hy
-.SH Synopsis
+.SH NAME
+.PP
+Promise.allSettled - Promise.allSettled()
+.SH SYNOPSIS
 .PP
 The \f[B]\f[VB]Promise.allSettled()\f[B]\f[R] static method takes an
 iterable of promises as input and returns a single \f[V]Promise\f[R].
 This returned promise fulfills when all of the input\[cq]s promises
 settle (including when an empty iterable is passed), with an array of
 objects that describe the outcome of each promise.
-.SH Syntax
+.SH SYNTAX
 .IP
 .nf
 \f[C]
@@ -31,12 +34,9 @@ Promise.allSettled(iterable)
 \f[R]
 .fi
 .SS Parameters
-.IP \[bu] 2
-\f[V]iterable\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]iterable\f[R]
 An iterable (such as an \f[V]Array\f[R]) of promises.
-.RE
 .SS Return value
 .PP
 A \f[V]Promise\f[R] that is:
@@ -50,34 +50,25 @@ outcome of one promise in the \f[V]iterable\f[R], in the order of the
 promises passed, regardless of completion order.
 Each outcome object has the following properties:
 .RS 2
-.IP \[bu] 2
-\f[V]status\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]status\f[R]
 A string, either \f[V]\[dq]fulfilled\[dq]\f[R] or
 \f[V]\[dq]rejected\[dq]\f[R], indicating the eventual state of the
 promise.
-.RE
-.IP \[bu] 2
-\f[V]value\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]value\f[R]
 Only present if \f[V]status\f[R] is \f[V]\[dq]fulfilled\[dq]\f[R].
 The value that the promise was fulfilled with.
-.RE
-.IP \[bu] 2
-\f[V]reason\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]reason\f[R]
 Only present if \f[V]status\f[R] is \f[V]\[dq]rejected\[dq]\f[R].
 The reason that the promise was rejected with.
-.RE
 .PP
 If the \f[V]iterable\f[R] passed is non-empty but contains no pending
 promises, the returned promise is still asynchronously (instead of
 synchronously) fulfilled.
 .RE
-.SH Description
+.SH DESCRIPTION
 .PP
 The \f[V]Promise.allSettled()\f[R] method is one of the promise
 concurrency methods.
@@ -89,7 +80,7 @@ promise.
 In comparison, the Promise returned by \f[V]Promise.all()\f[R] may be
 more appropriate if the tasks are dependent on each other, or if
 you\[cq]d like to immediately reject upon any of them rejecting.
-.SH Examples
+.SH EXAMPLES
 .SS Using Promise.allSettled()
 .IP
 .nf
@@ -109,7 +100,7 @@ Promise.allSettled([
 // ]
 \f[R]
 .fi
-.SH See also
+.SH SEE ALSO
 .IP \[bu] 2
 Polyfill of \f[V]Promise.allSettled\f[R] in
 \f[V]core-js\f[R] (https://github.com/zloirock/core-js#ecmascript-promise)

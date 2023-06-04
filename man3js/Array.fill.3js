@@ -14,15 +14,18 @@
 . ftr VB CB
 . ftr VBI CBI
 .\}
-.TH "Array.fill" "JS" "2023-06-02" "JavaScript" "JavaScript Reference Manual"
+.TH "Array.fill" "JS" "June 2, 2023" "JavaScript" "JavaScript Reference Manual"
 .hy
-.SH Synopsis
+.SH NAME
+.PP
+Array.fill - Array.prototype.fill()
+.SH SYNOPSIS
 .PP
 The \f[B]\f[VB]fill()\f[B]\f[R] method changes all elements in an array
 to a static value, from a start index (default \f[V]0\f[R]) to an end
 index (default \f[V]array.length\f[R]).
 It returns the modified array.
-.SH Syntax
+.SH SYNTAX
 .IP
 .nf
 \f[C]
@@ -32,21 +35,16 @@ fill(value, start, end)
 \f[R]
 .fi
 .SS Parameters
-.IP \[bu] 2
-\f[V]value\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]value\f[R]
 Value to fill the array with.
 Note all elements in the array will be this exact value: if
 \f[V]value\f[R] is an object, each slot in the array will reference that
 object.
-.RE
-.IP \[bu] 2
-\f[V]start\f[R] \f[I](optional)\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]start\f[R] \f[I](optional)\f[R]
 Zero-based index at which to start filling, converted to an integer.
-.RS 2
+.RS
 .IP \[bu] 2
 Negative index counts back from the end of the array \[em] if
 \f[V]start < 0\f[R], \f[V]start + array.length\f[R] is used.
@@ -56,14 +54,11 @@ If \f[V]start < -array.length\f[R] or \f[V]start\f[R] is omitted,
 .IP \[bu] 2
 If \f[V]start >= array.length\f[R], no index is filled.
 .RE
-.RE
-.IP \[bu] 2
-\f[V]end\f[R] \f[I](optional)\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]end\f[R] \f[I](optional)\f[R]
 Zero-based index at which to end filling, converted to an integer.
 \f[V]fill()\f[R] fills up to but not including \f[V]end\f[R].
-.RS 2
+.RS
 .IP \[bu] 2
 Negative index counts back from the end of the array \[em] if
 \f[V]end < 0\f[R], \f[V]end + array.length\f[R] is used.
@@ -77,11 +72,10 @@ filled.
 If \f[V]end\f[R] is positioned before or at \f[V]start\f[R] after
 normalization, no index is filled.
 .RE
-.RE
 .SS Return value
 .PP
 The modified array, filled with \f[V]value\f[R].
-.SH Description
+.SH DESCRIPTION
 .PP
 The \f[V]fill()\f[R] method is a mutating method.
 It does not alter the length of \f[V]this\f[R], but it will change the
@@ -104,7 +98,7 @@ To use \f[V]Array.prototype.fill()\f[R] when declaring an array, make
 sure the array has non-zero \f[V]length\f[R].
 See example.
 .RE
-.SH Examples
+.SH EXAMPLES
 .SS Using fill
 .IP
 .nf
@@ -169,7 +163,7 @@ console.log(Array.prototype.fill.call(arrayLike, 1));
 // { \[aq]0\[aq]: 1, \[aq]1\[aq]: 1, length: 2 }
 \f[R]
 .fi
-.SH See also
+.SH SEE ALSO
 .IP \[bu] 2
 Polyfill of \f[V]Array.prototype.fill\f[R] in
 \f[V]core-js\f[R] (https://github.com/zloirock/core-js#ecmascript-array)

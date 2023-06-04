@@ -14,14 +14,17 @@
 . ftr VB CB
 . ftr VBI CBI
 .\}
-.TH "Map.entries" "JS" "2023-06-02" "JavaScript" "JavaScript Reference Manual"
+.TH "Map.entries" "JS" "June 2, 2023" "JavaScript" "JavaScript Reference Manual"
 .hy
-.SH Synopsis
+.SH NAME
+.PP
+Map.entries - Map.prototype.entries()
+.SH SYNOPSIS
 .PP
 The \f[B]\f[VB]entries()\f[B]\f[R] method returns a new \f[I]map
 iterator\f[R] object that contains the \f[V][key, value]\f[R] pairs for
 each element in the \f[V]Map\f[R] object in insertion order.
-.SH Syntax
+.SH SYNTAX
 .IP
 .nf
 \f[C]
@@ -31,7 +34,7 @@ entries()
 .SS Return value
 .PP
 A new iterable iterator object.
-.SH Examples
+.SH EXAMPLES
 .SS Using entries()
 .IP
 .nf
@@ -48,7 +51,7 @@ console.log(mapIter.next().value); // [1, \[dq]bar\[dq]]
 console.log(mapIter.next().value); // [Object, \[dq]baz\[dq]]
 \f[R]
 .fi
-.SH See also
+.SH SEE ALSO
 .IP \[bu] 2
 \f[V]Map.prototype.keys()\f[R]
 .IP \[bu] 2

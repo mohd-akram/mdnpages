@@ -14,14 +14,17 @@
 . ftr VB CB
 . ftr VBI CBI
 .\}
-.TH "Symbol.description" "JS" "2023-06-02" "JavaScript" "JavaScript Reference Manual"
+.TH "Symbol.description" "JS" "June 2, 2023" "JavaScript" "JavaScript Reference Manual"
 .hy
-.SH Synopsis
+.SH NAME
+.PP
+Symbol.description - Symbol.prototype.description
+.SH SYNOPSIS
 .PP
 The \f[B]\f[VB]description\f[B]\f[R] accessor property of
 \f[V]Symbol\f[R] values returns a string containing the description of
 this symbol, or \f[V]undefined\f[R] if the symbol has no description.
-.SH Description
+.SH DESCRIPTION
 .PP
 \f[V]Symbol\f[R] objects can be created with an optional description
 which can be used for debugging but not to access the symbol itself.
@@ -30,7 +33,7 @@ that description.
 It is different to \f[V]Symbol.prototype.toString()\f[R] as it does not
 contain the enclosing \f[V]\[dq]Symbol()\[dq]\f[R] string.
 See the examples.
-.SH Examples
+.SH EXAMPLES
 .SS Using description
 .IP
 .nf
@@ -49,7 +52,7 @@ Symbol.for(\[dq]foo\[dq]).toString(); // \[dq]Symbol(foo)\[dq]
 Symbol.for(\[dq]foo\[dq]).description; // \[dq]foo\[dq]
 \f[R]
 .fi
-.SH See also
+.SH SEE ALSO
 .IP \[bu] 2
 Polyfill of \f[V]Symbol.prototype.description\f[R] in
 \f[V]core-js\f[R] (https://github.com/zloirock/core-js#ecmascript-symbol)

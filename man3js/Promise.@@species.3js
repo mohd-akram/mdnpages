@@ -14,9 +14,12 @@
 . ftr VB CB
 . ftr VBI CBI
 .\}
-.TH "Promise.\[at]\[at]species" "JS" "2023-06-02" "JavaScript" "JavaScript Reference Manual"
+.TH "Promise.\[at]\[at]species" "JS" "June 2, 2023" "JavaScript" "JavaScript Reference Manual"
 .hy
-.SH Synopsis
+.SH NAME
+.PP
+Promise.\[at]\[at]species - Promise[\[at]\[at]species]
+.SH SYNOPSIS
 .PP
 The \f[B]\f[VB]Promise[\[at]\[at]species]\f[B]\f[R] static accessor
 property returns the constructor used to construct return values from
@@ -30,7 +33,7 @@ Engine implementers are investigating whether to remove this
 feature (https://github.com/tc39/proposal-rm-builtin-subclassing).
 Avoid relying on it if possible.
 .RE
-.SH Syntax
+.SH SYNTAX
 .IP
 .nf
 \f[C]
@@ -43,7 +46,7 @@ The value of the constructor (\f[V]this\f[R]) on which
 \f[V]get \[at]\[at]species\f[R] was called.
 The return value is used to construct return values from promise
 chaining methods that create new promises.
-.SH Description
+.SH DESCRIPTION
 .PP
 The \f[V]\[at]\[at]species\f[R] accessor property returns the default
 constructor for \f[V]Promise\f[R] objects.
@@ -83,7 +86,7 @@ If \f[V]this.constructor\f[R] is \f[V]undefined\f[R], or if
 Otherwise, the constructor returned by
 \f[V]this.constructor[\[at]\[at]species]\f[R] is used to construct the
 new promise object.
-.SH Examples
+.SH EXAMPLES
 .SS Species in ordinary objects
 .PP
 The \f[V]Symbol.species\f[R] property returns the default constructor
@@ -142,7 +145,7 @@ class MyPromise extends Promise {
 console.log(MyPromise.resolve(1).then(() => {}).someValue); // undefined
 \f[R]
 .fi
-.SH See also
+.SH SEE ALSO
 .IP \[bu] 2
 \f[V]Promise\f[R]
 .IP \[bu] 2

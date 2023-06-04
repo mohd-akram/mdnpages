@@ -14,14 +14,17 @@
 . ftr VB CB
 . ftr VBI CBI
 .\}
-.TH "Array.entries" "JS" "2023-06-02" "JavaScript" "JavaScript Reference Manual"
+.TH "Array.entries" "JS" "June 2, 2023" "JavaScript" "JavaScript Reference Manual"
 .hy
-.SH Synopsis
+.SH NAME
+.PP
+Array.entries - Array.prototype.entries()
+.SH SYNOPSIS
 .PP
 The \f[B]\f[VB]entries()\f[B]\f[R] method returns a new \f[I]array
 iterator\f[R] object that contains the key/value pairs for each index in
 the array.
-.SH Syntax
+.SH SYNTAX
 .IP
 .nf
 \f[C]
@@ -31,7 +34,7 @@ entries()
 .SS Return value
 .PP
 A new iterable iterator object.
-.SH Description
+.SH DESCRIPTION
 .PP
 When used on sparse arrays, the \f[V]entries()\f[R] method iterates
 empty slots as if they have the value \f[V]undefined\f[R].
@@ -39,7 +42,7 @@ empty slots as if they have the value \f[V]undefined\f[R].
 The \f[V]entries()\f[R] method is generic.
 It only expects the \f[V]this\f[R] value to have a \f[V]length\f[R]
 property and integer-keyed properties.
-.SH Examples
+.SH EXAMPLES
 .SS Iterating with index and element
 .IP
 .nf
@@ -106,7 +109,7 @@ for (const entry of Array.prototype.entries.call(arrayLike)) {
 // [ 2, \[aq]c\[aq] ]
 \f[R]
 .fi
-.SH See also
+.SH SEE ALSO
 .IP \[bu] 2
 Polyfill of \f[V]Array.prototype.entries\f[R] in
 \f[V]core-js\f[R] (https://github.com/zloirock/core-js#ecmascript-array)

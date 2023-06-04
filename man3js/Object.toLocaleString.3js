@@ -14,15 +14,18 @@
 . ftr VB CB
 . ftr VBI CBI
 .\}
-.TH "Object.toLocaleString" "JS" "2023-06-02" "JavaScript" "JavaScript Reference Manual"
+.TH "Object.toLocaleString" "JS" "June 2, 2023" "JavaScript" "JavaScript Reference Manual"
 .hy
-.SH Synopsis
+.SH NAME
+.PP
+Object.toLocaleString - Object.prototype.toLocaleString()
+.SH SYNOPSIS
 .PP
 The \f[B]\f[VB]toLocaleString()\f[B]\f[R] method returns a string
 representing the object.
 This method is meant to be overridden by derived objects for
 locale-specific purposes.
-.SH Syntax
+.SH SYNTAX
 .IP
 .nf
 \f[C]
@@ -39,7 +42,7 @@ The parameter positions should not be used for any other purpose.
 .SS Return value
 .PP
 The return value of calling \f[V]this.toString()\f[R].
-.SH Description
+.SH DESCRIPTION
 .PP
 All objects that inherit from \f[V]Object.prototype\f[R] (that is, all
 except \f[V]null\f[R]-prototype objects) inherit the
@@ -61,7 +64,7 @@ In the core language, these built-in objects override
 \f[V]TypedArray\f[R]: \f[V]TypedArray.prototype.toLocaleString()\f[R]
 .IP \[bu] 2
 \f[V]BigInt\f[R]: \f[V]BigInt.prototype.toLocaleString()\f[R]
-.SH Examples
+.SH EXAMPLES
 .SS Using the base toLocaleString() method
 .PP
 The base \f[V]toLocaleString()\f[R] method simply calls
@@ -132,6 +135,6 @@ const frNumber = testNumber.toLocaleString(\[dq]fr\[dq]);
 // \[dq]2 901 234 564\[dq]
 \f[R]
 .fi
-.SH See also
+.SH SEE ALSO
 .IP \[bu] 2
 \f[V]Object.prototype.toString()\f[R]

@@ -14,15 +14,18 @@
 . ftr VB CB
 . ftr VBI CBI
 .\}
-.TH "TypedArray.fill" "JS" "2023-06-02" "JavaScript" "JavaScript Reference Manual"
+.TH "TypedArray.fill" "JS" "June 2, 2023" "JavaScript" "JavaScript Reference Manual"
 .hy
-.SH Synopsis
+.SH NAME
+.PP
+TypedArray.fill - TypedArray.prototype.fill()
+.SH SYNOPSIS
 .PP
 The \f[B]\f[VB]fill()\f[B]\f[R] method fills all the elements of a typed
 array from a start index to an end index with a static value.
 This method has the same algorithm as \f[V]Array.prototype.fill()\f[R].
 \f[I]TypedArray\f[R] is one of the typed array types here.
-.SH Syntax
+.SH SYNTAX
 .IP
 .nf
 \f[C]
@@ -32,30 +35,21 @@ fill(value, start, end)
 \f[R]
 .fi
 .SS Parameters
-.IP \[bu] 2
-\f[V]value\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]value\f[R]
 Value to fill the typed array with.
-.RE
-.IP \[bu] 2
-\f[V]start\f[R] \f[I](optional)\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]start\f[R] \f[I](optional)\f[R]
 Start index.
 Defaults to 0.
-.RE
-.IP \[bu] 2
-\f[V]end\f[R] \f[I](optional)\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]end\f[R] \f[I](optional)\f[R]
 End index (not included).
 Defaults to \f[V]this.length\f[R].
-.RE
 .SS Return value
 .PP
 The modified array.
-.SH Description
+.SH DESCRIPTION
 .PP
 The elements interval to fill is [\f[V]start\f[R], \f[V]end\f[R]).
 .PP
@@ -68,7 +62,7 @@ default values of \f[V]0\f[R] and the \f[V]length\f[R] of the
 If \f[V]start\f[R] is negative, it is treated as \f[V]length+start\f[R]
 where \f[V]length\f[R] is the length of the array.
 If \f[V]end\f[R] is negative, it is treated as \f[V]length+end\f[R].
-.SH Examples
+.SH EXAMPLES
 .SS Using fill()
 .IP
 .nf
@@ -80,7 +74,7 @@ new Uint8Array([1, 2, 3]).fill(4, 1, 1); // Uint8Array [1, 2, 3]
 new Uint8Array([1, 2, 3]).fill(4, -3, -2); // Uint8Array [4, 2, 3]
 \f[R]
 .fi
-.SH See also
+.SH SEE ALSO
 .IP \[bu] 2
 Polyfill of \f[V]TypedArray.prototype.fill\f[R] in
 \f[V]core-js\f[R] (https://github.com/zloirock/core-js#ecmascript-typed-arrays)

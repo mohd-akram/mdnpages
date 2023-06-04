@@ -14,14 +14,17 @@
 . ftr VB CB
 . ftr VBI CBI
 .\}
-.TH "String.matchAll" "JS" "2023-06-02" "JavaScript" "JavaScript Reference Manual"
+.TH "String.matchAll" "JS" "June 2, 2023" "JavaScript" "JavaScript Reference Manual"
 .hy
-.SH Synopsis
+.SH NAME
+.PP
+String.matchAll - String.prototype.matchAll()
+.SH SYNOPSIS
 .PP
 The \f[B]\f[VB]matchAll()\f[B]\f[R] method returns an iterator of all
 results matching a string against a regular expression, including
 capturing groups.
-.SH Syntax
+.SH SYNTAX
 .IP
 .nf
 \f[C]
@@ -29,13 +32,11 @@ matchAll(regexp)
 \f[R]
 .fi
 .SS Parameters
-.IP \[bu] 2
-\f[V]regexp\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]regexp\f[R]
 A regular expression object, or any object that has a
 \f[V]Symbol.matchAll\f[R] method.
-.RS 2
+.RS
 .PP
 If \f[V]regexp\f[R] is not a \f[V]RegExp\f[R] object and does not have a
 \f[V]Symbol.matchAll\f[R] method, it is implicitly converted to a
@@ -44,22 +45,18 @@ If \f[V]regexp\f[R] is not a \f[V]RegExp\f[R] object and does not have a
 If \f[V]regexp\f[R] is a regex, then it must have the global
 (\f[V]g\f[R]) flag set, or a \f[V]TypeError\f[R] is thrown.
 .RE
-.RE
 .SS Return value
 .PP
 An iterable iterator object (which is not restartable) of matches.
 Each match is an array with the same shape as the return value of
 \f[V]RegExp.prototype.exec()\f[R].
 .SS Exceptions
-.IP \[bu] 2
-\f[V]TypeError\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]TypeError\f[R]
 Thrown if the \f[V]regexp\f[R] is a regex that does not have the global
 (\f[V]g\f[R]) flag set (its \f[V]flags\f[R] property does not contain
 \f[V]\[dq]g\[dq]\f[R]).
-.RE
-.SH Description
+.SH DESCRIPTION
 .PP
 The implementation of \f[V]String.prototype.matchAll\f[R] itself is very
 simple \[em] it simply calls the \f[V]Symbol.matchAll\f[R] method of the
@@ -67,7 +64,7 @@ argument with the string as the first parameter (apart from the extra
 input validation that the regex is global).
 The actual implementation comes from
 \f[V]RegExp.prototype[\[at]\[at]matchAll]()\f[R].
-.SH Examples
+.SH EXAMPLES
 .SS Regexp.prototype.exec() and matchAll()
 .PP
 Without \f[V]matchAll()\f[R], it\[cq]s possible to use calls to
@@ -195,7 +192,7 @@ str.matchAll({
 }); // returns [[\[dq]Yes, it\[aq]s interesting.\[dq]]]
 \f[R]
 .fi
-.SH See also
+.SH SEE ALSO
 .IP \[bu] 2
 Polyfill of \f[V]String.prototype.matchAll\f[R] in
 \f[V]core-js\f[R] (https://github.com/zloirock/core-js#ecmascript-string-and-regexp)

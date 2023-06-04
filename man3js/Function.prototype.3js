@@ -15,9 +15,12 @@
 . ftr VB CB
 . ftr VBI CBI
 .\}
-.TH "Function.prototype" "JS" "2023-06-02" "JavaScript" "JavaScript Reference Manual"
+.TH "Function.prototype" "JS" "June 2, 2023" "JavaScript" "JavaScript Reference Manual"
 .hy
-.SH Synopsis
+.SH NAME
+.PP
+Function.prototype - Function: prototype
+.SH SYNOPSIS
 .PP
 The \f[B]\f[VB]prototype\f[B]\f[R] data property of a \f[V]Function\f[R]
 instance is used when the function is used as a constructor with the
@@ -28,7 +31,7 @@ It will become the new object\[cq]s prototype.
 \f[B]Note:\f[R] Not all \f[V]Function\f[R] objects have the
 \f[V]prototype\f[R] property \[em] see description.
 .RE
-.SH Value
+.SH VALUE
 .PP
 An object.
 .PP
@@ -56,7 +59,7 @@ T}
 \f[B]Note:\f[R] The \f[V]prototype\f[R] property of classes is not
 writable.
 .RE
-.SH Description
+.SH DESCRIPTION
 .PP
 When a function is called with \f[V]new\f[R], the constructor\[cq]s
 \f[V]prototype\f[R] property will become the resulting object\[cq]s
@@ -152,7 +155,7 @@ Ctor.prototype = 3;
 console.log(Object.getPrototypeOf(new Ctor()) === Object.prototype); // true
 \f[R]
 .fi
-.SH Examples
+.SH EXAMPLES
 .SS Changing the prototype of all instances by mutating the prototype property
 .IP
 .nf
@@ -207,7 +210,7 @@ class Dog {
 console.log(new Dog(\[dq]Jack\[dq]).species); // \[dq]dog\[dq]
 \f[R]
 .fi
-.SH See also
+.SH SEE ALSO
 .IP \[bu] 2
 \f[V]Function\f[R]
 .IP \[bu] 2

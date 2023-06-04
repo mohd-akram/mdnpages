@@ -14,13 +14,16 @@
 . ftr VB CB
 . ftr VBI CBI
 .\}
-.TH "String.concat" "JS" "2023-06-02" "JavaScript" "JavaScript Reference Manual"
+.TH "String.concat" "JS" "June 2, 2023" "JavaScript" "JavaScript Reference Manual"
 .hy
-.SH Synopsis
+.SH NAME
+.PP
+String.concat - String.prototype.concat()
+.SH SYNOPSIS
 .PP
 The \f[B]\f[VB]concat()\f[B]\f[R] method concatenates the string
 arguments to the calling string and returns a new string.
-.SH Syntax
+.SH SYNTAX
 .IP
 .nf
 \f[C]
@@ -30,16 +33,13 @@ concat(str1, str2, /* \&..., */ strN)
 \f[R]
 .fi
 .SS Parameters
-.IP \[bu] 2
-\f[V]strN\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]strN\f[R]
 One or more strings to concatenate to \f[V]str\f[R].
-.RE
 .SS Return value
 .PP
 A new string containing the combined text of the strings provided.
-.SH Description
+.SH DESCRIPTION
 .PP
 The \f[V]concat()\f[R] function concatenates the string arguments to the
 calling string and returns a new string.
@@ -55,7 +55,7 @@ concatenation operators (\f[V]+\f[R], \f[V]+=\f[R]), except that
 addition coerces its operands to primitives first.
 For more information, see the reference page for the \f[V]+\f[R]
 operator.
-.SH Examples
+.SH EXAMPLES
 .SS Using concat()
 .PP
 The following example combines strings into a new string.
@@ -76,7 +76,7 @@ const greetList = [\[dq]Hello\[dq], \[dq] \[dq], \[dq]Venkat\[dq], \[dq]!\[dq]];
 \[dq]\[dq].concat(4, 5); // \[dq]45\[dq]
 \f[R]
 .fi
-.SH See also
+.SH SEE ALSO
 .IP \[bu] 2
 \f[V]Array.prototype.concat()\f[R]
 .IP \[bu] 2

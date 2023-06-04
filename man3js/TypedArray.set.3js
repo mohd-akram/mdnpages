@@ -14,13 +14,16 @@
 . ftr VB CB
 . ftr VBI CBI
 .\}
-.TH "TypedArray.set" "JS" "2023-06-02" "JavaScript" "JavaScript Reference Manual"
+.TH "TypedArray.set" "JS" "June 2, 2023" "JavaScript" "JavaScript Reference Manual"
 .hy
-.SH Synopsis
+.SH NAME
+.PP
+TypedArray.set - TypedArray.prototype.set()
+.SH SYNOPSIS
 .PP
 The \f[B]\f[VB]set()\f[B]\f[R] method stores multiple values in the
 typed array, reading input values from a specified array.
-.SH Syntax
+.SH SYNTAX
 .IP
 .nf
 \f[C]
@@ -32,43 +35,32 @@ set(typedarray, targetOffset)
 \f[R]
 .fi
 .SS Parameters
-.IP \[bu] 2
-\f[V]array\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]array\f[R]
 The array from which to copy values.
 All values from the source array are copied into the target array,
 unless the length of the source array plus the target offset exceeds the
 length of the target array, in which case an exception is thrown.
-.RE
-.IP \[bu] 2
-\f[V]typedarray\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]typedarray\f[R]
 If the source array is a typed array, the two arrays may share the same
 underlying \f[V]ArrayBuffer\f[R]; the JavaScript engine will
 intelligently \f[B]copy\f[R] the source range of the buffer to the
 destination range.
-.RE
-.IP \[bu] 2
-\f[V]targetOffset\f[R] \f[I](optional)\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]targetOffset\f[R] \f[I](optional)\f[R]
 The offset into the target array at which to begin writing values from
 the source array.
 If this value is omitted, 0 is assumed (that is, the source array will
 overwrite values in the target array starting at index 0).
-.RE
 .SS Return value
 .PP
 \f[V]undefined\f[R].
 .SS Exceptions
-.IP \[bu] 2
-\f[V]RangeError\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]RangeError\f[R]
 Thrown if one of the two conditions is met:
-.RS 2
+.RS
 .IP \[bu] 2
 An element will be stored beyond the end of the typed array, either
 because \f[V]targetOffset\f[R] is too large or because \f[V]array\f[R]
@@ -76,8 +68,7 @@ or \f[V]typedarray\f[R] is too large.
 .IP \[bu] 2
 \f[V]targetOffset\f[R] is negative.
 .RE
-.RE
-.SH Examples
+.SH EXAMPLES
 .SS Using set()
 .IP
 .nf
@@ -90,7 +81,7 @@ uint8.set([1, 2, 3], 3);
 console.log(uint8); // Uint8Array [ 0, 0, 0, 1, 2, 3, 0, 0 ]
 \f[R]
 .fi
-.SH See also
+.SH SEE ALSO
 .IP \[bu] 2
 Polyfill of \f[V]TypedArray.prototype.set\f[R] in
 \f[V]core-js\f[R] (https://github.com/zloirock/core-js#ecmascript-typed-arrays)

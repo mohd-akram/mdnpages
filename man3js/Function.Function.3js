@@ -14,9 +14,12 @@
 . ftr VB CB
 . ftr VBI CBI
 .\}
-.TH "Function.Function" "JS" "2023-06-02" "JavaScript" "JavaScript Reference Manual"
+.TH "Function.Function" "JS" "June 2, 2023" "JavaScript" "JavaScript Reference Manual"
 .hy
-.SH Synopsis
+.SH NAME
+.PP
+Function.Function - Function() constructor
+.SH SYNOPSIS
 .PP
 The \f[B]\f[VB]Function()\f[B]\f[R] constructor creates
 \f[V]Function\f[R] objects.
@@ -26,7 +29,7 @@ issues as \f[V]eval()\f[R].
 However, unlike \f[V]eval\f[R] (which may have access to the local
 scope), the \f[V]Function\f[R] constructor creates functions which
 execute in the global scope only.
-.SH Syntax
+.SH SYNTAX
 .IP
 .nf
 \f[C]
@@ -48,16 +51,14 @@ Function(arg0, arg1, /* \&... ,*/ argN, functionBody)
 Both create a new \f[V]Function\f[R] instance.
 .RE
 .SS Parameters
-.IP \[bu] 2
-\f[V]argN\f[R] \f[I](optional)\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]argN\f[R] \f[I](optional)\f[R]
 Names to be used by the function as formal argument names.
 Each must be a string that corresponds to a valid JavaScript parameter
 (any of plain identifier, rest parameter, or destructured parameter,
 optionally with a default), or a list of such strings separated with
 commas.
-.RS 2
+.RS
 .PP
 As the parameters are parsed in the same way as function expressions,
 whitespace and comments are accepted.
@@ -67,15 +68,11 @@ For example:
 (\f[V]\[dq]x, theValue = 42\[dq], \[dq][a, b]\[dq]\f[R] is also correct,
 though very confusing to read.)
 .RE
-.RE
-.IP \[bu] 2
-\f[V]functionBody\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]functionBody\f[R]
 A string containing the JavaScript statements comprising the function
 definition.
-.RE
-.SH Description
+.SH DESCRIPTION
 .PP
 \f[V]Function\f[R] objects created with the \f[V]Function\f[R]
 constructor are parsed when the function is created.
@@ -140,7 +137,7 @@ new Function(\[dq]/*\[dq], \[dq]*/) {\[dq]);
 // Doesn\[aq]t become \[dq]function anonymous(/*) {*/) {}\[dq]
 \f[R]
 .fi
-.SH Examples
+.SH EXAMPLES
 .SS Specifying arguments with the Function constructor
 .PP
 The following code creates a \f[V]Function\f[R] object that takes two
@@ -195,7 +192,7 @@ sayHello(\[dq]world\[dq]);
 // Hello, world
 \f[R]
 .fi
-.SH See also
+.SH SEE ALSO
 .IP \[bu] 2
 \f[V]function\f[R] declaration
 .IP \[bu] 2

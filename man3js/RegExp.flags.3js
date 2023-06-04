@@ -14,13 +14,16 @@
 . ftr VB CB
 . ftr VBI CBI
 .\}
-.TH "RegExp.flags" "JS" "2023-06-02" "JavaScript" "JavaScript Reference Manual"
+.TH "RegExp.flags" "JS" "June 2, 2023" "JavaScript" "JavaScript Reference Manual"
 .hy
-.SH Synopsis
+.SH NAME
+.PP
+RegExp.flags - RegExp.prototype.flags
+.SH SYNOPSIS
 .PP
 The \f[B]\f[VB]flags\f[B]\f[R] accessor property of \f[V]RegExp\f[R]
 instances returns the flags of this regular expression.
-.SH Description
+.SH DESCRIPTION
 .PP
 \f[V]RegExp.prototype.flags\f[R] has a string as its value.
 Flags in the \f[V]flags\f[R] property are sorted alphabetically (from
@@ -34,7 +37,7 @@ reading individual flag accessors.
 .PP
 The set accessor of \f[V]flags\f[R] is \f[V]undefined\f[R].
 You cannot change this property directly.
-.SH Examples
+.SH EXAMPLES
 .SS Using flags
 .IP
 .nf
@@ -43,7 +46,7 @@ You cannot change this property directly.
 /bar/myu.flags; // \[dq]muy\[dq]
 \f[R]
 .fi
-.SH See also
+.SH SEE ALSO
 .IP \[bu] 2
 Polyfill of \f[V]RegExp.prototype.flags\f[R] in
 \f[V]core-js\f[R] (https://github.com/zloirock/core-js#ecmascript-string-and-regexp)

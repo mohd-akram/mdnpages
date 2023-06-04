@@ -15,9 +15,12 @@
 . ftr VB CB
 . ftr VBI CBI
 .\}
-.TH "Array.reduce" "JS" "2023-06-02" "JavaScript" "JavaScript Reference Manual"
+.TH "Array.reduce" "JS" "June 2, 2023" "JavaScript" "JavaScript Reference Manual"
 .hy
-.SH Synopsis
+.SH NAME
+.PP
+Array.reduce - Array.prototype.reduce()
+.SH SYNOPSIS
 .PP
 The \f[B]\f[VB]reduce()\f[B]\f[R] method executes a user-supplied
 \[lq]reducer\[rq] callback function on each element of the array, in
@@ -39,7 +42,7 @@ The reducer walks through the array element-by-element, at each step
 adding the current array value to the result from the previous step
 (this result is the running sum of all the previous steps) \[em] until
 there are no more elements to add.
-.SH Syntax
+.SH SYNTAX
 .IP
 .nf
 \f[C]
@@ -48,54 +51,37 @@ reduce(callbackFn, initialValue)
 \f[R]
 .fi
 .SS Parameters
-.IP \[bu] 2
-\f[V]callbackFn\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]callbackFn\f[R]
 A function to execute for each element in the array.
 Its return value becomes the value of the \f[V]accumulator\f[R]
 parameter on the next invocation of \f[V]callbackFn\f[R].
 For the last invocation, the return value becomes the return value of
 \f[V]reduce()\f[R].
 The function is called with the following arguments:
-.RS 2
-.IP \[bu] 2
-\f[V]accumulator\f[R]
-.RS 2
-.IP \[bu] 2
+.RS
+.TP
+\f[B]accumulator\f[R]
 The value resulting from the previous call to \f[V]callbackFn\f[R].
 On first call, \f[V]initialValue\f[R] if specified, otherwise the value
 of \f[V]array[0]\f[R].
-.RE
-.IP \[bu] 2
-\f[V]currentValue\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]currentValue\f[R]
 The value of the current element.
 On first call, the value of \f[V]array[0]\f[R] if an
 \f[V]initialValue\f[R] was specified, otherwise the value of
 \f[V]array[1]\f[R].
-.RE
-.IP \[bu] 2
-\f[V]currentIndex\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]currentIndex\f[R]
 The index position of \f[V]currentValue\f[R] in the array.
 On first call, \f[V]0\f[R] if \f[V]initialValue\f[R] was specified,
 otherwise \f[V]1\f[R].
-.RE
-.IP \[bu] 2
-\f[V]array\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]array\f[R]
 The array \f[V]reduce()\f[R] was called upon.
 .RE
-.RE
-.RE
-.IP \[bu] 2
-\f[V]initialValue\f[R] \f[I](optional)\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]initialValue\f[R] \f[I](optional)\f[R]
 A value to which \f[V]accumulator\f[R] is initialized the first time the
 callback is called.
 If \f[V]initialValue\f[R] is specified, \f[V]callbackFn\f[R] starts
@@ -106,20 +92,16 @@ and \f[V]callbackFn\f[R] starts executing with the second value in the
 array as \f[V]currentValue\f[R].
 In this case, if the array is empty (so that there\[cq]s no first value
 to return as \f[V]accumulator\f[R]), an error is thrown.
-.RE
 .SS Return value
 .PP
 The value that results from running the \[lq]reducer\[rq] callback
 function to completion over the entire array.
 .SS Exceptions
-.IP \[bu] 2
-\f[V]TypeError\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]TypeError\f[R]
 Thrown if the array contains no elements and \f[V]initialValue\f[R] is
 not provided.
-.RE
-.SH Description
+.SH DESCRIPTION
 .PP
 The \f[V]reduce()\f[R] method is an iterative method.
 It runs a \[lq]reducer\[rq] callback function over all elements in the
@@ -213,7 +195,7 @@ const getMax = (a, b) => Math.max(a, b);
 [].reduce(getMax); // TypeError
 \f[R]
 .fi
-.SH Examples
+.SH EXAMPLES
 .SS How reduce() works without an initial value
 .PP
 The code below shows what happens if we call \f[V]reduce()\f[R] with an
@@ -762,7 +744,7 @@ const allEven = array.every((val) => val % 2 === 0);
 .PP
 In cases where \f[V]reduce()\f[R] is the best choice, documentation and
 semantic variable naming can help mitigate readability drawbacks.
-.SH See also
+.SH SEE ALSO
 .IP \[bu] 2
 Polyfill of \f[V]Array.prototype.reduce\f[R] in
 \f[V]core-js\f[R] (https://github.com/zloirock/core-js#ecmascript-array)

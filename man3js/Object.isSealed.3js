@@ -14,13 +14,16 @@
 . ftr VB CB
 . ftr VBI CBI
 .\}
-.TH "Object.isSealed" "JS" "2023-06-02" "JavaScript" "JavaScript Reference Manual"
+.TH "Object.isSealed" "JS" "June 2, 2023" "JavaScript" "JavaScript Reference Manual"
 .hy
-.SH Synopsis
+.SH NAME
+.PP
+Object.isSealed - Object.isSealed()
+.SH SYNOPSIS
 .PP
 The \f[B]\f[VB]Object.isSealed()\f[B]\f[R] static method determines if
 an object is sealed.
-.SH Syntax
+.SH SYNTAX
 .IP
 .nf
 \f[C]
@@ -28,24 +31,21 @@ Object.isSealed(obj)
 \f[R]
 .fi
 .SS Parameters
-.IP \[bu] 2
-\f[V]obj\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]obj\f[R]
 The object which should be checked.
-.RE
 .SS Return value
 .PP
 A \f[V]Boolean\f[R] indicating whether or not the given object is
 sealed.
-.SH Description
+.SH DESCRIPTION
 .PP
 Returns \f[V]true\f[R] if the object is sealed, otherwise
 \f[V]false\f[R].
 An object is sealed if it is not \f[V]extensible\f[R] and if all its
 properties are non-configurable and therefore not removable (but not
 necessarily non-writable).
-.SH Examples
+.SH EXAMPLES
 .SS Using Object.isSealed
 .IP
 .nf
@@ -116,7 +116,7 @@ Object.isSealed(1);
 // true                          (ES2015 code)
 \f[R]
 .fi
-.SH See also
+.SH SEE ALSO
 .IP \[bu] 2
 \f[V]Object.seal()\f[R]
 .IP \[bu] 2

@@ -14,9 +14,12 @@
 . ftr VB CB
 . ftr VBI CBI
 .\}
-.TH "RegExp.leftContext" "JS" "2023-06-02" "JavaScript" "JavaScript Reference Manual"
+.TH "RegExp.leftContext" "JS" "June 2, 2023" "JavaScript" "JavaScript Reference Manual"
 .hy
-.SH Synopsis
+.SH NAME
+.PP
+RegExp.leftContext - RegExp.leftContext ($\[ga])
+.SH SYNOPSIS
 .PP
 \f[I](deprecated)\f[R]
 .RS
@@ -29,7 +32,7 @@ See deprecated RegExp features for more information.
 The \f[B]\f[VB]RegExp.leftContext\f[B]\f[R] static accessor property
 returns the substring preceding the most recent match.
 \f[V]RegExp[\[dq]$\[ga]\[dq]]\f[R] is an alias for this property.
-.SH Description
+.SH DESCRIPTION
 .PP
 Because \f[V]leftContext\f[R] is a static property of \f[V]RegExp\f[R],
 you always use it as \f[V]RegExp.leftContext\f[R] or
@@ -50,7 +53,7 @@ Use the bracket notation instead.
 \f[V]$\[ga]\f[R] can also be used in the replacement string of
 \f[V]String.prototype.replace()\f[R], but that\[cq]s unrelated to the
 \f[V]RegExp[\[dq]$\[ga]\[dq]]\f[R] legacy property.
-.SH Examples
+.SH EXAMPLES
 .SS Using leftContext and $\[ga]
 .IP
 .nf
@@ -61,7 +64,7 @@ RegExp.leftContext; // \[dq]hello \[dq]
 RegExp[\[dq]$\[ga]\[dq]]; // \[dq]hello \[dq]
 \f[R]
 .fi
-.SH See also
+.SH SEE ALSO
 .IP \[bu] 2
 \f[V]RegExp.input ($_)\f[R]
 .IP \[bu] 2

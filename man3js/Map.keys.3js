@@ -14,14 +14,17 @@
 . ftr VB CB
 . ftr VBI CBI
 .\}
-.TH "Map.keys" "JS" "2023-06-02" "JavaScript" "JavaScript Reference Manual"
+.TH "Map.keys" "JS" "June 2, 2023" "JavaScript" "JavaScript Reference Manual"
 .hy
-.SH Synopsis
+.SH NAME
+.PP
+Map.keys - Map.prototype.keys()
+.SH SYNOPSIS
 .PP
 The \f[B]\f[VB]keys()\f[B]\f[R] method returns a new \f[I]map
 iterator\f[R] object that contains the keys for each element in the
 \f[V]Map\f[R] object in insertion order.
-.SH Syntax
+.SH SYNTAX
 .IP
 .nf
 \f[C]
@@ -31,7 +34,7 @@ keys()
 .SS Return value
 .PP
 A new iterable iterator object.
-.SH Examples
+.SH EXAMPLES
 .SS Using keys()
 .IP
 .nf
@@ -48,7 +51,7 @@ console.log(mapIter.next().value); // 1
 console.log(mapIter.next().value); // {}
 \f[R]
 .fi
-.SH See also
+.SH SEE ALSO
 .IP \[bu] 2
 \f[V]Map.prototype.entries()\f[R]
 .IP \[bu] 2

@@ -15,16 +15,19 @@
 . ftr VB CB
 . ftr VBI CBI
 .\}
-.TH "Atomics.xor" "JS" "2023-06-02" "JavaScript" "JavaScript Reference Manual"
+.TH "Atomics.xor" "JS" "June 2, 2023" "JavaScript" "JavaScript Reference Manual"
 .hy
-.SH Synopsis
+.SH NAME
+.PP
+Atomics.xor - Atomics.xor()
+.SH SYNOPSIS
 .PP
 The \f[B]\f[VB]Atomics.xor()\f[B]\f[R] static method computes a bitwise
 XOR with a given value at a given position in the array, and returns the
 old value at that position.
 This atomic operation guarantees that no other write happens until the
 modified value is written back.
-.SH Syntax
+.SH SYNTAX
 .IP
 .nf
 \f[C]
@@ -32,44 +35,29 @@ Atomics.xor(typedArray, index, value)
 \f[R]
 .fi
 .SS Parameters
-.IP \[bu] 2
-\f[V]typedArray\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]typedArray\f[R]
 An integer typed array.
 One of \f[V]Int8Array\f[R], \f[V]Uint8Array\f[R], \f[V]Int16Array\f[R],
 \f[V]Uint16Array\f[R], \f[V]Int32Array\f[R], \f[V]Uint32Array\f[R],
 \f[V]BigInt64Array\f[R], or \f[V]BigUint64Array\f[R].
-.RE
-.IP \[bu] 2
-\f[V]index\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]index\f[R]
 The position in the \f[V]typedArray\f[R] to compute the bitwise XOR.
-.RE
-.IP \[bu] 2
-\f[V]value\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]value\f[R]
 The number to compute the bitwise XOR with.
-.RE
 .SS Return value
 .PP
 The old value at the given position (\f[V]typedArray[index]\f[R]).
 .SS Exceptions
-.IP \[bu] 2
-\f[V]TypeError\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]TypeError\f[R]
 Thrown if \f[V]typedArray\f[R] is not one of the allowed integer types.
-.RE
-.IP \[bu] 2
-\f[V]RangeError\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]RangeError\f[R]
 Thrown if \f[V]index\f[R] is out of bounds in the \f[V]typedArray\f[R].
-.RE
-.SH Description
+.SH DESCRIPTION
 .PP
 The bitwise XOR operation yields 1, if \f[V]a\f[R] and \f[V]b\f[R] are
 different.
@@ -127,7 +115,7 @@ For example, a bitwise XOR of \f[V]5 \[ha] 1\f[R] results in
 4  0100
 \f[R]
 .fi
-.SH Examples
+.SH EXAMPLES
 .SS Using xor
 .IP
 .nf
@@ -140,7 +128,7 @@ Atomics.xor(ta, 0, 1); // returns 5, the old value
 Atomics.load(ta, 0); // 4
 \f[R]
 .fi
-.SH See also
+.SH SEE ALSO
 .IP \[bu] 2
 \f[V]Atomics\f[R]
 .IP \[bu] 2

@@ -14,9 +14,12 @@
 . ftr VB CB
 . ftr VBI CBI
 .\}
-.TH "Float32Array" "JS" "2023-06-02" "JavaScript" "JavaScript Reference Manual"
+.TH "Float32Array" "JS" "June 2, 2023" "JavaScript" "JavaScript Reference Manual"
 .hy
-.SH Synopsis
+.SH NAME
+.PP
+Float32Array - Float32Array
+.SH SYNOPSIS
 .PP
 The \f[B]\f[VB]Float32Array\f[B]\f[R] typed array represents an array of
 32-bit floating point numbers (corresponding to the C \f[V]float\f[R]
@@ -29,54 +32,42 @@ using bracket notation).
 .PP
 \f[V]Float32Array\f[R] is a subclass of the hidden \f[V]TypedArray\f[R]
 class.
-.SH Constructor
-.IP \[bu] 2
-\f[V]Float32Array()\f[R]
-.RS 2
-.IP \[bu] 2
+.SH CONSTRUCTOR
+.TP
+\f[B]Float32Array()\f[R]
 Creates a new \f[V]Float32Array\f[R] object.
-.RE
-.SH Static properties
+.SH STATIC PROPERTIES
 .PP
 \f[I]Also inherits static properties from its parent
 \f[VI]TypedArray\f[I]\f[R].
-.IP \[bu] 2
-\f[V]Float32Array.BYTES_PER_ELEMENT\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]Float32Array.BYTES_PER_ELEMENT\f[R]
 Returns a number value of the element size.
 \f[V]4\f[R] in the case of \f[V]Float32Array\f[R].
-.RE
-.SH Static methods
+.SH STATIC METHODS
 .PP
 \f[I]Inherits static methods from its parent \f[VI]TypedArray\f[I]\f[R].
-.SH Instance properties
+.SH INSTANCE PROPERTIES
 .PP
 \f[I]Also inherits instance properties from its parent
 \f[VI]TypedArray\f[I]\f[R].
 .PP
 These properties are defined on \f[V]Float32Array.prototype\f[R] and
 shared by all \f[V]Float32Array\f[R] instances.
-.IP \[bu] 2
-\f[V]Float32Array.prototype.BYTES_PER_ELEMENT\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]Float32Array.prototype.BYTES_PER_ELEMENT\f[R]
 Returns a number value of the element size.
 \f[V]4\f[R] in the case of a \f[V]Float32Array\f[R].
-.RE
-.IP \[bu] 2
-\f[V]Float32Array.prototype.constructor\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]Float32Array.prototype.constructor\f[R]
 The constructor function that created the instance object.
 For \f[V]Float32Array\f[R] instances, the initial value is the
 \f[V]Float32Array\f[R] constructor.
-.RE
-.SH Instance methods
+.SH INSTANCE METHODS
 .PP
 \f[I]Inherits instance methods from its parent
 \f[VI]TypedArray\f[I]\f[R].
-.SH Examples
+.SH EXAMPLES
 .SS Different ways to create a \f[V]Float32Array\f[R]
 .IP
 .nf
@@ -110,7 +101,7 @@ console.log(float32FromIterable);
 // Float32Array [1, 2, 3]
 \f[R]
 .fi
-.SH See also
+.SH SEE ALSO
 .IP \[bu] 2
 Polyfill of \f[V]Float32Array\f[R] in
 \f[V]core-js\f[R] (https://github.com/zloirock/core-js#ecmascript-typed-arrays)

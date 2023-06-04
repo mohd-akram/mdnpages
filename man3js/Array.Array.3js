@@ -14,13 +14,16 @@
 . ftr VB CB
 . ftr VBI CBI
 .\}
-.TH "Array.Array" "JS" "2023-06-02" "JavaScript" "JavaScript Reference Manual"
+.TH "Array.Array" "JS" "June 2, 2023" "JavaScript" "JavaScript Reference Manual"
 .hy
-.SH Synopsis
+.SH NAME
+.PP
+Array.Array - Array() constructor
+.SH SYNOPSIS
 .PP
 The \f[B]\f[VB]Array()\f[B]\f[R] constructor creates \f[V]Array\f[R]
 objects.
-.SH Syntax
+.SH SYNTAX
 .IP
 .nf
 \f[C]
@@ -44,10 +47,8 @@ Array(arrayLength)
 Both create a new \f[V]Array\f[R] instance.
 .RE
 .SS Parameters
-.IP \[bu] 2
-\f[V]elementN\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]elementN\f[R]
 A JavaScript array is initialized with the given elements, except in the
 case where a single argument is passed to the \f[V]Array\f[R]
 constructor and that argument is a number (see the \f[V]arrayLength\f[R]
@@ -55,28 +56,21 @@ parameter below).
 Note that this special case only applies to JavaScript arrays created
 with the \f[V]Array\f[R] constructor, not array literals created with
 the bracket syntax.
-.RE
-.IP \[bu] 2
-\f[V]arrayLength\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]arrayLength\f[R]
 If the only argument passed to the \f[V]Array\f[R] constructor is an
 integer between 0 and 232 - 1 (inclusive), this returns a new JavaScript
 array with its \f[V]length\f[R] property set to that number
 (\f[B]Note:\f[R] this implies an array of \f[V]arrayLength\f[R] empty
 slots, not slots with actual \f[V]undefined\f[R] values \[em] see sparse
 arrays).
-.RE
 .SS Exceptions
-.IP \[bu] 2
-\f[V]RangeError\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]RangeError\f[R]
 Thrown if there\[cq]s only one argument (\f[V]arrayLength\f[R]) that is
 a number, but its value is not an integer or not between 0 and 232 - 1
 (inclusive).
-.RE
-.SH Examples
+.SH EXAMPLES
 .SS Array literal notation
 .PP
 Arrays can be created using the literal notation:
@@ -128,7 +122,7 @@ console.log(fruits.length); // 2
 console.log(fruits[0]); // \[dq]Apple\[dq]
 \f[R]
 .fi
-.SH See also
+.SH SEE ALSO
 .IP \[bu] 2
 Indexed collections
 .IP \[bu] 2

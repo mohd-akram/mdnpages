@@ -14,14 +14,17 @@
 . ftr VB CB
 . ftr VBI CBI
 .\}
-.TH "Array.copyWithin" "JS" "2023-06-02" "JavaScript" "JavaScript Reference Manual"
+.TH "Array.copyWithin" "JS" "June 2, 2023" "JavaScript" "JavaScript Reference Manual"
 .hy
-.SH Synopsis
+.SH NAME
+.PP
+Array.copyWithin - Array.prototype.copyWithin()
+.SH SYNOPSIS
 .PP
 The \f[B]\f[VB]copyWithin()\f[B]\f[R] method shallow copies part of an
 array to another location in the same array and returns it without
 modifying its length.
-.SH Syntax
+.SH SYNTAX
 .IP
 .nf
 \f[C]
@@ -31,13 +34,11 @@ copyWithin(target, start, end)
 \f[R]
 .fi
 .SS Parameters
-.IP \[bu] 2
-\f[V]target\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]target\f[R]
 Zero-based index at which to copy the sequence to, converted to an
 integer.
-.RS 2
+.RS
 .IP \[bu] 2
 Negative index counts back from the end of the array \[em] if
 \f[V]target < 0\f[R], \f[V]target + array.length\f[R] is used.
@@ -51,14 +52,11 @@ normalization, copying only happens until the end of
 \f[V]array.length\f[R] (in other words, \f[V]copyWithin()\f[R] never
 extends the array).
 .RE
-.RE
-.IP \[bu] 2
-\f[V]start\f[R] \f[I](optional)\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]start\f[R] \f[I](optional)\f[R]
 Zero-based index at which to start copying elements from, converted to
 an integer.
-.RS 2
+.RS
 .IP \[bu] 2
 Negative index counts back from the end of the array \[em] if
 \f[V]start < 0\f[R], \f[V]start + array.length\f[R] is used.
@@ -68,15 +66,12 @@ If \f[V]start < -array.length\f[R] or \f[V]start\f[R] is omitted,
 .IP \[bu] 2
 If \f[V]start >= array.length\f[R], nothing is copied.
 .RE
-.RE
-.IP \[bu] 2
-\f[V]end\f[R] \f[I](optional)\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]end\f[R] \f[I](optional)\f[R]
 Zero-based index at which to end copying elements from, converted to an
 integer.
 \f[V]copyWithin()\f[R] copies up to but not including \f[V]end\f[R].
-.RS 2
+.RS
 .IP \[bu] 2
 Negative index counts back from the end of the array \[em] if
 \f[V]end < 0\f[R], \f[V]end + array.length\f[R] is used.
@@ -90,11 +85,10 @@ copied.
 If \f[V]end\f[R] is positioned before or at \f[V]start\f[R] after
 normalization, nothing is copied.
 .RE
-.RE
 .SS Return value
 .PP
 The modified array.
-.SH Description
+.SH DESCRIPTION
 .PP
 The \f[V]copyWithin()\f[R] method works like C and C++\[cq]s
 \f[V]memmove\f[R], and is a high-performance method to shift the data of
@@ -118,7 +112,7 @@ It only expects the \f[V]this\f[R] value to have a \f[V]length\f[R]
 property and integer-keyed properties.
 Although strings are also array-like, this method is not suitable to be
 applied on them, as strings are immutable.
-.SH Examples
+.SH EXAMPLES
 .SS Using copyWithin()
 .IP
 .nf
@@ -163,7 +157,7 @@ console.log(Array.prototype.copyWithin.call(arrayLike, 3, 1));
 // The \[aq]3\[aq] property is deleted because the copied source is an empty slot
 \f[R]
 .fi
-.SH See also
+.SH SEE ALSO
 .IP \[bu] 2
 Polyfill of \f[V]Array.prototype.copyWithin\f[R] in
 \f[V]core-js\f[R] (https://github.com/zloirock/core-js#ecmascript-array)

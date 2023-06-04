@@ -14,14 +14,17 @@
 . ftr VB CB
 . ftr VBI CBI
 .\}
-.TH "decodeURIComponent" "JS" "2023-06-02" "JavaScript" "JavaScript Reference Manual"
+.TH "decodeURIComponent" "JS" "June 2, 2023" "JavaScript" "JavaScript Reference Manual"
 .hy
-.SH Synopsis
+.SH NAME
+.PP
+decodeURIComponent - decodeURIComponent()
+.SH SYNOPSIS
 .PP
 The \f[B]\f[VB]decodeURIComponent()\f[B]\f[R] function decodes a Uniform
 Resource Identifier (URI) component previously created by
 \f[V]encodeURIComponent()\f[R] or by a similar routine.
-.SH Syntax
+.SH SYNTAX
 .IP
 .nf
 \f[C]
@@ -29,26 +32,20 @@ decodeURIComponent(encodedURI)
 \f[R]
 .fi
 .SS Parameters
-.IP \[bu] 2
-\f[V]encodedURI\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]encodedURI\f[R]
 An encoded component of a Uniform Resource Identifier.
-.RE
 .SS Return value
 .PP
 A new string representing the decoded version of the given encoded
 Uniform Resource Identifier (URI) component.
 .SS Exceptions
-.IP \[bu] 2
-\f[V]URIError\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]URIError\f[R]
 Thrown if \f[V]encodedURI\f[R] contains a \f[V]%\f[R] not followed by
 two hexadecimal digits, or if the escape sequence does not encode a
 valid UTF-8 character.
-.RE
-.SH Description
+.SH DESCRIPTION
 .PP
 \f[V]decodeURIComponent()\f[R] is a function property of the global
 object.
@@ -58,7 +55,7 @@ described in \f[V]decodeURI()\f[R].
 It decodes \f[I]all\f[R] escape sequences, including those that are not
 created by \f[V]encodeURIComponent\f[R], like
 \f[V]-.!\[ti]*\[aq]()\f[R].
-.SH Examples
+.SH EXAMPLES
 .SS Decoding a Cyrillic URL component
 .IP
 .nf
@@ -96,7 +93,7 @@ decodeQueryParam(\[dq]search+query%20%28correct%29\[dq]);
 // \[aq]search query (correct)\[aq]
 \f[R]
 .fi
-.SH See also
+.SH SEE ALSO
 .IP \[bu] 2
 \f[V]decodeURI\f[R]
 .IP \[bu] 2

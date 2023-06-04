@@ -14,9 +14,12 @@
 . ftr VB CB
 . ftr VBI CBI
 .\}
-.TH "AsyncGenerator" "JS" "2023-06-02" "JavaScript" "JavaScript Reference Manual"
+.TH "AsyncGenerator" "JS" "June 2, 2023" "JavaScript" "JavaScript Reference Manual"
 .hy
-.SH Synopsis
+.SH NAME
+.PP
+AsyncGenerator - AsyncGenerator
+.SH SYNOPSIS
 .PP
 The \f[B]\f[VB]AsyncGenerator\f[B]\f[R] object is returned by an
 \f[V]async generator function\f[R] and it conforms to both the async
@@ -26,7 +29,7 @@ Async generator methods always yield \f[V]Promise\f[R] objects.
 .PP
 \f[V]AsyncGenerator\f[R] is a subclass of the hidden
 \f[V]AsyncIterator\f[R] class.
-.SH Constructor
+.SH CONSTRUCTOR
 .PP
 The \f[V]AsyncGenerator\f[R] constructor is not available globally.
 Instances of \f[V]AsyncGenerator\f[R] must be returned from async
@@ -54,63 +57,48 @@ This object is often stylized as \f[V]AsyncGenerator.prototype\f[R] to
 make it look like a class, but it should be more appropriately called
 \f[V]AsyncGeneratorFunction.prototype.prototype\f[R], because
 \f[V]AsyncGeneratorFunction\f[R] is an actual JavaScript entity.
-.SH Instance properties
+.SH INSTANCE PROPERTIES
 .PP
 These properties are defined on \f[V]AsyncGenerator.prototype\f[R] and
 shared by all \f[V]AsyncGenerator\f[R] instances.
-.IP \[bu] 2
-\f[V]AsyncGenerator.prototype.constructor\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]AsyncGenerator.prototype.constructor\f[R]
 The constructor function that created the instance object.
 For \f[V]AsyncGenerator\f[R] instances, the initial value is
 \f[V]AsyncGeneratorFunction.prototype\f[R].
-.RS 2
+.RS
 .RS
 .PP
 \f[B]Note:\f[R] \f[V]AsyncGenerator\f[R] objects do not store a
 reference to the async generator function that created them.
 .RE
 .RE
-.RE
-.IP \[bu] 2
-\f[V]AsyncGenerator.prototype[\[at]\[at]toStringTag]\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]AsyncGenerator.prototype[\[at]\[at]toStringTag]\f[R]
 The initial value of the \f[V]\[at]\[at]toStringTag\f[R] property is the
 string \f[V]\[dq]AsyncGenerator\[dq]\f[R].
 This property is used in \f[V]Object.prototype.toString()\f[R].
-.RE
-.SH Instance methods
+.SH INSTANCE METHODS
 .PP
 \f[I]Also inherits instance methods from its parent
 \f[VI]AsyncIterator\f[I]\f[R].
-.IP \[bu] 2
-\f[V]AsyncGenerator.prototype.next()\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]AsyncGenerator.prototype.next()\f[R]
 Returns a \f[V]Promise\f[R] which will be resolved with the given value
 yielded by the \f[V]yield\f[R] expression.
-.RE
-.IP \[bu] 2
-\f[V]AsyncGenerator.prototype.return()\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]AsyncGenerator.prototype.return()\f[R]
 Acts as if a \f[V]return\f[R] statement is inserted in the
 generator\[cq]s body at the current suspended position, which finishes
 the generator and allows the generator to perform any cleanup tasks when
 combined with a \f[V]try...finally\f[R] block.
-.RE
-.IP \[bu] 2
-\f[V]AsyncGenerator.prototype.throw()\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]AsyncGenerator.prototype.throw()\f[R]
 Acts as if a \f[V]throw\f[R] statement is inserted in the
 generator\[cq]s body at the current suspended position, which informs
 the generator of an error condition and allows it to handle the error,
 or perform cleanup and close itself.
-.RE
-.SH Examples
+.SH EXAMPLES
 .SS Async generator iteration
 .PP
 The following example iterates over an async generator, logging values
@@ -147,7 +135,7 @@ async function main() {
 main().catch((e) => console.error(e));
 \f[R]
 .fi
-.SH See also
+.SH SEE ALSO
 .IP \[bu] 2
 \f[V]function*\f[R]
 .IP \[bu] 2

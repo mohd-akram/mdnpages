@@ -15,9 +15,12 @@
 . ftr VB CB
 . ftr VBI CBI
 .\}
-.TH "Error.stack" "JS" "2023-06-02" "JavaScript" "JavaScript Reference Manual"
+.TH "Error.stack" "JS" "June 2, 2023" "JavaScript" "JavaScript Reference Manual"
 .hy
-.SH Synopsis
+.SH NAME
+.PP
+Error.stack - Error.prototype.stack
+.SH SYNOPSIS
 .PP
 \f[I](non-standard)\f[R]
 .PP
@@ -26,7 +29,7 @@ The non-standard \f[B]\f[VB]stack\f[B]\f[R] property of an
 in what order, from which line and file, and with what arguments.
 The stack string proceeds from the most recent calls to earlier ones,
 leading back to the original global scope call.
-.SH Value
+.SH VALUE
 .PP
 A string.
 .PP
@@ -57,7 +60,7 @@ T}@T{
 yes
 T}
 .TE
-.SH Description
+.SH DESCRIPTION
 .PP
 Each step will be separated by a newline, with the first part of the
 line being the function name (if not a call from the global scope), then
@@ -98,7 +101,7 @@ while PhantomJS sets it only when throwing the \f[V]Error\f[R], and
 archived MSDN
 docs (https://web.archive.org/web/20180618201428/https://docs.microsoft.com/scripting/javascript/reference/stack-property-error-javascript)
 also seem to match the PhantomJS implementation.
-.SH Examples
+.SH EXAMPLES
 .SS Using the stack property
 .PP
 The following HTML markup demonstrates the use of \f[V]stack\f[R]

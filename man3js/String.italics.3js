@@ -14,9 +14,12 @@
 . ftr VB CB
 . ftr VBI CBI
 .\}
-.TH "String.italics" "JS" "2023-06-02" "JavaScript" "JavaScript Reference Manual"
+.TH "String.italics" "JS" "June 2, 2023" "JavaScript" "JavaScript Reference Manual"
 .hy
-.SH Synopsis
+.SH NAME
+.PP
+String.italics - String.prototype.italics()
+.SH SYNOPSIS
 .PP
 \f[I](deprecated)\f[R]
 .PP
@@ -29,7 +32,7 @@ a string to be displayed as italic.
 standardized for compatibility purposes.
 Use DOM APIs such as \f[V]document.createElement()\f[R] instead.
 .RE
-.SH Syntax
+.SH SYNTAX
 .IP
 .nf
 \f[C]
@@ -40,7 +43,7 @@ italics()
 .PP
 A string beginning with an \f[V]<i>\f[R] start tag, then the text
 \f[V]str\f[R], and then an \f[V]</i>\f[R] end tag.
-.SH Examples
+.SH EXAMPLES
 .SS Using italics()
 .PP
 The following example uses deprecated string methods to change the
@@ -55,7 +58,7 @@ console.log(worldString.italics()); // <i>Hello, world</i>
 console.log(worldString.strike()); // <strike>Hello, world</strike>
 \f[R]
 .fi
-.SH See also
+.SH SEE ALSO
 .IP \[bu] 2
 Polyfill of \f[V]String.prototype.italics\f[R] in
 \f[V]core-js\f[R] (https://github.com/zloirock/core-js#ecmascript-string-and-regexp)

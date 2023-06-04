@@ -14,14 +14,17 @@
 . ftr VB CB
 . ftr VBI CBI
 .\}
-.TH "ArrayBuffer.resizable" "JS" "2023-06-02" "JavaScript" "JavaScript Reference Manual"
+.TH "ArrayBuffer.resizable" "JS" "June 2, 2023" "JavaScript" "JavaScript Reference Manual"
 .hy
-.SH Synopsis
+.SH NAME
+.PP
+ArrayBuffer.resizable - ArrayBuffer.prototype.resizable
+.SH SYNOPSIS
 .PP
 The \f[B]\f[VB]resizable\f[B]\f[R] accessor property of
 \f[V]ArrayBuffer\f[R] instances returns whether this array buffer can be
 resized or not.
-.SH Description
+.SH DESCRIPTION
 .PP
 The \f[V]resizable\f[R] property is an accessor property whose set
 accessor function is \f[V]undefined\f[R], meaning that you can only read
@@ -30,7 +33,7 @@ The value is established when the array is constructed.
 If the \f[V]maxByteLength\f[R] option was set in the constructor,
 \f[V]resizable\f[R] will return \f[V]true\f[R]; if not, it will return
 \f[V]false\f[R].
-.SH Examples
+.SH EXAMPLES
 .SS Using resizable
 .PP
 In this example, we create a 8-byte buffer that is resizable to a max
@@ -47,7 +50,7 @@ if (buffer.resizable) {
 }
 \f[R]
 .fi
-.SH See also
+.SH SEE ALSO
 .IP \[bu] 2
 \f[V]ArrayBuffer\f[R]
 .IP \[bu] 2

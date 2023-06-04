@@ -14,9 +14,12 @@
 . ftr VB CB
 . ftr VBI CBI
 .\}
-.TH "Math.atanh" "JS" "2023-06-02" "JavaScript" "JavaScript Reference Manual"
+.TH "Math.atanh" "JS" "June 2, 2023" "JavaScript" "JavaScript Reference Manual"
 .hy
-.SH Synopsis
+.SH NAME
+.PP
+Math.atanh - Math.atanh()
+.SH SYNOPSIS
 .PP
 The \f[B]\f[VB]Math.atanh()\f[B]\f[R] static method returns the inverse
 hyperbolic tangent of a number.
@@ -24,7 +27,7 @@ That is,
 ∀x∊(−1,1),𝙼𝚊𝚝𝚑.𝚊𝚝𝚊𝚗𝚑(𝚡)=artanh(x)=the unique\ y\ such
 that\ tanh(y)=x=12ln(1+x1−x)
 .PP
-.SH Syntax
+.SH SYNTAX
 .IP
 .nf
 \f[C]
@@ -32,24 +35,21 @@ Math.atanh(x)
 \f[R]
 .fi
 .SS Parameters
-.IP \[bu] 2
-\f[V]x\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]x\f[R]
 A number between -1 and 1, inclusive.
-.RE
 .SS Return value
 .PP
 The inverse hyperbolic tangent of \f[V]x\f[R].
 If \f[V]x\f[R] is 1, returns \f[V]Infinity\f[R].
 If \f[V]x\f[R] is -1, returns \f[V]-Infinity\f[R].
 If \f[V]x\f[R] is less than -1 or greater than 1, returns \f[V]NaN\f[R].
-.SH Description
+.SH DESCRIPTION
 .PP
 Because \f[V]atanh()\f[R] is a static method of \f[V]Math\f[R], you
 always use it as \f[V]Math.atanh()\f[R], rather than as a method of a
 \f[V]Math\f[R] object you created (\f[V]Math\f[R] is not a constructor).
-.SH Examples
+.SH EXAMPLES
 .SS Using Math.atanh()
 .IP
 .nf
@@ -63,7 +63,7 @@ Math.atanh(1); // Infinity
 Math.atanh(2); // NaN
 \f[R]
 .fi
-.SH See also
+.SH SEE ALSO
 .IP \[bu] 2
 Polyfill of \f[V]Math.atanh\f[R] in
 \f[V]core-js\f[R] (https://github.com/zloirock/core-js#ecmascript-math)

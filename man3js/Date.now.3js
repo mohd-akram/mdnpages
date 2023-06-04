@@ -14,14 +14,17 @@
 . ftr VB CB
 . ftr VBI CBI
 .\}
-.TH "Date.now" "JS" "2023-06-02" "JavaScript" "JavaScript Reference Manual"
+.TH "Date.now" "JS" "June 2, 2023" "JavaScript" "JavaScript Reference Manual"
 .hy
-.SH Synopsis
+.SH NAME
+.PP
+Date.now - Date.now()
+.SH SYNOPSIS
 .PP
 The \f[B]\f[VB]Date.now()\f[B]\f[R] static method returns the number of
 milliseconds elapsed since the epoch, which is defined as the midnight
 at the beginning of January 1, 1970, UTC.
-.SH Syntax
+.SH SYNTAX
 .IP
 .nf
 \f[C]
@@ -32,7 +35,7 @@ Date.now()
 .PP
 A number representing the timestamp, in milliseconds, of the current
 time.
-.SH Description
+.SH DESCRIPTION
 .SS Reduced time precision
 .PP
 To offer protection against timing attacks and fingerprinting, the
@@ -62,7 +65,7 @@ Date.now();
 // \&...
 \f[R]
 .fi
-.SH Examples
+.SH EXAMPLES
 .SS Measuring time elapsed
 .PP
 You can use \f[V]Date.now()\f[R] to get the current time in
@@ -79,7 +82,7 @@ console.log(\[ga]Time elapsed: ${Date.now() - start} ms\[ga]);
 .PP
 For more complex scenarios, you may want to use the performance API
 instead.
-.SH See also
+.SH SEE ALSO
 .IP \[bu] 2
 Polyfill of \f[V]Date.now\f[R] in
 \f[V]core-js\f[R] (https://github.com/zloirock/core-js#ecmascript-date)

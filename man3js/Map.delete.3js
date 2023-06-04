@@ -14,13 +14,16 @@
 . ftr VB CB
 . ftr VBI CBI
 .\}
-.TH "Map.delete" "JS" "2023-06-02" "JavaScript" "JavaScript Reference Manual"
+.TH "Map.delete" "JS" "June 2, 2023" "JavaScript" "JavaScript Reference Manual"
 .hy
-.SH Synopsis
+.SH NAME
+.PP
+Map.delete - Map.prototype.delete()
+.SH SYNOPSIS
 .PP
 The \f[B]\f[VB]delete()\f[B]\f[R] method removes the specified element
 from a \f[V]Map\f[R] object by key.
-.SH Syntax
+.SH SYNTAX
 .IP
 .nf
 \f[C]
@@ -28,17 +31,14 @@ delete(key)
 \f[R]
 .fi
 .SS Parameters
-.IP \[bu] 2
-\f[V]key\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]key\f[R]
 The key of the element to remove from the \f[V]Map\f[R] object.
-.RE
 .SS Return value
 .PP
 \f[V]true\f[R] if an element in the \f[V]Map\f[R] object existed and has
 been removed, or \f[V]false\f[R] if the element does not exist.
-.SH Examples
+.SH EXAMPLES
 .SS Using delete()
 .IP
 .nf
@@ -50,6 +50,6 @@ console.log(myMap.delete(\[dq]bar\[dq])); // Returns true. Successfully removed.
 console.log(myMap.has(\[dq]bar\[dq])); // Returns false. The \[dq]bar\[dq] element is no longer present.
 \f[R]
 .fi
-.SH See also
+.SH SEE ALSO
 .IP \[bu] 2
 \f[V]Map\f[R]

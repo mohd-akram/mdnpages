@@ -14,9 +14,12 @@
 . ftr VB CB
 . ftr VBI CBI
 .\}
-.TH "Object.freeze" "JS" "2023-06-02" "JavaScript" "JavaScript Reference Manual"
+.TH "Object.freeze" "JS" "June 2, 2023" "JavaScript" "JavaScript Reference Manual"
 .hy
-.SH Synopsis
+.SH NAME
+.PP
+Object.freeze - Object.freeze()
+.SH SYNOPSIS
 .PP
 The \f[B]\f[VB]Object.freeze()\f[B]\f[R] static method \f[I]freezes\f[R]
 an object.
@@ -30,7 +33,7 @@ object\[cq]s prototype cannot be re-assigned.
 .PP
 Freezing an object is the highest integrity level that JavaScript
 provides.
-.SH Syntax
+.SH SYNTAX
 .IP
 .nf
 \f[C]
@@ -38,16 +41,13 @@ Object.freeze(obj)
 \f[R]
 .fi
 .SS Parameters
-.IP \[bu] 2
-\f[V]obj\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]obj\f[R]
 The object to freeze.
-.RE
 .SS Return value
 .PP
 The object that was passed to the function.
-.SH Description
+.SH DESCRIPTION
 .PP
 Freezing an object is equivalent to preventing extensions and then
 changing all existing properties\[cq] descriptors\[cq]
@@ -105,7 +105,7 @@ is no reason for attempting to freeze these properties.
 Unlike \f[V]Object.seal()\f[R], existing properties in objects frozen
 with \f[V]Object.freeze()\f[R] are made immutable and data properties
 cannot be re-assigned.
-.SH Examples
+.SH EXAMPLES
 .SS Freezing objects
 .IP
 .nf
@@ -278,7 +278,7 @@ obj2.internal.a = \[dq]anotherValue\[dq]; // fails silently in non-strict mode
 obj2.internal.a; // null
 \f[R]
 .fi
-.SH See also
+.SH SEE ALSO
 .IP \[bu] 2
 \f[V]Object.isFrozen()\f[R]
 .IP \[bu] 2

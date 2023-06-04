@@ -14,13 +14,16 @@
 . ftr VB CB
 . ftr VBI CBI
 .\}
-.TH "Object.keys" "JS" "2023-06-02" "JavaScript" "JavaScript Reference Manual"
+.TH "Object.keys" "JS" "June 2, 2023" "JavaScript" "JavaScript Reference Manual"
 .hy
-.SH Synopsis
+.SH NAME
+.PP
+Object.keys - Object.keys()
+.SH SYNOPSIS
 .PP
 The \f[B]\f[VB]Object.keys()\f[B]\f[R] static method returns an array of
 a given object\[cq]s own enumerable string-keyed property names.
-.SH Syntax
+.SH SYNTAX
 .IP
 .nf
 \f[C]
@@ -28,17 +31,14 @@ Object.keys(obj)
 \f[R]
 .fi
 .SS Parameters
-.IP \[bu] 2
-\f[V]obj\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]obj\f[R]
 An object.
-.RE
 .SS Return value
 .PP
 An array of strings representing the given object\[cq]s own enumerable
 string-keyed property keys.
-.SH Description
+.SH DESCRIPTION
 .PP
 \f[V]Object.keys()\f[R] returns an array whose elements are strings
 corresponding to the enumerable string-keyed property names found
@@ -52,7 +52,7 @@ as that provided by a \f[V]for...in\f[R] loop.
 If you need the property values, use \f[V]Object.values()\f[R] instead.
 If you need both the property keys and values, use
 \f[V]Object.entries()\f[R] instead.
-.SH Examples
+.SH EXAMPLES
 .SS Using Object.keys()
 .IP
 .nf
@@ -107,7 +107,7 @@ console.log(Object.keys(100)); // []
 \f[B]Note:\f[R] In ES5, passing a non-object to \f[V]Object.keys()\f[R]
 threw a \f[V]TypeError\f[R].
 .RE
-.SH See also
+.SH SEE ALSO
 .IP \[bu] 2
 Polyfill of \f[V]Object.keys\f[R] in
 \f[V]core-js\f[R] (https://github.com/zloirock/core-js#ecmascript-object)

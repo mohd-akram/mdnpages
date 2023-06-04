@@ -14,9 +14,12 @@
 . ftr VB CB
 . ftr VBI CBI
 .\}
-.TH "Symbol" "JS" "2023-06-02" "JavaScript" "JavaScript Reference Manual"
+.TH "Symbol" "JS" "June 2, 2023" "JavaScript" "JavaScript Reference Manual"
 .hy
-.SH Synopsis
+.SH NAME
+.PP
+Symbol - Symbol
+.SH SYNOPSIS
 .PP
 \f[B]\f[VB]Symbol\f[B]\f[R] is a built-in object whose constructor
 returns a \f[V]symbol\f[R] primitive \[em] also called a \f[B]Symbol
@@ -37,7 +40,7 @@ given key can be found in the global Symbol registry, that Symbol is
 returned.
 Otherwise, a new Symbol is created, added to the global Symbol registry
 under the given key, and returned.
-.SH Description
+.SH DESCRIPTION
 .PP
 To create a new primitive Symbol, you write \f[V]Symbol()\f[R] with an
 optional string as its description:
@@ -177,17 +180,14 @@ Symbols and lets you find Symbol properties on a given object.
 Note that every object is initialized with no own Symbol properties, so
 that this array will be empty unless you\[cq]ve set Symbol properties on
 the object.
-.SH Constructor
-.IP \[bu] 2
-\f[V]Symbol()\f[R]
-.RS 2
-.IP \[bu] 2
+.SH CONSTRUCTOR
+.TP
+\f[B]Symbol()\f[R]
 Creates a new \f[V]Symbol\f[R] object.
 It is not a constructor in the traditional sense, because it can only be
 called as a function, instead of being constructed with
 \f[V]new Symbol()\f[R].
-.RE
-.SH Static properties
+.SH STATIC PROPERTIES
 .PP
 The static properties are all well-known Symbols.
 In these Symbols\[cq] descriptions, we will use language like
@@ -196,140 +196,87 @@ bear in mind that this is referring to the semantic of an object\[cq]s
 method having this Symbol as the method name (because well-known Symbols
 act as \[lq]protocols\[rq]), not describing the value of the Symbol
 itself.
-.IP \[bu] 2
-\f[V]Symbol.asyncIterator\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]Symbol.asyncIterator\f[R]
 A method that returns the default AsyncIterator for an object.
 Used by \f[V]for await...of\f[R].
-.RE
-.IP \[bu] 2
-\f[V]Symbol.hasInstance\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]Symbol.hasInstance\f[R]
 A method determining if a constructor object recognizes an object as its
 instance.
 Used by \f[V]instanceof\f[R].
-.RE
-.IP \[bu] 2
-\f[V]Symbol.isConcatSpreadable\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]Symbol.isConcatSpreadable\f[R]
 A Boolean value indicating if an object should be flattened to its array
 elements.
 Used by \f[V]Array.prototype.concat()\f[R].
-.RE
-.IP \[bu] 2
-\f[V]Symbol.iterator\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]Symbol.iterator\f[R]
 A method returning the default iterator for an object.
 Used by \f[V]for...of\f[R].
-.RE
-.IP \[bu] 2
-\f[V]Symbol.match\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]Symbol.match\f[R]
 A method that matches against a string, also used to determine if an
 object may be used as a regular expression.
 Used by \f[V]String.prototype.match()\f[R].
-.RE
-.IP \[bu] 2
-\f[V]Symbol.matchAll\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]Symbol.matchAll\f[R]
 A method that returns an iterator, that yields matches of the regular
 expression against a string.
 Used by \f[V]String.prototype.matchAll()\f[R].
-.RE
-.IP \[bu] 2
-\f[V]Symbol.replace\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]Symbol.replace\f[R]
 A method that replaces matched substrings of a string.
 Used by \f[V]String.prototype.replace()\f[R].
-.RE
-.IP \[bu] 2
-\f[V]Symbol.search\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]Symbol.search\f[R]
 A method that returns the index within a string that matches the regular
 expression.
 Used by \f[V]String.prototype.search()\f[R].
-.RE
-.IP \[bu] 2
-\f[V]Symbol.species\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]Symbol.species\f[R]
 A constructor function that is used to create derived objects.
-.RE
-.IP \[bu] 2
-\f[V]Symbol.split\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]Symbol.split\f[R]
 A method that splits a string at the indices that match a regular
 expression.
 Used by \f[V]String.prototype.split()\f[R].
-.RE
-.IP \[bu] 2
-\f[V]Symbol.toPrimitive\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]Symbol.toPrimitive\f[R]
 A method converting an object to a primitive value.
-.RE
-.IP \[bu] 2
-\f[V]Symbol.toStringTag\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]Symbol.toStringTag\f[R]
 A string value used for the default description of an object.
 Used by \f[V]Object.prototype.toString()\f[R].
-.RE
-.IP \[bu] 2
-\f[V]Symbol.unscopables\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]Symbol.unscopables\f[R]
 An object value of whose own and inherited property names are excluded
 from the \f[V]with\f[R] environment bindings of the associated object.
-.RE
-.SH Static methods
-.IP \[bu] 2
-\f[V]Symbol.for()\f[R]
-.RS 2
-.IP \[bu] 2
+.SH STATIC METHODS
+.TP
+\f[B]Symbol.for()\f[R]
 Searches for existing Symbols with the given \f[V]key\f[R] and returns
 it if found.
 Otherwise a new Symbol gets created in the global Symbol registry with
 \f[V]key\f[R].
-.RE
-.IP \[bu] 2
-\f[V]Symbol.keyFor()\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]Symbol.keyFor()\f[R]
 Retrieves a shared Symbol key from the global Symbol registry for the
 given Symbol.
-.RE
-.SH Instance properties
+.SH INSTANCE PROPERTIES
 .PP
 These properties are defined on \f[V]Symbol.prototype\f[R] and shared by
 all \f[V]Symbol\f[R] instances.
-.IP \[bu] 2
-\f[V]Symbol.prototype.constructor\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]Symbol.prototype.constructor\f[R]
 The constructor function that created the instance object.
 For \f[V]Symbol\f[R] instances, the initial value is the
 \f[V]Symbol\f[R] constructor.
-.RE
-.IP \[bu] 2
-\f[V]Symbol.prototype.description\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]Symbol.prototype.description\f[R]
 A read-only string containing the description of the Symbol.
-.RE
-.IP \[bu] 2
-\f[V]Symbol.prototype[\[at]\[at]toStringTag]\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]Symbol.prototype[\[at]\[at]toStringTag]\f[R]
 The initial value of the \f[V]\[at]\[at]toStringTag\f[R] property is the
 string \f[V]\[dq]Symbol\[dq]\f[R].
 This property is used in \f[V]Object.prototype.toString()\f[R].
@@ -337,29 +284,19 @@ However, because \f[V]Symbol\f[R] also has its own \f[V]toString()\f[R]
 method, this property is not used unless you call
 \f[V]Object.prototype.toString.call()\f[R] with a symbol as
 \f[V]thisArg\f[R].
-.RE
-.SH Instance methods
-.IP \[bu] 2
-\f[V]Symbol.prototype.toString()\f[R]
-.RS 2
-.IP \[bu] 2
+.SH INSTANCE METHODS
+.TP
+\f[B]Symbol.prototype.toString()\f[R]
 Returns a string containing the description of the Symbol.
 Overrides the \f[V]Object.prototype.toString()\f[R] method.
-.RE
-.IP \[bu] 2
-\f[V]Symbol.prototype.valueOf()\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]Symbol.prototype.valueOf()\f[R]
 Returns the Symbol.
 Overrides the \f[V]Object.prototype.valueOf()\f[R] method.
-.RE
-.IP \[bu] 2
-\f[V]Symbol.prototype[\[at]\[at]toPrimitive]()\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]Symbol.prototype[\[at]\[at]toPrimitive]()\f[R]
 Returns the Symbol.
-.RE
-.SH Examples
+.SH EXAMPLES
 .SS Using the typeof operator with Symbols
 .PP
 The \f[V]typeof\f[R] operator can help you to identify Symbols.
@@ -437,7 +374,7 @@ obj[sym]; // 1
 obj[Object(sym)]; // still 1
 \f[R]
 .fi
-.SH See also
+.SH SEE ALSO
 .IP \[bu] 2
 Polyfill of \f[V]Symbol\f[R] in
 \f[V]core-js\f[R] (https://github.com/zloirock/core-js#ecmascript-symbol)

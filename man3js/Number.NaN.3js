@@ -15,15 +15,18 @@
 . ftr VB CB
 . ftr VBI CBI
 .\}
-.TH "Number.NaN" "JS" "2023-06-02" "JavaScript" "JavaScript Reference Manual"
+.TH "Number.NaN" "JS" "June 2, 2023" "JavaScript" "JavaScript Reference Manual"
 .hy
-.SH Synopsis
+.SH NAME
+.PP
+Number.NaN - Number.NaN
+.SH SYNOPSIS
 .PP
 The \f[B]\f[VB]Number.NaN\f[B]\f[R] static data property represents
 Not-A-Number, which is equivalent to \f[V]NaN\f[R].
 For more information about the behaviors of \f[V]NaN\f[R], see the
 description for the global property.
-.SH Value
+.SH VALUE
 .PP
 The number value \f[V]NaN\f[R].
 .PP
@@ -46,12 +49,12 @@ T}@T{
 no
 T}
 .TE
-.SH Description
+.SH DESCRIPTION
 .PP
 Because \f[V]NaN\f[R] is a static property of \f[V]Number\f[R], you
 always use it as \f[V]Number.NaN\f[R], rather than as a property of a
 number value.
-.SH Examples
+.SH EXAMPLES
 .SS Checking whether values are numeric
 .IP
 .nf
@@ -64,7 +67,7 @@ function sanitize(x) {
 }
 \f[R]
 .fi
-.SH See also
+.SH SEE ALSO
 .IP \[bu] 2
 \f[V]NaN\f[R]
 .IP \[bu] 2

@@ -14,9 +14,12 @@
 . ftr VB CB
 . ftr VBI CBI
 .\}
-.TH "encodeURI" "JS" "2023-06-02" "JavaScript" "JavaScript Reference Manual"
+.TH "encodeURI" "JS" "June 2, 2023" "JavaScript" "JavaScript Reference Manual"
 .hy
-.SH Synopsis
+.SH NAME
+.PP
+encodeURI - encodeURI()
+.SH SYNOPSIS
 .PP
 The \f[B]\f[VB]encodeURI()\f[B]\f[R] function encodes a URI by replacing
 each instance of certain characters by one, two, three, or four escape
@@ -25,7 +28,7 @@ four escape sequences for characters composed of two surrogate
 characters).
 Compared to \f[V]encodeURIComponent()\f[R], this function encodes fewer
 characters, preserving those that are part of the URI syntax.
-.SH Syntax
+.SH SYNTAX
 .IP
 .nf
 \f[C]
@@ -33,23 +36,17 @@ encodeURI(uri)
 \f[R]
 .fi
 .SS Parameters
-.IP \[bu] 2
-\f[V]uri\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]uri\f[R]
 A string to be encoded as a URI.
-.RE
 .SS Return value
 .PP
 A new string representing the provided string encoded as a URI.
 .SS Exceptions
-.IP \[bu] 2
-\f[V]URIError\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]URIError\f[R]
 Thrown if \f[V]uri\f[R] contains a lone surrogate.
-.RE
-.SH Description
+.SH DESCRIPTION
 .PP
 \f[V]encodeURI()\f[R] is a function property of the global object.
 .PP
@@ -89,7 +86,7 @@ Note how certain characters are used to signify special meaning:
 http://username:password\[at]www.example.com:80/path/to/file.php?foo=316&bar=this+has+spaces#anchor
 \f[R]
 .fi
-.SH Examples
+.SH EXAMPLES
 .SS encodeURI() vs.\ encodeURIComponent()
 .PP
 \f[V]encodeURI()\f[R] differs from \f[V]encodeURIComponent()\f[R] as
@@ -165,7 +162,7 @@ function encodeRFC3986URI(str) {
 }
 \f[R]
 .fi
-.SH See also
+.SH SEE ALSO
 .IP \[bu] 2
 \f[V]decodeURI()\f[R]
 .IP \[bu] 2

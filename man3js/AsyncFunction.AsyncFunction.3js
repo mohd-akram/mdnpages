@@ -14,9 +14,12 @@
 . ftr VB CB
 . ftr VBI CBI
 .\}
-.TH "AsyncFunction.AsyncFunction" "JS" "2023-06-02" "JavaScript" "JavaScript Reference Manual"
+.TH "AsyncFunction.AsyncFunction" "JS" "June 2, 2023" "JavaScript" "JavaScript Reference Manual"
 .hy
-.SH Synopsis
+.SH NAME
+.PP
+AsyncFunction.AsyncFunction - AsyncFunction() constructor
+.SH SYNOPSIS
 .PP
 The \f[B]\f[VB]AsyncFunction()\f[B]\f[R] constructor creates
 \f[V]AsyncFunction\f[R] objects.
@@ -33,7 +36,7 @@ const AsyncFunction = async function () {}.constructor;
 The \f[V]AsyncFunction()\f[R] constructor is not intended to be used
 directly, and all caveats mentioned in the \f[V]Function()\f[R]
 description apply to \f[V]AsyncFunction()\f[R].
-.SH Syntax
+.SH SYNTAX
 .IP
 .nf
 \f[C]
@@ -57,7 +60,7 @@ Both create a new \f[V]AsyncFunction\f[R] instance.
 .SS Parameters
 .PP
 See \f[V]Function()\f[R].
-.SH Examples
+.SH EXAMPLES
 .SS Creating an async function from an AsyncFunction() constructor
 .IP
 .nf
@@ -83,7 +86,7 @@ fn(10, 20).then((v) => {
 });
 \f[R]
 .fi
-.SH See also
+.SH SEE ALSO
 .IP \[bu] 2
 \f[V]async function\f[R] declaration
 .IP \[bu] 2

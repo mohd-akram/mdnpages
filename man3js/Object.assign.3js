@@ -14,15 +14,18 @@
 . ftr VB CB
 . ftr VBI CBI
 .\}
-.TH "Object.assign" "JS" "2023-06-02" "JavaScript" "JavaScript Reference Manual"
+.TH "Object.assign" "JS" "June 2, 2023" "JavaScript" "JavaScript Reference Manual"
 .hy
-.SH Synopsis
+.SH NAME
+.PP
+Object.assign - Object.assign()
+.SH SYNOPSIS
 .PP
 The \f[B]\f[VB]Object.assign()\f[B]\f[R] static method copies all
 \f[V]enumerable\f[R] \f[V]own properties\f[R] from one or more
 \f[I]source objects\f[R] to a \f[I]target object\f[R].
 It returns the modified target object.
-.SH Syntax
+.SH SYNTAX
 .IP
 .nf
 \f[C]
@@ -30,24 +33,18 @@ Object.assign(target, ...sources)
 \f[R]
 .fi
 .SS Parameters
-.IP \[bu] 2
-\f[V]target\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]target\f[R]
 The target object \[em] what to apply the sources\[cq] properties to,
 which is returned after it is modified.
-.RE
-.IP \[bu] 2
-\f[V]sources\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]sources\f[R]
 The source object(s) \[em] objects containing the properties you want to
 apply.
-.RE
 .SS Return value
 .PP
 The target object.
-.SH Description
+.SH DESCRIPTION
 .PP
 Properties in the target object are overwritten by properties in the
 sources if they have the same \f[V]key\f[R].
@@ -76,7 +73,7 @@ changed if any properties are added before the error is raised.
 \f[B]Note:\f[R] \f[V]Object.assign()\f[R] does not throw on
 \f[V]null\f[R] or \f[V]undefined\f[R] sources.
 .RE
-.SH Examples
+.SH EXAMPLES
 .SS Cloning an object
 .IP
 .nf
@@ -258,7 +255,7 @@ console.log(copy);
 // { foo:1, get bar() { return 2 } }
 \f[R]
 .fi
-.SH See also
+.SH SEE ALSO
 .IP \[bu] 2
 Polyfill of \f[V]Object.assign\f[R] in
 \f[V]core-js\f[R] (https://github.com/zloirock/core-js#ecmascript-object)

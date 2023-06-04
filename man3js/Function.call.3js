@@ -14,13 +14,16 @@
 . ftr VB CB
 . ftr VBI CBI
 .\}
-.TH "Function.call" "JS" "2023-06-02" "JavaScript" "JavaScript Reference Manual"
+.TH "Function.call" "JS" "June 2, 2023" "JavaScript" "JavaScript Reference Manual"
 .hy
-.SH Synopsis
+.SH NAME
+.PP
+Function.call - Function.prototype.call()
+.SH SYNOPSIS
 .PP
 The \f[B]\f[VB]call()\f[B]\f[R] method calls the function with a given
 \f[V]this\f[R] value and arguments provided individually.
-.SH Syntax
+.SH SYNTAX
 .IP
 .nf
 \f[C]
@@ -30,26 +33,20 @@ call(thisArg, arg1, /* \&..., */ argN)
 \f[R]
 .fi
 .SS Parameters
-.IP \[bu] 2
-\f[V]thisArg\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]thisArg\f[R]
 The value to use as \f[V]this\f[R] when calling \f[V]func\f[R].
 If the function is not in strict mode, \f[V]null\f[R] and
 \f[V]undefined\f[R] will be replaced with the global object, and
 primitive values will be converted to objects.
-.RE
-.IP \[bu] 2
-\f[V]arg1, \&..., argN\f[R] \f[I](optional)\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]arg1, \&..., argN\f[R] \f[I](optional)\f[R]
 Arguments for the function.
-.RE
 .SS Return value
 .PP
 The result of calling the function with the specified \f[V]this\f[R]
 value and arguments.
-.SH Description
+.SH DESCRIPTION
 .RS
 .PP
 \f[B]Note:\f[R] This function is almost identical to \f[V]apply()\f[R],
@@ -76,7 +73,7 @@ This invokes the constructor function as a plain function, which means
 because they can\[cq]t be called without \f[V]new\f[R].
 Use \f[V]Reflect.construct()\f[R] or \f[V]extends\f[R] instead.
 .RE
-.SH Examples
+.SH EXAMPLES
 .SS Using call() to invoke a function and specifying the this value
 .PP
 In the example below, when we call \f[V]greet\f[R], the value of
@@ -179,7 +176,7 @@ const slice = Function.prototype.call.bind(unboundSlice);
 slice(arguments);
 \f[R]
 .fi
-.SH See also
+.SH SEE ALSO
 .IP \[bu] 2
 \f[V]Function.prototype.bind()\f[R]
 .IP \[bu] 2

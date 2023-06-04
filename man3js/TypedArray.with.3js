@@ -14,9 +14,12 @@
 . ftr VB CB
 . ftr VBI CBI
 .\}
-.TH "TypedArray.with" "JS" "2023-06-02" "JavaScript" "JavaScript Reference Manual"
+.TH "TypedArray.with" "JS" "June 2, 2023" "JavaScript" "JavaScript Reference Manual"
 .hy
-.SH Synopsis
+.SH NAME
+.PP
+TypedArray.with - TypedArray.prototype.with()
+.SH SYNOPSIS
 .PP
 The \f[B]\f[VB]with()\f[B]\f[R] method is the copying version of using
 the bracket notation to change the value of a given index.
@@ -24,7 +27,7 @@ It returns a new array with the element at the given index replaced with
 the given value.
 This method has the same algorithm as \f[V]Array.prototype.with()\f[R].
 \f[I]TypedArray\f[R] is one of the typed array types here.
-.SH Syntax
+.SH SYNTAX
 .IP
 .nf
 \f[C]
@@ -32,12 +35,10 @@ array.with(index, value)
 \f[R]
 .fi
 .SS Parameters
-.IP \[bu] 2
-\f[V]index\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]index\f[R]
 Zero-based index at which to change the array, converted to an integer.
-.RS 2
+.RS
 .IP \[bu] 2
 Negative index counts back from the end of the array \[em] if
 \f[V]start < 0\f[R], \f[V]start + array.length\f[R] is used.
@@ -47,26 +48,19 @@ If \f[V]start\f[R] is omitted, \f[V]0\f[R] is used.
 If the index, with negative values counted backwards, is out of bounds,
 a \f[V]RangeError\f[R] is thrown.
 .RE
-.RE
-.IP \[bu] 2
-\f[V]value\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]value\f[R]
 Any value to be assigned to the given index.
-.RE
 .SS Return value
 .PP
 A new typed array with the element at \f[V]index\f[R] replaced with
 \f[V]value\f[R].
 .SS Exceptions
-.IP \[bu] 2
-\f[V]RangeError\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]RangeError\f[R]
 Thrown if \f[V]index > array.length\f[R] or
 \f[V]index < -array.length\f[R].
-.RE
-.SH Examples
+.SH EXAMPLES
 .SS Using with()
 .IP
 .nf
@@ -76,7 +70,7 @@ console.log(arr.with(2, 6)); // Uint8Array [1, 2, 6, 4, 5]
 console.log(arr); // Uint8Array [1, 2, 3, 4, 5]
 \f[R]
 .fi
-.SH See also
+.SH SEE ALSO
 .IP \[bu] 2
 Polyfill of \f[V]TypedArray.prototype.with\f[R] in
 \f[V]core-js\f[R] (https://github.com/zloirock/core-js#change-array-by-copy)

@@ -14,9 +14,12 @@
 . ftr VB CB
 . ftr VBI CBI
 .\}
-.TH "Uint8Array" "JS" "2023-06-02" "JavaScript" "JavaScript Reference Manual"
+.TH "Uint8Array" "JS" "June 2, 2023" "JavaScript" "JavaScript Reference Manual"
 .hy
-.SH Synopsis
+.SH NAME
+.PP
+Uint8Array - Uint8Array
+.SH SYNOPSIS
 .PP
 The \f[B]\f[VB]Uint8Array\f[B]\f[R] typed array represents an array of
 8-bit unsigned integers.
@@ -27,54 +30,42 @@ using bracket notation).
 .PP
 \f[V]Uint8Array\f[R] is a subclass of the hidden \f[V]TypedArray\f[R]
 class.
-.SH Constructor
-.IP \[bu] 2
-\f[V]Uint8Array()\f[R]
-.RS 2
-.IP \[bu] 2
+.SH CONSTRUCTOR
+.TP
+\f[B]Uint8Array()\f[R]
 Creates a new \f[V]Uint8Array\f[R] object.
-.RE
-.SH Static properties
+.SH STATIC PROPERTIES
 .PP
 \f[I]Also inherits static properties from its parent
 \f[VI]TypedArray\f[I]\f[R].
-.IP \[bu] 2
-\f[V]Uint8Array.BYTES_PER_ELEMENT\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]Uint8Array.BYTES_PER_ELEMENT\f[R]
 Returns a number value of the element size.
 \f[V]1\f[R] in the case of \f[V]Uint8Array\f[R].
-.RE
-.SH Static methods
+.SH STATIC METHODS
 .PP
 \f[I]Inherits static methods from its parent \f[VI]TypedArray\f[I]\f[R].
-.SH Instance properties
+.SH INSTANCE PROPERTIES
 .PP
 \f[I]Also inherits instance properties from its parent
 \f[VI]TypedArray\f[I]\f[R].
 .PP
 These properties are defined on \f[V]Uint8Array.prototype\f[R] and
 shared by all \f[V]Uint8Array\f[R] instances.
-.IP \[bu] 2
-\f[V]Uint8Array.prototype.BYTES_PER_ELEMENT\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]Uint8Array.prototype.BYTES_PER_ELEMENT\f[R]
 Returns a number value of the element size.
 \f[V]1\f[R] in the case of a \f[V]Uint8Array\f[R].
-.RE
-.IP \[bu] 2
-\f[V]Uint8Array.prototype.constructor\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]Uint8Array.prototype.constructor\f[R]
 The constructor function that created the instance object.
 For \f[V]Uint8Array\f[R] instances, the initial value is the
 \f[V]Uint8Array\f[R] constructor.
-.RE
-.SH Instance methods
+.SH INSTANCE METHODS
 .PP
 \f[I]Inherits instance methods from its parent
 \f[VI]TypedArray\f[I]\f[R].
-.SH Examples
+.SH EXAMPLES
 .SS Different ways to create a Uint8Array
 .IP
 .nf
@@ -108,7 +99,7 @@ console.log(uint8FromIterable);
 // Uint8Array [1, 2, 3]
 \f[R]
 .fi
-.SH See also
+.SH SEE ALSO
 .IP \[bu] 2
 Polyfill of \f[V]Uint8Array\f[R] in
 \f[V]core-js\f[R] (https://github.com/zloirock/core-js#ecmascript-typed-arrays)

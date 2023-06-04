@@ -14,13 +14,16 @@
 . ftr VB CB
 . ftr VBI CBI
 .\}
-.TH "Symbol.keyFor" "JS" "2023-06-02" "JavaScript" "JavaScript Reference Manual"
+.TH "Symbol.keyFor" "JS" "June 2, 2023" "JavaScript" "JavaScript Reference Manual"
 .hy
-.SH Synopsis
+.SH NAME
+.PP
+Symbol.keyFor - Symbol.keyFor()
+.SH SYNOPSIS
 .PP
 The \f[B]\f[VB]Symbol.keyFor()\f[B]\f[R] static method retrieves a
 shared symbol key from the global symbol registry for the given symbol.
-.SH Syntax
+.SH SYNTAX
 .IP
 .nf
 \f[C]
@@ -28,18 +31,15 @@ Symbol.keyFor(sym)
 \f[R]
 .fi
 .SS Parameters
-.IP \[bu] 2
-\f[V]sym\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]sym\f[R]
 Symbol, required.
 The symbol to find a key for.
-.RE
 .SS Return value
 .PP
 A string representing the key for the given symbol if one is found on
 the global registry; otherwise, \f[V]undefined\f[R].
-.SH Examples
+.SH EXAMPLES
 .SS Using keyFor()
 .IP
 .nf
@@ -55,6 +55,6 @@ Symbol.keyFor(localSym); // undefined
 Symbol.keyFor(Symbol.iterator); // undefined
 \f[R]
 .fi
-.SH See also
+.SH SEE ALSO
 .IP \[bu] 2
 \f[V]Symbol.for()\f[R]

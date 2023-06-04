@@ -14,9 +14,12 @@
 . ftr VB CB
 . ftr VBI CBI
 .\}
-.TH "escape" "JS" "2023-06-02" "JavaScript" "JavaScript Reference Manual"
+.TH "escape" "JS" "June 2, 2023" "JavaScript" "JavaScript Reference Manual"
 .hy
-.SH Synopsis
+.SH NAME
+.PP
+escape - escape()
+.SH SYNOPSIS
 .PP
 \f[I](deprecated)\f[R]
 .RS
@@ -32,7 +35,7 @@ Use \f[V]encodeURIComponent()\f[R] or \f[V]encodeURI()\f[R] if possible.
 The \f[B]\f[VB]escape()\f[B]\f[R] function computes a new string in
 which certain characters have been replaced by hexadecimal escape
 sequences.
-.SH Syntax
+.SH SYNTAX
 .IP
 .nf
 \f[C]
@@ -40,16 +43,13 @@ escape(str)
 \f[R]
 .fi
 .SS Parameters
-.IP \[bu] 2
-\f[V]str\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]str\f[R]
 A string to be encoded.
-.RE
 .SS Return value
 .PP
 A new string in which certain characters have been escaped.
-.SH Description
+.SH DESCRIPTION
 .PP
 \f[V]escape()\f[R] is a function property of the global object.
 .PP
@@ -73,7 +73,7 @@ You can replace \f[V]%XX\f[R] with \f[V]\[rs]xXX\f[R] and
 \f[V]%uXXXX\f[R] with \f[V]\[rs]uXXXX\f[R] to get a string containing
 actual string-literal escape sequences.
 .RE
-.SH Examples
+.SH EXAMPLES
 .SS Using escape()
 .IP
 .nf
@@ -86,7 +86,7 @@ escape(\[dq]ć\[dq]); // \[dq]%u0107\[dq]
 escape(\[dq]\[at]*_+-./\[dq]); // \[dq]\[at]*_+-./\[dq]
 \f[R]
 .fi
-.SH See also
+.SH SEE ALSO
 .IP \[bu] 2
 Polyfill of \f[V]escape\f[R] in
 \f[V]core-js\f[R] (https://github.com/zloirock/core-js#ecmascript-string-and-regexp)

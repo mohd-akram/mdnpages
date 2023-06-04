@@ -14,15 +14,18 @@
 . ftr VB CB
 . ftr VBI CBI
 .\}
-.TH "DataView" "JS" "2023-06-02" "JavaScript" "JavaScript Reference Manual"
+.TH "DataView" "JS" "June 2, 2023" "JavaScript" "JavaScript Reference Manual"
 .hy
-.SH Synopsis
+.SH NAME
+.PP
+DataView - DataView
+.SH SYNOPSIS
 .PP
 The \f[B]\f[VB]DataView\f[B]\f[R] view provides a low-level interface
 for reading and writing multiple number types in a binary
 \f[V]ArrayBuffer\f[R], without having to care about the platform\[cq]s
 endianness.
-.SH Description
+.SH DESCRIPTION
 .SS Endianness
 .PP
 Multi-byte number formats are represented in memory differently
@@ -97,197 +100,119 @@ function getUint64BigInt(dataview, byteOffset, littleEndian) {
 }
 \f[R]
 .fi
-.SH Constructor
-.IP \[bu] 2
-\f[V]DataView()\f[R]
-.RS 2
-.IP \[bu] 2
+.SH CONSTRUCTOR
+.TP
+\f[B]DataView()\f[R]
 Creates a new \f[V]DataView\f[R] object.
-.RE
-.SH Instance properties
+.SH INSTANCE PROPERTIES
 .PP
 These properties are defined on \f[V]DataView.prototype\f[R] and shared
 by all \f[V]DataView\f[R] instances.
-.IP \[bu] 2
-\f[V]DataView.prototype.buffer\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]DataView.prototype.buffer\f[R]
 The \f[V]ArrayBuffer\f[R] referenced by this view.
 Fixed at construction time and thus \f[B]read only.\f[R]
-.RE
-.IP \[bu] 2
-\f[V]DataView.prototype.byteLength\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]DataView.prototype.byteLength\f[R]
 The length (in bytes) of this view.
 Fixed at construction time and thus \f[B]read only.\f[R]
-.RE
-.IP \[bu] 2
-\f[V]DataView.prototype.byteOffset\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]DataView.prototype.byteOffset\f[R]
 The offset (in bytes) of this view from the start of its
 \f[V]ArrayBuffer\f[R].
 Fixed at construction time and thus \f[B]read only.\f[R]
-.RE
-.IP \[bu] 2
-\f[V]DataView.prototype.constructor\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]DataView.prototype.constructor\f[R]
 The constructor function that created the instance object.
 For \f[V]DataView\f[R] instances, the initial value is the
 \f[V]DataView\f[R] constructor.
-.RE
-.IP \[bu] 2
-\f[V]DataView.prototype[\[at]\[at]toStringTag]\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]DataView.prototype[\[at]\[at]toStringTag]\f[R]
 The initial value of the \f[V]\[at]\[at]toStringTag\f[R] property is the
 string \f[V]\[dq]DataView\[dq]\f[R].
 This property is used in \f[V]Object.prototype.toString()\f[R].
-.RE
-.SH Instance methods
-.IP \[bu] 2
-\f[V]DataView.prototype.getBigInt64()\f[R]
-.RS 2
-.IP \[bu] 2
+.SH INSTANCE METHODS
+.TP
+\f[B]DataView.prototype.getBigInt64()\f[R]
 Gets a signed 64-bit integer (long long) at the specified byte offset
 from the start of the view.
-.RE
-.IP \[bu] 2
-\f[V]DataView.prototype.getBigUint64()\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]DataView.prototype.getBigUint64()\f[R]
 Gets an unsigned 64-bit integer (unsigned long long) at the specified
 byte offset from the start of the view.
-.RE
-.IP \[bu] 2
-\f[V]DataView.prototype.getFloat32()\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]DataView.prototype.getFloat32()\f[R]
 Gets a signed 32-bit float (float) at the specified byte offset from the
 start of the view.
-.RE
-.IP \[bu] 2
-\f[V]DataView.prototype.getFloat64()\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]DataView.prototype.getFloat64()\f[R]
 Gets a signed 64-bit float (double) at the specified byte offset from
 the start of the view.
-.RE
-.IP \[bu] 2
-\f[V]DataView.prototype.getInt16()\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]DataView.prototype.getInt16()\f[R]
 Gets a signed 16-bit integer (short) at the specified byte offset from
 the start of the view.
-.RE
-.IP \[bu] 2
-\f[V]DataView.prototype.getInt32()\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]DataView.prototype.getInt32()\f[R]
 Gets a signed 32-bit integer (long) at the specified byte offset from
 the start of the view.
-.RE
-.IP \[bu] 2
-\f[V]DataView.prototype.getInt8()\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]DataView.prototype.getInt8()\f[R]
 Gets a signed 8-bit integer (byte) at the specified byte offset from the
 start of the view.
-.RE
-.IP \[bu] 2
-\f[V]DataView.prototype.getUint16()\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]DataView.prototype.getUint16()\f[R]
 Gets an unsigned 16-bit integer (unsigned short) at the specified byte
 offset from the start of the view.
-.RE
-.IP \[bu] 2
-\f[V]DataView.prototype.getUint32()\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]DataView.prototype.getUint32()\f[R]
 Gets an unsigned 32-bit integer (unsigned long) at the specified byte
 offset from the start of the view.
-.RE
-.IP \[bu] 2
-\f[V]DataView.prototype.getUint8()\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]DataView.prototype.getUint8()\f[R]
 Gets an unsigned 8-bit integer (unsigned byte) at the specified byte
 offset from the start of the view.
-.RE
-.IP \[bu] 2
-\f[V]DataView.prototype.setBigInt64()\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]DataView.prototype.setBigInt64()\f[R]
 Stores a signed 64-bit integer (long long) value at the specified byte
 offset from the start of the view.
-.RE
-.IP \[bu] 2
-\f[V]DataView.prototype.setBigUint64()\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]DataView.prototype.setBigUint64()\f[R]
 Stores an unsigned 64-bit integer (unsigned long long) value at the
 specified byte offset from the start of the view.
-.RE
-.IP \[bu] 2
-\f[V]DataView.prototype.setFloat32()\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]DataView.prototype.setFloat32()\f[R]
 Stores a signed 32-bit float (float) value at the specified byte offset
 from the start of the view.
-.RE
-.IP \[bu] 2
-\f[V]DataView.prototype.setFloat64()\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]DataView.prototype.setFloat64()\f[R]
 Stores a signed 64-bit float (double) value at the specified byte offset
 from the start of the view.
-.RE
-.IP \[bu] 2
-\f[V]DataView.prototype.setInt16()\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]DataView.prototype.setInt16()\f[R]
 Stores a signed 16-bit integer (short) value at the specified byte
 offset from the start of the view.
-.RE
-.IP \[bu] 2
-\f[V]DataView.prototype.setInt32()\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]DataView.prototype.setInt32()\f[R]
 Stores a signed 32-bit integer (long) value at the specified byte offset
 from the start of the view.
-.RE
-.IP \[bu] 2
-\f[V]DataView.prototype.setInt8()\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]DataView.prototype.setInt8()\f[R]
 Stores a signed 8-bit integer (byte) value at the specified byte offset
 from the start of the view.
-.RE
-.IP \[bu] 2
-\f[V]DataView.prototype.setUint16()\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]DataView.prototype.setUint16()\f[R]
 Stores an unsigned 16-bit integer (unsigned short) value at the
 specified byte offset from the start of the view.
-.RE
-.IP \[bu] 2
-\f[V]DataView.prototype.setUint32()\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]DataView.prototype.setUint32()\f[R]
 Stores an unsigned 32-bit integer (unsigned long) value at the specified
 byte offset from the start of the view.
-.RE
-.IP \[bu] 2
-\f[V]DataView.prototype.setUint8()\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]DataView.prototype.setUint8()\f[R]
 Stores an unsigned 8-bit integer (unsigned byte) value at the specified
 byte offset from the start of the view.
-.RE
-.SH Examples
+.SH EXAMPLES
 .SS Using DataView
 .IP
 .nf
@@ -299,7 +224,7 @@ view.setInt16(1, 42);
 view.getInt16(1); // 42
 \f[R]
 .fi
-.SH See also
+.SH SEE ALSO
 .IP \[bu] 2
 Polyfill of \f[V]DataView\f[R] in
 \f[V]core-js\f[R] (https://github.com/zloirock/core-js#ecmascript-typed-arrays)

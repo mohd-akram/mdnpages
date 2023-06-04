@@ -15,9 +15,12 @@
 . ftr VB CB
 . ftr VBI CBI
 .\}
-.TH "Object.constructor" "JS" "2023-06-02" "JavaScript" "JavaScript Reference Manual"
+.TH "Object.constructor" "JS" "June 2, 2023" "JavaScript" "JavaScript Reference Manual"
 .hy
-.SH Synopsis
+.SH NAME
+.PP
+Object.constructor - Object.prototype.constructor
+.SH SYNOPSIS
 .PP
 The \f[B]\f[VB]constructor\f[B]\f[R] data property of an
 \f[V]Object\f[R] instance returns a reference to the constructor
@@ -30,7 +33,7 @@ itself\f[R], not a string containing the function\[cq]s name.
 For the \f[V]constructor\f[R] method in classes, see its own reference
 page.
 .RE
-.SH Value
+.SH VALUE
 .PP
 A reference to the constructor function that created the instance
 object.
@@ -60,7 +63,7 @@ T}
 \f[V]prototype\f[R] property of every constructor function and is
 inherited by all objects created by that constructor.
 .RE
-.SH Description
+.SH DESCRIPTION
 .PP
 Any object (with the exception of \f[V]null\f[R] prototype objects) will
 have a \f[V]constructor\f[R] property on its \f[V][[Prototype]]\f[R].
@@ -102,7 +105,7 @@ proto(proto(o)).constructor === Error; // true
 proto(proto(proto(o))).constructor === Object; // true
 \f[R]
 .fi
-.SH Examples
+.SH EXAMPLES
 .SS Displaying the constructor of an object
 .PP
 The following example creates a constructor (\f[V]Tree\f[R]) and an
@@ -422,7 +425,7 @@ specific case.
 In most cases, \f[V]constructor\f[R] is not used and reassigning it is
 not necessary.
 .RE
-.SH See also
+.SH SEE ALSO
 .IP \[bu] 2
 \f[V]Class declaration\f[R]
 .IP \[bu] 2

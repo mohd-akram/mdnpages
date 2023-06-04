@@ -14,13 +14,17 @@
 . ftr VB CB
 . ftr VBI CBI
 .\}
-.TH "FinalizationRegistry.FinalizationRegistry" "JS" "2023-06-02" "JavaScript" "JavaScript Reference Manual"
+.TH "FinalizationRegistry.FinalizationRegistry" "JS" "June 2, 2023" "JavaScript" "JavaScript Reference Manual"
 .hy
-.SH Synopsis
+.SH NAME
+.PP
+FinalizationRegistry.FinalizationRegistry - FinalizationRegistry()
+constructor
+.SH SYNOPSIS
 .PP
 The \f[B]\f[VB]FinalizationRegistry()\f[B]\f[R] constructor creates
 \f[V]FinalizationRegistry\f[R] objects.
-.SH Syntax
+.SH SYNTAX
 .IP
 .nf
 \f[C]
@@ -35,26 +39,20 @@ Attempting to call it without \f[V]new\f[R] throws a
 \f[V]TypeError\f[R].
 .RE
 .SS Parameters
-.IP \[bu] 2
-\f[V]callback\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]callback\f[R]
 A function to be invoked each time a registered target value is garbage
 collected.
 Its return value is ignored.
 The function is called with the following arguments:
-.RS 2
-.IP \[bu] 2
-\f[V]heldValue\f[R]
-.RS 2
-.IP \[bu] 2
+.RS
+.TP
+\f[B]heldValue\f[R]
 The value that was passed to the second parameter of the
 \f[V]register()\f[R] method when the \f[V]target\f[R] object was
 registered.
 .RE
-.RE
-.RE
-.SH Examples
+.SH EXAMPLES
 .SS Creating a new registry
 .PP
 You create the registry passing in the callback:
@@ -66,6 +64,6 @@ const registry = new FinalizationRegistry((heldValue) => {
 });
 \f[R]
 .fi
-.SH See also
+.SH SEE ALSO
 .IP \[bu] 2
 \f[V]FinalizationRegistry\f[R]

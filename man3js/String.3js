@@ -14,13 +14,16 @@
 . ftr VB CB
 . ftr VBI CBI
 .\}
-.TH "String" "JS" "2023-06-02" "JavaScript" "JavaScript Reference Manual"
+.TH "String" "JS" "June 2, 2023" "JavaScript" "JavaScript Reference Manual"
 .hy
-.SH Synopsis
+.SH NAME
+.PP
+String - String
+.SH SYNOPSIS
 .PP
 The \f[B]\f[VB]String\f[B]\f[R] object is used to represent and
 manipulate a sequence of characters.
-.SH Description
+.SH DESCRIPTION
 .PP
 Strings are useful for holding data that can be represented in text
 form.
@@ -355,315 +358,189 @@ Iterating through grapheme clusters will require some custom code.
 // All flag emojis are formed by joining two region indicator letters
 \f[R]
 .fi
-.SH Constructor
-.IP \[bu] 2
-\f[V]String()\f[R]
-.RS 2
-.IP \[bu] 2
+.SH CONSTRUCTOR
+.TP
+\f[B]String()\f[R]
 Creates a new \f[V]String\f[R] object.
 It performs type conversion when called as a function, rather than as a
 constructor, which is usually more useful.
-.RE
-.SH Static methods
-.IP \[bu] 2
-\f[V]String.fromCharCode()\f[R]
-.RS 2
-.IP \[bu] 2
+.SH STATIC METHODS
+.TP
+\f[B]String.fromCharCode()\f[R]
 Returns a string created by using the specified sequence of Unicode
 values.
-.RE
-.IP \[bu] 2
-\f[V]String.fromCodePoint()\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]String.fromCodePoint()\f[R]
 Returns a string created by using the specified sequence of code points.
-.RE
-.IP \[bu] 2
-\f[V]String.raw()\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]String.raw()\f[R]
 Returns a string created from a raw template string.
-.RE
-.SH Instance properties
+.SH INSTANCE PROPERTIES
 .PP
 These properties are defined on \f[V]String.prototype\f[R] and shared by
 all \f[V]String\f[R] instances.
-.IP \[bu] 2
-\f[V]String.prototype.constructor\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]String.prototype.constructor\f[R]
 The constructor function that created the instance object.
 For \f[V]String\f[R] instances, the initial value is the
 \f[V]String\f[R] constructor.
-.RE
 .PP
 These properties are own properties of each \f[V]String\f[R] instance.
-.IP \[bu] 2
-\f[V]length\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]length\f[R]
 Reflects the \f[V]length\f[R] of the string.
 Read-only.
-.RE
-.SH Instance methods
-.IP \[bu] 2
-\f[V]String.prototype.at()\f[R]
-.RS 2
-.IP \[bu] 2
+.SH INSTANCE METHODS
+.TP
+\f[B]String.prototype.at()\f[R]
 Returns the character (exactly one UTF-16 code unit) at the specified
 \f[V]index\f[R].
 Accepts negative integers, which count back from the last string
 character.
-.RE
-.IP \[bu] 2
-\f[V]String.prototype.charAt()\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]String.prototype.charAt()\f[R]
 Returns the character (exactly one UTF-16 code unit) at the specified
 \f[V]index\f[R].
-.RE
-.IP \[bu] 2
-\f[V]String.prototype.charCodeAt()\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]String.prototype.charCodeAt()\f[R]
 Returns a number that is the UTF-16 code unit value at the given
 \f[V]index\f[R].
-.RE
-.IP \[bu] 2
-\f[V]String.prototype.codePointAt()\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]String.prototype.codePointAt()\f[R]
 Returns a nonnegative integer Number that is the code point value of the
 UTF-16 encoded code point starting at the specified \f[V]pos\f[R].
-.RE
-.IP \[bu] 2
-\f[V]String.prototype.concat()\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]String.prototype.concat()\f[R]
 Combines the text of two (or more) strings and returns a new string.
-.RE
-.IP \[bu] 2
-\f[V]String.prototype.endsWith()\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]String.prototype.endsWith()\f[R]
 Determines whether a string ends with the characters of the string
 \f[V]searchString\f[R].
-.RE
-.IP \[bu] 2
-\f[V]String.prototype.includes()\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]String.prototype.includes()\f[R]
 Determines whether the calling string contains \f[V]searchString\f[R].
-.RE
-.IP \[bu] 2
-\f[V]String.prototype.indexOf()\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]String.prototype.indexOf()\f[R]
 Returns the index within the calling \f[V]String\f[R] object of the
 first occurrence of \f[V]searchValue\f[R], or \f[V]-1\f[R] if not found.
-.RE
-.IP \[bu] 2
-\f[V]String.prototype.isWellFormed()\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]String.prototype.isWellFormed()\f[R]
 Returns a boolean indicating whether this string contains any lone
 surrogates.
-.RE
-.IP \[bu] 2
-\f[V]String.prototype.lastIndexOf()\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]String.prototype.lastIndexOf()\f[R]
 Returns the index within the calling \f[V]String\f[R] object of the last
 occurrence of \f[V]searchValue\f[R], or \f[V]-1\f[R] if not found.
-.RE
-.IP \[bu] 2
-\f[V]String.prototype.localeCompare()\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]String.prototype.localeCompare()\f[R]
 Returns a number indicating whether the reference string
 \f[V]compareString\f[R] comes before, after, or is equivalent to the
 given string in sort order.
-.RE
-.IP \[bu] 2
-\f[V]String.prototype.match()\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]String.prototype.match()\f[R]
 Used to match regular expression \f[V]regexp\f[R] against a string.
-.RE
-.IP \[bu] 2
-\f[V]String.prototype.matchAll()\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]String.prototype.matchAll()\f[R]
 Returns an iterator of all \f[V]regexp\f[R]\[cq]s matches.
-.RE
-.IP \[bu] 2
-\f[V]String.prototype.normalize()\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]String.prototype.normalize()\f[R]
 Returns the Unicode Normalization Form of the calling string value.
-.RE
-.IP \[bu] 2
-\f[V]String.prototype.padEnd()\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]String.prototype.padEnd()\f[R]
 Pads the current string from the end with a given string and returns a
 new string of the length \f[V]targetLength\f[R].
-.RE
-.IP \[bu] 2
-\f[V]String.prototype.padStart()\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]String.prototype.padStart()\f[R]
 Pads the current string from the start with a given string and returns a
 new string of the length \f[V]targetLength\f[R].
-.RE
-.IP \[bu] 2
-\f[V]String.prototype.repeat()\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]String.prototype.repeat()\f[R]
 Returns a string consisting of the elements of the object repeated
 \f[V]count\f[R] times.
-.RE
-.IP \[bu] 2
-\f[V]String.prototype.replace()\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]String.prototype.replace()\f[R]
 Used to replace occurrences of \f[V]searchFor\f[R] using
 \f[V]replaceWith\f[R].
 \f[V]searchFor\f[R] may be a string or Regular Expression, and
 \f[V]replaceWith\f[R] may be a string or function.
-.RE
-.IP \[bu] 2
-\f[V]String.prototype.replaceAll()\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]String.prototype.replaceAll()\f[R]
 Used to replace all occurrences of \f[V]searchFor\f[R] using
 \f[V]replaceWith\f[R].
 \f[V]searchFor\f[R] may be a string or Regular Expression, and
 \f[V]replaceWith\f[R] may be a string or function.
-.RE
-.IP \[bu] 2
-\f[V]String.prototype.search()\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]String.prototype.search()\f[R]
 Search for a match between a regular expression \f[V]regexp\f[R] and the
 calling string.
-.RE
-.IP \[bu] 2
-\f[V]String.prototype.slice()\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]String.prototype.slice()\f[R]
 Extracts a section of a string and returns a new string.
-.RE
-.IP \[bu] 2
-\f[V]String.prototype.split()\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]String.prototype.split()\f[R]
 Returns an array of strings populated by splitting the calling string at
 occurrences of the substring \f[V]sep\f[R].
-.RE
-.IP \[bu] 2
-\f[V]String.prototype.startsWith()\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]String.prototype.startsWith()\f[R]
 Determines whether the calling string begins with the characters of
 string \f[V]searchString\f[R].
-.RE
-.IP \[bu] 2
-\f[V]String.prototype.substr()\f[R] \f[I](deprecated)\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]String.prototype.substr()\f[R] \f[I](deprecated)\f[R]
 Returns a portion of the string, starting at the specified index and
 extending for a given number of characters afterwards.
-.RE
-.IP \[bu] 2
-\f[V]String.prototype.substring()\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]String.prototype.substring()\f[R]
 Returns a new string containing characters of the calling string from
 (or between) the specified index (or indices).
-.RE
-.IP \[bu] 2
-\f[V]String.prototype.toLocaleLowerCase()\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]String.prototype.toLocaleLowerCase()\f[R]
 The characters within a string are converted to lowercase while
 respecting the current locale.
-.RS 2
+.RS
 .PP
 For most languages, this will return the same as
 \f[V]toLowerCase()\f[R].
 .RE
-.RE
-.IP \[bu] 2
-\f[V]String.prototype.toLocaleUpperCase()\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]String.prototype.toLocaleUpperCase()\f[R]
 The characters within a string are converted to uppercase while
 respecting the current locale.
-.RS 2
+.RS
 .PP
 For most languages, this will return the same as
 \f[V]toUpperCase()\f[R].
 .RE
-.RE
-.IP \[bu] 2
-\f[V]String.prototype.toLowerCase()\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]String.prototype.toLowerCase()\f[R]
 Returns the calling string value converted to lowercase.
-.RE
-.IP \[bu] 2
-\f[V]String.prototype.toString()\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]String.prototype.toString()\f[R]
 Returns a string representing the specified object.
 Overrides the \f[V]Object.prototype.toString()\f[R] method.
-.RE
-.IP \[bu] 2
-\f[V]String.prototype.toUpperCase()\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]String.prototype.toUpperCase()\f[R]
 Returns the calling string value converted to uppercase.
-.RE
-.IP \[bu] 2
-\f[V]String.prototype.toWellFormed()\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]String.prototype.toWellFormed()\f[R]
 Returns a string where all lone surrogates of this string are replaced
 with the Unicode replacement character U+FFFD.
-.RE
-.IP \[bu] 2
-\f[V]String.prototype.trim()\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]String.prototype.trim()\f[R]
 Trims whitespace from the beginning and end of the string.
-.RE
-.IP \[bu] 2
-\f[V]String.prototype.trimEnd()\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]String.prototype.trimEnd()\f[R]
 Trims whitespace from the end of the string.
-.RE
-.IP \[bu] 2
-\f[V]String.prototype.trimStart()\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]String.prototype.trimStart()\f[R]
 Trims whitespace from the beginning of the string.
-.RE
-.IP \[bu] 2
-\f[V]String.prototype.valueOf()\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]String.prototype.valueOf()\f[R]
 Returns the primitive value of the specified object.
 Overrides the \f[V]Object.prototype.valueOf()\f[R] method.
-.RE
-.IP \[bu] 2
-\f[V]String.prototype[\[at]\[at]iterator]()\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]String.prototype[\[at]\[at]iterator]()\f[R]
 Returns a new iterator object that iterates over the code points of a
 String value, returning each code point as a String value.
-.RE
 .SS HTML wrapper methods
 .RS
 .PP
@@ -679,84 +556,45 @@ or sanitation, which makes them a potential security threat when
 directly inserted using \f[V]innerHTML\f[R].
 Use DOM APIs such as \f[V]document.createElement()\f[R] instead.
 .RE
-.IP \[bu] 2
-\f[V]String.prototype.anchor()\f[R] \f[I](deprecated)\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]String.prototype.anchor()\f[R] \f[I](deprecated)\f[R]
 \f[V]<a name=\[dq]name\[dq]>\f[R] (hypertext target)
-.RE
-.IP \[bu] 2
-\f[V]String.prototype.big()\f[R] \f[I](deprecated)\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]String.prototype.big()\f[R] \f[I](deprecated)\f[R]
 \f[V]<big>\f[R]
-.RE
-.IP \[bu] 2
-\f[V]String.prototype.blink()\f[R] \f[I](deprecated)\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]String.prototype.blink()\f[R] \f[I](deprecated)\f[R]
 \f[V]<blink>\f[R]
-.RE
-.IP \[bu] 2
-\f[V]String.prototype.bold()\f[R] \f[I](deprecated)\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]String.prototype.bold()\f[R] \f[I](deprecated)\f[R]
 \f[V]<b>\f[R]
-.RE
-.IP \[bu] 2
-\f[V]String.prototype.fixed()\f[R] \f[I](deprecated)\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]String.prototype.fixed()\f[R] \f[I](deprecated)\f[R]
 \f[V]<tt>\f[R]
-.RE
-.IP \[bu] 2
-\f[V]String.prototype.fontcolor()\f[R] \f[I](deprecated)\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]String.prototype.fontcolor()\f[R] \f[I](deprecated)\f[R]
 \f[V]<font color=\[dq]color\[dq]>\f[R]
-.RE
-.IP \[bu] 2
-\f[V]String.prototype.fontsize()\f[R] \f[I](deprecated)\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]String.prototype.fontsize()\f[R] \f[I](deprecated)\f[R]
 \f[V]<font size=\[dq]size\[dq]>\f[R]
-.RE
-.IP \[bu] 2
-\f[V]String.prototype.italics()\f[R] \f[I](deprecated)\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]String.prototype.italics()\f[R] \f[I](deprecated)\f[R]
 \f[V]<i>\f[R]
-.RE
-.IP \[bu] 2
-\f[V]String.prototype.link()\f[R] \f[I](deprecated)\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]String.prototype.link()\f[R] \f[I](deprecated)\f[R]
 \f[V]<a href=\[dq]url\[dq]>\f[R] (link to URL)
-.RE
-.IP \[bu] 2
-\f[V]String.prototype.small()\f[R] \f[I](deprecated)\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]String.prototype.small()\f[R] \f[I](deprecated)\f[R]
 \f[V]<small>\f[R]
-.RE
-.IP \[bu] 2
-\f[V]String.prototype.strike()\f[R] \f[I](deprecated)\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]String.prototype.strike()\f[R] \f[I](deprecated)\f[R]
 \f[V]<strike>\f[R]
-.RE
-.IP \[bu] 2
-\f[V]String.prototype.sub()\f[R] \f[I](deprecated)\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]String.prototype.sub()\f[R] \f[I](deprecated)\f[R]
 \f[V]<sub>\f[R]
-.RE
-.IP \[bu] 2
-\f[V]String.prototype.sup()\f[R] \f[I](deprecated)\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]String.prototype.sup()\f[R] \f[I](deprecated)\f[R]
 \f[V]<sup>\f[R]
-.RE
 .PP
 Note that these methods do not check if the string itself contains HTML
 tags, so it\[cq]s possible to create invalid HTML:
@@ -776,7 +614,7 @@ value (for \f[V]anchor()\f[R], \f[V]fontcolor()\f[R],
 \[dq]foo\[dq].anchor(\[aq]\[dq]Hello\[dq]\[aq]); // <a name=\[dq]&quot;Hello&quot;\[dq]>foo</a>
 \f[R]
 .fi
-.SH Examples
+.SH EXAMPLES
 .SS String conversion
 .PP
 It\[cq]s possible to use \f[V]String\f[R] as a more reliable
@@ -795,7 +633,7 @@ undefinedVar.toString(); // TypeError: undefinedVar is undefined
 String(undefinedVar); // \[dq]undefined\[dq]
 \f[R]
 .fi
-.SH See also
+.SH SEE ALSO
 .IP \[bu] 2
 Text formatting in the JavaScript Guide
 .IP \[bu] 2

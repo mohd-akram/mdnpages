@@ -14,13 +14,16 @@
 . ftr VB CB
 . ftr VBI CBI
 .\}
-.TH "Math.imul" "JS" "2023-06-02" "JavaScript" "JavaScript Reference Manual"
+.TH "Math.imul" "JS" "June 2, 2023" "JavaScript" "JavaScript Reference Manual"
 .hy
-.SH Synopsis
+.SH NAME
+.PP
+Math.imul - Math.imul()
+.SH SYNOPSIS
 .PP
 The \f[B]\f[VB]Math.imul()\f[B]\f[R] static method returns the result of
 the C-like 32-bit multiplication of the two parameters.
-.SH Syntax
+.SH SYNTAX
 .IP
 .nf
 \f[C]
@@ -28,22 +31,16 @@ Math.imul(a, b)
 \f[R]
 .fi
 .SS Parameters
-.IP \[bu] 2
-\f[V]a\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]a\f[R]
 First number.
-.RE
-.IP \[bu] 2
-\f[V]b\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]b\f[R]
 Second number.
-.RE
 .SS Return value
 .PP
 The result of the C-like 32-bit multiplication of the given arguments.
-.SH Description
+.SH DESCRIPTION
 .PP
 \f[V]Math.imul()\f[R] allows for 32-bit integer multiplication with
 C-like semantics.
@@ -63,7 +60,7 @@ However, with asm.js, which allows JIT-optimizers to more confidently
 use integers in JavaScript, multiplying two numbers stored internally as
 integers (which is only possible with asm.js) with \f[V]imul()\f[R]
 could be potentially more performant.
-.SH Examples
+.SH EXAMPLES
 .SS Using Math.imul()
 .IP
 .nf
@@ -75,7 +72,7 @@ Math.imul(0xffffffff, 5); // -5
 Math.imul(0xfffffffe, 5); // -10
 \f[R]
 .fi
-.SH See also
+.SH SEE ALSO
 .IP \[bu] 2
 Polyfill of \f[V]Math.imul\f[R] in
 \f[V]core-js\f[R] (https://github.com/zloirock/core-js#ecmascript-math)

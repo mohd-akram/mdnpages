@@ -14,9 +14,12 @@
 . ftr VB CB
 . ftr VBI CBI
 .\}
-.TH "String.raw" "JS" "2023-06-02" "JavaScript" "JavaScript Reference Manual"
+.TH "String.raw" "JS" "June 2, 2023" "JavaScript" "JavaScript Reference Manual"
 .hy
-.SH Synopsis
+.SH NAME
+.PP
+String.raw - String.raw()
+.SH SYNOPSIS
 .PP
 The \f[B]\f[VB]String.raw()\f[B]\f[R] static method is a tag function of
 template literals.
@@ -25,7 +28,7 @@ This is similar to the \f[V]r\f[R] prefix in Python, or the
 It\[cq]s used to get the raw string form of template literals \[em] that
 is, substitutions (e.g.\ \f[V]${foo}\f[R]) are processed, but escape
 sequences (e.g.\ \f[V]\[rs]n\f[R]) are not.
-.SH Syntax
+.SH SYNTAX
 .IP
 .nf
 \f[C]
@@ -35,39 +38,27 @@ String.raw\[ga]templateString\[ga]
 \f[R]
 .fi
 .SS Parameters
-.IP \[bu] 2
-\f[V]strings\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]strings\f[R]
 Well-formed template literal array object, like
 \f[V]{ raw: [\[aq]foo\[aq], \[aq]bar\[aq], \[aq]baz\[aq]] }\f[R].
 Should be an object with a \f[V]raw\f[R] property whose value is an
 array-like object of strings.
-.RE
-.IP \[bu] 2
-\f[V]...substitutions\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]...substitutions\f[R]
 Contains substitution values.
-.RE
-.IP \[bu] 2
-\f[V]templateString\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]templateString\f[R]
 A template literal, optionally with substitutions (\f[V]${...}\f[R]).
-.RE
 .SS Return value
 .PP
 The raw string form of a given template literal.
 .SS Exceptions
-.IP \[bu] 2
-\f[V]TypeError\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]TypeError\f[R]
 Thrown if the first argument doesn\[cq]t have a \f[V]raw\f[R] property,
 or the \f[V]raw\f[R] property is \f[V]undefined\f[R] or \f[V]null\f[R].
-.RE
-.SH Description
+.SH DESCRIPTION
 .PP
 In most cases, \f[V]String.raw()\f[R] is used with template literals.
 The first syntax mentioned above is only rarely used, because the
@@ -92,7 +83,7 @@ If \f[V]substitutions.length < strings.raw.length - 1\f[R] (i.e.\ there
 are not enough substitutions to fill the placeholders \[em] which
 can\[cq]t happen in a well-formed tagged template literal), the rest of
 the placeholders are filled with empty strings.
-.SH Examples
+.SH EXAMPLES
 .SS Using String.raw()
 .IP
 .nf
@@ -191,7 +182,7 @@ The following is equivalent to \f[V]\[ga]t${0}e${1}s${2}t\[ga]\f[R]:
 String.raw({ raw: \[dq]test\[dq] }, 0, 1, 2); // \[aq]t0e1s2t\[aq]
 \f[R]
 .fi
-.SH See also
+.SH SEE ALSO
 .IP \[bu] 2
 Polyfill of \f[V]String.raw\f[R] in
 \f[V]core-js\f[R] (https://github.com/zloirock/core-js#ecmascript-string-and-regexp)

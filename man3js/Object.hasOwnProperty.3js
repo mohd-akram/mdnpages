@@ -14,9 +14,12 @@
 . ftr VB CB
 . ftr VBI CBI
 .\}
-.TH "Object.hasOwnProperty" "JS" "2023-06-02" "JavaScript" "JavaScript Reference Manual"
+.TH "Object.hasOwnProperty" "JS" "June 2, 2023" "JavaScript" "JavaScript Reference Manual"
 .hy
-.SH Synopsis
+.SH NAME
+.PP
+Object.hasOwnProperty - Object.prototype.hasOwnProperty()
+.SH SYNOPSIS
 .PP
 The \f[B]\f[VB]hasOwnProperty()\f[B]\f[R] method returns a boolean
 indicating whether the object has the specified property as its own
@@ -26,7 +29,7 @@ property (as opposed to inheriting it).
 \f[B]Note:\f[R] \f[V]Object.hasOwn()\f[R] is recommended over
 \f[V]hasOwnProperty()\f[R], in browsers where it is supported.
 .RE
-.SH Syntax
+.SH SYNTAX
 .IP
 .nf
 \f[C]
@@ -34,17 +37,14 @@ hasOwnProperty(prop)
 \f[R]
 .fi
 .SS Parameters
-.IP \[bu] 2
-\f[V]prop\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]prop\f[R]
 The \f[V]String\f[R] name or Symbol of the property to test.
-.RE
 .SS Return value
 .PP
 Returns \f[V]true\f[R] if the object has the specified property as own
 property; \f[V]false\f[R] otherwise.
-.SH Description
+.SH DESCRIPTION
 .PP
 The \f[B]\f[VB]hasOwnProperty()\f[B]\f[R] method returns \f[V]true\f[R]
 if the specified property is a direct property of the object \[em] even
@@ -72,7 +72,7 @@ The method will not be available in objects where it is reimplemented,
 or on objects created using \f[V]Object.create(null)\f[R] (as these
 don\[cq]t inherit from \f[V]Object.prototype\f[R]).
 Examples for these cases are given below.
-.SH Examples
+.SH EXAMPLES
 .SS Using hasOwnProperty to test for an own property\[cq]s existence
 .PP
 The following code shows how to determine whether the \f[V]example\f[R]
@@ -197,7 +197,7 @@ foo.hasOwnProperty(\[dq]prop\[dq]); // Uncaught TypeError: foo.hasOwnProperty is
 The solutions in this case are the same as for the previous section: use
 \f[V]Object.hasOwn()\f[R] by preference, otherwise use an external
 object\[cq]s \f[V]hasOwnProperty()\f[R].
-.SH See also
+.SH SEE ALSO
 .IP \[bu] 2
 \f[V]Object.hasOwn()\f[R]
 .IP \[bu] 2

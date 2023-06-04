@@ -15,9 +15,12 @@
 . ftr VB CB
 . ftr VBI CBI
 .\}
-.TH "Symbol.iterator" "JS" "2023-06-02" "JavaScript" "JavaScript Reference Manual"
+.TH "Symbol.iterator" "JS" "June 2, 2023" "JavaScript" "JavaScript Reference Manual"
 .hy
-.SH Synopsis
+.SH NAME
+.PP
+Symbol.iterator - Symbol.iterator
+.SH SYNOPSIS
 .PP
 The \f[B]\f[VB]Symbol.iterator\f[B]\f[R] static data property represents
 the well-known symbol \f[V]\[at]\[at]iterator\f[R].
@@ -25,7 +28,7 @@ The iterable protocol looks up this symbol for the method that returns
 the iterator for an object.
 In order for an object to be iterable, it must have an
 \f[V]\[at]\[at]iterator\f[R] key.
-.SH Value
+.SH VALUE
 .PP
 The well-known symbol \f[V]\[at]\[at]iterator\f[R].
 .PP
@@ -48,7 +51,7 @@ T}@T{
 no
 T}
 .TE
-.SH Description
+.SH DESCRIPTION
 .PP
 Whenever an object needs to be iterated (such as at the beginning of a
 \f[V]for...of\f[R] loop), its \f[V]\[at]\[at]iterator\f[R] method is
@@ -70,7 +73,7 @@ Some built-in types with a \f[V]\[at]\[at]iterator\f[R] method are:
 \f[V]Set.prototype[\[at]\[at]iterator]()\f[R]
 .PP
 See also Iteration protocols for more information.
-.SH Examples
+.SH EXAMPLES
 .SS User-defined iterables
 .PP
 We can make our own iterables like this:
@@ -127,7 +130,7 @@ nonWellFormedIterable[Symbol.iterator] = () => 1;
 [...nonWellFormedIterable]; // TypeError: [Symbol.iterator]() returned a non-object value
 \f[R]
 .fi
-.SH See also
+.SH SEE ALSO
 .IP \[bu] 2
 Polyfill of \f[V]Symbol.iterator\f[R] in
 \f[V]core-js\f[R] (https://github.com/zloirock/core-js#ecmascript-symbol)

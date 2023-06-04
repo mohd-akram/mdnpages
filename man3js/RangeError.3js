@@ -14,13 +14,16 @@
 . ftr VB CB
 . ftr VBI CBI
 .\}
-.TH "RangeError" "JS" "2023-06-02" "JavaScript" "JavaScript Reference Manual"
+.TH "RangeError" "JS" "June 2, 2023" "JavaScript" "JavaScript Reference Manual"
 .hy
-.SH Synopsis
+.SH NAME
+.PP
+RangeError - RangeError
+.SH SYNOPSIS
 .PP
 The \f[B]\f[VB]RangeError\f[B]\f[R] object indicates an error when a
 value is not in the set or range of allowed values.
-.SH Description
+.SH DESCRIPTION
 .PP
 A \f[V]RangeError\f[R] is thrown when trying to pass a value as an
 argument to a function that does not allow a range that includes the
@@ -44,40 +47,31 @@ when passing bad values to the numeric methods
 \f[V]postMessage()\f[R].
 .PP
 \f[V]RangeError\f[R] is a subclass of \f[V]Error\f[R].
-.SH Constructor
-.IP \[bu] 2
-\f[V]RangeError()\f[R]
-.RS 2
-.IP \[bu] 2
+.SH CONSTRUCTOR
+.TP
+\f[B]RangeError()\f[R]
 Creates a new \f[V]RangeError\f[R] object.
-.RE
-.SH Instance properties
+.SH INSTANCE PROPERTIES
 .PP
 \f[I]Also inherits instance properties from its parent
 \f[VI]Error\f[I]\f[R].
 .PP
 These properties are defined on \f[V]RangeError.prototype\f[R] and
 shared by all \f[V]RangeError\f[R] instances.
-.IP \[bu] 2
-\f[V]RangeError.prototype.constructor\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]RangeError.prototype.constructor\f[R]
 The constructor function that created the instance object.
 For \f[V]RangeError\f[R] instances, the initial value is the
 \f[V]RangeError\f[R] constructor.
-.RE
-.IP \[bu] 2
-\f[V]RangeError.prototype.name\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]RangeError.prototype.name\f[R]
 Represents the name for the type of error.
 For \f[V]RangeError.prototype.name\f[R], the initial value is
 \f[V]\[dq]RangeError\[dq]\f[R].
-.RE
-.SH Instance methods
+.SH INSTANCE METHODS
 .PP
 \f[I]Inherits instance methods from its parent \f[VI]Error\f[I]\f[R].
-.SH Examples
+.SH EXAMPLES
 .SS Using RangeError (for numeric values)
 .IP
 .nf
@@ -118,7 +112,7 @@ try {
 }
 \f[R]
 .fi
-.SH See also
+.SH SEE ALSO
 .IP \[bu] 2
 \f[V]Error\f[R]
 .IP \[bu] 2

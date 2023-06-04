@@ -14,16 +14,19 @@
 . ftr VB CB
 . ftr VBI CBI
 .\}
-.TH "Math.sinh" "JS" "2023-06-02" "JavaScript" "JavaScript Reference Manual"
+.TH "Math.sinh" "JS" "June 2, 2023" "JavaScript" "JavaScript Reference Manual"
 .hy
-.SH Synopsis
+.SH NAME
+.PP
+Math.sinh - Math.sinh()
+.SH SYNOPSIS
 .PP
 The \f[B]\f[VB]Math.sinh()\f[B]\f[R] static method returns the
 hyperbolic sine of a number.
 That is,
 .PP
 𝙼𝚊𝚝𝚑.𝚜𝚒𝚗𝚑(𝚡)=sinh(x)=ex−e−x2 = (x) =
-.SH Syntax
+.SH SYNTAX
 .IP
 .nf
 \f[C]
@@ -31,21 +34,18 @@ Math.sinh(x)
 \f[R]
 .fi
 .SS Parameters
-.IP \[bu] 2
-\f[V]x\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]x\f[R]
 A number.
-.RE
 .SS Return value
 .PP
 The hyperbolic sine of \f[V]x\f[R].
-.SH Description
+.SH DESCRIPTION
 .PP
 Because \f[V]sinh()\f[R] is a static method of \f[V]Math\f[R], you
 always use it as \f[V]Math.sinh()\f[R], rather than as a method of a
 \f[V]Math\f[R] object you created (\f[V]Math\f[R] is not a constructor).
-.SH Examples
+.SH EXAMPLES
 .SS Using Math.sinh()
 .IP
 .nf
@@ -57,7 +57,7 @@ Math.sinh(1); // 1.1752011936438014
 Math.sinh(Infinity); // Infinity
 \f[R]
 .fi
-.SH See also
+.SH SEE ALSO
 .IP \[bu] 2
 Polyfill of \f[V]Math.sinh\f[R] in
 \f[V]core-js\f[R] (https://github.com/zloirock/core-js#ecmascript-math)

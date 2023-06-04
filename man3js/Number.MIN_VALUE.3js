@@ -15,14 +15,17 @@
 . ftr VB CB
 . ftr VBI CBI
 .\}
-.TH "Number.MIN_VALUE" "JS" "2023-06-02" "JavaScript" "JavaScript Reference Manual"
+.TH "Number.MIN_VALUE" "JS" "June 2, 2023" "JavaScript" "JavaScript Reference Manual"
 .hy
-.SH Synopsis
+.SH NAME
+.PP
+Number.MIN_VALUE - Number.MIN_VALUE
+.SH SYNOPSIS
 .PP
 The \f[B]\f[VB]Number.MIN_VALUE\f[B]\f[R] static data property
 represents the smallest positive numeric value representable in
 JavaScript.
-.SH Value
+.SH VALUE
 .PP
 2-1074, or \f[V]5E-324\f[R].
 .PP
@@ -45,7 +48,7 @@ T}@T{
 no
 T}
 .TE
-.SH Description
+.SH DESCRIPTION
 .PP
 \f[V]Number.MIN_VALUE\f[R] is the smallest positive number (not the most
 negative number) that can be represented within float precision \[em] in
@@ -66,7 +69,7 @@ JavaScriptCore (used by Safari) is 2-1074, or \f[V]5E-324\f[R].
 Because \f[V]MIN_VALUE\f[R] is a static property of \f[V]Number\f[R],
 you always use it as \f[V]Number.MIN_VALUE\f[R], rather than as a
 property of a number value.
-.SH Examples
+.SH EXAMPLES
 .SS Using MIN_VALUE
 .PP
 The following code divides two numeric values.
@@ -83,6 +86,6 @@ if (num1 / num2 >= Number.MIN_VALUE) {
 }
 \f[R]
 .fi
-.SH See also
+.SH SEE ALSO
 .IP \[bu] 2
 \f[V]Number.MAX_VALUE\f[R]

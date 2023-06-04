@@ -14,13 +14,16 @@
 . ftr VB CB
 . ftr VBI CBI
 .\}
-.TH "Reflect.set" "JS" "2023-06-02" "JavaScript" "JavaScript Reference Manual"
+.TH "Reflect.set" "JS" "June 2, 2023" "JavaScript" "JavaScript Reference Manual"
 .hy
-.SH Synopsis
+.SH NAME
+.PP
+Reflect.set - Reflect.set()
+.SH SYNOPSIS
 .PP
 The \f[B]\f[VB]Reflect.set()\f[B]\f[R] static method is like the
 property accessor and assignment syntax, but as a function.
-.SH Syntax
+.SH SYNTAX
 .IP
 .nf
 \f[C]
@@ -29,46 +32,31 @@ Reflect.set(target, propertyKey, value, receiver)
 \f[R]
 .fi
 .SS Parameters
-.IP \[bu] 2
-\f[V]target\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]target\f[R]
 The target object on which to set the property.
-.RE
-.IP \[bu] 2
-\f[V]propertyKey\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]propertyKey\f[R]
 The name of the property to set.
-.RE
-.IP \[bu] 2
-\f[V]value\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]value\f[R]
 The value to set.
-.RE
-.IP \[bu] 2
-\f[V]receiver\f[R] \f[I](optional)\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]receiver\f[R] \f[I](optional)\f[R]
 The value of \f[V]this\f[R] provided for the call to the setter for
 \f[V]propertyKey\f[R] on \f[V]target\f[R].
 If provided and \f[V]target\f[R] does not have a setter for
 \f[V]propertyKey\f[R], the property will be set on \f[V]receiver\f[R]
 instead.
-.RE
 .SS Return value
 .PP
 A \f[V]Boolean\f[R] indicating whether or not setting the property was
 successful.
 .SS Exceptions
-.IP \[bu] 2
-\f[V]TypeError\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]TypeError\f[R]
 Thrown if \f[V]target\f[R] is not an object.
-.RE
-.SH Description
+.SH DESCRIPTION
 .PP
 \f[V]Reflect.set()\f[R] provides the reflective semantic of a property
 access.
@@ -86,7 +74,7 @@ Note that in a normal property access, \f[V]target\f[R] and
 .PP
 \f[V]Reflect.set()\f[R] invokes the \f[V][[Set]]\f[R] object internal
 method of \f[V]target\f[R].
-.SH Examples
+.SH EXAMPLES
 .SS Using Reflect.set()
 .IP
 .nf
@@ -141,7 +129,7 @@ Reflect.set(target, \[dq]a\[dq], 2, receiver); // true
 // target is { a: [Setter] }; receiver is { b: 2 }
 \f[R]
 .fi
-.SH See also
+.SH SEE ALSO
 .IP \[bu] 2
 Polyfill of \f[V]Reflect.set\f[R] in
 \f[V]core-js\f[R] (https://github.com/zloirock/core-js#ecmascript-reflect)

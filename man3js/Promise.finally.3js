@@ -14,9 +14,12 @@
 . ftr VB CB
 . ftr VBI CBI
 .\}
-.TH "Promise.finally" "JS" "2023-06-02" "JavaScript" "JavaScript Reference Manual"
+.TH "Promise.finally" "JS" "June 2, 2023" "JavaScript" "JavaScript Reference Manual"
 .hy
-.SH Synopsis
+.SH NAME
+.PP
+Promise.finally - Promise.prototype.finally()
+.SH SYNOPSIS
 .PP
 The \f[B]\f[VB]finally()\f[B]\f[R] method of \f[V]Promise\f[R] instances
 schedules a function to be called when the promise is settled (either
@@ -26,7 +29,7 @@ you to chain calls to other promise methods.
 .PP
 This lets you avoid duplicating code in both the promise\[cq]s
 \f[V]then()\f[R] and \f[V]catch()\f[R] handlers.
-.SH Syntax
+.SH SYNTAX
 .IP
 .nf
 \f[C]
@@ -34,15 +37,12 @@ finally(onFinally)
 \f[R]
 .fi
 .SS Parameters
-.IP \[bu] 2
-\f[V]onFinally\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]onFinally\f[R]
 A function to asynchronously execute when this promise becomes settled.
 Its return value is ignored unless the returned value is a rejected
 promise.
 The function is called with no arguments.
-.RE
 .SS Return value
 .PP
 Returns an equivalent \f[V]Promise\f[R].
@@ -51,7 +51,7 @@ promise returned by \f[V]finally()\f[R] will be rejected with that value
 instead.
 Otherwise, the return value of the handler does not affect the state of
 the original promise.
-.SH Description
+.SH DESCRIPTION
 .PP
 The \f[V]finally()\f[R] method can be useful if you want to do some
 processing or cleanup once the promise is settled, regardless of its
@@ -128,7 +128,7 @@ same algorithm as \f[V]Promise.resolve()\f[R], but the actual
 constructor used to construct the resolved promise will be the subclass.
 \f[V]finally()\f[R] gets this constructor through
 \f[V]promise.constructor[\[at]\[at]species]\f[R].
-.SH Examples
+.SH EXAMPLES
 .SS Using finally()
 .IP
 .nf
@@ -154,7 +154,7 @@ fetch(myRequest)
   });
 \f[R]
 .fi
-.SH See also
+.SH SEE ALSO
 .IP \[bu] 2
 Polyfill of \f[V]Promise.prototype.finally\f[R] in
 \f[V]core-js\f[R] (https://github.com/zloirock/core-js#ecmascript-promise)

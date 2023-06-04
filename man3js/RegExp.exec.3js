@@ -15,13 +15,16 @@
 . ftr VB CB
 . ftr VBI CBI
 .\}
-.TH "RegExp.exec" "JS" "2023-06-02" "JavaScript" "JavaScript Reference Manual"
+.TH "RegExp.exec" "JS" "June 2, 2023" "JavaScript" "JavaScript Reference Manual"
 .hy
-.SH Synopsis
+.SH NAME
+.PP
+RegExp.exec - RegExp.prototype.exec()
+.SH SYNOPSIS
 .PP
 The \f[B]\f[VB]exec()\f[B]\f[R] method executes a search for a match in
 a specified string and returns a result array, or \f[V]null\f[R].
-.SH Syntax
+.SH SYNTAX
 .IP
 .nf
 \f[C]
@@ -29,15 +32,12 @@ exec(str)
 \f[R]
 .fi
 .SS Parameters
-.IP \[bu] 2
-\f[V]str\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]str\f[R]
 The string against which to match the regular expression.
 All values are coerced to strings, so omitting it or passing
 \f[V]undefined\f[R] causes \f[V]exec()\f[R] to search for the string
 \f[V]\[dq]undefined\[dq]\f[R], which is rarely what you want.
-.RE
 .SS Return value
 .PP
 If the match fails, the \f[V]exec()\f[R] method returns \f[V]null\f[R],
@@ -49,31 +49,20 @@ object.
 The returned array has the matched text as the first item, and then one
 item for each capturing group of the matched text.
 The array also has the following additional properties:
-.IP \[bu] 2
-\f[V]index\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]index\f[R]
 The 0-based index of the match in the string.
-.RE
-.IP \[bu] 2
-\f[V]input\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]input\f[R]
 The original string that was matched against.
-.RE
-.IP \[bu] 2
-\f[V]groups\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]groups\f[R]
 A \f[V]null\f[R]-prototype object of named capturing groups, whose keys
 are the names, and values are the capturing groups, or
 \f[V]undefined\f[R] if no named capturing groups were defined.
 See capturing groups for more information.
-.RE
-.IP \[bu] 2
-\f[V]indices\f[R] \f[I](optional)\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]indices\f[R] \f[I](optional)\f[R]
 This property is only present when the \f[V]d\f[R] flag is set.
 It is an array where each entry represents the bounds of a substring
 match.
@@ -85,7 +74,7 @@ group, etc.
 Each entry itself is a two-element array, where the first number
 represents the match\[cq]s start index, and the second number, its end
 index.
-.RS 2
+.RS
 .PP
 The \f[V]indices\f[R] array additionally has a \f[V]groups\f[R]
 property, which holds a \f[V]null\f[R]-prototype object of all named
@@ -96,8 +85,7 @@ second number being the end index of the capturing group.
 If the regular expression doesn\[cq]t contain any named capturing
 groups, \f[V]groups\f[R] is \f[V]undefined\f[R].
 .RE
-.RE
-.SH Description
+.SH DESCRIPTION
 .PP
 JavaScript \f[V]RegExp\f[R] objects are \f[I]stateful\f[R] when they
 have the global or sticky flags set (e.g.\ \f[V]/foo/g\f[R] or
@@ -130,7 +118,7 @@ you to iterate over the matches.
 .IP \[bu] 2
 If you are executing a match to find its index position in the string,
 use the \f[V]String.prototype.search()\f[R] method instead.
-.SH Examples
+.SH EXAMPLES
 .SS Using exec()
 .PP
 Consider the following example:
@@ -264,7 +252,7 @@ console.log(matches[1]);
 .fi
 .PP
 This will log a message containing \f[V]\[aq]hello world!\[aq]\f[R].
-.SH See also
+.SH SEE ALSO
 .IP \[bu] 2
 Regular Expressions chapter in the JavaScript Guide
 .IP \[bu] 2

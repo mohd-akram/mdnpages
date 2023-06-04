@@ -14,15 +14,18 @@
 . ftr VB CB
 . ftr VBI CBI
 .\}
-.TH "Generator.next" "JS" "2023-06-02" "JavaScript" "JavaScript Reference Manual"
+.TH "Generator.next" "JS" "June 2, 2023" "JavaScript" "JavaScript Reference Manual"
 .hy
-.SH Synopsis
+.SH NAME
+.PP
+Generator.next - Generator.prototype.next()
+.SH SYNOPSIS
 .PP
 The \f[B]\f[VB]next()\f[B]\f[R] method returns an object with two
 properties \f[V]done\f[R] and \f[V]value\f[R].
 You can also provide a parameter to the \f[V]next\f[R] method to send a
 value to the generator.
-.SH Syntax
+.SH SYNTAX
 .IP
 .nf
 \f[C]
@@ -30,28 +33,23 @@ generatorObject.next(value)
 \f[R]
 .fi
 .SS Parameters
-.IP \[bu] 2
-\f[V]value\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]value\f[R]
 The value to send to the generator.
-.RS 2
+.RS
 .PP
 The value will be assigned as a result of a \f[V]yield\f[R] expression.
 For example, in \f[V]variable = yield expression\f[R], the value passed
 to the \f[V].next()\f[R] function will be assigned to
 \f[V]variable\f[R].
 .RE
-.RE
 .SS Return value
 .PP
 An \f[V]Object\f[R] with two properties:
-.IP \[bu] 2
-\f[V]done\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]done\f[R]
 A boolean value:
-.RS 2
+.RS
 .IP \[bu] 2
 \f[V]true\f[R] if the generator is past the end of its control flow.
 In this case \f[V]value\f[R] specifies the \f[I]return value\f[R] of the
@@ -59,14 +57,10 @@ generator (which may be undefined).
 .IP \[bu] 2
 \f[V]false\f[R] if the generator is able to produce more values.
 .RE
-.RE
-.IP \[bu] 2
-\f[V]value\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]value\f[R]
 Any JavaScript value yielded or returned by the generator.
-.RE
-.SH Examples
+.SH EXAMPLES
 .SS Using next()
 .PP
 The following example shows a simple generator and the object that the
@@ -135,7 +129,7 @@ g.next(2); // Returns { value: undefined, done: false }
 // Logs 2
 \f[R]
 .fi
-.SH See also
+.SH SEE ALSO
 .IP \[bu] 2
 \f[V]function*\f[R]
 .IP \[bu] 2

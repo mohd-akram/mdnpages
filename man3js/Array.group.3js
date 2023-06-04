@@ -14,9 +14,12 @@
 . ftr VB CB
 . ftr VBI CBI
 .\}
-.TH "Array.group" "JS" "2023-06-02" "JavaScript" "JavaScript Reference Manual"
+.TH "Array.group" "JS" "June 2, 2023" "JavaScript" "JavaScript Reference Manual"
 .hy
-.SH Synopsis
+.SH NAME
+.PP
+Array.group - Array.prototype.group()
+.SH SYNOPSIS
 .PP
 The \f[B]\f[VB]group()\f[B]\f[R] method groups the elements of the
 calling array according to the string values returned by a provided
@@ -28,7 +31,7 @@ This method should be used when group names can be represented by
 strings.
 If you need to group elements using a key that is some arbitrary value,
 use \f[V]Array.prototype.groupToMap()\f[R] instead.
-.SH Syntax
+.SH SYNTAX
 .IP
 .nf
 \f[C]
@@ -37,47 +40,32 @@ group(callbackFn, thisArg)
 \f[R]
 .fi
 .SS Parameters
-.IP \[bu] 2
-\f[V]callbackFn\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]callbackFn\f[R]
 A function to execute for each element in the array.
 It should return a value that can get coerced into a property key
 (string or symbol) indicating the group of the current element.
 The function is called with the following arguments:
-.RS 2
-.IP \[bu] 2
-\f[V]element\f[R]
-.RS 2
-.IP \[bu] 2
+.RS
+.TP
+\f[B]element\f[R]
 The current element being processed in the array.
-.RE
-.IP \[bu] 2
-\f[V]index\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]index\f[R]
 The index of the current element being processed in the array.
-.RE
-.IP \[bu] 2
-\f[V]array\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]array\f[R]
 The array \f[V]group()\f[R] was called upon.
 .RE
-.RE
-.RE
-.IP \[bu] 2
-\f[V]thisArg\f[R] \f[I](optional)\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]thisArg\f[R] \f[I](optional)\f[R]
 A value to use as \f[V]this\f[R] when executing \f[V]callbackFn\f[R].
 See iterative methods.
-.RE
 .SS Return value
 .PP
 A \f[V]null\f[R]-prototype object with properties for all groups, each
 assigned to an array containing the elements of the associated group.
-.SH Description
+.SH DESCRIPTION
 .PP
 The \f[V]group()\f[R] method is an iterative method.
 It calls a provided \f[V]callbackFn\f[R] function once for each element
@@ -126,7 +114,7 @@ both the original array and the returned object.
 The \f[V]group()\f[R] method is generic.
 It only expects the \f[V]this\f[R] value to have a \f[V]length\f[R]
 property and integer-keyed properties.
-.SH Examples
+.SH EXAMPLES
 .SS Using group()
 .PP
 First we define an array containing objects representing an inventory of
@@ -236,7 +224,7 @@ console.log(Array.prototype.group.call(arrayLike, (x) => x % 2));
 // { 0: [2, 4], 1: [3] }
 \f[R]
 .fi
-.SH See also
+.SH SEE ALSO
 .IP \[bu] 2
 Polyfill of \f[V]Array.prototype.group\f[R] in
 \f[V]core-js\f[R] (https://github.com/zloirock/core-js#array-grouping)

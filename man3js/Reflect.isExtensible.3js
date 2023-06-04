@@ -14,15 +14,18 @@
 . ftr VB CB
 . ftr VBI CBI
 .\}
-.TH "Reflect.isExtensible" "JS" "2023-06-02" "JavaScript" "JavaScript Reference Manual"
+.TH "Reflect.isExtensible" "JS" "June 2, 2023" "JavaScript" "JavaScript Reference Manual"
 .hy
-.SH Synopsis
+.SH NAME
+.PP
+Reflect.isExtensible - Reflect.isExtensible()
+.SH SYNOPSIS
 .PP
 The \f[B]\f[VB]Reflect.isExtensible()\f[B]\f[R] static method is like
 \f[V]Object.isExtensible()\f[R].
 It determines if an object is extensible (whether it can have new
 properties added to it).
-.SH Syntax
+.SH SYNTAX
 .IP
 .nf
 \f[C]
@@ -30,23 +33,17 @@ Reflect.isExtensible(target)
 \f[R]
 .fi
 .SS Parameters
-.IP \[bu] 2
-\f[V]target\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]target\f[R]
 The target object which to check if it is extensible.
-.RE
 .SS Return value
 .PP
 A \f[V]Boolean\f[R] indicating whether or not the target is extensible.
 .SS Exceptions
-.IP \[bu] 2
-\f[V]TypeError\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]TypeError\f[R]
 Thrown if \f[V]target\f[R] is not an object.
-.RE
-.SH Description
+.SH DESCRIPTION
 .PP
 \f[V]Reflect.isExtensible()\f[R] provides the reflective semantic of
 checking if an object is extensible.
@@ -58,7 +55,7 @@ returns \f[V]false\f[R] for non-object targets.
 .PP
 \f[V]Reflect.isExtensible()\f[R] invokes the \f[V][[IsExtensible]]\f[R]
 object internal method of \f[V]target\f[R].
-.SH Examples
+.SH EXAMPLES
 .SS Using Reflect.isExtensible()
 .PP
 See also \f[V]Object.isExtensible()\f[R].
@@ -98,7 +95,7 @@ Object.isExtensible(1);
 // false
 \f[R]
 .fi
-.SH See also
+.SH SEE ALSO
 .IP \[bu] 2
 Polyfill of \f[V]Reflect.isExtensible\f[R] in
 \f[V]core-js\f[R] (https://github.com/zloirock/core-js#ecmascript-reflect)

@@ -14,13 +14,16 @@
 . ftr VB CB
 . ftr VBI CBI
 .\}
-.TH "Proxy.revocable" "JS" "2023-06-02" "JavaScript" "JavaScript Reference Manual"
+.TH "Proxy.revocable" "JS" "June 2, 2023" "JavaScript" "JavaScript Reference Manual"
 .hy
-.SH Synopsis
+.SH NAME
+.PP
+Proxy.revocable - Proxy.revocable()
+.SH SYNOPSIS
 .PP
 The \f[B]\f[VB]Proxy.revocable()\f[B]\f[R] static method creates a
 revocable \f[V]Proxy\f[R] object.
-.SH Syntax
+.SH SYNTAX
 .IP
 .nf
 \f[C]
@@ -28,39 +31,27 @@ Proxy.revocable(target, handler)
 \f[R]
 .fi
 .SS Parameters
-.IP \[bu] 2
-\f[V]target\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]target\f[R]
 A target object to wrap with \f[V]Proxy\f[R].
 It can be any sort of object, including a native array, a function, or
 even another proxy.
-.RE
-.IP \[bu] 2
-\f[V]handler\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]handler\f[R]
 An object whose properties are functions defining the behavior of
 \f[V]proxy\f[R] when an operation is performed on it.
-.RE
 .SS Return value
 .PP
 A plain object with the following two properties:
-.IP \[bu] 2
-\f[V]proxy\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]proxy\f[R]
 A Proxy object exactly the same as one created with a
 \f[V]new Proxy(target, handler)\f[R] call.
-.RE
-.IP \[bu] 2
-\f[V]revoke\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]revoke\f[R]
 A function with no parameters to revoke (switch off) the
 \f[V]proxy\f[R].
-.RE
-.SH Description
+.SH DESCRIPTION
 .PP
 The \f[V]Proxy.revocable()\f[R] factory function is the same as the
 \f[V]Proxy()\f[R] constructor, except that in addition to creating a
@@ -99,7 +90,7 @@ Letting users interact with an object through a revocable proxy allows
 you to control the lifetime of the object exposed to the user \[em] you
 can make the object garbage-collectable even when the user is still
 holding a reference to its proxy.
-.SH Examples
+.SH EXAMPLES
 .SS Using Proxy.revocable()
 .IP
 .nf
@@ -123,6 +114,6 @@ delete proxy.foo; // still TypeError
 typeof proxy; // \[dq]object\[dq], typeof doesn\[aq]t trigger any trap
 \f[R]
 .fi
-.SH See also
+.SH SEE ALSO
 .IP \[bu] 2
 \f[V]Proxy\f[R]

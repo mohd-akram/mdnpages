@@ -14,16 +14,19 @@
 . ftr VB CB
 . ftr VBI CBI
 .\}
-.TH "TypedArray.map" "JS" "2023-06-02" "JavaScript" "JavaScript Reference Manual"
+.TH "TypedArray.map" "JS" "June 2, 2023" "JavaScript" "JavaScript Reference Manual"
 .hy
-.SH Synopsis
+.SH NAME
+.PP
+TypedArray.map - TypedArray.prototype.map()
+.SH SYNOPSIS
 .PP
 The \f[B]\f[VB]map()\f[B]\f[R] method creates a new typed array with the
 results of calling a provided function on every element in this typed
 array.
 This method has the same algorithm as \f[V]Array.prototype.map()\f[R].
 \f[I]TypedArray\f[R] is one of the typed array types here.
-.SH Syntax
+.SH SYNTAX
 .IP
 .nf
 \f[C]
@@ -32,45 +35,30 @@ map(callbackFn, thisArg)
 \f[R]
 .fi
 .SS Parameters
-.IP \[bu] 2
-\f[V]callbackFn\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]callbackFn\f[R]
 A function to execute for each element in the typed array.
 Its return value is added as a single element in the new typed array.
 The function is called with the following arguments:
-.RS 2
-.IP \[bu] 2
-\f[V]element\f[R]
-.RS 2
-.IP \[bu] 2
+.RS
+.TP
+\f[B]element\f[R]
 The current element being processed in the typed array.
-.RE
-.IP \[bu] 2
-\f[V]index\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]index\f[R]
 The index of the current element being processed in the typed array.
-.RE
-.IP \[bu] 2
-\f[V]array\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]array\f[R]
 The typed array \f[V]map()\f[R] was called upon.
 .RE
-.RE
-.RE
-.IP \[bu] 2
-\f[V]thisArg\f[R] \f[I](optional)\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]thisArg\f[R] \f[I](optional)\f[R]
 A value to use as \f[V]this\f[R] when executing \f[V]callbackFn\f[R].
 See iterative methods.
-.RE
 .SS Return value
 .PP
 A new typed array.
-.SH Description
+.SH DESCRIPTION
 .PP
 The \f[V]map()\f[R] method calls a provided callback function
 (\f[V]callbackFn\f[R]) once for each element in a typed array, in order,
@@ -104,7 +92,7 @@ Elements which are appended to the array after the call to
 If existing elements of the typed array are changed, or deleted, their
 value as passed to \f[V]callbackFn\f[R] will be the value at the time
 \f[V]map()\f[R] visits them; elements that are deleted are not visited.
-.SH Examples
+.SH EXAMPLES
 .SS Mapping a typed array to a typed array of square roots
 .PP
 The following code takes a typed array and creates a new typed array
@@ -133,7 +121,7 @@ const doubles = numbers.map((num) => num * 2);
 // numbers is still Uint8Array [1, 4, 9]
 \f[R]
 .fi
-.SH See also
+.SH SEE ALSO
 .IP \[bu] 2
 Polyfill of \f[V]TypedArray.prototype.map\f[R] in
 \f[V]core-js\f[R] (https://github.com/zloirock/core-js#ecmascript-typed-arrays)

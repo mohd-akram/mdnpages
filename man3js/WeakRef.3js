@@ -14,14 +14,17 @@
 . ftr VB CB
 . ftr VBI CBI
 .\}
-.TH "WeakRef" "JS" "2023-06-02" "JavaScript" "JavaScript Reference Manual"
+.TH "WeakRef" "JS" "June 2, 2023" "JavaScript" "JavaScript Reference Manual"
 .hy
-.SH Synopsis
+.SH NAME
+.PP
+WeakRef - WeakRef
+.SH SYNOPSIS
 .PP
 A \f[B]\f[VB]WeakRef\f[B]\f[R] object lets you hold a weak reference to
 another object, without preventing that object from getting
 garbage-collected.
-.SH Description
+.SH DESCRIPTION
 .PP
 A \f[V]WeakRef\f[R] object contains a weak reference to an object, which
 is called its \f[I]target\f[R] or \f[I]referent\f[R].
@@ -123,25 +126,20 @@ target has been reclaimed.
 A \f[V]WeakRef\f[R] might never return \f[V]undefined\f[R] from
 \f[V]deref\f[R], even if nothing strongly holds the target, because the
 garbage collector may never decide to reclaim the object.
-.SH Constructor
-.IP \[bu] 2
-\f[V]WeakRef()\f[R]
-.RS 2
-.IP \[bu] 2
+.SH CONSTRUCTOR
+.TP
+\f[B]WeakRef()\f[R]
 Creates a new \f[V]WeakRef\f[R] object.
-.RE
-.SH Instance properties
+.SH INSTANCE PROPERTIES
 .PP
 These properties are defined on \f[V]WeakRef.prototype\f[R] and shared
 by all \f[V]WeakRef\f[R] instances.
-.IP \[bu] 2
-\f[V]WeakRef.prototype.constructor\f[R] \f[I](optional)\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]WeakRef.prototype.constructor\f[R] \f[I](optional)\f[R]
 The constructor function that created the instance object.
 For \f[V]WeakRef\f[R] instances, the initial value is the
 \f[V]WeakRef\f[R] constructor.
-.RS 2
+.RS
 .RS
 .PP
 \f[B]Note:\f[R] This property is marked as \[lq]normative optional\[rq]
@@ -152,24 +150,17 @@ constructor and being able to observe garbage collection.
 However, all major engines do expose it by default.
 .RE
 .RE
-.RE
-.IP \[bu] 2
-\f[V]WeakRef.prototype[\[at]\[at]toStringTag]\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]WeakRef.prototype[\[at]\[at]toStringTag]\f[R]
 The initial value of the \f[V]\[at]\[at]toStringTag\f[R] property is the
 string \f[V]\[dq]WeakRef\[dq]\f[R].
 This property is used in \f[V]Object.prototype.toString()\f[R].
-.RE
-.SH Instance methods
-.IP \[bu] 2
-\f[V]WeakRef.prototype.deref()\f[R]
-.RS 2
-.IP \[bu] 2
+.SH INSTANCE METHODS
+.TP
+\f[B]WeakRef.prototype.deref()\f[R]
 Returns the \f[V]WeakRef\f[R] object\[cq]s target object, or
 \f[V]undefined\f[R] if the target object has been reclaimed.
-.RE
-.SH Examples
+.SH EXAMPLES
 .SS Using a WeakRef object
 .PP
 This example starts a counter shown in a DOM element, stopping when the
@@ -222,7 +213,7 @@ setTimeout(() => {
 }, 5000);
 \f[R]
 .fi
-.SH See also
+.SH SEE ALSO
 .IP \[bu] 2
 \f[V]FinalizationRegistry\f[R]
 .IP \[bu] 2

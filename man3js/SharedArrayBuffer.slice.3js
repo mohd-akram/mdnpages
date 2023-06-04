@@ -14,9 +14,12 @@
 . ftr VB CB
 . ftr VBI CBI
 .\}
-.TH "SharedArrayBuffer.slice" "JS" "2023-06-02" "JavaScript" "JavaScript Reference Manual"
+.TH "SharedArrayBuffer.slice" "JS" "June 2, 2023" "JavaScript" "JavaScript Reference Manual"
 .hy
-.SH Synopsis
+.SH NAME
+.PP
+SharedArrayBuffer.slice - SharedArrayBuffer.prototype.slice()
+.SH SYNOPSIS
 .PP
 The \f[B]\f[VB]slice()\f[B]\f[R] method of \f[V]SharedArrayBuffer\f[R]
 instances returns a new \f[V]SharedArrayBuffer\f[R] whose contents are a
@@ -25,7 +28,7 @@ inclusive, up to end, exclusive.
 If either begin or end is negative, it refers to an index from the end
 of the array, as opposed to from the beginning.
 This method has the same algorithm as \f[V]Array.prototype.slice()\f[R].
-.SH Syntax
+.SH SYNTAX
 .IP
 .nf
 \f[C]
@@ -35,12 +38,10 @@ slice(begin, end)
 \f[R]
 .fi
 .SS Parameters
-.IP \[bu] 2
-\f[V]begin\f[R] \f[I](optional)\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]begin\f[R] \f[I](optional)\f[R]
 Zero-based index at which to begin extraction.
-.RS 2
+.RS
 .PP
 A negative index can be used, indicating an offset from the end of the
 sequence.
@@ -49,14 +50,11 @@ sequence.
 If \f[V]begin\f[R] is undefined, \f[V]slice\f[R] begins from index
 \f[V]0\f[R].
 .RE
-.RE
-.IP \[bu] 2
-\f[V]end\f[R] \f[I](optional)\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]end\f[R] \f[I](optional)\f[R]
 Zero-based index \f[I]before\f[R] which to end extraction.
 \f[V]slice\f[R] extracts up to but not including \f[V]end\f[R].
-.RS 2
+.RS
 .PP
 For example, \f[V]slice(1,4)\f[R] extracts the second element through
 the fourth element (elements indexed 1, 2, and 3).
@@ -69,11 +67,10 @@ second-to-last element in the sequence.
 If \f[V]end\f[R] is omitted, \f[V]slice\f[R] extracts through the end of
 the sequence (\f[V]sab.byteLength\f[R]).
 .RE
-.RE
 .SS Return value
 .PP
 A new \f[V]SharedArrayBuffer\f[R] containing the extracted elements.
-.SH Examples
+.SH EXAMPLES
 .SS Using slice()
 .IP
 .nf
@@ -85,7 +82,7 @@ sab.slice(-2); // SharedArrayBuffer { byteLength: 2 }
 sab.slice(0, 1); // SharedArrayBuffer { byteLength: 1 }
 \f[R]
 .fi
-.SH See also
+.SH SEE ALSO
 .IP \[bu] 2
 \f[V]SharedArrayBuffer\f[R]
 .IP \[bu] 2

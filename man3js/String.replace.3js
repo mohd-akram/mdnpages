@@ -15,9 +15,12 @@
 . ftr VB CB
 . ftr VBI CBI
 .\}
-.TH "String.replace" "JS" "2023-06-02" "JavaScript" "JavaScript Reference Manual"
+.TH "String.replace" "JS" "June 2, 2023" "JavaScript" "JavaScript Reference Manual"
 .hy
-.SH Synopsis
+.SH NAME
+.PP
+String.replace - String.prototype.replace()
+.SH SYNOPSIS
 .PP
 The \f[B]\f[VB]replace()\f[B]\f[R] method returns a new string with one,
 some, or all matches of a \f[V]pattern\f[R] replaced by a
@@ -28,7 +31,7 @@ match.
 If \f[V]pattern\f[R] is a string, only the first occurrence will be
 replaced.
 The original string is left unchanged.
-.SH Syntax
+.SH SYNTAX
 .IP
 .nf
 \f[C]
@@ -36,21 +39,16 @@ replace(pattern, replacement)
 \f[R]
 .fi
 .SS Parameters
-.IP \[bu] 2
-\f[V]pattern\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]pattern\f[R]
 Can be a string or an object with a \f[V]Symbol.replace\f[R] method
 \[em] the typical example being a regular expression.
 Any value that doesn\[cq]t have the \f[V]Symbol.replace\f[R] method will
 be coerced to a string.
-.RE
-.IP \[bu] 2
-\f[V]replacement\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]replacement\f[R]
 Can be a string or a function.
-.RS 2
+.RS
 .IP \[bu] 2
 If it\[cq]s a string, it will replace the substring matched by
 \f[V]pattern\f[R].
@@ -62,12 +60,11 @@ return value is used as the replacement text.
 The arguments supplied to this function are described in the Specifying
 a function as the replacement section below.
 .RE
-.RE
 .SS Return value
 .PP
 A new string, with one, some, or all matches of the pattern replaced by
 the specified replacement.
-.SH Description
+.SH DESCRIPTION
 .PP
 This method does not mutate the string value it\[cq]s called on.
 It returns a new string.
@@ -191,17 +188,12 @@ function replacer(match, p1, p2, /* \&..., */ pN, offset, string, groups) {
 .fi
 .PP
 The arguments to the function are as follows:
-.IP \[bu] 2
-\f[V]match\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]match\f[R]
 The matched substring.
 (Corresponds to \f[V]$&\f[R] above.)
-.RE
-.IP \[bu] 2
-\f[V]p1, p2, \&..., pN\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]p1, p2, \&..., pN\f[R]
 The \f[V]n\f[R]th string found by a capture group (including named
 capturing groups), provided the first argument to \f[V]replace()\f[R] is
 a \f[V]RegExp\f[R] object.
@@ -213,32 +205,22 @@ is the match for \f[V]\[rs]b+\f[R].
 If the group is part of a disjunction
 (e.g.\ \f[V]\[dq]abc\[dq].replace(/(a)|(b)/, replacer)\f[R]), the
 unmatched alternative will be \f[V]undefined\f[R].
-.RE
-.IP \[bu] 2
-\f[V]offset\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]offset\f[R]
 The offset of the matched substring within the whole string being
 examined.
 For example, if the whole string was \f[V]\[aq]abcd\[aq]\f[R], and the
 matched substring was \f[V]\[aq]bc\[aq]\f[R], then this argument will be
 \f[V]1\f[R].
-.RE
-.IP \[bu] 2
-\f[V]string\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]string\f[R]
 The whole string being examined.
-.RE
-.IP \[bu] 2
-\f[V]groups\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]groups\f[R]
 An object whose keys are the used group names, and whose values are the
 matched portions (\f[V]undefined\f[R] if not matched).
 Only present if the \f[V]pattern\f[R] contains at least one named
 capturing group.
-.RE
 .PP
 The exact number of arguments depends on whether the first argument is a
 \f[V]RegExp\f[R] object \[em] and, if so, how many capture groups it
@@ -260,7 +242,7 @@ console.log(newString); // abc - 12345 - #$*%
 .PP
 The function will be invoked multiple times for each full match to be
 replaced if the regular expression in the first parameter is global.
-.SH Examples
+.SH EXAMPLES
 .SS Defining the regular expression in replace()
 .PP
 In the following example, the regular expression is defined in
@@ -452,7 +434,7 @@ console.log(\[dq]abcd\[dq].replace(/(bc)/, addOffset)); // \[dq]abc (1) d\[dq]
 console.log(\[dq]abcd\[dq].replace(/(?<group>bc)/, addOffset)); // \[dq]abc (1) d\[dq]
 \f[R]
 .fi
-.SH See also
+.SH SEE ALSO
 .IP \[bu] 2
 Polyfill of \f[V]String.prototype.replace\f[R] in \f[V]core-js\f[R] with
 fixes and implementation of modern behavior like

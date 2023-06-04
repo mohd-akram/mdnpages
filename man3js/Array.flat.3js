@@ -14,14 +14,17 @@
 . ftr VB CB
 . ftr VBI CBI
 .\}
-.TH "Array.flat" "JS" "2023-06-02" "JavaScript" "JavaScript Reference Manual"
+.TH "Array.flat" "JS" "June 2, 2023" "JavaScript" "JavaScript Reference Manual"
 .hy
-.SH Synopsis
+.SH NAME
+.PP
+Array.flat - Array.prototype.flat()
+.SH SYNOPSIS
 .PP
 The \f[B]\f[VB]flat()\f[B]\f[R] method creates a new array with all
 sub-array elements concatenated into it recursively up to the specified
 depth.
-.SH Syntax
+.SH SYNTAX
 .IP
 .nf
 \f[C]
@@ -30,18 +33,15 @@ flat(depth)
 \f[R]
 .fi
 .SS Parameters
-.IP \[bu] 2
-\f[V]depth\f[R] \f[I](optional)\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]depth\f[R] \f[I](optional)\f[R]
 The depth level specifying how deep a nested array structure should be
 flattened.
 Defaults to 1.
-.RE
 .SS Return value
 .PP
 A new array with the sub-array elements concatenated into it.
-.SH Description
+.SH DESCRIPTION
 .PP
 The \f[V]flat()\f[R] method is a copying method.
 It does not alter \f[V]this\f[R] but instead returns a shallow copy that
@@ -57,7 +57,7 @@ The \f[V]flat()\f[R] method is generic.
 It only expects the \f[V]this\f[R] value to have a \f[V]length\f[R]
 property and integer-keyed properties.
 However, its elements must be arrays if they are to be flattened.
-.SH Examples
+.SH EXAMPLES
 .SS Flattening nested arrays
 .IP
 .nf
@@ -118,7 +118,7 @@ console.log(Array.prototype.flat.call(arrayLike));
 // [ 1, 2, { \[aq]0\[aq]: 3, \[aq]1\[aq]: 4, length: 2 }, 5 ]
 \f[R]
 .fi
-.SH See also
+.SH SEE ALSO
 .IP \[bu] 2
 Polyfill of \f[V]Array.prototype.flat\f[R] in
 \f[V]core-js\f[R] (https://github.com/zloirock/core-js#ecmascript-array)

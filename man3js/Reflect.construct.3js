@@ -14,16 +14,19 @@
 . ftr VB CB
 . ftr VBI CBI
 .\}
-.TH "Reflect.construct" "JS" "2023-06-02" "JavaScript" "JavaScript Reference Manual"
+.TH "Reflect.construct" "JS" "June 2, 2023" "JavaScript" "JavaScript Reference Manual"
 .hy
-.SH Synopsis
+.SH NAME
+.PP
+Reflect.construct - Reflect.construct()
+.SH SYNOPSIS
 .PP
 The \f[B]\f[VB]Reflect.construct()\f[B]\f[R] static method is like the
 \f[V]new\f[R] operator, but as a function.
 It is equivalent to calling \f[V]new target(...args)\f[R].
 It gives also the added option to specify a different
 \f[V]new.target\f[R] value.
-.SH Syntax
+.SH SYNTAX
 .IP
 .nf
 \f[C]
@@ -32,42 +35,30 @@ Reflect.construct(target, argumentsList, newTarget)
 \f[R]
 .fi
 .SS Parameters
-.IP \[bu] 2
-\f[V]target\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]target\f[R]
 The target function to call.
-.RE
-.IP \[bu] 2
-\f[V]argumentsList\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]argumentsList\f[R]
 An array-like object specifying the arguments with which
 \f[V]target\f[R] should be called.
-.RE
-.IP \[bu] 2
-\f[V]newTarget\f[R] \f[I](optional)\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]newTarget\f[R] \f[I](optional)\f[R]
 The value of \f[V]new.target\f[R] operator, which usually specifies the
 prototype of the returned object.
 If \f[V]newTarget\f[R] is not present, its value defaults to
 \f[V]target\f[R].
-.RE
 .SS Return value
 .PP
 A new instance of \f[V]target\f[R] (or \f[V]newTarget\f[R], if present),
 initialized by \f[V]target\f[R] as a constructor with the given
 \f[V]argumentsList\f[R].
 .SS Exceptions
-.IP \[bu] 2
-\f[V]TypeError\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]TypeError\f[R]
 Thrown if \f[V]target\f[R] or \f[V]newTarget\f[R] is not a constructor,
 or if \f[V]argumentsList\f[R] is not an object.
-.RE
-.SH Description
+.SH DESCRIPTION
 .PP
 \f[V]Reflect.apply()\f[R] provides the reflective semantic of a
 constructor call.
@@ -118,7 +109,7 @@ const obj = Reflect.construct(Foo, args);
 .PP
 \f[V]Reflect.construct()\f[R] invokes the \f[V][[Construct]]\f[R] object
 internal method of \f[V]target\f[R].
-.SH Examples
+.SH EXAMPLES
 .SS Using Reflect.construct()
 .IP
 .nf
@@ -212,7 +203,7 @@ OneClass.apply(obj3, args);
 //     undefined
 \f[R]
 .fi
-.SH See also
+.SH SEE ALSO
 .IP \[bu] 2
 Polyfill of \f[V]Reflect.construct\f[R] in
 \f[V]core-js\f[R] (https://github.com/zloirock/core-js#ecmascript-reflect)

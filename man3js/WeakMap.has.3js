@@ -14,14 +14,17 @@
 . ftr VB CB
 . ftr VBI CBI
 .\}
-.TH "WeakMap.has" "JS" "2023-06-02" "JavaScript" "JavaScript Reference Manual"
+.TH "WeakMap.has" "JS" "June 2, 2023" "JavaScript" "JavaScript Reference Manual"
 .hy
-.SH Synopsis
+.SH NAME
+.PP
+WeakMap.has - WeakMap.prototype.has()
+.SH SYNOPSIS
 .PP
 The \f[B]\f[VB]has()\f[B]\f[R] method returns a boolean indicating
 whether an element with the specified key exists in the
 \f[V]WeakMap\f[R] object or not.
-.SH Syntax
+.SH SYNTAX
 .IP
 .nf
 \f[C]
@@ -29,20 +32,17 @@ has(key)
 \f[R]
 .fi
 .SS Parameters
-.IP \[bu] 2
-\f[V]key\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]key\f[R]
 The key of the element to test for presence in the \f[V]WeakMap\f[R]
 object.
-.RE
 .SS Return value
 .PP
 Returns \f[V]true\f[R] if an element with the specified key exists in
 the \f[V]WeakMap\f[R] object; otherwise \f[V]false\f[R].
 Always returns \f[V]false\f[R] if \f[V]key\f[R] is not an object or a
 non-registered symbol.
-.SH Examples
+.SH EXAMPLES
 .SS Using the has method
 .IP
 .nf
@@ -54,7 +54,7 @@ wm.has(window); // returns true
 wm.has(\[dq]baz\[dq]); // returns false
 \f[R]
 .fi
-.SH See also
+.SH SEE ALSO
 .IP \[bu] 2
 \f[V]WeakMap\f[R]
 .IP \[bu] 2

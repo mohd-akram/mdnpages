@@ -14,9 +14,12 @@
 . ftr VB CB
 . ftr VBI CBI
 .\}
-.TH "Date.setYear" "JS" "2023-06-02" "JavaScript" "JavaScript Reference Manual"
+.TH "Date.setYear" "JS" "June 2, 2023" "JavaScript" "JavaScript Reference Manual"
 .hy
-.SH Synopsis
+.SH NAME
+.PP
+Date.setYear - Date.prototype.setYear()
+.SH SYNOPSIS
 .PP
 \f[I](deprecated)\f[R]
 .PP
@@ -48,7 +51,7 @@ value being set to \f[V]0022\f[R].
 Because of those differences in behavior, you should no longer use the
 legacy \f[V]setYear()\f[R] method, but should instead use the preferred
 \f[V]setFullYear()\f[R] method.
-.SH Syntax
+.SH SYNTAX
 .IP
 .nf
 \f[C]
@@ -56,12 +59,9 @@ setYear(yearValue)
 \f[R]
 .fi
 .SS Parameters
-.IP \[bu] 2
-\f[V]yearValue\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]yearValue\f[R]
 An integer.
-.RE
 .SS Return value
 .PP
 Changes the \f[V]Date\f[R] object in place, and returns its new
@@ -69,12 +69,12 @@ timestamp.
 If \f[V]yearValue\f[R] is \f[V]NaN\f[R] (or other values that get
 coerced to \f[V]NaN\f[R], such as \f[V]undefined\f[R]), the date is set
 to Invalid Date and \f[V]NaN\f[R] is returned.
-.SH Description
+.SH DESCRIPTION
 .PP
 If \f[V]yearValue\f[R] is a number between 0 and 99 (inclusive), then
 the year for \f[V]dateObj\f[R] is set to \f[V]1900 + yearValue\f[R].
 Otherwise, the year for \f[V]dateObj\f[R] is set to \f[V]yearValue\f[R].
-.SH Examples
+.SH EXAMPLES
 .SS Using setYear()
 .PP
 The first two lines set the year to 1996.
@@ -89,7 +89,7 @@ theBigDay.setYear(1996);
 theBigDay.setYear(2000);
 \f[R]
 .fi
-.SH See also
+.SH SEE ALSO
 .IP \[bu] 2
 Polyfill of \f[V]Date.prototype.setYear\f[R] in
 \f[V]core-js\f[R] (https://github.com/zloirock/core-js#ecmascript-date)

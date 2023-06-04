@@ -14,14 +14,17 @@
 . ftr VB CB
 . ftr VBI CBI
 .\}
-.TH "DataView.getFloat32" "JS" "2023-06-02" "JavaScript" "JavaScript Reference Manual"
+.TH "DataView.getFloat32" "JS" "June 2, 2023" "JavaScript" "JavaScript Reference Manual"
 .hy
-.SH Synopsis
+.SH NAME
+.PP
+DataView.getFloat32 - DataView.prototype.getFloat32()
+.SH SYNOPSIS
 .PP
 The \f[B]\f[VB]getFloat32()\f[B]\f[R] method gets a signed 32-bit float
 (float) at the specified byte offset from the start of the
 \f[V]DataView\f[R].
-.SH Syntax
+.SH SYNTAX
 .IP
 .nf
 \f[C]
@@ -30,36 +33,27 @@ getFloat32(byteOffset, littleEndian)
 \f[R]
 .fi
 .SS Parameters
-.IP \[bu] 2
-\f[V]byteOffset\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]byteOffset\f[R]
 The offset, in byte, from the start of the view where to read the data.
-.RE
-.IP \[bu] 2
-\f[V]littleEndian\f[R] \f[I](optional)\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]littleEndian\f[R] \f[I](optional)\f[R]
 Indicates whether the 32-bit float is stored in little- or big-endian
 format.
 If \f[V]false\f[R] or \f[V]undefined\f[R], a big-endian value is read.
-.RE
 .SS Return value
 .PP
 A signed 32-bit float number.
 .SS Errors thrown
-.IP \[bu] 2
-\f[V]RangeError\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]RangeError\f[R]
 Thrown if the \f[V]byteOffset\f[R] is set such as it would read beyond
 the end of the view.
-.RE
-.SH Description
+.SH DESCRIPTION
 .PP
 There is no alignment constraint; multi-byte values may be fetched from
 any offset.
-.SH Examples
+.SH EXAMPLES
 .SS Using the getFloat32 method
 .IP
 .nf
@@ -69,7 +63,7 @@ const dataview = new DataView(buffer);
 dataview.getFloat32(1); // 0
 \f[R]
 .fi
-.SH See also
+.SH SEE ALSO
 .IP \[bu] 2
 \f[V]DataView\f[R]
 .IP \[bu] 2

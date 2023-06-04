@@ -14,9 +14,12 @@
 . ftr VB CB
 . ftr VBI CBI
 .\}
-.TH "EvalError" "JS" "2023-06-02" "JavaScript" "JavaScript Reference Manual"
+.TH "EvalError" "JS" "June 2, 2023" "JavaScript" "JavaScript Reference Manual"
 .hy
-.SH Synopsis
+.SH NAME
+.PP
+EvalError - EvalError
+.SH SYNOPSIS
 .PP
 The \f[B]\f[VB]EvalError\f[B]\f[R] object indicates an error regarding
 the global \f[V]eval()\f[R] function.
@@ -28,40 +31,31 @@ This exception is not thrown by JavaScript anymore, however the
 \f[V]postMessage()\f[R].
 .PP
 \f[V]EvalError\f[R] is a subclass of \f[V]Error\f[R].
-.SH Constructor
-.IP \[bu] 2
-\f[V]EvalError()\f[R]
-.RS 2
-.IP \[bu] 2
+.SH CONSTRUCTOR
+.TP
+\f[B]EvalError()\f[R]
 Creates a new \f[V]EvalError\f[R] object.
-.RE
-.SH Instance properties
+.SH INSTANCE PROPERTIES
 .PP
 \f[I]Also inherits instance properties from its parent
 \f[VI]Error\f[I]\f[R].
 .PP
 These properties are defined on \f[V]EvalError.prototype\f[R] and shared
 by all \f[V]EvalError\f[R] instances.
-.IP \[bu] 2
-\f[V]EvalError.prototype.constructor\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]EvalError.prototype.constructor\f[R]
 The constructor function that created the instance object.
 For \f[V]EvalError\f[R] instances, the initial value is the
 \f[V]EvalError\f[R] constructor.
-.RE
-.IP \[bu] 2
-\f[V]EvalError.prototype.name\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]EvalError.prototype.name\f[R]
 Represents the name for the type of error.
 For \f[V]EvalError.prototype.name\f[R], the initial value is
 \f[V]\[dq]EvalError\[dq]\f[R].
-.RE
-.SH Instance methods
+.SH INSTANCE METHODS
 .PP
 \f[I]Inherits instance methods from its parent \f[VI]Error\f[I]\f[R].
-.SH Examples
+.SH EXAMPLES
 .SS Creating an EvalError
 .IP
 .nf
@@ -76,7 +70,7 @@ try {
 }
 \f[R]
 .fi
-.SH See also
+.SH SEE ALSO
 .IP \[bu] 2
 \f[V]Error\f[R]
 .IP \[bu] 2

@@ -14,9 +14,12 @@
 . ftr VB CB
 . ftr VBI CBI
 .\}
-.TH "AsyncGeneratorFunction" "JS" "2023-06-02" "JavaScript" "JavaScript Reference Manual"
+.TH "AsyncGeneratorFunction" "JS" "June 2, 2023" "JavaScript" "JavaScript Reference Manual"
 .hy
-.SH Synopsis
+.SH NAME
+.PP
+AsyncGeneratorFunction - AsyncGeneratorFunction
+.SH SYNOPSIS
 .PP
 The \f[B]\f[VB]AsyncGeneratorFunction\f[B]\f[R] object provides methods
 for async generator functions.
@@ -34,14 +37,11 @@ const AsyncGeneratorFunction = async function* () {}.constructor;
 .fi
 .PP
 \f[V]AsyncGeneratorFunction\f[R] is a subclass of \f[V]Function\f[R].
-.SH Constructor
-.IP \[bu] 2
-\f[V]AsyncGeneratorFunction()\f[R]
-.RS 2
-.IP \[bu] 2
+.SH CONSTRUCTOR
+.TP
+\f[B]AsyncGeneratorFunction()\f[R]
 Creates a new \f[V]AsyncGeneratorFunction\f[R] object.
-.RE
-.SH Instance properties
+.SH INSTANCE PROPERTIES
 .PP
 \f[I]Also inherits instance properties from its parent
 \f[VI]Function\f[I]\f[R].
@@ -49,18 +49,13 @@ Creates a new \f[V]AsyncGeneratorFunction\f[R] object.
 These properties are defined on
 \f[V]AsyncGeneratorFunction.prototype\f[R] and shared by all
 \f[V]AsyncGeneratorFunction\f[R] instances.
-.IP \[bu] 2
-\f[V]AsyncGeneratorFunction.prototype.constructor\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]AsyncGeneratorFunction.prototype.constructor\f[R]
 The constructor function that created the instance object.
 For \f[V]AsyncGeneratorFunction\f[R] instances, the initial value is the
 \f[V]AsyncGeneratorFunction\f[R] constructor.
-.RE
-.IP \[bu] 2
-\f[V]AsyncGeneratorFunction.prototype.prototype\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]AsyncGeneratorFunction.prototype.prototype\f[R]
 All async generator functions share the same \f[V]prototype\f[R]
 property, which is \f[V]AsyncGenerator.prototype\f[R].
 Each async generator function instance also has its own
@@ -69,19 +64,15 @@ When the async generator function is called, the returned async
 generator object inherits from the async generator function\[cq]s
 \f[V]prototype\f[R] property, which in turn inherits from
 \f[V]AsyncGeneratorFunction.prototype.prototype\f[R].
-.RE
-.IP \[bu] 2
-\f[V]AsyncGeneratorFunction.prototype[\[at]\[at]toStringTag]\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]AsyncGeneratorFunction.prototype[\[at]\[at]toStringTag]\f[R]
 The initial value of the \f[V]\[at]\[at]toStringTag\f[R] property is the
 string \f[V]\[dq]AsyncGeneratorFunction\[dq]\f[R].
 This property is used in \f[V]Object.prototype.toString()\f[R].
-.RE
-.SH Instance methods
+.SH INSTANCE METHODS
 .PP
 \f[I]Inherits instance methods from its parent \f[VI]Function\f[I]\f[R].
-.SH See also
+.SH SEE ALSO
 .IP \[bu] 2
 \f[V]async function*\f[R] declaration
 .IP \[bu] 2

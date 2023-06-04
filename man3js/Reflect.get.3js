@@ -14,13 +14,16 @@
 . ftr VB CB
 . ftr VBI CBI
 .\}
-.TH "Reflect.get" "JS" "2023-06-02" "JavaScript" "JavaScript Reference Manual"
+.TH "Reflect.get" "JS" "June 2, 2023" "JavaScript" "JavaScript Reference Manual"
 .hy
-.SH Synopsis
+.SH NAME
+.PP
+Reflect.get - Reflect.get()
+.SH SYNOPSIS
 .PP
 The \f[B]\f[VB]Reflect.get()\f[B]\f[R] static method is like the
 property accessor syntax, but as a function.
-.SH Syntax
+.SH SYNTAX
 .IP
 .nf
 \f[C]
@@ -29,36 +32,24 @@ Reflect.get(target, propertyKey, receiver)
 \f[R]
 .fi
 .SS Parameters
-.IP \[bu] 2
-\f[V]target\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]target\f[R]
 The target object on which to get the property.
-.RE
-.IP \[bu] 2
-\f[V]propertyKey\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]propertyKey\f[R]
 The name of the property to get.
-.RE
-.IP \[bu] 2
-\f[V]receiver\f[R] \f[I](optional)\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]receiver\f[R] \f[I](optional)\f[R]
 The value of \f[V]this\f[R] provided for the call to \f[V]target\f[R] if
 a getter is encountered.
-.RE
 .SS Return value
 .PP
 The value of the property.
 .SS Exceptions
-.IP \[bu] 2
-\f[V]TypeError\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]TypeError\f[R]
 Thrown if \f[V]target\f[R] is not an object.
-.RE
-.SH Description
+.SH DESCRIPTION
 .PP
 \f[V]Reflect.get()\f[R] provides the reflective semantic of a property
 access.
@@ -76,7 +67,7 @@ Note that in a normal property access, \f[V]target\f[R] and
 .PP
 \f[V]Reflect.get()\f[R] invokes the \f[V][[Get]]\f[R] object internal
 method of \f[V]target\f[R].
-.SH Examples
+.SH EXAMPLES
 .SS Using Reflect.get()
 .IP
 .nf
@@ -111,7 +102,7 @@ const obj3 = new Proxy(
 Reflect.get(obj3, \[dq]foo\[dq], { foo: 3 }); // \[dq]3bar\[dq]
 \f[R]
 .fi
-.SH See also
+.SH SEE ALSO
 .IP \[bu] 2
 Polyfill of \f[V]Reflect.get\f[R] in
 \f[V]core-js\f[R] (https://github.com/zloirock/core-js#ecmascript-reflect)

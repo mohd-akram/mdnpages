@@ -14,13 +14,16 @@
 . ftr VB CB
 . ftr VBI CBI
 .\}
-.TH "Reflect.apply" "JS" "2023-06-02" "JavaScript" "JavaScript Reference Manual"
+.TH "Reflect.apply" "JS" "June 2, 2023" "JavaScript" "JavaScript Reference Manual"
 .hy
-.SH Synopsis
+.SH NAME
+.PP
+Reflect.apply - Reflect.apply()
+.SH SYNOPSIS
 .PP
 The \f[B]\f[VB]Reflect.apply()\f[B]\f[R] static method calls a target
 function with arguments as specified.
-.SH Syntax
+.SH SYNTAX
 .IP
 .nf
 \f[C]
@@ -28,38 +31,26 @@ Reflect.apply(target, thisArgument, argumentsList)
 \f[R]
 .fi
 .SS Parameters
-.IP \[bu] 2
-\f[V]target\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]target\f[R]
 The target function to call.
-.RE
-.IP \[bu] 2
-\f[V]thisArgument\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]thisArgument\f[R]
 The value of \f[V]this\f[R] provided for the call to \f[V]target\f[R].
-.RE
-.IP \[bu] 2
-\f[V]argumentsList\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]argumentsList\f[R]
 An array-like object specifying the arguments with which
 \f[V]target\f[R] should be called.
-.RE
 .SS Return value
 .PP
 The result of calling the given \f[V]target\f[R] function with the
 specified \f[V]this\f[R] value and arguments.
 .SS Exceptions
-.IP \[bu] 2
-\f[V]TypeError\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]TypeError\f[R]
 Thrown if \f[V]target\f[R] is not a function or \f[V]argumentsList\f[R]
 is not an object.
-.RE
-.SH Description
+.SH DESCRIPTION
 .PP
 \f[V]Reflect.apply()\f[R] provides the reflective semantic of a function
 call.
@@ -83,7 +74,7 @@ instead of defaulting to calling with no parameters.
 .PP
 \f[V]Reflect.apply()\f[R] invokes the \f[V][[Call]]\f[R] object internal
 method of \f[V]target\f[R].
-.SH Examples
+.SH EXAMPLES
 .SS Using Reflect.apply()
 .IP
 .nf
@@ -101,7 +92,7 @@ Reflect.apply(\[dq]\[dq].charAt, \[dq]ponies\[dq], [3]);
 // \[dq]i\[dq]
 \f[R]
 .fi
-.SH See also
+.SH SEE ALSO
 .IP \[bu] 2
 Polyfill of \f[V]Reflect.apply\f[R] in
 \f[V]core-js\f[R] (https://github.com/zloirock/core-js#ecmascript-reflect)

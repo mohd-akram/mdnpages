@@ -14,13 +14,16 @@
 . ftr VB CB
 . ftr VBI CBI
 .\}
-.TH "Boolean.toString" "JS" "2023-06-02" "JavaScript" "JavaScript Reference Manual"
+.TH "Boolean.toString" "JS" "June 2, 2023" "JavaScript" "JavaScript Reference Manual"
 .hy
-.SH Synopsis
+.SH NAME
+.PP
+Boolean.toString - Boolean.prototype.toString()
+.SH SYNOPSIS
 .PP
 The \f[B]\f[VB]toString()\f[B]\f[R] method returns a string representing
 the specified boolean value.
-.SH Syntax
+.SH SYNTAX
 .IP
 .nf
 \f[C]
@@ -30,7 +33,7 @@ toString()
 .SS Return value
 .PP
 A string representing the specified boolean value.
-.SH Description
+.SH DESCRIPTION
 .PP
 The \f[V]Boolean\f[R] object overrides the \f[V]toString\f[R] method of
 \f[V]Object\f[R]; it does not inherit
@@ -61,7 +64,7 @@ console.log(\[ga]${true}\[ga]); // \[dq]true\[dq]
 console.log(\[ga]${new Boolean(true)}\[ga]); // \[dq]Overridden\[dq]
 \f[R]
 .fi
-.SH Examples
+.SH EXAMPLES
 .SS Using toString()
 .IP
 .nf
@@ -71,6 +74,6 @@ console.log(flag.toString()); // \[dq]true\[dq]
 console.log(false.toString()); // \[dq]false\[dq]
 \f[R]
 .fi
-.SH See also
+.SH SEE ALSO
 .IP \[bu] 2
 \f[V]Object.prototype.toString()\f[R]

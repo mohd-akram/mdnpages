@@ -14,13 +14,16 @@
 . ftr VB CB
 . ftr VBI CBI
 .\}
-.TH "WeakMap.set" "JS" "2023-06-02" "JavaScript" "JavaScript Reference Manual"
+.TH "WeakMap.set" "JS" "June 2, 2023" "JavaScript" "JavaScript Reference Manual"
 .hy
-.SH Synopsis
+.SH NAME
+.PP
+WeakMap.set - WeakMap.prototype.set()
+.SH SYNOPSIS
 .PP
 The \f[B]\f[VB]set()\f[B]\f[R] method adds a new element with a
 specified key and value to a \f[V]WeakMap\f[R] object.
-.SH Syntax
+.SH SYNTAX
 .IP
 .nf
 \f[C]
@@ -28,31 +31,22 @@ set(key, value)
 \f[R]
 .fi
 .SS Parameters
-.IP \[bu] 2
-\f[V]key\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]key\f[R]
 Must be either an object or a non-registered symbol.
 The key of the entry to add to the \f[V]WeakMap\f[R] object.
-.RE
-.IP \[bu] 2
-\f[V]value\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]value\f[R]
 Any value representing the value of the entry to add to the
 \f[V]WeakMap\f[R] object.
-.RE
 .SS Return value
 .PP
 The \f[V]WeakMap\f[R] object.
 .SS Exceptions
-.IP \[bu] 2
-\f[V]TypeError\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]TypeError\f[R]
 Thrown if \f[V]key\f[R] is not an object or a non-registered symbol.
-.RE
-.SH Examples
+.SH EXAMPLES
 .SS Using the set() method
 .IP
 .nf
@@ -72,7 +66,7 @@ wm.set(sym, \[dq]baz\[dq]);
 wm.set(Symbol.iterator, \[dq]qux\[dq]);
 \f[R]
 .fi
-.SH See also
+.SH SEE ALSO
 .IP \[bu] 2
 \f[V]WeakMap\f[R]
 .IP \[bu] 2

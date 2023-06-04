@@ -14,15 +14,18 @@
 . ftr VB CB
 . ftr VBI CBI
 .\}
-.TH "String.trimEnd" "JS" "2023-06-02" "JavaScript" "JavaScript Reference Manual"
+.TH "String.trimEnd" "JS" "June 2, 2023" "JavaScript" "JavaScript Reference Manual"
 .hy
-.SH Synopsis
+.SH NAME
+.PP
+String.trimEnd - String.prototype.trimEnd()
+.SH SYNOPSIS
 .PP
 The \f[B]\f[VB]trimEnd()\f[B]\f[R] method removes whitespace from the
 end of a string and returns a new string, without modifying the original
 string.
 \f[V]trimRight()\f[R] is an alias of this method.
-.SH Syntax
+.SH SYNTAX
 .IP
 .nf
 \f[C]
@@ -54,7 +57,7 @@ In some engines this means:
 String.prototype.trimRight.name === \[dq]trimEnd\[dq];
 \f[R]
 .fi
-.SH Examples
+.SH EXAMPLES
 .SS Using trimEnd()
 .PP
 The following example trims whitespace from the end of \f[V]str\f[R],
@@ -71,7 +74,7 @@ console.log(str.length); // 6
 console.log(str); // \[aq]   foo\[aq]
 \f[R]
 .fi
-.SH See also
+.SH SEE ALSO
 .IP \[bu] 2
 Polyfill of \f[V]String.prototype.trimEnd\f[R] in
 \f[V]core-js\f[R] (https://github.com/zloirock/core-js#ecmascript-string-and-regexp)

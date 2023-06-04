@@ -14,71 +14,53 @@
 . ftr VB CB
 . ftr VBI CBI
 .\}
-.TH "Intl.DurationFormat" "JS" "2023-06-02" "JavaScript" "JavaScript Reference Manual"
+.TH "Intl.DurationFormat" "JS" "June 2, 2023" "JavaScript" "JavaScript Reference Manual"
 .hy
-.SH Synopsis
+.SH NAME
+.PP
+Intl.DurationFormat - Intl.DurationFormat
+.SH SYNOPSIS
 .PP
 The \f[B]\f[VB]Intl.DurationFormat\f[B]\f[R] object enables
 language-sensitive duration formatting.
-.SH Constructor
-.IP \[bu] 2
-\f[V]Intl.DurationFormat()\f[R]
-.RS 2
-.IP \[bu] 2
+.SH CONSTRUCTOR
+.TP
+\f[B]Intl.DurationFormat()\f[R]
 Creates a new \f[V]Intl.DurationFormat\f[R] object.
-.RE
-.SH Static methods
-.IP \[bu] 2
-\f[V]Intl.DurationFormat.supportedLocalesOf()\f[R]
-.RS 2
-.IP \[bu] 2
+.SH STATIC METHODS
+.TP
+\f[B]Intl.DurationFormat.supportedLocalesOf()\f[R]
 Returns an array containing those of the provided locales that are
 supported without having to fall back to the runtime\[cq]s default
 locale.
-.RE
-.SH Instance properties
+.SH INSTANCE PROPERTIES
 .PP
 These properties are defined on \f[V]Intl.DurationFormat.prototype\f[R]
 and shared by all \f[V]Intl.DurationFormat\f[R] instances.
-.IP \[bu] 2
-\f[V]Intl.DurationFormat.prototype.constructor\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]Intl.DurationFormat.prototype.constructor\f[R]
 The constructor function that created the instance object.
 For \f[V]Intl.DurationFormat\f[R] instances, the initial value is the
 \f[V]Intl.DurationFormat\f[R] constructor.
-.RE
-.IP \[bu] 2
-\f[V]Intl.DurationFormat.prototype[\[at]\[at]toStringTag]\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]Intl.DurationFormat.prototype[\[at]\[at]toStringTag]\f[R]
 The initial value of the \f[V]\[at]\[at]toStringTag\f[R] property is the
 string \f[V]\[dq]Intl.DurationFormat\[dq]\f[R].
 This property is used in \f[V]Object.prototype.toString()\f[R].
-.RE
-.SH Instance methods
-.IP \[bu] 2
-\f[V]Intl.DurationFormat.prototype.format()\f[R]
-.RS 2
-.IP \[bu] 2
+.SH INSTANCE METHODS
+.TP
+\f[B]Intl.DurationFormat.prototype.format()\f[R]
 Getter function that formats a duration according to the locale and
 formatting options of this \f[V]DurationFormat\f[R] object.
-.RE
-.IP \[bu] 2
-\f[V]Intl.DurationFormat.prototype.formatToParts()\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]Intl.DurationFormat.prototype.formatToParts()\f[R]
 Returns an \f[V]Array\f[R] of objects representing the formatted
 duration in parts.
-.RE
-.IP \[bu] 2
-\f[V]Intl.DurationFormat.prototype.resolvedOptions()\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]Intl.DurationFormat.prototype.resolvedOptions()\f[R]
 Returns a new object with properties reflecting the locale and
 formatting options computed during initialization of the object.
-.RE
-.SH Examples
+.SH EXAMPLES
 .SS Using Intl.DurationFormat
 .PP
 The examples below show how to use the \f[V]Intl.DurationFormat\f[R]
@@ -105,6 +87,6 @@ new Intl.DurationFormat(\[dq]pt\[dq], { style: \[dq]narrow\[dq] }).format(durati
 // \[dq]1h 46min 40s\[dq]
 \f[R]
 .fi
-.SH See also
+.SH SEE ALSO
 .IP \[bu] 2
 \f[V]Intl\f[R]

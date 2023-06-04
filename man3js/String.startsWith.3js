@@ -14,14 +14,17 @@
 . ftr VB CB
 . ftr VBI CBI
 .\}
-.TH "String.startsWith" "JS" "2023-06-02" "JavaScript" "JavaScript Reference Manual"
+.TH "String.startsWith" "JS" "June 2, 2023" "JavaScript" "JavaScript Reference Manual"
 .hy
-.SH Synopsis
+.SH NAME
+.PP
+String.startsWith - String.prototype.startsWith()
+.SH SYNOPSIS
 .PP
 The \f[B]\f[VB]startsWith()\f[B]\f[R] method determines whether a string
 begins with the characters of a specified string, returning
 \f[V]true\f[R] or \f[V]false\f[R] as appropriate.
-.SH Syntax
+.SH SYNTAX
 .IP
 .nf
 \f[C]
@@ -30,43 +33,34 @@ startsWith(searchString, position)
 \f[R]
 .fi
 .SS Parameters
-.IP \[bu] 2
-\f[V]searchString\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]searchString\f[R]
 The characters to be searched for at the start of this string.
 Cannot be a regex.
 All values that are not regexes are coerced to strings, so omitting it
 or passing \f[V]undefined\f[R] causes \f[V]startsWith()\f[R] to search
 for the string \f[V]\[dq]undefined\[dq]\f[R], which is rarely what you
 want.
-.RE
-.IP \[bu] 2
-\f[V]position\f[R] \f[I](optional)\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]position\f[R] \f[I](optional)\f[R]
 The start position at which \f[V]searchString\f[R] is expected to be
 found (the index of \f[V]searchString\f[R]\[cq]s first character).
 Defaults to \f[V]0\f[R].
-.RE
 .SS Return value
 .PP
 \f[B]\f[VB]true\f[B]\f[R] if the given characters are found at the
 beginning of the string, including when \f[V]searchString\f[R] is an
 empty string; otherwise, \f[B]\f[VB]false\f[B]\f[R].
 .SS Exceptions
-.IP \[bu] 2
-\f[V]TypeError\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]TypeError\f[R]
 Thrown if \f[V]searchString\f[R] is a regex.
-.RE
-.SH Description
+.SH DESCRIPTION
 .PP
 This method lets you determine whether or not a string begins with
 another string.
 This method is case-sensitive.
-.SH Examples
+.SH EXAMPLES
 .SS Using startsWith()
 .IP
 .nf
@@ -78,7 +72,7 @@ console.log(str.startsWith(\[dq]not to be\[dq])); // false
 console.log(str.startsWith(\[dq]not to be\[dq], 10)); // true
 \f[R]
 .fi
-.SH See also
+.SH SEE ALSO
 .IP \[bu] 2
 Polyfill of \f[V]String.prototype.startsWith\f[R] in
 \f[V]core-js\f[R] (https://github.com/zloirock/core-js#ecmascript-string-and-regexp)

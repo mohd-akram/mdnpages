@@ -14,14 +14,17 @@
 . ftr VB CB
 . ftr VBI CBI
 .\}
-.TH "String.toUpperCase" "JS" "2023-06-02" "JavaScript" "JavaScript Reference Manual"
+.TH "String.toUpperCase" "JS" "June 2, 2023" "JavaScript" "JavaScript Reference Manual"
 .hy
-.SH Synopsis
+.SH NAME
+.PP
+String.toUpperCase - String.prototype.toUpperCase()
+.SH SYNOPSIS
 .PP
 The \f[B]\f[VB]toUpperCase()\f[B]\f[R] method returns the calling string
 value converted to uppercase (the value will be converted to a string if
 it isn\[cq]t one).
-.SH Syntax
+.SH SYNTAX
 .IP
 .nf
 \f[C]
@@ -31,13 +34,13 @@ toUpperCase()
 .SS Return value
 .PP
 A new string representing the calling string converted to upper case.
-.SH Description
+.SH DESCRIPTION
 .PP
 The \f[V]toUpperCase()\f[R] method returns the value of the string
 converted to uppercase.
 This method does not affect the value of the string itself since
 JavaScript strings are immutable.
-.SH Examples
+.SH EXAMPLES
 .SS Basic usage
 .IP
 .nf
@@ -64,7 +67,7 @@ const b = String.prototype.toUpperCase.call(true);
 console.log(a, b);
 \f[R]
 .fi
-.SH See also
+.SH SEE ALSO
 .IP \[bu] 2
 \f[V]String.prototype.toLocaleLowerCase()\f[R]
 .IP \[bu] 2

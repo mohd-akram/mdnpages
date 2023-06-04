@@ -14,9 +14,12 @@
 . ftr VB CB
 . ftr VBI CBI
 .\}
-.TH "Atomics.wait" "JS" "2023-06-02" "JavaScript" "JavaScript Reference Manual"
+.TH "Atomics.wait" "JS" "June 2, 2023" "JavaScript" "JavaScript Reference Manual"
 .hy
-.SH Synopsis
+.SH NAME
+.PP
+Atomics.wait - Atomics.wait()
+.SH SYNOPSIS
 .PP
 The \f[B]\f[VB]Atomics.wait()\f[B]\f[R] static method verifies that a
 given position in an \f[V]Int32Array\f[R] still contains a given value
@@ -31,7 +34,7 @@ on the main thread.
 For a non-blocking, asynchronous version of this method, see
 \f[V]Atomics.waitAsync()\f[R].
 .RE
-.SH Syntax
+.SH SYNTAX
 .IP
 .nf
 \f[C]
@@ -40,49 +43,31 @@ Atomics.wait(typedArray, index, value, timeout)
 \f[R]
 .fi
 .SS Parameters
-.IP \[bu] 2
-\f[V]typedArray\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]typedArray\f[R]
 A shared \f[V]Int32Array\f[R] or \f[V]BigInt64Array\f[R].
-.RE
-.IP \[bu] 2
-\f[V]index\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]index\f[R]
 The position in the \f[V]typedArray\f[R] to wait on.
-.RE
-.IP \[bu] 2
-\f[V]value\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]value\f[R]
 The expected value to test.
-.RE
-.IP \[bu] 2
-\f[V]timeout\f[R] \f[I](optional)\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]timeout\f[R] \f[I](optional)\f[R]
 Time to wait in milliseconds.
 \f[V]Infinity\f[R], if no time is provided.
-.RE
 .SS Return value
 .PP
 A string which is either \f[V]\[dq]ok\[dq]\f[R],
 \f[V]\[dq]not-equal\[dq]\f[R], or \f[V]\[dq]timed-out\[dq]\f[R].
 .SS Exceptions
-.IP \[bu] 2
-\f[V]TypeError\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]TypeError\f[R]
 Thrown if \f[V]typedArray\f[R] is not a shared \f[V]Int32Array\f[R].
-.RE
-.IP \[bu] 2
-\f[V]RangeError\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]RangeError\f[R]
 Thrown if \f[V]index\f[R] is out of bounds in the \f[V]typedArray\f[R].
-.RE
-.SH Examples
+.SH EXAMPLES
 .SS Using wait()
 .PP
 Given a shared \f[V]Int32Array\f[R]:
@@ -117,7 +102,7 @@ Atomics.store(int32, 0, 123);
 Atomics.notify(int32, 0, 1);
 \f[R]
 .fi
-.SH See also
+.SH SEE ALSO
 .IP \[bu] 2
 \f[V]Atomics\f[R]
 .IP \[bu] 2

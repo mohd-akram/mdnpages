@@ -14,14 +14,17 @@
 . ftr VB CB
 . ftr VBI CBI
 .\}
-.TH "Object.entries" "JS" "2023-06-02" "JavaScript" "JavaScript Reference Manual"
+.TH "Object.entries" "JS" "June 2, 2023" "JavaScript" "JavaScript Reference Manual"
 .hy
-.SH Synopsis
+.SH NAME
+.PP
+Object.entries - Object.entries()
+.SH SYNOPSIS
 .PP
 The \f[B]\f[VB]Object.entries()\f[B]\f[R] static method returns an array
 of a given object\[cq]s own enumerable string-keyed property key-value
 pairs.
-.SH Syntax
+.SH SYNTAX
 .IP
 .nf
 \f[C]
@@ -29,12 +32,9 @@ Object.entries(obj)
 \f[R]
 .fi
 .SS Parameters
-.IP \[bu] 2
-\f[V]obj\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]obj\f[R]
 An object.
-.RE
 .SS Return value
 .PP
 An array of the given object\[cq]s own enumerable string-keyed property
@@ -42,7 +42,7 @@ key-value pairs.
 Each key-value pair is an array with two elements: the first element is
 the property key (which is always a string), and the second element is
 the property value.
-.SH Description
+.SH DESCRIPTION
 .PP
 \f[V]Object.entries()\f[R] returns an array whose elements are arrays
 corresponding to the enumerable string-keyed property key-value pairs
@@ -56,7 +56,7 @@ same as that provided by a \f[V]for...in\f[R] loop.
 If you only need the property keys, use \f[V]Object.keys()\f[R] instead.
 If you only need the property values, use \f[V]Object.values()\f[R]
 instead.
-.SH Examples
+.SH EXAMPLES
 .SS Using Object.entries()
 .IP
 .nf
@@ -134,7 +134,7 @@ Object.entries(obj).forEach(([key, value]) => {
 });
 \f[R]
 .fi
-.SH See also
+.SH SEE ALSO
 .IP \[bu] 2
 Polyfill of \f[V]Object.entries\f[R] in
 \f[V]core-js\f[R] (https://github.com/zloirock/core-js#ecmascript-object)

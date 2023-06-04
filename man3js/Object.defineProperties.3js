@@ -14,14 +14,17 @@
 . ftr VB CB
 . ftr VBI CBI
 .\}
-.TH "Object.defineProperties" "JS" "2023-06-02" "JavaScript" "JavaScript Reference Manual"
+.TH "Object.defineProperties" "JS" "June 2, 2023" "JavaScript" "JavaScript Reference Manual"
 .hy
-.SH Synopsis
+.SH NAME
+.PP
+Object.defineProperties - Object.defineProperties()
+.SH SYNOPSIS
 .PP
 The \f[B]\f[VB]Object.defineProperties()\f[B]\f[R] static method defines
 new or modifies existing properties directly on an object, returning the
 object.
-.SH Syntax
+.SH SYNTAX
 .IP
 .nf
 \f[C]
@@ -29,82 +32,59 @@ Object.defineProperties(obj, props)
 \f[R]
 .fi
 .SS Parameters
-.IP \[bu] 2
-\f[V]obj\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]obj\f[R]
 The object on which to define or modify properties.
-.RE
-.IP \[bu] 2
-\f[V]props\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]props\f[R]
 An object whose keys represent the names of properties to be defined or
 modified and whose values are objects describing those properties.
 Each value in \f[V]props\f[R] must be either a data descriptor or an
 accessor descriptor; it cannot be both (see
 \f[V]Object.defineProperty()\f[R] for more details).
-.RS 2
+.RS
 .PP
 Data descriptors and accessor descriptors may optionally contain the
 following keys:
-.IP \[bu] 2
-\f[V]configurable\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]configurable\f[R]
 \f[V]true\f[R] if and only if the type of this property descriptor may
 be changed and if the property may be deleted from the corresponding
 object.
 \f[B]Defaults to \f[VB]false\f[B].\f[R]
-.RE
-.IP \[bu] 2
-\f[V]enumerable\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]enumerable\f[R]
 \f[V]true\f[R] if and only if this property shows up during enumeration
 of the properties on the corresponding object.
 \f[B]Defaults to \f[VB]false\f[B].\f[R]
-.RE
 .PP
 A data descriptor also has the following optional keys:
-.IP \[bu] 2
-\f[V]value\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]value\f[R]
 The value associated with the property.
 Can be any valid JavaScript value (number, object, function, etc.).
 \f[B]Defaults to \f[VB]undefined\f[B].\f[R]
-.RE
-.IP \[bu] 2
-\f[V]writable\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]writable\f[R]
 \f[V]true\f[R] if and only if the value associated with the property may
 be changed with an \f[V]assignment operator\f[R].
 \f[B]Defaults to \f[VB]false\f[B].\f[R]
-.RE
 .PP
 An accessor descriptor also has the following optional keys:
-.IP \[bu] 2
-\f[V]get\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]get\f[R]
 A function which serves as a getter for the property, or
 \f[V]undefined\f[R] if there is no getter.
 The function\[cq]s return value will be used as the value of the
 property.
 \f[B]Defaults to \f[VB]undefined\f[B].\f[R]
-.RE
-.IP \[bu] 2
-\f[V]set\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]set\f[R]
 A function which serves as a setter for the property, or
 \f[V]undefined\f[R] if there is no setter.
 The function will receive as its only argument the new value being
 assigned to the property.
 \f[B]Defaults to \f[VB]undefined\f[B].\f[R]
-.RE
 .PP
 If a descriptor has neither of \f[V]value\f[R], \f[V]writable\f[R],
 \f[V]get\f[R] and \f[V]set\f[R] keys, it is treated as a data
@@ -112,11 +92,10 @@ descriptor.
 If a descriptor has both \f[V]value\f[R] or \f[V]writable\f[R] and
 \f[V]get\f[R] or \f[V]set\f[R] keys, an exception is thrown.
 .RE
-.RE
 .SS Return value
 .PP
 The object that was passed to the function.
-.SH Examples
+.SH EXAMPLES
 .SS Using Object.defineProperties
 .IP
 .nf
@@ -135,7 +114,7 @@ Object.defineProperties(obj, {
 });
 \f[R]
 .fi
-.SH See also
+.SH SEE ALSO
 .IP \[bu] 2
 Polyfill of \f[V]Object.defineProperties\f[R] in
 \f[V]core-js\f[R] (https://github.com/zloirock/core-js#ecmascript-object)

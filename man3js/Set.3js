@@ -14,13 +14,16 @@
 . ftr VB CB
 . ftr VBI CBI
 .\}
-.TH "Set" "JS" "2023-06-02" "JavaScript" "JavaScript Reference Manual"
+.TH "Set" "JS" "June 2, 2023" "JavaScript" "JavaScript Reference Manual"
 .hy
-.SH Synopsis
+.SH NAME
+.PP
+Set - Set
+.SH SYNOPSIS
 .PP
 The \f[B]\f[VB]Set\f[B]\f[R] object lets you store unique values of any
 type, whether primitive values or object references.
-.SH Description
+.SH DESCRIPTION
 .PP
 \f[V]Set\f[R] objects are collections of values.
 A value in the set \f[B]may only occur once\f[R]; it is unique in the
@@ -54,117 +57,75 @@ that have previously been added to the set.
 In particular, it is, on average, faster than the
 \f[V]Array.prototype.includes\f[R] method when an array has a
 \f[V]length\f[R] equal to a set\[cq]s \f[V]size\f[R].
-.SH Constructor
-.IP \[bu] 2
-\f[V]Set()\f[R]
-.RS 2
-.IP \[bu] 2
+.SH CONSTRUCTOR
+.TP
+\f[B]Set()\f[R]
 Creates a new \f[V]Set\f[R] object.
-.RE
-.SH Static properties
-.IP \[bu] 2
-\f[V]Set[\[at]\[at]species]\f[R]
-.RS 2
-.IP \[bu] 2
+.SH STATIC PROPERTIES
+.TP
+\f[B]Set[\[at]\[at]species]\f[R]
 The constructor function that is used to create derived objects.
-.RE
-.SH Instance properties
+.SH INSTANCE PROPERTIES
 .PP
 These properties are defined on \f[V]Set.prototype\f[R] and shared by
 all \f[V]Set\f[R] instances.
-.IP \[bu] 2
-\f[V]Set.prototype.constructor\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]Set.prototype.constructor\f[R]
 The constructor function that created the instance object.
 For \f[V]Set\f[R] instances, the initial value is the \f[V]Set\f[R]
 constructor.
-.RE
-.IP \[bu] 2
-\f[V]Set.prototype.size\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]Set.prototype.size\f[R]
 Returns the number of values in the \f[V]Set\f[R] object.
-.RE
-.IP \[bu] 2
-\f[V]Set.prototype[\[at]\[at]toStringTag]\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]Set.prototype[\[at]\[at]toStringTag]\f[R]
 The initial value of the \f[V]\[at]\[at]toStringTag\f[R] property is the
 string \f[V]\[dq]Set\[dq]\f[R].
 This property is used in \f[V]Object.prototype.toString()\f[R].
-.RE
-.SH Instance methods
-.IP \[bu] 2
-\f[V]Set.prototype.add()\f[R]
-.RS 2
-.IP \[bu] 2
+.SH INSTANCE METHODS
+.TP
+\f[B]Set.prototype.add()\f[R]
 Inserts a new element with a specified value in to a \f[V]Set\f[R]
 object, if there isn\[cq]t an element with the same value already in the
 \f[V]Set\f[R].
-.RE
-.IP \[bu] 2
-\f[V]Set.prototype.clear()\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]Set.prototype.clear()\f[R]
 Removes all elements from the \f[V]Set\f[R] object.
-.RE
-.IP \[bu] 2
-\f[V]Set.prototype.delete()\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]Set.prototype.delete()\f[R]
 Removes the element associated to the \f[V]value\f[R] and returns a
 boolean asserting whether an element was successfully removed or not.
 \f[V]Set.prototype.has(value)\f[R] will return \f[V]false\f[R]
 afterwards.
-.RE
-.IP \[bu] 2
-\f[V]Set.prototype.entries()\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]Set.prototype.entries()\f[R]
 Returns a new iterator object that contains \f[B]an array of
 \f[VB][value, value]\f[B]\f[R] for each element in the \f[V]Set\f[R]
 object, in insertion order.
 This is similar to the \f[V]Map\f[R] object, so that each entry\[cq]s
 \f[I]key\f[R] is the same as its \f[I]value\f[R] for a \f[V]Set\f[R].
-.RE
-.IP \[bu] 2
-\f[V]Set.prototype.forEach()\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]Set.prototype.forEach()\f[R]
 Calls \f[V]callbackFn\f[R] once for each value present in the
 \f[V]Set\f[R] object, in insertion order.
 If a \f[V]thisArg\f[R] parameter is provided, it will be used as the
 \f[V]this\f[R] value for each invocation of \f[V]callbackFn\f[R].
-.RE
-.IP \[bu] 2
-\f[V]Set.prototype.has()\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]Set.prototype.has()\f[R]
 Returns a boolean asserting whether an element is present with the given
 value in the \f[V]Set\f[R] object or not.
-.RE
-.IP \[bu] 2
-\f[V]Set.prototype.keys()\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]Set.prototype.keys()\f[R]
 An alias for \f[V]Set.prototype.values()\f[R].
-.RE
-.IP \[bu] 2
-\f[V]Set.prototype.values()\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]Set.prototype.values()\f[R]
 Returns a new iterator object that yields the \f[B]values\f[R] for each
 element in the \f[V]Set\f[R] object in insertion order.
-.RE
-.IP \[bu] 2
-\f[V]Set.prototype[\[at]\[at]iterator]()\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]Set.prototype[\[at]\[at]iterator]()\f[R]
 Returns a new iterator object that yields the \f[B]values\f[R] for each
 element in the \f[V]Set\f[R] object in insertion order.
-.RE
-.SH Examples
+.SH EXAMPLES
 .SS Using the Set object
 .IP
 .nf
@@ -369,7 +330,7 @@ const set = new Set(array);
 console.assert(set.size === array.length);
 \f[R]
 .fi
-.SH See also
+.SH SEE ALSO
 .IP \[bu] 2
 Polyfill of \f[V]Set\f[R] in
 \f[V]core-js\f[R] (https://github.com/zloirock/core-js#set)

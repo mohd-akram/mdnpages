@@ -14,9 +14,12 @@
 . ftr VB CB
 . ftr VBI CBI
 .\}
-.TH "Math.log10" "JS" "2023-06-02" "JavaScript" "JavaScript Reference Manual"
+.TH "Math.log10" "JS" "June 2, 2023" "JavaScript" "JavaScript Reference Manual"
 .hy
-.SH Synopsis
+.SH NAME
+.PP
+Math.log10 - Math.log10()
+.SH SYNOPSIS
 .PP
 The \f[B]\f[VB]Math.log10()\f[B]\f[R] static method returns the base 10
 logarithm of a number.
@@ -24,7 +27,7 @@ That is
 .PP
 ∀x>0,𝙼𝚊𝚝𝚑.𝚕𝚘𝚐𝟷𝟶(𝚡)=log10(x)=the unique\ y\ such that\ 10y=xx > 0,; =
 _{10}(x) = y 10\[ha]y = x
-.SH Syntax
+.SH SYNTAX
 .IP
 .nf
 \f[C]
@@ -32,17 +35,14 @@ Math.log10(x)
 \f[R]
 .fi
 .SS Parameters
-.IP \[bu] 2
-\f[V]x\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]x\f[R]
 A number greater than or equal to 0.
-.RE
 .SS Return value
 .PP
 The base 10 logarithm of \f[V]x\f[R].
 If \f[V]x < 0\f[R], returns \f[V]NaN\f[R].
-.SH Description
+.SH DESCRIPTION
 .PP
 Because \f[V]log10()\f[R] is a static method of \f[V]Math\f[R], you
 always use it as \f[V]Math.log10()\f[R], rather than as a method of a
@@ -51,7 +51,7 @@ always use it as \f[V]Math.log10()\f[R], rather than as a method of a
 This function is the equivalent of \f[V]Math.log(x) / Math.log(10)\f[R].
 For \f[V]log10(e)\f[R], use the constant \f[V]Math.LOG10E\f[R], which is
 1 / \f[V]Math.LN10\f[R].
-.SH Examples
+.SH EXAMPLES
 .SS Using Math.log10()
 .IP
 .nf
@@ -65,7 +65,7 @@ Math.log10(100000); // 5
 Math.log10(Infinity); // Infinity
 \f[R]
 .fi
-.SH See also
+.SH SEE ALSO
 .IP \[bu] 2
 Polyfill of \f[V]Math.log10\f[R] in
 \f[V]core-js\f[R] (https://github.com/zloirock/core-js#ecmascript-math)

@@ -14,14 +14,17 @@
 . ftr VB CB
 . ftr VBI CBI
 .\}
-.TH "Array.filter" "JS" "2023-06-02" "JavaScript" "JavaScript Reference Manual"
+.TH "Array.filter" "JS" "June 2, 2023" "JavaScript" "JavaScript Reference Manual"
 .hy
-.SH Synopsis
+.SH NAME
+.PP
+Array.filter - Array.prototype.filter()
+.SH SYNOPSIS
 .PP
 The \f[B]\f[VB]filter()\f[B]\f[R] method creates a shallow copy of a
 portion of a given array, filtered down to just the elements from the
 given array that pass the test implemented by the provided function.
-.SH Syntax
+.SH SYNTAX
 .IP
 .nf
 \f[C]
@@ -30,49 +33,34 @@ filter(callbackFn, thisArg)
 \f[R]
 .fi
 .SS Parameters
-.IP \[bu] 2
-\f[V]callbackFn\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]callbackFn\f[R]
 A function to execute for each element in the array.
 It should return a truthy value to keep the element in the resulting
 array, and a falsy value otherwise.
 The function is called with the following arguments:
-.RS 2
-.IP \[bu] 2
-\f[V]element\f[R]
-.RS 2
-.IP \[bu] 2
+.RS
+.TP
+\f[B]element\f[R]
 The current element being processed in the array.
-.RE
-.IP \[bu] 2
-\f[V]index\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]index\f[R]
 The index of the current element being processed in the array.
-.RE
-.IP \[bu] 2
-\f[V]array\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]array\f[R]
 The array \f[V]filter()\f[R] was called upon.
 .RE
-.RE
-.RE
-.IP \[bu] 2
-\f[V]thisArg\f[R] \f[I](optional)\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]thisArg\f[R] \f[I](optional)\f[R]
 A value to use as \f[V]this\f[R] when executing \f[V]callbackFn\f[R].
 See iterative methods.
-.RE
 .SS Return value
 .PP
 A shallow copy of a portion of the given array, filtered down to just
 the elements from the given array that pass the test implemented by the
 provided function.
 If no elements pass the test, an empty array will be returned.
-.SH Description
+.SH DESCRIPTION
 .PP
 The \f[V]filter()\f[R] method is an iterative method.
 It calls a provided \f[V]callbackFn\f[R] function once for each element
@@ -115,7 +103,7 @@ avoided (except in special cases).
 The \f[V]filter()\f[R] method is generic.
 It only expects the \f[V]this\f[R] value to have a \f[V]length\f[R]
 property and integer-keyed properties.
-.SH Examples
+.SH EXAMPLES
 .SS Filtering out all small values
 .PP
 The following example uses \f[V]filter()\f[R] to create a filtered array
@@ -279,7 +267,7 @@ console.log(deleteWords);
 // [\[dq]spray\[dq] ,\[dq]limit\[dq]]
 \f[R]
 .fi
-.SH See also
+.SH SEE ALSO
 .IP \[bu] 2
 Polyfill of \f[V]Array.prototype.filter\f[R] in
 \f[V]core-js\f[R] (https://github.com/zloirock/core-js#ecmascript-array)

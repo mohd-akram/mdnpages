@@ -14,14 +14,17 @@
 . ftr VB CB
 . ftr VBI CBI
 .\}
-.TH "Date.valueOf" "JS" "2023-06-02" "JavaScript" "JavaScript Reference Manual"
+.TH "Date.valueOf" "JS" "June 2, 2023" "JavaScript" "JavaScript Reference Manual"
 .hy
-.SH Synopsis
+.SH NAME
+.PP
+Date.valueOf - Date.prototype.valueOf()
+.SH SYNOPSIS
 .PP
 The \f[B]\f[VB]valueOf()\f[B]\f[R] method of \f[V]Date\f[R] instances
 returns the number of milliseconds for this date since the epoch, which
 is defined as the midnight at the beginning of January 1, 1970, UTC.
-.SH Syntax
+.SH SYNTAX
 .IP
 .nf
 \f[C]
@@ -32,7 +35,7 @@ valueOf()
 .PP
 A number representing the timestamp, in milliseconds, of this date.
 Returns \f[V]NaN\f[R] if the date is invalid.
-.SH Description
+.SH DESCRIPTION
 .PP
 The \f[V]valueOf()\f[R] method is part of the type coercion protocol.
 Because \f[V]Date\f[R] has a \f[V][\[at]\[at]toPrimitive]()\f[R] method,
@@ -46,7 +49,7 @@ The \f[V]Date\f[R] object overrides the \f[V]valueOf()\f[R] method of
 \f[V]Date.prototype.valueOf()\f[R] returns the timestamp of the date,
 which is functionally equivalent to the
 \f[V]Date.prototype.getTime()\f[R] method.
-.SH Examples
+.SH EXAMPLES
 .SS Using valueOf()
 .IP
 .nf
@@ -55,7 +58,7 @@ const d = new Date(0); // 1970-01-01T00:00:00.000Z
 console.log(d.valueOf()); // 0
 \f[R]
 .fi
-.SH See also
+.SH SEE ALSO
 .IP \[bu] 2
 \f[V]Object.prototype.valueOf()\f[R]
 .IP \[bu] 2

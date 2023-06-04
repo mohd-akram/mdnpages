@@ -14,15 +14,18 @@
 . ftr VB CB
 . ftr VBI CBI
 .\}
-.TH "Date.getFullYear" "JS" "2023-06-02" "JavaScript" "JavaScript Reference Manual"
+.TH "Date.getFullYear" "JS" "June 2, 2023" "JavaScript" "JavaScript Reference Manual"
 .hy
-.SH Synopsis
+.SH NAME
+.PP
+Date.getFullYear - Date.prototype.getFullYear()
+.SH SYNOPSIS
 .PP
 The \f[B]\f[VB]getFullYear()\f[B]\f[R] method of \f[V]Date\f[R]
 instances returns the year for this date according to local time.
 .PP
 Use this method instead of the \f[V]getYear()\f[R] method.
-.SH Syntax
+.SH SYNTAX
 .IP
 .nf
 \f[C]
@@ -34,7 +37,7 @@ getFullYear()
 An integer representing the year for the given date according to local
 time.
 Returns \f[V]NaN\f[R] if the date is invalid.
-.SH Description
+.SH DESCRIPTION
 .PP
 Unlike \f[V]getYear()\f[R], the value returned by
 \f[V]getFullYear()\f[R] is an absolute number.
@@ -42,7 +45,7 @@ For dates between the years 1000 and 9999, \f[V]getFullYear()\f[R]
 returns a four-digit number, for example, 1995.
 Use this function to make sure a year is compliant with years after
 2000.
-.SH Examples
+.SH EXAMPLES
 .SS Using getFullYear()
 .PP
 The \f[V]fullYear\f[R] variable has value \f[V]1995\f[R], based on the
@@ -56,7 +59,7 @@ const fullYear = xmas95.getFullYear();
 console.log(fullYear); // 1995
 \f[R]
 .fi
-.SH See also
+.SH SEE ALSO
 .IP \[bu] 2
 \f[V]Date.prototype.getUTCFullYear()\f[R]
 .IP \[bu] 2

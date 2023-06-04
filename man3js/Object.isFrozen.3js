@@ -14,13 +14,16 @@
 . ftr VB CB
 . ftr VBI CBI
 .\}
-.TH "Object.isFrozen" "JS" "2023-06-02" "JavaScript" "JavaScript Reference Manual"
+.TH "Object.isFrozen" "JS" "June 2, 2023" "JavaScript" "JavaScript Reference Manual"
 .hy
-.SH Synopsis
+.SH NAME
+.PP
+Object.isFrozen - Object.isFrozen()
+.SH SYNOPSIS
 .PP
 The \f[B]\f[VB]Object.isFrozen()\f[B]\f[R] static method determines if
 an object is \f[V]frozen\f[R].
-.SH Syntax
+.SH SYNTAX
 .IP
 .nf
 \f[C]
@@ -28,23 +31,20 @@ Object.isFrozen(obj)
 \f[R]
 .fi
 .SS Parameters
-.IP \[bu] 2
-\f[V]obj\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]obj\f[R]
 The object which should be checked.
-.RE
 .SS Return value
 .PP
 A \f[V]Boolean\f[R] indicating whether or not the given object is
 frozen.
-.SH Description
+.SH DESCRIPTION
 .PP
 An object is frozen if and only if it is not \f[V]extensible\f[R], all
 its properties are non-configurable, and all its data properties (that
 is, properties which are not accessor properties with getter or setter
 components) are non-writable.
-.SH Examples
+.SH EXAMPLES
 .SS Using Object.isFrozen
 .IP
 .nf
@@ -151,7 +151,7 @@ Object.isFrozen(1);
 // true                          (ES2015 code)
 \f[R]
 .fi
-.SH See also
+.SH SEE ALSO
 .IP \[bu] 2
 \f[V]Object.freeze()\f[R]
 .IP \[bu] 2

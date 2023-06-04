@@ -14,9 +14,12 @@
 . ftr VB CB
 . ftr VBI CBI
 .\}
-.TH "Promise" "JS" "2023-06-02" "JavaScript" "JavaScript Reference Manual"
+.TH "Promise" "JS" "June 2, 2023" "JavaScript" "JavaScript Reference Manual"
 .hy
-.SH Synopsis
+.SH NAME
+.PP
+Promise - Promise
+.SH SYNOPSIS
 .PP
 The \f[B]\f[VB]Promise\f[B]\f[R] object represents the eventual
 completion (or failure) of an asynchronous operation and its resulting
@@ -24,7 +27,7 @@ value.
 .PP
 To learn about the way promises work and how you can use them, we advise
 you to read Using promises first.
-.SH Description
+.SH DESCRIPTION
 .PP
 A \f[B]\f[VB]Promise\f[B]\f[R] is a proxy for a value not necessarily
 known when the promise is created.
@@ -306,34 +309,22 @@ Promise.resolve(aThenable); // A promise fulfilled with 42
 The \f[V]Promise\f[R] class offers four static methods to facilitate
 async task
 concurrency (https://en.wikipedia.org/wiki/Concurrent_computing):
-.IP \[bu] 2
-\f[V]Promise.all()\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]Promise.all()\f[R]
 Fulfills when \f[B]all\f[R] of the promises fulfill; rejects when
 \f[B]any\f[R] of the promises rejects.
-.RE
-.IP \[bu] 2
-\f[V]Promise.allSettled()\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]Promise.allSettled()\f[R]
 Fulfills when \f[B]all\f[R] promises settle.
-.RE
-.IP \[bu] 2
-\f[V]Promise.any()\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]Promise.any()\f[R]
 Fulfills when \f[B]any\f[R] of the promises fulfills; rejects when
 \f[B]all\f[R] of the promises reject.
-.RE
-.IP \[bu] 2
-\f[V]Promise.race()\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]Promise.race()\f[R]
 Settles when \f[B]any\f[R] of the promises settles.
 In other words, fulfills when any of the promises fulfills; rejects when
 any of the promises rejects.
-.RE
 .PP
 All these methods take an iterable of promises (thenables, to be exact)
 and return a new promise.
@@ -354,30 +345,22 @@ between different promises, making execution of the promises appear
 concurrent.
 Parallel execution (https://en.wikipedia.org/wiki/Parallel_computing) in
 JavaScript can only be achieved through worker threads.
-.SH Constructor
-.IP \[bu] 2
-\f[V]Promise()\f[R]
-.RS 2
-.IP \[bu] 2
+.SH CONSTRUCTOR
+.TP
+\f[B]Promise()\f[R]
 Creates a new \f[V]Promise\f[R] object.
 The constructor is primarily used to wrap functions that do not already
 support promises.
-.RE
-.SH Static properties
-.IP \[bu] 2
-\f[V]Promise[\[at]\[at]species]\f[R]
-.RS 2
-.IP \[bu] 2
+.SH STATIC PROPERTIES
+.TP
+\f[B]Promise[\[at]\[at]species]\f[R]
 Returns the constructor used to construct return values from promise
 methods.
-.RE
-.SH Static methods
-.IP \[bu] 2
-\f[V]Promise.all()\f[R]
-.RS 2
-.IP \[bu] 2
+.SH STATIC METHODS
+.TP
+\f[B]Promise.all()\f[R]
 Wait for all promises to be fulfilled, or for any to be rejected.
-.RS 2
+.RS
 .PP
 If the returned promise fulfills, it is fulfilled with an aggregating
 array of the values from the fulfilled promises, in the same order as
@@ -386,33 +369,24 @@ defined in the iterable of multiple promises.
 If it rejects, it is rejected with the reason from the first promise in
 the iterable that was rejected.
 .RE
-.RE
-.IP \[bu] 2
-\f[V]Promise.allSettled()\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]Promise.allSettled()\f[R]
 Wait until all promises have settled (each may fulfill or reject).
-.RS 2
+.RS
 .PP
 Returns a Promise that fulfills after all of the given promises is
 either fulfilled or rejected, with an array of objects that each
 describe the outcome of each promise.
 .RE
-.RE
-.IP \[bu] 2
-\f[V]Promise.any()\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]Promise.any()\f[R]
 Takes an iterable of Promise objects and, as soon as one of the promises
 in the iterable fulfills, returns a single promise that fulfills with
 the value from that promise.
-.RE
-.IP \[bu] 2
-\f[V]Promise.race()\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]Promise.race()\f[R]
 Wait until any of the promises is fulfilled or rejected.
-.RS 2
+.RS
 .PP
 If the returned promise fulfills, it is fulfilled with the value of the
 first promise in the iterable that fulfilled.
@@ -420,81 +394,59 @@ first promise in the iterable that fulfilled.
 If it rejects, it is rejected with the reason from the first promise
 that was rejected.
 .RE
-.RE
-.IP \[bu] 2
-\f[V]Promise.reject()\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]Promise.reject()\f[R]
 Returns a new \f[V]Promise\f[R] object that is rejected with the given
 reason.
-.RE
-.IP \[bu] 2
-\f[V]Promise.resolve()\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]Promise.resolve()\f[R]
 Returns a new \f[V]Promise\f[R] object that is resolved with the given
 value.
 If the value is a thenable (i.e.\ has a \f[V]then\f[R] method), the
 returned promise will \[lq]follow\[rq] that thenable, adopting its
 eventual state; otherwise, the returned promise will be fulfilled with
 the value.
-.RS 2
+.RS
 .PP
 Generally, if you don\[cq]t know if a value is a promise or not,
 \f[V]Promise.resolve(value)\f[R] it instead and work with the return
 value as a promise.
 .RE
-.RE
-.SH Instance properties
+.SH INSTANCE PROPERTIES
 .PP
 These properties are defined on \f[V]Promise.prototype\f[R] and shared
 by all \f[V]Promise\f[R] instances.
-.IP \[bu] 2
-\f[V]Promise.prototype.constructor\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]Promise.prototype.constructor\f[R]
 The constructor function that created the instance object.
 For \f[V]Promise\f[R] instances, the initial value is the
 \f[V]Promise\f[R] constructor.
-.RE
-.IP \[bu] 2
-\f[V]Promise.prototype[\[at]\[at]toStringTag]\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]Promise.prototype[\[at]\[at]toStringTag]\f[R]
 The initial value of the \f[V]\[at]\[at]toStringTag\f[R] property is the
 string \f[V]\[dq]Promise\[dq]\f[R].
 This property is used in \f[V]Object.prototype.toString()\f[R].
-.RE
-.SH Instance methods
-.IP \[bu] 2
-\f[V]Promise.prototype.catch()\f[R]
-.RS 2
-.IP \[bu] 2
+.SH INSTANCE METHODS
+.TP
+\f[B]Promise.prototype.catch()\f[R]
 Appends a rejection handler callback to the promise, and returns a new
 promise resolving to the return value of the callback if it is called,
 or to its original fulfillment value if the promise is instead
 fulfilled.
-.RE
-.IP \[bu] 2
-\f[V]Promise.prototype.finally()\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]Promise.prototype.finally()\f[R]
 Appends a handler to the promise, and returns a new promise that is
 resolved when the original promise is resolved.
 The handler is called when the promise is settled, whether fulfilled or
 rejected.
-.RE
-.IP \[bu] 2
-\f[V]Promise.prototype.then()\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]Promise.prototype.then()\f[R]
 Appends fulfillment and rejection handlers to the promise, and returns a
 new promise resolving to the return value of the called handler, or to
 its original settled value if the promise was not handled (i.e.\ if the
 relevant handler \f[V]onFulfilled\f[R] or \f[V]onRejected\f[R] is not a
 function).
-.RE
-.SH Examples
+.SH EXAMPLES
 .SS Basic Example
 .IP
 .nf
@@ -797,7 +749,7 @@ wrong environment to send the message.
 \f[B]Note:\f[R] Currently, incumbent realm tracking is fully implemented
 in Firefox, and has partial implementations in Chrome and Safari.
 .RE
-.SH See also
+.SH SEE ALSO
 .IP \[bu] 2
 Polyfill of \f[V]Promise\f[R] in
 \f[V]core-js\f[R] (https://github.com/zloirock/core-js#ecmascript-promise)

@@ -14,15 +14,18 @@
 . ftr VB CB
 . ftr VBI CBI
 .\}
-.TH "Map" "JS" "2023-06-02" "JavaScript" "JavaScript Reference Manual"
+.TH "Map" "JS" "June 2, 2023" "JavaScript" "JavaScript Reference Manual"
 .hy
-.SH Synopsis
+.SH NAME
+.PP
+Map - Map
+.SH SYNOPSIS
 .PP
 The \f[B]\f[VB]Map\f[B]\f[R] object holds key-value pairs and remembers
 the original insertion order of the keys.
 Any value (both objects and primitive values) may be used as either a
 key or a value.
-.SH Description
+.SH DESCRIPTION
 .PP
 \f[V]Map\f[R] objects are collections of key-value pairs.
 A key in the \f[V]Map\f[R] \f[B]may only occur once\f[R]; it is unique
@@ -295,122 +298,77 @@ contacts.delete(\[dq]Jessie\[dq]); // true
 console.log(contacts.size); // 1
 \f[R]
 .fi
-.SH Constructor
-.IP \[bu] 2
-\f[V]Map()\f[R]
-.RS 2
-.IP \[bu] 2
+.SH CONSTRUCTOR
+.TP
+\f[B]Map()\f[R]
 Creates a new \f[V]Map\f[R] object.
-.RE
-.SH Static properties
-.IP \[bu] 2
-\f[V]Map[\[at]\[at]species]\f[R]
-.RS 2
-.IP \[bu] 2
+.SH STATIC PROPERTIES
+.TP
+\f[B]Map[\[at]\[at]species]\f[R]
 The constructor function that is used to create derived objects.
-.RE
-.SH Instance properties
+.SH INSTANCE PROPERTIES
 .PP
 These properties are defined on \f[V]Map.prototype\f[R] and shared by
 all \f[V]Map\f[R] instances.
-.IP \[bu] 2
-\f[V]Map.prototype.constructor\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]Map.prototype.constructor\f[R]
 The constructor function that created the instance object.
 For \f[V]Map\f[R] instances, the initial value is the \f[V]Map\f[R]
 constructor.
-.RE
-.IP \[bu] 2
-\f[V]Map.prototype.size\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]Map.prototype.size\f[R]
 Returns the number of key/value pairs in the \f[V]Map\f[R] object.
-.RE
-.IP \[bu] 2
-\f[V]Map.prototype[\[at]\[at]toStringTag]\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]Map.prototype[\[at]\[at]toStringTag]\f[R]
 The initial value of the \f[V]\[at]\[at]toStringTag\f[R] property is the
 string \f[V]\[dq]Map\[dq]\f[R].
 This property is used in \f[V]Object.prototype.toString()\f[R].
-.RE
-.SH Instance methods
-.IP \[bu] 2
-\f[V]Map.prototype.clear()\f[R]
-.RS 2
-.IP \[bu] 2
+.SH INSTANCE METHODS
+.TP
+\f[B]Map.prototype.clear()\f[R]
 Removes all key-value pairs from the \f[V]Map\f[R] object.
-.RE
-.IP \[bu] 2
-\f[V]Map.prototype.delete()\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]Map.prototype.delete()\f[R]
 Returns \f[V]true\f[R] if an element in the \f[V]Map\f[R] object existed
 and has been removed, or \f[V]false\f[R] if the element does not exist.
 \f[V]map.has(key)\f[R] will return \f[V]false\f[R] afterwards.
-.RE
-.IP \[bu] 2
-\f[V]Map.prototype.entries()\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]Map.prototype.entries()\f[R]
 Returns a new Iterator object that contains a two-member array of
 \f[V][key, value]\f[R] for each element in the \f[V]Map\f[R] object in
 insertion order.
-.RE
-.IP \[bu] 2
-\f[V]Map.prototype.forEach()\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]Map.prototype.forEach()\f[R]
 Calls \f[V]callbackFn\f[R] once for each key-value pair present in the
 \f[V]Map\f[R] object, in insertion order.
 If a \f[V]thisArg\f[R] parameter is provided to \f[V]forEach\f[R], it
 will be used as the \f[V]this\f[R] value for each callback.
-.RE
-.IP \[bu] 2
-\f[V]Map.prototype.get()\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]Map.prototype.get()\f[R]
 Returns the value associated to the passed key, or \f[V]undefined\f[R]
 if there is none.
-.RE
-.IP \[bu] 2
-\f[V]Map.prototype.has()\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]Map.prototype.has()\f[R]
 Returns a boolean indicating whether a value has been associated with
 the passed key in the \f[V]Map\f[R] object or not.
-.RE
-.IP \[bu] 2
-\f[V]Map.prototype.keys()\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]Map.prototype.keys()\f[R]
 Returns a new Iterator object that contains the keys for each element in
 the \f[V]Map\f[R] object in insertion order.
-.RE
-.IP \[bu] 2
-\f[V]Map.prototype.set()\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]Map.prototype.set()\f[R]
 Sets the value for the passed key in the \f[V]Map\f[R] object.
 Returns the \f[V]Map\f[R] object.
-.RE
-.IP \[bu] 2
-\f[V]Map.prototype.values()\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]Map.prototype.values()\f[R]
 Returns a new Iterator object that contains the values for each element
 in the \f[V]Map\f[R] object in insertion order.
-.RE
-.IP \[bu] 2
-\f[V]Map.prototype[\[at]\[at]iterator]()\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]Map.prototype[\[at]\[at]iterator]()\f[R]
 Returns a new Iterator object that contains a two-member array of
 \f[V][key, value]\f[R] for each element in the \f[V]Map\f[R] object in
 insertion order.
-.RE
-.SH Examples
+.SH EXAMPLES
 .SS Using the Map object
 .IP
 .nf
@@ -598,7 +556,7 @@ console.log(merged.get(2)); // dos
 console.log(merged.get(3)); // three
 \f[R]
 .fi
-.SH See also
+.SH SEE ALSO
 .IP \[bu] 2
 A polyfill of \f[V]Map\f[R] is available in
 \f[V]core-js\f[R] (https://github.com/zloirock/core-js#map)

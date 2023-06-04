@@ -14,16 +14,19 @@
 . ftr VB CB
 . ftr VBI CBI
 .\}
-.TH "Math" "JS" "2023-06-02" "JavaScript" "JavaScript Reference Manual"
+.TH "Math" "JS" "June 2, 2023" "JavaScript" "JavaScript Reference Manual"
 .hy
-.SH Synopsis
+.SH NAME
+.PP
+Math - Math
+.SH SYNOPSIS
 .PP
 The \f[B]\f[VB]Math\f[B]\f[R] namespace object contains static
 properties and methods for mathematical constants and functions.
 .PP
 \f[V]Math\f[R] works with the \f[V]Number\f[R] type.
 It doesn\[cq]t work with \f[V]BigInt\f[R].
-.SH Description
+.SH DESCRIPTION
 .PP
 Unlike most global objects, \f[V]Math\f[R] is not a constructor.
 You cannot use it with the \f[V]new\f[R] operator or invoke the
@@ -38,287 +41,155 @@ This means that different browsers can give a different result.
 Even the same JavaScript engine on a different OS or architecture can
 give different results!
 .RE
-.SH Static properties
-.IP \[bu] 2
-\f[V]Math.E\f[R]
-.RS 2
-.IP \[bu] 2
+.SH STATIC PROPERTIES
+.TP
+\f[B]Math.E\f[R]
 Euler\[cq]s number and the base of natural logarithms; approximately
 \f[V]2.718\f[R].
-.RE
-.IP \[bu] 2
-\f[V]Math.LN10\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]Math.LN10\f[R]
 Natural logarithm of \f[V]10\f[R]; approximately \f[V]2.303\f[R].
-.RE
-.IP \[bu] 2
-\f[V]Math.LN2\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]Math.LN2\f[R]
 Natural logarithm of \f[V]2\f[R]; approximately \f[V]0.693\f[R].
-.RE
-.IP \[bu] 2
-\f[V]Math.LOG10E\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]Math.LOG10E\f[R]
 Base-10 logarithm of \f[V]E\f[R]; approximately \f[V]0.434\f[R].
-.RE
-.IP \[bu] 2
-\f[V]Math.LOG2E\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]Math.LOG2E\f[R]
 Base-2 logarithm of \f[V]E\f[R]; approximately \f[V]1.443\f[R].
-.RE
-.IP \[bu] 2
-\f[V]Math.PI\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]Math.PI\f[R]
 Ratio of a circle\[cq]s circumference to its diameter; approximately
 \f[V]3.14159\f[R].
-.RE
-.IP \[bu] 2
-\f[V]Math.SQRT1_2\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]Math.SQRT1_2\f[R]
 Square root of ½; approximately \f[V]0.707\f[R].
-.RE
-.IP \[bu] 2
-\f[V]Math.SQRT2\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]Math.SQRT2\f[R]
 Square root of \f[V]2\f[R]; approximately \f[V]1.414\f[R].
-.RE
-.IP \[bu] 2
-\f[V]Math[\[at]\[at]toStringTag]\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]Math[\[at]\[at]toStringTag]\f[R]
 The initial value of the \f[V]\[at]\[at]toStringTag\f[R] property is the
 string \f[V]\[dq]Math\[dq]\f[R].
 This property is used in \f[V]Object.prototype.toString()\f[R].
-.RE
-.SH Static methods
-.IP \[bu] 2
-\f[V]Math.abs()\f[R]
-.RS 2
-.IP \[bu] 2
+.SH STATIC METHODS
+.TP
+\f[B]Math.abs()\f[R]
 Returns the absolute value of \f[V]x\f[R].
-.RE
-.IP \[bu] 2
-\f[V]Math.acos()\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]Math.acos()\f[R]
 Returns the arccosine of \f[V]x\f[R].
-.RE
-.IP \[bu] 2
-\f[V]Math.acosh()\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]Math.acosh()\f[R]
 Returns the hyperbolic arccosine of \f[V]x\f[R].
-.RE
-.IP \[bu] 2
-\f[V]Math.asin()\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]Math.asin()\f[R]
 Returns the arcsine of \f[V]x\f[R].
-.RE
-.IP \[bu] 2
-\f[V]Math.asinh()\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]Math.asinh()\f[R]
 Returns the hyperbolic arcsine of a number.
-.RE
-.IP \[bu] 2
-\f[V]Math.atan()\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]Math.atan()\f[R]
 Returns the arctangent of \f[V]x\f[R].
-.RE
-.IP \[bu] 2
-\f[V]Math.atan2()\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]Math.atan2()\f[R]
 Returns the arctangent of the quotient of its arguments.
-.RE
-.IP \[bu] 2
-\f[V]Math.atanh()\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]Math.atanh()\f[R]
 Returns the hyperbolic arctangent of \f[V]x\f[R].
-.RE
-.IP \[bu] 2
-\f[V]Math.cbrt()\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]Math.cbrt()\f[R]
 Returns the cube root of \f[V]x\f[R].
-.RE
-.IP \[bu] 2
-\f[V]Math.ceil()\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]Math.ceil()\f[R]
 Returns the smallest integer greater than or equal to \f[V]x\f[R].
-.RE
-.IP \[bu] 2
-\f[V]Math.clz32()\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]Math.clz32()\f[R]
 Returns the number of leading zero bits of the 32-bit integer
 \f[V]x\f[R].
-.RE
-.IP \[bu] 2
-\f[V]Math.cos()\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]Math.cos()\f[R]
 Returns the cosine of \f[V]x\f[R].
-.RE
-.IP \[bu] 2
-\f[V]Math.cosh()\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]Math.cosh()\f[R]
 Returns the hyperbolic cosine of \f[V]x\f[R].
-.RE
-.IP \[bu] 2
-\f[V]Math.exp()\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]Math.exp()\f[R]
 Returns ex, where x is the argument, and e is Euler\[cq]s number
 (\f[V]2.718\f[R]\&..., the base of the natural logarithm).
-.RE
-.IP \[bu] 2
-\f[V]Math.expm1()\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]Math.expm1()\f[R]
 Returns subtracting \f[V]1\f[R] from \f[V]exp(x)\f[R].
-.RE
-.IP \[bu] 2
-\f[V]Math.floor()\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]Math.floor()\f[R]
 Returns the largest integer less than or equal to \f[V]x\f[R].
-.RE
-.IP \[bu] 2
-\f[V]Math.fround()\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]Math.fround()\f[R]
 Returns the nearest single
 precision (https://en.wikipedia.org/wiki/Single-precision_floating-point_format)
 float representation of \f[V]x\f[R].
-.RE
-.IP \[bu] 2
-\f[V]Math.hypot()\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]Math.hypot()\f[R]
 Returns the square root of the sum of squares of its arguments.
-.RE
-.IP \[bu] 2
-\f[V]Math.imul()\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]Math.imul()\f[R]
 Returns the result of the 32-bit integer multiplication of \f[V]x\f[R]
 and \f[V]y\f[R].
-.RE
-.IP \[bu] 2
-\f[V]Math.log()\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]Math.log()\f[R]
 Returns the natural logarithm (㏒e; also, ㏑) of \f[V]x\f[R].
-.RE
-.IP \[bu] 2
-\f[V]Math.log10()\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]Math.log10()\f[R]
 Returns the base-10 logarithm of \f[V]x\f[R].
-.RE
-.IP \[bu] 2
-\f[V]Math.log1p()\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]Math.log1p()\f[R]
 Returns the natural logarithm (㏒e; also ㏑) of \f[V]1 + x\f[R] for the
 number \f[V]x\f[R].
-.RE
-.IP \[bu] 2
-\f[V]Math.log2()\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]Math.log2()\f[R]
 Returns the base-2 logarithm of \f[V]x\f[R].
-.RE
-.IP \[bu] 2
-\f[V]Math.max()\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]Math.max()\f[R]
 Returns the largest of zero or more numbers.
-.RE
-.IP \[bu] 2
-\f[V]Math.min()\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]Math.min()\f[R]
 Returns the smallest of zero or more numbers.
-.RE
-.IP \[bu] 2
-\f[V]Math.pow()\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]Math.pow()\f[R]
 Returns base \f[V]x\f[R] to the exponent power \f[V]y\f[R] (that is,
 \f[V]x\f[R]y).
-.RE
-.IP \[bu] 2
-\f[V]Math.random()\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]Math.random()\f[R]
 Returns a pseudo-random number between \f[V]0\f[R] and \f[V]1\f[R].
-.RE
-.IP \[bu] 2
-\f[V]Math.round()\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]Math.round()\f[R]
 Returns the value of the number \f[V]x\f[R] rounded to the nearest
 integer.
-.RE
-.IP \[bu] 2
-\f[V]Math.sign()\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]Math.sign()\f[R]
 Returns the sign of the \f[V]x\f[R], indicating whether \f[V]x\f[R] is
 positive, negative, or zero.
-.RE
-.IP \[bu] 2
-\f[V]Math.sin()\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]Math.sin()\f[R]
 Returns the sine of \f[V]x\f[R].
-.RE
-.IP \[bu] 2
-\f[V]Math.sinh()\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]Math.sinh()\f[R]
 Returns the hyperbolic sine of \f[V]x\f[R].
-.RE
-.IP \[bu] 2
-\f[V]Math.sqrt()\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]Math.sqrt()\f[R]
 Returns the positive square root of \f[V]x\f[R].
-.RE
-.IP \[bu] 2
-\f[V]Math.tan()\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]Math.tan()\f[R]
 Returns the tangent of \f[V]x\f[R].
-.RE
-.IP \[bu] 2
-\f[V]Math.tanh()\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]Math.tanh()\f[R]
 Returns the hyperbolic tangent of \f[V]x\f[R].
-.RE
-.IP \[bu] 2
-\f[V]Math.trunc()\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]Math.trunc()\f[R]
 Returns the integer portion of \f[V]x\f[R], removing any fractional
 digits.
-.RE
-.SH Examples
+.SH EXAMPLES
 .SS Converting between degrees and radians
 .PP
 The trigonometric functions \f[V]sin()\f[R], \f[V]cos()\f[R],
@@ -383,6 +254,6 @@ function random(min, max) {
 random(1, 10);
 \f[R]
 .fi
-.SH See also
+.SH SEE ALSO
 .IP \[bu] 2
 \f[V]Number\f[R]

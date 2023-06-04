@@ -14,16 +14,19 @@
 . ftr VB CB
 . ftr VBI CBI
 .\}
-.TH "Array.join" "JS" "2023-06-02" "JavaScript" "JavaScript Reference Manual"
+.TH "Array.join" "JS" "June 2, 2023" "JavaScript" "JavaScript Reference Manual"
 .hy
-.SH Synopsis
+.SH NAME
+.PP
+Array.join - Array.prototype.join()
+.SH SYNOPSIS
 .PP
 The \f[B]\f[VB]join()\f[B]\f[R] method creates and returns a new string
 by concatenating all of the elements in an array (or an array-like
 object), separated by commas or a specified separator string.
 If the array has only one item, then that item will be returned without
 using the separator.
-.SH Syntax
+.SH SYNTAX
 .IP
 .nf
 \f[C]
@@ -32,22 +35,19 @@ join(separator)
 \f[R]
 .fi
 .SS Parameters
-.IP \[bu] 2
-\f[V]separator\f[R] \f[I](optional)\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]separator\f[R] \f[I](optional)\f[R]
 Specifies a string to separate each pair of adjacent elements of the
 array.
 The separator is converted to a string if necessary.
 If omitted, the array elements are separated with a comma (\[lq],\[rq]).
 If \f[V]separator\f[R] is an empty string, all elements are joined
 without any characters in between them.
-.RE
 .SS Return value
 .PP
 A string with all array elements joined.
 If \f[V]arr.length\f[R] is \f[V]0\f[R], the empty string is returned.
-.SH Description
+.SH DESCRIPTION
 .PP
 The string conversions of all array elements are joined into one string.
 If an element is \f[V]undefined\f[R], \f[V]null\f[R], it is converted to
@@ -65,7 +65,7 @@ slots as if they have the value \f[V]undefined\f[R].
 The \f[V]join()\f[R] method is generic.
 It only expects the \f[V]this\f[R] value to have a \f[V]length\f[R]
 property and integer-keyed properties.
-.SH Examples
+.SH EXAMPLES
 .SS Joining an array four different ways
 .PP
 The following example creates an array, \f[V]a\f[R], with three
@@ -111,7 +111,7 @@ console.log(Array.prototype.join.call(arrayLike, \[dq].\[dq]));
 // 2.3.4
 \f[R]
 .fi
-.SH See also
+.SH SEE ALSO
 .IP \[bu] 2
 Polyfill of \f[V]Array.prototype.join\f[R] in
 \f[V]core-js\f[R] (https://github.com/zloirock/core-js#ecmascript-array)

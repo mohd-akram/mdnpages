@@ -14,15 +14,18 @@
 . ftr VB CB
 . ftr VBI CBI
 .\}
-.TH "Number.parseFloat" "JS" "2023-06-02" "JavaScript" "JavaScript Reference Manual"
+.TH "Number.parseFloat" "JS" "June 2, 2023" "JavaScript" "JavaScript Reference Manual"
 .hy
-.SH Synopsis
+.SH NAME
+.PP
+Number.parseFloat - Number.parseFloat()
+.SH SYNOPSIS
 .PP
 The \f[B]\f[VB]Number.parseFloat()\f[B]\f[R] static method parses an
 argument and returns a floating point number.
 If a number cannot be parsed from the argument, it returns
 \f[V]NaN\f[R].
-.SH Syntax
+.SH SYNTAX
 .IP
 .nf
 \f[C]
@@ -30,20 +33,17 @@ Number.parseFloat(string)
 \f[R]
 .fi
 .SS Parameters
-.IP \[bu] 2
-\f[V]string\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]string\f[R]
 The value to parse, coerced to a string.
 Leading whitespace in this argument is ignored.
-.RE
 .SS Return value
 .PP
 A floating point number parsed from the given \f[V]string\f[R].
 .PP
 Or \f[V]NaN\f[R] when the first non-whitespace character cannot be
 converted to a number.
-.SH Examples
+.SH EXAMPLES
 .SS Number.parseFloat vs.\ parseFloat
 .PP
 This method has the same functionality as the global
@@ -58,7 +58,7 @@ Number.parseFloat === parseFloat; // true
 Its purpose is modularization of globals.
 .PP
 See \f[V]parseFloat()\f[R] for more detail and examples.
-.SH See also
+.SH SEE ALSO
 .IP \[bu] 2
 Polyfill of \f[V]Number.parseFloat\f[R] in
 \f[V]core-js\f[R] (https://github.com/zloirock/core-js#ecmascript-number)

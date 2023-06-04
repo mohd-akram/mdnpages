@@ -14,14 +14,17 @@
 . ftr VB CB
 . ftr VBI CBI
 .\}
-.TH "Date.toString" "JS" "2023-06-02" "JavaScript" "JavaScript Reference Manual"
+.TH "Date.toString" "JS" "June 2, 2023" "JavaScript" "JavaScript Reference Manual"
 .hy
-.SH Synopsis
+.SH NAME
+.PP
+Date.toString - Date.prototype.toString()
+.SH SYNOPSIS
 .PP
 The \f[B]\f[VB]toString()\f[B]\f[R] method of \f[V]Date\f[R] instances
 returns a string representing this date interpreted in the local
 timezone.
-.SH Syntax
+.SH SYNTAX
 .IP
 .nf
 \f[C]
@@ -32,7 +35,7 @@ toString()
 .PP
 A string representing the given date (see description for the format).
 Returns \f[V]\[dq]Invalid Date\[dq]\f[R] if the date is invalid.
-.SH Description
+.SH DESCRIPTION
 .PP
 The \f[V]toString()\f[R] method is part of the type coercion protocol.
 Because \f[V]Date\f[R] has a \f[V][\[at]\[at]toPrimitive]()\f[R] method,
@@ -67,7 +70,7 @@ timezone, use \f[V]toUTCString()\f[R].
 .IP \[bu] 2
 If you want to format the date in a more user-friendly format
 (e.g.\ localization), use \f[V]toUTCString()\f[R].
-.SH Examples
+.SH EXAMPLES
 .SS Using toString()
 .IP
 .nf
@@ -76,7 +79,7 @@ const d = new Date(0);
 console.log(d.toString()); // \[dq]Thu Jan 01 1970 00:00:00 GMT+0000 (Coordinated Universal Time)\[dq]
 \f[R]
 .fi
-.SH See also
+.SH SEE ALSO
 .IP \[bu] 2
 \f[V]Object.prototype.toString()\f[R]
 .IP \[bu] 2

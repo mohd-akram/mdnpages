@@ -14,22 +14,25 @@
 . ftr VB CB
 . ftr VBI CBI
 .\}
-.TH "DataView.buffer" "JS" "2023-06-02" "JavaScript" "JavaScript Reference Manual"
+.TH "DataView.buffer" "JS" "June 2, 2023" "JavaScript" "JavaScript Reference Manual"
 .hy
-.SH Synopsis
+.SH NAME
+.PP
+DataView.buffer - DataView.prototype.buffer
+.SH SYNOPSIS
 .PP
 The \f[B]\f[VB]buffer\f[B]\f[R] accessor property of \f[V]DataView\f[R]
 instances returns the \f[V]ArrayBuffer\f[R] or
 \f[V]SharedArrayBuffer\f[R] referenced by this view at construction
 time.
-.SH Description
+.SH DESCRIPTION
 .PP
 The \f[V]buffer\f[R] property is an accessor property whose set accessor
 function is \f[V]undefined\f[R], meaning that you can only read this
 property.
 The value is established when the \f[V]DataView\f[R] is constructed and
 cannot be changed.
-.SH Examples
+.SH EXAMPLES
 .SS Using the buffer property
 .IP
 .nf
@@ -39,7 +42,7 @@ const dataview = new DataView(buffer);
 dataview.buffer; // ArrayBuffer { byteLength: 8 }
 \f[R]
 .fi
-.SH See also
+.SH SEE ALSO
 .IP \[bu] 2
 \f[V]DataView\f[R]
 .IP \[bu] 2

@@ -15,15 +15,18 @@
 . ftr VB CB
 . ftr VBI CBI
 .\}
-.TH "Array.length" "JS" "2023-06-02" "JavaScript" "JavaScript Reference Manual"
+.TH "Array.length" "JS" "June 2, 2023" "JavaScript" "JavaScript Reference Manual"
 .hy
-.SH Synopsis
+.SH NAME
+.PP
+Array.length - Array: length
+.SH SYNOPSIS
 .PP
 The \f[B]\f[VB]length\f[B]\f[R] data property of an \f[V]Array\f[R]
 instance represents the number of elements in that array.
 The value is an unsigned, 32-bit integer that is always numerically
 greater than the highest index in the array.
-.SH Value
+.SH VALUE
 .PP
 A non-negative integer less than 232.
 .PP
@@ -46,7 +49,7 @@ T}@T{
 no
 T}
 .TE
-.SH Description
+.SH DESCRIPTION
 .PP
 The value of the \f[V]length\f[R] property is a non-negative integer
 with a value less than 232.
@@ -109,7 +112,7 @@ arr.forEach((element) => console.log(element));
 .fi
 .PP
 See also Relationship between \f[V]length\f[R] and numerical properties.
-.SH Examples
+.SH EXAMPLES
 .SS Iterating over an array
 .PP
 In the following example, the array \f[V]numbers\f[R] is iterated
@@ -174,7 +177,7 @@ numbers[5] = 6; // TypeError: Cannot assign to read only property \[aq]length\[a
 numbers.push(5); // // TypeError: Cannot assign to read only property \[aq]length\[aq] of object \[aq][object Array]\[aq]
 \f[R]
 .fi
-.SH See also
+.SH SEE ALSO
 .IP \[bu] 2
 Indexed collections
 .IP \[bu] 2

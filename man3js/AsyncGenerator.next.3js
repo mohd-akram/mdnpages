@@ -14,13 +14,16 @@
 . ftr VB CB
 . ftr VBI CBI
 .\}
-.TH "AsyncGenerator.next" "JS" "2023-06-02" "JavaScript" "JavaScript Reference Manual"
+.TH "AsyncGenerator.next" "JS" "June 2, 2023" "JavaScript" "JavaScript Reference Manual"
 .hy
-.SH Synopsis
+.SH NAME
+.PP
+AsyncGenerator.next - AsyncGenerator.prototype.next()
+.SH SYNOPSIS
 .PP
 The \f[B]\f[VB]next()\f[B]\f[R] method returns the next value in the
 sequence.
-.SH Syntax
+.SH SYNTAX
 .IP
 .nf
 \f[C]
@@ -29,24 +32,19 @@ asyncGeneratorObject.next(value)
 \f[R]
 .fi
 .SS Parameters
-.IP \[bu] 2
-\f[V]value\f[R] \f[I](optional)\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]value\f[R] \f[I](optional)\f[R]
 An optional value used to modify the internal state of the generator.
 A value passed to the \f[V]next()\f[R] method will be received by
 \f[V]yield\f[R]
-.RE
 .SS Return value
 .PP
 A \f[V]Promise\f[R] which when resolved returns an \f[V]Object\f[R] with
 two properties:
-.IP \[bu] 2
-\f[V]done\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]done\f[R]
 A boolean value:
-.RS 2
+.RS
 .IP \[bu] 2
 \f[V]true\f[R] if the generator is past the end of its control flow.
 In this case \f[V]value\f[R] specifies the \f[I]return value\f[R] of the
@@ -54,14 +52,10 @@ generator (which may be undefined).
 .IP \[bu] 2
 \f[V]false\f[R] if the generator is able to produce more values.
 .RE
-.RE
-.IP \[bu] 2
-\f[V]value\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]value\f[R]
 Any JavaScript value yielded or returned by the generator.
-.RE
-.SH Examples
+.SH EXAMPLES
 .SS Using next()
 .PP
 The following example shows a simple generator and the object that the
@@ -128,7 +122,7 @@ async function main() {
 main();
 \f[R]
 .fi
-.SH See also
+.SH SEE ALSO
 .IP \[bu] 2
 \f[V]async function*\f[R]
 .IP \[bu] 2

@@ -14,9 +14,12 @@
 . ftr VB CB
 . ftr VBI CBI
 .\}
-.TH "RegExp.compile" "JS" "2023-06-02" "JavaScript" "JavaScript Reference Manual"
+.TH "RegExp.compile" "JS" "June 2, 2023" "JavaScript" "JavaScript Reference Manual"
 .hy
-.SH Synopsis
+.SH NAME
+.PP
+RegExp.compile - RegExp.prototype.compile()
+.SH SYNOPSIS
 .PP
 \f[I](deprecated)\f[R]
 .RS
@@ -32,7 +35,7 @@ regular expression object instead.
 The \f[B]\f[VB]compile()\f[B]\f[R] method of \f[V]RegExp\f[R] instances
 is used to recompile a regular expression with new source and flags
 after the \f[V]RegExp\f[R] object has already been created.
-.SH Syntax
+.SH SYNTAX
 .IP
 .nf
 \f[C]
@@ -40,19 +43,13 @@ compile(pattern, flags)
 \f[R]
 .fi
 .SS Parameters
-.IP \[bu] 2
-\f[V]pattern\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]pattern\f[R]
 The text of the regular expression.
-.RE
-.IP \[bu] 2
-\f[V]flags\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]flags\f[R]
 Any combination of flag values.
-.RE
-.SH Examples
+.SH EXAMPLES
 .SS Using compile()
 .PP
 The following example shows how to recompile a regular expression with a
@@ -64,6 +61,6 @@ const regexObj = new RegExp(\[dq]foo\[dq], \[dq]gi\[dq]);
 regexObj.compile(\[dq]new foo\[dq], \[dq]g\[dq]);
 \f[R]
 .fi
-.SH See also
+.SH SEE ALSO
 .IP \[bu] 2
 \f[V]RegExp\f[R]

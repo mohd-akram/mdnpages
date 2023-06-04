@@ -14,9 +14,12 @@
 . ftr VB CB
 . ftr VBI CBI
 .\}
-.TH "TypedArray.toSorted" "JS" "2023-06-02" "JavaScript" "JavaScript Reference Manual"
+.TH "TypedArray.toSorted" "JS" "June 2, 2023" "JavaScript" "JavaScript Reference Manual"
 .hy
-.SH Synopsis
+.SH NAME
+.PP
+TypedArray.toSorted - TypedArray.prototype.toSorted()
+.SH SYNOPSIS
 .PP
 The \f[B]\f[VB]toSorted()\f[B]\f[R] method is the copying version of the
 \f[V]sort()\f[R] method.
@@ -25,7 +28,7 @@ This method has the same algorithm as
 \f[V]Array.prototype.toSorted()\f[R], except that it sorts the values
 numerically instead of as strings by default.
 \f[I]TypedArray\f[R] is one of the typed array types here.
-.SH Syntax
+.SH SYNTAX
 .IP
 .nf
 \f[C]
@@ -43,16 +46,13 @@ toSorted(function compareFn(a, b) { /* \&... */ })
 \f[R]
 .fi
 .SS Parameters
-.IP \[bu] 2
-\f[V]compareFn\f[R] \f[I](optional)\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]compareFn\f[R] \f[I](optional)\f[R]
 Specifies a function that defines the sort order.
-.RE
 .SS Return value
 .PP
 A new typed array with the elements sorted in ascending order.
-.SH Examples
+.SH EXAMPLES
 .SS Sorting an array
 .PP
 For more examples, see also the \f[V]Array.prototype.sort()\f[R] method.
@@ -67,7 +67,7 @@ console.log(numberSorted); // Uint8Array [ 1, 5, 40, 200 ]
 console.log(numbers); // Uint8Array [ 40, 1, 5, 200 ]
 \f[R]
 .fi
-.SH See also
+.SH SEE ALSO
 .IP \[bu] 2
 Polyfill of \f[V]TypedArray.prototype.toSorted\f[R] in
 \f[V]core-js\f[R] (https://github.com/zloirock/core-js#change-array-by-copy)

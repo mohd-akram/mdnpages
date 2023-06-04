@@ -14,87 +14,63 @@
 . ftr VB CB
 . ftr VBI CBI
 .\}
-.TH "Intl.DateTimeFormat" "JS" "2023-06-02" "JavaScript" "JavaScript Reference Manual"
+.TH "Intl.DateTimeFormat" "JS" "June 2, 2023" "JavaScript" "JavaScript Reference Manual"
 .hy
-.SH Synopsis
+.SH NAME
+.PP
+Intl.DateTimeFormat - Intl.DateTimeFormat
+.SH SYNOPSIS
 .PP
 The \f[B]\f[VB]Intl.DateTimeFormat\f[B]\f[R] object enables
 language-sensitive date and time formatting.
-.SH Constructor
-.IP \[bu] 2
-\f[V]Intl.DateTimeFormat()\f[R]
-.RS 2
-.IP \[bu] 2
+.SH CONSTRUCTOR
+.TP
+\f[B]Intl.DateTimeFormat()\f[R]
 Creates a new \f[V]Intl.DateTimeFormat\f[R] object.
-.RE
-.SH Static methods
-.IP \[bu] 2
-\f[V]Intl.DateTimeFormat.supportedLocalesOf()\f[R]
-.RS 2
-.IP \[bu] 2
+.SH STATIC METHODS
+.TP
+\f[B]Intl.DateTimeFormat.supportedLocalesOf()\f[R]
 Returns an array containing those of the provided locales that are
 supported without having to fall back to the runtime\[cq]s default
 locale.
-.RE
-.SH Instance properties
+.SH INSTANCE PROPERTIES
 .PP
 These properties are defined on \f[V]Intl.DateTimeFormat.prototype\f[R]
 and shared by all \f[V]Intl.DateTimeFormat\f[R] instances.
-.IP \[bu] 2
-\f[V]Intl.DateTimeFormat.prototype.constructor\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]Intl.DateTimeFormat.prototype.constructor\f[R]
 The constructor function that created the instance object.
 For \f[V]Intl.DateTimeFormat\f[R] instances, the initial value is the
 \f[V]Intl.DateTimeFormat\f[R] constructor.
-.RE
-.IP \[bu] 2
-\f[V]Intl.DateTimeFormat.prototype[\[at]\[at]toStringTag]\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]Intl.DateTimeFormat.prototype[\[at]\[at]toStringTag]\f[R]
 The initial value of the \f[V]\[at]\[at]toStringTag\f[R] property is the
 string \f[V]\[dq]Intl.DateTimeFormat\[dq]\f[R].
 This property is used in \f[V]Object.prototype.toString()\f[R].
-.RE
-.SH Instance methods
-.IP \[bu] 2
-\f[V]Intl.DateTimeFormat.prototype.format()\f[R]
-.RS 2
-.IP \[bu] 2
+.SH INSTANCE METHODS
+.TP
+\f[B]Intl.DateTimeFormat.prototype.format()\f[R]
 Getter function that formats a date according to the locale and
 formatting options of this \f[V]DateTimeFormat\f[R] object.
-.RE
-.IP \[bu] 2
-\f[V]Intl.DateTimeFormat.prototype.formatRange()\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]Intl.DateTimeFormat.prototype.formatRange()\f[R]
 This method receives two Dates and formats the date range in the most
 concise way based on the locale and options provided when instantiating
 \f[V]DateTimeFormat\f[R].
-.RE
-.IP \[bu] 2
-\f[V]Intl.DateTimeFormat.prototype.formatRangeToParts()\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]Intl.DateTimeFormat.prototype.formatRangeToParts()\f[R]
 This method receives two Dates and returns an Array of objects
 containing the locale-specific tokens representing each part of the
 formatted date range.
-.RE
-.IP \[bu] 2
-\f[V]Intl.DateTimeFormat.prototype.formatToParts()\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]Intl.DateTimeFormat.prototype.formatToParts()\f[R]
 Returns an \f[V]Array\f[R] of objects representing the date string in
 parts that can be used for custom locale-aware formatting.
-.RE
-.IP \[bu] 2
-\f[V]Intl.DateTimeFormat.prototype.resolvedOptions()\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]Intl.DateTimeFormat.prototype.resolvedOptions()\f[R]
 Returns a new object with properties reflecting the locale and
 formatting options computed during initialization of the object.
-.RE
-.SH Examples
+.SH EXAMPLES
 .SS Using DateTimeFormat
 .PP
 In basic use without specifying a locale, \f[V]DateTimeFormat\f[R] uses
@@ -236,7 +212,7 @@ console.log(usedOptions.timeZone);
 // \[dq]America/New_York\[dq] (the users default timezone)
 \f[R]
 .fi
-.SH See also
+.SH SEE ALSO
 .IP \[bu] 2
 \f[V]Intl\f[R]
 .IP \[bu] 2

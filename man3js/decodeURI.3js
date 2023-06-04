@@ -14,14 +14,17 @@
 . ftr VB CB
 . ftr VBI CBI
 .\}
-.TH "decodeURI" "JS" "2023-06-02" "JavaScript" "JavaScript Reference Manual"
+.TH "decodeURI" "JS" "June 2, 2023" "JavaScript" "JavaScript Reference Manual"
 .hy
-.SH Synopsis
+.SH NAME
+.PP
+decodeURI - decodeURI()
+.SH SYNOPSIS
 .PP
 The \f[B]\f[VB]decodeURI()\f[B]\f[R] function decodes a Uniform Resource
 Identifier (URI) previously created by \f[V]encodeURI()\f[R] or a
 similar routine.
-.SH Syntax
+.SH SYNTAX
 .IP
 .nf
 \f[C]
@@ -29,26 +32,20 @@ decodeURI(encodedURI)
 \f[R]
 .fi
 .SS Parameters
-.IP \[bu] 2
-\f[V]encodedURI\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]encodedURI\f[R]
 A complete, encoded Uniform Resource Identifier.
-.RE
 .SS Return value
 .PP
 A new string representing the unencoded version of the given encoded
 Uniform Resource Identifier (URI).
 .SS Exceptions
-.IP \[bu] 2
-\f[V]URIError\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]URIError\f[R]
 Thrown if \f[V]encodedURI\f[R] contains a \f[V]%\f[R] not followed by
 two hexadecimal digits, or if the escape sequence does not encode a
 valid UTF-8 character.
-.RE
-.SH Description
+.SH DESCRIPTION
 .PP
 \f[V]decodeURI()\f[R] is a function property of the global object.
 .PP
@@ -74,7 +71,7 @@ syntax):
 ; / ? : \[at] & = + $ , #
 \f[R]
 .fi
-.SH Examples
+.SH EXAMPLES
 .SS Decoding a Cyrillic URL
 .IP
 .nf
@@ -116,7 +113,7 @@ try {
 // URIError: malformed URI sequence
 \f[R]
 .fi
-.SH See also
+.SH SEE ALSO
 .IP \[bu] 2
 \f[V]decodeURIComponent()\f[R]
 .IP \[bu] 2

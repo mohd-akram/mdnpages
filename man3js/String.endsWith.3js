@@ -14,14 +14,17 @@
 . ftr VB CB
 . ftr VBI CBI
 .\}
-.TH "String.endsWith" "JS" "2023-06-02" "JavaScript" "JavaScript Reference Manual"
+.TH "String.endsWith" "JS" "June 2, 2023" "JavaScript" "JavaScript Reference Manual"
 .hy
-.SH Synopsis
+.SH NAME
+.PP
+String.endsWith - String.prototype.endsWith()
+.SH SYNOPSIS
 .PP
 The \f[B]\f[VB]endsWith()\f[B]\f[R] method determines whether a string
 ends with the characters of a specified string, returning \f[V]true\f[R]
 or \f[V]false\f[R] as appropriate.
-.SH Syntax
+.SH SYNTAX
 .IP
 .nf
 \f[C]
@@ -30,42 +33,33 @@ endsWith(searchString, endPosition)
 \f[R]
 .fi
 .SS Parameters
-.IP \[bu] 2
-\f[V]searchString\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]searchString\f[R]
 The characters to be searched for at the end of \f[V]str\f[R].
 Cannot be a regex.
 All values that are not regexes are coerced to strings, so omitting it
 or passing \f[V]undefined\f[R] causes \f[V]endsWith()\f[R] to search for
 the string \f[V]\[dq]undefined\[dq]\f[R], which is rarely what you want.
-.RE
-.IP \[bu] 2
-\f[V]endPosition\f[R] \f[I](optional)\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]endPosition\f[R] \f[I](optional)\f[R]
 The end position at which \f[V]searchString\f[R] is expected to be found
 (the index of \f[V]searchString\f[R]\[cq]s last character plus 1).
 Defaults to \f[V]str.length\f[R].
-.RE
 .SS Return value
 .PP
 \f[B]\f[VB]true\f[B]\f[R] if the given characters are found at the end
 of the string, including when \f[V]searchString\f[R] is an empty string;
 otherwise, \f[B]\f[VB]false\f[B]\f[R].
 .SS Exceptions
-.IP \[bu] 2
-\f[V]TypeError\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]TypeError\f[R]
 Thrown if \f[V]searchString\f[R] is a regex.
-.RE
-.SH Description
+.SH DESCRIPTION
 .PP
 This method lets you determine whether or not a string ends with another
 string.
 This method is case-sensitive.
-.SH Examples
+.SH EXAMPLES
 .SS Using endsWith()
 .IP
 .nf
@@ -77,7 +71,7 @@ console.log(str.endsWith(\[dq]to be\[dq])); // false
 console.log(str.endsWith(\[dq]to be\[dq], 19)); // true
 \f[R]
 .fi
-.SH See also
+.SH SEE ALSO
 .IP \[bu] 2
 Polyfill of \f[V]String.prototype.endsWith\f[R] in
 \f[V]core-js\f[R] (https://github.com/zloirock/core-js#ecmascript-string-and-regexp)

@@ -14,15 +14,18 @@
 . ftr VB CB
 . ftr VBI CBI
 .\}
-.TH "JSON.stringify" "JS" "2023-06-02" "JavaScript" "JavaScript Reference Manual"
+.TH "JSON.stringify" "JS" "June 2, 2023" "JavaScript" "JavaScript Reference Manual"
 .hy
-.SH Synopsis
+.SH NAME
+.PP
+JSON.stringify - JSON.stringify()
+.SH SYNOPSIS
 .PP
 The \f[B]\f[VB]JSON.stringify()\f[B]\f[R] static method converts a
 JavaScript value to a JSON string, optionally replacing values if a
 replacer function is specified or optionally including only the
 specified properties if a replacer array is specified.
-.SH Syntax
+.SH SYNTAX
 .IP
 .nf
 \f[C]
@@ -32,16 +35,11 @@ JSON.stringify(value, replacer, space)
 \f[R]
 .fi
 .SS Parameters
-.IP \[bu] 2
-\f[V]value\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]value\f[R]
 The value to convert to a JSON string.
-.RE
-.IP \[bu] 2
-\f[V]replacer\f[R] \f[I](optional)\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]replacer\f[R] \f[I](optional)\f[R]
 A function that alters the behavior of the stringification process, or
 an array of strings and numbers that specifies properties of
 \f[V]value\f[R] to be included in the output.
@@ -51,15 +49,12 @@ not strings or numbers (either primitives or wrapper objects), including
 If \f[V]replacer\f[R] is anything other than a function or an array
 (e.g.\ \f[V]null\f[R] or not provided), all string-keyed properties of
 the object are included in the resulting JSON string.
-.RE
-.IP \[bu] 2
-\f[V]space\f[R] \f[I](optional)\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]space\f[R] \f[I](optional)\f[R]
 A string or number that\[cq]s used to insert white space (including
 indentation, line break characters, etc.)
 into the output JSON string for readability purposes.
-.RS 2
+.RS
 .PP
 If this is a number, it indicates the number of space characters to be
 used as indentation, clamped to 10 (that is, any number greater than
@@ -74,24 +69,20 @@ If \f[V]space\f[R] is anything other than a string or number (can be
 either a primitive or a wrapper object) \[em] for example, is
 \f[V]null\f[R] or not provided \[em] no white space is used.
 .RE
-.RE
 .SS Return value
 .PP
 A JSON string representing the given value, or undefined.
 .SS Exceptions
-.IP \[bu] 2
-\f[V]TypeError\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]TypeError\f[R]
 Thrown if one of the following is true:
-.RS 2
+.RS
 .IP \[bu] 2
 \f[V]value\f[R] contains a circular reference.
 .IP \[bu] 2
 A \f[V]BigInt\f[R] value is encountered.
 .RE
-.RE
-.SH Description
+.SH DESCRIPTION
 .PP
 \f[V]JSON.stringify()\f[R] converts a value to the JSON notation that
 the value represents.
@@ -231,7 +222,7 @@ If it is a string, successive levels will be indented by this string.
 Each level of indentation will never be longer than 10.
 Number values of \f[V]space\f[R] are clamped to 10, and string values
 are truncated to 10 characters.
-.SH Examples
+.SH EXAMPLES
 .SS Using JSON.stringify
 .IP
 .nf
@@ -543,7 +534,7 @@ lone surrogates themselves.
 \f[V]JSON.stringify()\f[R] do you need to carefully handle
 \f[V]JSON.stringify()\f[R]\[cq]s two possible encodings of these code
 points.
-.SH See also
+.SH SEE ALSO
 .IP \[bu] 2
 Polyfill of modern \f[V]JSON.stringify\f[R] behavior (symbol and
 well-formed unicode) in

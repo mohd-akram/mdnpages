@@ -14,9 +14,12 @@
 . ftr VB CB
 . ftr VBI CBI
 .\}
-.TH "Intl.supportedValuesOf" "JS" "2023-06-02" "JavaScript" "JavaScript Reference Manual"
+.TH "Intl.supportedValuesOf" "JS" "June 2, 2023" "JavaScript" "JavaScript Reference Manual"
 .hy
-.SH Synopsis
+.SH NAME
+.PP
+Intl.supportedValuesOf - Intl.supportedValuesOf()
+.SH SYNOPSIS
 .PP
 The \f[B]\f[VB]Intl.supportedValuesOf()\f[B]\f[R] static method returns
 an array containing the supported calendar, collation, currency,
@@ -31,7 +34,7 @@ particular implementation and download a polyfill only if necessary.
 It can also be used to build UIs that allow users to select their
 preferred localized values, for example when the UI is created from
 WebGL or server-side.
-.SH Syntax
+.SH SYNTAX
 .IP
 .nf
 \f[C]
@@ -39,28 +42,22 @@ Intl.supportedValuesOf(key)
 \f[R]
 .fi
 .SS Parameters
-.IP \[bu] 2
-\f[V]key\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]key\f[R]
 A key string indicating the category of values to be returned.
 This is one of: \f[V]\[dq]calendar\[dq]\f[R],
 \f[V]\[dq]collation\[dq]\f[R], \f[V]\[dq]currency\[dq]\f[R],
 \f[V]\[dq]numberingSystem\[dq]\f[R], \f[V]\[dq]timeZone\[dq]\f[R],
 \f[V]\[dq]unit\[dq]\f[R].
-.RE
 .SS Return value
 .PP
 A sorted array of unique string values indicating the values supported
 by the implementation for the given key.
 .SS Exceptions
-.IP \[bu] 2
-\f[V]RangeError\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]RangeError\f[R]
 Thrown if an unsupported key was passed as a parameter.
-.RE
-.SH Examples
+.SH EXAMPLES
 .SS Feature testing
 .PP
 You can check that the method is supported by comparing to
@@ -128,7 +125,7 @@ try {
 }
 \f[R]
 .fi
-.SH See also
+.SH SEE ALSO
 .IP \[bu] 2
 \f[V]Intl\f[R]
 .IP \[bu] 2

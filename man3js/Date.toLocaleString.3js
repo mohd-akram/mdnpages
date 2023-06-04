@@ -14,15 +14,18 @@
 . ftr VB CB
 . ftr VBI CBI
 .\}
-.TH "Date.toLocaleString" "JS" "2023-06-02" "JavaScript" "JavaScript Reference Manual"
+.TH "Date.toLocaleString" "JS" "June 2, 2023" "JavaScript" "JavaScript Reference Manual"
 .hy
-.SH Synopsis
+.SH NAME
+.PP
+Date.toLocaleString - Date.prototype.toLocaleString()
+.SH SYNOPSIS
 .PP
 The \f[B]\f[VB]toLocaleString()\f[B]\f[R] method returns a string with a
 language-sensitive representation of this date.
 In implementations with \f[V]Intl.DateTimeFormat\f[R] API support, this
 method simply calls \f[V]Intl.DateTimeFormat\f[R].
-.SH Syntax
+.SH SYNTAX
 .IP
 .nf
 \f[C]
@@ -43,23 +46,18 @@ these parameters correspond exactly to the
 Implementations without \f[V]Intl.DateTimeFormat\f[R] support are asked
 to ignore both parameters, making the locale used and the form of the
 string returned entirely implementation-dependent.
-.IP \[bu] 2
-\f[V]locales\f[R] \f[I](optional)\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]locales\f[R] \f[I](optional)\f[R]
 A string with a BCP 47 language tag, or an array of such strings.
 Corresponds to the \f[V]locales\f[R] parameter of the
 \f[V]Intl.DateTimeFormat()\f[R] constructor.
-.RS 2
+.RS
 .PP
 In implementations without \f[V]Intl.DateTimeFormat\f[R] support, this
 parameter is ignored and the host\[cq]s locale is usually used.
 .RE
-.RE
-.IP \[bu] 2
-\f[V]options\f[R] \f[I](optional)\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]options\f[R] \f[I](optional)\f[R]
 An object adjusting the output format.
 Corresponds to the \f[V]options\f[R] parameter of the
 \f[V]Intl.DateTimeFormat()\f[R] constructor.
@@ -69,11 +67,10 @@ and \f[V]fractionalSecondDigits\f[R] are all undefined, then
 \f[V]year\f[R], \f[V]month\f[R], \f[V]day\f[R], \f[V]hour\f[R],
 \f[V]minute\f[R], \f[V]second\f[R] will be set to
 \f[V]\[dq]numeric\[dq]\f[R].
-.RS 2
+.RS
 .PP
 In implementations without \f[V]Intl.DateTimeFormat\f[R] support, this
 parameter is ignored.
-.RE
 .RE
 .PP
 See the \f[V]Intl.DateTimeFormat()\f[R] constructor for details on these
@@ -95,7 +92,7 @@ However, the output may vary with time, language, and implementation
 You should not compare the results of \f[V]toLocaleString()\f[R] to
 static values.
 .RE
-.SH Examples
+.SH EXAMPLES
 .SS Using toLocaleString()
 .PP
 In basic use without specifying a locale, a formatted string in the
@@ -209,7 +206,7 @@ console.log(date.toLocaleString(\[dq]en-US\[dq], { hour12: false }));
 // \[dq]12/19/2012, 19:00:00\[dq]
 \f[R]
 .fi
-.SH See also
+.SH SEE ALSO
 .IP \[bu] 2
 \f[V]Intl.DateTimeFormat\f[R]
 .IP \[bu] 2

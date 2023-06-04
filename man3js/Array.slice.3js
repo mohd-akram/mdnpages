@@ -14,9 +14,12 @@
 . ftr VB CB
 . ftr VBI CBI
 .\}
-.TH "Array.slice" "JS" "2023-06-02" "JavaScript" "JavaScript Reference Manual"
+.TH "Array.slice" "JS" "June 2, 2023" "JavaScript" "JavaScript Reference Manual"
 .hy
-.SH Synopsis
+.SH NAME
+.PP
+Array.slice - Array.prototype.slice()
+.SH SYNOPSIS
 .PP
 The \f[B]\f[VB]slice()\f[B]\f[R] method returns a shallow copy of a
 portion of an array into a new array object selected from
@@ -24,7 +27,7 @@ portion of an array into a new array object selected from
 \f[V]start\f[R] and \f[V]end\f[R] represent the index of items in that
 array.
 The original array will not be modified.
-.SH Syntax
+.SH SYNTAX
 .IP
 .nf
 \f[C]
@@ -34,12 +37,10 @@ slice(start, end)
 \f[R]
 .fi
 .SS Parameters
-.IP \[bu] 2
-\f[V]start\f[R] \f[I](optional)\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]start\f[R] \f[I](optional)\f[R]
 Zero-based index at which to start extraction, converted to an integer.
-.RS 2
+.RS
 .IP \[bu] 2
 Negative index counts back from the end of the array \[em] if
 \f[V]start < 0\f[R], \f[V]start + array.length\f[R] is used.
@@ -49,14 +50,11 @@ If \f[V]start < -array.length\f[R] or \f[V]start\f[R] is omitted,
 .IP \[bu] 2
 If \f[V]start >= array.length\f[R], nothing is extracted.
 .RE
-.RE
-.IP \[bu] 2
-\f[V]end\f[R] \f[I](optional)\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]end\f[R] \f[I](optional)\f[R]
 Zero-based index at which to end extraction, converted to an integer.
 \f[V]slice()\f[R] extracts up to but not including \f[V]end\f[R].
-.RS 2
+.RS
 .IP \[bu] 2
 Negative index counts back from the end of the array \[em] if
 \f[V]end < 0\f[R], \f[V]end + array.length\f[R] is used.
@@ -70,11 +68,10 @@ extracted.
 If \f[V]end\f[R] is positioned before or at \f[V]start\f[R] after
 normalization, nothing is extracted.
 .RE
-.RE
 .SS Return value
 .PP
 A new array containing the extracted elements.
-.SH Description
+.SH DESCRIPTION
 .PP
 The \f[V]slice()\f[R] method is a copying method.
 It does not alter \f[V]this\f[R] but instead returns a shallow copy that
@@ -86,7 +83,7 @@ If the sliced portion is sparse, the returned array is sparse as well.
 The \f[V]slice()\f[R] method is generic.
 It only expects the \f[V]this\f[R] value to have a \f[V]length\f[R]
 property and integer-keyed properties.
-.SH Examples
+.SH EXAMPLES
 .SS Return a portion of an existing array
 .IP
 .nf
@@ -196,7 +193,7 @@ sparse.
 console.log([1, 2, , 4, 5].slice(1, 4)); // [2, empty, 4]
 \f[R]
 .fi
-.SH See also
+.SH SEE ALSO
 .IP \[bu] 2
 Polyfill of \f[V]Array.prototype.slice\f[R] in
 \f[V]core-js\f[R] (https://github.com/zloirock/core-js#ecmascript-array)

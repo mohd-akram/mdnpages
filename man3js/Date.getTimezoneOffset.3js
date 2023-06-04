@@ -15,15 +15,18 @@
 . ftr VB CB
 . ftr VBI CBI
 .\}
-.TH "Date.getTimezoneOffset" "JS" "2023-06-02" "JavaScript" "JavaScript Reference Manual"
+.TH "Date.getTimezoneOffset" "JS" "June 2, 2023" "JavaScript" "JavaScript Reference Manual"
 .hy
-.SH Synopsis
+.SH NAME
+.PP
+Date.getTimezoneOffset - Date.prototype.getTimezoneOffset()
+.SH SYNOPSIS
 .PP
 The \f[B]\f[VB]getTimezoneOffset()\f[B]\f[R] method of \f[V]Date\f[R]
 instances returns the difference, in minutes, between this date as
 evaluated in the UTC time zone, and the same date as evaluated in the
 local time zone.
-.SH Syntax
+.SH SYNTAX
 .IP
 .nf
 \f[C]
@@ -37,7 +40,7 @@ evaluated in the UTC time zone and as evaluated in the local time zone.
 The actual local time algorithm is implementation-defined, and the
 return value is allowed to be zero in runtimes without appropriate data.
 Returns \f[V]NaN\f[R] if the date is invalid.
-.SH Description
+.SH DESCRIPTION
 .PP
 \f[V]date.getTimezoneOffset()\f[R] returns the difference, in minutes,
 between \f[V]date\f[R] as evaluated in the UTC time zone and as
@@ -97,7 +100,7 @@ database (https://en.wikipedia.org/wiki/Daylight_saving_time#IANA_time_zone_data
 at the moment of the \f[V]date\f[R].
 However, if such information is unavailable, an implementation may
 return zero.
-.SH Examples
+.SH EXAMPLES
 .SS Using getTimezoneOffset()
 .IP
 .nf
@@ -144,6 +147,6 @@ War (https://en.wikipedia.org/wiki/Second_Sino-Japanese_War) when
 Shanghai was under Japanese control, the timezone was changed to
 UTC+09:00 to align with Japan\[cq]s (in effect, it was a \[lq]year-round
 DST\[rq]), and this was recorded in the IANA database.
-.SH See also
+.SH SEE ALSO
 .IP \[bu] 2
 \f[V]Date\f[R]

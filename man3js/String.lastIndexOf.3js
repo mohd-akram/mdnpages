@@ -14,9 +14,12 @@
 . ftr VB CB
 . ftr VBI CBI
 .\}
-.TH "String.lastIndexOf" "JS" "2023-06-02" "JavaScript" "JavaScript Reference Manual"
+.TH "String.lastIndexOf" "JS" "June 2, 2023" "JavaScript" "JavaScript Reference Manual"
 .hy
-.SH Synopsis
+.SH NAME
+.PP
+String.lastIndexOf - String.prototype.lastIndexOf()
+.SH SYNOPSIS
 .PP
 The \f[B]\f[VB]lastIndexOf()\f[B]\f[R] method of \f[V]String\f[R] values
 searches this string and returns the index of the last occurrence of the
@@ -24,7 +27,7 @@ specified substring.
 It takes an optional starting position and returns the last occurrence
 of the specified substring at an index less than or equal to the
 specified number.
-.SH Syntax
+.SH SYNTAX
 .IP
 .nf
 \f[C]
@@ -33,19 +36,14 @@ lastIndexOf(searchString, position)
 \f[R]
 .fi
 .SS Parameters
-.IP \[bu] 2
-\f[V]searchString\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]searchString\f[R]
 Substring to search for.
 All values are coerced to strings, so omitting it or passing
 \f[V]undefined\f[R] causes \f[V]indexOf()\f[R] to search for the string
 \f[V]\[dq]undefined\[dq]\f[R], which is rarely what you want.
-.RE
-.IP \[bu] 2
-\f[V]position\f[R] \f[I](optional)\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]position\f[R] \f[I](optional)\f[R]
 The method returns the index of the last occurrence of the specified
 substring at a position less than or equal to \f[V]position\f[R], which
 defaults to \f[V]+Infinity\f[R].
@@ -54,7 +52,7 @@ the method searches the entire string.
 If \f[V]position\f[R] is less than \f[V]0\f[R], the behavior is the same
 as for \f[V]0\f[R] \[em] that is, the method looks for the specified
 substring only at index \f[V]0\f[R].
-.RS 2
+.RS
 .IP \[bu] 2
 \f[V]\[aq]hello world hello\[aq].lastIndexOf(\[aq]world\[aq], 4)\f[R]
 returns \f[V]-1\f[R] \[em] because, while the substring \f[V]world\f[R]
@@ -72,12 +70,11 @@ and
 both return \f[V]0\f[R] \[em] because both cause the method to only look
 for \f[V]hello\f[R] at index \f[V]0\f[R].
 .RE
-.RE
 .SS Return value
 .PP
 The index of the last occurrence of \f[V]searchString\f[R] found, or
 \f[V]-1\f[R] if not found.
-.SH Description
+.SH DESCRIPTION
 .PP
 Strings are zero-indexed: The index of a string\[cq]s first character is
 \f[V]0\f[R], and the index of a string\[cq]s last character is the
@@ -105,7 +102,7 @@ For example, the following expression returns \f[V]-1\f[R]:
 \[dq]Blue Whale, Killer Whale\[dq].lastIndexOf(\[dq]blue\[dq]); // returns -1
 \f[R]
 .fi
-.SH Examples
+.SH EXAMPLES
 .SS Using indexOf() and lastIndexOf()
 .PP
 The following example uses \f[V]indexOf()\f[R] and
@@ -120,7 +117,7 @@ console.log(anyString.indexOf(\[dq]Brave\[dq])); // 0
 console.log(anyString.lastIndexOf(\[dq]Brave\[dq])); // 7
 \f[R]
 .fi
-.SH See also
+.SH SEE ALSO
 .IP \[bu] 2
 \f[V]String.prototype.charAt()\f[R]
 .IP \[bu] 2

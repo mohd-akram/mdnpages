@@ -14,9 +14,12 @@
 . ftr VB CB
 . ftr VBI CBI
 .\}
-.TH "String.link" "JS" "2023-06-02" "JavaScript" "JavaScript Reference Manual"
+.TH "String.link" "JS" "June 2, 2023" "JavaScript" "JavaScript Reference Manual"
 .hy
-.SH Synopsis
+.SH NAME
+.PP
+String.link - String.prototype.link()
+.SH SYNOPSIS
 .PP
 \f[I](deprecated)\f[R]
 .PP
@@ -30,7 +33,7 @@ link to another URL.
 standardized for compatibility purposes.
 Use DOM APIs such as \f[V]document.createElement()\f[R] instead.
 .RE
-.SH Syntax
+.SH SYNTAX
 .IP
 .nf
 \f[C]
@@ -38,20 +41,17 @@ link(url)
 \f[R]
 .fi
 .SS Parameters
-.IP \[bu] 2
-\f[V]url\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]url\f[R]
 Any string that specifies the \f[V]href\f[R] attribute of the
 \f[V]<a>\f[R] element; it should be a valid URL (relative or absolute),
 with any \f[V]&\f[R] characters escaped as \f[V]&amp;\f[R].
-.RE
 .SS Return value
 .PP
 A string beginning with an \f[V]<a href=\[dq]url\[dq]>\f[R] start tag
 (double quotes in \f[V]url\f[R] are replaced with \f[V]&quot;\f[R]),
 then the text \f[V]str\f[R], and then an \f[V]</a>\f[R] end tag.
-.SH Examples
+.SH EXAMPLES
 .SS Using link()
 .PP
 The following example displays the word \[lq]MDN\[rq] as a hypertext
@@ -66,7 +66,7 @@ console.log(\[ga]Click to return to ${hotText.link(url)}\[ga]);
 // Click to return to <a href=\[dq]https://developer.mozilla.org/\[dq]>MDN</a>
 \f[R]
 .fi
-.SH See also
+.SH SEE ALSO
 .IP \[bu] 2
 Polyfill of \f[V]String.prototype.link\f[R] in
 \f[V]core-js\f[R] (https://github.com/zloirock/core-js#ecmascript-string-and-regexp)

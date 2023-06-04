@@ -14,16 +14,19 @@
 . ftr VB CB
 . ftr VBI CBI
 .\}
-.TH "Math.exp" "JS" "2023-06-02" "JavaScript" "JavaScript Reference Manual"
+.TH "Math.exp" "JS" "June 2, 2023" "JavaScript" "JavaScript Reference Manual"
 .hy
-.SH Synopsis
+.SH NAME
+.PP
+Math.exp - Math.exp()
+.SH SYNOPSIS
 .PP
 The \f[B]\f[VB]Math.exp()\f[B]\f[R] static method returns e raised to
 the power of a number.
 That is
 .PP
 𝙼𝚊𝚝𝚑.𝚎𝚡𝚙(𝚡)=ex = \[ha]x
-.SH Syntax
+.SH SYNTAX
 .IP
 .nf
 \f[C]
@@ -31,17 +34,14 @@ Math.exp(x)
 \f[R]
 .fi
 .SS Parameters
-.IP \[bu] 2
-\f[V]x\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]x\f[R]
 A number.
-.RE
 .SS Return value
 .PP
 A nonnegative number representing ex, where e is the base of the natural
 logarithm.
-.SH Description
+.SH DESCRIPTION
 .PP
 Because \f[V]exp()\f[R] is a static method of \f[V]Math\f[R], you always
 use it as \f[V]Math.exp()\f[R], rather than as a method of a
@@ -51,7 +51,7 @@ Beware that \f[V]e\f[R] to the power of a number very close to 0 will be
 very close to 1 and suffer from loss of precision.
 In this case, you may want to use \f[V]Math.expm1\f[R] instead, and
 obtain a much higher-precision fractional part of the answer.
-.SH Examples
+.SH EXAMPLES
 .SS Using Math.exp()
 .IP
 .nf
@@ -63,7 +63,7 @@ Math.exp(1); // 2.718281828459045
 Math.exp(Infinity); // Infinity
 \f[R]
 .fi
-.SH See also
+.SH SEE ALSO
 .IP \[bu] 2
 \f[V]Math.E\f[R]
 .IP \[bu] 2

@@ -14,14 +14,17 @@
 . ftr VB CB
 . ftr VBI CBI
 .\}
-.TH "Object.defineProperty" "JS" "2023-06-02" "JavaScript" "JavaScript Reference Manual"
+.TH "Object.defineProperty" "JS" "June 2, 2023" "JavaScript" "JavaScript Reference Manual"
 .hy
-.SH Synopsis
+.SH NAME
+.PP
+Object.defineProperty - Object.defineProperty()
+.SH SYNOPSIS
 .PP
 The \f[B]\f[VB]Object.defineProperty()\f[B]\f[R] static method defines a
 new property directly on an object, or modifies an existing property on
 an object, and returns the object.
-.SH Syntax
+.SH SYNTAX
 .IP
 .nf
 \f[C]
@@ -29,30 +32,21 @@ Object.defineProperty(obj, prop, descriptor)
 \f[R]
 .fi
 .SS Parameters
-.IP \[bu] 2
-\f[V]obj\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]obj\f[R]
 The object on which to define the property.
-.RE
-.IP \[bu] 2
-\f[V]prop\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]prop\f[R]
 A string or \f[V]Symbol\f[R] specifying the key of the property to be
 defined or modified.
-.RE
-.IP \[bu] 2
-\f[V]descriptor\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]descriptor\f[R]
 The descriptor for the property being defined or modified.
-.RE
 .SS Return value
 .PP
 The object that was passed to the function, with the specified property
 added or modified.
-.SH Description
+.SH DESCRIPTION
 .PP
 \f[V]Object.defineProperty()\f[R] allows a precise addition to or
 modification of a property on an object.
@@ -81,12 +75,10 @@ Both data and accessor descriptors are objects.
 They share the following optional keys (please note: the
 \f[B]defaults\f[R] mentioned here are in the case of defining properties
 using \f[V]Object.defineProperty()\f[R]):
-.IP \[bu] 2
-\f[V]configurable\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]configurable\f[R]
 when this is set to \f[V]false\f[R],
-.RS 2
+.RS
 .IP \[bu] 2
 the type of this property cannot be changed between data property and
 accessor property, and
@@ -100,39 +92,27 @@ it\[cq]s a data descriptor with \f[V]writable: true\f[R], the
 .PP
 \f[B]Defaults to \f[VB]false\f[B].\f[R]
 .RE
-.RE
-.IP \[bu] 2
-\f[V]enumerable\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]enumerable\f[R]
 \f[V]true\f[R] if and only if this property shows up during enumeration
 of the properties on the corresponding object.
 \f[B]Defaults to \f[VB]false\f[B].\f[R]
-.RE
 .PP
 A \f[B]data descriptor\f[R] also has the following optional keys:
-.IP \[bu] 2
-\f[V]value\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]value\f[R]
 The value associated with the property.
 Can be any valid JavaScript value (number, object, function, etc.).
 \f[B]Defaults to \f[VB]undefined\f[B].\f[R]
-.RE
-.IP \[bu] 2
-\f[V]writable\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]writable\f[R]
 \f[V]true\f[R] if the value associated with the property may be changed
 with an assignment operator.
 \f[B]Defaults to \f[VB]false\f[B].\f[R]
-.RE
 .PP
 An \f[B]accessor descriptor\f[R] also has the following optional keys:
-.IP \[bu] 2
-\f[V]get\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]get\f[R]
 A function which serves as a getter for the property, or
 \f[V]undefined\f[R] if there is no getter.
 When the property is accessed, this function is called without arguments
@@ -141,18 +121,14 @@ accessed (this may not be the object on which the property is defined
 due to inheritance).
 The return value will be used as the value of the property.
 \f[B]Defaults to \f[VB]undefined\f[B].\f[R]
-.RE
-.IP \[bu] 2
-\f[V]set\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]set\f[R]
 A function which serves as a setter for the property, or
 \f[V]undefined\f[R] if there is no setter.
 When the property is assigned, this function is called with one argument
 (the value being assigned to the property) and with \f[V]this\f[R] set
 to the object through which the property is assigned.
 \f[B]Defaults to \f[VB]undefined\f[B].\f[R]
-.RE
 .PP
 If a descriptor doesn\[cq]t have any of the \f[V]value\f[R],
 \f[V]writable\f[R], \f[V]get\f[R], and \f[V]set\f[R] keys, it is treated
@@ -243,7 +219,7 @@ descriptor of a different \[lq]flavor\[rq].
 For example, if the new descriptor is a data descriptor (with
 \f[V]value\f[R] or \f[V]writable\f[R]), the original descriptor\[cq]s
 \f[V]get\f[R] and \f[V]set\f[R] attributes will both be dropped.
-.SH Examples
+.SH EXAMPLES
 .SS Creating a property
 .PP
 When the property specified doesn\[cq]t exist in the object,
@@ -675,7 +651,7 @@ console.log(a.y); // 1
 console.log(MyClass.prototype.y); // 1
 \f[R]
 .fi
-.SH See also
+.SH SEE ALSO
 .IP \[bu] 2
 Enumerability and ownership of properties
 .IP \[bu] 2

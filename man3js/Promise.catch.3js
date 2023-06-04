@@ -14,9 +14,12 @@
 . ftr VB CB
 . ftr VBI CBI
 .\}
-.TH "Promise.catch" "JS" "2023-06-02" "JavaScript" "JavaScript Reference Manual"
+.TH "Promise.catch" "JS" "June 2, 2023" "JavaScript" "JavaScript Reference Manual"
 .hy
-.SH Synopsis
+.SH NAME
+.PP
+Promise.catch - Promise.prototype.catch()
+.SH SYNOPSIS
 .PP
 The \f[B]\f[VB]catch()\f[B]\f[R] method of \f[V]Promise\f[R] instances
 schedules a function to be called when the promise is rejected.
@@ -24,7 +27,7 @@ It immediately returns an equivalent \f[V]Promise\f[R] object, allowing
 you to chain calls to other promise methods.
 It is a shortcut for
 \f[V]Promise.prototype.then(undefined, onRejected)\f[R].
-.SH Syntax
+.SH SYNTAX
 .IP
 .nf
 \f[C]
@@ -32,22 +35,16 @@ catch(onRejected)
 \f[R]
 .fi
 .SS Parameters
-.IP \[bu] 2
-\f[V]onRejected\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]onRejected\f[R]
 A function to asynchronously execute when this promise becomes rejected.
 Its return value becomes the fulfillment value of the promise returned
 by \f[V]catch()\f[R].
 The function is called with the following arguments:
-.RS 2
-.IP \[bu] 2
-\f[V]reason\f[R]
-.RS 2
-.IP \[bu] 2
+.RS
+.TP
+\f[B]reason\f[R]
 The value that the promise was rejected with.
-.RE
-.RE
 .RE
 .SS Return value
 .PP
@@ -57,7 +54,7 @@ current promise\[cq]s status.
 It\[cq]s eventually rejected if \f[V]onRejected\f[R] throws an error or
 returns a Promise which is itself rejected; otherwise, it\[cq]s
 eventually fulfilled.
-.SH Description
+.SH DESCRIPTION
 .PP
 The \f[V]catch\f[R] method is used for error handling in promise
 composition.
@@ -120,7 +117,7 @@ good practice; otherwise, the part doing the catching would have to
 perform checks to see if the argument was a string or an error, and you
 might lose valuable information such as stack traces.
 .RE
-.SH Examples
+.SH EXAMPLES
 .SS Using and chaining the catch() method
 .IP
 .nf
@@ -228,7 +225,7 @@ p2.then(
 );
 \f[R]
 .fi
-.SH See also
+.SH SEE ALSO
 .IP \[bu] 2
 \f[V]Promise\f[R]
 .IP \[bu] 2

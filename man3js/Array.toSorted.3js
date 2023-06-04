@@ -14,14 +14,17 @@
 . ftr VB CB
 . ftr VBI CBI
 .\}
-.TH "Array.toSorted" "JS" "2023-06-02" "JavaScript" "JavaScript Reference Manual"
+.TH "Array.toSorted" "JS" "June 2, 2023" "JavaScript" "JavaScript Reference Manual"
 .hy
-.SH Synopsis
+.SH NAME
+.PP
+Array.toSorted - Array.prototype.toSorted()
+.SH SYNOPSIS
 .PP
 The \f[B]\f[VB]toSorted()\f[B]\f[R] method of \f[V]Array\f[R] instances
 is the copying version of the \f[V]sort()\f[R] method.
 It returns a new array with the elements sorted in ascending order.
-.SH Syntax
+.SH SYNTAX
 .IP
 .nf
 \f[C]
@@ -39,32 +42,23 @@ toSorted(function compareFn(a, b) { /* \&... */ })
 \f[R]
 .fi
 .SS Parameters
-.IP \[bu] 2
-\f[V]compareFn\f[R] \f[I](optional)\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]compareFn\f[R] \f[I](optional)\f[R]
 Specifies a function that defines the sort order.
 If omitted, the array elements are converted to strings, then sorted
 according to each character\[cq]s Unicode code point value.
-.RS 2
-.IP \[bu] 2
-\f[V]a\f[R]
-.RS 2
-.IP \[bu] 2
+.RS
+.TP
+\f[B]a\f[R]
 The first element for comparison.
-.RE
-.IP \[bu] 2
-\f[V]b\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]b\f[R]
 The second element for comparison.
-.RE
-.RE
 .RE
 .SS Return value
 .PP
 A new array with the elements sorted in ascending order.
-.SH Description
+.SH DESCRIPTION
 .PP
 See \f[V]sort()\f[R] for more information on the \f[V]compareFn\f[R]
 parameter.
@@ -75,7 +69,7 @@ empty slots as if they have the value \f[V]undefined\f[R].
 The \f[V]toSorted()\f[R] method is generic.
 It only expects the \f[V]this\f[R] value to have a \f[V]length\f[R]
 property and integer-keyed properties.
-.SH Examples
+.SH EXAMPLES
 .SS Sorting an array
 .IP
 .nf
@@ -125,7 +119,7 @@ console.log(Array.prototype.toSorted.call(arrayLike));
 // [4, 5, undefined]
 \f[R]
 .fi
-.SH See also
+.SH SEE ALSO
 .IP \[bu] 2
 Polyfill of \f[V]Array.prototype.toSorted\f[R] in
 \f[V]core-js\f[R] (https://github.com/zloirock/core-js#change-array-by-copy)

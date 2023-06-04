@@ -14,9 +14,12 @@
 . ftr VB CB
 . ftr VBI CBI
 .\}
-.TH "String.strike" "JS" "2023-06-02" "JavaScript" "JavaScript Reference Manual"
+.TH "String.strike" "JS" "June 2, 2023" "JavaScript" "JavaScript Reference Manual"
 .hy
-.SH Synopsis
+.SH NAME
+.PP
+String.strike - String.prototype.strike()
+.SH SYNOPSIS
 .PP
 \f[I](deprecated)\f[R]
 .PP
@@ -29,7 +32,7 @@ which causes a string to be displayed as struck-out text.
 standardized for compatibility purposes.
 Use DOM APIs such as \f[V]document.createElement()\f[R] instead.
 .RE
-.SH Syntax
+.SH SYNTAX
 .IP
 .nf
 \f[C]
@@ -40,7 +43,7 @@ strike()
 .PP
 A string beginning with a \f[V]<strike>\f[R] start tag, then the text
 \f[V]str\f[R], and then a \f[V]</strike>\f[R] end tag.
-.SH Examples
+.SH EXAMPLES
 .SS Using strike()
 .PP
 The following example uses deprecated string methods to change the
@@ -56,7 +59,7 @@ console.log(worldString.italics()); // <i>Hello, world</i>
 console.log(worldString.strike()); // <strike>Hello, world</strike>
 \f[R]
 .fi
-.SH See also
+.SH SEE ALSO
 .IP \[bu] 2
 Polyfill of \f[V]String.prototype.strike\f[R] in
 \f[V]core-js\f[R] (https://github.com/zloirock/core-js#ecmascript-string-and-regexp)

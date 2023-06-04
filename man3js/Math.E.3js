@@ -15,14 +15,17 @@
 . ftr VB CB
 . ftr VBI CBI
 .\}
-.TH "Math.E" "JS" "2023-06-02" "JavaScript" "JavaScript Reference Manual"
+.TH "Math.E" "JS" "June 2, 2023" "JavaScript" "JavaScript Reference Manual"
 .hy
-.SH Synopsis
+.SH NAME
+.PP
+Math.E - Math.E
+.SH SYNOPSIS
 .PP
 The \f[B]\f[VB]Math.E\f[B]\f[R] static data property represents
 Euler\[cq]s number, the base of natural logarithms, e, which is
 approximately 2.718.
-.SH Value
+.SH VALUE
 .PP
 𝙼𝚊𝚝𝚑.𝙴=e≈2.718 = e
 .PP
@@ -45,12 +48,12 @@ T}@T{
 no
 T}
 .TE
-.SH Description
+.SH DESCRIPTION
 .PP
 Because \f[V]E\f[R] is a static property of \f[V]Math\f[R], you always
 use it as \f[V]Math.E\f[R], rather than as a property of a
 \f[V]Math\f[R] object you created (\f[V]Math\f[R] is not a constructor).
-.SH Examples
+.SH EXAMPLES
 .SS Using Math.E
 .PP
 The following function returns e:
@@ -64,7 +67,7 @@ function getNapier() {
 getNapier(); // 2.718281828459045
 \f[R]
 .fi
-.SH See also
+.SH SEE ALSO
 .IP \[bu] 2
 \f[V]Math.exp()\f[R]
 .IP \[bu] 2

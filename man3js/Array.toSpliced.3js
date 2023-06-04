@@ -14,15 +14,18 @@
 . ftr VB CB
 . ftr VBI CBI
 .\}
-.TH "Array.toSpliced" "JS" "2023-06-02" "JavaScript" "JavaScript Reference Manual"
+.TH "Array.toSpliced" "JS" "June 2, 2023" "JavaScript" "JavaScript Reference Manual"
 .hy
-.SH Synopsis
+.SH NAME
+.PP
+Array.toSpliced - Array.prototype.toSpliced()
+.SH SYNOPSIS
 .PP
 The \f[B]\f[VB]toSpliced()\f[B]\f[R] method of \f[V]Array\f[R] instances
 is the copying version of the \f[V]splice()\f[R] method.
 It returns a new array with some elements removed and/or replaced at a
 given index.
-.SH Syntax
+.SH SYNTAX
 .IP
 .nf
 \f[C]
@@ -33,13 +36,11 @@ toSpliced(start, deleteCount, item1, item2, itemN)
 \f[R]
 .fi
 .SS Parameters
-.IP \[bu] 2
-\f[V]start\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]start\f[R]
 Zero-based index at which to start changing the array, converted to an
 integer.
-.RS 2
+.RS
 .IP \[bu] 2
 Negative index counts back from the end of the array \[em] if
 \f[V]start < 0\f[R], \f[V]start + array.length\f[R] is used.
@@ -51,14 +52,11 @@ If \f[V]start >= array.length\f[R], no element will be deleted, but the
 method will behave as an adding function, adding as many elements as
 provided.
 .RE
-.RE
-.IP \[bu] 2
-\f[V]deleteCount\f[R] \f[I](optional)\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]deleteCount\f[R] \f[I](optional)\f[R]
 An integer indicating the number of elements in the array to remove from
 \f[V]start\f[R].
-.RS 2
+.RS
 .PP
 If \f[V]deleteCount\f[R] is omitted, or if its value is greater than or
 equal to the number of elements after the position specified by
@@ -73,24 +71,20 @@ If \f[V]deleteCount\f[R] is \f[V]0\f[R] or negative, no elements are
 removed.
 In this case, you should specify at least one new element (see below).
 .RE
-.RE
-.IP \[bu] 2
-\f[V]item1\f[R], \&..., \f[V]itemN\f[R] \f[I](optional)\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]item1\f[R], \&..., \f[B]itemN\f[R] \f[I](optional)\f[R]
 The elements to add to the array, beginning from \f[V]start\f[R].
-.RS 2
+.RS
 .PP
 If you do not specify any elements, \f[V]toSpliced()\f[R] will only
 remove elements from the array.
-.RE
 .RE
 .SS Return value
 .PP
 A new array that consists of all elements before \f[V]start\f[R],
 \f[V]item1\f[R], \f[V]item2\f[R], \&..., \f[V]itemN\f[R], and all
 elements after \f[V]start + deleteCount\f[R].
-.SH Description
+.SH DESCRIPTION
 .PP
 The \f[V]toSpliced()\f[R] method, like \f[V]splice()\f[R], does multiple
 things at once: it removes the given number of elements from the array,
@@ -106,7 +100,7 @@ If the source array is sparse, the empty slots will be replaced with
 The \f[V]toSpliced()\f[R] method is generic.
 It only expects the \f[V]this\f[R] value to have a \f[V]length\f[R]
 property and integer-keyed properties.
-.SH Examples
+.SH EXAMPLES
 .SS Deleting, adding, and replacing elements
 .PP
 You can use \f[V]toSpliced()\f[R] to delete, add, and replace elements
@@ -162,7 +156,7 @@ console.log(Array.prototype.toSpliced.call(arrayLike, 0, 1, 2, 3));
 // [2, 3, undefined, 4]
 \f[R]
 .fi
-.SH See also
+.SH SEE ALSO
 .IP \[bu] 2
 Polyfill of \f[V]Array.prototype.toSpliced\f[R] in
 \f[V]core-js\f[R] (https://github.com/zloirock/core-js#change-array-by-copy)

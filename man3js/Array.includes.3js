@@ -14,14 +14,17 @@
 . ftr VB CB
 . ftr VBI CBI
 .\}
-.TH "Array.includes" "JS" "2023-06-02" "JavaScript" "JavaScript Reference Manual"
+.TH "Array.includes" "JS" "June 2, 2023" "JavaScript" "JavaScript Reference Manual"
 .hy
-.SH Synopsis
+.SH NAME
+.PP
+Array.includes - Array.prototype.includes()
+.SH SYNOPSIS
 .PP
 The \f[B]\f[VB]includes()\f[B]\f[R] method determines whether an array
 includes a certain value among its entries, returning \f[V]true\f[R] or
 \f[V]false\f[R] as appropriate.
-.SH Syntax
+.SH SYNTAX
 .IP
 .nf
 \f[C]
@@ -30,18 +33,13 @@ includes(searchElement, fromIndex)
 \f[R]
 .fi
 .SS Parameters
-.IP \[bu] 2
-\f[V]searchElement\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]searchElement\f[R]
 The value to search for.
-.RE
-.IP \[bu] 2
-\f[V]fromIndex\f[R] \f[I](optional)\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]fromIndex\f[R] \f[I](optional)\f[R]
 Zero-based index at which to start searching, converted to an integer.
-.RS 2
+.RS
 .IP \[bu] 2
 Negative index counts back from the end of the array \[em] if
 \f[V]fromIndex < 0\f[R], \f[V]fromIndex + array.length\f[R] is used.
@@ -53,13 +51,12 @@ omitted, \f[V]0\f[R] is used, causing the entire array to be searched.
 If \f[V]fromIndex >= array.length\f[R], the array is not searched and
 \f[V]false\f[R] is returned.
 .RE
-.RE
 .SS Return value
 .PP
 A boolean value which is \f[V]true\f[R] if the value
 \f[V]searchElement\f[R] is found within the array (or the part of the
 array indicated by the index \f[V]fromIndex\f[R], if specified).
-.SH Description
+.SH DESCRIPTION
 .PP
 The \f[V]includes()\f[R] method compares \f[V]searchElement\f[R] to
 elements of the array using the SameValueZero algorithm.
@@ -74,7 +71,7 @@ empty slots as if they have the value \f[V]undefined\f[R].
 The \f[V]includes()\f[R] method is generic.
 It only expects the \f[V]this\f[R] value to have a \f[V]length\f[R]
 property and integer-keyed properties.
-.SH Examples
+.SH EXAMPLES
 .SS Using includes()
 .IP
 .nf
@@ -152,7 +149,7 @@ console.log(Array.prototype.includes.call(arrayLike, 1));
 // false
 \f[R]
 .fi
-.SH See also
+.SH SEE ALSO
 .IP \[bu] 2
 Polyfill of \f[V]Array.prototype.includes\f[R] in
 \f[V]core-js\f[R] (https://github.com/zloirock/core-js#ecmascript-array)

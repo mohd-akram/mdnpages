@@ -15,14 +15,17 @@
 . ftr VB CB
 . ftr VBI CBI
 .\}
-.TH "Date.toTimeString" "JS" "2023-06-02" "JavaScript" "JavaScript Reference Manual"
+.TH "Date.toTimeString" "JS" "June 2, 2023" "JavaScript" "JavaScript Reference Manual"
 .hy
-.SH Synopsis
+.SH NAME
+.PP
+Date.toTimeString - Date.prototype.toTimeString()
+.SH SYNOPSIS
 .PP
 The \f[B]\f[VB]toTimeString()\f[B]\f[R] method of \f[V]Date\f[R]
 instances returns a string representing the time portion of this date
 interpreted in the local timezone.
-.SH Syntax
+.SH SYNTAX
 .IP
 .nf
 \f[C]
@@ -34,7 +37,7 @@ toTimeString()
 A string representing the time portion of the given date (see
 description for the format).
 Returns \f[V]\[dq]Invalid Date\[dq]\f[R] if the date is invalid.
-.SH Description
+.SH DESCRIPTION
 .PP
 \f[V]Date\f[R] instances refer to a specific point in time.
 \f[V]toTimeString()\f[R] interprets the date in the local timezone and
@@ -90,7 +93,7 @@ timezone, use \f[V]toUTCString()\f[R].
 .IP \[bu] 2
 If you want to format the date in a more user-friendly format
 (e.g.\ localization), use \f[V]toLocaleTimeString()\f[R].
-.SH Examples
+.SH EXAMPLES
 .SS Using toTimeString()
 .IP
 .nf
@@ -101,7 +104,7 @@ console.log(d.toString()); // \[dq]Thu Jan 01 1970 00:00:00 GMT+0000 (Coordinate
 console.log(d.toTimeString()); // \[dq]00:00:00 GMT+0000 (Coordinated Universal Time)\[dq]
 \f[R]
 .fi
-.SH See also
+.SH SEE ALSO
 .IP \[bu] 2
 \f[V]Date.prototype.toLocaleTimeString()\f[R]
 .IP \[bu] 2

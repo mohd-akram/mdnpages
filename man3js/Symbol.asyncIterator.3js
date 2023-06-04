@@ -15,9 +15,12 @@
 . ftr VB CB
 . ftr VBI CBI
 .\}
-.TH "Symbol.asyncIterator" "JS" "2023-06-02" "JavaScript" "JavaScript Reference Manual"
+.TH "Symbol.asyncIterator" "JS" "June 2, 2023" "JavaScript" "JavaScript Reference Manual"
 .hy
-.SH Synopsis
+.SH NAME
+.PP
+Symbol.asyncIterator - Symbol.asyncIterator
+.SH SYNOPSIS
 .PP
 The \f[B]\f[VB]Symbol.asyncIterator\f[B]\f[R] static data property
 represents the well-known symbol \f[V]\[at]\[at]asyncIterator\f[R].
@@ -25,7 +28,7 @@ The async iterable protocol looks up this symbol for the method that
 returns the async iterator for an object.
 In order for an object to be async iterable, it must have an
 \f[V]\[at]\[at]asyncIterator\f[R] key.
-.SH Value
+.SH VALUE
 .PP
 The well-known symbol \f[V]\[at]\[at]asyncIterator\f[R].
 .PP
@@ -48,7 +51,7 @@ T}@T{
 no
 T}
 .TE
-.SH Examples
+.SH EXAMPLES
 .SS User-defined async iterables
 .PP
 You can define your own async iterable by setting the
@@ -85,7 +88,7 @@ situations.
 \f[V]ReadableStream\f[R] is the only built-in JavaScript object that has
 the \f[V]Symbol.asyncIterator\f[R] method set by default at the time of
 writing.
-.SH See also
+.SH SEE ALSO
 .IP \[bu] 2
 Iteration protocols
 .IP \[bu] 2

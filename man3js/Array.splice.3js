@@ -14,9 +14,12 @@
 . ftr VB CB
 . ftr VBI CBI
 .\}
-.TH "Array.splice" "JS" "2023-06-02" "JavaScript" "JavaScript Reference Manual"
+.TH "Array.splice" "JS" "June 2, 2023" "JavaScript" "JavaScript Reference Manual"
 .hy
-.SH Synopsis
+.SH NAME
+.PP
+Array.splice - Array.prototype.splice()
+.SH SYNOPSIS
 .PP
 The \f[B]\f[VB]splice()\f[B]\f[R] method changes the contents of an
 array by removing or replacing existing elements and/or adding new
@@ -25,7 +28,7 @@ elements in place (https://en.wikipedia.org/wiki/In-place_algorithm).
 To create a new array with a segment removed and/or replaced without
 mutating the original array, use \f[V]toSpliced()\f[R].
 To access part of an array without modifying it, see \f[V]slice()\f[R].
-.SH Syntax
+.SH SYNTAX
 .IP
 .nf
 \f[C]
@@ -36,13 +39,11 @@ splice(start, deleteCount, item1, item2, itemN)
 \f[R]
 .fi
 .SS Parameters
-.IP \[bu] 2
-\f[V]start\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]start\f[R]
 Zero-based index at which to start changing the array, converted to an
 integer.
-.RS 2
+.RS
 .IP \[bu] 2
 Negative index counts back from the end of the array \[em] if
 \f[V]start < 0\f[R], \f[V]start + array.length\f[R] is used.
@@ -58,14 +59,11 @@ arguments), nothing is deleted.
 This is different from passing \f[V]undefined\f[R], which is converted
 to \f[V]0\f[R].
 .RE
-.RE
-.IP \[bu] 2
-\f[V]deleteCount\f[R] \f[I](optional)\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]deleteCount\f[R] \f[I](optional)\f[R]
 An integer indicating the number of elements in the array to remove from
 \f[V]start\f[R].
-.RS 2
+.RS
 .PP
 If \f[V]deleteCount\f[R] is omitted, or if its value is greater than or
 equal to the number of elements after the position specified by
@@ -80,17 +78,13 @@ If \f[V]deleteCount\f[R] is \f[V]0\f[R] or negative, no elements are
 removed.
 In this case, you should specify at least one new element (see below).
 .RE
-.RE
-.IP \[bu] 2
-\f[V]item1\f[R], \&..., \f[V]itemN\f[R] \f[I](optional)\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]item1\f[R], \&..., \f[B]itemN\f[R] \f[I](optional)\f[R]
 The elements to add to the array, beginning from \f[V]start\f[R].
-.RS 2
+.RS
 .PP
 If you do not specify any elements, \f[V]splice()\f[R] will only remove
 elements from the array.
-.RE
 .RE
 .SS Return value
 .PP
@@ -99,7 +93,7 @@ An array containing the deleted elements.
 If only one element is removed, an array of one element is returned.
 .PP
 If no elements are removed, an empty array is returned.
-.SH Description
+.SH DESCRIPTION
 .PP
 The \f[V]splice()\f[R] method is a mutating method.
 It may change the content of \f[V]this\f[R].
@@ -118,7 +112,7 @@ It only expects the \f[V]this\f[R] value to have a \f[V]length\f[R]
 property and integer-keyed properties.
 Although strings are also array-like, this method is not suitable to be
 applied on them, as strings are immutable.
-.SH Examples
+.SH EXAMPLES
 .SS Remove 0 (zero) elements before index 2, and insert \[lq]drum\[rq]
 .IP
 .nf
@@ -239,7 +233,7 @@ console.log(arrayLike);
 // { \[aq]0\[aq]: 2, \[aq]1\[aq]: 3, \[aq]3\[aq]: 4, length: 4, unrelated: \[aq]foo\[aq] }
 \f[R]
 .fi
-.SH See also
+.SH SEE ALSO
 .IP \[bu] 2
 Indexed collections
 .IP \[bu] 2

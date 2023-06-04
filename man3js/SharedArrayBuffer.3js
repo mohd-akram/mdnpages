@@ -14,9 +14,12 @@
 . ftr VB CB
 . ftr VBI CBI
 .\}
-.TH "SharedArrayBuffer" "JS" "2023-06-02" "JavaScript" "JavaScript Reference Manual"
+.TH "SharedArrayBuffer" "JS" "June 2, 2023" "JavaScript" "JavaScript Reference Manual"
 .hy
-.SH Synopsis
+.SH NAME
+.PP
+SharedArrayBuffer - SharedArrayBuffer
+.SH SYNOPSIS
 .PP
 The \f[B]\f[VB]SharedArrayBuffer\f[B]\f[R] object is used to represent a
 generic raw binary data buffer, similar to the \f[V]ArrayBuffer\f[R]
@@ -24,7 +27,7 @@ object, but in a way that they can be used to create views on shared
 memory.
 A \f[V]SharedArrayBuffer\f[R] is not a Transferable Object, unlike an
 \f[V]ArrayBuffer\f[R] which is transferable.
-.SH Description
+.SH DESCRIPTION
 .PP
 To share memory using \f[V]SharedArrayBuffer\f[R] objects from one agent
 in the cluster to another (an agent is either the web page\[cq]s main
@@ -191,84 +194,57 @@ linear memory can be resized with
 .PP
 For security reasons, \f[V]SharedArrayBuffer\f[R]s cannot be reduced in
 size, only grown.
-.SH Constructor
-.IP \[bu] 2
-\f[V]SharedArrayBuffer()\f[R]
-.RS 2
-.IP \[bu] 2
+.SH CONSTRUCTOR
+.TP
+\f[B]SharedArrayBuffer()\f[R]
 Creates a new \f[V]SharedArrayBuffer\f[R] object.
-.RE
-.SH Static properties
-.IP \[bu] 2
-\f[V]SharedArrayBuffer[\[at]\[at]species]\f[R]
-.RS 2
-.IP \[bu] 2
+.SH STATIC PROPERTIES
+.TP
+\f[B]SharedArrayBuffer[\[at]\[at]species]\f[R]
 Returns the constructor used to construct return values from
 \f[V]SharedArrayBuffer\f[R] methods.
-.RE
-.SH Instance properties
+.SH INSTANCE PROPERTIES
 .PP
 These properties are defined on \f[V]SharedArrayBuffer.prototype\f[R]
 and shared by all \f[V]SharedArrayBuffer\f[R] instances.
-.IP \[bu] 2
-\f[V]SharedArrayBuffer.prototype.byteLength\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]SharedArrayBuffer.prototype.byteLength\f[R]
 The size, in bytes, of the array.
 This is established when the array is constructed and can only be
 changed using the \f[V]SharedArrayBuffer.prototype.grow()\f[R] method if
 the \f[V]SharedArrayBuffer\f[R] is growable.
-.RE
-.IP \[bu] 2
-\f[V]SharedArrayBuffer.prototype.constructor\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]SharedArrayBuffer.prototype.constructor\f[R]
 The constructor function that created the instance object.
 For \f[V]SharedArrayBuffer\f[R] instances, the initial value is the
 \f[V]SharedArrayBuffer\f[R] constructor.
-.RE
-.IP \[bu] 2
-\f[V]SharedArrayBuffer.prototype.growable\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]SharedArrayBuffer.prototype.growable\f[R]
 Read-only.
 Returns \f[V]true\f[R] if the \f[V]SharedArrayBuffer\f[R] can be grown,
 or \f[V]false\f[R] if not.
-.RE
-.IP \[bu] 2
-\f[V]SharedArrayBuffer.prototype.maxByteLength\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]SharedArrayBuffer.prototype.maxByteLength\f[R]
 The read-only maximum length, in bytes, that the
 \f[V]SharedArrayBuffer\f[R] can be grown to.
 This is established when the array is constructed and cannot be changed.
-.RE
-.IP \[bu] 2
-\f[V]SharedArrayBuffer.prototype[\[at]\[at]toStringTag]\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]SharedArrayBuffer.prototype[\[at]\[at]toStringTag]\f[R]
 The initial value of the \f[V]\[at]\[at]toStringTag\f[R] property is the
 string \f[V]\[dq]SharedArrayBuffer\[dq]\f[R].
 This property is used in \f[V]Object.prototype.toString()\f[R].
-.RE
-.SH Instance methods
-.IP \[bu] 2
-\f[V]SharedArrayBuffer.prototype.grow()\f[R]
-.RS 2
-.IP \[bu] 2
+.SH INSTANCE METHODS
+.TP
+\f[B]SharedArrayBuffer.prototype.grow()\f[R]
 Grows the \f[V]SharedArrayBuffer\f[R] to the specified size, in bytes.
-.RE
-.IP \[bu] 2
-\f[V]SharedArrayBuffer.prototype.slice()\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]SharedArrayBuffer.prototype.slice()\f[R]
 Returns a new \f[V]SharedArrayBuffer\f[R] whose contents are a copy of
 this \f[V]SharedArrayBuffer\f[R]\[cq]s bytes from \f[V]begin\f[R],
 inclusive, up to \f[V]end\f[R], exclusive.
 If either \f[V]begin\f[R] or \f[V]end\f[R] is negative, it refers to an
 index from the end of the array, as opposed to from the beginning.
-.RE
-.SH Examples
+.SH EXAMPLES
 .SS Creating a new SharedArrayBuffer
 .IP
 .nf
@@ -297,7 +273,7 @@ gl.bindBuffer(gl.ARRAY_BUFFER, buffer);
 gl.bufferData(gl.ARRAY_BUFFER, sab, gl.STATIC_DRAW);
 \f[R]
 .fi
-.SH See also
+.SH SEE ALSO
 .IP \[bu] 2
 \f[V]Atomics\f[R]
 .IP \[bu] 2

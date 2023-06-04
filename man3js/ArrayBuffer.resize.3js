@@ -14,14 +14,17 @@
 . ftr VB CB
 . ftr VBI CBI
 .\}
-.TH "ArrayBuffer.resize" "JS" "2023-06-02" "JavaScript" "JavaScript Reference Manual"
+.TH "ArrayBuffer.resize" "JS" "June 2, 2023" "JavaScript" "JavaScript Reference Manual"
 .hy
-.SH Synopsis
+.SH NAME
+.PP
+ArrayBuffer.resize - ArrayBuffer.prototype.resize()
+.SH SYNOPSIS
 .PP
 The \f[B]\f[VB]resize()\f[B]\f[R] method of \f[V]ArrayBuffer\f[R]
 instances resizes the \f[V]ArrayBuffer\f[R] to the specified size, in
 bytes.
-.SH Syntax
+.SH SYNTAX
 .IP
 .nf
 \f[C]
@@ -29,30 +32,21 @@ resize(newLength)
 \f[R]
 .fi
 .SS Parameters
-.IP \[bu] 2
-\f[V]newLength\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]newLength\f[R]
 The new length, in bytes, to resize the \f[V]ArrayBuffer\f[R] to.
-.RE
 .SS Return value
 .PP
 \f[V]undefined\f[R].
 .SS Exceptions
-.IP \[bu] 2
-\f[V]TypeError\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]TypeError\f[R]
 Thrown if the \f[V]ArrayBuffer\f[R] is detached or is not resizable.
-.RE
-.IP \[bu] 2
-\f[V]RangeError\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]RangeError\f[R]
 Thrown if \f[V]newLength\f[R] is larger than the \f[V]maxByteLength\f[R]
 of the \f[V]ArrayBuffer\f[R].
-.RE
-.SH Description
+.SH DESCRIPTION
 .PP
 The \f[V]resize()\f[R] method resizes an \f[V]ArrayBuffer\f[R] to the
 size specified by the \f[V]newLength\f[R] parameter, provided that the
@@ -64,7 +58,7 @@ Note that you can use \f[V]resize()\f[R] to shrink as well as grow an
 \f[V]ArrayBuffer\f[R] \[em] it is permissible for \f[V]newLength\f[R] to
 be smaller than the \f[V]ArrayBuffer\f[R]\[cq]s current
 \f[V]byteLength\f[R].
-.SH Examples
+.SH EXAMPLES
 .SS Using resize()
 .PP
 In this example, we create a 8-byte buffer that is resizable to a max
@@ -81,7 +75,7 @@ if (buffer.resizable) {
 }
 \f[R]
 .fi
-.SH See also
+.SH SEE ALSO
 .IP \[bu] 2
 \f[V]ArrayBuffer\f[R]
 .IP \[bu] 2

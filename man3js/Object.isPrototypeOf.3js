@@ -14,9 +14,12 @@
 . ftr VB CB
 . ftr VBI CBI
 .\}
-.TH "Object.isPrototypeOf" "JS" "2023-06-02" "JavaScript" "JavaScript Reference Manual"
+.TH "Object.isPrototypeOf" "JS" "June 2, 2023" "JavaScript" "JavaScript Reference Manual"
 .hy
-.SH Synopsis
+.SH NAME
+.PP
+Object.isPrototypeOf - Object.prototype.isPrototypeOf()
+.SH SYNOPSIS
 .PP
 The \f[B]\f[VB]isPrototypeOf()\f[B]\f[R] method checks if an object
 exists in another object\[cq]s prototype chain.
@@ -28,7 +31,7 @@ In the expression \f[V]object instanceof AFunction\f[R],
 \f[V]object\f[R]\[cq]s prototype chain is checked against
 \f[V]AFunction.prototype\f[R], not against \f[V]AFunction\f[R] itself.
 .RE
-.SH Syntax
+.SH SYNTAX
 .IP
 .nf
 \f[C]
@@ -36,12 +39,9 @@ isPrototypeOf(object)
 \f[R]
 .fi
 .SS Parameters
-.IP \[bu] 2
-\f[V]object\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]object\f[R]
 The object whose prototype chain will be searched.
-.RE
 .SS Return value
 .PP
 A boolean indicating whether the calling object (\f[V]this\f[R]) lies in
@@ -49,14 +49,11 @@ the prototype chain of \f[V]object\f[R].
 Directly returns \f[V]false\f[R] when \f[V]object\f[R] is not an object
 (i.e.\ a primitive).
 .SS Errors thrown
-.IP \[bu] 2
-\f[V]TypeError\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]TypeError\f[R]
 Thrown if \f[V]this\f[R] is \f[V]null\f[R] or \f[V]undefined\f[R]
 (because it can\[cq]t be converted to an object).
-.RE
-.SH Description
+.SH DESCRIPTION
 .PP
 All objects that inherit from \f[V]Object.prototype\f[R] (that is, all
 except \f[V]null\f[R]-prototype objects) inherit the
@@ -69,7 +66,7 @@ Otherwise, the \f[V]this\f[R] value is converted to an object, and the
 prototype chain of \f[V]object\f[R] is searched for the \f[V]this\f[R]
 value, until the end of the chain is reached or the \f[V]this\f[R] value
 is found.
-.SH Examples
+.SH EXAMPLES
 .SS Using isPrototypeOf()
 .PP
 This example demonstrates that \f[V]Baz.prototype\f[R],
@@ -169,7 +166,7 @@ if (Foo.isFoo(baz)) {
 }
 \f[R]
 .fi
-.SH See also
+.SH SEE ALSO
 .IP \[bu] 2
 \f[V]instanceof\f[R]
 .IP \[bu] 2

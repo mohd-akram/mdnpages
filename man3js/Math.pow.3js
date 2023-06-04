@@ -14,16 +14,19 @@
 . ftr VB CB
 . ftr VBI CBI
 .\}
-.TH "Math.pow" "JS" "2023-06-02" "JavaScript" "JavaScript Reference Manual"
+.TH "Math.pow" "JS" "June 2, 2023" "JavaScript" "JavaScript Reference Manual"
 .hy
-.SH Synopsis
+.SH NAME
+.PP
+Math.pow - Math.pow()
+.SH SYNOPSIS
 .PP
 The \f[B]\f[VB]Math.pow()\f[B]\f[R] static method returns the value of a
 base raised to a power.
 That is
 .PP
 𝙼𝚊𝚝𝚑.𝚙𝚘𝚠(𝚡,𝚢)=xy = x\[ha]y
-.SH Syntax
+.SH SYNTAX
 .IP
 .nf
 \f[C]
@@ -31,18 +34,12 @@ Math.pow(base, exponent)
 \f[R]
 .fi
 .SS Parameters
-.IP \[bu] 2
-\f[V]base\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]base\f[R]
 The base number.
-.RE
-.IP \[bu] 2
-\f[V]exponent\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]exponent\f[R]
 The exponent number.
-.RE
 .SS Return value
 .PP
 A number representing \f[V]base\f[R] taken to the power of
@@ -57,7 +54,7 @@ Returns \f[V]NaN\f[R] in one of the following cases:
 \f[V]base\f[R] is ±1 and \f[V]exponent\f[R] is ±\f[V]Infinity\f[R].
 .IP \[bu] 2
 \f[V]base < 0\f[R] and \f[V]exponent\f[R] is not an integer.
-.SH Description
+.SH DESCRIPTION
 .PP
 \f[V]Math.pow()\f[R] is equivalent to the \f[V]**\f[R] operator, except
 \f[V]Math.pow()\f[R] only accepts numbers.
@@ -75,7 +72,7 @@ compatibility with its original behavior.
 Because \f[V]pow()\f[R] is a static method of \f[V]Math\f[R], use it as
 \f[V]Math.pow()\f[R], rather than as a method of a \f[V]Math\f[R] object
 you created (\f[V]Math\f[R] is not a constructor).
-.SH Examples
+.SH EXAMPLES
 .SS Using Math.pow()
 .IP
 .nf
@@ -132,7 +129,7 @@ Math.pow(NaN, 1); // NaN
 Math.pow(1, NaN); // NaN
 \f[R]
 .fi
-.SH See also
+.SH SEE ALSO
 .IP \[bu] 2
 \f[V]Math.cbrt()\f[R]
 .IP \[bu] 2

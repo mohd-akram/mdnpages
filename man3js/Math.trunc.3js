@@ -14,13 +14,16 @@
 . ftr VB CB
 . ftr VBI CBI
 .\}
-.TH "Math.trunc" "JS" "2023-06-02" "JavaScript" "JavaScript Reference Manual"
+.TH "Math.trunc" "JS" "June 2, 2023" "JavaScript" "JavaScript Reference Manual"
 .hy
-.SH Synopsis
+.SH NAME
+.PP
+Math.trunc - Math.trunc()
+.SH SYNOPSIS
 .PP
 The \f[B]\f[VB]Math.trunc()\f[B]\f[R] static method returns the integer
 part of a number by removing any fractional digits.
-.SH Syntax
+.SH SYNTAX
 .IP
 .nf
 \f[C]
@@ -28,16 +31,13 @@ Math.trunc(x)
 \f[R]
 .fi
 .SS Parameters
-.IP \[bu] 2
-\f[V]x\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]x\f[R]
 A number.
-.RE
 .SS Return value
 .PP
 The integer part of \f[V]x\f[R].
-.SH Description
+.SH DESCRIPTION
 .PP
 Unlike the other three \f[V]Math\f[R] methods: \f[V]Math.floor()\f[R],
 \f[V]Math.ceil()\f[R] and \f[V]Math.round()\f[R], the way
@@ -48,7 +48,7 @@ it, no matter whether the argument is a positive or negative number.
 Because \f[V]trunc()\f[R] is a static method of \f[V]Math\f[R], you
 always use it as \f[V]Math.trunc()\f[R], rather than as a method of a
 \f[V]Math\f[R] object you created (\f[V]Math\f[R] is not a constructor).
-.SH Examples
+.SH EXAMPLES
 .SS Using Math.trunc()
 .IP
 .nf
@@ -104,7 +104,7 @@ const c = \[ti]\[ti]4294967296; // 0
 Only use \f[V]\[ti]\[ti]\f[R] as a substitution for
 \f[V]Math.trunc()\f[R] when you are confident that the range of input
 falls within the range of 32-bit integers.
-.SH See also
+.SH SEE ALSO
 .IP \[bu] 2
 Polyfill of \f[V]Math.trunc\f[R] in
 \f[V]core-js\f[R] (https://github.com/zloirock/core-js#ecmascript-math)

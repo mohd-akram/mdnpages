@@ -14,13 +14,16 @@
 . ftr VB CB
 . ftr VBI CBI
 .\}
-.TH "String.toString" "JS" "2023-06-02" "JavaScript" "JavaScript Reference Manual"
+.TH "String.toString" "JS" "June 2, 2023" "JavaScript" "JavaScript Reference Manual"
 .hy
-.SH Synopsis
+.SH NAME
+.PP
+String.toString - String.prototype.toString()
+.SH SYNOPSIS
 .PP
 The \f[B]\f[VB]toString()\f[B]\f[R] method returns a string representing
 the specified string value.
-.SH Syntax
+.SH SYNTAX
 .IP
 .nf
 \f[C]
@@ -30,7 +33,7 @@ toString()
 .SS Return value
 .PP
 A string representing the specified string value.
-.SH Description
+.SH DESCRIPTION
 .PP
 The \f[V]String\f[R] object overrides the \f[V]toString\f[R] method of
 \f[V]Object\f[R]; it does not inherit
@@ -62,7 +65,7 @@ console.log(\[ga]${\[dq]foo\[dq]}\[ga]); // \[dq]foo\[dq]
 console.log(\[ga]${new String(\[dq]foo\[dq])}\[ga]); // \[dq]Overridden\[dq]
 \f[R]
 .fi
-.SH Examples
+.SH EXAMPLES
 .SS Using toString()
 .PP
 The following example displays the string value of a \f[V]String\f[R]
@@ -75,6 +78,6 @@ const x = new String(\[dq]Hello world\[dq]);
 console.log(x.toString()); // \[dq]Hello world\[dq]
 \f[R]
 .fi
-.SH See also
+.SH SEE ALSO
 .IP \[bu] 2
 \f[V]String.prototype.valueOf()\f[R]

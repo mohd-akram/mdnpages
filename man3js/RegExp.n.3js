@@ -14,9 +14,12 @@
 . ftr VB CB
 . ftr VBI CBI
 .\}
-.TH "RegExp.n" "JS" "2023-06-02" "JavaScript" "JavaScript Reference Manual"
+.TH "RegExp.n" "JS" "June 2, 2023" "JavaScript" "JavaScript Reference Manual"
 .hy
-.SH Synopsis
+.SH NAME
+.PP
+RegExp.n - RegExp.$1, \&..., RegExp.$9
+.SH SYNOPSIS
 .PP
 \f[I](deprecated)\f[R]
 .RS
@@ -28,7 +31,7 @@ See deprecated RegExp features for more information.
 .PP
 The \f[B]\f[VB]RegExp.$1, \&..., RegExp.$9\f[B]\f[R] static accessor
 properties return parenthesized substring matches.
-.SH Description
+.SH DESCRIPTION
 .PP
 Because \f[V]$1\f[R]\[en]\f[V]$9\f[R] are static properties of
 \f[V]RegExp\f[R], you always use them as \f[V]RegExp.$1\f[R],
@@ -51,7 +54,7 @@ array\[cq]s indexes.
 \f[V]$1, \&..., $9\f[R] can also be used in the replacement string of
 \f[V]String.prototype.replace()\f[R], but that\[cq]s unrelated to the
 \f[V]RegExp.$n\f[R] legacy properties.
-.SH Examples
+.SH EXAMPLES
 .SS Using $n with RegExp.prototype.test()
 .PP
 The following script uses the \f[V]test()\f[R] method of the
@@ -70,7 +73,7 @@ expressions between a \f[V]re.test(str)\f[R] call and the
 \f[V]RegExp.$n\f[R] property, might have side effects, so that accessing
 these special properties should be done instantly, otherwise the result
 might be unexpected.
-.SH See also
+.SH SEE ALSO
 .IP \[bu] 2
 \f[V]RegExp.input ($_)\f[R]
 .IP \[bu] 2

@@ -14,16 +14,19 @@
 . ftr VB CB
 . ftr VBI CBI
 .\}
-.TH "TypedArray.toString" "JS" "2023-06-02" "JavaScript" "JavaScript Reference Manual"
+.TH "TypedArray.toString" "JS" "June 2, 2023" "JavaScript" "JavaScript Reference Manual"
 .hy
-.SH Synopsis
+.SH NAME
+.PP
+TypedArray.toString - TypedArray.prototype.toString()
+.SH SYNOPSIS
 .PP
 The \f[B]\f[VB]toString()\f[B]\f[R] method returns a string representing
 the specified array and its elements.
 This method has the same algorithm as
 \f[V]Array.prototype.toString()\f[R].
 \f[I]TypedArray\f[R] is one of the typed array types here.
-.SH Syntax
+.SH SYNTAX
 .IP
 .nf
 \f[C]
@@ -33,7 +36,7 @@ toString()
 .SS Return value
 .PP
 A string representing the elements of the typed array.
-.SH Examples
+.SH EXAMPLES
 .PP
 The \f[V]TypedArray\f[R] objects override the \f[V]toString\f[R] method
 of \f[V]Object\f[R].
@@ -65,6 +68,6 @@ const numbers = new Uint8Array([2, 5, 8, 1, 4]);
 numbers.toString(); // \[dq][object Uint8Array]\[dq]
 \f[R]
 .fi
-.SH See also
+.SH SEE ALSO
 .IP \[bu] 2
 \f[V]TypedArray.prototype.join()\f[R]

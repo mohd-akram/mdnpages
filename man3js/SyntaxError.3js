@@ -14,9 +14,12 @@
 . ftr VB CB
 . ftr VBI CBI
 .\}
-.TH "SyntaxError" "JS" "2023-06-02" "JavaScript" "JavaScript Reference Manual"
+.TH "SyntaxError" "JS" "June 2, 2023" "JavaScript" "JavaScript Reference Manual"
 .hy
-.SH Synopsis
+.SH NAME
+.PP
+SyntaxError - SyntaxError
+.SH SYNOPSIS
 .PP
 The \f[B]\f[VB]SyntaxError\f[B]\f[R] object represents an error when
 trying to interpret syntactically invalid code.
@@ -28,40 +31,31 @@ that does not conform to the syntax of the language when parsing code.
 \f[V]postMessage()\f[R].
 .PP
 \f[V]SyntaxError\f[R] is a subclass of \f[V]Error\f[R].
-.SH Constructor
-.IP \[bu] 2
-\f[V]SyntaxError()\f[R]
-.RS 2
-.IP \[bu] 2
+.SH CONSTRUCTOR
+.TP
+\f[B]SyntaxError()\f[R]
 Creates a new \f[V]SyntaxError\f[R] object.
-.RE
-.SH Instance properties
+.SH INSTANCE PROPERTIES
 .PP
 \f[I]Also inherits instance properties from its parent
 \f[VI]Error\f[I]\f[R].
 .PP
 These properties are defined on \f[V]SyntaxError.prototype\f[R] and
 shared by all \f[V]SyntaxError\f[R] instances.
-.IP \[bu] 2
-\f[V]SyntaxError.prototype.constructor\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]SyntaxError.prototype.constructor\f[R]
 The constructor function that created the instance object.
 For \f[V]SyntaxError\f[R] instances, the initial value is the
 \f[V]SyntaxError\f[R] constructor.
-.RE
-.IP \[bu] 2
-\f[V]SyntaxError.prototype.name\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]SyntaxError.prototype.name\f[R]
 Represents the name for the type of error.
 For \f[V]SyntaxError.prototype.name\f[R], the initial value is
 \f[V]\[dq]SyntaxError\[dq]\f[R].
-.RE
-.SH Instance methods
+.SH INSTANCE METHODS
 .PP
 \f[I]Inherits instance methods from its parent \f[VI]Error\f[I]\f[R].
-.SH Examples
+.SH EXAMPLES
 .SS Catching a SyntaxError
 .IP
 .nf
@@ -90,6 +84,6 @@ try {
 }
 \f[R]
 .fi
-.SH See also
+.SH SEE ALSO
 .IP \[bu] 2
 \f[V]Error\f[R]

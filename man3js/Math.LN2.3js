@@ -15,13 +15,16 @@
 . ftr VB CB
 . ftr VBI CBI
 .\}
-.TH "Math.LN2" "JS" "2023-06-02" "JavaScript" "JavaScript Reference Manual"
+.TH "Math.LN2" "JS" "June 2, 2023" "JavaScript" "JavaScript Reference Manual"
 .hy
-.SH Synopsis
+.SH NAME
+.PP
+Math.LN2 - Math.LN2
+.SH SYNOPSIS
 .PP
 The \f[B]\f[VB]Math.LN2\f[B]\f[R] static data property represents the
 natural logarithm of 2, approximately 0.693:
-.SH Value
+.SH VALUE
 .PP
 𝙼𝚊𝚝𝚑.𝙻𝙽𝟸=ln(2)≈0.693 = (2)
 .PP
@@ -44,12 +47,12 @@ T}@T{
 no
 T}
 .TE
-.SH Description
+.SH DESCRIPTION
 .PP
 Because \f[V]LN2\f[R] is a static property of \f[V]Math\f[R], you always
 use it as \f[V]Math.LN2\f[R], rather than as a property of a
 \f[V]Math\f[R] object you created (\f[V]Math\f[R] is not a constructor).
-.SH Examples
+.SH EXAMPLES
 .SS Using Math.LN2
 .PP
 The following function returns the natural log of 2:
@@ -63,7 +66,7 @@ function getNatLog2() {
 getNatLog2(); // 0.6931471805599453
 \f[R]
 .fi
-.SH See also
+.SH SEE ALSO
 .IP \[bu] 2
 \f[V]Math.exp()\f[R]
 .IP \[bu] 2

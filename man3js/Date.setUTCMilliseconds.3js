@@ -14,14 +14,17 @@
 . ftr VB CB
 . ftr VBI CBI
 .\}
-.TH "Date.setUTCMilliseconds" "JS" "2023-06-02" "JavaScript" "JavaScript Reference Manual"
+.TH "Date.setUTCMilliseconds" "JS" "June 2, 2023" "JavaScript" "JavaScript Reference Manual"
 .hy
-.SH Synopsis
+.SH NAME
+.PP
+Date.setUTCMilliseconds - Date.prototype.setUTCMilliseconds()
+.SH SYNOPSIS
 .PP
 The \f[B]\f[VB]setUTCMilliseconds()\f[B]\f[R] method of \f[V]Date\f[R]
 instances changes the milliseconds for this date according to universal
 time.
-.SH Syntax
+.SH SYNTAX
 .IP
 .nf
 \f[C]
@@ -29,12 +32,9 @@ setUTCMilliseconds(millisecondsValue)
 \f[R]
 .fi
 .SS Parameters
-.IP \[bu] 2
-\f[V]millisecondsValue\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]millisecondsValue\f[R]
 An integer between 0 and 999 representing the milliseconds.
-.RE
 .SS Return value
 .PP
 Changes the \f[V]Date\f[R] object in place, and returns its new
@@ -42,7 +42,7 @@ timestamp.
 If \f[V]millisecondsValue\f[R] is \f[V]NaN\f[R] (or other values that
 get coerced to \f[V]NaN\f[R], such as \f[V]undefined\f[R]), the date is
 set to Invalid Date and \f[V]NaN\f[R] is returned.
-.SH Description
+.SH DESCRIPTION
 .PP
 If a parameter you specify is outside of the expected range,
 \f[V]setUTCMilliseconds()\f[R] attempts to update the date information
@@ -50,7 +50,7 @@ in the \f[V]Date\f[R] object accordingly.
 For example, if you use 1100 for \f[V]millisecondsValue\f[R], the
 seconds stored in the \f[V]Date\f[R] object will be incremented by 1,
 and 100 will be used for milliseconds.
-.SH Examples
+.SH EXAMPLES
 .SS Using setUTCMilliseconds()
 .IP
 .nf
@@ -59,7 +59,7 @@ const theBigDay = new Date();
 theBigDay.setUTCMilliseconds(500);
 \f[R]
 .fi
-.SH See also
+.SH SEE ALSO
 .IP \[bu] 2
 \f[V]Date.prototype.getUTCMilliseconds()\f[R]
 .IP \[bu] 2

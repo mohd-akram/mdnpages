@@ -14,15 +14,18 @@
 . ftr VB CB
 . ftr VBI CBI
 .\}
-.TH "Object.preventExtensions" "JS" "2023-06-02" "JavaScript" "JavaScript Reference Manual"
+.TH "Object.preventExtensions" "JS" "June 2, 2023" "JavaScript" "JavaScript Reference Manual"
 .hy
-.SH Synopsis
+.SH NAME
+.PP
+Object.preventExtensions - Object.preventExtensions()
+.SH SYNOPSIS
 .PP
 The \f[B]\f[VB]Object.preventExtensions()\f[B]\f[R] static method
 prevents new properties from ever being added to an object
 (i.e.\ prevents future extensions to the object).
 It also prevents the object\[cq]s prototype from being re-assigned.
-.SH Syntax
+.SH SYNTAX
 .IP
 .nf
 \f[C]
@@ -30,16 +33,13 @@ Object.preventExtensions(obj)
 \f[R]
 .fi
 .SS Parameters
-.IP \[bu] 2
-\f[V]obj\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]obj\f[R]
 The object which should be made non-extensible.
-.RE
 .SS Return value
 .PP
 The object being made non-extensible.
-.SH Description
+.SH DESCRIPTION
 .PP
 An object is extensible if new properties can be added to it.
 \f[V]Object.preventExtensions()\f[R] marks an object as no longer
@@ -69,7 +69,7 @@ property; other properties of the target object will remain mutable.
 .PP
 There is no way to make an object extensible again once it has been made
 non-extensible.
-.SH Examples
+.SH EXAMPLES
 .SS Using Object.preventExtensions
 .IP
 .nf
@@ -132,7 +132,7 @@ Object.preventExtensions(1);
 // 1                             (ES2015 code)
 \f[R]
 .fi
-.SH See also
+.SH SEE ALSO
 .IP \[bu] 2
 \f[V]Object.isExtensible()\f[R]
 .IP \[bu] 2

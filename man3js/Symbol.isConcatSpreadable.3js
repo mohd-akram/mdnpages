@@ -15,16 +15,19 @@
 . ftr VB CB
 . ftr VBI CBI
 .\}
-.TH "Symbol.isConcatSpreadable" "JS" "2023-06-02" "JavaScript" "JavaScript Reference Manual"
+.TH "Symbol.isConcatSpreadable" "JS" "June 2, 2023" "JavaScript" "JavaScript Reference Manual"
 .hy
-.SH Synopsis
+.SH NAME
+.PP
+Symbol.isConcatSpreadable - Symbol.isConcatSpreadable
+.SH SYNOPSIS
 .PP
 The \f[B]\f[VB]Symbol.isConcatSpreadable\f[B]\f[R] static data property
 represents the well-known symbol \f[V]\[at]\[at]isConcatSpreadable\f[R].
 The \f[V]Array.prototype.concat()\f[R] method looks up this symbol on
 each object being concatenated to determine if it should be treated as
 an array-like object and flattened to its array elements.
-.SH Value
+.SH VALUE
 .PP
 The well-known symbol \f[V]\[at]\[at]isConcatSpreadable\f[R].
 .PP
@@ -47,7 +50,7 @@ T}@T{
 no
 T}
 .TE
-.SH Description
+.SH DESCRIPTION
 .PP
 The \f[V]\[at]\[at]isConcatSpreadable\f[R] symbol
 (\f[V]Symbol.isConcatSpreadable\f[R]) can be defined as an own or
@@ -60,7 +63,7 @@ For array objects, the default behavior is to spread (flatten) elements.
 For array-like objects, the default behavior is no spreading or
 flattening.
 \f[V]Symbol.isConcatSpreadable\f[R] can force flattening in these cases.
-.SH Examples
+.SH EXAMPLES
 .SS Arrays
 .PP
 By default, \f[V]Array.prototype.concat()\f[R] spreads (flattens) arrays
@@ -118,7 +121,7 @@ number of object properties to be added.
 In the above example, \f[V]length:2\f[R] indicates two properties has to
 be added.
 .RE
-.SH See also
+.SH SEE ALSO
 .IP \[bu] 2
 Polyfill of \f[V]Symbol.isConcatSpreadable\f[R] in
 \f[V]core-js\f[R] (https://github.com/zloirock/core-js#ecmascript-symbol)

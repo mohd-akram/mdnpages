@@ -15,9 +15,12 @@
 . ftr VB CB
 . ftr VBI CBI
 .\}
-.TH "Error.name" "JS" "2023-06-02" "JavaScript" "JavaScript Reference Manual"
+.TH "Error.name" "JS" "June 2, 2023" "JavaScript" "JavaScript Reference Manual"
 .hy
-.SH Synopsis
+.SH NAME
+.PP
+Error.name - Error.prototype.name
+.SH SYNOPSIS
 .PP
 The \f[B]\f[VB]name\f[B]\f[R] data property of \f[V]Error.prototype\f[R]
 is shared by all \f[V]Error\f[R] instances.
@@ -26,7 +29,7 @@ For \f[V]Error.prototype.name\f[R], the initial value is
 \f[V]\[dq]Error\[dq]\f[R].
 Subclasses like \f[V]TypeError\f[R] and \f[V]SyntaxError\f[R] provide
 their own \f[V]name\f[R] properties.
-.SH Value
+.SH VALUE
 .PP
 A string.
 For \f[V]Error.prototype.name\f[R], the initial value is
@@ -51,14 +54,14 @@ T}@T{
 yes
 T}
 .TE
-.SH Description
+.SH DESCRIPTION
 .PP
 By default, \f[V]Error\f[R] instances are given the name
 \[lq]Error\[rq].
 The \f[V]name\f[R] property, in addition to the \f[V]message\f[R]
 property, is used by the \f[V]Error.prototype.toString()\f[R] method to
 create a string representation of the error.
-.SH Examples
+.SH EXAMPLES
 .SS Throwing a custom error
 .IP
 .nf
@@ -70,7 +73,7 @@ throw e;
 // e.toString() would return \[aq]ParseError: Malformed input\[aq]
 \f[R]
 .fi
-.SH See also
+.SH SEE ALSO
 .IP \[bu] 2
 \f[V]Error.prototype.message\f[R]
 .IP \[bu] 2

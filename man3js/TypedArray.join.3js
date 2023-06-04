@@ -14,15 +14,18 @@
 . ftr VB CB
 . ftr VBI CBI
 .\}
-.TH "TypedArray.join" "JS" "2023-06-02" "JavaScript" "JavaScript Reference Manual"
+.TH "TypedArray.join" "JS" "June 2, 2023" "JavaScript" "JavaScript Reference Manual"
 .hy
-.SH Synopsis
+.SH NAME
+.PP
+TypedArray.join - TypedArray.prototype.join()
+.SH SYNOPSIS
 .PP
 The \f[B]\f[VB]join()\f[B]\f[R] method joins all elements of an array
 into a string.
 This method has the same algorithm as \f[V]Array.prototype.join()\f[R].
 \f[I]TypedArray\f[R] is one of the typed array types here.
-.SH Syntax
+.SH SYNTAX
 .IP
 .nf
 \f[C]
@@ -31,19 +34,16 @@ join(separator)
 \f[R]
 .fi
 .SS Parameters
-.IP \[bu] 2
-\f[V]separator\f[R] \f[I](optional)\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]separator\f[R] \f[I](optional)\f[R]
 Specifies a string to separate each element.
 The \f[V]separator\f[R] is converted to a string if necessary.
 If omitted, the typed array elements are separated with a comma
 (\[lq],\[rq]).
-.RE
 .SS Return value
 .PP
 A string with all array elements joined.
-.SH Examples
+.SH EXAMPLES
 .SS Using join()
 .IP
 .nf
@@ -54,7 +54,7 @@ uint8.join(\[dq] / \[dq]); // \[aq]1 / 2 / 3\[aq]
 uint8.join(\[dq]\[dq]); // \[aq]123\[aq]
 \f[R]
 .fi
-.SH See also
+.SH SEE ALSO
 .IP \[bu] 2
 Polyfill of \f[V]TypedArray.prototype.join\f[R] in
 \f[V]core-js\f[R] (https://github.com/zloirock/core-js#ecmascript-typed-arrays)

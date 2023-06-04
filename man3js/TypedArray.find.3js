@@ -14,9 +14,12 @@
 . ftr VB CB
 . ftr VBI CBI
 .\}
-.TH "TypedArray.find" "JS" "2023-06-02" "JavaScript" "JavaScript Reference Manual"
+.TH "TypedArray.find" "JS" "June 2, 2023" "JavaScript" "JavaScript Reference Manual"
 .hy
-.SH Synopsis
+.SH NAME
+.PP
+TypedArray.find - TypedArray.prototype.find()
+.SH SYNOPSIS
 .PP
 The \f[B]\f[VB]find()\f[B]\f[R] method returns a value of an element in
 the typed array, if it satisfies the provided testing function.
@@ -26,7 +29,7 @@ Otherwise \f[V]undefined\f[R] is returned.
 See also the \f[V]findIndex()\f[R] method, which returns the
 \f[B]index\f[R] of a found element in the typed array instead of its
 value.
-.SH Syntax
+.SH SYNTAX
 .IP
 .nf
 \f[C]
@@ -35,47 +38,32 @@ find(callbackFn, thisArg)
 \f[R]
 .fi
 .SS Parameters
-.IP \[bu] 2
-\f[V]callbackFn\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]callbackFn\f[R]
 A function to execute for each element in the typed array.
 It should return a truthy value to indicate a matching element has been
 found, and a falsy value otherwise.
 The function is called with the following arguments:
-.RS 2
-.IP \[bu] 2
-\f[V]element\f[R]
-.RS 2
-.IP \[bu] 2
+.RS
+.TP
+\f[B]element\f[R]
 The current element being processed in the typed array.
-.RE
-.IP \[bu] 2
-\f[V]index\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]index\f[R]
 The index of the current element being processed in the typed array.
-.RE
-.IP \[bu] 2
-\f[V]array\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]array\f[R]
 The array \f[V]find()\f[R] was called upon.
 .RE
-.RE
-.RE
-.IP \[bu] 2
-\f[V]thisArg\f[R] \f[I](optional)\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]thisArg\f[R] \f[I](optional)\f[R]
 A value to use as \f[V]this\f[R] when executing \f[V]callbackFn\f[R].
 See iterative methods.
-.RE
 .SS Return value
 .PP
 A value in the array if an element passes the test; otherwise,
 \f[V]undefined\f[R].
-.SH Description
+.SH DESCRIPTION
 .PP
 The \f[V]find()\f[R] method executes the \f[V]callbackFn\f[R] function
 once for each element present in the typed array until it finds one
@@ -107,7 +95,7 @@ If an existing, unvisited element of the typed array is changed by
 \f[V]callbackFn\f[R] will be the value at the time that \f[V]find()\f[R]
 visits that element\[cq]s index; elements that are deleted are not
 visited.
-.SH Examples
+.SH EXAMPLES
 .SS Find a prime number in a typed array
 .PP
 The following example finds an element in the typed array that is a
@@ -130,7 +118,7 @@ const uint8 = new Uint8Array([4, 5, 8, 12]);
 console.log(uint8.find(isPrime)); // 5
 \f[R]
 .fi
-.SH See also
+.SH SEE ALSO
 .IP \[bu] 2
 Polyfill of \f[V]TypedArray.prototype.find\f[R] in
 \f[V]core-js\f[R] (https://github.com/zloirock/core-js#ecmascript-typed-arrays)

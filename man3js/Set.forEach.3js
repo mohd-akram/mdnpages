@@ -14,13 +14,16 @@
 . ftr VB CB
 . ftr VBI CBI
 .\}
-.TH "Set.forEach" "JS" "2023-06-02" "JavaScript" "JavaScript Reference Manual"
+.TH "Set.forEach" "JS" "June 2, 2023" "JavaScript" "JavaScript Reference Manual"
 .hy
-.SH Synopsis
+.SH NAME
+.PP
+Set.forEach - Set.prototype.forEach()
+.SH SYNOPSIS
 .PP
 The \f[B]\f[VB]forEach()\f[B]\f[R] method executes a provided function
 once for each value in the \f[V]Set\f[R] object, in insertion order.
-.SH Syntax
+.SH SYNTAX
 .IP
 .nf
 \f[C]
@@ -29,44 +32,29 @@ forEach(callbackFn, thisArg)
 \f[R]
 .fi
 .SS Parameters
-.IP \[bu] 2
-\f[V]callback\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]callback\f[R]
 A function to execute for each entry in the set.
 The function is called with the following arguments:
-.RS 2
-.IP \[bu] 2
-\f[V]value\f[R]
-.RS 2
-.IP \[bu] 2
+.RS
+.TP
+\f[B]value\f[R]
 Value of each iteration.
-.RE
-.IP \[bu] 2
-\f[V]key\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]key\f[R]
 Key of each iteration.
 This is always the same as \f[V]value\f[R].
-.RE
-.IP \[bu] 2
-\f[V]set\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]set\f[R]
 The set being iterated.
 .RE
-.RE
-.RE
-.IP \[bu] 2
-\f[V]thisArg\f[R] \f[I](optional)\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]thisArg\f[R] \f[I](optional)\f[R]
 A value to use as \f[V]this\f[R] when executing \f[V]callbackFn\f[R].
-.RE
 .SS Return value
 .PP
 \f[V]undefined\f[R].
-.SH Description
+.SH DESCRIPTION
 .PP
 The \f[V]forEach()\f[R] method executes the provided \f[V]callback\f[R]
 once for each value which actually exists in the \f[V]Set\f[R] object.
@@ -105,7 +93,7 @@ visited.
 .PP
 \f[V]forEach()\f[R] executes the \f[V]callback\f[R] function once for
 each element in the \f[V]Set\f[R] object; it does not return a value.
-.SH Examples
+.SH EXAMPLES
 .SS Logging the contents of a Set object
 .PP
 The following code logs a line for each element in a \f[V]Set\f[R]
@@ -125,7 +113,7 @@ new Set([\[dq]foo\[dq], \[dq]bar\[dq], undefined]).forEach(logSetElements);
 // \[dq]s[undefined] = undefined\[dq]
 \f[R]
 .fi
-.SH See also
+.SH SEE ALSO
 .IP \[bu] 2
 \f[V]Array.prototype.forEach()\f[R]
 .IP \[bu] 2

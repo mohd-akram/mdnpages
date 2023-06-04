@@ -14,16 +14,19 @@
 . ftr VB CB
 . ftr VBI CBI
 .\}
-.TH "Date.UTC" "JS" "2023-06-02" "JavaScript" "JavaScript Reference Manual"
+.TH "Date.UTC" "JS" "June 2, 2023" "JavaScript" "JavaScript Reference Manual"
 .hy
-.SH Synopsis
+.SH NAME
+.PP
+Date.UTC - Date.UTC()
+.SH SYNOPSIS
 .PP
 The \f[B]\f[VB]Date.UTC()\f[B]\f[R] static method accepts parameters
 representing the date and time components similar to the \f[V]Date\f[R]
 constructor, but treats them as UTC.
 It returns the number of milliseconds since January 1, 1970, 00:00:00
 UTC.
-.SH Syntax
+.SH SYNTAX
 .IP
 .nf
 \f[C]
@@ -36,65 +39,44 @@ Date.UTC(year, monthIndex, day, hour, minute, second)
 Date.UTC(year, monthIndex, day, hour, minute, second, millisecond)
 \f[R]
 .fi
-.IP \[bu] 2
-\f[V]year\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]year\f[R]
 Integer value representing the year.
 Values from \f[V]0\f[R] to \f[V]99\f[R] map to the years \f[V]1900\f[R]
 to \f[V]1999\f[R].
 All other values are the actual year.
 See the example.
-.RE
-.IP \[bu] 2
-\f[V]monthIndex\f[R] \f[I](optional)\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]monthIndex\f[R] \f[I](optional)\f[R]
 Integer value representing the month, beginning with \f[V]0\f[R] for
 January to \f[V]11\f[R] for December.
 Defaults to \f[V]0\f[R].
-.RE
-.IP \[bu] 2
-\f[V]day\f[R] \f[I](optional)\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]day\f[R] \f[I](optional)\f[R]
 Integer value representing the day of the month.
 Defaults to \f[V]1\f[R].
-.RE
-.IP \[bu] 2
-\f[V]hours\f[R] \f[I](optional)\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]hours\f[R] \f[I](optional)\f[R]
 Integer value between \f[V]0\f[R] and \f[V]23\f[R] representing the hour
 of the day.
 Defaults to \f[V]0\f[R].
-.RE
-.IP \[bu] 2
-\f[V]minutes\f[R] \f[I](optional)\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]minutes\f[R] \f[I](optional)\f[R]
 Integer value representing the minute segment of a time.
 Defaults to \f[V]0\f[R].
-.RE
-.IP \[bu] 2
-\f[V]seconds\f[R] \f[I](optional)\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]seconds\f[R] \f[I](optional)\f[R]
 Integer value representing the second segment of a time.
 Defaults to \f[V]0\f[R].
-.RE
-.IP \[bu] 2
-\f[V]milliseconds\f[R] \f[I](optional)\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]milliseconds\f[R] \f[I](optional)\f[R]
 Integer value representing the millisecond segment of a time.
 Defaults to \f[V]0\f[R].
-.RE
 .SS Return value
 .PP
 A number representing the timestamp of the given date.
 Returns \f[V]NaN\f[R] if the date is invalid.
-.SH Description
+.SH DESCRIPTION
 .PP
 Years between \f[V]0\f[R] and \f[V]99\f[R] are converted to a year in
 the 20th century \f[V](1900 + year)\f[R].
@@ -120,7 +102,7 @@ used for the month.
 Because \f[V]UTC()\f[R] is a static method of \f[V]Date\f[R], you always
 use it as \f[V]Date.UTC()\f[R], rather than as a method of a
 \f[V]Date\f[R] object you created.
-.SH Examples
+.SH EXAMPLES
 .SS Using Date.UTC()
 .PP
 The following statement creates a \f[V]Date\f[R] object with the
@@ -145,7 +127,7 @@ as \f[V]0\f[R], instead of coercing it to \f[V]NaN\f[R].
 Date.UTC(2017); // 1483228800000
 \f[R]
 .fi
-.SH See also
+.SH SEE ALSO
 .IP \[bu] 2
 \f[V]Date.parse()\f[R]
 .IP \[bu] 2

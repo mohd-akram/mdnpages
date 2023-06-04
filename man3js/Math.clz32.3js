@@ -14,13 +14,16 @@
 . ftr VB CB
 . ftr VBI CBI
 .\}
-.TH "Math.clz32" "JS" "2023-06-02" "JavaScript" "JavaScript Reference Manual"
+.TH "Math.clz32" "JS" "June 2, 2023" "JavaScript" "JavaScript Reference Manual"
 .hy
-.SH Synopsis
+.SH NAME
+.PP
+Math.clz32 - Math.clz32()
+.SH SYNOPSIS
 .PP
 The \f[B]\f[VB]Math.clz32()\f[B]\f[R] static method returns the number
 of leading zero bits in the 32-bit binary representation of a number.
-.SH Syntax
+.SH SYNTAX
 .IP
 .nf
 \f[C]
@@ -28,17 +31,14 @@ Math.clz32(x)
 \f[R]
 .fi
 .SS Parameters
-.IP \[bu] 2
-\f[V]x\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]x\f[R]
 A number.
-.RE
 .SS Return value
 .PP
 The number of leading zero bits in the 32-bit binary representation of
 \f[V]x\f[R].
-.SH Description
+.SH DESCRIPTION
 .PP
 \f[V]clz32\f[R] is short for
 \f[B]C\f[R]ount\f[B]L\f[R]eading\f[B]Z\f[R]eros\f[B]32\f[R].
@@ -53,7 +53,7 @@ than or equal to 231), \f[V]0\f[R] is returned.
 .PP
 This function is particularly useful for systems that compile to JS,
 like Emscripten (https://emscripten.org).
-.SH Examples
+.SH EXAMPLES
 .SS Using Math.clz32()
 .IP
 .nf
@@ -190,7 +190,7 @@ const countTrailsMethods = (function (stdlib, foreign, heap) {
 const { ctrz, ctron } = countTrailsMethods;
 \f[R]
 .fi
-.SH See also
+.SH SEE ALSO
 .IP \[bu] 2
 Polyfill of \f[V]Math.clz32\f[R] in
 \f[V]core-js\f[R] (https://github.com/zloirock/core-js#ecmascript-math)

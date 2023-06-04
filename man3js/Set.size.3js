@@ -14,19 +14,22 @@
 . ftr VB CB
 . ftr VBI CBI
 .\}
-.TH "Set.size" "JS" "2023-06-02" "JavaScript" "JavaScript Reference Manual"
+.TH "Set.size" "JS" "June 2, 2023" "JavaScript" "JavaScript Reference Manual"
 .hy
-.SH Synopsis
+.SH NAME
+.PP
+Set.size - Set.prototype.size
+.SH SYNOPSIS
 .PP
 The \f[B]\f[VB]size\f[B]\f[R] accessor property of \f[V]Set\f[R]
 instances returns the number of (unique) elements in this set.
-.SH Description
+.SH DESCRIPTION
 .PP
 The value of \f[V]size\f[R] is an integer representing how many entries
 the \f[V]Set\f[R] object has.
 A set accessor function for \f[V]size\f[R] is \f[V]undefined\f[R]; you
 cannot change this property.
-.SH Examples
+.SH EXAMPLES
 .SS Using size
 .IP
 .nf
@@ -39,6 +42,6 @@ mySet.add(\[dq]some text\[dq]);
 console.log(mySet.size); // 3
 \f[R]
 .fi
-.SH See also
+.SH SEE ALSO
 .IP \[bu] 2
 \f[V]Set\f[R]

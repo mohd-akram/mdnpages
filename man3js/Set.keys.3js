@@ -14,13 +14,16 @@
 . ftr VB CB
 . ftr VBI CBI
 .\}
-.TH "Set.keys" "JS" "2023-06-02" "JavaScript" "JavaScript Reference Manual"
+.TH "Set.keys" "JS" "June 2, 2023" "JavaScript" "JavaScript Reference Manual"
 .hy
-.SH Synopsis
+.SH NAME
+.PP
+Set.keys - Set.prototype.keys()
+.SH SYNOPSIS
 .PP
 The \f[B]\f[VB]keys()\f[B]\f[R] method is an alias for the
 \f[V]values()\f[R] method.
-.SH Syntax
+.SH SYNTAX
 .IP
 .nf
 \f[C]
@@ -30,7 +33,7 @@ keys()
 .SS Return value
 .PP
 A new iterable iterator object.
-.SH Examples
+.SH EXAMPLES
 .SS Using keys()
 .PP
 The \f[V]keys()\f[R] method is exactly equivalent to the
@@ -50,7 +53,7 @@ console.log(setIter.next().value); // \[dq]bar\[dq]
 console.log(setIter.next().value); // \[dq]baz\[dq]
 \f[R]
 .fi
-.SH See also
+.SH SEE ALSO
 .IP \[bu] 2
 \f[V]Set.prototype.entries()\f[R]
 .IP \[bu] 2

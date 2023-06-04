@@ -14,64 +14,49 @@
 . ftr VB CB
 . ftr VBI CBI
 .\}
-.TH "Intl.Collator" "JS" "2023-06-02" "JavaScript" "JavaScript Reference Manual"
+.TH "Intl.Collator" "JS" "June 2, 2023" "JavaScript" "JavaScript Reference Manual"
 .hy
-.SH Synopsis
+.SH NAME
+.PP
+Intl.Collator - Intl.Collator
+.SH SYNOPSIS
 .PP
 The \f[B]\f[VB]Intl.Collator\f[B]\f[R] object enables language-sensitive
 string comparison.
-.SH Constructor
-.IP \[bu] 2
-\f[V]Intl.Collator()\f[R]
-.RS 2
-.IP \[bu] 2
+.SH CONSTRUCTOR
+.TP
+\f[B]Intl.Collator()\f[R]
 Creates a new \f[V]Collator\f[R] object.
-.RE
-.SH Static methods
-.IP \[bu] 2
-\f[V]Intl.Collator.supportedLocalesOf()\f[R]
-.RS 2
-.IP \[bu] 2
+.SH STATIC METHODS
+.TP
+\f[B]Intl.Collator.supportedLocalesOf()\f[R]
 Returns an array containing those of the provided locales that are
 supported without having to fall back to the runtime\[cq]s default
 locale.
-.RE
-.SH Instance properties
+.SH INSTANCE PROPERTIES
 .PP
 These properties are defined on \f[V]Intl.Collator.prototype\f[R] and
 shared by all \f[V]Intl.Collator\f[R] instances.
-.IP \[bu] 2
-\f[V]Intl.Collator.prototype.constructor\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]Intl.Collator.prototype.constructor\f[R]
 The constructor function that created the instance object.
 For \f[V]Intl.Collator\f[R] instances, the initial value is the
 \f[V]Intl.Collator\f[R] constructor.
-.RE
-.IP \[bu] 2
-\f[V]Intl.Collator.prototype[\[at]\[at]toStringTag]\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]Intl.Collator.prototype[\[at]\[at]toStringTag]\f[R]
 The initial value of the \f[V]\[at]\[at]toStringTag\f[R] property is the
 string \f[V]\[dq]Intl.Collator\[dq]\f[R].
 This property is used in \f[V]Object.prototype.toString()\f[R].
-.RE
-.SH Instance methods
-.IP \[bu] 2
-\f[V]Intl.Collator.prototype.compare()\f[R]
-.RS 2
-.IP \[bu] 2
+.SH INSTANCE METHODS
+.TP
+\f[B]Intl.Collator.prototype.compare()\f[R]
 Getter function that compares two strings according to the sort order of
 this \f[V]Intl.Collator\f[R] object.
-.RE
-.IP \[bu] 2
-\f[V]Intl.Collator.prototype.resolvedOptions()\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]Intl.Collator.prototype.resolvedOptions()\f[R]
 Returns a new object with properties reflecting the locale and collation
 options computed during initialization of the object.
-.RE
-.SH Examples
+.SH EXAMPLES
 .SS Using Collator
 .PP
 The following example demonstrates the different potential results for a
@@ -125,6 +110,6 @@ console.log(new Intl.Collator(\[dq]sv\[dq], { sensitivity: \[dq]base\[dq] }).com
 // 1, or some other positive value
 \f[R]
 .fi
-.SH See also
+.SH SEE ALSO
 .IP \[bu] 2
 \f[V]Intl\f[R]

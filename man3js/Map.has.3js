@@ -14,13 +14,16 @@
 . ftr VB CB
 . ftr VBI CBI
 .\}
-.TH "Map.has" "JS" "2023-06-02" "JavaScript" "JavaScript Reference Manual"
+.TH "Map.has" "JS" "June 2, 2023" "JavaScript" "JavaScript Reference Manual"
 .hy
-.SH Synopsis
+.SH NAME
+.PP
+Map.has - Map.prototype.has()
+.SH SYNOPSIS
 .PP
 The \f[B]\f[VB]has()\f[B]\f[R] method returns a boolean indicating
 whether an element with the specified key exists or not.
-.SH Syntax
+.SH SYNTAX
 .IP
 .nf
 \f[C]
@@ -28,17 +31,14 @@ has(key)
 \f[R]
 .fi
 .SS Parameters
-.IP \[bu] 2
-\f[V]key\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]key\f[R]
 The key of the element to test for presence in the \f[V]Map\f[R] object.
-.RE
 .SS Return value
 .PP
 \f[V]true\f[R] if an element with the specified key exists in the
 \f[V]Map\f[R] object; otherwise \f[V]false\f[R].
-.SH Examples
+.SH EXAMPLES
 .SS Using has()
 .IP
 .nf
@@ -50,7 +50,7 @@ console.log(myMap.has(\[dq]bar\[dq])); // true
 console.log(myMap.has(\[dq]baz\[dq])); // false
 \f[R]
 .fi
-.SH See also
+.SH SEE ALSO
 .IP \[bu] 2
 \f[V]Map\f[R]
 .IP \[bu] 2

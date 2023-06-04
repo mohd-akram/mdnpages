@@ -14,16 +14,19 @@
 . ftr VB CB
 . ftr VBI CBI
 .\}
-.TH "Object" "JS" "2023-06-02" "JavaScript" "JavaScript Reference Manual"
+.TH "Object" "JS" "June 2, 2023" "JavaScript" "JavaScript Reference Manual"
 .hy
-.SH Synopsis
+.SH NAME
+.PP
+Object - Object
+.SH SYNOPSIS
 .PP
 The \f[B]\f[VB]Object\f[B]\f[R] type represents one of JavaScript\[cq]s
 data types.
 It is used to store various keyed collections and more complex entities.
 Objects can be created using the \f[V]Object()\f[R] constructor or the
 object initializer / literal syntax.
-.SH Description
+.SH DESCRIPTION
 .PP
 Nearly all objects in JavaScript are instances of \f[V]Object\f[R]; a
 typical object inherits properties (including methods) from
@@ -310,251 +313,146 @@ replaced with the global object.
 Unlike conversion to primitives, the object coercion process itself is
 not observable in any way, since it doesn\[cq]t invoke custom code like
 \f[V]toString\f[R] or \f[V]valueOf\f[R] methods.
-.SH Constructor
-.IP \[bu] 2
-\f[V]Object()\f[R]
-.RS 2
-.IP \[bu] 2
+.SH CONSTRUCTOR
+.TP
+\f[B]Object()\f[R]
 Turns the input into an object.
-.RE
-.SH Static methods
-.IP \[bu] 2
-\f[V]Object.assign()\f[R]
-.RS 2
-.IP \[bu] 2
+.SH STATIC METHODS
+.TP
+\f[B]Object.assign()\f[R]
 Copies the values of all enumerable own properties from one or more
 source objects to a target object.
-.RE
-.IP \[bu] 2
-\f[V]Object.create()\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]Object.create()\f[R]
 Creates a new object with the specified prototype object and properties.
-.RE
-.IP \[bu] 2
-\f[V]Object.defineProperties()\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]Object.defineProperties()\f[R]
 Adds the named properties described by the given descriptors to an
 object.
-.RE
-.IP \[bu] 2
-\f[V]Object.defineProperty()\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]Object.defineProperty()\f[R]
 Adds the named property described by a given descriptor to an object.
-.RE
-.IP \[bu] 2
-\f[V]Object.entries()\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]Object.entries()\f[R]
 Returns an array containing all of the \f[V][key, value]\f[R] pairs of a
 given object\[cq]s \f[B]own\f[R] enumerable string properties.
-.RE
-.IP \[bu] 2
-\f[V]Object.freeze()\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]Object.freeze()\f[R]
 Freezes an object.
 Other code cannot delete or change its properties.
-.RE
-.IP \[bu] 2
-\f[V]Object.fromEntries()\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]Object.fromEntries()\f[R]
 Returns a new object from an iterable of \f[V][key, value]\f[R] pairs.
 (This is the reverse of \f[V]Object.entries\f[R]).
-.RE
-.IP \[bu] 2
-\f[V]Object.getOwnPropertyDescriptor()\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]Object.getOwnPropertyDescriptor()\f[R]
 Returns a property descriptor for a named property on an object.
-.RE
-.IP \[bu] 2
-\f[V]Object.getOwnPropertyDescriptors()\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]Object.getOwnPropertyDescriptors()\f[R]
 Returns an object containing all own property descriptors for an object.
-.RE
-.IP \[bu] 2
-\f[V]Object.getOwnPropertyNames()\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]Object.getOwnPropertyNames()\f[R]
 Returns an array containing the names of all of the given object\[cq]s
 \f[B]own\f[R] enumerable and non-enumerable properties.
-.RE
-.IP \[bu] 2
-\f[V]Object.getOwnPropertySymbols()\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]Object.getOwnPropertySymbols()\f[R]
 Returns an array of all symbol properties found directly upon a given
 object.
-.RE
-.IP \[bu] 2
-\f[V]Object.getPrototypeOf()\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]Object.getPrototypeOf()\f[R]
 Returns the prototype (internal \f[V][[Prototype]]\f[R] property) of the
 specified object.
-.RE
-.IP \[bu] 2
-\f[V]Object.hasOwn()\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]Object.hasOwn()\f[R]
 Returns \f[V]true\f[R] if the specified object has the indicated
 property as its \f[I]own\f[R] property, or \f[V]false\f[R] if the
 property is inherited or does not exist.
-.RE
-.IP \[bu] 2
-\f[V]Object.is()\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]Object.is()\f[R]
 Compares if two values are the same value.
 Equates all \f[V]NaN\f[R] values (which differs from both
 \f[V]IsLooselyEqual\f[R] used by \f[V]==\f[R] and
 \f[V]IsStrictlyEqual\f[R] used by \f[V]===\f[R]).
-.RE
-.IP \[bu] 2
-\f[V]Object.isExtensible()\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]Object.isExtensible()\f[R]
 Determines if extending of an object is allowed.
-.RE
-.IP \[bu] 2
-\f[V]Object.isFrozen()\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]Object.isFrozen()\f[R]
 Determines if an object was frozen.
-.RE
-.IP \[bu] 2
-\f[V]Object.isSealed()\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]Object.isSealed()\f[R]
 Determines if an object is sealed.
-.RE
-.IP \[bu] 2
-\f[V]Object.keys()\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]Object.keys()\f[R]
 Returns an array containing the names of all of the given object\[cq]s
 \f[B]own\f[R] enumerable string properties.
-.RE
-.IP \[bu] 2
-\f[V]Object.preventExtensions()\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]Object.preventExtensions()\f[R]
 Prevents any extensions of an object.
-.RE
-.IP \[bu] 2
-\f[V]Object.seal()\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]Object.seal()\f[R]
 Prevents other code from deleting properties of an object.
-.RE
-.IP \[bu] 2
-\f[V]Object.setPrototypeOf()\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]Object.setPrototypeOf()\f[R]
 Sets the object\[cq]s prototype (its internal \f[V][[Prototype]]\f[R]
 property).
-.RE
-.IP \[bu] 2
-\f[V]Object.values()\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]Object.values()\f[R]
 Returns an array containing the values that correspond to all of a given
 object\[cq]s \f[B]own\f[R] enumerable string properties.
-.RE
-.SH Instance properties
+.SH INSTANCE PROPERTIES
 .PP
 These properties are defined on \f[V]Object.prototype\f[R] and shared by
 all \f[V]Object\f[R] instances.
-.IP \[bu] 2
-\f[V]Object.prototype.__proto__\f[R] \f[I](deprecated)\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]Object.prototype.__proto__\f[R] \f[I](deprecated)\f[R]
 Points to the object which was used as prototype when the object was
 instantiated.
-.RE
-.IP \[bu] 2
-\f[V]Object.prototype.constructor\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]Object.prototype.constructor\f[R]
 The constructor function that created the instance object.
 For plain \f[V]Object\f[R] instances, the initial value is the
 \f[V]Object\f[R] constructor.
 Instances of other constructors each inherit the \f[V]constructor\f[R]
 property from their respective \f[V]Constructor.prototype\f[R] object.
-.RE
-.SH Instance methods
-.IP \[bu] 2
-\f[V]Object.prototype.__defineGetter__()\f[R] \f[I](deprecated)\f[R]
-.RS 2
-.IP \[bu] 2
+.SH INSTANCE METHODS
+.TP
+\f[B]Object.prototype.__defineGetter__()\f[R] \f[I](deprecated)\f[R]
 Associates a function with a property that, when accessed, executes that
 function and returns its return value.
-.RE
-.IP \[bu] 2
-\f[V]Object.prototype.__defineSetter__()\f[R] \f[I](deprecated)\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]Object.prototype.__defineSetter__()\f[R] \f[I](deprecated)\f[R]
 Associates a function with a property that, when set, executes that
 function which modifies the property.
-.RE
-.IP \[bu] 2
-\f[V]Object.prototype.__lookupGetter__()\f[R] \f[I](deprecated)\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]Object.prototype.__lookupGetter__()\f[R] \f[I](deprecated)\f[R]
 Returns the function bound as a getter to the specified property.
-.RE
-.IP \[bu] 2
-\f[V]Object.prototype.__lookupSetter__()\f[R] \f[I](deprecated)\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]Object.prototype.__lookupSetter__()\f[R] \f[I](deprecated)\f[R]
 Returns the function bound as a setter to the specified property.
-.RE
-.IP \[bu] 2
-\f[V]Object.prototype.hasOwnProperty()\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]Object.prototype.hasOwnProperty()\f[R]
 Returns a boolean indicating whether an object contains the specified
 property as a direct property of that object and not inherited through
 the prototype chain.
-.RE
-.IP \[bu] 2
-\f[V]Object.prototype.isPrototypeOf()\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]Object.prototype.isPrototypeOf()\f[R]
 Returns a boolean indicating whether the object this method is called
 upon is in the prototype chain of the specified object.
-.RE
-.IP \[bu] 2
-\f[V]Object.prototype.propertyIsEnumerable()\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]Object.prototype.propertyIsEnumerable()\f[R]
 Returns a boolean indicating whether the specified property is the
 object\[cq]s enumerable own property.
-.RE
-.IP \[bu] 2
-\f[V]Object.prototype.toLocaleString()\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]Object.prototype.toLocaleString()\f[R]
 Calls \f[V]toString()\f[R].
-.RE
-.IP \[bu] 2
-\f[V]Object.prototype.toString()\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]Object.prototype.toString()\f[R]
 Returns a string representation of the object.
-.RE
-.IP \[bu] 2
-\f[V]Object.prototype.valueOf()\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]Object.prototype.valueOf()\f[R]
 Returns the primitive value of the specified object.
-.RE
-.SH Examples
+.SH EXAMPLES
 .SS Constructing empty objects
 .PP
 The following example creates empty objects using the \f[V]new\f[R]
@@ -627,6 +525,6 @@ compatibility.
 .PP
 You can read more about prototypes in Inheritance and the prototype
 chain.
-.SH See also
+.SH SEE ALSO
 .IP \[bu] 2
 Object initializer

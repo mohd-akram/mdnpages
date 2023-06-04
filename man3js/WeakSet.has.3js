@@ -14,13 +14,16 @@
 . ftr VB CB
 . ftr VBI CBI
 .\}
-.TH "WeakSet.has" "JS" "2023-06-02" "JavaScript" "JavaScript Reference Manual"
+.TH "WeakSet.has" "JS" "June 2, 2023" "JavaScript" "JavaScript Reference Manual"
 .hy
-.SH Synopsis
+.SH NAME
+.PP
+WeakSet.has - WeakSet.prototype.has()
+.SH SYNOPSIS
 .PP
 The \f[B]\f[VB]has()\f[B]\f[R] method returns a boolean indicating
 whether an object exists in a \f[V]WeakSet\f[R] or not.
-.SH Syntax
+.SH SYNTAX
 .IP
 .nf
 \f[C]
@@ -28,19 +31,16 @@ has(value)
 \f[R]
 .fi
 .SS Parameters
-.IP \[bu] 2
-\f[V]value\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]value\f[R]
 The value to test for presence in the \f[V]WeakSet\f[R].
-.RE
 .SS Return value
 .PP
 Returns \f[V]true\f[R] if an element with the specified value exists in
 the \f[V]WeakSet\f[R] object; otherwise \f[V]false\f[R].
 Always returns \f[V]false\f[R] if \f[V]value\f[R] is not an object or a
 non-registered symbol.
-.SH Examples
+.SH EXAMPLES
 .SS Using the \f[V]has()\f[R] method
 .IP
 .nf
@@ -58,7 +58,7 @@ ws.add(sym);
 ws.add(Symbol.iterator);
 \f[R]
 .fi
-.SH See also
+.SH SEE ALSO
 .IP \[bu] 2
 \f[V]WeakSet\f[R]
 .IP \[bu] 2

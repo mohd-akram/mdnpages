@@ -14,9 +14,12 @@
 . ftr VB CB
 . ftr VBI CBI
 .\}
-.TH "TypedArray.reverse" "JS" "2023-06-02" "JavaScript" "JavaScript Reference Manual"
+.TH "TypedArray.reverse" "JS" "June 2, 2023" "JavaScript" "JavaScript Reference Manual"
 .hy
-.SH Synopsis
+.SH NAME
+.PP
+TypedArray.reverse - TypedArray.prototype.reverse()
+.SH SYNOPSIS
 .PP
 The \f[B]\f[VB]reverse()\f[B]\f[R] method reverses a typed array in
 place.
@@ -25,7 +28,7 @@ first.
 This method has the same algorithm as
 \f[V]Array.prototype.reverse()\f[R].
 \f[I]TypedArray\f[R] is one of the typed array types here.
-.SH Syntax
+.SH SYNTAX
 .IP
 .nf
 \f[C]
@@ -35,7 +38,7 @@ reverse()
 .SS Return value
 .PP
 The reversed array.
-.SH Examples
+.SH EXAMPLES
 .SS Using reverse
 .IP
 .nf
@@ -46,7 +49,7 @@ uint8.reverse();
 console.log(uint8); // Uint8Array [3, 2, 1]
 \f[R]
 .fi
-.SH See also
+.SH SEE ALSO
 .IP \[bu] 2
 Polyfill of \f[V]TypedArray.prototype.reverse\f[R] in
 \f[V]core-js\f[R] (https://github.com/zloirock/core-js#ecmascript-typed-arrays)

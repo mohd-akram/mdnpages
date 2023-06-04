@@ -14,13 +14,16 @@
 . ftr VB CB
 . ftr VBI CBI
 .\}
-.TH "BigInt" "JS" "2023-06-02" "JavaScript" "JavaScript Reference Manual"
+.TH "BigInt" "JS" "June 2, 2023" "JavaScript" "JavaScript Reference Manual"
 .hy
-.SH Synopsis
+.SH NAME
+.PP
+BigInt - BigInt
+.SH SYNOPSIS
 .PP
 \f[B]\f[VB]BigInt\f[B]\f[R] values represent numeric values which are
 too large to be represented by the \f[V]number\f[R] primitive.
-.SH Description
+.SH DESCRIPTION
 .PP
 A \f[B]BigInt value\f[R], also sometimes just called a \f[B]BigInt\f[R],
 is a \f[V]bigint\f[R] primitive, created by appending \f[V]n\f[R] to the
@@ -360,43 +363,29 @@ Note that built-in operations expecting BigInts often truncate the
 BigInt to a fixed width after coercion.
 This includes \f[V]BigInt.asIntN()\f[R], \f[V]BigInt.asUintN()\f[R], and
 methods of \f[V]BigInt64Array\f[R] and \f[V]BigUint64Array\f[R].
-.SH Constructor
-.IP \[bu] 2
-\f[V]BigInt()\f[R]
-.RS 2
-.IP \[bu] 2
+.SH CONSTRUCTOR
+.TP
+\f[B]BigInt()\f[R]
 Creates a new BigInt value.
-.RE
-.SH Static methods
-.IP \[bu] 2
-\f[V]BigInt.asIntN()\f[R]
-.RS 2
-.IP \[bu] 2
+.SH STATIC METHODS
+.TP
+\f[B]BigInt.asIntN()\f[R]
 Clamps a BigInt value to a signed integer value, and returns that value.
-.RE
-.IP \[bu] 2
-\f[V]BigInt.asUintN()\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]BigInt.asUintN()\f[R]
 Clamps a BigInt value to an unsigned integer value, and returns that
 value.
-.RE
-.SH Instance properties
+.SH INSTANCE PROPERTIES
 .PP
 These properties are defined on \f[V]BigInt.prototype\f[R] and shared by
 all \f[V]BigInt\f[R] instances.
-.IP \[bu] 2
-\f[V]BigInt.prototype.constructor\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]BigInt.prototype.constructor\f[R]
 The constructor function that created the instance object.
 For \f[V]BigInt\f[R] instances, the initial value is the
 \f[V]BigInt\f[R] constructor.
-.RE
-.IP \[bu] 2
-\f[V]BigInt.prototype[\[at]\[at]toStringTag]\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]BigInt.prototype[\[at]\[at]toStringTag]\f[R]
 The initial value of the \f[V]\[at]\[at]toStringTag\f[R] property is the
 string \f[V]\[dq]BigInt\[dq]\f[R].
 This property is used in \f[V]Object.prototype.toString()\f[R].
@@ -404,32 +393,22 @@ However, because \f[V]BigInt\f[R] also has its own \f[V]toString()\f[R]
 method, this property is not used unless you call
 \f[V]Object.prototype.toString.call()\f[R] with a BigInt as
 \f[V]thisArg\f[R].
-.RE
-.SH Instance methods
-.IP \[bu] 2
-\f[V]BigInt.prototype.toLocaleString()\f[R]
-.RS 2
-.IP \[bu] 2
+.SH INSTANCE METHODS
+.TP
+\f[B]BigInt.prototype.toLocaleString()\f[R]
 Returns a string with a language-sensitive representation of this BigInt
 value.
 Overrides the \f[V]Object.prototype.toLocaleString()\f[R] method.
-.RE
-.IP \[bu] 2
-\f[V]BigInt.prototype.toString()\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]BigInt.prototype.toString()\f[R]
 Returns a string representing this BigInt value in the specified radix
 (base).
 Overrides the \f[V]Object.prototype.toString()\f[R] method.
-.RE
-.IP \[bu] 2
-\f[V]BigInt.prototype.valueOf()\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]BigInt.prototype.valueOf()\f[R]
 Returns this BigInt value.
 Overrides the \f[V]Object.prototype.valueOf()\f[R] method.
-.RE
-.SH Examples
+.SH EXAMPLES
 .SS Calculating Primes
 .IP
 .nf
@@ -462,7 +441,7 @@ nthPrime(20n);
 // 73n
 \f[R]
 .fi
-.SH See also
+.SH SEE ALSO
 .IP \[bu] 2
 \f[V]Number\f[R]
 .IP \[bu] 2

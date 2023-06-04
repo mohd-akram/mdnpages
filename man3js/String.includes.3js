@@ -14,14 +14,17 @@
 . ftr VB CB
 . ftr VBI CBI
 .\}
-.TH "String.includes" "JS" "2023-06-02" "JavaScript" "JavaScript Reference Manual"
+.TH "String.includes" "JS" "June 2, 2023" "JavaScript" "JavaScript Reference Manual"
 .hy
-.SH Synopsis
+.SH NAME
+.PP
+String.includes - String.prototype.includes()
+.SH SYNOPSIS
 .PP
 The \f[B]\f[VB]includes()\f[B]\f[R] method performs a case-sensitive
 search to determine whether one string may be found within another
 string, returning \f[V]true\f[R] or \f[V]false\f[R] as appropriate.
-.SH Syntax
+.SH SYNTAX
 .IP
 .nf
 \f[C]
@@ -30,37 +33,28 @@ includes(searchString, position)
 \f[R]
 .fi
 .SS Parameters
-.IP \[bu] 2
-\f[V]searchString\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]searchString\f[R]
 A string to be searched for within \f[V]str\f[R].
 Cannot be a regex.
 All values that are not regexes are coerced to strings, so omitting it
 or passing \f[V]undefined\f[R] causes \f[V]includes()\f[R] to search for
 the string \f[V]\[dq]undefined\[dq]\f[R], which is rarely what you want.
-.RE
-.IP \[bu] 2
-\f[V]position\f[R] \f[I](optional)\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]position\f[R] \f[I](optional)\f[R]
 The position within the string at which to begin searching for
 \f[V]searchString\f[R].
 (Defaults to \f[V]0\f[R].)
-.RE
 .SS Return value
 .PP
 \f[B]\f[VB]true\f[B]\f[R] if the search string is found anywhere within
 the given string, including when \f[V]searchString\f[R] is an empty
 string; otherwise, \f[B]\f[VB]false\f[B]\f[R].
 .SS Exceptions
-.IP \[bu] 2
-\f[V]TypeError\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]TypeError\f[R]
 Thrown if \f[V]searchString\f[R] is a regex.
-.RE
-.SH Description
+.SH DESCRIPTION
 .PP
 This method lets you determine whether or not a string includes another
 string.
@@ -83,7 +77,7 @@ string and the search string to all lowercase:
 \[dq]Blue Whale\[dq].toLowerCase().includes(\[dq]blue\[dq]); // returns true
 \f[R]
 .fi
-.SH Examples
+.SH EXAMPLES
 .SS Using includes()
 .IP
 .nf
@@ -98,7 +92,7 @@ console.log(str.includes(\[dq]TO BE\[dq])); // false
 console.log(str.includes(\[dq]\[dq])); // true
 \f[R]
 .fi
-.SH See also
+.SH SEE ALSO
 .IP \[bu] 2
 Polyfill of \f[V]String.prototype.includes\f[R] in
 \f[V]core-js\f[R] (https://github.com/zloirock/core-js#ecmascript-string-and-regexp)

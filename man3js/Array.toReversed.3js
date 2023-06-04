@@ -14,14 +14,17 @@
 . ftr VB CB
 . ftr VBI CBI
 .\}
-.TH "Array.toReversed" "JS" "2023-06-02" "JavaScript" "JavaScript Reference Manual"
+.TH "Array.toReversed" "JS" "June 2, 2023" "JavaScript" "JavaScript Reference Manual"
 .hy
-.SH Synopsis
+.SH NAME
+.PP
+Array.toReversed - Array.prototype.toReversed()
+.SH SYNOPSIS
 .PP
 The \f[B]\f[VB]toReversed()\f[B]\f[R] method of \f[V]Array\f[R]
 instances is the copying counterpart of the \f[V]reverse()\f[R] method.
 It returns a new array with the elements in reversed order.
-.SH Syntax
+.SH SYNTAX
 .IP
 .nf
 \f[C]
@@ -31,7 +34,7 @@ toReversed()
 .SS Return value
 .PP
 A new array containing the elements in reversed order.
-.SH Description
+.SH DESCRIPTION
 .PP
 The \f[V]toReversed()\f[R] method transposes the elements of the calling
 array object in reverse order and returns a new array.
@@ -42,7 +45,7 @@ empty slots as if they have the value \f[V]undefined\f[R].
 The \f[V]toReversed()\f[R] method is generic.
 It only expects the \f[V]this\f[R] value to have a \f[V]length\f[R]
 property and integer-keyed properties.
-.SH Examples
+.SH EXAMPLES
 .SS Reversing the elements in an array
 .PP
 The following example creates an array \f[V]items\f[R], containing three
@@ -91,7 +94,7 @@ console.log(Array.prototype.toReversed.call(arrayLike));
 // The \[aq]0\[aq] and \[aq]1\[aq] indices are not present so they become undefined
 \f[R]
 .fi
-.SH See also
+.SH SEE ALSO
 .IP \[bu] 2
 Polyfill of \f[V]Array.prototype.toReversed\f[R] in
 \f[V]core-js\f[R] (https://github.com/zloirock/core-js#change-array-by-copy)

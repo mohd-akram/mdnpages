@@ -14,15 +14,18 @@
 . ftr VB CB
 . ftr VBI CBI
 .\}
-.TH "Promise.Promise" "JS" "2023-06-02" "JavaScript" "JavaScript Reference Manual"
+.TH "Promise.Promise" "JS" "June 2, 2023" "JavaScript" "JavaScript Reference Manual"
 .hy
-.SH Synopsis
+.SH NAME
+.PP
+Promise.Promise - Promise() constructor
+.SH SYNOPSIS
 .PP
 The \f[B]\f[VB]Promise()\f[B]\f[R] constructor creates \f[V]Promise\f[R]
 objects.
 It is primarily used to wrap callback-based APIs that do not already
 support promises.
-.SH Syntax
+.SH SYNTAX
 .IP
 .nf
 \f[C]
@@ -37,17 +40,14 @@ Attempting to call it without \f[V]new\f[R] throws a
 \f[V]TypeError\f[R].
 .RE
 .SS Parameters
-.IP \[bu] 2
-\f[V]executor\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]executor\f[R]
 A \f[V]function\f[R] to be executed by the constructor.
 It receives two functions as parameters: \f[V]resolveFunc\f[R] and
 \f[V]rejectFunc\f[R].
 Any errors thrown in the \f[V]executor\f[R] will cause the promise to be
 rejected, and the return value will be neglected.
 The semantics of \f[V]executor\f[R] are detailed below.
-.RE
 .SS Return value
 .PP
 When called via \f[V]new\f[R], the \f[V]Promise\f[R] constructor returns
@@ -58,7 +58,7 @@ Note that if you call \f[V]resolveFunc\f[R] or \f[V]rejectFunc\f[R] and
 pass another \f[V]Promise\f[R] object as an argument, it can be said to
 be \[lq]resolved\[rq], but still not \[lq]settled\[rq].
 See the Promise description for more explanation.
-.SH Description
+.SH DESCRIPTION
 .PP
 Traditionally (before promises), asynchronous tasks were designed as
 callbacks.
@@ -292,7 +292,7 @@ function is able to flatten nested thenables, where a thenable calls its
 \f[V]onFulfilled\f[R] handler with another thenable.
 The effect is that the fulfillment handler of a real promise will never
 receive a thenable as its fulfillment value.
-.SH Examples
+.SH EXAMPLES
 .SS Turning a callback-based API into a promise-based one
 .PP
 To provide a function with promise functionality, have it return a
@@ -381,7 +381,7 @@ const rejectedResolved2 = new Promise((resolve) => {
 });
 \f[R]
 .fi
-.SH See also
+.SH SEE ALSO
 .IP \[bu] 2
 Polyfill of \f[V]Promise\f[R] in
 \f[V]core-js\f[R] (https://github.com/zloirock/core-js#ecmascript-promise)

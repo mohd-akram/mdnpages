@@ -14,14 +14,17 @@
 . ftr VB CB
 . ftr VBI CBI
 .\}
-.TH "Object.Object" "JS" "2023-06-02" "JavaScript" "JavaScript Reference Manual"
+.TH "Object.Object" "JS" "June 2, 2023" "JavaScript" "JavaScript Reference Manual"
 .hy
-.SH Synopsis
+.SH NAME
+.PP
+Object.Object - Object() constructor
+.SH SYNOPSIS
 .PP
 The \f[B]\f[VB]Object()\f[B]\f[R] constructor turns the input into an
 object.
 Its behavior depends on the input\[cq]s type.
-.SH Syntax
+.SH SYNTAX
 .IP
 .nf
 \f[C]
@@ -36,12 +39,9 @@ Object(value)
 See Return value.
 .RE
 .SS Parameters
-.IP \[bu] 2
-\f[V]value\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]value\f[R]
 Any value.
-.RE
 .SS Return value
 .PP
 When the \f[V]Object()\f[R] constructor itself is called or constructed,
@@ -63,7 +63,7 @@ a new object with \f[V]new.target.prototype\f[R] as its prototype.
 Any value passed to \f[V]super()\f[R] is ignored \[em] for example, even
 if you pass a number, the \f[V]this\f[R] value inside the constructor
 does not become a \f[V]Number\f[R] instance.
-.SH Examples
+.SH EXAMPLES
 .SS Creating a new Object
 .IP
 .nf
@@ -117,6 +117,6 @@ const symbolObj = Object(Symbol(\[dq]foo\[dq]));
 console.log(typeof symbolObj); // \[dq]object\[dq]
 \f[R]
 .fi
-.SH See also
+.SH SEE ALSO
 .IP \[bu] 2
 Object initializer

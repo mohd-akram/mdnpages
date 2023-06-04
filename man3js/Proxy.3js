@@ -15,14 +15,17 @@
 . ftr VB CB
 . ftr VBI CBI
 .\}
-.TH "Proxy" "JS" "2023-06-02" "JavaScript" "JavaScript Reference Manual"
+.TH "Proxy" "JS" "June 2, 2023" "JavaScript" "JavaScript Reference Manual"
 .hy
-.SH Synopsis
+.SH NAME
+.PP
+Proxy - Proxy
+.SH SYNOPSIS
 .PP
 The \f[B]\f[VB]Proxy\f[B]\f[R] object enables you to create a proxy for
 another object, which can intercept and redefine fundamental operations
 for that object.
-.SH Description
+.SH DESCRIPTION
 .PP
 The \f[V]Proxy\f[R] object allows you to create an object that can be
 used in place of the original object, but which may redefine fundamental
@@ -137,41 +140,29 @@ may be infinite recursion.
 .PP
 The following terms are used when talking about the functionality of
 proxies.
-.IP \[bu] 2
+.TP
 handler
-.RS 2
-.IP \[bu] 2
 The object passed as the second argument to the \f[V]Proxy\f[R]
 constructor.
 It contains the traps which define the behavior of the proxy.
-.RE
-.IP \[bu] 2
+.TP
 trap
-.RS 2
-.IP \[bu] 2
 The function that define the behavior for the corresponding object
 internal method.
 (This is analogous to the concept of \f[I]traps\f[R] in operating
 systems.)
-.RE
-.IP \[bu] 2
+.TP
 target
-.RS 2
-.IP \[bu] 2
 Object which the proxy virtualizes.
 It is often used as storage backend for the proxy.
 Invariants (semantics that remain unchanged) regarding object
 non-extensibility or non-configurable properties are verified against
 the target.
-.RE
-.IP \[bu] 2
+.TP
 invariants
-.RS 2
-.IP \[bu] 2
 Semantics that remain unchanged when implementing custom operations.
 If your trap implementation violates the invariants of a handler, a
 \f[V]TypeError\f[R] will be thrown.
-.RE
 .SS Object internal methods
 .PP
 Objects are collections of properties.
@@ -342,26 +333,20 @@ semantics other built-in methods and syntaxes use.
 For example, class fields use the \f[V][[DefineOwnProperty]]\f[R]
 semantic, which is why setters defined in the superclass are not invoked
 when a field is declared on the derived class.
-.SH Constructor
-.IP \[bu] 2
-\f[V]Proxy()\f[R]
-.RS 2
-.IP \[bu] 2
+.SH CONSTRUCTOR
+.TP
+\f[B]Proxy()\f[R]
 Creates a new \f[V]Proxy\f[R] object.
-.RE
 .RS
 .PP
 \f[B]Note:\f[R] There\[cq]s no \f[V]Proxy.prototype\f[R] property, so
 \f[V]Proxy\f[R] instances do not have any special properties or methods.
 .RE
-.SH Static methods
-.IP \[bu] 2
-\f[V]Proxy.revocable()\f[R]
-.RS 2
-.IP \[bu] 2
+.SH STATIC METHODS
+.TP
+\f[B]Proxy.revocable()\f[R]
 Creates a revocable \f[V]Proxy\f[R] object.
-.RE
-.SH Examples
+.SH EXAMPLES
 .SS Basic example
 .PP
 In this simple example, the number \f[V]37\f[R] gets returned as the
@@ -793,7 +778,7 @@ docCookies.setItem(\[dq]myCookie1\[dq], \[dq]Changed value\[dq]);
 console.log(docCookies.myCookie1);
 \f[R]
 .fi
-.SH See also
+.SH SEE ALSO
 .IP \[bu] 2
 \[lq]Proxies are awesome\[rq] Brendan Eich presentation at
 JSConf (https://www.youtube.com/watch?v=sClk6aB_CPk)

@@ -15,13 +15,16 @@
 . ftr VB CB
 . ftr VBI CBI
 .\}
-.TH "String.length" "JS" "2023-06-02" "JavaScript" "JavaScript Reference Manual"
+.TH "String.length" "JS" "June 2, 2023" "JavaScript" "JavaScript Reference Manual"
 .hy
-.SH Synopsis
+.SH NAME
+.PP
+String.length - String: length
+.SH SYNOPSIS
 .PP
 The \f[B]\f[VB]length\f[B]\f[R] data property of a \f[V]String\f[R]
 value contains the length of the string in UTF-16 code units.
-.SH Value
+.SH VALUE
 .PP
 A non-negative integer.
 .PP
@@ -44,7 +47,7 @@ T}@T{
 no
 T}
 .TE
-.SH Description
+.SH DESCRIPTION
 .PP
 This property returns the number of code units in the string.
 JavaScript uses UTF-16 encoding, where each Unicode character may be
@@ -96,7 +99,7 @@ function getCharacterLength(str) {
 console.log(getCharacterLength(\[dq]A\[rs]uD87E\[rs]uDC04Z\[dq])); // 3
 \f[R]
 .fi
-.SH Examples
+.SH EXAMPLES
 .SS Basic usage
 .IP
 .nf
@@ -141,7 +144,7 @@ console.log(myString); // \[dq]bluebells\[dq]
 console.log(myString.length); // 9
 \f[R]
 .fi
-.SH See also
+.SH SEE ALSO
 .IP \[bu] 2
 JavaScript \f[V]String.length\f[R] and Internationalizing Web
 Applications (https://downloads.teradata.com/blog/jasonstrimpel/2011/11/javascript-string-length-and-internationalizing-web-applications)

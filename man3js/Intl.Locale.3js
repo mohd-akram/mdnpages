@@ -14,13 +14,16 @@
 . ftr VB CB
 . ftr VBI CBI
 .\}
-.TH "Intl.Locale" "JS" "2023-06-02" "JavaScript" "JavaScript Reference Manual"
+.TH "Intl.Locale" "JS" "June 2, 2023" "JavaScript" "JavaScript Reference Manual"
 .hy
-.SH Synopsis
+.SH NAME
+.PP
+Intl.Locale - Intl.Locale
+.SH SYNOPSIS
 .PP
 The \f[B]\f[VB]Intl.Locale\f[B]\f[R] object is a standard built-in
 property of the Intl object that represents a Unicode locale identifier.
-.SH Description
+.SH DESCRIPTION
 .PP
 The \f[B]\f[VB]Intl.Locale\f[B]\f[R] object was created to allow for
 easier manipulation of Unicode locales.
@@ -40,173 +43,104 @@ Unicode does.
 This is a simple and lightweight solution that works well.
 Adding a Locale class, however, adds ease of parsing and manipulating
 the language, script, and region, as well as extension tags.
-.SH Constructor
-.IP \[bu] 2
-\f[V]Intl.Locale()\f[R]
-.RS 2
-.IP \[bu] 2
+.SH CONSTRUCTOR
+.TP
+\f[B]Intl.Locale()\f[R]
 Creates a new \f[V]Locale\f[R] object.
-.RE
-.SH Instance properties
+.SH INSTANCE PROPERTIES
 .PP
 These properties are defined on \f[V]Intl.Locale.prototype\f[R] and
 shared by all \f[V]Intl.Locale\f[R] instances.
-.IP \[bu] 2
-\f[V]Intl.Locale.prototype.baseName\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]Intl.Locale.prototype.baseName\f[R]
 Returns basic, core information about the \f[V]Locale\f[R] in the form
 of a substring of the complete data string.
-.RE
-.IP \[bu] 2
-\f[V]Intl.Locale.prototype.calendar\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]Intl.Locale.prototype.calendar\f[R]
 Returns the part of the \f[V]Locale\f[R] that indicates the Locale\[cq]s
 calendar era.
-.RE
-.IP \[bu] 2
-\f[V]Intl.Locale.prototype.caseFirst\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]Intl.Locale.prototype.caseFirst\f[R]
 Returns whether case is taken into account for the locale\[cq]s
 collation rules.
-.RE
-.IP \[bu] 2
-\f[V]Intl.Locale.prototype.collation\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]Intl.Locale.prototype.collation\f[R]
 Returns the collation type for the \f[V]Locale\f[R], which is used to
 order strings according to the locale\[cq]s rules.
-.RE
-.IP \[bu] 2
-\f[V]Intl.Locale.prototype.constructor\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]Intl.Locale.prototype.constructor\f[R]
 The constructor function that created the instance object.
 For \f[V]Intl.Locale\f[R] instances, the initial value is the
 \f[V]Intl.Locale\f[R] constructor.
-.RE
-.IP \[bu] 2
-\f[V]Intl.Locale.prototype.hourCycle\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]Intl.Locale.prototype.hourCycle\f[R]
 Returns the time keeping format convention used by the locale.
-.RE
-.IP \[bu] 2
-\f[V]Intl.Locale.prototype.language\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]Intl.Locale.prototype.language\f[R]
 Returns the language associated with the locale.
-.RE
-.IP \[bu] 2
-\f[V]Intl.Locale.prototype.numberingSystem\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]Intl.Locale.prototype.numberingSystem\f[R]
 Returns the numeral system used by the locale.
-.RE
-.IP \[bu] 2
-\f[V]Intl.Locale.prototype.numeric\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]Intl.Locale.prototype.numeric\f[R]
 Returns whether the locale has special collation handling for numeric
 characters.
-.RE
-.IP \[bu] 2
-\f[V]Intl.Locale.prototype.region\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]Intl.Locale.prototype.region\f[R]
 Returns the region of the world (usually a country) associated with the
 locale.
-.RE
-.IP \[bu] 2
-\f[V]Intl.Locale.prototype.script\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]Intl.Locale.prototype.script\f[R]
 Returns the script used for writing the particular language used in the
 locale.
-.RE
-.IP \[bu] 2
-\f[V]Intl.Locale.prototype[\[at]\[at]toStringTag]\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]Intl.Locale.prototype[\[at]\[at]toStringTag]\f[R]
 The initial value of the \f[V]\[at]\[at]toStringTag\f[R] property is the
 string \f[V]\[dq]Intl.Locale\[dq]\f[R].
 This property is used in \f[V]Object.prototype.toString()\f[R].
-.RE
-.SH Instance methods
-.IP \[bu] 2
-\f[V]Intl.Locale.prototype.getCalendars()\f[R]
-.RS 2
-.IP \[bu] 2
+.SH INSTANCE METHODS
+.TP
+\f[B]Intl.Locale.prototype.getCalendars()\f[R]
 Returns an \f[V]Array\f[R] of available calendar identifiers, according
 to the locale\[cq]s rules.
-.RE
-.IP \[bu] 2
-\f[V]Intl.Locale.prototype.getCollations()\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]Intl.Locale.prototype.getCollations()\f[R]
 Returns an \f[V]Array\f[R] of the collation types for the
 \f[V]Locale\f[R].
-.RE
-.IP \[bu] 2
-\f[V]Intl.Locale.prototype.getHourCycles()\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]Intl.Locale.prototype.getHourCycles()\f[R]
 Returns an \f[V]Array\f[R] of hour cycle identifiers, indicating either
 the 12-hour format (\[lq]h11\[rq], \[lq]h12\[rq]) or the 24-hour format
 (\[lq]h23\[rq], \[lq]h24\[rq]).
-.RE
-.IP \[bu] 2
-\f[V]Intl.Locale.prototype.getNumberingSystems()\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]Intl.Locale.prototype.getNumberingSystems()\f[R]
 Returns an \f[V]Array\f[R] of numbering system identifiers available
 according to the locale\[cq]s rules.
-.RE
-.IP \[bu] 2
-\f[V]Intl.Locale.prototype.getTextInfo()\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]Intl.Locale.prototype.getTextInfo()\f[R]
 Returns the part indicating the ordering of characters \f[V]ltr\f[R]
 (left-to-right) or \f[V]rtl\f[R] (right-to-left).
-.RE
-.IP \[bu] 2
-\f[V]Intl.Locale.prototype.getTimeZones()\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]Intl.Locale.prototype.getTimeZones()\f[R]
 Returns an \f[V]Array\f[R] of time zone identifiers, associated with the
 \f[V]Locale\f[R].
-.RE
-.IP \[bu] 2
-\f[V]Intl.Locale.prototype.getWeekInfo()\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]Intl.Locale.prototype.getWeekInfo()\f[R]
 Returns UTS 35\[cq]s Week
 Elements (https://www.unicode.org/reports/tr35/tr35-dates.html#Date_Patterns_Week_Elements)
 according to the locale rules.
-.RE
-.IP \[bu] 2
-\f[V]Intl.Locale.prototype.maximize()\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]Intl.Locale.prototype.maximize()\f[R]
 Gets the most likely values for the language, script, and region of the
 locale based on existing values.
-.RE
-.IP \[bu] 2
-\f[V]Intl.Locale.prototype.minimize()\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]Intl.Locale.prototype.minimize()\f[R]
 Attempts to remove information about the locale that would be added by
 calling \f[V]maximize()\f[R].
-.RE
-.IP \[bu] 2
-\f[V]Intl.Locale.prototype.toString()\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]Intl.Locale.prototype.toString()\f[R]
 Returns the Locale\[cq]s full locale identifier string.
-.RE
-.SH Examples
+.SH EXAMPLES
 .SS Basic usage
 .PP
 At its very simplest, the \f[V]Intl.Locale()\f[R] constructor takes a
@@ -231,7 +165,7 @@ const us12hour = new Intl.Locale(\[dq]en-US\[dq], { hourCycle: \[dq]h12\[dq] });
 console.log(us12hour.hourCycle); // Prints \[dq]h12\[dq]
 \f[R]
 .fi
-.SH See also
+.SH SEE ALSO
 .IP \[bu] 2
 \f[V]Intl\f[R]
 .IP \[bu] 2

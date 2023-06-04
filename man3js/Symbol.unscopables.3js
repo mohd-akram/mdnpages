@@ -15,16 +15,19 @@
 . ftr VB CB
 . ftr VBI CBI
 .\}
-.TH "Symbol.unscopables" "JS" "2023-06-02" "JavaScript" "JavaScript Reference Manual"
+.TH "Symbol.unscopables" "JS" "June 2, 2023" "JavaScript" "JavaScript Reference Manual"
 .hy
-.SH Synopsis
+.SH NAME
+.PP
+Symbol.unscopables - Symbol.unscopables
+.SH SYNOPSIS
 .PP
 The \f[B]\f[VB]Symbol.unscopables\f[B]\f[R] static data property
 represents the well-known symbol \f[V]\[at]\[at]unscopables\f[R].
 The \f[V]with\f[R] statement looks up this symbol on the scope object
 for a property containing a collection of properties that should not
 become bindings within the \f[V]with\f[R] environment.
-.SH Value
+.SH VALUE
 .PP
 The well-known symbol \f[V]\[at]\[at]unscopables\f[R].
 .PP
@@ -47,7 +50,7 @@ T}@T{
 no
 T}
 .TE
-.SH Description
+.SH DESCRIPTION
 .PP
 The \f[V]\[at]\[at]unscopables\f[R] symbol (accessed via
 \f[V]Symbol.unscopables\f[R]) can be defined on any object to exclude
@@ -77,7 +80,7 @@ property have \f[V]null\f[R] as its prototype, like
 .PP
 This protocol is also utilized by DOM APIs, such as
 \f[V]Element.prototype.append()\f[R].
-.SH Examples
+.SH EXAMPLES
 .SS Scoping in with statements
 .PP
 The following code works fine in ES5 and below.
@@ -238,7 +241,7 @@ const character = {
 };
 \f[R]
 .fi
-.SH See also
+.SH SEE ALSO
 .IP \[bu] 2
 \f[V]Array.prototype[\[at]\[at]unscopables]\f[R]
 .IP \[bu] 2

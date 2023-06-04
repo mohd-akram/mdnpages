@@ -14,14 +14,17 @@
 . ftr VB CB
 . ftr VBI CBI
 .\}
-.TH "Reflect.getPrototypeOf" "JS" "2023-06-02" "JavaScript" "JavaScript Reference Manual"
+.TH "Reflect.getPrototypeOf" "JS" "June 2, 2023" "JavaScript" "JavaScript Reference Manual"
 .hy
-.SH Synopsis
+.SH NAME
+.PP
+Reflect.getPrototypeOf - Reflect.getPrototypeOf()
+.SH SYNOPSIS
 .PP
 The \f[B]\f[VB]Reflect.getPrototypeOf()\f[B]\f[R] static method is like
 \f[V]Object.getPrototypeOf()\f[R].
 It returns the prototype of the specified object.
-.SH Syntax
+.SH SYNTAX
 .IP
 .nf
 \f[C]
@@ -29,24 +32,18 @@ Reflect.getPrototypeOf(target)
 \f[R]
 .fi
 .SS Parameters
-.IP \[bu] 2
-\f[V]target\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]target\f[R]
 The target object of which to get the prototype.
-.RE
 .SS Return value
 .PP
 The prototype of the given object, which may be an object or
 \f[V]null\f[R].
 .SS Exceptions
-.IP \[bu] 2
-\f[V]TypeError\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]TypeError\f[R]
 Thrown if \f[V]target\f[R] is not an object.
-.RE
-.SH Description
+.SH DESCRIPTION
 .PP
 \f[V]Reflect.getPrototypeOf()\f[R] provides the reflective semantic of
 retrieving the prototype of an object.
@@ -58,7 +55,7 @@ it to an object.
 .PP
 \f[V]Reflect.getPrototypeOf()\f[R] invokes the
 \f[V][[GetPrototypeOf]]\f[R] object internal method of \f[V]target\f[R].
-.SH Examples
+.SH EXAMPLES
 .SS Using Reflect.getPrototypeOf()
 .IP
 .nf
@@ -88,7 +85,7 @@ Reflect.getPrototypeOf(\[dq]foo\[dq]); // Throws TypeError
 Reflect.getPrototypeOf(Object(\[dq]foo\[dq])); // String.prototype
 \f[R]
 .fi
-.SH See also
+.SH SEE ALSO
 .IP \[bu] 2
 Polyfill of \f[V]Reflect.getPrototypeOf\f[R] in
 \f[V]core-js\f[R] (https://github.com/zloirock/core-js#ecmascript-reflect)

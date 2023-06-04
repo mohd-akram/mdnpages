@@ -14,14 +14,17 @@
 . ftr VB CB
 . ftr VBI CBI
 .\}
-.TH "Array.shift" "JS" "2023-06-02" "JavaScript" "JavaScript Reference Manual"
+.TH "Array.shift" "JS" "June 2, 2023" "JavaScript" "JavaScript Reference Manual"
 .hy
-.SH Synopsis
+.SH NAME
+.PP
+Array.shift - Array.prototype.shift()
+.SH SYNOPSIS
 .PP
 The \f[B]\f[VB]shift()\f[B]\f[R] method removes the \f[B]first\f[R]
 element from an array and returns that removed element.
 This method changes the length of the array.
-.SH Syntax
+.SH SYNTAX
 .IP
 .nf
 \f[C]
@@ -32,7 +35,7 @@ shift()
 .PP
 The removed element from the array; \f[V]undefined\f[R] if the array is
 empty.
-.SH Description
+.SH DESCRIPTION
 .PP
 The \f[V]shift()\f[R] method removes the element at the zeroth index and
 shifts the values at consecutive indexes down, then returns the removed
@@ -53,7 +56,7 @@ It only expects the \f[V]this\f[R] value to have a \f[V]length\f[R]
 property and integer-keyed properties.
 Although strings are also array-like, this method is not suitable to be
 applied on them, as strings are immutable.
-.SH Examples
+.SH EXAMPLES
 .SS Removing an element from an array
 .PP
 The following code displays the \f[V]myFish\f[R] array before and after
@@ -121,7 +124,7 @@ console.log(plainObj);
 // { length: 0 }
 \f[R]
 .fi
-.SH See also
+.SH SEE ALSO
 .IP \[bu] 2
 Indexed collections
 .IP \[bu] 2

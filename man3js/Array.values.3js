@@ -14,13 +14,16 @@
 . ftr VB CB
 . ftr VBI CBI
 .\}
-.TH "Array.values" "JS" "2023-06-02" "JavaScript" "JavaScript Reference Manual"
+.TH "Array.values" "JS" "June 2, 2023" "JavaScript" "JavaScript Reference Manual"
 .hy
-.SH Synopsis
+.SH NAME
+.PP
+Array.values - Array.prototype.values()
+.SH SYNOPSIS
 .PP
 The \f[B]\f[VB]values()\f[B]\f[R] method returns a new \f[I]array
 iterator\f[R] object that iterates the value of each item in the array.
-.SH Syntax
+.SH SYNTAX
 .IP
 .nf
 \f[C]
@@ -30,7 +33,7 @@ values()
 .SS Return value
 .PP
 A new iterable iterator object.
-.SH Description
+.SH DESCRIPTION
 .PP
 \f[V]Array.prototype.values()\f[R] is the default implementation of
 \f[V]Array.prototype[\[at]\[at]iterator]()\f[R].
@@ -47,7 +50,7 @@ slots as if they have the value \f[V]undefined\f[R].
 The \f[V]values()\f[R] method is generic.
 It only expects the \f[V]this\f[R] value to have a \f[V]length\f[R]
 property and integer-keyed properties.
-.SH Examples
+.SH EXAMPLES
 .SS Iteration using for\&...of loop
 .PP
 Because \f[V]values()\f[R] returns an iterable iterator, you can use a
@@ -186,7 +189,7 @@ for (const entry of Array.prototype.values.call(arrayLike)) {
 // c
 \f[R]
 .fi
-.SH See also
+.SH SEE ALSO
 .IP \[bu] 2
 Polyfill of \f[V]Array.prototype.values\f[R] in
 \f[V]core-js\f[R] (https://github.com/zloirock/core-js#ecmascript-array)

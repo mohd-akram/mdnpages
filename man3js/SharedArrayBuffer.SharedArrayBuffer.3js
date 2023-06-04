@@ -14,9 +14,12 @@
 . ftr VB CB
 . ftr VBI CBI
 .\}
-.TH "SharedArrayBuffer.SharedArrayBuffer" "JS" "2023-06-02" "JavaScript" "JavaScript Reference Manual"
+.TH "SharedArrayBuffer.SharedArrayBuffer" "JS" "June 2, 2023" "JavaScript" "JavaScript Reference Manual"
 .hy
-.SH Synopsis
+.SH NAME
+.PP
+SharedArrayBuffer.SharedArrayBuffer - SharedArrayBuffer() constructor
+.SH SYNOPSIS
 .RS
 .PP
 \f[B]Note:\f[R] The \f[V]SharedArrayBuffer\f[R] constructor may not
@@ -26,7 +29,7 @@ met.
 .PP
 The \f[B]\f[VB]SharedArrayBuffer()\f[B]\f[R] constructor creates
 \f[V]SharedArrayBuffer\f[R] objects.
-.SH Syntax
+.SH SYNTAX
 .IP
 .nf
 \f[C]
@@ -43,26 +46,17 @@ Attempting to call it without \f[V]new\f[R] throws a
 \f[V]TypeError\f[R].
 .RE
 .SS Parameters
-.IP \[bu] 2
-\f[V]length\f[R] \f[I](optional)\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]length\f[R] \f[I](optional)\f[R]
 The size, in bytes, of the array buffer to create.
-.RE
-.IP \[bu] 2
-\f[V]options\f[R] \f[I](optional)\f[R] \f[I](experimental)\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]options\f[R] \f[I](optional)\f[R] \f[I](experimental)\f[R]
 An object, which can contain the following properties:
-.RS 2
-.IP \[bu] 2
-\f[V]maxByteLength\f[R] \f[I](optional)\f[R] \f[I](experimental)\f[R]
-.RS 2
-.IP \[bu] 2
+.RS
+.TP
+\f[B]maxByteLength\f[R] \f[I](optional)\f[R] \f[I](experimental)\f[R]
 The maximum size, in bytes, that the shared array buffer can be resized
 to.
-.RE
-.RE
 .RE
 .SS Return value
 .PP
@@ -70,7 +64,7 @@ A new \f[V]SharedArrayBuffer\f[R] object of the specified size, with its
 \f[V]maxByteLength\f[R] property set to the specified
 \f[V]maxByteLength\f[R] if one was specified.
 Its contents are initialized to 0.
-.SH Examples
+.SH EXAMPLES
 .SS Always use the new operator to create a SharedArrayBuffer
 .PP
 \f[V]SharedArrayBuffer\f[R] constructors are required to be constructed
@@ -114,7 +108,7 @@ the smallest value possible for your use case.
 It should never exceed \f[V]1073741824\f[R] (1GB), to reduce the risk of
 out-of-memory errors.
 .RE
-.SH See also
+.SH SEE ALSO
 .IP \[bu] 2
 \f[V]Atomics\f[R]
 .IP \[bu] 2

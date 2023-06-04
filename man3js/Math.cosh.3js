@@ -14,16 +14,19 @@
 . ftr VB CB
 . ftr VBI CBI
 .\}
-.TH "Math.cosh" "JS" "2023-06-02" "JavaScript" "JavaScript Reference Manual"
+.TH "Math.cosh" "JS" "June 2, 2023" "JavaScript" "JavaScript Reference Manual"
 .hy
-.SH Synopsis
+.SH NAME
+.PP
+Math.cosh - Math.cosh()
+.SH SYNOPSIS
 .PP
 The \f[B]\f[VB]Math.cosh()\f[B]\f[R] static method returns the
 hyperbolic cosine of a number.
 That is,
 .PP
 𝙼𝚊𝚝𝚑.𝚌𝚘𝚜𝚑(𝚡)=cosh(x)=ex+e−x2 = (x) =
-.SH Syntax
+.SH SYNTAX
 .IP
 .nf
 \f[C]
@@ -31,21 +34,18 @@ Math.cosh(x)
 \f[R]
 .fi
 .SS Parameters
-.IP \[bu] 2
-\f[V]x\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]x\f[R]
 A number.
-.RE
 .SS Return value
 .PP
 The hyperbolic cosine of \f[V]x\f[R].
-.SH Description
+.SH DESCRIPTION
 .PP
 Because \f[V]cosh()\f[R] is a static method of \f[V]Math\f[R], you
 always use it as \f[V]Math.cosh()\f[R], rather than as a method of a
 \f[V]Math\f[R] object you created (\f[V]Math\f[R] is not a constructor).
-.SH Examples
+.SH EXAMPLES
 .SS Using Math.cosh()
 .IP
 .nf
@@ -58,7 +58,7 @@ Math.cosh(1); // 1.5430806348152437
 Math.cosh(Infinity); // Infinity
 \f[R]
 .fi
-.SH See also
+.SH SEE ALSO
 .IP \[bu] 2
 Polyfill of \f[V]Math.cosh\f[R] in
 \f[V]core-js\f[R] (https://github.com/zloirock/core-js#ecmascript-math)

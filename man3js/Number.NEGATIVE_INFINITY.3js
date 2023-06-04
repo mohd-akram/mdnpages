@@ -15,13 +15,16 @@
 . ftr VB CB
 . ftr VBI CBI
 .\}
-.TH "Number.NEGATIVE_INFINITY" "JS" "2023-06-02" "JavaScript" "JavaScript Reference Manual"
+.TH "Number.NEGATIVE_INFINITY" "JS" "June 2, 2023" "JavaScript" "JavaScript Reference Manual"
 .hy
-.SH Synopsis
+.SH NAME
+.PP
+Number.NEGATIVE_INFINITY - Number.NEGATIVE_INFINITY
+.SH SYNOPSIS
 .PP
 The \f[B]\f[VB]Number.NEGATIVE_INFINITY\f[B]\f[R] static data property
 represents the negative Infinity value.
-.SH Value
+.SH VALUE
 .PP
 The same as the negative value of the global \f[V]Infinity\f[R]
 property.
@@ -45,7 +48,7 @@ T}@T{
 no
 T}
 .TE
-.SH Description
+.SH DESCRIPTION
 .PP
 The \f[V]Number.NEGATIVE_INFINITY\f[R] value behaves slightly
 differently than mathematical infinity:
@@ -92,7 +95,7 @@ Because \f[V]NEGATIVE_INFINITY\f[R] is a static property of
 \f[V]Number\f[R], you always use it as
 \f[V]Number.NEGATIVE_INFINITY\f[R], rather than as a property of a
 number value.
-.SH Examples
+.SH EXAMPLES
 .SS Using NEGATIVE_INFINITY
 .PP
 In the following example, the variable \f[V]smallNumber\f[R] is assigned
@@ -110,7 +113,7 @@ if (smallNumber === Number.NEGATIVE_INFINITY) {
 }
 \f[R]
 .fi
-.SH See also
+.SH SEE ALSO
 .IP \[bu] 2
 \f[V]Number.POSITIVE_INFINITY\f[R]
 .IP \[bu] 2

@@ -14,9 +14,12 @@
 . ftr VB CB
 . ftr VBI CBI
 .\}
-.TH "RegExp.rightContext" "JS" "2023-06-02" "JavaScript" "JavaScript Reference Manual"
+.TH "RegExp.rightContext" "JS" "June 2, 2023" "JavaScript" "JavaScript Reference Manual"
 .hy
-.SH Synopsis
+.SH NAME
+.PP
+RegExp.rightContext - RegExp.rightContext ($\[cq])
+.SH SYNOPSIS
 .PP
 \f[I](deprecated)\f[R]
 .RS
@@ -29,7 +32,7 @@ See deprecated RegExp features for more information.
 The \f[B]\f[VB]RegExp.rightContext\f[B]\f[R] static accessor property
 returns the substring following the most recent match.
 \f[V]RegExp[\[dq]$\[aq]\[dq]]\f[R] is an alias for this property.
-.SH Description
+.SH DESCRIPTION
 .PP
 Because \f[V]rightContext\f[R] is a static property of \f[V]RegExp\f[R],
 you always use it as \f[V]RegExp.rightContext\f[R] or
@@ -50,7 +53,7 @@ Use the bracket notation instead.
 \f[V]$\[aq]\f[R] can also be used in the replacement string of
 \f[V]String.prototype.replace()\f[R], but that\[cq]s unrelated to the
 \f[V]RegExp[\[dq]$\[aq]\[dq]]\f[R] legacy property.
-.SH Examples
+.SH EXAMPLES
 .SS Using rightContext and $\[cq]
 .IP
 .nf
@@ -61,7 +64,7 @@ RegExp.rightContext; // \[dq] world!\[dq]
 RegExp[\[dq]$\[aq]\[dq]]; // \[dq] world!\[dq]
 \f[R]
 .fi
-.SH See also
+.SH SEE ALSO
 .IP \[bu] 2
 \f[V]RegExp.input ($_)\f[R]
 .IP \[bu] 2

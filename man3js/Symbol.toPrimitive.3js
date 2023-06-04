@@ -15,9 +15,12 @@
 . ftr VB CB
 . ftr VBI CBI
 .\}
-.TH "Symbol.toPrimitive" "JS" "2023-06-02" "JavaScript" "JavaScript Reference Manual"
+.TH "Symbol.toPrimitive" "JS" "June 2, 2023" "JavaScript" "JavaScript Reference Manual"
 .hy
-.SH Synopsis
+.SH NAME
+.PP
+Symbol.toPrimitive - Symbol.toPrimitive
+.SH SYNOPSIS
 .PP
 The \f[B]\f[VB]Symbol.toPrimitive\f[B]\f[R] static data property
 represents the well-known symbol \f[V]\[at]\[at]toPrimitive\f[R].
@@ -25,7 +28,7 @@ All type coercion algorithms look up this symbol on objects for the
 method that accepts a preferred type and returns a primitive
 representation of the object, before falling back to using the
 object\[cq]s \f[V]valueOf()\f[R] and \f[V]toString()\f[R] methods.
-.SH Value
+.SH VALUE
 .PP
 The well-known symbol \f[V]\[at]\[at]toPrimitive\f[R].
 .PP
@@ -48,7 +51,7 @@ T}@T{
 no
 T}
 .TE
-.SH Description
+.SH DESCRIPTION
 .PP
 With the help of the \f[V]Symbol.toPrimitive\f[R] property (used as a
 function value), an object can be converted to a primitive value.
@@ -84,7 +87,7 @@ always returns a symbol, which means even in string contexts,
 \f[V]Symbol.prototype.toString()\f[R] won\[cq]t be called, and
 \f[V]Symbol\f[R] objects must always be explicitly converted to strings
 through \f[V]String()\f[R].
-.SH Examples
+.SH EXAMPLES
 .SS Modifying primitive values converted from an object
 .PP
 Following example describes how \f[V]Symbol.toPrimitive\f[R] property
@@ -115,7 +118,7 @@ console.log(\[ga]${obj2}\[ga]); // \[dq]hello\[dq]   \[em] hint is \[dq]string\[
 console.log(obj2 + \[dq]\[dq]); // \[dq]true\[dq]    \[em] hint is \[dq]default\[dq]
 \f[R]
 .fi
-.SH See also
+.SH SEE ALSO
 .IP \[bu] 2
 Polyfill of \f[V]Symbol.toPrimitive\f[R] in
 \f[V]core-js\f[R] (https://github.com/zloirock/core-js#ecmascript-symbol)

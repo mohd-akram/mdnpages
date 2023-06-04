@@ -14,14 +14,17 @@
 . ftr VB CB
 . ftr VBI CBI
 .\}
-.TH "Function.apply" "JS" "2023-06-02" "JavaScript" "JavaScript Reference Manual"
+.TH "Function.apply" "JS" "June 2, 2023" "JavaScript" "JavaScript Reference Manual"
 .hy
-.SH Synopsis
+.SH NAME
+.PP
+Function.apply - Function.prototype.apply()
+.SH SYNOPSIS
 .PP
 The \f[B]\f[VB]apply()\f[B]\f[R] method calls the specified function
 with a given \f[V]this\f[R] value, and \f[V]arguments\f[R] provided as
 an array (or an array-like object).
-.SH Syntax
+.SH SYNTAX
 .IP
 .nf
 \f[C]
@@ -30,28 +33,22 @@ apply(thisArg, argsArray)
 \f[R]
 .fi
 .SS Parameters
-.IP \[bu] 2
-\f[V]thisArg\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]thisArg\f[R]
 The value of \f[V]this\f[R] provided for the call to \f[V]func\f[R].
 If the function is not in strict mode, \f[V]null\f[R] and
 \f[V]undefined\f[R] will be replaced with the global object, and
 primitive values will be converted to objects.
-.RE
-.IP \[bu] 2
-\f[V]argsArray\f[R] \f[I](optional)\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]argsArray\f[R] \f[I](optional)\f[R]
 An array-like object, specifying the arguments with which \f[V]func\f[R]
 should be called, or \f[V]null\f[R] or \f[V]undefined\f[R] if no
 arguments should be provided to the function.
-.RE
 .SS Return value
 .PP
 The result of calling the function with the specified \f[V]this\f[R]
 value and arguments.
-.SH Description
+.SH DESCRIPTION
 .RS
 .PP
 \f[B]Note:\f[R] This function is almost identical to \f[V]call()\f[R],
@@ -112,7 +109,7 @@ This invokes the constructor function as a plain function, which means
 because they can\[cq]t be called without \f[V]new\f[R].
 Use \f[V]Reflect.construct()\f[R] or \f[V]extends\f[R] instead.
 .RE
-.SH Examples
+.SH EXAMPLES
 .SS Using apply() to append an array to another
 .PP
 You can use \f[V]Array.prototype.push()\f[R] to append an element to an
@@ -224,7 +221,7 @@ function minOfArray(arr) {
 const min = minOfArray([5, 6, 2, 3, 7]);
 \f[R]
 .fi
-.SH See also
+.SH SEE ALSO
 .IP \[bu] 2
 \f[V]arguments\f[R] object
 .IP \[bu] 2

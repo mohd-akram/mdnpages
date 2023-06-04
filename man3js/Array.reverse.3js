@@ -14,9 +14,12 @@
 . ftr VB CB
 . ftr VBI CBI
 .\}
-.TH "Array.reverse" "JS" "2023-06-02" "JavaScript" "JavaScript Reference Manual"
+.TH "Array.reverse" "JS" "June 2, 2023" "JavaScript" "JavaScript Reference Manual"
 .hy
-.SH Synopsis
+.SH NAME
+.PP
+Array.reverse - Array.prototype.reverse()
+.SH SYNOPSIS
 .PP
 The \f[B]\f[VB]reverse()\f[B]\f[R] method reverses an array \f[I]in
 place (https://en.wikipedia.org/wiki/In-place_algorithm)\f[R] and
@@ -27,7 +30,7 @@ direction opposite to that previously stated.
 .PP
 To reverse the elements in an array without mutating the original array,
 use \f[V]toReversed()\f[R].
-.SH Syntax
+.SH SYNTAX
 .IP
 .nf
 \f[C]
@@ -40,7 +43,7 @@ The reference to the original array, now reversed.
 Note that the array is reversed \f[I]in
 place (https://en.wikipedia.org/wiki/In-place_algorithm)\f[R], and no
 copy is made.
-.SH Description
+.SH DESCRIPTION
 .PP
 The \f[V]reverse()\f[R] method transposes the elements of the calling
 array object in place, mutating the array, and returning a reference to
@@ -55,7 +58,7 @@ It only expects the \f[V]this\f[R] value to have a \f[V]length\f[R]
 property and integer-keyed properties.
 Although strings are also array-like, this method is not suitable to be
 applied on them, as strings are immutable.
-.SH Examples
+.SH EXAMPLES
 .SS Reversing the elements in an array
 .PP
 The following example creates an array \f[V]items\f[R], containing three
@@ -134,7 +137,7 @@ console.log(Array.prototype.reverse.call(arrayLike));
 // The \[aq]2\[aq] index is deleted because the \[aq]0\[aq] index was not present originally
 \f[R]
 .fi
-.SH See also
+.SH SEE ALSO
 .IP \[bu] 2
 Polyfill of \f[V]Array.prototype.reverse\f[R] in
 \f[V]core-js\f[R] (https://github.com/zloirock/core-js#ecmascript-array)

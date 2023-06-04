@@ -14,13 +14,16 @@
 . ftr VB CB
 . ftr VBI CBI
 .\}
-.TH "Object.getOwnPropertyDescriptors" "JS" "2023-06-02" "JavaScript" "JavaScript Reference Manual"
+.TH "Object.getOwnPropertyDescriptors" "JS" "June 2, 2023" "JavaScript" "JavaScript Reference Manual"
 .hy
-.SH Synopsis
+.SH NAME
+.PP
+Object.getOwnPropertyDescriptors - Object.getOwnPropertyDescriptors()
+.SH SYNOPSIS
 .PP
 The \f[B]\f[VB]Object.getOwnPropertyDescriptors()\f[B]\f[R] static
 method returns all own property descriptors of a given object.
-.SH Syntax
+.SH SYNTAX
 .IP
 .nf
 \f[C]
@@ -28,17 +31,14 @@ Object.getOwnPropertyDescriptors(obj)
 \f[R]
 .fi
 .SS Parameters
-.IP \[bu] 2
-\f[V]obj\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]obj\f[R]
 The object for which to get all own property descriptors.
-.RE
 .SS Return value
 .PP
 An object containing all own property descriptors of an object.
 Might be an empty object, if there are no properties.
-.SH Description
+.SH DESCRIPTION
 .PP
 This method permits examination of the precise description of all own
 properties of an object.
@@ -49,49 +49,31 @@ can be found in \f[V]Object.defineProperty()\f[R].
 .PP
 A \f[I]property descriptor\f[R] is a record with some of the following
 attributes:
-.IP \[bu] 2
-\f[V]value\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]value\f[R]
 The value associated with the property (data descriptors only).
-.RE
-.IP \[bu] 2
-\f[V]writable\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]writable\f[R]
 \f[V]true\f[R] if and only if the value associated with the property may
 be changed (data descriptors only).
-.RE
-.IP \[bu] 2
-\f[V]get\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]get\f[R]
 A function which serves as a getter for the property, or
 \f[V]undefined\f[R] if there is no getter (accessor descriptors only).
-.RE
-.IP \[bu] 2
-\f[V]set\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]set\f[R]
 A function which serves as a setter for the property, or
 \f[V]undefined\f[R] if there is no setter (accessor descriptors only).
-.RE
-.IP \[bu] 2
-\f[V]configurable\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]configurable\f[R]
 \f[V]true\f[R] if and only if the type of this property descriptor may
 be changed and if the property may be deleted from the corresponding
 object.
-.RE
-.IP \[bu] 2
-\f[V]enumerable\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]enumerable\f[R]
 \f[V]true\f[R] if and only if this property shows up during enumeration
 of the properties on the corresponding object.
-.RE
-.SH Examples
+.SH EXAMPLES
 .SS Creating a shallow copy
 .PP
 Whereas the \f[V]Object.assign()\f[R] method will only copy enumerable
@@ -127,7 +109,7 @@ subclass.prototype = Object.create(superclass.prototype, {
 });
 \f[R]
 .fi
-.SH See also
+.SH SEE ALSO
 .IP \[bu] 2
 Polyfill of \f[V]Object.getOwnPropertyDescriptors\f[R] in
 \f[V]core-js\f[R] (https://github.com/zloirock/core-js#ecmascript-object)

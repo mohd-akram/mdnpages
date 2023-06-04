@@ -15,13 +15,16 @@
 . ftr VB CB
 . ftr VBI CBI
 .\}
-.TH "Math.LOG2E" "JS" "2023-06-02" "JavaScript" "JavaScript Reference Manual"
+.TH "Math.LOG2E" "JS" "June 2, 2023" "JavaScript" "JavaScript Reference Manual"
 .hy
-.SH Synopsis
+.SH NAME
+.PP
+Math.LOG2E - Math.LOG2E
+.SH SYNOPSIS
 .PP
 The \f[B]\f[VB]Math.LOG2E\f[B]\f[R] static data property represents the
 base 2 logarithm of e, approximately 1.442.
-.SH Value
+.SH VALUE
 .PP
 𝙼𝚊𝚝𝚑.𝙻𝙾𝙶𝟸𝙴=log2(e)≈1.442 = _2()
 .PP
@@ -44,12 +47,12 @@ T}@T{
 no
 T}
 .TE
-.SH Description
+.SH DESCRIPTION
 .PP
 Because \f[V]LOG2E\f[R] is a static property of \f[V]Math\f[R], you
 always use it as \f[V]Math.LOG2E\f[R], rather than as a property of a
 \f[V]Math\f[R] object you created (\f[V]Math\f[R] is not a constructor).
-.SH Examples
+.SH EXAMPLES
 .SS Using Math.LOG2E
 .PP
 The following function returns the base 2 logarithm of e:
@@ -63,7 +66,7 @@ function getLog2e() {
 getLog2e(); // 1.4426950408889634
 \f[R]
 .fi
-.SH See also
+.SH SEE ALSO
 .IP \[bu] 2
 \f[V]Math.exp()\f[R]
 .IP \[bu] 2

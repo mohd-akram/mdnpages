@@ -14,9 +14,12 @@
 . ftr VB CB
 . ftr VBI CBI
 .\}
-.TH "eval" "JS" "2023-06-02" "JavaScript" "JavaScript Reference Manual"
+.TH "eval" "JS" "June 2, 2023" "JavaScript" "JavaScript Reference Manual"
 .hy
-.SH Synopsis
+.SH NAME
+.PP
+eval - eval()
+.SH SYNOPSIS
 .RS
 .PP
 \f[B]Warning:\f[R] Executing JavaScript from a string is an enormous
@@ -29,7 +32,7 @@ See Never use eval()!, below.
 The \f[B]\f[VB]eval()\f[B]\f[R] function evaluates JavaScript code
 represented as a string and returns its completion value.
 The source is parsed as a script.
-.SH Syntax
+.SH SYNTAX
 .IP
 .nf
 \f[C]
@@ -37,16 +40,13 @@ eval(script)
 \f[R]
 .fi
 .SS Parameters
-.IP \[bu] 2
-\f[V]script\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]script\f[R]
 A string representing a JavaScript expression, statement, or sequence of
 statements.
 The expression can include variables and properties of existing objects.
 It will be parsed as a script, so \f[V]import\f[R] declarations (which
 can only exist in modules) are not allowed.
-.RE
 .SS Return value
 .PP
 The completion value of evaluating the given code.
@@ -58,7 +58,7 @@ the argument unchanged.
 Throws any exception that occurs during evaluation of the code,
 including \f[V]SyntaxError\f[R] if \f[V]script\f[R] fails to be parsed
 as a script.
-.SH Description
+.SH DESCRIPTION
 .PP
 \f[V]eval()\f[R] is a function property of the global object.
 .PP
@@ -525,7 +525,7 @@ Passing carefully constrained data instead of arbitrary code is a good
 idea in general.
 For example, an extension designed to scrape contents of web-pages could
 have the scraping rules defined in XPath instead of JavaScript code.
-.SH Examples
+.SH EXAMPLES
 .SS Using eval()
 .PP
 In the following code, both of the statements containing
@@ -615,7 +615,7 @@ const fct1 = eval(fctStr1); // return undefined, but \[ga]a\[ga] is available as
 const fct2 = eval(fctStr2); // return the function \[ga]b\[ga]
 \f[R]
 .fi
-.SH See also
+.SH SEE ALSO
 .IP \[bu] 2
 Property accessors
 .IP \[bu] 2

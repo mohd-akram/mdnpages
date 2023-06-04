@@ -14,16 +14,19 @@
 . ftr VB CB
 . ftr VBI CBI
 .\}
-.TH "RegExp.\[at]\[at]match" "JS" "2023-06-02" "JavaScript" "JavaScript Reference Manual"
+.TH "RegExp.\[at]\[at]match" "JS" "June 2, 2023" "JavaScript" "JavaScript Reference Manual"
 .hy
-.SH Synopsis
+.SH NAME
+.PP
+RegExp.\[at]\[at]match - RegExp.prototype\[at]\[at]match
+.SH SYNOPSIS
 .PP
 The \f[B]\f[VB][\[at]\[at]match]()\f[B]\f[R] method of \f[V]RegExp\f[R]
 instances specifies how \f[V]String.prototype.match()\f[R] should
 behave.
 In addition, its presence (or absence) can influence whether an object
 is regarded as a regular expression.
-.SH Syntax
+.SH SYNTAX
 .IP
 .nf
 \f[C]
@@ -31,12 +34,9 @@ regexp[Symbol.match](str)
 \f[R]
 .fi
 .SS Parameters
-.IP \[bu] 2
-\f[V]str\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]str\f[R]
 A \f[V]String\f[R] that is a target of the match.
-.RE
 .SS Return value
 .PP
 An \f[V]Array\f[R] whose contents depend on the presence or absence of
@@ -51,7 +51,7 @@ If the \f[V]g\f[R] flag is not used, only the first complete match and
 its related capturing groups are returned.
 In this case, \f[V]match()\f[R] will return the same result as
 \f[V]RegExp.prototype.exec()\f[R] (an array with some extra properties).
-.SH Description
+.SH DESCRIPTION
 .PP
 This method is called internally in \f[V]String.prototype.match()\f[R].
 .PP
@@ -122,7 +122,7 @@ This method exists for customizing match behavior within
 .PP
 In addition, the \f[V]\[at]\[at]match\f[R] property is used to check
 whether an object is a regular expression.
-.SH Examples
+.SH EXAMPLES
 .SS Direct call
 .PP
 This method can be used in \f[I]almost\f[R] the same way as
@@ -164,7 +164,7 @@ console.log(result.group(2)); // 01
 console.log(result.group(3)); // 02
 \f[R]
 .fi
-.SH See also
+.SH SEE ALSO
 .IP \[bu] 2
 Polyfill of \f[V]RegExp.prototype[\[at]\[at]match]\f[R] in
 \f[V]core-js\f[R] (https://github.com/zloirock/core-js#ecmascript-string-and-regexp)

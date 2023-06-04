@@ -14,13 +14,16 @@
 . ftr VB CB
 . ftr VBI CBI
 .\}
-.TH "WeakSet.WeakSet" "JS" "2023-06-02" "JavaScript" "JavaScript Reference Manual"
+.TH "WeakSet.WeakSet" "JS" "June 2, 2023" "JavaScript" "JavaScript Reference Manual"
 .hy
-.SH Synopsis
+.SH NAME
+.PP
+WeakSet.WeakSet - WeakSet() constructor
+.SH SYNOPSIS
 .PP
 The \f[B]\f[VB]WeakSet()\f[B]\f[R] constructor creates \f[V]WeakSet\f[R]
 objects.
-.SH Syntax
+.SH SYNTAX
 .IP
 .nf
 \f[C]
@@ -36,15 +39,12 @@ Attempting to call it without \f[V]new\f[R] throws a
 \f[V]TypeError\f[R].
 .RE
 .SS Parameters
-.IP \[bu] 2
-\f[V]iterable\f[R] \f[I](optional)\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]iterable\f[R] \f[I](optional)\f[R]
 If an iterable object is passed, all of its elements will be added to
 the new \f[V]WeakSet\f[R].
 null is treated as undefined.
-.RE
-.SH Examples
+.SH EXAMPLES
 .SS Using the WeakSet object
 .IP
 .nf
@@ -69,7 +69,7 @@ Note that \f[V]foo !== bar\f[R].
 While they are similar objects, \f[I]they are not \f[BI]the same
 object\f[I]\f[R].
 And so they are both added to the set.
-.SH See also
+.SH SEE ALSO
 .IP \[bu] 2
 Polyfill of \f[V]WeakSet\f[R] in
 \f[V]core-js\f[R] (https://github.com/zloirock/core-js#weakset)

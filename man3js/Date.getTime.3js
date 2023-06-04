@@ -14,14 +14,17 @@
 . ftr VB CB
 . ftr VBI CBI
 .\}
-.TH "Date.getTime" "JS" "2023-06-02" "JavaScript" "JavaScript Reference Manual"
+.TH "Date.getTime" "JS" "June 2, 2023" "JavaScript" "JavaScript Reference Manual"
 .hy
-.SH Synopsis
+.SH NAME
+.PP
+Date.getTime - Date.prototype.getTime()
+.SH SYNOPSIS
 .PP
 The \f[B]\f[VB]getTime()\f[B]\f[R] method of \f[V]Date\f[R] instances
 returns the number of milliseconds for this date since the epoch, which
 is defined as the midnight at the beginning of January 1, 1970, UTC.
-.SH Syntax
+.SH SYNTAX
 .IP
 .nf
 \f[C]
@@ -32,7 +35,7 @@ getTime()
 .PP
 A number representing the timestamp, in milliseconds, of this date.
 Returns \f[V]NaN\f[R] if the date is invalid.
-.SH Description
+.SH DESCRIPTION
 .PP
 \f[V]Date\f[R] objects are fundamentally represented by a timestamp, and
 this method allows you to retrieve the timestamp.
@@ -69,7 +72,7 @@ new Date().getTime();
 // \&...
 \f[R]
 .fi
-.SH Examples
+.SH EXAMPLES
 .SS Using getTime() for copying dates
 .PP
 Constructing a date object with the identical time value.
@@ -110,7 +113,7 @@ console.log(\[ga]Operation took ${end.getTime() - start.getTime()} msec\[ga]);
 \f[V]Performance.now()\f[R] can provide more reliable and precise
 measurements of elapsed time than \f[V]Date.now()\f[R].
 .RE
-.SH See also
+.SH SEE ALSO
 .IP \[bu] 2
 \f[V]Date.prototype.setTime()\f[R]
 .IP \[bu] 2

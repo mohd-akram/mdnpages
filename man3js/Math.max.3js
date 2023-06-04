@@ -14,14 +14,17 @@
 . ftr VB CB
 . ftr VBI CBI
 .\}
-.TH "Math.max" "JS" "2023-06-02" "JavaScript" "JavaScript Reference Manual"
+.TH "Math.max" "JS" "June 2, 2023" "JavaScript" "JavaScript Reference Manual"
 .hy
-.SH Synopsis
+.SH NAME
+.PP
+Math.max - Math.max()
+.SH SYNOPSIS
 .PP
 The \f[B]\f[VB]Math.max()\f[B]\f[R] static method returns the largest of
 the numbers given as input parameters, or -\f[V]Infinity\f[R] if there
 are no parameters.
-.SH Syntax
+.SH SYNTAX
 .IP
 .nf
 \f[C]
@@ -32,21 +35,17 @@ Math.max(value0, value1, /* \&... ,*/ valueN)
 \f[R]
 .fi
 .SS Parameters
-.IP \[bu] 2
-\f[V]value1\f[R], \f[V]value2\f[R], \&...
-, \f[V]valueN\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]value1\f[R], \f[B]value2\f[R], \&... , \f[B]valueN\f[R]
 Zero or more numbers among which the largest value will be selected and
 returned.
-.RE
 .SS Return value
 .PP
 The largest of the given numbers.
 Returns \f[V]NaN\f[R] if any of the parameters is or is converted into
 \f[V]NaN\f[R].
 Returns -\f[V]Infinity\f[R] if no parameters are provided.
-.SH Description
+.SH DESCRIPTION
 .PP
 Because \f[V]max()\f[R] is a static method of \f[V]Math\f[R], you always
 use it as \f[V]Math.max()\f[R], rather than as a method of a
@@ -54,7 +53,7 @@ use it as \f[V]Math.max()\f[R], rather than as a method of a
 .PP
 \f[V]Math.max.length\f[R] is 2, which weakly signals that it\[cq]s
 designed to handle at least two parameters.
-.SH Examples
+.SH EXAMPLES
 .SS Using Math.max()
 .IP
 .nf
@@ -106,6 +105,6 @@ fail or return the wrong result if the array has too many elements,
 because they try to pass the array elements as function parameters.
 See Using apply and built-in functions for more details.
 The \f[V]reduce\f[R] solution does not have this problem.
-.SH See also
+.SH SEE ALSO
 .IP \[bu] 2
 \f[V]Math.min()\f[R]

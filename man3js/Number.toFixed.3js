@@ -14,13 +14,16 @@
 . ftr VB CB
 . ftr VBI CBI
 .\}
-.TH "Number.toFixed" "JS" "2023-06-02" "JavaScript" "JavaScript Reference Manual"
+.TH "Number.toFixed" "JS" "June 2, 2023" "JavaScript" "JavaScript Reference Manual"
 .hy
-.SH Synopsis
+.SH NAME
+.PP
+Number.toFixed - Number.prototype.toFixed()
+.SH SYNOPSIS
 .PP
 The \f[B]\f[VB]toFixed()\f[B]\f[R] method formats a number using
 fixed-point notation.
-.SH Syntax
+.SH SYNTAX
 .IP
 .nf
 \f[C]
@@ -29,33 +32,24 @@ toFixed(digits)
 \f[R]
 .fi
 .SS Parameters
-.IP \[bu] 2
-\f[V]digits\f[R] \f[I](optional)\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]digits\f[R] \f[I](optional)\f[R]
 The number of digits to appear after the decimal point; should be a
 value between \f[V]0\f[R] and \f[V]100\f[R], inclusive.
 If this argument is omitted, it is treated as \f[V]0\f[R].
-.RE
 .SS Return value
 .PP
 A string representing the given number using fixed-point notation.
 .SS Exceptions
-.IP \[bu] 2
-\f[V]RangeError\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]RangeError\f[R]
 Thrown if \f[V]digits\f[R] is not between \f[V]1\f[R] and \f[V]100\f[R]
 (inclusive).
-.RE
-.IP \[bu] 2
-\f[V]TypeError\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]TypeError\f[R]
 Thrown if this method is invoked on an object that is not a
 \f[V]Number\f[R].
-.RE
-.SH Description
+.SH DESCRIPTION
 .PP
 The \f[V]toFixed()\f[R] method returns a string representation of
 \f[V]numObj\f[R] that does not use exponential notation and has exactly
@@ -94,7 +88,7 @@ For example:
 (0.3).toFixed(50); // \[aq]0.29999999999999998889776975374843459576368331909180\[aq]
 \f[R]
 .fi
-.SH Examples
+.SH EXAMPLES
 .SS Using toFixed()
 .IP
 .nf
@@ -129,7 +123,7 @@ to group the negative number expression to get a string.
 (-2.34).toFixed(1); // \[aq]-2.3\[aq]
 \f[R]
 .fi
-.SH See also
+.SH SEE ALSO
 .IP \[bu] 2
 \f[V]Number.prototype.toExponential()\f[R]
 .IP \[bu] 2

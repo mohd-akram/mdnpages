@@ -14,15 +14,18 @@
 . ftr VB CB
 . ftr VBI CBI
 .\}
-.TH "Date.\[at]\[at]toPrimitive" "JS" "2023-06-02" "JavaScript" "JavaScript Reference Manual"
+.TH "Date.\[at]\[at]toPrimitive" "JS" "June 2, 2023" "JavaScript" "JavaScript Reference Manual"
 .hy
-.SH Synopsis
+.SH NAME
+.PP
+Date.\[at]\[at]toPrimitive - Date.prototype\[at]\[at]toPrimitive
+.SH SYNOPSIS
 .PP
 The \f[B]\f[VB][\[at]\[at]toPrimitive]()\f[B]\f[R] method of
 \f[V]Date\f[R] instances returns a primitive value representing this
 date.
 It may either be a string or a number, depending on the hint given.
-.SH Syntax
+.SH SYNTAX
 .IP
 .nf
 \f[C]
@@ -30,19 +33,16 @@ date[Symbol.toPrimitive](hint)
 \f[R]
 .fi
 .SS Parameters
-.IP \[bu] 2
-\f[V]hint\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]hint\f[R]
 A string representing the type of the primitive value to return.
 The following values are valid:
-.RS 2
+.RS
 .IP \[bu] 2
 \f[V]\[dq]string\[dq]\f[R] or \f[V]\[dq]default\[dq]\f[R]: The method
 should return a string.
 .IP \[bu] 2
 \f[V]\[dq]number\[dq]\f[R]: The method should return a number.
-.RE
 .RE
 .SS Return value
 .PP
@@ -55,14 +55,11 @@ If \f[V]hint\f[R] is \f[V]\[dq]number\[dq]\f[R], this method returns a
 number by coercing the \f[V]this\f[R] value to a number (first trying
 \f[V]valueOf()\f[R] then trying \f[V]toString()\f[R]).
 .SS Exceptions
-.IP \[bu] 2
-\f[V]TypeError\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]TypeError\f[R]
 Thrown if the \f[V]hint\f[R] argument is not one of the three valid
 values.
-.RE
-.SH Description
+.SH DESCRIPTION
 .PP
 The \f[V][\[at]\[at]toPrimitive]()\f[R] method is part of the type
 coercion protocol.
@@ -83,7 +80,7 @@ With the custom \f[V][\[at]\[at]toPrimitive]()\f[R],
 \f[V]new Date(0) + 1\f[R] returns
 \f[V]\[dq]Thu Jan 01 1970 00:00:00 GMT+0000 (Coordinated Universal Time)1\[dq]\f[R]
 (a string) instead of \f[V]1\f[R] (a number).
-.SH Examples
+.SH EXAMPLES
 .SS Using [\[at]\[at]toPrimitive]()
 .IP
 .nf
@@ -95,6 +92,6 @@ d[Symbol.toPrimitive](\[dq]number\[dq]); // 0
 d[Symbol.toPrimitive](\[dq]default\[dq]); // \[dq]Thu Jan 01 1970 00:00:00 GMT+0000 (Coordinated Universal Time)\[dq]
 \f[R]
 .fi
-.SH See also
+.SH SEE ALSO
 .IP \[bu] 2
 \f[V]Symbol.toPrimitive\f[R]

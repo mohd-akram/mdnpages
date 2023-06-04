@@ -14,9 +14,12 @@
 . ftr VB CB
 . ftr VBI CBI
 .\}
-.TH "Function.arguments" "JS" "2023-06-02" "JavaScript" "JavaScript Reference Manual"
+.TH "Function.arguments" "JS" "June 2, 2023" "JavaScript" "JavaScript Reference Manual"
 .hy
-.SH Synopsis
+.SH NAME
+.PP
+Function.arguments - Function.prototype.arguments
+.SH SYNOPSIS
 .PP
 *(deprecated)**(non-standard)*
 .RS
@@ -32,7 +35,7 @@ The \f[B]\f[VB]arguments\f[B]\f[R] accessor property of
 function.
 For strict, arrow, async, and generator functions, accessing the
 \f[V]arguments\f[R] property throws a \f[V]TypeError\f[R].
-.SH Description
+.SH DESCRIPTION
 .PP
 The value of \f[V]arguments\f[R] is an array-like object corresponding
 to the arguments passed to a function.
@@ -88,7 +91,7 @@ and Safari extend the initial poison-pill
 // Arguments { \&... }
 \f[R]
 .fi
-.SH Examples
+.SH EXAMPLES
 .SS Using the arguments property
 .IP
 .nf

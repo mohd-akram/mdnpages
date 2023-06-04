@@ -14,9 +14,12 @@
 . ftr VB CB
 . ftr VBI CBI
 .\}
-.TH "RegExp.lastMatch" "JS" "2023-06-02" "JavaScript" "JavaScript Reference Manual"
+.TH "RegExp.lastMatch" "JS" "June 2, 2023" "JavaScript" "JavaScript Reference Manual"
 .hy
-.SH Synopsis
+.SH NAME
+.PP
+RegExp.lastMatch - RegExp.lastMatch ($&)
+.SH SYNOPSIS
 .PP
 \f[I](deprecated)\f[R]
 .RS
@@ -29,7 +32,7 @@ See deprecated RegExp features for more information.
 The \f[B]\f[VB]RegExp.lastMatch\f[B]\f[R] static accessor property
 returns the last matched substring.
 \f[V]RegExp[\[dq]$&\[dq]]\f[R] is an alias for this property.
-.SH Description
+.SH DESCRIPTION
 .PP
 Because \f[V]lastMatch\f[R] is a static property of \f[V]RegExp\f[R],
 you always use it as \f[V]RegExp.lastMatch\f[R] or
@@ -50,7 +53,7 @@ Use the bracket notation instead.
 \f[V]$&\f[R] can also be used in the replacement string of
 \f[V]String.prototype.replace()\f[R], but that\[cq]s unrelated to the
 \f[V]RegExp[\[dq]$&\[dq]]\f[R] legacy property.
-.SH Examples
+.SH EXAMPLES
 .SS Using lastMatch and $&
 .IP
 .nf
@@ -61,7 +64,7 @@ RegExp.lastMatch; // \[dq]hi\[dq]
 RegExp[\[dq]$&\[dq]]; // \[dq]hi\[dq]
 \f[R]
 .fi
-.SH See also
+.SH SEE ALSO
 .IP \[bu] 2
 \f[V]RegExp.input ($_)\f[R]
 .IP \[bu] 2

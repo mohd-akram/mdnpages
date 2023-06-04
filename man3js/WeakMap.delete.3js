@@ -14,13 +14,16 @@
 . ftr VB CB
 . ftr VBI CBI
 .\}
-.TH "WeakMap.delete" "JS" "2023-06-02" "JavaScript" "JavaScript Reference Manual"
+.TH "WeakMap.delete" "JS" "June 2, 2023" "JavaScript" "JavaScript Reference Manual"
 .hy
-.SH Synopsis
+.SH NAME
+.PP
+WeakMap.delete - WeakMap.prototype.delete()
+.SH SYNOPSIS
 .PP
 The \f[B]\f[VB]delete()\f[B]\f[R] method removes the specified element
 from a \f[V]WeakMap\f[R] object.
-.SH Syntax
+.SH SYNTAX
 .IP
 .nf
 \f[C]
@@ -28,12 +31,9 @@ delete(key)
 \f[R]
 .fi
 .SS Parameters
-.IP \[bu] 2
-\f[V]key\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]key\f[R]
 The key of the element to remove from the \f[V]WeakMap\f[R] object.
-.RE
 .SS Return value
 .PP
 \f[V]true\f[R] if an element in the \f[V]WeakMap\f[R] object has been
@@ -41,7 +41,7 @@ removed successfully.
 \f[V]false\f[R] if the key is not found in the \f[V]WeakMap\f[R].
 Always returns \f[V]false\f[R] if \f[V]key\f[R] is not an object or a
 non-registered symbol.
-.SH Examples
+.SH EXAMPLES
 .SS Using the delete() method
 .IP
 .nf
@@ -54,6 +54,6 @@ wm.delete(window); // Returns true. Successfully removed.
 wm.has(window); // Returns false. The window object is no longer in the WeakMap.
 \f[R]
 .fi
-.SH See also
+.SH SEE ALSO
 .IP \[bu] 2
 \f[V]WeakMap\f[R]

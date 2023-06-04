@@ -14,13 +14,16 @@
 . ftr VB CB
 . ftr VBI CBI
 .\}
-.TH "Array.isArray" "JS" "2023-06-02" "JavaScript" "JavaScript Reference Manual"
+.TH "Array.isArray" "JS" "June 2, 2023" "JavaScript" "JavaScript Reference Manual"
 .hy
-.SH Synopsis
+.SH NAME
+.PP
+Array.isArray - Array.isArray()
+.SH SYNOPSIS
 .PP
 The \f[B]\f[VB]Array.isArray()\f[B]\f[R] static method determines
 whether the passed value is an \f[V]Array\f[R].
-.SH Syntax
+.SH SYNTAX
 .IP
 .nf
 \f[C]
@@ -28,19 +31,16 @@ Array.isArray(value)
 \f[R]
 .fi
 .SS Parameters
-.IP \[bu] 2
-\f[V]value\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]value\f[R]
 The value to be checked.
-.RE
 .SS Return value
 .PP
 \f[V]true\f[R] if \f[V]value\f[R] is an \f[V]Array\f[R]; otherwise,
 \f[V]false\f[R].
 \f[V]false\f[R] is always returned if \f[V]value\f[R] is a
 \f[V]TypedArray\f[R] instance.
-.SH Description
+.SH DESCRIPTION
 .PP
 \f[V]Array.isArray()\f[R] checks if the passed value is an
 \f[V]Array\f[R].
@@ -60,7 +60,7 @@ details.
 \f[V]Array.isArray()\f[R] also rejects objects with
 \f[V]Array.prototype\f[R] in its prototype chain but aren\[cq]t actual
 arrays, which \f[V]instanceof Array\f[R] would accept.
-.SH Examples
+.SH EXAMPLES
 .SS Using Array.isArray()
 .IP
 .nf
@@ -108,7 +108,7 @@ Array.isArray(arr); // true
 arr instanceof Array; // false
 \f[R]
 .fi
-.SH See also
+.SH SEE ALSO
 .IP \[bu] 2
 Polyfill of \f[V]Array.isArray\f[R] in
 \f[V]core-js\f[R] (https://github.com/zloirock/core-js#ecmascript-array)

@@ -14,9 +14,12 @@
 . ftr VB CB
 . ftr VBI CBI
 .\}
-.TH "Array.groupToMap" "JS" "2023-06-02" "JavaScript" "JavaScript Reference Manual"
+.TH "Array.groupToMap" "JS" "June 2, 2023" "JavaScript" "JavaScript Reference Manual"
 .hy
-.SH Synopsis
+.SH NAME
+.PP
+Array.groupToMap - Array.prototype.groupToMap()
+.SH SYNOPSIS
 .PP
 The \f[B]\f[VB]groupToMap()\f[B]\f[R] method groups the elements of the
 calling array using the values returned by a provided testing function.
@@ -29,7 +32,7 @@ associated with an object, and in particular when that object might
 change over time.
 If the object is invariant, you might instead represent it using a
 string, and group elements with \f[V]Array.prototype.group()\f[R].
-.SH Syntax
+.SH SYNTAX
 .IP
 .nf
 \f[C]
@@ -38,47 +41,32 @@ groupToMap(callbackFn, thisArg)
 \f[R]
 .fi
 .SS Parameters
-.IP \[bu] 2
-\f[V]callbackFn\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]callbackFn\f[R]
 A function to execute for each element in the array.
 It should return a value (object or primitive) indicating the group of
 the current element.
 The function is called with the following arguments:
-.RS 2
-.IP \[bu] 2
-\f[V]element\f[R]
-.RS 2
-.IP \[bu] 2
+.RS
+.TP
+\f[B]element\f[R]
 The current element being processed in the array.
-.RE
-.IP \[bu] 2
-\f[V]index\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]index\f[R]
 The index of the current element being processed in the array.
-.RE
-.IP \[bu] 2
-\f[V]array\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]array\f[R]
 The array \f[V]groupToMap()\f[R] was called upon.
 .RE
-.RE
-.RE
-.IP \[bu] 2
-\f[V]thisArg\f[R] \f[I](optional)\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]thisArg\f[R] \f[I](optional)\f[R]
 A value to use as \f[V]this\f[R] when executing \f[V]callbackFn\f[R].
 See iterative methods.
-.RE
 .SS Return value
 .PP
 A \f[V]Map\f[R] object with keys for each group, each assigned to an
 array containing the elements of the associated group.
-.SH Description
+.SH DESCRIPTION
 .PP
 The \f[V]groupToMap()\f[R] method is an iterative method.
 It calls a provided \f[V]callbackFn\f[R] function once for each element
@@ -146,7 +134,7 @@ must use the same object that was originally used as a key in the
 You can\[cq]t use another object that just happens to have the same name
 and properties.
 .RE
-.SH Examples
+.SH EXAMPLES
 .SS Using groupToMap()
 .PP
 First we define an array containing objects representing an inventory of
@@ -236,7 +224,7 @@ console.log(Array.prototype.groupToMap.call(arrayLike, (x) => x % 2));
 // Map { 0 => [2, 4], 1 => [3] }
 \f[R]
 .fi
-.SH See also
+.SH SEE ALSO
 .IP \[bu] 2
 Polyfill of \f[V]Array.prototype.groupToMap\f[R] in
 \f[V]core-js\f[R] (https://github.com/zloirock/core-js#array-grouping)

@@ -15,13 +15,16 @@
 . ftr VB CB
 . ftr VBI CBI
 .\}
-.TH "TypedArray.BYTES_PER_ELEMENT" "JS" "2023-06-02" "JavaScript" "JavaScript Reference Manual"
+.TH "TypedArray.BYTES_PER_ELEMENT" "JS" "June 2, 2023" "JavaScript" "JavaScript Reference Manual"
 .hy
-.SH Synopsis
+.SH NAME
+.PP
+TypedArray.BYTES_PER_ELEMENT - TypedArray.BYTES_PER_ELEMENT
+.SH SYNOPSIS
 .PP
 The \f[B]\f[VB]TypedArray.BYTES_PER_ELEMENT\f[B]\f[R] static data
 property represents the size in bytes of each element in a typed array.
-.SH Value
+.SH VALUE
 .PP
 A number whose value depends on the type of \f[V]TypedArray\f[R].
 .PP
@@ -44,7 +47,7 @@ T}@T{
 no
 T}
 .TE
-.SH Description
+.SH DESCRIPTION
 .PP
 \f[V]TypedArray\f[R] objects differ from each other in the number of
 bytes per element and in the way the bytes are interpreted.
@@ -64,7 +67,7 @@ constructor\[cq]s \f[V]prototype\f[R].
 console.log(Object.hasOwn(Int8Array.prototype, \[dq]BYTES_PER_ELEMENT\[dq])); // true
 \f[R]
 .fi
-.SH Examples
+.SH EXAMPLES
 .SS Using BYTES_PER_ELEMENT
 .PP
 As a static property:
@@ -102,7 +105,7 @@ new BigInt64Array([]).BYTES_PER_ELEMENT; // 8
 new BigUint64Array([]).BYTES_PER_ELEMENT; // 8
 \f[R]
 .fi
-.SH See also
+.SH SEE ALSO
 .IP \[bu] 2
 JavaScript typed arrays
 .IP \[bu] 2

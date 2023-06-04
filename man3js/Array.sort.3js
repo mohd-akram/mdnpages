@@ -15,9 +15,12 @@
 . ftr VB CB
 . ftr VBI CBI
 .\}
-.TH "Array.sort" "JS" "2023-06-02" "JavaScript" "JavaScript Reference Manual"
+.TH "Array.sort" "JS" "June 2, 2023" "JavaScript" "JavaScript Reference Manual"
 .hy
-.SH Synopsis
+.SH NAME
+.PP
+Array.sort - Array.prototype.sort()
+.SH SYNOPSIS
 .PP
 The \f[B]\f[VB]sort()\f[B]\f[R] method sorts the elements of an array
 \f[I]in place (https://en.wikipedia.org/wiki/In-place_algorithm)\f[R]
@@ -31,7 +34,7 @@ depends on the implementation.
 .PP
 To sort the elements in an array without mutating the original array,
 use \f[V]toSorted()\f[R].
-.SH Syntax
+.SH SYNTAX
 .IP
 .nf
 \f[C]
@@ -40,33 +43,24 @@ sort(compareFn)
 \f[R]
 .fi
 .SS Parameters
-.IP \[bu] 2
-\f[V]compareFn\f[R] \f[I](optional)\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]compareFn\f[R] \f[I](optional)\f[R]
 A function that defines the sort order.
 The return value should be a number whose positivity indicates the
 relative order of the two elements.
 The function is called with the following arguments:
-.RS 2
-.IP \[bu] 2
-\f[V]a\f[R]
-.RS 2
-.IP \[bu] 2
+.RS
+.TP
+\f[B]a\f[R]
 The first element for comparison.
 Will never be \f[V]undefined\f[R].
-.RE
-.IP \[bu] 2
-\f[V]b\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]b\f[R]
 The second element for comparison.
 Will never be \f[V]undefined\f[R].
-.RE
 .PP
 If omitted, the array elements are converted to strings, then sorted
 according to each character\[cq]s Unicode code point value.
-.RE
 .RE
 .SS Return value
 .PP
@@ -74,7 +68,7 @@ The reference to the original array, now sorted.
 Note that the array is sorted \f[I]in
 place (https://en.wikipedia.org/wiki/In-place_algorithm)\f[R], and no
 copy is made.
-.SH Description
+.SH DESCRIPTION
 .PP
 If \f[V]compareFn\f[R] is not supplied, all non-\f[V]undefined\f[R]
 array elements are sorted by converting them to strings and comparing
@@ -198,7 +192,7 @@ It only expects the \f[V]this\f[R] value to have a \f[V]length\f[R]
 property and integer-keyed properties.
 Although strings are also array-like, this method is not suitable to be
 applied on them, as strings are immutable.
-.SH Examples
+.SH EXAMPLES
 .SS Creating, displaying, and sorting an array
 .PP
 The following example creates four arrays and displays the original
@@ -489,7 +483,7 @@ console.log(Array.prototype.sort.call(arrayLike));
 // { \[aq]0\[aq]: 4, \[aq]1\[aq]: 5, length: 3, unrelated: \[aq]foo\[aq] }
 \f[R]
 .fi
-.SH See also
+.SH SEE ALSO
 .IP \[bu] 2
 Polyfill of \f[V]Array.prototype.sort\f[R] with modern behavior like
 stable sort in

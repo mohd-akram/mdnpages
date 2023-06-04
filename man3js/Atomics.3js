@@ -14,15 +14,18 @@
 . ftr VB CB
 . ftr VBI CBI
 .\}
-.TH "Atomics" "JS" "2023-06-02" "JavaScript" "JavaScript Reference Manual"
+.TH "Atomics" "JS" "June 2, 2023" "JavaScript" "JavaScript Reference Manual"
 .hy
-.SH Synopsis
+.SH NAME
+.PP
+Atomics - Atomics
+.SH SYNOPSIS
 .PP
 The \f[B]\f[VB]Atomics\f[B]\f[R] namespace object contains static
 methods for carrying out atomic operations.
 They are used with \f[V]SharedArrayBuffer\f[R] and \f[V]ArrayBuffer\f[R]
 objects.
-.SH Description
+.SH DESCRIPTION
 .PP
 Unlike most global objects, \f[V]Atomics\f[R] is not a constructor.
 You cannot use it with the \f[V]new\f[R] operator or invoke the
@@ -42,97 +45,62 @@ The \f[V]wait()\f[R] and \f[V]notify()\f[R] methods are modeled on Linux
 futexes (\[lq]fast user-space mutex\[rq]) and provide ways for waiting
 until a certain condition becomes true and are typically used as
 blocking constructs.
-.SH Static properties
-.IP \[bu] 2
-\f[V]Atomics[\[at]\[at]toStringTag]\f[R]
-.RS 2
-.IP \[bu] 2
+.SH STATIC PROPERTIES
+.TP
+\f[B]Atomics[\[at]\[at]toStringTag]\f[R]
 The initial value of the \f[V]\[at]\[at]toStringTag\f[R] property is the
 string \f[V]\[dq]Atomics\[dq]\f[R].
 This property is used in \f[V]Object.prototype.toString()\f[R].
-.RE
-.SH Static methods
-.IP \[bu] 2
-\f[V]Atomics.add()\f[R]
-.RS 2
-.IP \[bu] 2
+.SH STATIC METHODS
+.TP
+\f[B]Atomics.add()\f[R]
 Adds the provided value to the existing value at the specified index of
 the array.
 Returns the old value at that index.
-.RE
-.IP \[bu] 2
-\f[V]Atomics.and()\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]Atomics.and()\f[R]
 Computes a bitwise AND on the value at the specified index of the array
 with the provided value.
 Returns the old value at that index.
-.RE
-.IP \[bu] 2
-\f[V]Atomics.compareExchange()\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]Atomics.compareExchange()\f[R]
 Stores a value at the specified index of the array, if it equals a
 value.
 Returns the old value.
-.RE
-.IP \[bu] 2
-\f[V]Atomics.exchange()\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]Atomics.exchange()\f[R]
 Stores a value at the specified index of the array.
 Returns the old value.
-.RE
-.IP \[bu] 2
-\f[V]Atomics.isLockFree()\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]Atomics.isLockFree()\f[R]
 An optimization primitive that can be used to determine whether to use
 locks or atomic operations.
 Returns \f[V]true\f[R] if an atomic operation on arrays of the given
 element size will be implemented using a hardware atomic operation (as
 opposed to a lock).
 Experts only.
-.RE
-.IP \[bu] 2
-\f[V]Atomics.load()\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]Atomics.load()\f[R]
 Returns the value at the specified index of the array.
-.RE
-.IP \[bu] 2
-\f[V]Atomics.notify()\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]Atomics.notify()\f[R]
 Notifies agents that are waiting on the specified index of the array.
 Returns the number of agents that were notified.
-.RE
-.IP \[bu] 2
-\f[V]Atomics.or()\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]Atomics.or()\f[R]
 Computes a bitwise OR on the value at the specified index of the array
 with the provided value.
 Returns the old value at that index.
-.RE
-.IP \[bu] 2
-\f[V]Atomics.store()\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]Atomics.store()\f[R]
 Stores a value at the specified index of the array.
 Returns the value.
-.RE
-.IP \[bu] 2
-\f[V]Atomics.sub()\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]Atomics.sub()\f[R]
 Subtracts a value at the specified index of the array.
 Returns the old value at that index.
-.RE
-.IP \[bu] 2
-\f[V]Atomics.wait()\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]Atomics.wait()\f[R]
 Verifies that the specified index of the array still contains a value
 and sleeps awaiting or times out.
 Returns either \f[V]\[dq]ok\[dq]\f[R], \f[V]\[dq]not-equal\[dq]\f[R], or
@@ -141,24 +109,17 @@ If waiting is not allowed in the calling agent then it throws an
 exception.
 (Most browsers will not allow \f[V]wait()\f[R] on the browser\[cq]s main
 thread.)
-.RE
-.IP \[bu] 2
-\f[V]Atomics.waitAsync()\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]Atomics.waitAsync()\f[R]
 Waits asynchronously (i.e.\ without blocking, unlike
 \f[V]Atomics.wait\f[R]) on a shared memory location and returns a
 \f[V]Promise\f[R].
-.RE
-.IP \[bu] 2
-\f[V]Atomics.xor()\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]Atomics.xor()\f[R]
 Computes a bitwise XOR on the value at the specified index of the array
 with the provided value.
 Returns the old value at that index.
-.RE
-.SH Examples
+.SH EXAMPLES
 .SS Using Atomics
 .IP
 .nf
@@ -232,7 +193,7 @@ Atomics.store(int32, 0, 123);
 Atomics.notify(int32, 0, 1);
 \f[R]
 .fi
-.SH See also
+.SH SEE ALSO
 .IP \[bu] 2
 \f[V]ArrayBuffer\f[R]
 .IP \[bu] 2

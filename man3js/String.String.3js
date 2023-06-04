@@ -14,14 +14,17 @@
 . ftr VB CB
 . ftr VBI CBI
 .\}
-.TH "String.String" "JS" "2023-06-02" "JavaScript" "JavaScript Reference Manual"
+.TH "String.String" "JS" "June 2, 2023" "JavaScript" "JavaScript Reference Manual"
 .hy
-.SH Synopsis
+.SH NAME
+.PP
+String.String - String() constructor
+.SH SYNOPSIS
 .PP
 The \f[B]\f[VB]String()\f[B]\f[R] constructor creates \f[V]String\f[R]
 objects.
 When called as a function, it returns primitive values of type String.
-.SH Syntax
+.SH SYNTAX
 .IP
 .nf
 \f[C]
@@ -36,12 +39,9 @@ String(thing)
 See Return value.
 .RE
 .SS Parameters
-.IP \[bu] 2
-\f[V]thing\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]thing\f[R]
 Anything to be converted to a string.
-.RE
 .SS Return value
 .PP
 When \f[V]String\f[R] is called as a constructor (with \f[V]new\f[R]),
@@ -58,7 +58,7 @@ the description of the Symbol, instead of throwing.
 \f[B]Warning:\f[R] You should rarely find yourself using
 \f[V]String\f[R] as a constructor.
 .RE
-.SH Examples
+.SH EXAMPLES
 .SS String constructor and String function
 .PP
 String function and String constructor produce different results:
@@ -102,6 +102,6 @@ const sym = Symbol(\[dq]example\[dq]);
 String(sym); // \[dq]Symbol(example)\[dq]
 \f[R]
 .fi
-.SH See also
+.SH SEE ALSO
 .IP \[bu] 2
 Text formatting in the JavaScript Guide

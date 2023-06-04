@@ -14,14 +14,17 @@
 . ftr VB CB
 . ftr VBI CBI
 .\}
-.TH "Array.of" "JS" "2023-06-02" "JavaScript" "JavaScript Reference Manual"
+.TH "Array.of" "JS" "June 2, 2023" "JavaScript" "JavaScript Reference Manual"
 .hy
-.SH Synopsis
+.SH NAME
+.PP
+Array.of - Array.of()
+.SH SYNOPSIS
 .PP
 The \f[B]\f[VB]Array.of()\f[B]\f[R] static method creates a new
 \f[V]Array\f[R] instance from a variable number of arguments, regardless
 of number or type of the arguments.
-.SH Syntax
+.SH SYNTAX
 .IP
 .nf
 \f[C]
@@ -32,16 +35,13 @@ Array.of(element0, element1, /* \&... ,*/ elementN)
 \f[R]
 .fi
 .SS Parameters
-.IP \[bu] 2
-\f[V]elementN\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]elementN\f[R]
 Elements used to create the array.
-.RE
 .SS Return value
 .PP
 A new \f[V]Array\f[R] instance.
-.SH Description
+.SH DESCRIPTION
 .PP
 The difference between \f[V]Array.of()\f[R] and the \f[V]Array()\f[R]
 constructor is in the handling of single arguments:
@@ -73,7 +73,7 @@ The final \f[V]length\f[R] will be set again when all elements are
 assigned.
 If the \f[V]this\f[R] value is not a constructor function, the plain
 \f[V]Array\f[R] constructor is used instead.
-.SH Examples
+.SH EXAMPLES
 .SS Using Array.of()
 .IP
 .nf
@@ -110,7 +110,7 @@ When the \f[V]this\f[R] value is not a constructor, a plain
 console.log(Array.of.call({}, 1)); // [ 1 ]
 \f[R]
 .fi
-.SH See also
+.SH SEE ALSO
 .IP \[bu] 2
 Polyfill of \f[V]Array.of\f[R] in
 \f[V]core-js\f[R] (https://github.com/zloirock/core-js#ecmascript-array)

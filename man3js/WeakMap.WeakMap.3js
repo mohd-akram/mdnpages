@@ -14,13 +14,16 @@
 . ftr VB CB
 . ftr VBI CBI
 .\}
-.TH "WeakMap.WeakMap" "JS" "2023-06-02" "JavaScript" "JavaScript Reference Manual"
+.TH "WeakMap.WeakMap" "JS" "June 2, 2023" "JavaScript" "JavaScript Reference Manual"
 .hy
-.SH Synopsis
+.SH NAME
+.PP
+WeakMap.WeakMap - WeakMap() constructor
+.SH SYNOPSIS
 .PP
 The \f[B]\f[VB]WeakMap()\f[B]\f[R] constructor creates \f[V]WeakMap\f[R]
 objects.
-.SH Syntax
+.SH SYNTAX
 .IP
 .nf
 \f[C]
@@ -36,10 +39,8 @@ Attempting to call it without \f[V]new\f[R] throws a
 \f[V]TypeError\f[R].
 .RE
 .SS Parameters
-.IP \[bu] 2
-\f[V]iterable\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]iterable\f[R]
 An \f[V]Array\f[R] or other iterable object that implements an
 \[at]\[at]iterator method that returns an iterator object that produces
 a two-element array-like object whose first element is a value that will
@@ -47,8 +48,7 @@ be used as a \f[V]WeakMap\f[R] key and whose second element is the value
 to associate with that key.
 Each key-value pair will be added to the new \f[V]WeakMap\f[R].
 null is treated as undefined.
-.RE
-.SH Examples
+.SH EXAMPLES
 .SS Using WeakMap
 .IP
 .nf
@@ -82,7 +82,7 @@ wm1.delete(o1);
 wm1.has(o1); // false
 \f[R]
 .fi
-.SH See also
+.SH SEE ALSO
 .IP \[bu] 2
 Polyfill of \f[V]WeakMap\f[R] in
 \f[V]core-js\f[R] (https://github.com/zloirock/core-js#weakmap)

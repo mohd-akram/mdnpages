@@ -14,15 +14,18 @@
 . ftr VB CB
 . ftr VBI CBI
 .\}
-.TH "Number.isFinite" "JS" "2023-06-02" "JavaScript" "JavaScript Reference Manual"
+.TH "Number.isFinite" "JS" "June 2, 2023" "JavaScript" "JavaScript Reference Manual"
 .hy
-.SH Synopsis
+.SH NAME
+.PP
+Number.isFinite - Number.isFinite()
+.SH SYNOPSIS
 .PP
 The \f[B]\f[VB]Number.isFinite()\f[B]\f[R] static method determines
 whether the passed value is a finite number \[em] that is, it checks
 that a given value is a number, and the number is neither positive
 \f[V]Infinity\f[R], negative \f[V]Infinity\f[R], nor \f[V]NaN\f[R].
-.SH Syntax
+.SH SYNTAX
 .IP
 .nf
 \f[C]
@@ -30,17 +33,14 @@ Number.isFinite(value)
 \f[R]
 .fi
 .SS Parameters
-.IP \[bu] 2
-\f[V]value\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]value\f[R]
 The value to be tested for finiteness.
-.RE
 .SS Return value
 .PP
 The boolean value \f[V]true\f[R] if the given value is a finite number.
 Otherwise \f[V]false\f[R].
-.SH Examples
+.SH EXAMPLES
 .SS Using isFinite()
 .IP
 .nf
@@ -68,7 +68,7 @@ isFinite(null); // true; coerced to number 0
 Number.isFinite(null); // false
 \f[R]
 .fi
-.SH See also
+.SH SEE ALSO
 .IP \[bu] 2
 Polyfill of \f[V]Number.isFinite\f[R] in
 \f[V]core-js\f[R] (https://github.com/zloirock/core-js#ecmascript-number)

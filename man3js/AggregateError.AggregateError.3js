@@ -14,13 +14,16 @@
 . ftr VB CB
 . ftr VBI CBI
 .\}
-.TH "AggregateError.AggregateError" "JS" "2023-06-02" "JavaScript" "JavaScript Reference Manual"
+.TH "AggregateError.AggregateError" "JS" "June 2, 2023" "JavaScript" "JavaScript Reference Manual"
 .hy
-.SH Synopsis
+.SH NAME
+.PP
+AggregateError.AggregateError - AggregateError() constructor
+.SH SYNOPSIS
 .PP
 The \f[B]\f[VB]AggregateError()\f[B]\f[R] constructor creates
 \f[V]AggregateError\f[R] objects.
-.SH Syntax
+.SH SYNTAX
 .IP
 .nf
 \f[C]
@@ -40,35 +43,23 @@ AggregateError(errors, message, options)
 Both create a new \f[V]AggregateError\f[R] instance.
 .RE
 .SS Parameters
-.IP \[bu] 2
-\f[V]errors\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]errors\f[R]
 An iterable of errors, may not actually be \f[V]Error\f[R] instances.
-.RE
-.IP \[bu] 2
-\f[V]message\f[R] \f[I](optional)\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]message\f[R] \f[I](optional)\f[R]
 An optional human-readable description of the aggregate error.
-.RE
-.IP \[bu] 2
-\f[V]options\f[R] \f[I](optional)\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]options\f[R] \f[I](optional)\f[R]
 An object that has the following properties:
-.RS 2
-.IP \[bu] 2
-\f[V]cause\f[R] \f[I](optional)\f[R]
-.RS 2
-.IP \[bu] 2
+.RS
+.TP
+\f[B]cause\f[R] \f[I](optional)\f[R]
 A property indicating the specific cause of the error.
 When catching and re-throwing an error with a more-specific or useful
 error message, this property can be used to pass the original error.
 .RE
-.RE
-.RE
-.SH Examples
+.SH EXAMPLES
 .SS Creating an AggregateError
 .IP
 .nf
@@ -83,7 +74,7 @@ try {
 }
 \f[R]
 .fi
-.SH See also
+.SH SEE ALSO
 .IP \[bu] 2
 Polyfill of \f[V]AggregateError\f[R] in
 \f[V]core-js\f[R] (https://github.com/zloirock/core-js#ecmascript-promise)

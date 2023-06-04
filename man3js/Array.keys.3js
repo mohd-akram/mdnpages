@@ -14,13 +14,16 @@
 . ftr VB CB
 . ftr VBI CBI
 .\}
-.TH "Array.keys" "JS" "2023-06-02" "JavaScript" "JavaScript Reference Manual"
+.TH "Array.keys" "JS" "June 2, 2023" "JavaScript" "JavaScript Reference Manual"
 .hy
-.SH Synopsis
+.SH NAME
+.PP
+Array.keys - Array.prototype.keys()
+.SH SYNOPSIS
 .PP
 The \f[B]\f[VB]keys()\f[B]\f[R] method returns a new \f[I]array
 iterator\f[R] object that contains the keys for each index in the array.
-.SH Syntax
+.SH SYNTAX
 .IP
 .nf
 \f[C]
@@ -30,7 +33,7 @@ keys()
 .SS Return value
 .PP
 A new iterable iterator object.
-.SH Description
+.SH DESCRIPTION
 .PP
 When used on sparse arrays, the \f[V]keys()\f[R] method iterates empty
 slots as if they have the value \f[V]undefined\f[R].
@@ -38,7 +41,7 @@ slots as if they have the value \f[V]undefined\f[R].
 The \f[V]keys()\f[R] method is generic.
 It only expects the \f[V]this\f[R] value to have a \f[V]length\f[R]
 property and integer-keyed properties.
-.SH Examples
+.SH EXAMPLES
 .SS Using keys() on sparse arrays
 .PP
 Unlike \f[V]Object.keys()\f[R], which only includes keys that actually
@@ -74,7 +77,7 @@ for (const entry of Array.prototype.keys.call(arrayLike)) {
 // 2
 \f[R]
 .fi
-.SH See also
+.SH SEE ALSO
 .IP \[bu] 2
 Polyfill of \f[V]Array.prototype.keys\f[R] in
 \f[V]core-js\f[R] (https://github.com/zloirock/core-js#ecmascript-array)

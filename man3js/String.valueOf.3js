@@ -14,13 +14,16 @@
 . ftr VB CB
 . ftr VBI CBI
 .\}
-.TH "String.valueOf" "JS" "2023-06-02" "JavaScript" "JavaScript Reference Manual"
+.TH "String.valueOf" "JS" "June 2, 2023" "JavaScript" "JavaScript Reference Manual"
 .hy
-.SH Synopsis
+.SH NAME
+.PP
+String.valueOf - String.prototype.valueOf()
+.SH SYNOPSIS
 .PP
 The \f[B]\f[VB]valueOf()\f[B]\f[R] method returns the primitive value of
 a \f[V]String\f[R] object.
-.SH Syntax
+.SH SYNTAX
 .IP
 .nf
 \f[C]
@@ -31,7 +34,7 @@ valueOf()
 .PP
 A string representing the primitive value of a given \f[V]String\f[R]
 object.
-.SH Description
+.SH DESCRIPTION
 .PP
 The \f[V]valueOf()\f[R] method of \f[V]String\f[R] returns the primitive
 value of a \f[V]String\f[R] object as a string data type.
@@ -39,7 +42,7 @@ This value is equivalent to \f[V]String.prototype.toString()\f[R].
 .PP
 This method is usually called internally by JavaScript and not
 explicitly in code.
-.SH Examples
+.SH EXAMPLES
 .SS Using \f[V]valueOf()\f[R]
 .IP
 .nf
@@ -48,7 +51,7 @@ const x = new String(\[dq]Hello world\[dq]);
 console.log(x.valueOf()); // \[aq]Hello world\[aq]
 \f[R]
 .fi
-.SH See also
+.SH SEE ALSO
 .IP \[bu] 2
 \f[V]String.prototype.toString()\f[R]
 .IP \[bu] 2

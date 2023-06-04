@@ -14,15 +14,18 @@
 . ftr VB CB
 . ftr VBI CBI
 .\}
-.TH "Date.setTime" "JS" "2023-06-02" "JavaScript" "JavaScript Reference Manual"
+.TH "Date.setTime" "JS" "June 2, 2023" "JavaScript" "JavaScript Reference Manual"
 .hy
-.SH Synopsis
+.SH NAME
+.PP
+Date.setTime - Date.prototype.setTime()
+.SH SYNOPSIS
 .PP
 The \f[B]\f[VB]setTime()\f[B]\f[R] method of \f[V]Date\f[R] instances
 changes the timestamp for this date, which is the number of milliseconds
 since the epoch, defined as the midnight at the beginning of January 1,
 1970, UTC.
-.SH Syntax
+.SH SYNTAX
 .IP
 .nf
 \f[C]
@@ -30,14 +33,11 @@ setTime(timeValue)
 \f[R]
 .fi
 .SS Parameters
-.IP \[bu] 2
-\f[V]timeValue\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]timeValue\f[R]
 An integer representing the new timestamp \[em] the number of
 milliseconds since the midnight at the beginning of January 1, 1970,
 UTC.
-.RE
 .SS Return value
 .PP
 Changes the \f[V]Date\f[R] object in place, and returns its new
@@ -45,7 +45,7 @@ timestamp.
 If \f[V]timeValue\f[R] is \f[V]NaN\f[R] (or other values that get
 coerced to \f[V]NaN\f[R], such as \f[V]undefined\f[R]), the date is set
 to Invalid Date and \f[V]NaN\f[R] is returned.
-.SH Examples
+.SH EXAMPLES
 .SS Using setTime()
 .IP
 .nf
@@ -55,7 +55,7 @@ const sameAsBigDay = new Date();
 sameAsBigDay.setTime(theBigDay.getTime());
 \f[R]
 .fi
-.SH See also
+.SH SEE ALSO
 .IP \[bu] 2
 \f[V]Date.prototype.getTime()\f[R]
 .IP \[bu] 2

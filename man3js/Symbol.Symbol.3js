@@ -14,13 +14,16 @@
 . ftr VB CB
 . ftr VBI CBI
 .\}
-.TH "Symbol.Symbol" "JS" "2023-06-02" "JavaScript" "JavaScript Reference Manual"
+.TH "Symbol.Symbol" "JS" "June 2, 2023" "JavaScript" "JavaScript Reference Manual"
 .hy
-.SH Synopsis
+.SH NAME
+.PP
+Symbol.Symbol - Symbol() constructor
+.SH SYNOPSIS
 .PP
 The \f[B]\f[VB]Symbol()\f[B]\f[R] function returns primitive values of
 type Symbol.
-.SH Syntax
+.SH SYNTAX
 .IP
 .nf
 \f[C]
@@ -36,15 +39,12 @@ Attempting to construct it with \f[V]new\f[R] throws a
 \f[V]TypeError\f[R].
 .RE
 .SS Parameters
-.IP \[bu] 2
-\f[V]description\f[R] \f[I](optional)\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]description\f[R] \f[I](optional)\f[R]
 A string.
 A description of the symbol which can be used for debugging but not to
 access the symbol itself.
-.RE
-.SH Examples
+.SH EXAMPLES
 .SS Creating symbols
 .PP
 To create a new primitive symbol, you write \f[V]Symbol()\f[R] with an
@@ -98,7 +98,7 @@ typeof sym; // \[dq]symbol\[dq]
 typeof symObj; // \[dq]object\[dq]
 \f[R]
 .fi
-.SH See also
+.SH SEE ALSO
 .IP \[bu] 2
 Polyfill of \f[V]Symbol\f[R] in
 \f[V]core-js\f[R] (https://github.com/zloirock/core-js#ecmascript-symbol)

@@ -14,14 +14,17 @@
 . ftr VB CB
 . ftr VBI CBI
 .\}
-.TH "RegExp.dotAll" "JS" "2023-06-02" "JavaScript" "JavaScript Reference Manual"
+.TH "RegExp.dotAll" "JS" "June 2, 2023" "JavaScript" "JavaScript Reference Manual"
 .hy
-.SH Synopsis
+.SH NAME
+.PP
+RegExp.dotAll - RegExp.prototype.dotAll
+.SH SYNOPSIS
 .PP
 The \f[B]\f[VB]dotAll\f[B]\f[R] accessor property of \f[V]RegExp\f[R]
 instances returns whether or not the \f[V]s\f[R] flag is used with this
 regular expression.
-.SH Description
+.SH DESCRIPTION
 .PP
 \f[V]RegExp.prototype.dotAll\f[R] has the value \f[V]true\f[R] if the
 \f[V]s\f[R] flag was used; otherwise, \f[V]false\f[R].
@@ -47,7 +50,7 @@ character, without exceptions.
 .PP
 The set accessor of \f[V]dotAll\f[R] is \f[V]undefined\f[R].
 You cannot change this property directly.
-.SH Examples
+.SH EXAMPLES
 .SS Using dotAll
 .IP
 .nf
@@ -71,7 +74,7 @@ console.log(str2.replace(regex2, \[dq]\[dq]));
 // example foo example
 \f[R]
 .fi
-.SH See also
+.SH SEE ALSO
 .IP \[bu] 2
 Polyfill of the \f[V]dotAll\f[R] flag in
 \f[V]core-js\f[R] (https://github.com/zloirock/core-js#ecmascript-string-and-regexp)

@@ -14,13 +14,16 @@
 . ftr VB CB
 . ftr VBI CBI
 .\}
-.TH "Set.Set" "JS" "2023-06-02" "JavaScript" "JavaScript Reference Manual"
+.TH "Set.Set" "JS" "June 2, 2023" "JavaScript" "JavaScript Reference Manual"
 .hy
-.SH Synopsis
+.SH NAME
+.PP
+Set.Set - Set() constructor
+.SH SYNOPSIS
 .PP
 The \f[B]\f[VB]Set()\f[B]\f[R] constructor creates \f[V]Set\f[R]
 objects.
-.SH Syntax
+.SH SYNTAX
 .IP
 .nf
 \f[C]
@@ -36,22 +39,19 @@ Attempting to call it without \f[V]new\f[R] throws a
 \f[V]TypeError\f[R].
 .RE
 .SS Parameters
-.IP \[bu] 2
-\f[V]iterable\f[R] \f[I](optional)\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]iterable\f[R] \f[I](optional)\f[R]
 If an iterable object is passed, all of its elements will be added to
 the new \f[V]Set\f[R].
-.RS 2
+.RS
 .PP
 If you don\[cq]t specify this parameter, or its value is \f[V]null\f[R],
 the new \f[V]Set\f[R] is empty.
 .RE
-.RE
 .SS Return value
 .PP
 A new \f[V]Set\f[R] object.
-.SH Examples
+.SH EXAMPLES
 .SS Using the \f[V]Set\f[R] object
 .IP
 .nf
@@ -66,7 +66,7 @@ const o = { a: 1, b: 2 };
 mySet.add(o);
 \f[R]
 .fi
-.SH See also
+.SH SEE ALSO
 .IP \[bu] 2
 Polyfill of \f[V]Set\f[R] in
 \f[V]core-js\f[R] (https://github.com/zloirock/core-js#set)

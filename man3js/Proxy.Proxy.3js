@@ -14,13 +14,16 @@
 . ftr VB CB
 . ftr VBI CBI
 .\}
-.TH "Proxy.Proxy" "JS" "2023-06-02" "JavaScript" "JavaScript Reference Manual"
+.TH "Proxy.Proxy" "JS" "June 2, 2023" "JavaScript" "JavaScript Reference Manual"
 .hy
-.SH Synopsis
+.SH NAME
+.PP
+Proxy.Proxy - Proxy() constructor
+.SH SYNOPSIS
 .PP
 The \f[B]\f[VB]Proxy()\f[B]\f[R] constructor creates \f[V]Proxy\f[R]
 objects.
-.SH Syntax
+.SH SYNTAX
 .IP
 .nf
 \f[C]
@@ -35,22 +38,16 @@ Attempting to call it without \f[V]new\f[R] throws a
 \f[V]TypeError\f[R].
 .RE
 .SS Parameters
-.IP \[bu] 2
-\f[V]target\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]target\f[R]
 A target object to wrap with \f[V]Proxy\f[R].
 It can be any sort of object, including a native array, a function, or
 even another proxy.
-.RE
-.IP \[bu] 2
-\f[V]handler\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]handler\f[R]
 An object whose properties are functions that define the behavior of the
 proxy when an operation is performed on it.
-.RE
-.SH Description
+.SH DESCRIPTION
 .PP
 Use the \f[V]Proxy()\f[R] constructor to create a new \f[V]Proxy\f[R]
 object.
@@ -72,86 +69,47 @@ version of the target\[cq]s property accessor.
 This section lists all the handler functions you can define.
 Handler functions are sometimes called \f[I]traps\f[R], because they
 trap calls to the underlying target object.
-.IP \[bu] 2
-\f[V]handler.apply()\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]handler.apply()\f[R]
 A trap for a function call.
-.RE
-.IP \[bu] 2
-\f[V]handler.construct()\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]handler.construct()\f[R]
 A trap for the \f[V]new\f[R] operator.
-.RE
-.IP \[bu] 2
-\f[V]handler.defineProperty()\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]handler.defineProperty()\f[R]
 A trap for \f[V]Object.defineProperty\f[R].
-.RE
-.IP \[bu] 2
-\f[V]handler.deleteProperty()\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]handler.deleteProperty()\f[R]
 A trap for the \f[V]delete\f[R] operator.
-.RE
-.IP \[bu] 2
-\f[V]handler.get()\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]handler.get()\f[R]
 A trap for getting property values.
-.RE
-.IP \[bu] 2
-\f[V]handler.getOwnPropertyDescriptor()\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]handler.getOwnPropertyDescriptor()\f[R]
 A trap for \f[V]Object.getOwnPropertyDescriptor\f[R].
-.RE
-.IP \[bu] 2
-\f[V]handler.getPrototypeOf()\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]handler.getPrototypeOf()\f[R]
 A trap for \f[V]Object.getPrototypeOf\f[R].
-.RE
-.IP \[bu] 2
-\f[V]handler.has()\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]handler.has()\f[R]
 A trap for the \f[V]in\f[R] operator.
-.RE
-.IP \[bu] 2
-\f[V]handler.isExtensible()\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]handler.isExtensible()\f[R]
 A trap for \f[V]Object.isExtensible\f[R].
-.RE
-.IP \[bu] 2
-\f[V]handler.ownKeys()\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]handler.ownKeys()\f[R]
 A trap for \f[V]Object.getOwnPropertyNames\f[R] and
 \f[V]Object.getOwnPropertySymbols\f[R].
-.RE
-.IP \[bu] 2
-\f[V]handler.preventExtensions()\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]handler.preventExtensions()\f[R]
 A trap for \f[V]Object.preventExtensions\f[R].
-.RE
-.IP \[bu] 2
-\f[V]handler.set()\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]handler.set()\f[R]
 A trap for setting property values.
-.RE
-.IP \[bu] 2
-\f[V]handler.setPrototypeOf()\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]handler.setPrototypeOf()\f[R]
 A trap for \f[V]Object.setPrototypeOf\f[R].
-.RE
-.SH Examples
+.SH EXAMPLES
 .SS Selectively proxy property accessors
 .PP
 In this example the target has two properties, \f[V]notProxied\f[R] and
@@ -181,7 +139,7 @@ console.log(proxy.notProxied); // \[dq]original value\[dq]
 console.log(proxy.proxied); // \[dq]replaced value\[dq]
 \f[R]
 .fi
-.SH See also
+.SH SEE ALSO
 .IP \[bu] 2
 \f[V]Proxy\f[R] and \f[V]Reflect\f[R] in the JavaScript Guide
 .IP \[bu] 2

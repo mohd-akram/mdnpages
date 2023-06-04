@@ -14,13 +14,16 @@
 . ftr VB CB
 . ftr VBI CBI
 .\}
-.TH "String.toLowerCase" "JS" "2023-06-02" "JavaScript" "JavaScript Reference Manual"
+.TH "String.toLowerCase" "JS" "June 2, 2023" "JavaScript" "JavaScript Reference Manual"
 .hy
-.SH Synopsis
+.SH NAME
+.PP
+String.toLowerCase - String.prototype.toLowerCase()
+.SH SYNOPSIS
 .PP
 The \f[B]\f[VB]toLowerCase()\f[B]\f[R] method returns the calling string
 value converted to lower case.
-.SH Syntax
+.SH SYNTAX
 .IP
 .nf
 \f[C]
@@ -30,13 +33,13 @@ toLowerCase()
 .SS Return value
 .PP
 A new string representing the calling string converted to lower case.
-.SH Description
+.SH DESCRIPTION
 .PP
 The \f[V]toLowerCase()\f[R] method returns the value of the string
 converted to lower case.
 \f[V]toLowerCase()\f[R] does not affect the value of the string
 \f[V]str\f[R] itself.
-.SH Examples
+.SH EXAMPLES
 .SS Using \f[V]toLowerCase()\f[R]
 .IP
 .nf
@@ -44,7 +47,7 @@ converted to lower case.
 console.log(\[dq]ALPHABET\[dq].toLowerCase()); // \[aq]alphabet\[aq]
 \f[R]
 .fi
-.SH See also
+.SH SEE ALSO
 .IP \[bu] 2
 \f[V]String.prototype.toLocaleLowerCase()\f[R]
 .IP \[bu] 2

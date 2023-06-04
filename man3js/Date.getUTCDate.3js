@@ -14,13 +14,16 @@
 . ftr VB CB
 . ftr VBI CBI
 .\}
-.TH "Date.getUTCDate" "JS" "2023-06-02" "JavaScript" "JavaScript Reference Manual"
+.TH "Date.getUTCDate" "JS" "June 2, 2023" "JavaScript" "JavaScript Reference Manual"
 .hy
-.SH Synopsis
+.SH NAME
+.PP
+Date.getUTCDate - Date.prototype.getUTCDate()
+.SH SYNOPSIS
 .PP
 The \f[B]\f[VB]getUTCDate()\f[B]\f[R] method of \f[V]Date\f[R] instances
 returns the day of the month for this date according to universal time.
-.SH Syntax
+.SH SYNTAX
 .IP
 .nf
 \f[C]
@@ -32,7 +35,7 @@ getUTCDate()
 An integer, between 1 and 31, representing day of month for the given
 date according to universal time.
 Returns \f[V]NaN\f[R] if the date is invalid.
-.SH Examples
+.SH EXAMPLES
 .SS Using getUTCDate()
 .PP
 The following example assigns the day of month of the current date to
@@ -44,7 +47,7 @@ const today = new Date();
 const dayOfMonth = today.getUTCDate();
 \f[R]
 .fi
-.SH See also
+.SH SEE ALSO
 .IP \[bu] 2
 \f[V]Date.prototype.getUTCDate()\f[R]
 .IP \[bu] 2

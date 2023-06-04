@@ -14,9 +14,12 @@
 . ftr VB CB
 . ftr VBI CBI
 .\}
-.TH "Generator" "JS" "2023-06-02" "JavaScript" "JavaScript Reference Manual"
+.TH "Generator" "JS" "June 2, 2023" "JavaScript" "JavaScript Reference Manual"
 .hy
-.SH Synopsis
+.SH NAME
+.PP
+Generator - Generator
+.SH SYNOPSIS
 .PP
 The \f[B]\f[VB]Generator\f[B]\f[R] object is returned by a
 \f[V]generator function\f[R] and it conforms to both the iterable
@@ -24,7 +27,7 @@ protocol and the iterator protocol.
 .PP
 \f[V]Generator\f[R] is a subclass of the hidden \f[V]Iterator\f[R]
 class.
-.SH Constructor
+.SH CONSTRUCTOR
 .PP
 The \f[V]Generator\f[R] constructor is not available globally.
 Instances of \f[V]Generator\f[R] must be returned from generator
@@ -54,62 +57,47 @@ This object is often stylized as \f[V]Generator.prototype\f[R] to make
 it look like a class, but it should be more appropriately called
 \f[V]GeneratorFunction.prototype.prototype\f[R], because
 \f[V]GeneratorFunction\f[R] is an actual JavaScript entity.
-.SH Instance properties
+.SH INSTANCE PROPERTIES
 .PP
 These properties are defined on \f[V]Generator.prototype\f[R] and shared
 by all \f[V]Generator\f[R] instances.
-.IP \[bu] 2
-\f[V]Generator.prototype.constructor\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]Generator.prototype.constructor\f[R]
 The constructor function that created the instance object.
 For \f[V]Generator\f[R] instances, the initial value is
 \f[V]GeneratorFunction.prototype\f[R].
-.RS 2
+.RS
 .RS
 .PP
 \f[B]Note:\f[R] \f[V]Generator\f[R] objects do not store a reference to
 the generator function that created them.
 .RE
 .RE
-.RE
-.IP \[bu] 2
-\f[V]Generator.prototype[\[at]\[at]toStringTag]\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]Generator.prototype[\[at]\[at]toStringTag]\f[R]
 The initial value of the \f[V]\[at]\[at]toStringTag\f[R] property is the
 string \f[V]\[dq]Generator\[dq]\f[R].
 This property is used in \f[V]Object.prototype.toString()\f[R].
-.RE
-.SH Instance methods
+.SH INSTANCE METHODS
 .PP
 \f[I]Also inherits instance methods from its parent
 \f[VI]Iterator\f[I]\f[R].
-.IP \[bu] 2
-\f[V]Generator.prototype.next()\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]Generator.prototype.next()\f[R]
 Returns a value yielded by the \f[V]yield\f[R] expression.
-.RE
-.IP \[bu] 2
-\f[V]Generator.prototype.return()\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]Generator.prototype.return()\f[R]
 Acts as if a \f[V]return\f[R] statement is inserted in the
 generator\[cq]s body at the current suspended position, which finishes
 the generator and allows the generator to perform any cleanup tasks when
 combined with a \f[V]try...finally\f[R] block.
-.RE
-.IP \[bu] 2
-\f[V]Generator.prototype.throw()\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]Generator.prototype.throw()\f[R]
 Acts as if a \f[V]throw\f[R] statement is inserted in the
 generator\[cq]s body at the current suspended position, which informs
 the generator of an error condition and allows it to handle the error,
 or perform cleanup and close itself.
-.RE
-.SH Examples
+.SH EXAMPLES
 .SS An infinite iterator
 .PP
 With a generator function, values are not evaluated until they are
@@ -135,7 +123,7 @@ console.log(generator.next().value); // 2
 // \&...
 \f[R]
 .fi
-.SH See also
+.SH SEE ALSO
 .IP \[bu] 2
 \f[V]function*\f[R]
 .IP \[bu] 2

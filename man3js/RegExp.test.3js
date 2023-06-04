@@ -14,9 +14,12 @@
 . ftr VB CB
 . ftr VBI CBI
 .\}
-.TH "RegExp.test" "JS" "2023-06-02" "JavaScript" "JavaScript Reference Manual"
+.TH "RegExp.test" "JS" "June 2, 2023" "JavaScript" "JavaScript Reference Manual"
 .hy
-.SH Synopsis
+.SH NAME
+.PP
+RegExp.test - RegExp.prototype.test()
+.SH SYNOPSIS
 .PP
 The \f[B]\f[VB]test()\f[B]\f[R] method executes a search for a match
 between a regular expression and a specified string.
@@ -28,7 +31,7 @@ have the \f[V]global\f[R] or \f[V]sticky\f[R] flags set (e.g.,
 They store a \f[V]lastIndex\f[R] from the previous match.
 Using this internally, \f[V]test()\f[R] can be used to iterate over
 multiple matches in a string of text (with capture groups).
-.SH Syntax
+.SH SYNTAX
 .IP
 .nf
 \f[C]
@@ -36,21 +39,18 @@ test(str)
 \f[R]
 .fi
 .SS Parameters
-.IP \[bu] 2
-\f[V]str\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]str\f[R]
 The string against which to match the regular expression.
 All values are coerced to strings, so omitting it or passing
 \f[V]undefined\f[R] causes \f[V]test()\f[R] to search for the string
 \f[V]\[dq]undefined\[dq]\f[R], which is rarely what you want.
-.RE
 .SS Returns
 .PP
 \f[V]true\f[R] if there is a match between the regular expression and
 the string \f[V]str\f[R].
 Otherwise, \f[V]false\f[R].
-.SH Description
+.SH DESCRIPTION
 .PP
 Use \f[V]test()\f[R] whenever you want to know whether a pattern is
 found in a string.
@@ -65,7 +65,7 @@ To get more information (but with slower execution), use the
 As with \f[V]exec()\f[R] (or in combination with it), \f[V]test()\f[R]
 called multiple times on the same global regular expression instance
 will advance past the previous match.
-.SH Examples
+.SH EXAMPLES
 .SS Using test()
 .PP
 Simple example that tests if \f[V]\[dq]hello\[dq]\f[R] is contained at
@@ -143,7 +143,7 @@ regex.test(\[dq]foobarfoo\[dq]); // false
 // (...and so on)
 \f[R]
 .fi
-.SH See also
+.SH SEE ALSO
 .IP \[bu] 2
 Regular Expressions chapter in the JavaScript Guide
 .IP \[bu] 2

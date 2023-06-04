@@ -14,9 +14,12 @@
 . ftr VB CB
 . ftr VBI CBI
 .\}
-.TH "Atomics.isLockFree" "JS" "2023-06-02" "JavaScript" "JavaScript Reference Manual"
+.TH "Atomics.isLockFree" "JS" "June 2, 2023" "JavaScript" "JavaScript Reference Manual"
 .hy
-.SH Synopsis
+.SH NAME
+.PP
+Atomics.isLockFree - Atomics.isLockFree()
+.SH SYNOPSIS
 .PP
 The \f[B]\f[VB]Atomics.isLockFree()\f[B]\f[R] static method is used to
 determine whether the \f[V]Atomics\f[R] methods use locks or atomic
@@ -24,7 +27,7 @@ hardware operations when applied to typed arrays with the given element
 byte size.
 It returns \f[V]false\f[R] if the given size is not one of the
 BYTES_PER_ELEMENT property of integer TypedArray types.
-.SH Syntax
+.SH SYNTAX
 .IP
 .nf
 \f[C]
@@ -32,17 +35,14 @@ Atomics.isLockFree(size)
 \f[R]
 .fi
 .SS Parameters
-.IP \[bu] 2
-\f[V]size\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]size\f[R]
 The size in bytes to check.
-.RE
 .SS Return value
 .PP
 A \f[V]true\f[R] or \f[V]false\f[R] value indicating whether the
 operation is lock free.
-.SH Examples
+.SH EXAMPLES
 .SS Using isLockFree
 .IP
 .nf
@@ -57,6 +57,6 @@ Atomics.isLockFree(7); // false
 Atomics.isLockFree(8); // true
 \f[R]
 .fi
-.SH See also
+.SH SEE ALSO
 .IP \[bu] 2
 \f[V]Atomics\f[R]

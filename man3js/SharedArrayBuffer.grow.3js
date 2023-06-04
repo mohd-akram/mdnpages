@@ -14,14 +14,17 @@
 . ftr VB CB
 . ftr VBI CBI
 .\}
-.TH "SharedArrayBuffer.grow" "JS" "2023-06-02" "JavaScript" "JavaScript Reference Manual"
+.TH "SharedArrayBuffer.grow" "JS" "June 2, 2023" "JavaScript" "JavaScript Reference Manual"
 .hy
-.SH Synopsis
+.SH NAME
+.PP
+SharedArrayBuffer.grow - SharedArrayBuffer.prototype.grow()
+.SH SYNOPSIS
 .PP
 The \f[B]\f[VB]grow()\f[B]\f[R] method of \f[V]SharedArrayBuffer\f[R]
 instances grows the \f[V]SharedArrayBuffer\f[R] to the specified size,
 in bytes.
-.SH Syntax
+.SH SYNTAX
 .IP
 .nf
 \f[C]
@@ -29,31 +32,22 @@ grow(newLength)
 \f[R]
 .fi
 .SS Parameters
-.IP \[bu] 2
-\f[V]newLength\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]newLength\f[R]
 The new length, in bytes, to resize the \f[V]SharedArrayBuffer\f[R] to.
-.RE
 .SS Return value
 .PP
 \f[V]undefined\f[R].
 .SS Exceptions
-.IP \[bu] 2
-\f[V]TypeError\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]TypeError\f[R]
 Thrown if the \f[V]SharedArrayBuffer\f[R] is not growable.
-.RE
-.IP \[bu] 2
-\f[V]RangeError\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]RangeError\f[R]
 Thrown if \f[V]newLength\f[R] is larger than the \f[V]maxByteLength\f[R]
 of the \f[V]SharedArrayBuffer\f[R] or smaller than the
 \f[V]byteLength\f[R].
-.RE
-.SH Description
+.SH DESCRIPTION
 .PP
 The \f[V]grow()\f[R] method grows a \f[V]SharedArrayBuffer\f[R] to the
 size specified by the \f[V]newLength\f[R] parameter, provided that the
@@ -61,7 +55,7 @@ size specified by the \f[V]newLength\f[R] parameter, provided that the
 or equal to the \f[V]maxByteLength\f[R] of the
 \f[V]SharedArrayBuffer\f[R].
 New bytes are initialized to 0.
-.SH Examples
+.SH EXAMPLES
 .SS Using grow()
 .PP
 In this example, we create a 8-byte buffer that is growable to a max
@@ -78,7 +72,7 @@ if (buffer.growable) {
 }
 \f[R]
 .fi
-.SH See also
+.SH SEE ALSO
 .IP \[bu] 2
 \f[V]SharedArrayBuffer\f[R]
 .IP \[bu] 2

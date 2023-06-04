@@ -14,13 +14,16 @@
 . ftr VB CB
 . ftr VBI CBI
 .\}
-.TH "Reflect.has" "JS" "2023-06-02" "JavaScript" "JavaScript Reference Manual"
+.TH "Reflect.has" "JS" "June 2, 2023" "JavaScript" "JavaScript Reference Manual"
 .hy
-.SH Synopsis
+.SH NAME
+.PP
+Reflect.has - Reflect.has()
+.SH SYNOPSIS
 .PP
 The \f[B]\f[VB]Reflect.has()\f[B]\f[R] static method is like the
 \f[V]in\f[R] operator, but as a function.
-.SH Syntax
+.SH SYNTAX
 .IP
 .nf
 \f[C]
@@ -28,30 +31,21 @@ Reflect.has(target, propertyKey)
 \f[R]
 .fi
 .SS Parameters
-.IP \[bu] 2
-\f[V]target\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]target\f[R]
 The target object in which to look for the property.
-.RE
-.IP \[bu] 2
-\f[V]propertyKey\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]propertyKey\f[R]
 The name of the property to check.
-.RE
 .SS Return value
 .PP
 A \f[V]Boolean\f[R] indicating whether or not the \f[V]target\f[R] has
 the property.
 .SS Exceptions
-.IP \[bu] 2
-\f[V]TypeError\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]TypeError\f[R]
 Thrown if \f[V]target\f[R] is not an object.
-.RE
-.SH Description
+.SH DESCRIPTION
 .PP
 \f[V]Reflect.has()\f[R] provides the reflective semantic of checking if
 a property is in an object.
@@ -66,7 +60,7 @@ propertyKey in target;
 .PP
 \f[V]Reflect.has()\f[R] invokes the \f[V][[HasProperty]]\f[R] object
 internal method of \f[V]target\f[R].
-.SH Examples
+.SH EXAMPLES
 .SS Using Reflect.has()
 .IP
 .nf
@@ -103,7 +97,7 @@ const c = { __proto__: b };
 Reflect.has(c, \[dq]foo\[dq]); // true
 \f[R]
 .fi
-.SH See also
+.SH SEE ALSO
 .IP \[bu] 2
 Polyfill of \f[V]Reflect.has\f[R] in
 \f[V]core-js\f[R] (https://github.com/zloirock/core-js#ecmascript-reflect)

@@ -14,21 +14,24 @@
 . ftr VB CB
 . ftr VBI CBI
 .\}
-.TH "SharedArrayBuffer.byteLength" "JS" "2023-06-02" "JavaScript" "JavaScript Reference Manual"
+.TH "SharedArrayBuffer.byteLength" "JS" "June 2, 2023" "JavaScript" "JavaScript Reference Manual"
 .hy
-.SH Synopsis
+.SH NAME
+.PP
+SharedArrayBuffer.byteLength - SharedArrayBuffer.prototype.byteLength
+.SH SYNOPSIS
 .PP
 The \f[B]\f[VB]byteLength\f[B]\f[R] accessor property of
 \f[V]SharedArrayBuffer\f[R] instances returns the length (in bytes) of
 this \f[V]SharedArrayBuffer\f[R].
-.SH Description
+.SH DESCRIPTION
 .PP
 The \f[V]byteLength\f[R] property is an accessor property whose set
 accessor function is \f[V]undefined\f[R], meaning that you can only read
 this property.
 The value is established when the shared array is constructed and cannot
 be changed.
-.SH Examples
+.SH EXAMPLES
 .SS Using byteLength
 .IP
 .nf
@@ -37,6 +40,6 @@ const sab = new SharedArrayBuffer(1024);
 sab.byteLength; // 1024
 \f[R]
 .fi
-.SH See also
+.SH SEE ALSO
 .IP \[bu] 2
 \f[V]SharedArrayBuffer\f[R]

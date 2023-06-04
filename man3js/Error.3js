@@ -14,15 +14,18 @@
 . ftr VB CB
 . ftr VBI CBI
 .\}
-.TH "Error" "JS" "2023-06-02" "JavaScript" "JavaScript Reference Manual"
+.TH "Error" "JS" "June 2, 2023" "JavaScript" "JavaScript Reference Manual"
 .hy
-.SH Synopsis
+.SH NAME
+.PP
+Error - Error
+.SH SYNOPSIS
 .PP
 \f[B]\f[VB]Error\f[B]\f[R] objects are thrown when runtime errors occur.
 The \f[V]Error\f[R] object can also be used as a base object for
 user-defined exceptions.
 See below for standard built-in error types.
-.SH Description
+.SH DESCRIPTION
 .PP
 Runtime errors result in new \f[V]Error\f[R] objects being created and
 thrown.
@@ -35,173 +38,109 @@ thrown.
 Besides the generic \f[V]Error\f[R] constructor, there are other core
 error constructors in JavaScript.
 For client-side exceptions, see Exception handling statements.
-.IP \[bu] 2
-\f[V]EvalError\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]EvalError\f[R]
 Creates an instance representing an error that occurs regarding the
 global function \f[V]eval()\f[R].
-.RE
-.IP \[bu] 2
-\f[V]RangeError\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]RangeError\f[R]
 Creates an instance representing an error that occurs when a numeric
 variable or parameter is outside its valid range.
-.RE
-.IP \[bu] 2
-\f[V]ReferenceError\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]ReferenceError\f[R]
 Creates an instance representing an error that occurs when
 de-referencing an invalid reference.
-.RE
-.IP \[bu] 2
-\f[V]SyntaxError\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]SyntaxError\f[R]
 Creates an instance representing a syntax error.
-.RE
-.IP \[bu] 2
-\f[V]TypeError\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]TypeError\f[R]
 Creates an instance representing an error that occurs when a variable or
 parameter is not of a valid type.
-.RE
-.IP \[bu] 2
-\f[V]URIError\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]URIError\f[R]
 Creates an instance representing an error that occurs when
 \f[V]encodeURI()\f[R] or \f[V]decodeURI()\f[R] are passed invalid
 parameters.
-.RE
-.IP \[bu] 2
-\f[V]AggregateError\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]AggregateError\f[R]
 Creates an instance representing several errors wrapped in a single
 error when multiple errors need to be reported by an operation, for
 example by \f[V]Promise.any()\f[R].
-.RE
-.IP \[bu] 2
-\f[V]InternalError\f[R] \f[I](non-standard)\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]InternalError\f[R] \f[I](non-standard)\f[R]
 Creates an instance representing an error that occurs when an internal
 error in the JavaScript engine is thrown.
 E.g.
 \[lq]too much recursion\[rq].
-.RE
-.SH Constructor
-.IP \[bu] 2
-\f[V]Error()\f[R]
-.RS 2
-.IP \[bu] 2
+.SH CONSTRUCTOR
+.TP
+\f[B]Error()\f[R]
 Creates a new \f[V]Error\f[R] object.
-.RE
-.SH Static methods
-.IP \[bu] 2
-\f[V]Error.captureStackTrace()\f[R] \f[I](non-standard)\f[R]
-.RS 2
-.IP \[bu] 2
+.SH STATIC METHODS
+.TP
+\f[B]Error.captureStackTrace()\f[R] \f[I](non-standard)\f[R]
 A non-standard V8 function that creates the \f[V]stack\f[R] property on
 an Error instance.
-.RE
-.IP \[bu] 2
-\f[V]Error.stackTraceLimit\f[R] \f[I](non-standard)\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]Error.stackTraceLimit\f[R] \f[I](non-standard)\f[R]
 A non-standard V8 numerical property that limits how many stack frames
 to include in an error stacktrace.
-.RE
-.IP \[bu] 2
-\f[V]Error.prepareStackTrace()\f[R] \f[I](non-standard)\f[R]
-\f[I](optional)\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]Error.prepareStackTrace()\f[R] \f[I](non-standard)\f[R] \f[I](optional)\f[R]
 A non-standard V8 function that, if provided by usercode, is called by
 the V8 JavaScript engine for thrown exceptions, allowing the user to
 provide custom formatting for stacktraces.
-.RE
-.SH Instance properties
+.SH INSTANCE PROPERTIES
 .PP
 These properties are defined on \f[V]Error.prototype\f[R] and shared by
 all \f[V]Error\f[R] instances.
-.IP \[bu] 2
-\f[V]Error.prototype.constructor\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]Error.prototype.constructor\f[R]
 The constructor function that created the instance object.
 For \f[V]Error\f[R] instances, the initial value is the \f[V]Error\f[R]
 constructor.
-.RE
-.IP \[bu] 2
-\f[V]Error.prototype.name\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]Error.prototype.name\f[R]
 Represents the name for the type of error.
 For \f[V]Error.prototype.name\f[R], the initial value is
 \f[V]\[dq]Error\[dq]\f[R].
 Subclasses like \f[V]TypeError\f[R] and \f[V]SyntaxError\f[R] provide
 their own \f[V]name\f[R] properties.
-.RE
-.IP \[bu] 2
-\f[V]Error.prototype.stack\f[R] \f[I](non-standard)\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]Error.prototype.stack\f[R] \f[I](non-standard)\f[R]
 A non-standard property for a stack trace.
-.RE
 .PP
 These properties are own properties of each \f[V]Error\f[R] instance.
-.IP \[bu] 2
-\f[V]cause\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]cause\f[R]
 Error cause indicating the reason why the current error is thrown \[em]
 usually another caught error.
 For user-created \f[V]Error\f[R] objects, this is the value provided as
 the \f[V]cause\f[R] property of the constructor\[cq]s second argument.
-.RE
-.IP \[bu] 2
-\f[V]columnNumber\f[R] \f[I](non-standard)\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]columnNumber\f[R] \f[I](non-standard)\f[R]
 A non-standard Mozilla property for the column number in the line that
 raised this error.
-.RE
-.IP \[bu] 2
-\f[V]fileName\f[R] \f[I](non-standard)\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]fileName\f[R] \f[I](non-standard)\f[R]
 A non-standard Mozilla property for the path to the file that raised
 this error.
-.RE
-.IP \[bu] 2
-\f[V]lineNumber\f[R] \f[I](non-standard)\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]lineNumber\f[R] \f[I](non-standard)\f[R]
 A non-standard Mozilla property for the line number in the file that
 raised this error.
-.RE
-.IP \[bu] 2
-\f[V]message\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]message\f[R]
 Error message.
 For user-created \f[V]Error\f[R] objects, this is the string provided as
 the constructor\[cq]s first argument.
-.RE
-.SH Instance methods
-.IP \[bu] 2
-\f[V]Error.prototype.toString()\f[R]
-.RS 2
-.IP \[bu] 2
+.SH INSTANCE METHODS
+.TP
+\f[B]Error.prototype.toString()\f[R]
 Returns a string representing the specified object.
 Overrides the \f[V]Object.prototype.toString()\f[R] method.
-.RE
-.SH Examples
+.SH EXAMPLES
 .SS Throwing a generic error
 .PP
 Usually you create an \f[V]Error\f[R] object with the intention of
@@ -380,7 +319,7 @@ try {
 }
 \f[R]
 .fi
-.SH See also
+.SH SEE ALSO
 .IP \[bu] 2
 A polyfill of
 \f[V]Error\f[R] (https://github.com/zloirock/core-js#ecmascript-error)

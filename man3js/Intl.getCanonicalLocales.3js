@@ -14,15 +14,18 @@
 . ftr VB CB
 . ftr VBI CBI
 .\}
-.TH "Intl.getCanonicalLocales" "JS" "2023-06-02" "JavaScript" "JavaScript Reference Manual"
+.TH "Intl.getCanonicalLocales" "JS" "June 2, 2023" "JavaScript" "JavaScript Reference Manual"
 .hy
-.SH Synopsis
+.SH NAME
+.PP
+Intl.getCanonicalLocales - Intl.getCanonicalLocales()
+.SH SYNOPSIS
 .PP
 The \f[B]\f[VB]Intl.getCanonicalLocales()\f[B]\f[R] static method
 returns an array containing the canonical locale names.
 Duplicates will be omitted and elements will be validated as
 structurally valid language tags.
-.SH Syntax
+.SH SYNTAX
 .IP
 .nf
 \f[C]
@@ -30,17 +33,14 @@ Intl.getCanonicalLocales(locales)
 \f[R]
 .fi
 .SS Parameters
-.IP \[bu] 2
-\f[V]locales\f[R]
-.RS 2
-.IP \[bu] 2
+.TP
+\f[B]locales\f[R]
 A list of \f[V]String\f[R] values for which to get the canonical locale
 names.
-.RE
 .SS Return value
 .PP
 An array containing the canonical locale names.
-.SH Examples
+.SH EXAMPLES
 .SS Using getCanonicalLocales
 .IP
 .nf
@@ -52,7 +52,7 @@ Intl.getCanonicalLocales(\[dq]EN_US\[dq]);
 // RangeError:\[aq]EN_US\[aq] is not a structurally valid language tag
 \f[R]
 .fi
-.SH See also
+.SH SEE ALSO
 .IP \[bu] 2
 \f[V]Intl.NumberFormat.supportedLocalesOf()\f[R]
 .IP \[bu] 2
