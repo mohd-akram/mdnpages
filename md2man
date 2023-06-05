@@ -2,6 +2,15 @@
 
 set -euo pipefail
 
+while getopts d: opt; do
+	case $opt in
+	d) date=$OPTARG ;;
+	?) exit 2
+	esac
+done
+
+shift $((OPTIND-1))
+
 get_name() {
 	sed -n '/^---$/,/^---$/{
 		/^title: Set.prototype.keys()/{
@@ -60,7 +69,7 @@ title: $(get_name "$1")\\
 section: JS\\
 header: JavaScript Reference Manual\\
 footer: JavaScript\\
-date: $DATE\\
+date: $date\\
 ---\\
 # Name\\
 $(get_name "$1") - $(get_title "$1")\\

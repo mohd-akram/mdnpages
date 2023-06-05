@@ -1,4 +1,4 @@
-MD2MAN = DATE="$(DATE)" ./md2man
+MD2MAN = ./md2man -d "$(DATE)"
 
 mansect = 3js
 mansectdir = man$(mansect)
