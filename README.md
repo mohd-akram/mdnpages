@@ -11,7 +11,7 @@ directly to the `/usr/local` prefix via:
 
 ## Build
 
-Pandoc is required to build the man pages. To do so, run:
+Pandoc and git-restore-mtime are required to build the man pages. To do so, run:
 
     ./configure
     make -j4

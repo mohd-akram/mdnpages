@@ -1,4 +1,4 @@
-MD2MAN = ./md2man -d "$(DATE)"
+MD2MAN = ./md2man
 
 mansect = 3js
 mansectdir = man$(mansect)
@@ -14,6 +14,7 @@ install:
 	cp $(mansectdir)/* $(DESTDIR)$(mandir)/$(mansectdir)
 
 clean:
+	$(RM) files.mk
 	$(RM) -r $(mansectdir)
 
 -include files.mk

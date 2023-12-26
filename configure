@@ -39,7 +39,6 @@ for d in "$dir"/* "$dir"/*/*; do
 	files="$files $out"
 	printf '%s: %s\n\t%s\n' "$out" "$f" "\$(MD2MAN) '$f' > \$@" >> files.mk
 done
-
-printf 'DATE=%s\n' "$(git -C content show -s --format=%cs)" >>files.mk
-
 printf 'files=%s\n' "$files" >> files.mk
+
+(cd "$dir" && git-restore-mtime)

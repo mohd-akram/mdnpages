@@ -2,15 +2,6 @@
 
 set -euo pipefail
 
-while getopts d: opt; do
-	case $opt in
-	d) date=$OPTARG ;;
-	?) exit 2
-	esac
-done
-
-shift $((OPTIND-1))
-
 get_name() {
 	sed -n '/^---$/,/^---$/{
 		/^title: Set.prototype.keys()/{
@@ -43,6 +34,23 @@ get_title() {
 	}' "$1"
 }
 
+get_date() {
+	LANG=C ls -og "$1" | awk -v cmonth=$(date +%m) -v cyear=$(date +%Y) '
+	BEGIN {
+		months["Jan"] =  1; months["Feb"] =  2; months["Mar"] =  3
+		months["Apr"] =  4; months["May"] =  5; months["Jun"] =  6
+		months["Jul"] =  7; months["Aug"] =  8; months["Sep"] =  9
+		months["Oct"] = 10; months["Nov"] = 11; months["Dec"] = 12
+	}
+	{
+		month = months[$4]
+		day = $5
+		year = ($6 ~ /:/) ? (month > cmonth ? cyear-1 : cyear) : $6
+		printf "%d-%02d-%02d\n", year, month, day
+	}
+	'
+}
+
 yn() {
 	case $1 in
 	0) echo no;;
@@ -69,7 +77,7 @@ title: $(get_name "$1")\\
 section: JS\\
 header: JavaScript Reference Manual\\
 footer: JavaScript\\
-date: $date\\
+date: $(get_date "$1")\\
 ---\\
 # Name\\
 $(get_name "$1") - $(get_title "$1")\\
