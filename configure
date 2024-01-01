@@ -2,43 +2,45 @@
 
 set -euo pipefail
 
-dir=content/files/en-us/web/javascript/reference/global_objects
-
 get_name() {
-	sed -n '/^---$/,/^---$/{
-		/^title: Set.prototype.keys()/{
-			s/.*/Set.keys/
-			p
-			q
-		}
-		/^title: "Function: prototype"/{
-			s/.*/Function.prototype/
-			p
-			q
-		}
-		/^browser-compat:/{
-			s/^browser-compat:[[:space:]]*javascript\.builtins\.//
-			p
-			q
-		}
+	sed -En '/^---$/,/^---$/{
+	/^slug:/{
+		s/\//./g
+		s/^slug: Web\.(API|JavaScript\.Reference\.Global_Objects)\.//p
+		q
+	}
 	}' "$1"
 }
 
->files.mk
+get_files() (
+	m=$1
+	shift
+	grep -rLxE \
+	-e 'page-type: (guide|landing-page|web-api-overview)' \
+	-e '  - (deprecated|experimental|non-standard)' \
+	"$@" |
+	while read f; do
+		if [ "${f##*/}" != index.md ]; then continue; fi
+		name=$(get_name "$f")
+		if ! [ "$name" ]; then
+			echo >&2 failed to get name for "$f"
+			exit 1
+		fi
+		case $name in *\ *)
+			echo >&2 invalid name for "$f"
+			exit 1
+		esac
+		o='$(mansectdir)'/$name.'$(mansect)'
+		printf ' %s' "$o"
+		printf '%s: %s\n\t$(MD2MAN) %s > $@ || { $(RM) $@; false; }\n' \
+			"$o" "$f" "$f" >> "$m"
+	done
+)
 
-files=""
-for d in "$dir"/* "$dir"/*/*; do
-	if [ -f "$d" ]; then continue; fi
-	f=$d/index.md
-	name=$(get_name "$f")
-	if ! printf '%s' "$name" | grep -qE '^[^[:space:]]+$'; then
-		echo >&2 failed to get name for "$f"
-		exit 1
-	fi
-	out='$(mansectdir)'/$name.'$(mansect)'
-	files="$files $out"
-	printf '%s: %s\n\t%s\n' "$out" "$f" "\$(MD2MAN) '$f' > \$@" >> files.mk
+base=content/files/en-us/web
+dirs="$base/javascript/reference/global_objects"
+for dir in $dirs; do
+	(cd "$dir" && git-restore-mtime)
 done
-printf 'files=%s\n' "$files" >> files.mk
-
-(cd "$dir" && git-restore-mtime)
+>files.mk
+printf 'files=%s\n' "$(get_files files.mk $dirs)" >> files.mk

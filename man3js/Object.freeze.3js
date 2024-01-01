@@ -36,7 +36,7 @@ Nothing can be added to or removed from the properties set of a frozen
 object.
 Any attempt to do so will fail, either silently or by throwing a
 \f[CR]TypeError\f[R] exception (most commonly, but not exclusively, when
-in \f[CR]strict mode\f[R]).
+in strict mode).
 .PP
 For data properties of a frozen object, their values cannot be changed
 since the \f[CR]writable\f[R] and \f[CR]configurable\f[R] attributes are

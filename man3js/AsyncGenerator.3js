@@ -4,9 +4,9 @@
 .SH NAME
 AsyncGenerator - AsyncGenerator
 .SH SYNOPSIS
-The \f[B]\f[CB]AsyncGenerator\f[B]\f[R] object is returned by an
-\f[CR]async generator function\f[R] and it conforms to both the async
-iterable protocol and the async iterator protocol.
+The \f[B]\f[CB]AsyncGenerator\f[B]\f[R] object is returned by an async
+generator function and it conforms to both the async iterable protocol
+and the async iterator protocol.
 .PP
 Async generator methods always yield \f[CR]Promise\f[R] objects.
 .PP
@@ -112,14 +112,14 @@ main().catch((e) => console.error(e));
 .EE
 .SH SEE ALSO
 .IP \[bu] 2
-\f[CR]function*\f[R]
+function*
 .IP \[bu] 2
-\f[CR]async function*\f[R]
+async function*
 .IP \[bu] 2
 \f[CR]function*\f[R] expression
 .IP \[bu] 2
-\f[CR]Generator Function\f[R]
+Generator Function
 .IP \[bu] 2
-\f[CR]Async Generator Function\f[R]
+Async Generator Function
 .IP \[bu] 2
 Iterators and generators guide

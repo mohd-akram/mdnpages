@@ -5,8 +5,8 @@
 Object.assign - Object.assign()
 .SH SYNOPSIS
 The \f[B]\f[CB]Object.assign()\f[B]\f[R] static method copies all
-\f[CR]enumerable\f[R] \f[CR]own properties\f[R] from one or more
-\f[I]source objects\f[R] to a \f[I]target object\f[R].
+enumerable own properties from one or more \f[I]source objects\f[R] to a
+\f[I]target object\f[R].
 It returns the modified target object.
 .SH SYNTAX
 .IP
@@ -29,7 +29,7 @@ apply.
 The target object.
 .SH DESCRIPTION
 Properties in the target object are overwritten by properties in the
-sources if they have the same \f[CR]key\f[R].
+sources if they have the same key.
 Later sources\[cq] properties overwrite earlier ones.
 .PP
 The \f[CR]Object.assign()\f[R] method only copies \f[I]enumerable\f[R]

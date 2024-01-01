@@ -167,4 +167,4 @@ sayHello(\[dq]world\[dq]);
 .IP \[bu] 2
 \f[CR]function\f[R] expression
 .IP \[bu] 2
-\f[CR]Functions\f[R]
+Functions

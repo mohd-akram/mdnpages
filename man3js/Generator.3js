@@ -4,9 +4,9 @@
 .SH NAME
 Generator - Generator
 .SH SYNOPSIS
-The \f[B]\f[CB]Generator\f[B]\f[R] object is returned by a
-\f[CR]generator function\f[R] and it conforms to both the iterable
-protocol and the iterator protocol.
+The \f[B]\f[CB]Generator\f[B]\f[R] object is returned by a generator
+function and it conforms to both the iterable protocol and the iterator
+protocol.
 .PP
 \f[CR]Generator\f[R] is a subclass of the hidden \f[CR]Iterator\f[R]
 class.

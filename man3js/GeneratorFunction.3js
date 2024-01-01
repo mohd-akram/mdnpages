@@ -61,4 +61,4 @@ This property is used in \f[CR]Object.prototype.toString()\f[R].
 .IP \[bu] 2
 \f[CR]AsyncGeneratorFunction\f[R]
 .IP \[bu] 2
-\f[CR]Functions\f[R]
+Functions

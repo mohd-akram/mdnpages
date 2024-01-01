@@ -57,4 +57,4 @@ console.log(iterator.next().value); // 20
 .IP \[bu] 2
 Iterators and generators guide
 .IP \[bu] 2
-\f[CR]Functions\f[R]
+Functions

@@ -5,7 +5,7 @@
 Object.isFrozen - Object.isFrozen()
 .SH SYNOPSIS
 The \f[B]\f[CB]Object.isFrozen()\f[B]\f[R] static method determines if
-an object is \f[CR]frozen\f[R].
+an object is frozen.
 .SH SYNTAX
 .IP
 .EX

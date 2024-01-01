@@ -38,7 +38,7 @@ changed.
 Attempting to delete or add properties to a sealed object, or to convert
 a data property to accessor or vice versa, will fail, either silently or
 by throwing a \f[CR]TypeError\f[R] (most commonly, although not
-exclusively, when in \f[CR]strict mode\f[R] code).
+exclusively, when in strict mode code).
 .PP
 The prototype chain remains untouched.
 However, due to the effect of preventing extensions, the

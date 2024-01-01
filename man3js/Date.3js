@@ -645,10 +645,10 @@ const yourFunctionReturn = printElapsedTime(yourFunction);
 .EE
 .RS
 .PP
-\f[B]Note:\f[R] In browsers that support the
-\f[CR]Web Performance API\f[R]\[cq]s high-resolution time feature,
-\f[CR]Performance.now()\f[R] can provide more reliable and precise
-measurements of elapsed time than \f[CR]Date.now()\f[R].
+\f[B]Note:\f[R] In browsers that support the Web Performance API\[cq]s
+high-resolution time feature, \f[CR]Performance.now()\f[R] can provide
+more reliable and precise measurements of elapsed time than
+\f[CR]Date.now()\f[R].
 .RE
 .SS Get the number of seconds since the ECMAScript Epoch
 .IP

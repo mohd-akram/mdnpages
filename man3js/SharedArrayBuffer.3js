@@ -36,7 +36,7 @@ Shared memory can be created and updated simultaneously in workers or
 the main thread.
 Depending on the system (the CPU, the OS, the Browser) it can take a
 while until the change is propagated to all contexts.
-To synchronize, \f[CR]atomic\f[R] operations are needed.
+To synchronize, atomic operations are needed.
 .PP
 \f[CR]SharedArrayBuffer\f[R] objects are used by some web APIs, such as:
 .IP \[bu] 2

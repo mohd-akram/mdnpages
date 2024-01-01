@@ -57,8 +57,8 @@ console.log(sports); // [\[aq]soccer\[aq], \[aq]baseball\[aq], \[aq]football\[aq
 console.log(total); // 4
 .EE
 .SS Merging two arrays
-This example uses \f[CR]spread syntax\f[R] to push all elements from a
-second array into the first one.
+This example uses spread syntax to push all elements from a second array
+into the first one.
 .IP
 .EX
 const vegetables = [\[dq]parsnip\[dq], \[dq]potato\[dq]];

@@ -48,7 +48,7 @@ Can be any valid JavaScript value (number, object, function, etc.).
 .TP
 \f[B]writable\f[R]
 \f[CR]true\f[R] if and only if the value associated with the property
-may be changed with an \f[CR]assignment operator\f[R].
+may be changed with an assignment operator.
 \f[B]Defaults to \f[CB]false\f[B].\f[R]
 .PP
 An accessor descriptor also has the following optional keys:

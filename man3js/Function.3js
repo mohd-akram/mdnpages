@@ -124,4 +124,4 @@ This is because the top-level scope in Node is not the global scope, and
 .IP \[bu] 2
 \f[CR]GeneratorFunction\f[R]
 .IP \[bu] 2
-\f[CR]Functions\f[R]
+Functions

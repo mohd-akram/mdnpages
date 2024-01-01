@@ -3,22 +3,12 @@
 set -euo pipefail
 
 get_name() {
-	sed -n '/^---$/,/^---$/{
-		/^title: Set.prototype.keys()/{
-			s/.*/Set.keys/
-			p
-			q
-		}
-		/^title: "Function: prototype"/{
-			s/.*/Function.prototype/
-			p
-			q
-		}
-		/^browser-compat:/{
-			s/^browser-compat:[[:space:]]*javascript\.builtins\.//
-			p
-			q
-		}
+	sed -En '/^---$/,/^---$/{
+	/^slug:/{
+		s/\//./g
+		s/^slug: Web\.(API|JavaScript\.Reference\.Global_Objects)\.//p
+		q
+	}
 	}' "$1"
 }
 
@@ -35,7 +25,7 @@ get_title() {
 }
 
 get_date() {
-	LANG=C ls -og "$1" | awk -v cmonth=$(date +%m) -v cyear=$(date +%Y) '
+	LC_ALL=C ls -og "$1" | awk -v cmonth=$(date +%m) -v cyear=$(date +%Y) '
 	BEGIN {
 		months["Jan"] =  1; months["Feb"] =  2; months["Mar"] =  3
 		months["Apr"] =  4; months["May"] =  5; months["Jun"] =  6
@@ -62,15 +52,54 @@ js_property_attributes() {
 	for i in 0 1; do
 	for j in 0 1; do
 	for k in 0 1; do
-		printf '/^{{js_property_attributes(%d, %d, %d)}}$/c\\\n| | |\\\n|-|-|\\\n|Writable|%s|\\\n|Enumerable|%s|\\\n|Configurable|%s|\\\n\n' \
+		printf '/^{{js_property_attributes\(%d, %d, %d\)}}$/c\\\n| | |\\\n|-|-|\\\n|Writable|%s|\\\n|Enumerable|%s|\\\n|Configurable|%s|\\\n\n' \
 			"$i" "$j" "$k" "$(yn "$i")" "$(yn "$j")" "$(yn "$k")"
 	done
 	done
 	done
 }
 
+space="[[:space:]]*"
+str="(\"([^\"]+)\"|'([^']+)')"
+empty="(\"\"|'')"
+
+ref() {
+	echo "
+	s/{{$1\($str\)}}/\`\2\3\`/ig
+	s/{{$1\($str,$space$str\)}}/\`\5\6\`/ig
+	s/{{$1\($str,$space$empty,$space$str\)}}/\`\2\3\`/ig
+	s/{{$1\($str,$space$str,$space$str\)}}/\`\5\6\`/ig
+	s/{{$1\($str,$space$empty,$space$empty,[^)]+\)}}/\2\3/ig
+	s/{{$1\($str,$space$str,$space$empty,[^)]+\)}}/\5\6/ig
+	s/{{$1\($str,$space$empty,$space$str,[^)]+\)\)}}/\2\3/ig
+	s/{{$1\($str,$space$str,$space$str,[^)]+\)}}/\5\6/ig
+	"
+}
+
+text() {
+	echo "
+	s/{{$1\($str\)}}/\2\3/ig
+	s/{{$1\($str,$space$str\)}}/\5\6/ig
+	"
+}
+
+element() {
+	echo "
+	s/{{$1\($space$str$space\)}}/\`<\2\3>\`/ig
+	s/{{$1\($str,$space$str\)}}/\`\5\6\`/ig
+	"
+}
+
+info() {
+	echo "s/{{$1(\(\))?}}/$2/ig"
+}
+
+ignore() {
+	echo "s/{{$1(\(($str|$empty|[^)'\"]*)*\))?}}//ig"
+}
+
 clean() {
-	sed "
+	sed -E "
 	/^---$/,/^---$/c\\
 ---\\
 title: $(get_name "$1")\\
@@ -87,54 +116,79 @@ $(get_name "$1") - $(get_title "$1")\\
 	/^## Specifications/,/{{Specifications}}/d
 	/^## Browser compatibility/,/{{Compat}}/d
 
-	s/\(.*\)\(\`\`\`js\) example-bad/\1**Bad**\n\1\2/
-	s/\(.*\)\(\`\`\`js\) example-good/\1**Good**\n\1\2/
+	s/(.*)(\`\`\`js) example-bad/\1**Bad**\n\1\2/
+	s/(.*)(\`\`\`js) example-good/\1**Good**\n\1\2/
 
 	s/^#//
 
 	$(js_property_attributes)
 
 	/{{[^}]*$/N
+	/{{[^}]*$/N
+	/{{[^}]*$/N
+	s/{{[[:space:]]*([^}]*[^}[:space:]])[[:space:]]*}}/{{\1}}/g
 
-	s/{{deprecated_header}}/*(deprecated)*/ig
-	s/{{Deprecated_Inline}}/*(deprecated)*/ig
+	$(ignore APIRef)
+	$(ignore DefaultAPISidebar)
+	$(ignore DOMAttributeMethods)
+	$(ignore EmbedInteractiveExample)
+	$(ignore EmbedGHLiveSample)
+	$(ignore EmbedLiveSample)
+	$(ignore InheritanceDiagram)
+	$(ignore JSRef)
+	$(ignore jsSidebar)
+	$(ignore HTTPSidebar)
+	$(ignore SeeCompatTable)
 
-	s/{{domxref(\"\([^\"]*\)\")}}/\`\1\`/ig
-	s/{{domxref(\"\([^\"]*\)\",[[:space:]]*\"\([^\"]*\)\"[^)]*)}}/\`\2\`/ig
+	$(ref CSP)
+	$(ref cssxref)
+	$(ref domxref)
+	$(ref HTTPHeader)
+	$(ref HTTPMethod)
+	$(ref HTTPStatus)
+	$(ref jsxref)
+	$(ref SVGAttr)
+	$(ref WebExtAPIRef)
 
-	s/{{EmbedInteractiveExample([^)]*)}}//ig
-	s/{{EmbedLiveSample([^)]*)}}//ig
+	$(info AvailableInWorkers 'This feature is available in Web Workers.')
+	$(info deprecated_header '**Deprecated**: This feature is no longer recommended.')
+	$(info Deprecated_Inline '*(deprecated)*')
+	$(info Experimental_Inline '*(experimental)*')
+	$(info NonStandardBadge '*(non-standard)*')
+	$(info non-standard_header '**Non-standard**: This feature is non-standard and is not on a standards track.')
+	$(info non-standard_inline '*(non-standard)*')
+	$(info optional_inline '*(optional)*')
+	$(info ReadOnlyInline '*(read-only)*')
+	$(info securecontext_header '**Secure context**: This feature is available only in secure contexts (HTTPS).')
+	$(info SecureContext_Inline '*(secure context)*')
 
-	s/{{Experimental_Inline}}/*(experimental)*/ig
+	$(element HTMLElement)
+	$(element MathMLElement)
+	$(element SVGElement)
 
-	s/{{Glossary(\"\([^\"]*\)\")}}/\1/ig
-	s/{{Glossary(\"\([^\"]*\)\",[[:space:]]*\"\([^\"]*\)\")}}/\2/ig
+	$(text Glossary)
+	$(text LiveSampleLink)
 
-	s/{{HTMLElement(\"\([^\"]*\)\")}}/\`<\1>\`/ig
-
-	s/{{HTTPHeader(\"\([^\"]*\)\")}}/\`\1\`/ig
-	s/{{HTTPMethod(\"\([^\"]*\)\")}}/\`\1\`/ig
-
-	s/{{JSRef}}//ig
-	s/{{jsSidebar([^)]*)}}//ig
-	s/{{jsxref(\"\([^\"]*\)\")}}/\`\1\`/ig
-	s/{{jsxref('\([^']*\)')}}/\`\1\`/ig
-	s/{{jsxref(\"\([^\"]*\)\",[[:space:]]*\"\([^\"]*\)\"[^)]*)}}/\`\2\`/ig
-	s/{{jsxref('\([^']*\)',[[:space:]]*'\([^']*\)'[^)]*)}}/\`\2\`/ig
-
-	s/{{non-standard_header}}/*(non-standard)*/ig
-	s/{{non-standard_inline}}/*(non-standard)*/ig
-
-	s/{{optional_inline}}/*(optional)*/ig
-
-	s/{{rfc(\([^)]*\))}}/RFC \1/ig
-
-	s/{{SeeCompatTable}}//ig
+	s/{{AvailableInWorkers\(\"notservice\"\)}}/This feature is available in Web Workers, except for Service Workers./ig
+	s/{{RFC\(\"?([0-9]+)\"?\)}}/RFC \1/ig
+	s/{{RFC\(([0-9]+),$space$str\)}}/RFC \1: \3\4/ig
+	s/{{RFC\(([0-9]+),$space$empty,$space([0-9.]+)\)}}/RFC \1, section \3/ig
+	s/{{RFC\(\"?([0-9]+)\"?,$space$empty,$space$str\)}}/RFC \1, section \4\5)/ig
+	s/{{RFC\(([0-9]+),$space$str,$space$str\)}}/RFC \1, section \6\7: \3\4/ig
 	" "$1"
 }
 
 convert() {
-	pandoc --lua-filter=filter.lua -s -t man
+	pandoc --lua-filter=filter.lua -s -f markdown-table_captions -t man
 }
 
-clean "$1" | convert
+cleaned="$(clean $1)"
+
+unknown=$(printf %s "$cleaned" | { grep -o '{{[^}]*}}' || :; } | sort | uniq)
+
+if [ "$unknown" ]; then
+	printf >&2 'unknown macros: %s\n' "$unknown"
+	exit 1
+fi
+
+printf %s "$cleaned" | convert

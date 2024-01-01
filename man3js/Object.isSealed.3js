@@ -21,9 +21,9 @@ sealed.
 .SH DESCRIPTION
 Returns \f[CR]true\f[R] if the object is sealed, otherwise
 \f[CR]false\f[R].
-An object is sealed if it is not \f[CR]extensible\f[R] and if all its
-properties are non-configurable and therefore not removable (but not
-necessarily non-writable).
+An object is sealed if it is not extensible and if all its properties
+are non-configurable and therefore not removable (but not necessarily
+non-writable).
 .SH EXAMPLES
 .SS Using Object.isSealed
 .IP

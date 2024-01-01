@@ -19,8 +19,8 @@ split(separator, limit)
 \f[B]separator\f[R]
 The pattern describing where each split should occur.
 Can be \f[CR]undefined\f[R], a string, or an object with a
-\f[CR]Symbol.split\f[R] method \[em] the typical example being a
-\f[CR]regular expression\f[R].
+\f[CR]Symbol.split\f[R] method \[em] the typical example being a regular
+expression.
 Omitting \f[CR]separator\f[R] or passing \f[CR]undefined\f[R] causes
 \f[CR]split()\f[R] to return an array with the calling string as a
 single element.

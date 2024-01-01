@@ -32,7 +32,7 @@ modification of a property on an object.
 Normal property addition through assignment creates properties which
 show up during property enumeration (\f[CR]for...in\f[R],
 \f[CR]Object.keys()\f[R], etc.), whose values may be changed and which
-may be \f[CR]deleted\f[R].
+may be deleted.
 This method allows these extra details to be changed from their
 defaults.
 By default, properties added using \f[CR]Object.defineProperty()\f[R]

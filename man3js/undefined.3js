@@ -122,10 +122,10 @@ JavaScript is a statically scoped language, so knowing if a variable is
 declared can be read by seeing whether it is declared in an enclosing
 context.
 .PP
-The global scope is bound to the \f[CR]global object\f[R], so checking
-the existence of a variable in the global context can be done by
-checking the existence of a property on the \f[I]global object\f[R],
-using the \f[CR]in\f[R] operator, for instance:
+The global scope is bound to the global object, so checking the
+existence of a variable in the global context can be done by checking
+the existence of a property on the \f[I]global object\f[R], using the
+\f[CR]in\f[R] operator, for instance:
 .IP
 .EX
 if (\[dq]x\[dq] in window) {

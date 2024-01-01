@@ -60,4 +60,4 @@ asyncGen.next().then((res) => console.log(res.value)); // 20
 .IP \[bu] 2
 Iterators and generators guide
 .IP \[bu] 2
-\f[CR]Functions\f[R]
+Functions

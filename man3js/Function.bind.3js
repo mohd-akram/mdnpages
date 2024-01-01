@@ -403,4 +403,4 @@ Polyfill of \f[CR]Function.prototype.bind\f[R] in
 .IP \[bu] 2
 \f[CR]Function.prototype.call()\f[R]
 .IP \[bu] 2
-\f[CR]Functions\f[R]
+Functions

@@ -33,8 +33,8 @@ T}
 A \f[CR]Function\f[R] object\[cq]s \f[CR]length\f[R] property indicates
 how many arguments the function expects, i.e.\ the number of formal
 parameters.
-This number excludes the \f[CR]rest parameter\f[R] and only includes
-parameters before the first one with a default value.
+This number excludes the rest parameter and only includes parameters
+before the first one with a default value.
 By contrast, \f[CR]arguments.length\f[R] is local to a function and
 provides the number of arguments actually passed to the function.
 .PP
