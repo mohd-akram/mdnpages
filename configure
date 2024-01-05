@@ -38,7 +38,7 @@ get_files() (
 )
 
 base=content/files/en-us/web
-dirs="$base/javascript/reference/global_objects"
+dirs="$base/api $base/javascript/reference/global_objects"
 for dir in $dirs; do
 	(cd "$dir" && git-restore-mtime)
 done
