@@ -115,18 +115,19 @@ $(get_name "$1") - $(get_title "$1")\\
 
 	/^## Specifications/,/{{Specifications}}/d
 	/^## Browser compatibility/,/{{Compat}}/d
+	/^[>[:space:]]*\`\`\`[^[:space:]]+ hidden$/,/^[>[:space:]]*\`\`\`$/d
 
-	s/(.*)(\`\`\`js) example-bad/\1**Bad**\n\1\2/
-	s/(.*)(\`\`\`js) example-good/\1**Good**\n\1\2/
+	s/^([>[:space:]]*)(\`\`\`[^[:space:]]+) example-bad$/\1**Bad**\n\1\2/
+	s/^([>[:space:]]*)(\`\`\`[^[:space:]]+) example-good$/\1**Good**\n\1\2/
 
 	s/^#//
-
-	$(js_property_attributes)
 
 	/{{[^}]*$/N
 	/{{[^}]*$/N
 	/{{[^}]*$/N
 	s/{{[[:space:]]*([^}]*[^}[:space:]])[[:space:]]*}}/{{\1}}/g
+
+	$(js_property_attributes)
 
 	$(ignore APIRef)
 	$(ignore DefaultAPISidebar)
@@ -179,7 +180,8 @@ $(get_name "$1") - $(get_title "$1")\\
 }
 
 convert() {
-	pandoc --lua-filter=filter.lua -s -f markdown-table_captions -t man
+	pandoc --fail-if-warnings --lua-filter=filter.lua -s \
+		-f markdown-table_captions -t man
 }
 
 cleaned="$(clean $1)"

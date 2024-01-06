@@ -28,10 +28,6 @@ const textMetrics = ctx.measureText(\[dq]foo\[dq]); // returns TextMetrics objec
 const descentCssPixels = textMetrics.fontBoundingBoxDescent;
 .EE
 .PP
-\f[CR]html hidden <p id=\[dq]log\[dq]></p>\f[R]
-.PP
-\f[CR]js hidden const log = document.getElementById(\[dq]log\[dq]); log.innerText = \[ga]fontBoundingBoxDescent: ${descentCssPixels}\[ga];\f[R]
-.PP
 The descent in CSS pixels for the text \[lq]Foo\[rq] in a 25px serif
 font is shown below.
 .SH SEE ALSO

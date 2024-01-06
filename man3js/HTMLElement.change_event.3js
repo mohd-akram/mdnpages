@@ -68,19 +68,9 @@ A generic \f[CR]Event\f[R].
 
 <div class=\[dq]result\[dq]></div>
 .EE
-.PP
-\[ga]\[ga]\[ga]css hidden body { display: grid; grid\-template\-areas:
-\[lq]select result\[rq]; }
-.PP
-select { grid\-area: select; }
-.PP
-\&.result { grid\-area: result; }
+.SS JavaScript
 .IP
 .EX
-
-### JavaScript
-
-\[ga]\[ga]\[ga]js
 const selectElement = document.querySelector(\[dq].ice\-cream\[dq]);
 const result = document.querySelector(\[dq].result\[dq]);
 

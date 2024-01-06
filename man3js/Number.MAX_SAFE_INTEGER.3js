@@ -6,7 +6,7 @@
 Number.MAX_SAFE_INTEGER \- Number.MAX_SAFE_INTEGER
 .SH SYNOPSIS
 The \f[B]\f[CB]Number.MAX_SAFE_INTEGER\f[B]\f[R] static data property
-represents the maximum safe integer in JavaScript (253 \[en] 1).
+represents the maximum safe integer in JavaScript (2\[ha]53 \[en] 1).
 .PP
 For larger integers, consider using \f[CR]BigInt\f[R].
 .SH VALUE
@@ -38,7 +38,7 @@ T}
 Double precision floating point format
 .UE \c
 \ only has 52 bits to represent the mantissa, so it can only safely
-represent integers between \-(253 \[en] 1) and 253 \[en] 1.
+represent integers between \-(2\[ha]53 \[en] 1) and 2\[ha]53 \[en] 1.
 \[lq]Safe\[rq] in this context refers to the ability to represent
 integers exactly and to compare them correctly.
 For example,
@@ -57,9 +57,10 @@ number value.
 Number.MAX_SAFE_INTEGER; // 9007199254740991
 .EE
 .SS Relationship between MAX_SAFE_INTEGER and EPSILON
-\f[CR]Number.EPSILON\f[R] is 2\-52, while \f[CR]MAX_SAFE_INTEGER\f[R] is
-253 \[en] 1 \[em] both of them are derived from the width of the
-mantissa, which is 53 bits (with the highest bit always being 1).
+\f[CR]Number.EPSILON\f[R] is 2\[ha]\-52, while
+\f[CR]MAX_SAFE_INTEGER\f[R] is 2\[ha]53 \[en] 1 \[em] both of them are
+derived from the width of the mantissa, which is 53 bits (with the
+highest bit always being 1).
 Multiplying them will give a value very close \[em] but not equal \[em]
 to 2.
 .IP

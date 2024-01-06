@@ -222,21 +222,89 @@ Can occur for the following reasons:
 Reason
 Failing examples
 Invalid header name.
+.IP
+.EX
+// space in \[dq]C ontent\-Type\[dq]
+const headers = {
+  \[aq]C ontent\-Type\[aq]: \[aq]text/xml\[aq],
+  \[aq]Breaking\-Bad\[aq]: \[aq]<3\[aq],
+};
+fetch(\[aq]https://example.com/\[aq], { headers });
+        
+.EE
 Invalid header value.
 The header object must contain exactly two elements.
+.IP
+.EX
+const headers = [
+  [\[aq]Content\-Type\[aq], \[aq]text/html\[aq], \[aq]extra\[aq]],
+  [\[aq]Accept\[aq]],
+];
+fetch(\[aq]https://example.com/\[aq], { headers });
+        
+.EE
 Invalid URL or scheme, or using a scheme that fetch does not support, or
 using a scheme that is not supported for a particular request mode.
+.IP
+.EX
+fetch(\[aq]blob://example.com/\[aq], { mode: \[aq]cors\[aq] });
+        
+.EE
 URL includes credentials.
+.IP
+.EX
+fetch(\[aq]https://user:password\[at]example.com/\[aq]);
+        
+.EE
 Invalid referrer URL.
+.IP
+.EX
+fetch(\[aq]https://example.com/\[aq], { referrer: \[aq]./abc\[rs]u0000df\[aq] });
+        
+.EE
 Invalid modes (navigate and websocket).
+.IP
+.EX
+fetch(\[aq]https://example.com/\[aq], { mode: \[aq]navigate\[aq] });
+        
+.EE
 If the request cache mode is \[lq]only\-if\-cached\[rq] and the request
 mode is other than \[lq]same\-origin\[rq].
+.IP
+.EX
+fetch(\[aq]https://example.com/\[aq], {
+  cache: \[aq]only\-if\-cached\[aq],
+  mode: \[aq]no\-cors\[aq],
+});
+        
+.EE
 If the request method is an invalid name token or one of the forbidden
 headers (`CONNECT', `TRACE' or `TRACK').
+.IP
+.EX
+fetch(\[aq]https://example.com/\[aq], { method: \[aq]CONNECT\[aq] });
+        
+.EE
 If the request mode is \[lq]no\-cors\[rq] and the request method is not
 a CORS\-safe\-listed method (`GET', `HEAD', or `POST').
+.IP
+.EX
+fetch(\[aq]https://example.com/\[aq], {
+  method: \[aq]CONNECT\[aq],
+  mode: \[aq]no\-cors\[aq],
+});
+        
+.EE
 If the request method is `GET' or `HEAD' and the body is non\-null or
 not undefined.
+.IP
+.EX
+fetch(\[aq]https://example.com/\[aq], {
+  method: \[aq]GET\[aq],
+  body: new FormData(),
+});
+        
+.EE
 If fetch throws a network error.
 .SH EXAMPLES
 In our \c

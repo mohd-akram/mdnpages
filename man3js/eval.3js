@@ -55,16 +55,21 @@ statements\[cq] completion values.
 In strict mode, declaring a variable named \f[CR]eval\f[R] or
 re\-assigning \f[CR]eval\f[R] is a \f[CR]SyntaxError\f[R].
 .PP
-\[ga]\[ga]\[ga]js\-nolint example\-bad \[lq]use strict\[rq];
-.PP
-const eval = 1; // SyntaxError: Unexpected eval or arguments in strict
-mode
+\f[B]Bad\f[R]
 .IP
 .EX
+\[dq]use strict\[dq];
 
-If the argument of \[ga]eval()\[ga] is not a string, \[ga]eval()\[ga] returns the argument unchanged. In the following example, passing a \[ga]String\[ga] object instead of a primitive causes \[ga]eval()\[ga] to return the \[ga]String\[ga] object rather than evaluating the string.
-
-\[ga]\[ga]\[ga]js
+const eval = 1; // SyntaxError: Unexpected eval or arguments in strict mode
+.EE
+.PP
+If the argument of \f[CR]eval()\f[R] is not a string, \f[CR]eval()\f[R]
+returns the argument unchanged.
+In the following example, passing a \f[CR]String\f[R] object instead of
+a primitive causes \f[CR]eval()\f[R] to return the \f[CR]String\f[R]
+object rather than evaluating the string.
+.IP
+.EX
 eval(new String(\[dq]2 + 2\[dq])); // returns a String object containing \[dq]2 + 2\[dq]
 eval(\[dq]2 + 2\[dq]); // returns 4
 .EE

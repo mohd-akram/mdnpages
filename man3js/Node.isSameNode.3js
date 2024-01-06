@@ -43,8 +43,6 @@ Then we run some JavaScript to compare the nodes using
 
 <p id=\[dq]output\[dq]></p>
 .EE
-.PP
-\f[CR]css hidden output {   width: 440px;   border: 2px solid black;   border\-radius: 5px;   padding: 10px;   margin\-top: 20px;   display: block; }\f[R]
 .SS JavaScript
 .IP
 .EX

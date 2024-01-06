@@ -132,7 +132,7 @@ T}
 T{
 \f[CR]BigInt64Array\f[R]
 T}@T{
-\-263 to 263 \- 1
+\-2\[ha]63 to 2\[ha]63 \- 1
 T}@T{
 8
 T}@T{
@@ -141,7 +141,7 @@ T}
 T{
 \f[CR]BigUint64Array\f[R]
 T}@T{
-0 to 264 \- 1
+0 to 2\[ha]64 \- 1
 T}@T{
 8
 T}@T{
@@ -400,7 +400,7 @@ not specified) or \f[CR]byteOffset\f[R] is not an integral multiple of
 the new typed array\[cq]s element size.
 .IP \[bu] 2
 \f[CR]byteOffset\f[R] is not a valid array index (an integer between 0
-and 253 \- 1).
+and 2\[ha]53 \- 1).
 .IP \[bu] 2
 When creating a view from a buffer, the bounds are outside the buffer.
 In other words,

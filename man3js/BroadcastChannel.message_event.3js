@@ -47,23 +47,8 @@ a button.
 There are two \[lq]receiver\[rq] iframes that listen to the broadcast
 message and write the result into a \f[CR]<div>\f[R] element.
 .SS Sender
-\f[CR]html hidden <h1>Sender</h1> <label for=\[dq]message\[dq]>Type a message to broadcast:</label><br /> <textarea id=\[dq]message\[dq] name=\[dq]message\[dq] rows=\[dq]1\[dq] cols=\[dq]40\[dq]>Hello</textarea> <button id=\[dq]broadcast\-message\[dq] type=\[dq]button\[dq]>Broadcast message</button>\f[R]
-.PP
-\[ga]\[ga]\[ga]css hidden body { border: 1px solid black; padding:
-0.5rem; height: 150px; font\-family: \[lq]Fira Sans\[rq], sans\-serif; }
-.PP
-h1 { font: 1.6em \[lq]Fira Sans\[rq], sans\-serif; margin\-bottom: 1rem;
-}
-.PP
-textarea { padding: 0.2rem; }
-.PP
-label, br { margin: 0.5rem 0; }
-.PP
-button { vertical\-align: top; height: 1.5rem; }
 .IP
 .EX
-
-\[ga]\[ga]\[ga]js
 const channel = new BroadcastChannel(\[dq]example\-channel\[dq]);
 const messageControl = document.querySelector(\[dq]#message\[dq]);
 const broadcastMessageButton = document.querySelector(\[dq]#broadcast\-message\[dq]);
@@ -73,34 +58,16 @@ broadcastMessageButton.addEventListener(\[dq]click\[dq], () => {
 });
 .EE
 .SS Receiver 1
-\f[CR]html hidden <h1>Receiver 1</h1> <div id=\[dq]received\[dq]></div>\f[R]
-.PP
-\[ga]\[ga]\[ga]css hidden body { border: 1px solid black; padding:
-0.5rem; height: 100px; font\-family: \[lq]Fira Sans\[rq], sans\-serif; }
-.PP
-h1 { font: 1.6em \[lq]Fira Sans\[rq], sans\-serif; margin\-bottom: 1rem;
-}
 .IP
 .EX
-
-\[ga]\[ga]\[ga]js
 const channel = new BroadcastChannel(\[dq]example\-channel\[dq]);
 channel.addEventListener(\[dq]message\[dq], (event) => {
   received.textContent = event.data;
 });
 .EE
 .SS Receiver 2
-\f[CR]html hidden <h1>Receiver 2</h1> <div id=\[dq]received\[dq]></div>\f[R]
-.PP
-\[ga]\[ga]\[ga]css hidden body { border: 1px solid black; padding:
-0.5rem; height: 100px; font\-family: \[lq]Fira Sans\[rq], sans\-serif; }
-.PP
-h1 { font: 1.6em \[lq]Fira Sans\[rq], sans\-serif; margin\-bottom: 1rem;
-}
 .IP
 .EX
-
-\[ga]\[ga]\[ga]js
 const channel = new BroadcastChannel(\[dq]example\-channel\[dq]);
 channel.addEventListener(\[dq]message\[dq], (event) => {
   received.textContent = event.data;

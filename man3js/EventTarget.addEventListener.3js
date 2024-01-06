@@ -991,8 +991,6 @@ It includes a \f[CR]<div>\f[R] that contains some text, and a check box.
   <label for=\[dq]passive\[dq]>passive</label>
 </div>
 .EE
-.PP
-\f[CR]css hidden container {   width: 150px;   height: 200px;   overflow: scroll;   margin: 2rem 0;   padding: 0.4rem;   border: 1px solid black; }\f[R]
 .SS JavaScript
 The code adds a listener to the container\[cq]s \f[CR]wheel\f[R] event,
 which by default scrolls the container.

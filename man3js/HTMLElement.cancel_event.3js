@@ -40,8 +40,6 @@ A generic \f[CR]Event\f[R].
 
 <div class=\[dq]result\[dq]></div>
 .EE
-.PP
-\f[CR]css hidden button, div {   margin: 0.5rem; }\f[R]
 .SS JavaScript
 .IP
 .EX
@@ -78,8 +76,6 @@ closeButton.addEventListener(\[dq]click\[dq], () => {
 
 <div id=\[dq]result\[dq]></div>
 .EE
-.PP
-\f[CR]css hidden div {   margin\-bottom: 10px; }\f[R]
 .SS JavaScript
 .IP
 .EX

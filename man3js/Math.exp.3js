@@ -19,8 +19,8 @@ Math.exp(x)
 \f[B]x\f[R]
 A number.
 .SS Return value
-A nonnegative number representing ex, where e is the base of the natural
-logarithm.
+A nonnegative number representing e\[ha]x, where e is the base of the
+natural logarithm.
 .SH DESCRIPTION
 Because \f[CR]exp()\f[R] is a static method of \f[CR]Math\f[R], you
 always use it as \f[CR]Math.exp()\f[R], rather than as a method of a

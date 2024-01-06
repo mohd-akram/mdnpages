@@ -32,26 +32,9 @@ A generic \f[CR]Event\f[R].
   </div>
 </div>
 .EE
-.PP
-\[ga]\[ga]\[ga]css hidden .event\-log\-contents { width: 18rem; height:
-5rem; border: 1px solid black; margin: 0.2rem; padding: 0.2rem; }
-.PP
-\&.example { display: grid; grid\-template\-areas: \[lq]button log\[rq]
-\[lq]video log\[rq]; }
-.PP
-button { grid\-area: button; width: 10rem; margin: 0.5rem 0; }
-.PP
-video { grid\-area: video; }
-.PP
-\&.event\-log { grid\-area: log; }
-.PP
-\&.event\-log > label { display: block; }
+.SS JavaScript
 .IP
 .EX
-
-### JavaScript
-
-\[ga]\[ga]\[ga]js
 const loadVideo = document.querySelector(\[dq]button\[dq]);
 const video = document.querySelector(\[dq]video\[dq]);
 const eventLog = document.querySelector(\[dq].event\-log\-contents\[dq]);

@@ -37,8 +37,8 @@ multihomed agents)
 The candidate\[cq]s component ID (1 for RTP, 2 for RTCP)
 .PP
 The candidate\[cq]s priority is computed using the formula
-(\f[I]ptype\f[R] is the priority of the candidate\[cq]s type and
-\f[I]plocal\f[R] is the priority of the IP address):
+(\f[I]p_type\f[R] is the priority of the candidate\[cq]s type and
+\f[I]p_local\f[R] is the priority of the IP address):
 .PP
 priority = 2 24 × p type + 2 8 × p local + ( 256 \- componentID )
 priority=\[ha]{ 24 }\f[I]{ type }+\[ha]{ 8 }\f[R]{ local }+(256

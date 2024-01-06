@@ -64,28 +64,11 @@ This live example shows how you can create a JSON response object, and
 logs the newly created object for inspection (the logging code is hidden
 as it is not relevant).
 .PP
-\f[CR]html hidden <pre id=\[dq]log\[dq]></pre>\f[R]
-.PP
-\[ga]\[ga]\f[CR]js hidden const logElement = document.getElementById(\[dq]log\[dq]); function log(text) {   logElement.innerText +=\f[R]${text}\[ga];
-}
-.PP
-async function logResponse(response) { const responseText = await
-jsonResponse.text(); log(\f[CR]body: ${responseText}\f[R]);
-jsonResponse.headers.forEach((header) =>
-log(\f[CR]header: ${header}\f[R]));
-log(\f[CR]status: ${jsonResponse.status}\f[R]);
-log(\f[CR]statusText: ${jsonResponse.statusText}\f[R]);
-log(\f[CR]type: ${jsonResponse.type}\f[R]);
-log(\f[CR]url: ${jsonResponse.url}\f[R]);
-log(\f[CR]ok: ${jsonResponse.ok}\f[R]);
-log(\f[CR]redirected: ${jsonResponse.redirected}\f[R]);
-log(\f[CR]bodyUsed: ${jsonResponse.bodyUsed}\f[R]); }
+The code below creates a \f[CR]Response\f[R] object with JSON body
+\f[CR]{ my: \[dq]data\[dq] }\f[R] and header set to
+\f[CR]application/json\f[R].
 .IP
 .EX
-
-The code below creates a \[ga]Response\[ga] object with JSON body \[ga]{ my: \[dq]data\[dq] }\[ga] and header set to \[ga]application/json\[ga].
-
-\[ga]\[ga]\[ga]js
 const jsonResponse = Response.json({ my: \[dq]data\[dq] });
 logResponse(jsonResponse);
 .EE
@@ -97,29 +80,13 @@ status is set to \f[CR]200\f[R].
 This example shows how you can create a JSON response object with
 \f[CR]status\f[R] and \f[CR]statusText\f[R] options.
 .PP
-\f[CR]html hidden <pre id=\[dq]log\[dq]></pre>\f[R]
-.PP
-\[ga]\[ga]\f[CR]js hidden const logElement = document.getElementById(\[dq]log\[dq]); function log(text) {   logElement.innerText +=\f[R]${text}\[ga];
-}
-.PP
-async function logResponse(response) { const responseText = await
-jsonResponse.text(); log(\f[CR]body: ${responseText}\f[R]);
-jsonResponse.headers.forEach((header) =>
-log(\f[CR]header: ${header}\f[R]));
-log(\f[CR]status: ${jsonResponse.status}\f[R]);
-log(\f[CR]statusText: ${jsonResponse.statusText}\f[R]);
-log(\f[CR]type: ${jsonResponse.type}\f[R]);
-log(\f[CR]url: ${jsonResponse.url}\f[R]);
-log(\f[CR]ok: ${jsonResponse.ok}\f[R]);
-log(\f[CR]redirected: ${jsonResponse.redirected}\f[R]);
-log(\f[CR]bodyUsed: ${jsonResponse.bodyUsed}\f[R]); }
+The code below creates a \f[CR]Response\f[R] object with JSON body
+\f[CR]{ some: \[dq]data\[dq], more: \[dq]information\[dq] }\f[R] and
+header set to \f[CR]application/json\f[R].
+It also sets the status to \f[CR]307\f[R] and sets the appropriate
+status text (\[lq]Temporary Redirect\[rq]).
 .IP
 .EX
-
-The code below creates a \[ga]Response\[ga] object with JSON body \[ga]{ some: \[dq]data\[dq], more: \[dq]information\[dq] }\[ga] and header set to \[ga]application/json\[ga].
-It also sets the status to \[ga]307\[ga] and sets the appropriate status text (\[dq]Temporary Redirect\[dq]).
-
-\[ga]\[ga]\[ga]js
 const jsonResponse = Response.json(
   { some: \[dq]data\[dq], more: \[dq]information\[dq] },
   { status: 307, statusText: \[dq]Temporary Redirect\[dq] },

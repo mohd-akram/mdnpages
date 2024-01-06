@@ -46,7 +46,7 @@ units digit, \f[CR]decimalAdjust\f[R] accepts an \f[CR]exp\f[R]
 parameter that specifies the number of digits to the left of the decimal
 point to which the number should be adjusted.
 For example, \f[CR]\-1\f[R] means it would leave one digit after the
-decimal point (as in \[lq]× 10\-1\[rq]).
+decimal point (as in \[lq]× 10\[ha]\-1\[rq]).
 In addition, it allows you to select the means of adjustment \[em]
 \f[CR]round\f[R], \f[CR]floor\f[R], or \f[CR]ceil\f[R] \[em] through the
 \f[CR]type\f[R] parameter.

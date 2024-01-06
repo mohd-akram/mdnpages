@@ -237,7 +237,7 @@ UTF\-16 code units
 .UE \c
 \&.
 In UTF\-16 encoding, every code unit is exact 16 bits long.
-This means there are a maximum of 216, or 65536 possible characters
+This means there are a maximum of 2\[ha]16, or 65536 possible characters
 representable as single UTF\-16 code units.
 This character set is called the \c
 .UR

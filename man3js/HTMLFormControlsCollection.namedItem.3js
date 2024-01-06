@@ -45,8 +45,6 @@ A \f[CR]RadioNodeList\f[R], \f[CR]Element\f[R], or \f[CR]null\f[R].
 
 <div id=\[dq]output\[dq]></div>
 .EE
-.PP
-\f[CR]css hidden div {   margin: 1rem 0; }\f[R]
 .SS JavaScript
 .IP
 .EX

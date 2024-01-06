@@ -32,8 +32,6 @@ Indicates that the attempt to load the font failed.
 .SH EXAMPLES
 This simple example loads a font and uses it to display some text in a
 canvas element (with an id of \f[CR]js\-canvas\f[R]).
-.PP
-\f[CR]html hidden <canvas id=\[dq]js\-canvas\[dq]></canvas>\f[R]
 .IP
 .EX
 const canvas = document.getElementById(\[dq]js\-canvas\[dq]);

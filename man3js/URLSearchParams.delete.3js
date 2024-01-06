@@ -35,10 +35,6 @@ None (\f[CR]undefined\f[R]).
 .SS Delete all parameters with specified name
 This example shows how to delete all query parameters (and values) that
 have a particular name.
-.PP
-\f[CR]html hidden <pre id=\[dq]log\[dq]></pre>\f[R]
-.PP
-\f[CR]js hidden const logElement = document.getElementById(\[dq]log\[dq]); function log(text) {   logElement.innerText += \[ga]${text}\[rs]n\[ga]; }\f[R]
 .IP
 .EX
 const url = new URL(\[dq]https://example.com?foo=1&bar=2&foo=3\[dq]);
@@ -53,10 +49,6 @@ The log below shows that all parameters that have the name of
 .SS Delete parameters with specified name and value
 This example shows how to delete query parameters that match a
 particular name and value.
-.PP
-\f[CR]html hidden <pre id=\[dq]log\[dq]></pre>\f[R]
-.PP
-\f[CR]js hidden const logElement = document.getElementById(\[dq]log\[dq]); function log(text) {   logElement.innerText += \[ga]${text}\[rs]n\[ga]; }\f[R]
 .IP
 .EX
 const url = new URL(\[dq]https://example.com?foo=1&bar=2&foo=3&foo=1\[dq]);

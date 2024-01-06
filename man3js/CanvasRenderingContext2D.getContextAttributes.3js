@@ -57,10 +57,6 @@ This example shows how you can specify context attributes when creating
 a canvas context, and then call \f[CR]getContextAttributes()\f[R] to
 read back the actual parameters that the browser used.
 .PP
-\f[CR]html hidden <pre id=\[dq]log\[dq]></pre>\f[R]
-.PP
-\f[CR]js hidden const logElement = document.getElementById(\[dq]log\[dq]); function log(text) {   logElement.innerText += text; }\f[R]
-.PP
 First we create a context using
 \f[CR]HTMLCanvasElement.getContext()\f[R], specifying just one context
 attribute.

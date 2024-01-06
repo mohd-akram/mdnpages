@@ -35,8 +35,6 @@ and disabling the checkbox.
   <input type=\[dq]checkbox\[dq] id=\[dq]pitch\[dq] name=\[dq]pitch\[dq] checked />
 </div>
 .EE
-.PP
-\f[CR]css hidden div {   margin: 0.5rem 0; }\f[R]
 .IP
 .EX
 const audio = document.querySelector(\[dq]audio\[dq]);

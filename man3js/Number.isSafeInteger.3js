@@ -20,8 +20,8 @@ The boolean value \f[CR]true\f[R] if the given value is a number that is
 a safe integer.
 Otherwise \f[CR]false\f[R].
 .SH DESCRIPTION
-The safe integers consist of all integers from \-(253 \- 1) to 253 \- 1,
-inclusive (±9,007,199,254,740,991).
+The safe integers consist of all integers from \-(2\[ha]53 \- 1) to
+2\[ha]53 \- 1, inclusive (±9,007,199,254,740,991).
 A safe integer is an integer that:
 .IP \[bu] 2
 can be exactly represented as an IEEE\-754 double precision number, and
@@ -29,11 +29,12 @@ can be exactly represented as an IEEE\-754 double precision number, and
 whose IEEE\-754 representation cannot be the result of rounding any
 other integer to fit the IEEE\-754 representation.
 .PP
-For example, 253 \- 1 is a safe integer: it can be exactly represented,
-and no other integer rounds to it under any IEEE\-754 rounding mode.
-In contrast, 253 is \f[I]not\f[R] a safe integer: it can be exactly
-represented in IEEE\-754, but the integer 253 + 1 can\[cq]t be directly
-represented in IEEE\-754 but instead rounds to 253 under
+For example, 2\[ha]53 \- 1 is a safe integer: it can be exactly
+represented, and no other integer rounds to it under any IEEE\-754
+rounding mode.
+In contrast, 2\[ha]53 is \f[I]not\f[R] a safe integer: it can be exactly
+represented in IEEE\-754, but the integer 2\[ha]53 + 1 can\[cq]t be
+directly represented in IEEE\-754 but instead rounds to 2\[ha]53 under
 round\-to\-nearest and round\-to\-zero rounding.
 .PP
 Handling values larger or smaller than \[ti]9 quadrillion with full

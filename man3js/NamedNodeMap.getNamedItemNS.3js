@@ -26,7 +26,6 @@ A string with the localName of the desired attribute.
 An \f[CR]Attr\f[R] corresponding to the namespace and local name given
 in parameters, or \f[CR]null\f[R] if none has been found.
 .SH EXAMPLE
-\f[CR]html hidden <pre></pre>\f[R]
 .IP
 .EX
 const parser = new DOMParser();

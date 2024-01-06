@@ -10,7 +10,7 @@ instance represents the number of elements in that array.
 The value is an unsigned, 32\-bit integer that is always numerically
 greater than the highest index in the array.
 .SH VALUE
-A nonnegative integer less than 232.
+A nonnegative integer less than 2\[ha]32.
 .PP
 .TS
 tab(@);
@@ -33,7 +33,7 @@ T}
 .TE
 .SH DESCRIPTION
 The value of the \f[CR]length\f[R] property is a nonnegative integer
-with a value less than 232.
+with a value less than 2\[ha]32.
 .IP
 .EX
 const listA = [1, 2, 3];
@@ -61,8 +61,8 @@ Setting \f[CR]length\f[R] to a value smaller than the current length
 truncates the array \[em] elements beyond the new \f[CR]length\f[R] are
 deleted.
 .IP \[bu] 2
-Setting any array index (a nonnegative integer smaller than 232) beyond
-the current \f[CR]length\f[R] extends the array \[em] the
+Setting any array index (a nonnegative integer smaller than 2\[ha]32)
+beyond the current \f[CR]length\f[R] extends the array \[em] the
 \f[CR]length\f[R] property is increased to reflect the new highest
 index.
 .IP \[bu] 2

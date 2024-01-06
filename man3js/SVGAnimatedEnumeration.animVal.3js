@@ -13,7 +13,6 @@ If there is no animation, it is the same value as the
 .SH VALUE
 An integer containing the current value of the enumeration
 .SH EXAMPLES
-\f[CR]css hidden html, body, svg {   height: 100%; }\f[R]
 .IP
 .EX
 <div>

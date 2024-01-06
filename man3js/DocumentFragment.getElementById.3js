@@ -81,8 +81,6 @@ Fragment content:
 Current status:
 <pre id=\[dq]log\[dq] />
 .EE
-.PP
-\f[CR]css hidden button {   margin\-bottom: 10px; }\f[R]
 .SS JavaScript
 .IP
 .EX

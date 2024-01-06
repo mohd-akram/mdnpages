@@ -19,7 +19,7 @@ Math.expm1(x)
 \f[B]x\f[R]
 A number.
 .SS Return value
-A number representing ex \- 1, where e is the base of the natural
+A number representing e\[ha]x \- 1, where e is the base of the natural
 logarithm.
 .SH DESCRIPTION
 For very small values of \f[I]x\f[R], adding 1 can reduce or eliminate

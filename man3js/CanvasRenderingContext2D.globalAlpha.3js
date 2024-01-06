@@ -59,8 +59,6 @@ effectively increased.
 If we were to increase the step count (and thus draw more circles), the
 background would eventually disappear completely from the center of the
 image.
-.PP
-\f[CR]html hidden <canvas id=\[dq]canvas\[dq] width=\[dq]150\[dq] height=\[dq]150\[dq]></canvas>\f[R]
 .IP
 .EX
 const canvas = document.getElementById(\[dq]canvas\[dq]);

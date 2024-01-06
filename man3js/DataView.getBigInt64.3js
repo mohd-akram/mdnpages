@@ -25,7 +25,7 @@ Indicates whether the data is stored in little\- or big\-endian format.
 If \f[CR]false\f[R] or \f[CR]undefined\f[R], a big\-endian value is
 read.
 .SS Return value
-A \f[CR]BigInt\f[R] from \-263 to 263\-1, inclusive.
+A \f[CR]BigInt\f[R] from \-2\[ha]63 to 2\[ha]63\-1, inclusive.
 .SS Exceptions
 .TP
 \f[B]RangeError\f[R]

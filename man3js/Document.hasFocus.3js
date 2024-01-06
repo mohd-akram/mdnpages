@@ -39,8 +39,6 @@ back to the original window will cause the document to regain focus.
 <p id=\[dq]log\[dq]>Focus check results are shown here.</p>
 <button id=\[dq]newWindow\[dq]>Open new window</button>
 .EE
-.PP
-\f[CR]css hidden body {   padding: 1rem;   background: gray;   text\-align: center;   font\-size: 1.5rem; }\f[R]
 .SS JavaScript
 .IP
 .EX

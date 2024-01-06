@@ -31,95 +31,12 @@ whether it\[cq]s an input or an output device.
 Because the example provides a handler for the \f[CR]devicechange\f[R]
 event, the list is refreshed any time a media device is attached to or
 removed from the device running the sample.
-\[ga]\[ga]\[ga]html hidden
-Click the start button below to begin the demonstration.
-Start
 .PP
-Audio devices:
-Video devices:
+We set up global variables that contain references to the
+\f[CR]<ul>\f[R] elements that are used to list the audio and video
+devices:
 .IP
 .EX
-
-\[ga]\[ga]\[ga]css hidden
-body {
-  font:
-    14px \[dq]Open Sans\[dq],
-    \[dq]Arial\[dq],
-    sans\-serif;
-}
-
-video {
-  margin\-top: 20px;
-  border: 1px solid black;
-}
-
-\&.button {
-  cursor: pointer;
-  width: 160px;
-  border: 1px solid black;
-  font\-size: 16px;
-  text\-align: center;
-  padding\-top: 2px;
-  padding\-bottom: 4px;
-  color: white;
-  background\-color: darkgreen;
-}
-
-h2 {
-  margin\-bottom: 4px;
-}
-
-\&.left {
-  float: left;
-  width: 48%;
-  margin\-right: 2%;
-}
-
-\&.right {
-  float: right;
-  width: 48%;
-  margin\-left: 2%;
-}
-
-\&.deviceList {
-  border: 1px solid black;
-  list\-style\-type: none;
-  margin\-top: 2px;
-  padding: 6px;
-}
-.EE
-.PP
-\[ga]\[ga]\[ga]js hidden // UI elements const videoElement =
-document.querySelector(\[lq]#video\[rq]); const logElement =
-document.querySelector(\[lq]output\[rq]); const startButton =
-document.querySelector(\[lq]#startButton\[rq]);
-.PP
-function log(msg) { logElement.innerHTML += \f[CR]${msg}<br>\f[R]; }
-.PP
-startButton.addEventListener( \[lq]click\[rq], () => { const constraints
-= { video: { width: 160, height: 120, frameRate: 30, }, audio: {
-sampleRate: 44100, sampleSize: 16, volume: 0.25, }, };
-.IP
-.EX
-navigator.mediaDevices
-  .getUserMedia(constraints)
-  .then((stream) => {
-    videoElement.srcObject = stream;
-    updateDeviceList();
-  })
-  .catch((err) => {
-    log(\[ga]${err.name}: ${err.message}\[ga]);
-  });
-.EE
-.PP
-}, false, );
-.IP
-.EX
-
-We set up global variables that contain references to the \[ga]<ul>\[ga]
-elements that are used to list the audio and video devices:
-
-\[ga]\[ga]\[ga]js
 const audioList = document.getElementById(\[dq]audioList\[dq]);
 const videoList = document.getElementById(\[dq]videoList\[dq]);
 .EE

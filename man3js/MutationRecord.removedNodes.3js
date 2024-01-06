@@ -37,8 +37,6 @@ increment the total number of removed nodes, because in this case
 <pre id=\[dq]counter\[dq]>Total removed nodes: 0</pre>
 <div id=\[dq]target\[dq]></div>
 .EE
-.PP
-\f[CR]css hidden counter {   border: 1px dotted black;   padding: 0.5rem; }\f[R]
 .SS JavaScript
 .IP
 .EX

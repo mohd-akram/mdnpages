@@ -18,7 +18,6 @@ toJSON()
 .SS Parameters
 None.
 .SS Return value
-.PP
 A JSON object with the following properties, which have been set to the
 corresponding values in the \f[CR]RTCIceCandidate\f[R] object:
 .TP

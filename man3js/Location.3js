@@ -12,44 +12,6 @@ linked \f[CR]Location\f[R], accessible via \f[CR]Document.location\f[R]
 and \f[CR]Window.location\f[R] respectively.
 .SH LOCATION ANATOMY
 Hover over the URL segments below to highlight their meaning:
-.PP
-\f[CR]html hidden <span id=\[dq]href\[dq] title=\[dq]href\[dq]   ><span id=\[dq]origin\[dq] title=\[dq]origin\[dq]     ><span id=\[dq]protocol\[dq] title=\[dq]protocol\[dq]>https:</span>//<span       id=\[dq]host\[dq]       title=\[dq]host\[dq]       ><span id=\[dq]hostname\[dq] title=\[dq]hostname\[dq]>example.org</span>:<span         id=\[dq]port\[dq]         title=\[dq]port\[dq]         >8080</span       ></span     ></span   ><span id=\[dq]pathname\[dq] title=\[dq]pathname\[dq]>/foo/bar</span   ><span id=\[dq]search\[dq] title=\[dq]search\[dq]>?q=baz</span   ><span id=\[dq]hash\[dq] title=\[dq]hash\[dq]>#bang</span></span >\f[R]
-.PP
-\[ga]\[ga]\[ga]css hidden html { display: table; width: 100%; }
-.PP
-body { display: table\-cell; text\-align: center; vertical\-align:
-middle; font\-family: Georgia; font\-size: 175%; line\-height: 1em;
-white\-space: nowrap; }
-.PP
-title { position: relative; display: inline\-block; box\-sizing:
-border\-box; line\-height: 2em; cursor: pointer; color: gray; }
-.PP
-content: attr(title); font\-family: monospace; position: absolute; top:
-100%; width: 100%; left: 50%; margin\-left: \-50%; font\-size: 60%;
-line\-height: 1.5; background: black; }
-.PP
-:target::before { background: black; color: yellow; }
-.PP
-title title::before { margin\-top: 1.5em; }
-.PP
-title title title::before { margin\-top: 3em; }
-.PP
-title title title title::before { margin\-top: 4.5em; }
-.PP
-:target { position: relative; z\-index: 1; outline: 50em solid rgba(255,
-255, 255, 0.8); }
-.IP
-.EX
-
-\[ga]\[ga]\[ga]js hidden
-document.body.addEventListener(\[dq]click\[dq], (event) => {
-  event.preventDefault();
-
-  window.location.hash = event.target.hasAttribute(\[dq]id\[dq])
-    ? \[ga]#${event.target.getAttribute(\[dq]id\[dq])}\[ga]
-    : \[dq]\[dq];
-});
-.EE
 .SH INSTANCE PROPERTIES
 .TP
 \f[B]Location.ancestorOrigins\f[R] \f[I](read\-only)\f[R]

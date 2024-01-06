@@ -34,6 +34,19 @@ function Header(elem)
   return elem
 end
 
+function RawBlock(raw)
+  return
+    raw.format:match 'html' and pandoc.read(raw.text, 'html').blocks or
+    raw
+end
+
+function RawInline(raw)
+  return
+    raw.text == "<sup>" and "^" or
+    raw.text == "<sub>" and "_" or
+    raw
+end
+
 function Meta(meta)
   local format = "(%d+)-(%d+)-(%d+)"
   local y, m, d = pandoc.utils.stringify(meta.date):match(format)

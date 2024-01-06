@@ -163,16 +163,6 @@ applied.
 .EX
 <button><h1>Click me!</h1></button>
 .EE
-.PP
-\[ga]\[ga]\[ga]css hidden html { height: 100%; overflow: hidden; }
-.PP
-body { height: inherit; display: flex; justify\-content: center;
-align\-items: center; margin: 0; }
-.PP
-button { border: 0; background\-color: white; font\-size: 8vw; display:
-block; width: 100%; height: 100%; }
-.PP
-h1 { letter\-spacing: 0.5rem; } \[ga]\[ga]\[ga]
 .RS
 .PP
 \f[B]Note:\f[R] If you are using a three\-button mouse, you\[cq]ll

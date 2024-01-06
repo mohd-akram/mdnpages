@@ -98,7 +98,7 @@ Returns the cosine of \f[CR]x\f[R].
 Returns the hyperbolic cosine of \f[CR]x\f[R].
 .TP
 \f[B]Math.exp()\f[R]
-Returns ex, where x is the argument, and e is Euler\[cq]s number
+Returns e\[ha]x, where x is the argument, and e is Euler\[cq]s number
 (\f[CR]2.718\f[R]\&..., the base of the natural logarithm).
 .TP
 \f[B]Math.expm1()\f[R]
@@ -122,14 +122,14 @@ Returns the result of the 32\-bit integer multiplication of \f[CR]x\f[R]
 and \f[CR]y\f[R].
 .TP
 \f[B]Math.log()\f[R]
-Returns the natural logarithm (㏒e; also, ㏑) of \f[CR]x\f[R].
+Returns the natural logarithm (㏒_e; also, ㏑) of \f[CR]x\f[R].
 .TP
 \f[B]Math.log10()\f[R]
 Returns the base\-10 logarithm of \f[CR]x\f[R].
 .TP
 \f[B]Math.log1p()\f[R]
-Returns the natural logarithm (㏒e; also ㏑) of \f[CR]1 + x\f[R] for the
-number \f[CR]x\f[R].
+Returns the natural logarithm (㏒_e; also ㏑) of \f[CR]1 + x\f[R] for
+the number \f[CR]x\f[R].
 .TP
 \f[B]Math.log2()\f[R]
 Returns the base\-2 logarithm of \f[CR]x\f[R].
@@ -142,7 +142,7 @@ Returns the smallest of zero or more numbers.
 .TP
 \f[B]Math.pow()\f[R]
 Returns base \f[CR]x\f[R] to the exponent power \f[CR]y\f[R] (that is,
-\f[CR]x\f[R]y).
+\f[CR]x\f[R]\[ha]y).
 .TP
 \f[B]Math.random()\f[R]
 Returns a pseudo\-random number between \f[CR]0\f[R] and \f[CR]1\f[R].

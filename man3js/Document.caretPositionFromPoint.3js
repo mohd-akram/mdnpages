@@ -66,10 +66,7 @@ for (const paragraph of paragraphs) {
   paragraph.addEventListener(\[dq]click\[dq], insertBreakAtPoint, false);
 }
 .EE
-.PP
-\f[CR]js hidden let message = document.getElementById(\[dq]message\[dq]); if (document.caretPositionFromPoint) {   message.textContent =     \[dq]This browser supports the standard document.caretPositionFromPoint\[dq];   message.classList.add(\[dq]supported\[dq]); } else if (document.caretRangeFromPoint) {   message.textContent =     \[dq]This browser supports the non\-standard document.caretRangeFromPoint\[dq];   message.classList.add(\[dq]supported\[dq]); }\f[R]
 .SS HTML
-\f[CR]html hidden <div id=\[dq]message\[dq]>   This browser supports neither document.caretRangeFromPoint nor   document.caretPositionFromPoint </div>\f[R]
 .IP
 .EX
 <p>
@@ -79,12 +76,6 @@ for (const paragraph of paragraphs) {
   kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
 </p>
 .EE
-.PP
-\[ga]\[ga]\[ga]css hidden message { color: red; font\-weight: bold; }
-.PP
-message.fallback { color: darkorange; }
-.PP
-message.supported { color: green; } \[ga]\[ga]\[ga]
 .SH SEE ALSO
 .IP \[bu] 2
 \f[CR]CaretPosition\f[R]

@@ -69,8 +69,6 @@ if (typeof HTMLScriptElement.supports === \[dq]undefined\[dq]) {
   checkSupport(\[dq]anything else\[dq]);
 }
 .EE
-.PP
-\f[CR]html hidden <textarea id=\[dq]log\[dq] rows=\[dq]6\[dq] cols=\[dq]80\[dq]></textarea>\f[R]
 .SH SEE ALSO
 .IP \[bu] 2
 \f[CR]HTMLScriptElement\f[R]

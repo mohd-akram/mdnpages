@@ -11,7 +11,6 @@ is a list of transformations applied to the element.
 .SH VALUE
 A \f[CR]SVGTransformList\f[R].
 .SH EXAMPLES
-\f[CR]css hidden html, body, svg {   height: 100%; }\f[R]
 .IP
 .EX
 <div>

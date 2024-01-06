@@ -38,20 +38,8 @@ In the example, there is content in the embedded iframe that is taller
 and wider than the iframe itself, so scrolling within the iframe in both
 directions is possible.
 When the user stops scrolling, the \f[CR]scrollend\f[R] event fires:
-.PP
-\[ga]\[ga]\[ga]css hidden * { margin: 10px; }
-.PP
-\&.box\-wrapper { width: 900px; border: 4px dotted; }
-.PP
-\&.box { height: 100px; width: 100px; display: block; border: 4px
-dotted; border\-radius: 10px; }
-.PP
-output { text\-align: center; font\-size: 1.2em; position: sticky;
-bottom: 0; }
 .IP
 .EX
-
-\[ga]\[ga]\[ga]html
 <div class=\[dq]box\-wrapper\[dq]>
   <div class=\[dq]box\[dq]></div>
   <div class=\[dq]box\[dq]></div>
@@ -81,20 +69,8 @@ and wider than the iframe itself, so scrolling within the iframe in both
 directions is possible.
 This builds on the first example, but uses
 \f[CR]document.onscrollend\f[R] instead of an event listener:
-.PP
-\[ga]\[ga]\[ga]css hidden * { margin: 10px; }
-.PP
-\&.box\-wrapper { width: 900px; border: 4px dotted; }
-.PP
-\&.box { height: 100px; width: 100px; display: block; border: 4px
-dotted; border\-radius: 10px; }
-.PP
-output { text\-align: center; font\-size: 1.2em; position: sticky;
-bottom: 0; }
 .IP
 .EX
-
-\[ga]\[ga]\[ga]html
 <div class=\[dq]box\-wrapper\[dq]>
   <div class=\[dq]box\[dq]></div>
   <div class=\[dq]box\[dq]></div>

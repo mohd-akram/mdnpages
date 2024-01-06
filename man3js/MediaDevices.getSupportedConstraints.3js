@@ -25,18 +25,6 @@ list, each of these Boolean properties has the value \f[CR]true\f[R].
 .SH EXAMPLES
 This example outputs a list of the constraints supported by your
 browser.
-\[ga]\[ga]\[ga]html hidden
-The following media constraints are supported by your browser:
-.IP
-.EX
-
-\[ga]\[ga]\[ga]css hidden
-body {
-  font:
-    15px Arial,
-    sans\-serif;
-}
-.EE
 .IP
 .EX
 const constraintList = document.querySelector(\[dq]#constraintList\[dq]);

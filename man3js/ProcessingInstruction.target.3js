@@ -19,7 +19,6 @@ is a processing instruction whose \f[CR]target\f[R] is \f[CR]xml\f[R].
 A string containing the name of the application.
 .SH EXAMPLE
 .SS In an XML document
-\f[CR]html hidden <output></output>\f[R]
 .IP
 .EX
 let parser = new DOMParser();

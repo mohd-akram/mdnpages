@@ -62,8 +62,6 @@ the line.
 The line on the right uses the \f[CR]\[dq]square\[dq]\f[R] option.
 This adds a box with an equal width and half the height of the line
 thickness.
-.PP
-\f[CR]html hidden <canvas id=\[dq]canvas\[dq] width=\[dq]150\[dq] height=\[dq]150\[dq]></canvas>\f[R]
 .IP
 .EX
 const canvas = document.getElementById(\[dq]canvas\[dq]);

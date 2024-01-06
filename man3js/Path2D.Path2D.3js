@@ -27,8 +27,6 @@ created from that description.
 .SH EXAMPLES
 .SS Creating and copying paths
 This example creates and copies a \f[CR]Path2D\f[R] path.
-.PP
-\f[CR]html hidden <canvas id=\[dq]canvas\[dq]></canvas>\f[R]
 .IP
 .EX
 const canvas = document.getElementById(\[dq]canvas\[dq]);
@@ -49,8 +47,6 @@ The path will move to point (\f[CR]M10 10\f[R]) and then move
 horizontally 80 points to the right (\f[CR]h 80\f[R]), then 80 points
 down (\f[CR]v 80\f[R]), then 80 points to the left (\f[CR]h \-80\f[R]),
 and then back to the start (\f[CR]Z\f[R]).
-.PP
-\f[CR]html hidden <canvas id=\[dq]canvas\[dq]></canvas>\f[R]
 .IP
 .EX
 const canvas = document.getElementById(\[dq]canvas\[dq]);

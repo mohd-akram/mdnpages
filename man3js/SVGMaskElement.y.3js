@@ -21,7 +21,6 @@ An \f[CR]SVGAnimatedLength\f[R] object.
 The \f[CR]baseVal\f[R] property of this object returns an
 \f[CR]SVGLength\f[R], the value of which returns the \f[CR]y\f[R] value.
 .SH EXAMPLES
-\f[CR]css hidden html, body, svg {   height: 100%; }\f[R]
 .IP
 .EX
 <div>

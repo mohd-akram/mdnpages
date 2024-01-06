@@ -40,19 +40,9 @@ attribute, the \f[CR]type\f[R] is \f[CR]attributes\f[R].
 <pre id=\[dq]log\[dq]>Mutation type:</pre>
 <div id=\[dq]target\[dq]><p>Node #0</p></div>
 .EE
-.PP
-\[ga]\[ga]\[ga]css hidden log { border: 1px dotted black; padding:
-0.5rem; }
-.PP
-\&.blue { color: blue; }
-.PP
-\&.red { color: red; }
+.SS JavaScript
 .IP
 .EX
-
-### JavaScript
-
-\[ga]\[ga]\[ga]js
 const addNodes = document.querySelector(\[dq]#add\-nodes\[dq]);
 const setAttribute = document.querySelector(\[dq]#set\-attribute\[dq]);
 const reset = document.querySelector(\[dq]#reset\[dq]);

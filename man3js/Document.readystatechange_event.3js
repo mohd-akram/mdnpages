@@ -39,25 +39,9 @@ A generic \f[CR]Event\f[R].
 </div>
 .EE
 .SS CSS
-\[ga]\[ga]\[ga]css hidden body { display: grid; grid\-template\-areas:
-\[lq]control log\[rq]; }
-.PP
-\&.controls { grid\-area: control; display: flex; align\-items: center;
-justify\-content: center; }
-.PP
-\&.event\-log { grid\-area: log; }
-.PP
-\&.event\-log\-contents { resize: none; }
-.PP
-label, button { display: block; }
-.PP
-reload { height: 2rem; }
+.SS JavaScript
 .IP
 .EX
-
-### JavaScript
-
-\[ga]\[ga]\[ga]js
 const log = document.querySelector(\[dq].event\-log\-contents\[dq]);
 const reload = document.querySelector(\[dq]#reload\[dq]);
 

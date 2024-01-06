@@ -6,7 +6,7 @@
 Number.MIN_SAFE_INTEGER \- Number.MIN_SAFE_INTEGER
 .SH SYNOPSIS
 The \f[B]\f[CB]Number.MIN_SAFE_INTEGER\f[B]\f[R] static data property
-represents the minimum safe integer in JavaScript, or \-(253 \- 1).
+represents the minimum safe integer in JavaScript, or \-(2\[ha]53 \- 1).
 .PP
 To represent integers smaller than this, consider using
 \f[CR]BigInt\f[R].
@@ -39,7 +39,7 @@ T}
 Double precision floating point format
 .UE \c
 \ only has 52 bits to represent the mantissa, so it can only safely
-represent integers between \-(253 \[en] 1) and 253 \[en] 1.
+represent integers between \-(2\[ha]53 \[en] 1) and 2\[ha]53 \[en] 1.
 Safe in this context refers to the ability to represent integers exactly
 and to correctly compare them.
 For example,

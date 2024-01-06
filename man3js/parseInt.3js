@@ -133,7 +133,7 @@ If \f[CR]NaN\f[R] is passed on to arithmetic operations, the operation
 result will also be \f[CR]NaN\f[R].
 .PP
 Because large numbers use the \f[CR]e\f[R] character in their string
-representation (e.g.\ \f[CR]6.022e23\f[R] for 6.022 × 1023), using
+representation (e.g.\ \f[CR]6.022e23\f[R] for 6.022 × 10\[ha]23), using
 \f[CR]parseInt\f[R] to truncate numbers will produce unexpected results
 when used on very large or very small numbers.
 \f[CR]parseInt\f[R] should \f[I]not\f[R] be used as a substitute for

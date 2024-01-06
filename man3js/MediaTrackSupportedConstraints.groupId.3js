@@ -23,9 +23,6 @@ If the property isn\[cq]t present, this property is missing from the
 supported constraints dictionary, and you\[cq]ll get
 \f[CR]undefined\f[R] if you try to look at its value.
 .SH EXAMPLES
-\f[CR]html hidden <div id=\[dq]result\[dq]></div>\f[R]
-.PP
-\f[CR]css hidden result {   font:     14px \[dq]Arial\[dq],     sans\-serif; }\f[R]
 .IP
 .EX
 const result = document.getElementById(\[dq]result\[dq]);

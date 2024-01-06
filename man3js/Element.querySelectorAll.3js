@@ -173,23 +173,18 @@ a \f[CR]<pre>\f[R] element which the example uses for output.
 
 <pre id=\[dq]output\[dq]></pre>
 .EE
+.SS JavaScript
+In the JavaScript, we first select the \f[CR]#subject\f[R] element.
 .PP
-\[ga]\[ga]\[ga]css hidden div { margin: 0.5rem; padding: 0.5rem; border:
-3px #20b2aa solid; border\-radius: 5px; font\-family: monospace; }
+When the \f[CR]#select\f[R] button is pressed, we call
+\f[CR]querySelectorAll()\f[R] on \f[CR]#subject\f[R], passing
+\f[CR]\[dq]#outer #inner\[dq]\f[R] as the selector string.
 .PP
-pre, button { margin: 0.5rem; padding: 0.5rem; }
+When the \f[CR]#select\-scope\f[R] button is pressed, we again call
+\f[CR]querySelectorAll()\f[R] on \f[CR]#subject\f[R], but this time we
+pass \f[CR]\[dq]:scope #outer #inner\[dq]\f[R] as the selector string.
 .IP
 .EX
-
-### JavaScript
-
-In the JavaScript, we first select the \[ga]#subject\[ga] element.
-
-When the \[ga]#select\[ga] button is pressed, we call \[ga]querySelectorAll()\[ga] on \[ga]#subject\[ga], passing \[ga]\[dq]#outer #inner\[dq]\[ga] as the selector string.
-
-When the \[ga]#select\-scope\[ga] button is pressed, we again call \[ga]querySelectorAll()\[ga] on \[ga]#subject\[ga], but this time we pass \[ga]\[dq]:scope #outer #inner\[dq]\[ga] as the selector string.
-
-\[ga]\[ga]\[ga]js
 const subject = document.querySelector(\[dq]#subject\[dq]);
 
 const select = document.querySelector(\[dq]#select\[dq]);

@@ -43,8 +43,6 @@ canceled, in the order they were added, along with each animation\[cq]s
 <button id=\[dq]cancel\[dq]>Cancel an animation</button>
 <ol id=\[dq]stack\[dq]></ol>
 .EE
-.PP
-\f[CR]html hidden <template id=\[dq]list\-item\-template\[dq]>   <li>     <span class=\[dq]replaceState\[dq]></span>,     <span class=\[dq]description\[dq]></span>   </li> </template>\f[R]
 .SS CSS
 .IP
 .EX
@@ -87,24 +85,6 @@ function cancelTop() {
   stack.pop()?.cancel();
 }
 .EE
-.PP
-\[ga]\[ga]\[ga]js hidden const stackDisplay =
-document.getElementById(\[lq]stack\[rq]); const template =
-document.getElementById(\[lq]list\-item\-template\[rq]).content.firstElementChild;
-const nodes = new Map();
-.PP
-function show(animation, offset) { const direction = offset < 0 ?
-\[lq]left\[rq] : \[lq]right\[rq]; const li = template.cloneNode(true);
-const description = li.querySelector(\[lq].description\[rq]); const
-replaceState = li.querySelector(\[lq].replaceState\[rq]);
-description.textContent = direction; replaceState.textContent =
-animation.replaceState; nodes.set(animation, { li, description,
-replaceState }); stackDisplay.append(li);
-animation.addEventListener(\[lq]cancel\[rq], () => {
-nodes.get(animation).li.remove(); nodes.delete(animation); });
-animation.addEventListener(\[lq]remove\[rq], () => {
-nodes.get(animation).replaceState.textContent = animation.replaceState;
-}); } \[ga]\[ga]\[ga]
 .SS Result
 Note that adding a new transient animation will replace any previously
 added transient animation.

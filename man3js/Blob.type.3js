@@ -35,8 +35,6 @@ file to make sure it\[cq]s one of a given set of image file types.
 <input type=\[dq]file\[dq] id=\[dq]input\[dq] multiple />
 <output id=\[dq]output\[dq]>Choose image files\&...</output>
 .EE
-.PP
-\f[CR]css hidden output {   display: block;   margin\-top: 16px; }\f[R]
 .SS JavaScript
 .IP
 .EX

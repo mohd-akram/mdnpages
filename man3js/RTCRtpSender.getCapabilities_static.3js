@@ -156,10 +156,6 @@ of interest.
 .SS Feature support
 You can use \f[CR]Object.hasOwn()\f[R] to check that
 \f[CR]RTCRtpSender.getCapabilities()\f[R] is supported:
-.PP
-\f[CR]html hidden <p id=\[dq]log\[dq]></p>\f[R]
-.PP
-\f[CR]js hidden const log = document.querySelector(\[dq]#log\[dq]);\f[R]
 .IP
 .EX
 log.textContent = \[ga]RTCRtpSender.getCapabilities() supported: ${Object.hasOwn(

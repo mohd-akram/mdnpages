@@ -336,8 +336,6 @@ function logline(now) {
 
 document.querySelector(\[dq]#run\[dq]).addEventListener(\[dq]click\[dq], run);
 .EE
-.PP
-\f[CR]css hidden * {   font\-family: monospace; } th, td {   padding: 0 10px 0 10px;   text\-align: center;   border: 1px solid; } table {   border\-collapse: collapse;   margin\-top: 10px; }\f[R]
 .SS Timeouts in inactive tabs
 To reduce the load (and associated battery usage) from background tabs,
 browsers will enforce a minimum timeout delay in inactive tabs.
@@ -444,8 +442,6 @@ function clearMessage() {
   clearTimeout(timeoutID);
 }
 .EE
-.PP
-\f[CR]css hidden output {   padding: 0.5rem 0; }\f[R]
 .SS Result
 See also the \f[CR]clearTimeout()\f[R] example.
 .SH SEE ALSO

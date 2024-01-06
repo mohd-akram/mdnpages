@@ -33,20 +33,14 @@ The page has a \[lq]parent\[rq] \f[CR]<div>\f[R] containing a
 <button id=\[dq]reset\[dq]>Reset</button>
 <pre id=\[dq]output\[dq]></pre>
 .EE
+.SS JavaScript
+The event handler is attached to the parent.
+It logs the value of \f[CR]event.currentTarget\f[R] and
+\f[CR]event.target\f[R].
 .PP
-\[ga]\[ga]\[ga]css hidden button, div, pre { margin: 0.5rem; }
-.PP
-div { padding: 1rem; border: 1px solid black; }
+We also have a \[lq]Reset\[rq] button that just reloads the example.
 .IP
 .EX
-
-### JavaScript
-
-The event handler is attached to the parent. It logs the value of \[ga]event.currentTarget\[ga] and \[ga]event.target\[ga].
-
-We also have a \[dq]Reset\[dq] button that just reloads the example.
-
-\[ga]\[ga]\[ga]js
 const output = document.querySelector(\[dq]#output\[dq]);
 const parent = document.querySelector(\[dq]#parent\[dq]);
 parent.addEventListener(\[dq]click\[dq], (event) => {

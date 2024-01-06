@@ -50,8 +50,8 @@ their string representation.
 If the number is not a whole number, the decimal point \f[CR].\f[R] is
 used to separate the decimal places.
 Scientific notation is used if the radix is 10 and the number\[cq]s
-magnitude (ignoring sign) is greater than or equal to 1021 or less than
-10\-6.
+magnitude (ignoring sign) is greater than or equal to 10\[ha]21 or less
+than 10\[ha]\-6.
 In this case, the returned string always explicitly specifies the sign
 of the exponent.
 .IP

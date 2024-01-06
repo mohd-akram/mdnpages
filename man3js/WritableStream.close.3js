@@ -43,10 +43,6 @@ are processed to deal with success or failure of chunks and streams.
 Note that in order to be able to call \f[CR]close()\f[R] on the stream
 itself, the writer must be disconnected using
 \f[CR]defaultWriter.releaseLock();\f[R].
-.PP
-\f[CR]html hidden <ul id=\[dq]log\[dq]></ul>\f[R]
-.PP
-\f[CR]js hidden const list = document.getElementById(\[dq]log\[dq]); function log(message) {   const listItem = document.createElement(\[dq]li\[dq]);   listItem.textContent = message;   list.appendChild(listItem); }\f[R]
 .IP
 .EX
 function sendMessage(message, writableStream) {

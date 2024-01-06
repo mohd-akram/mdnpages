@@ -40,9 +40,10 @@ number without using exponential notation and with exactly
 The number is rounded if necessary, and the fractional part is padded
 with zeros if necessary so that it has the specified length.
 .PP
-If the absolute value of the number is greater or equal to 1021, this
-method uses the same algorithm as \f[CR]Number.prototype.toString()\f[R]
-and returns a string in exponential notation.
+If the absolute value of the number is greater or equal to 10\[ha]21,
+this method uses the same algorithm as
+\f[CR]Number.prototype.toString()\f[R] and returns a string in
+exponential notation.
 \f[CR]toFixed()\f[R] returns \f[CR]\[dq]Infinity\[dq]\f[R],
 \f[CR]\[dq]NaN\[dq]\f[R], or \f[CR]\[dq]\-Infinity\[dq]\f[R] if the
 value of the number is non\-finite.

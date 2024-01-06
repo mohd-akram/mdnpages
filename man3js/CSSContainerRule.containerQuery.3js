@@ -32,10 +32,6 @@ displays the properties of the associated \f[CR]CSSContainerRule\f[R].
 The CSS is the same as in the \f[CR]\[at]container\f[R] example Setting
 styles based on a container\[cq]s size.
 .PP
-\f[CR]html hidden <div id=\[dq]log\[dq]>   <h2>Log</h2>   <ul></ul>   <hr /> </div>\f[R]
-.PP
-\f[CR]js hidden // Store reference to log list const logList = document.querySelector(\[dq]#log ul\[dq]); // Function to log data from underlying source function log(result) {   const listItem = document.createElement(\[dq]li\[dq]);   listItem.textContent = result;   logList.appendChild(listItem); }\f[R]
-.PP
 First we define the HTML for a \f[CR]card\f[R] (\f[CR]<div>\f[R])
 contained within a \f[CR]post\f[R].
 .IP

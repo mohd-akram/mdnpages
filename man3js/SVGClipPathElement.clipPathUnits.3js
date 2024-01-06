@@ -39,7 +39,6 @@ It means that the origin of the coordinate system is the top left corner
 of the object bounding box and the width and height of the object
 bounding box are considered to have a length of 1 unit value.
 .SH EXAMPLES
-\f[CR]css hidden html, body, svg {   height: 100%; }\f[R]
 .IP
 .EX
 <div>

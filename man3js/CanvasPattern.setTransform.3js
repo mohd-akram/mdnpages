@@ -54,28 +54,6 @@ img.onload = () => {
 Here\[cq]s an editable demo of the code snippet above.
 Try changing the argument to \f[CR]SetTransform()\f[R] to see the effect
 it had.
-.PP
-\f[CR]html hidden <canvas id=\[dq]canvas\[dq] width=\[dq]400\[dq] height=\[dq]200\[dq] class=\[dq]playable\-canvas\[dq]></canvas> <div class=\[dq]playable\-buttons\[dq]>   <input id=\[dq]edit\[dq] type=\[dq]button\[dq] value=\[dq]Edit\[dq] />   <input id=\[dq]reset\[dq] type=\[dq]button\[dq] value=\[dq]Reset\[dq] /> </div> <textarea id=\[dq]code\[dq] class=\[dq]playable\-code\[dq] style=\[dq]height:120px\[dq]> const img = new Image(); img.src = \[aq]canvas_createpattern.png\[aq]; img.onload = () => {   const pattern = ctx.createPattern(img, \[aq]repeat\[aq]);   pattern.setTransform(matrix.rotate(\-45).scale(1.5));   ctx.fillStyle = pattern;   ctx.fillRect(0, 0, 400, 400); }; </textarea>\f[R]
-.PP
-\[ga]\[ga]\[ga]js hidden const canvas =
-document.getElementById(\[lq]canvas\[rq]); const ctx =
-canvas.getContext(\[lq]2d\[rq]); const textarea =
-document.getElementById(\[lq]code\[rq]); const reset =
-document.getElementById(\[lq]reset\[rq]); const edit =
-document.getElementById(\[lq]edit\[rq]); const code = textarea.value;
-.PP
-const matrix = new DOMMatrix([1, 0.2, 0.8, 1, 0, 0]);
-.PP
-function drawCanvas() { ctx.clearRect(0, 0, canvas.width,
-canvas.height); eval(textarea.value); }
-.PP
-reset.addEventListener(\[lq]click\[rq], () => { textarea.value = code;
-drawCanvas(); });
-.PP
-edit.addEventListener(\[lq]click\[rq], () => { textarea.focus(); });
-.PP
-textarea.addEventListener(\[lq]input\[rq], drawCanvas);
-window.addEventListener(\[lq]load\[rq], drawCanvas); \[ga]\[ga]\[ga]
 .SH SEE ALSO
 .IP \[bu] 2
 The interface defining this method: \f[CR]CanvasPattern\f[R]

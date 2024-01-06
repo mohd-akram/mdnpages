@@ -67,28 +67,9 @@ doesn\[cq]t include the headers and other overhead.
   </div>
 </div>
 .EE
-.PP
-\[ga]\[ga]\[ga]css hidden img.preview { margin: 1rem 0; }
-.PP
-\&.event\-log\-contents { width: 18rem; height: 5rem; border: 1px solid
-black; margin: 0.2rem; padding: 0.2rem; resize: none; }
-.PP
-\&.example { display: grid; grid\-template\-areas: \[lq]select log\[rq]
-\[lq]preview log\[rq]; }
-.PP
-\&.file\-select { grid\-area: select; }
-.PP
-\&.preview { grid\-area: preview; }
-.PP
-\&.event\-log { grid\-area: log; }
-.PP
-\&.event\-log > label { display: block; }
+.SS JavaScript
 .IP
 .EX
-
-### JavaScript
-
-\[ga]\[ga]\[ga]js
 const fileInput = document.querySelector(\[aq]input[type=\[dq]file\[dq]]\[aq]);
 const preview = document.querySelector(\[dq]img.preview\[dq]);
 const eventLog = document.querySelector(\[dq].event\-log\-contents\[dq]);

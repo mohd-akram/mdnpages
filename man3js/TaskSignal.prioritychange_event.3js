@@ -28,10 +28,6 @@ The new/updated priority is read from \f[CR]event.target.priority\f[R]
 The example below shows how to listen for the \f[CR]prioritychange\f[R]
 event on a \f[CR]TaskSignal\f[R].
 .PP
-\f[CR]html hidden <textarea id=\[dq]log\[dq] style=\[dq]min\-height: 70px; width: 95%\[dq]></textarea>\f[R]
-.PP
-\f[CR]js hidden let log = document.getElementById(\[dq]log\[dq]); function mylog(text) {   log.textContent += \[ga]${text}\[rs]n\[ga]; }\f[R]
-.PP
 First we create a controller, and add an event listener to its signal.
 When handling the event we use \f[CR]previousPriority\f[R] on the event
 to get the original priority and \f[CR]TaskSignal.priority\f[R] on the

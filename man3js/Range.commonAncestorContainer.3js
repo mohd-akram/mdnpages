@@ -76,8 +76,6 @@ The \f[CR].highlight\f[R] class created below uses a set of CSS
   }
 }
 .EE
-.PP
-\f[CR]css hidden body {   padding: 1px; }\f[R]
 .SS JavaScript
 .IP
 .EX

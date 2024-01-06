@@ -48,8 +48,6 @@ to generate a unique RGB color for each square, and only modify the red
 and green values.
 (The blue channel has a fixed value.)
 By modifying the channels, you can generate all kinds of palettes.
-.PP
-\f[CR]html hidden <canvas id=\[dq]canvas\[dq] width=\[dq]150\[dq] height=\[dq]150\[dq]></canvas>\f[R]
 .IP
 .EX
 const canvas = document.getElementById(\[dq]canvas\[dq]);

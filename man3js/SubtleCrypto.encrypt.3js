@@ -57,7 +57,7 @@ encryption algorithm).
 \f[B]OperationError\f[R] \f[B]DOMException\f[R]
 Raised when the operation failed for an operation\-specific reason
 (e.g.\ algorithm parameters of invalid sizes, or AES\-GCM plaintext
-longer than 239−256 bytes).
+longer than 2\[ha]39−256 bytes).
 .SH SUPPORTED ALGORITHMS
 The Web Crypto API provides four algorithms that support the
 \f[CR]encrypt()\f[R] and \f[CR]decrypt()\f[R] operations.

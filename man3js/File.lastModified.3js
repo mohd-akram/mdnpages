@@ -23,8 +23,6 @@ whether each file was modified within the past year.
 <input type=\[dq]file\[dq] id=\[dq]filepicker\[dq] name=\[dq]fileList\[dq] multiple />
 <output id=\[dq]output\[dq]></output>
 .EE
-.PP
-\f[CR]css hidden output {   display: block;   white\-space: pre\-wrap; }\f[R]
 .SS JavaScript
 .IP
 .EX

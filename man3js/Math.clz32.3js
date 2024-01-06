@@ -28,7 +28,7 @@ then converted to a 32\-bit unsigned integer.
 If the converted 32\-bit unsigned integer is \f[CR]0\f[R], \f[CR]32\f[R]
 is returned, because all bits are \f[CR]0\f[R].
 If the most significant bit is \f[CR]1\f[R] (i.e.\ the number is greater
-than or equal to 231), \f[CR]0\f[R] is returned.
+than or equal to 2\[ha]31), \f[CR]0\f[R] is returned.
 .PP
 This function is particularly useful for systems that compile to JS,
 like \c

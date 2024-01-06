@@ -58,8 +58,6 @@ animation, so the finished style is captured as the value of the
 <br />
 <button class=\[dq]fill\-forwards\[dq]>Fill forwards</button>
 .EE
-.PP
-\f[CR]css hidden button {   margin: 0.5rem; }\f[R]
 .SS JavaScript
 .IP
 .EX

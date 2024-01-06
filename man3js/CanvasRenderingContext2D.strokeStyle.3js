@@ -51,8 +51,6 @@ To achieve this, we use the two variables \f[CR]i\f[R] and \f[CR]j\f[R]
 to generate a unique RGB color for each circle, and only modify the
 green and blue values.
 (The red channel has a fixed value.)
-.PP
-\f[CR]html hidden <canvas id=\[dq]canvas\[dq] width=\[dq]150\[dq] height=\[dq]150\[dq]></canvas>\f[R]
 .IP
 .EX
 const ctx = document.getElementById(\[dq]canvas\[dq]).getContext(\[dq]2d\[dq]);

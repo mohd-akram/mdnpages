@@ -44,12 +44,12 @@ color(RGBA) = (sourceColor * \f[I]sfactor\f[R]) + (destinationColor *
 \f[I]dfactor\f[R]).
 The RGBA values are between 0 and 1.
 .PP
-In the following table, RS, GS, BS, AS represent respectively the
+In the following table, R_S, G_S, B_S, A_S represent respectively the
 \f[I]red\f[R], \f[I]green\f[R], \f[I]blue\f[R] and \f[I]alpha\f[R]
-component of the source, while RD, GD, BD, AD represent respectively the
-\f[I]red\f[R], \f[I]green\f[R], \f[I]blue\f[R] and \f[I]alpha\f[R]
+component of the source, while R_D, G_D, B_D, A_D represent respectively
+the \f[I]red\f[R], \f[I]green\f[R], \f[I]blue\f[R] and \f[I]alpha\f[R]
 component of the destination.
-Similarly, RC, GC, BC, AC represent respectively the \f[I]red\f[R],
+Similarly, R_C, G_C, B_C, A_C represent respectively the \f[I]red\f[R],
 \f[I]green\f[R], \f[I]blue\f[R] and \f[I]alpha\f[R] component of a
 constant color.
 They are all values between 0 and 1, included.
@@ -63,43 +63,43 @@ gl.ONE
 1,1,1,1
 Multiplies all colors by 1.
 gl.SRC_COLOR
-RS, GS, BS, AS
+R_S, G_S, B_S, A_S
 Multiplies all colors by the source colors.
 gl.ONE_MINUS_SRC_COLOR
-1\-RS, 1\-GS, 1\-BS, 1\-AS
+1\-R_S, 1\-G_S, 1\-B_S, 1\-A_S
 Multiplies all colors by 1 minus each source color.
 gl.DST_COLOR
-RD, GD, BD, AD
+R_D, G_D, B_D, A_D
 Multiplies all colors by the destination color.
 gl.ONE_MINUS_DST_COLOR
-1\-RD, 1\-GD, 1\-BD, 1\-AD
+1\-R_D, 1\-G_D, 1\-B_D, 1\-A_D
 Multiplies all colors by 1 minus each destination color.
 gl.SRC_ALPHA
-AS, AS, AS, AS
+A_S, A_S, A_S, A_S
 Multiplies all colors by the source alpha value.
 gl.ONE_MINUS_SRC_ALPHA
-1\-AS, 1\-AS, 1\-AS, 1\-AS
+1\-A_S, 1\-A_S, 1\-A_S, 1\-A_S
 Multiplies all colors by 1 minus the source alpha value.
 gl.DST_ALPHA
-AD, AD, AD, AD
+A_D, A_D, A_D, A_D
 Multiplies all colors by the destination alpha value.
 gl.ONE_MINUS_DST_ALPHA
-1\-AD, 1\-AD, 1\-AD, 1\-AD
+1\-A_D, 1\-A_D, 1\-A_D, 1\-A_D
 Multiplies all colors by 1 minus the destination alpha value.
 gl.CONSTANT_COLOR
-RC, GC, BC, AC
+R_C, G_C, B_C, A_C
 Multiplies all colors by a constant color.
 gl.ONE_MINUS_CONSTANT_COLOR
-1\-RC, 1\-GC, 1\-BC, 1\-AC
+1\-R_C, 1\-G_C, 1\-B_C, 1\-A_C
 Multiplies all colors by 1 minus a constant color.
 gl.CONSTANT_ALPHA
-AC, AC, AC, AC
+A_C, A_C, A_C, A_C
 Multiplies all colors by a constant alpha value.
 gl.ONE_MINUS_CONSTANT_ALPHA
-1\-AC, 1\-AC, 1\-AC, 1\-AC
+1\-A_C, 1\-A_C, 1\-A_C, 1\-A_C
 Multiplies all colors by 1 minus a constant alpha value.
 gl.SRC_ALPHA_SATURATE
-min(AS, 1 \- AD), min(AS, 1 \- AD), min(AS, 1 \- AD), 1
+min(A_S, 1 \- A_D), min(A_S, 1 \- A_D), min(A_S, 1 \- A_D), 1
 Multiplies the RGB colors by the smaller of either the source alpha
 value or the value of 1 minus the destination alpha value.
 The alpha value is multiplied by 1.

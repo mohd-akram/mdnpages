@@ -54,7 +54,11 @@ Array elements are object properties in the same way that
 Nevertheless, trying to access an element of an array as follows throws
 a syntax error because the property name is not valid:
 .PP
-\f[CR]js\-nolint example\-bad arr.0; // a syntax error\f[R]
+\f[B]Bad\f[R]
+.IP
+.EX
+arr.0; // a syntax error
+.EE
 .PP
 JavaScript syntax requires properties beginning with a digit to be
 accessed using bracket notation instead of dot notation.
@@ -414,16 +418,16 @@ console.log(Array.prototype.join.call(arrayLike, \[dq]+\[dq])); // \[aq]a+b\[aq]
 .EE
 .SS Normalization of the length property
 The \f[CR]length\f[R] property is converted to an integer and then
-clamped to the range between 0 and 253 \- 1.
+clamped to the range between 0 and 2\[ha]53 \- 1.
 \f[CR]NaN\f[R] becomes \f[CR]0\f[R], so even when \f[CR]length\f[R] is
 not present or is \f[CR]undefined\f[R], it behaves as if it has value
 \f[CR]0\f[R].
 .PP
 The language avoids setting \f[CR]length\f[R] to an unsafe integer.
 All built\-in methods will throw a \f[CR]TypeError\f[R] if
-\f[CR]length\f[R] will be set to a number greater than 253 \- 1.
+\f[CR]length\f[R] will be set to a number greater than 2\[ha]53 \- 1.
 However, because the \f[CR]length\f[R] property of arrays throws an
-error if it\[cq]s set to greater than 232 \- 1, the safe integer
+error if it\[cq]s set to greater than 2\[ha]32 \- 1, the safe integer
 threshold is usually not reached unless the method is called on a
 non\-array object.
 .IP

@@ -65,9 +65,9 @@ const truncated5 = original >> 0; // Bitwise shifting by 0
 .PP
 Beware that this is essentially \f[CR]toInt32\f[R], which is not the
 same as \f[CR]Math.trunc\f[R].
-When the value does not satisfy \-231 \- 1 < \f[CR]value\f[R] < 231
-(\-2147483649 < \f[CR]value\f[R] < 2147483648), the conversion would
-overflow.
+When the value does not satisfy \-2\[ha]31 \- 1 < \f[CR]value\f[R] <
+2\[ha]31 (\-2147483649 < \f[CR]value\f[R] < 2147483648), the conversion
+would overflow.
 .IP
 .EX
 const a = \[ti]\[ti]2147483648; // \-2147483648

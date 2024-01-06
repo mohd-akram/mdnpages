@@ -32,8 +32,6 @@ Then the observer logs the \f[CR]textContent\f[R] of the
 <pre id=\[dq]log\[dq] class=\[dq]log\[dq]>Next sibling of added node:</pre>
 <div id=\[dq]target\[dq]><p>Node #0</p></div>
 .EE
-.PP
-\f[CR]css hidden .log {   border: 1px dotted black;   padding: 0.5rem; }\f[R]
 .SS JavaScript
 .IP
 .EX

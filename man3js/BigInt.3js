@@ -162,7 +162,7 @@ o === o; // true
 Because coercing between Number values and BigInt values can lead to
 loss of precision, the following are recommended:
 .IP \[bu] 2
-Only use a BigInt value when values greater than 253 are reasonably
+Only use a BigInt value when values greater than 2\[ha]53 are reasonably
 expected.
 .IP \[bu] 2
 Don\[cq]t coerce between BigInt values and Number values.

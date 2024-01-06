@@ -28,10 +28,6 @@ const textMetrics = ctx.measureText(\[dq]foo\[dq]); // returns TextMetrics objec
 const ascentCssPixels = textMetrics.fontBoundingBoxAscent;
 .EE
 .PP
-\f[CR]html hidden <p id=\[dq]log\[dq]></p>\f[R]
-.PP
-\f[CR]js hidden const log = document.getElementById(\[dq]log\[dq]); log.innerText = \[ga]fontBoundingBoxAscent: ${ascentCssPixels}\[ga];\f[R]
-.PP
 The ascent in CSS pixels for the text \[lq]Foo\[rq] in a 25px serif font
 is shown below.
 .SH SEE ALSO

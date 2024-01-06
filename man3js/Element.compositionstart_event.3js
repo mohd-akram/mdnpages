@@ -73,28 +73,9 @@ inputElement.addEventListener(\[dq]compositionstart\[dq], (event) => {
   <button class=\[dq]clear\-log\[dq]>Clear</button>
 </div>
 .EE
-.PP
-\[ga]\[ga]\[ga]css hidden body { padding: 0.2rem; display: grid;
-grid\-template\-areas: \[lq]control log\[rq]; }
-.PP
-\&.control { grid\-area: control; }
-.PP
-\&.event\-log { grid\-area: log; }
-.PP
-\&.event\-log\-contents { resize: none; }
-.PP
-label, button { display: block; }
-.PP
-input[type=\[lq]text\[rq]] { margin: 0.5rem 0; }
-.PP
-kbd { border\-radius: 3px; padding: 1px 2px 0; border: 1px solid black;
-}
+.SS JavaScript
 .IP
 .EX
-
-### JavaScript
-
-\[ga]\[ga]\[ga]js
 const inputElement = document.querySelector(\[aq]input[type=\[dq]text\[dq]]\[aq]);
 const log = document.querySelector(\[dq].event\-log\-contents\[dq]);
 const clearLog = document.querySelector(\[dq].clear\-log\[dq]);

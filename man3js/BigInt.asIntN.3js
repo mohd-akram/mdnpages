@@ -16,7 +16,7 @@ BigInt.asIntN(bits, bigint)
 .TP
 \f[B]bits\f[R]
 The amount of bits available for the returned BigInt.
-Should be an integer between 0 and 253 \- 1, inclusive.
+Should be an integer between 0 and 2\[ha]53 \- 1, inclusive.
 .TP
 \f[B]bigint\f[R]
 The BigInt value to truncate to fit into the supplied bits.
@@ -26,7 +26,7 @@ integer.
 .SS Exceptions
 .TP
 \f[B]RangeError\f[R]
-Thrown if \f[CR]bits\f[R] is negative or greater than 253 \- 1.
+Thrown if \f[CR]bits\f[R] is negative or greater than 2\[ha]53 \- 1.
 .SH DESCRIPTION
 The \f[CR]BigInt.asIntN\f[R] method truncates a \f[CR]BigInt\f[R] value
 to the given number of bits, and interprets the result as a signed

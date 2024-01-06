@@ -233,7 +233,6 @@ element but not of any \f[CR].no\-escape\f[R] element.
 </div>
 .EE
 .SS CSS
-\f[CR]css hidden div {   margin: 0.25em 0;   padding: 0.25em; } span {   display: inline\-block; }\f[R]
 .IP
 .EX
 \&.escape {

@@ -71,7 +71,7 @@ Number=(−1)sign⋅(1+mantissa)⋅2exponent = ({\-1})\[ha]{} (1 + ) \[ha]{}
 .PP
 The mantissa is stored with 52 bits, interpreted as digits after
 \f[CR]1.\&...\f[R] in a binary fractional number.
-Therefore, the mantissa\[cq]s precision is 2\-52 (obtainable via
+Therefore, the mantissa\[cq]s precision is 2\[ha]\-52 (obtainable via
 \f[CR]Number.EPSILON\f[R]), or about 15 to 17 decimal places; arithmetic
 above that level of precision is subject to \c
 .UR
@@ -80,14 +80,14 @@ rounding
 .UE \c
 \&.
 .PP
-The largest value a number can hold is 21023 × (2 \- 2\-52) (with the
-exponent being 1023 and the mantissa being 0.1111\&...
+The largest value a number can hold is 2\[ha]1023 × (2 \- 2\[ha]\-52)
+(with the exponent being 1023 and the mantissa being 0.1111\&...
 in base 2), which is obtainable via \f[CR]Number.MAX_VALUE\f[R].
 Values higher than that are replaced with the special number constant
 \f[CR]Infinity\f[R].
 .PP
 Integers can only be represented without loss of precision in the range
-\-253 + 1 to 253 \- 1, inclusive (obtainable via
+\-2\[ha]53 + 1 to 2\[ha]53 \- 1, inclusive (obtainable via
 \f[CR]Number.MIN_SAFE_INTEGER\f[R] and
 \f[CR]Number.MAX_SAFE_INTEGER\f[R]), because the mantissa can only hold
 53 bits (including the leading 1).
@@ -234,13 +234,13 @@ For example, \f[CR]typeof new Number(42) === \[dq]object\[dq]\f[R], and
 The smallest interval between two representable numbers.
 .TP
 \f[B]Number.MAX_SAFE_INTEGER\f[R]
-The maximum safe integer in JavaScript (253 \- 1).
+The maximum safe integer in JavaScript (2\[ha]53 \- 1).
 .TP
 \f[B]Number.MAX_VALUE\f[R]
 The largest positive representable number.
 .TP
 \f[B]Number.MIN_SAFE_INTEGER\f[R]
-The minimum safe integer in JavaScript (\-(253 \- 1)).
+The minimum safe integer in JavaScript (\-(2\[ha]53 \- 1)).
 .TP
 \f[B]Number.MIN_VALUE\f[R]
 The smallest positive representable number\[em]that is, the positive
@@ -269,7 +269,7 @@ Determine whether the passed value is \f[CR]NaN\f[R].
 .TP
 \f[B]Number.isSafeInteger()\f[R]
 Determine whether the passed value is a safe integer (number between
-\-(253 \- 1) and 253 \- 1).
+\-(2\[ha]53 \- 1) and 2\[ha]53 \- 1).
 .TP
 \f[B]Number.parseFloat()\f[R]
 This is the same as the global \f[CR]parseFloat()\f[R] function.

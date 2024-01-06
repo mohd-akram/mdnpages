@@ -8,7 +8,8 @@ Number.MAX_VALUE \- Number.MAX_VALUE
 The \f[B]\f[CB]Number.MAX_VALUE\f[B]\f[R] static data property
 represents the maximum numeric value representable in JavaScript.
 .SH VALUE
-21024 \- 2971, or approximately \f[CR]1.7976931348623157E+308\f[R].
+2\[ha]1024 \- 2\[ha]971, or approximately
+\f[CR]1.7976931348623157E+308\f[R].
 .PP
 .TS
 tab(@);

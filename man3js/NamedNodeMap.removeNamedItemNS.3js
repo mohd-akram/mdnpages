@@ -29,7 +29,6 @@ The removed \f[CR]Attr\f[R].
 \f[B]NotFoundError\f[R] \f[B]DOMException\f[R]
 Thrown if there is no attribute with the given namespace and local name.
 .SH EXAMPLE
-\f[CR]html hidden <pre></pre>\f[R]
 .IP
 .EX
 const parser = new DOMParser();

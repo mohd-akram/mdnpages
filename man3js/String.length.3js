@@ -45,20 +45,20 @@ mathematical symbols
 difference between code units and characters.
 .PP
 The language specification requires strings to have a maximum length of
-253 \- 1 elements, which is the upper limit for precise integers.
+2\[ha]53 \- 1 elements, which is the upper limit for precise integers.
 However, a string with this length needs 16384TiB of storage, which
 cannot fit in any reasonable device\[cq]s memory, so implementations
 tend to lower the threshold, which allows the string\[cq]s length to be
 conveniently stored in a 32\-bit integer.
 .IP \[bu] 2
-In V8 (used by Chrome and Node), the maximum length is 229 \- 24
+In V8 (used by Chrome and Node), the maximum length is 2\[ha]29 \- 24
 (\[ti]1GiB).
-On 32\-bit systems, the maximum length is 228 \- 16 (\[ti]512MiB).
+On 32\-bit systems, the maximum length is 2\[ha]28 \- 16 (\[ti]512MiB).
 .IP \[bu] 2
-In Firefox, the maximum length is 230 \- 2 (\[ti]2GiB).
-Before Firefox 65, the maximum length was 228 \- 1 (\[ti]512MiB).
+In Firefox, the maximum length is 2\[ha]30 \- 2 (\[ti]2GiB).
+Before Firefox 65, the maximum length was 2\[ha]28 \- 1 (\[ti]512MiB).
 .IP \[bu] 2
-In Safari, the maximum length is 231 \- 1 (\[ti]4GiB).
+In Safari, the maximum length is 2\[ha]31 \- 1 (\[ti]4GiB).
 .PP
 For an empty string, \f[CR]length\f[R] is 0.
 .PP

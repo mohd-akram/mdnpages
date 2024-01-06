@@ -44,8 +44,6 @@ Inherits from \f[CR]Event\f[R].
 <div class=\[dq]source\[dq] contenteditable=\[dq]true\[dq]>Copy text from this box.</div>
 <div class=\[dq]target\[dq] contenteditable=\[dq]true\[dq]>And paste it into this one.</div>
 .EE
-.PP
-\f[CR]css hidden div.source, div.target {   border: 1px solid gray;   margin: 0.5rem;   padding: 0.5rem;   height: 1rem;   background\-color: #e9eef1; }\f[R]
 .SS JavaScript
 .IP
 .EX

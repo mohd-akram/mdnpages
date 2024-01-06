@@ -61,8 +61,6 @@ attributes on a \f[CR]<button>\f[R].
 .EX
 <button>Hello World</button>
 .EE
-.PP
-\f[CR]css hidden button {   height: 30px;   width: 100px;   margin: 1em; }\f[R]
 .SS JavaScript
 .IP
 .EX

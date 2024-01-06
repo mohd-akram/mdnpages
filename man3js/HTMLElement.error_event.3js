@@ -43,28 +43,9 @@ otherwise.
     id=\[dq]eventLog\[dq]></textarea>
 </div>
 .EE
-.PP
-\[ga]\[ga]\[ga]css hidden body { display: grid; grid\-template\-areas:
-\[lq]control log\[rq]; }
-.PP
-\&.controls { grid\-area: control; display: flex; align\-items: center;
-justify\-content: center; }
-.PP
-\&.event\-log { grid\-area: log; }
-.PP
-\&.event\-log\-contents { resize: none; }
-.PP
-label, button { display: block; }
-.PP
-button { height: 2rem; margin: 0.5rem; }
-.PP
-img { width: 0; height: 0; }
+.SS JavaScript
 .IP
 .EX
-
-### JavaScript
-
-\[ga]\[ga]\[ga]js
 const log = document.querySelector(\[dq].event\-log\-contents\[dq]);
 
 const badImg = document.querySelector(\[dq].bad\-img\[dq]);

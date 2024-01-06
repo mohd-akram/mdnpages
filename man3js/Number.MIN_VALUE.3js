@@ -9,7 +9,7 @@ The \f[B]\f[CB]Number.MIN_VALUE\f[B]\f[R] static data property
 represents the smallest positive numeric value representable in
 JavaScript.
 .SH VALUE
-2\-1074, or \f[CR]5E\-324\f[R].
+2\[ha]\-1074, or \f[CR]5E\-324\f[R].
 .PP
 .TS
 tab(@);
@@ -47,7 +47,7 @@ in which case \f[CR]Number.MIN_VALUE\f[R] may be larger.
 .PP
 In practice, its precise value in mainstream engines like V8 (used by
 Chrome, Edge, Node.js), SpiderMonkey (used by Firefox), and
-JavaScriptCore (used by Safari) is 2\-1074, or \f[CR]5E\-324\f[R].
+JavaScriptCore (used by Safari) is 2\[ha]\-1074, or \f[CR]5E\-324\f[R].
 .PP
 Because \f[CR]MIN_VALUE\f[R] is a static property of \f[CR]Number\f[R],
 you always use it as \f[CR]Number.MIN_VALUE\f[R], rather than as a

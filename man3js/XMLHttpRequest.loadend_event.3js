@@ -67,17 +67,9 @@ doesn\[cq]t include the headers and other overhead.
 
 <textarea readonly class=\[dq]event\-log\[dq]></textarea>
 .EE
-.PP
-\[ga]\[ga]\[ga]css hidden .event\-log { width: 25rem; height: 4rem;
-border: 1px solid black; margin: 0.5rem; padding: 0.2rem; }
-.PP
-input { width: 11rem; margin: 0.5rem; }
+.SS JavaScript
 .IP
 .EX
-
-### JavaScript
-
-\[ga]\[ga]\[ga]js
 const xhrButtonSuccess = document.querySelector(\[dq].xhr.success\[dq]);
 const xhrButtonError = document.querySelector(\[dq].xhr.error\[dq]);
 const xhrButtonAbort = document.querySelector(\[dq].xhr.abort\[dq]);

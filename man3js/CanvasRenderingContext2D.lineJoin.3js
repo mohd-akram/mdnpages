@@ -71,8 +71,6 @@ ctx.stroke();
 .SS Comparison of line joins
 The example below draws three different paths, demonstrating each of the
 three \f[CR]lineJoin\f[R] options.
-.PP
-\f[CR]html hidden <canvas id=\[dq]canvas\[dq] width=\[dq]150\[dq] height=\[dq]150\[dq]></canvas>\f[R]
 .IP
 .EX
 const ctx = document.getElementById(\[dq]canvas\[dq]).getContext(\[dq]2d\[dq]);

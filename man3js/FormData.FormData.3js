@@ -77,16 +77,9 @@ object, i.e.\ those with a name and not in a disabled state.
 
 <output id=\[dq]output\[dq]></output>
 .EE
-.PP
-\[ga]\[ga]\[ga]css hidden form { display: none; }
-.PP
-output { display: block; white\-space: pre\-wrap; }
+.SS JavaScript
 .IP
 .EX
-
-### JavaScript
-
-\[ga]\[ga]\[ga]js
 const form = document.getElementById(\[dq]form\[dq]);
 const submitter = document.querySelector(\[dq]button[value=save]\[dq]);
 const formData = new FormData(form, submitter);

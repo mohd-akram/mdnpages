@@ -71,8 +71,6 @@ ctx.stroke();
 .SS Different shapes demonstrated
 This example draws various shapes to show what is possible with
 \f[CR]arc()\f[R].
-.PP
-\f[CR]html hidden <canvas width=\[dq]150\[dq] height=\[dq]200\[dq]></canvas>\f[R]
 .IP
 .EX
 const canvas = document.querySelector(\[dq]canvas\[dq]);

@@ -116,7 +116,6 @@ receiving track; this object is one of two types:
 \f[CR]RTCReceiverVideoTrackAttachmentStats\f[R].
 This ID is stable across multiple calls to \f[CR]getStats()\f[R].
 .SS Statistics measured at the receiver of an RTP stream
-.PP
 These statistics are measured at the receiving end of an RTP stream,
 regardless of whether it\[cq]s local or remote.
 .TP

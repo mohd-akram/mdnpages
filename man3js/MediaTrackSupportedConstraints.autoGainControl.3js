@@ -32,10 +32,6 @@ supported constraints dictionary, and you\[cq]ll get
 .SH EXAMPLES
 This example displays whether or not your browser supports the
 \f[CR]autoGainControl\f[R] constraint.
-.PP
-\f[CR]html hidden <div id=\[dq]result\[dq]></div>\f[R]
-.PP
-\f[CR]css hidden result {   font:     14px \[dq]Arial\[dq],     sans\-serif; }\f[R]
 .IP
 .EX
 const result = document.getElementById(\[dq]result\[dq]);

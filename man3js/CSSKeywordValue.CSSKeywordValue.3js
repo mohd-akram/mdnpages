@@ -31,10 +31,6 @@ https://firefox-source-docs.mozilla.org/devtools-user/page_inspector/how_to/sele
 developer tools inspector
 .UE \c
 \&.
-.PP
-\f[CR]css hidden myElement {   display: flex; }\f[R]
-.PP
-\f[CR]html hidden <div id=\[dq]myElement\[dq]>   Check the developer tools to see the log in the console and to inspect the   style attribute on this div. </div>\f[R]
 .IP
 .EX
 const keyword = new CSSKeywordValue(\[dq]initial\[dq]);

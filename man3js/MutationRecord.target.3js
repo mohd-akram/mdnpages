@@ -44,23 +44,9 @@ When we add nodes to the \f[CR]#red\-div\f[R] or the
   <div id=\[dq]blue\-div\[dq]></div>
 </div>
 .EE
-.PP
-\[ga]\[ga]\[ga]css hidden log { border: 1px dotted black; padding:
-0.5rem; }
-.PP
-red\-div { border: 1px solid red; margin\-top: 0.5rem; margin\-right:
-0.5rem; padding: 0.5rem; overflow: auto; }
-.PP
-blue\-div { border: 1px solid blue; margin\-top: 0.5rem; margin\-left:
-0.5rem; padding: 0.5rem; overflow: auto; }
-.PP
-container { display: grid; grid\-template\-columns: 50% auto; }
+.SS JavaScript
 .IP
 .EX
-
-### JavaScript
-
-\[ga]\[ga]\[ga]js
 const container = document.querySelector(\[dq]#container\[dq]);
 const redDiv = document.querySelector(\[dq]#red\-div\[dq]);
 const blueDiv = document.querySelector(\[dq]#blue\-div\[dq]);

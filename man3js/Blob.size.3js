@@ -22,8 +22,6 @@ outputting their names and lengths in bytes.
 <input type=\[dq]file\[dq] id=\[dq]input\[dq] multiple />
 <output id=\[dq]output\[dq]>Choose files\&...</output>
 .EE
-.PP
-\f[CR]css hidden output {   display: block;   margin\-top: 16px; }\f[R]
 .SS JavaScript
 .IP
 .EX

@@ -9,7 +9,7 @@ The \f[B]\f[CB]Number.EPSILON\f[B]\f[R] static data property represents
 the difference between 1 and the smallest floating point number greater
 than 1.
 .SH VALUE
-2\-52, or approximately
+2\[ha]\-52, or approximately
 \f[CR]2.2204460492503130808472633361816E\-16\f[R].
 .PP
 .TS
@@ -38,7 +38,7 @@ greater number representable in the Number format, because \c
 double precision floating point format
 .UE \c
 \ only has 52 bits to represent the mantissa, and the lowest bit has a
-significance of 2\-52.
+significance of 2\[ha]\-52.
 .PP
 Note that the absolute accuracy of floating numbers decreases as the
 number gets larger, because the exponent grows while the mantissa\[cq]s
@@ -88,8 +88,8 @@ console.log(equal(x + z, y)); // true
 .PP
 However, \f[CR]Number.EPSILON\f[R] is inappropriate for any arithmetic
 operating on a larger magnitude.
-If your data is on the 103 order of magnitude, the decimal part will
-have a much smaller accuracy than \f[CR]Number.EPSILON\f[R]:
+If your data is on the 10\[ha]3 order of magnitude, the decimal part
+will have a much smaller accuracy than \f[CR]Number.EPSILON\f[R]:
 .IP
 .EX
 function equal(x, y) {

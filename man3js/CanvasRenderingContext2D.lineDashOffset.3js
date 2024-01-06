@@ -59,8 +59,6 @@ marching ants
 computer graphics programs.
 It helps the user to distinguish the selection border from the image
 background by animating the border.
-.PP
-\f[CR]html hidden <canvas id=\[dq]canvas\[dq]></canvas>\f[R]
 .IP
 .EX
 const canvas = document.getElementById(\[dq]canvas\[dq]);

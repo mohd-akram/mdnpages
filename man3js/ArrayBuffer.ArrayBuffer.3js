@@ -43,7 +43,7 @@ Thrown in one of the following cases:
 .RS
 .IP \[bu] 2
 \f[CR]length\f[R] or \f[CR]maxByteLength\f[R] is larger than
-\f[CR]Number.MAX_SAFE_INTEGER\f[R] (≥ 253) or negative.
+\f[CR]Number.MAX_SAFE_INTEGER\f[R] (≥ 2\[ha]53) or negative.
 .IP \[bu] 2
 \f[CR]length\f[R] is larger than \f[CR]maxByteLength\f[R].
 .RE
