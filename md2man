@@ -24,22 +24,23 @@ get_title() {
 	}' "$1"
 }
 
-get_date() {
-	LC_ALL=C ls -og "$1" | awk -v cmonth=$(date +%m) -v cyear=$(date +%Y) '
+get_date() (
+	export LC_ALL=C
+	ls -dog "$1" |
+	awk -v abmon="$(locale abmon)" \
+		-v cmonth="$(date +%m)" \
+		-v cyear="$(date +%Y)" '
 	BEGIN {
-		months["Jan"] =  1; months["Feb"] =  2; months["Mar"] =  3
-		months["Apr"] =  4; months["May"] =  5; months["Jun"] =  6
-		months["Jul"] =  7; months["Aug"] =  8; months["Sep"] =  9
-		months["Oct"] = 10; months["Nov"] = 11; months["Dec"] = 12
+		n = split(abmon, months, ";")
+		while (++i <= n) months[months[i]] = i
 	}
 	{
 		month = months[$4]
 		day = $5
 		year = ($6 ~ /:/) ? (month > cmonth ? cyear-1 : cyear) : $6
-		printf "%d-%02d-%02d\n", year, month, day
-	}
-	'
-}
+		printf "%04d-%02d-%02d\n", year, month, day
+	}'
+)
 
 yn() {
 	case $1 in
