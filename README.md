@@ -31,7 +31,9 @@ For convenience, you can also add an alias to your shell profile, eg.
 
 ## Build
 
-Pandoc and git-restore-mtime are required to build the man pages. To do so, run:
+[Pandoc](https://pandoc.org) and
+[git-restore-mtime](https://github.com/MestreLion/git-tools) are required to
+build the man pages. To do so, run:
 
     ./configure
     make -j4
