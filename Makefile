@@ -22,5 +22,4 @@ clean:
 $(mansectdir):
 	mkdir -p $@
 
-manpages: 
-	$(mansectdir) files.mk $(files)
+manpages: $(mansectdir) files.mk $(files)
