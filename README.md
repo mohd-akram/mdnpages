@@ -2,9 +2,6 @@
 
 The MDN JavaScript reference documentation converted to man pages.
 
-## Dependencies
-
-
 ## Install
 
 The man pages are already built in this repository. You can install them
