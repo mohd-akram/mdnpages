@@ -7,7 +7,7 @@ prefix = /usr/local
 datarootdir = $(prefix)/share
 mandir = $(datarootdir)/man
 
-all: manpages
+all: 	manpages
 
 install:
 	mkdir -p $(DESTDIR)$(mandir)/$(mansectdir)
@@ -22,4 +22,5 @@ clean:
 $(mansectdir):
 	mkdir -p $@
 
-manpages: $(mansectdir) files.mk $(files)
+manpages: 
+	$(mansectdir) files.mk $(files)
