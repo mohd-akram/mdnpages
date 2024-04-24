@@ -31,7 +31,8 @@ For convenience, you can also add an alias to your shell profile, eg.
 
 ## Build
 
-Pandoc and git-restore-mtime are required to build the man pages. To do so, run:
+`Pandoc` and `git-restore-mtime` are required to build the man pages. To do so, run:
+If you're not running Ubuntu where `git-restore-mtime` is available, you might have to pull `git-tools` using brew for MacOS or [git-tools-git](https://aur.archlinux.org/packages/git-tools-git) for Arch distributions.
 
     ./configure
     make -j4

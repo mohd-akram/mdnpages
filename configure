@@ -40,7 +40,7 @@ get_files() (
 base=content/files/en-us/web
 dirs="$base/api $base/javascript/reference/global_objects"
 for dir in $dirs; do
-	(cd "$dir" && git-restore-mtime)
+	(cd "$dir" && git restore-mtime)
 done
 >files.mk
 printf 'files=%s\n' "$(get_files files.mk $dirs)" >> files.mk
