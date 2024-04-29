@@ -4,7 +4,7 @@
 .SH NAME
 MessageChannel \- MessageChannel
 .SH SYNOPSIS
-This feature is available in Web Workers.
+\f[B]Note:\f[R] This feature is available in Web Workers.
 .PP
 The \f[B]\f[CB]MessageChannel\f[B]\f[R] interface of the Channel
 Messaging API allows us to create a new message channel and send data

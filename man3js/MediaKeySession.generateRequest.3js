@@ -5,7 +5,7 @@
 MediaKeySession.generateRequest \- MediaKeySession: generateRequest()
 method
 .SH SYNOPSIS
-\f[B]Secure context\f[R]: This feature is available only in secure
+\f[B]Secure context:\f[R] This feature is available only in secure
 contexts (HTTPS).
 .PP
 The \f[CR]MediaKeySession.generateRequest()\f[R] method returns a

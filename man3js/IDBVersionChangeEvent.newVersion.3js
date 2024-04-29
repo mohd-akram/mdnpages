@@ -5,7 +5,7 @@
 IDBVersionChangeEvent.newVersion \- IDBVersionChangeEvent: newVersion
 property
 .SH SYNOPSIS
-This feature is available in Web Workers.
+\f[B]Note:\f[R] This feature is available in Web Workers.
 .PP
 The \f[B]\f[CB]newVersion\f[B]\f[R] read\-only property of the
 \f[CR]IDBVersionChangeEvent\f[R] interface returns the new version

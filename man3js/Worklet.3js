@@ -4,7 +4,7 @@
 .SH NAME
 Worklet \- Worklet
 .SH SYNOPSIS
-\f[B]Secure context\f[R]: This feature is available only in secure
+\f[B]Secure context:\f[R] This feature is available only in secure
 contexts (HTTPS).
 .PP
 The \f[B]\f[CB]Worklet\f[B]\f[R] interface is a lightweight version of

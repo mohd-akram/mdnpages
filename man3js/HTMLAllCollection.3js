@@ -4,7 +4,7 @@
 .SH NAME
 HTMLAllCollection \- HTMLAllCollection
 .SH SYNOPSIS
-\f[B]Deprecated\f[R]: This feature is no longer recommended.
+\f[B]Deprecated:\f[R] This feature is no longer recommended.
 .PP
 The \f[B]\f[CB]HTMLAllCollection\f[B]\f[R] interface represents a
 collection of \f[I]all\f[R] of the document\[cq]s elements, accessible

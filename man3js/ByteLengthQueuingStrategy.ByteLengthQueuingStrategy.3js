@@ -5,7 +5,7 @@
 ByteLengthQueuingStrategy.ByteLengthQueuingStrategy \-
 ByteLengthQueuingStrategy: ByteLengthQueuingStrategy() constructor
 .SH SYNOPSIS
-This feature is available in Web Workers.
+\f[B]Note:\f[R] This feature is available in Web Workers.
 .PP
 The \f[B]\f[CB]ByteLengthQueuingStrategy()\f[B]\f[R] constructor creates
 and returns a \f[CR]ByteLengthQueuingStrategy\f[R] object instance.

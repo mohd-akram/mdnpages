@@ -4,7 +4,7 @@
 .SH NAME
 File.name \- File: name property
 .SH SYNOPSIS
-This feature is available in Web Workers.
+\f[B]Note:\f[R] This feature is available in Web Workers.
 .PP
 The \f[B]\f[CB]name\f[B]\f[R] read\-only property of the \f[CR]File\f[R]
 interface returns the name of the file represented by a \f[CR]File\f[R]

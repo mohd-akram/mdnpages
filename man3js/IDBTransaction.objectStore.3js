@@ -4,7 +4,7 @@
 .SH NAME
 IDBTransaction.objectStore \- IDBTransaction: objectStore() method
 .SH SYNOPSIS
-This feature is available in Web Workers.
+\f[B]Note:\f[R] This feature is available in Web Workers.
 .PP
 The \f[B]\f[CB]objectStore()\f[B]\f[R] method of the
 \f[CR]IDBTransaction\f[R] interface returns an object store that has

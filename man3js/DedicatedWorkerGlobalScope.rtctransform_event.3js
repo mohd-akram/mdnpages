@@ -5,7 +5,7 @@
 DedicatedWorkerGlobalScope.rtctransform_event \-
 DedicatedWorkerGlobalScope: rtctransform event
 .SH SYNOPSIS
-This feature is only available in Dedicated Web Workers.
+\f[B]Note:\f[R] This feature is only available in Dedicated Web Workers.
 .PP
 The \f[B]\f[CB]rtctransform\f[B]\f[R] event is fired at a worker\[cq]s
 \f[CR]DedicatedWorkerGlobalScope\f[R] object when an encoded video or

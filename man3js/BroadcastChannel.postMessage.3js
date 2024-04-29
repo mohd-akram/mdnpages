@@ -4,7 +4,7 @@
 .SH NAME
 BroadcastChannel.postMessage \- BroadcastChannel: postMessage() method
 .SH SYNOPSIS
-This feature is available in Web Workers.
+\f[B]Note:\f[R] This feature is available in Web Workers.
 .PP
 The \f[B]\f[CB]BroadcastChannel.postMessage()\f[B]\f[R] sends a message,
 which can be of any kind of \f[CR]Object\f[R], to each listener in any

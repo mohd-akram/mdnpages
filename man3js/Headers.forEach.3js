@@ -4,7 +4,7 @@
 .SH NAME
 Headers.forEach \- Headers: forEach() method
 .SH SYNOPSIS
-This feature is available in Web Workers.
+\f[B]Note:\f[R] This feature is available in Web Workers.
 .PP
 The \f[B]\f[CB]Headers.forEach()\f[B]\f[R] method executes a callback
 function once per each key/value pair in the \f[CR]Headers\f[R] object.

@@ -4,7 +4,7 @@
 .SH NAME
 TextDecoder \- TextDecoder
 .SH SYNOPSIS
-This feature is available in Web Workers.
+\f[B]Note:\f[R] This feature is available in Web Workers.
 .PP
 The \f[B]\f[CB]TextDecoder\f[B]\f[R] interface represents a decoder for
 a specific text encoding, such as \f[CR]UTF\-8\f[R],

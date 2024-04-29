@@ -4,7 +4,7 @@
 .SH NAME
 IDBTransaction.abort \- IDBTransaction: abort() method
 .SH SYNOPSIS
-This feature is available in Web Workers.
+\f[B]Note:\f[R] This feature is available in Web Workers.
 .PP
 The \f[B]\f[CB]abort()\f[B]\f[R] method of the \f[CR]IDBTransaction\f[R]
 interface rolls back all the changes to objects in the database

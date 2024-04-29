@@ -4,7 +4,7 @@
 .SH NAME
 IDBTransaction \- IDBTransaction
 .SH SYNOPSIS
-This feature is available in Web Workers.
+\f[B]Note:\f[R] This feature is available in Web Workers.
 .PP
 The \f[B]\f[CB]IDBTransaction\f[B]\f[R] interface of the IndexedDB API
 provides a static, asynchronous transaction on a database using event
@@ -141,7 +141,7 @@ An event fired when a request returns an error and the event bubbles up
 to the connection object (\f[CR]IDBDatabase\f[R]).
 Also available via the \f[CR]onerror\f[R] property.
 .SH MODE CONSTANTS
-\f[B]Deprecated\f[R]: This feature is no longer recommended.
+\f[B]Deprecated:\f[R] This feature is no longer recommended.
 .RS
 .PP
 \f[B]Warning:\f[R] These constants are no longer available \[em] they

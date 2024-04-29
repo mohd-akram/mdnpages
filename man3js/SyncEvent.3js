@@ -4,7 +4,7 @@
 .SH NAME
 SyncEvent \- SyncEvent
 .SH SYNOPSIS
-This feature is only available in Service Workers.
+\f[B]Note:\f[R] This feature is only available in Service Workers.
 .PP
 The \f[B]\f[CB]SyncEvent\f[B]\f[R] interface of the Background
 Synchronization API represents a sync action that is dispatched on the

@@ -4,9 +4,10 @@
 .SH NAME
 WebTransportBidirectionalStream \- WebTransportBidirectionalStream
 .SH SYNOPSIS
-\f[B]Secure context\f[R]: This feature is available only in secure
+\f[B]Secure context:\f[R] This feature is available only in secure
 contexts (HTTPS).
-This feature is available in Web Workers.
+.PP
+\f[B]Note:\f[R] This feature is available in Web Workers.
 .PP
 The \f[B]\f[CB]WebTransportBidirectionalStream\f[B]\f[R] interface of
 the WebTransport API represents a bidirectional stream created by a

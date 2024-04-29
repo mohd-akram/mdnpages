@@ -4,7 +4,7 @@
 .SH NAME
 Permissions \- Permissions
 .SH SYNOPSIS
-This feature is available in Web Workers.
+\f[B]Note:\f[R] This feature is available in Web Workers.
 .PP
 The \f[B]\f[CB]Permissions\f[B]\f[R] interface of the Permissions API
 provides the core Permission API functionality, such as methods for

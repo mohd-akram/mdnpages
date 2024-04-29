@@ -4,7 +4,7 @@
 .SH NAME
 CompressionStream \- CompressionStream
 .SH SYNOPSIS
-This feature is available in Web Workers.
+\f[B]Note:\f[R] This feature is available in Web Workers.
 .PP
 The \f[B]\f[CB]CompressionStream\f[B]\f[R] interface of the Compression
 Streams API is an API for compressing a stream of data.

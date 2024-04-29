@@ -4,7 +4,7 @@
 .SH NAME
 console.count_static \- console: count() static method
 .SH SYNOPSIS
-This feature is available in Web Workers.
+\f[B]Note:\f[R] This feature is available in Web Workers.
 .PP
 The \f[B]\f[CB]console.count()\f[B]\f[R] static method logs the number
 of times that this particular call to \f[CR]count()\f[R] has been

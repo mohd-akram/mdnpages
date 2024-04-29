@@ -4,7 +4,7 @@
 .SH NAME
 FormData.keys \- FormData: keys() method
 .SH SYNOPSIS
-This feature is available in Web Workers.
+\f[B]Note:\f[R] This feature is available in Web Workers.
 .PP
 The \f[B]\f[CB]FormData.keys()\f[B]\f[R] method returns an iterator
 which iterates through all keys contained in the \f[CR]FormData\f[R].

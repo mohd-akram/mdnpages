@@ -4,9 +4,10 @@
 .SH NAME
 WebTransport.close \- WebTransport: close() method
 .SH SYNOPSIS
-\f[B]Secure context\f[R]: This feature is available only in secure
+\f[B]Secure context:\f[R] This feature is available only in secure
 contexts (HTTPS).
-This feature is available in Web Workers.
+.PP
+\f[B]Note:\f[R] This feature is available in Web Workers.
 .PP
 The \f[B]\f[CB]close()\f[B]\f[R] method of the \f[CR]WebTransport\f[R]
 interface closes an ongoing WebTransport session.

@@ -4,7 +4,7 @@
 .SH NAME
 SyncManager.getTags \- SyncManager: getTags() method
 .SH SYNOPSIS
-This feature is available in Web Workers.
+\f[B]Note:\f[R] This feature is available in Web Workers.
 .PP
 The \f[B]\f[CB]getTags()\f[B]\f[R] method of the \f[CR]SyncManager\f[R]
 interface returns a list of developer\-defined identifiers for

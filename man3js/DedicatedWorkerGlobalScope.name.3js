@@ -5,7 +5,7 @@
 DedicatedWorkerGlobalScope.name \- DedicatedWorkerGlobalScope: name
 property
 .SH SYNOPSIS
-This feature is only available in Dedicated Web Workers.
+\f[B]Note:\f[R] This feature is only available in Dedicated Web Workers.
 .PP
 The \f[B]\f[CB]name\f[B]\f[R] read\-only property of the
 \f[CR]DedicatedWorkerGlobalScope\f[R] interface returns the name that

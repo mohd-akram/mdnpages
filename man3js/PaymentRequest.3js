@@ -4,7 +4,7 @@
 .SH NAME
 PaymentRequest \- PaymentRequest
 .SH SYNOPSIS
-\f[B]Secure context\f[R]: This feature is available only in secure
+\f[B]Secure context:\f[R] This feature is available only in secure
 contexts (HTTPS).
 .PP
 The Payment Request API\[cq]s \f[B]\f[CB]PaymentRequest\f[B]\f[R]

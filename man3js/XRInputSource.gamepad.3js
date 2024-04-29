@@ -4,7 +4,7 @@
 .SH NAME
 XRInputSource.gamepad \- XRInputSource: gamepad property
 .SH SYNOPSIS
-\f[B]Secure context\f[R]: This feature is available only in secure
+\f[B]Secure context:\f[R] This feature is available only in secure
 contexts (HTTPS).
 .PP
 The read\-only \f[CR]XRInputSource\f[R] property

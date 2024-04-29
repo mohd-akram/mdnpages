@@ -5,7 +5,7 @@
 MediaKeyMessageEvent.messageType \- MediaKeyMessageEvent: messageType
 property
 .SH SYNOPSIS
-\f[B]Secure context\f[R]: This feature is available only in secure
+\f[B]Secure context:\f[R] This feature is available only in secure
 contexts (HTTPS).
 .PP
 The \f[B]\f[CB]MediaKeyMessageEvent.messageType\f[B]\f[R] read\-only

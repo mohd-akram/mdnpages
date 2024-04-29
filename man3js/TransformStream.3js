@@ -4,7 +4,7 @@
 .SH NAME
 TransformStream \- TransformStream
 .SH SYNOPSIS
-This feature is available in Web Workers.
+\f[B]Note:\f[R] This feature is available in Web Workers.
 .PP
 The \f[B]\f[CB]TransformStream\f[B]\f[R] interface of the Streams API
 represents a concrete implementation of the pipe chain \f[I]transform

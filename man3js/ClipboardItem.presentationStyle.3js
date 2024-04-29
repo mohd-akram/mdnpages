@@ -5,7 +5,7 @@
 ClipboardItem.presentationStyle \- ClipboardItem: presentationStyle
 property
 .SH SYNOPSIS
-\f[B]Secure context\f[R]: This feature is available only in secure
+\f[B]Secure context:\f[R] This feature is available only in secure
 contexts (HTTPS).
 .PP
 The read\-only \f[B]\f[CB]presentationStyle\f[B]\f[R] property of the

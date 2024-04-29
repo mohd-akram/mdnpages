@@ -5,7 +5,8 @@
 XMLHttpRequest.getResponseHeader \- XMLHttpRequest: getResponseHeader()
 method
 .SH SYNOPSIS
-This feature is available in Web Workers, except for Service Workers.
+\f[B]Note:\f[R] This feature is available in Web Workers, except for
+Service Workers.
 .PP
 The \f[CR]XMLHttpRequest\f[R] method
 \f[B]\f[CB]getResponseHeader()\f[B]\f[R] returns the string containing

@@ -4,7 +4,7 @@
 .SH NAME
 VideoEncoder.dequeue_event \- VideoEncoder: dequeue event
 .SH SYNOPSIS
-\f[B]Secure context\f[R]: This feature is available only in secure
+\f[B]Secure context:\f[R] This feature is available only in secure
 contexts (HTTPS).
 .PP
 The \f[B]\f[CB]dequeue\f[B]\f[R] event of the \f[CR]VideoEncoder\f[R]

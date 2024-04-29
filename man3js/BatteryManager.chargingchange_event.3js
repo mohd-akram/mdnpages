@@ -5,7 +5,7 @@
 BatteryManager.chargingchange_event \- BatteryManager: chargingchange
 event
 .SH SYNOPSIS
-\f[B]Secure context\f[R]: This feature is available only in secure
+\f[B]Secure context:\f[R] This feature is available only in secure
 contexts (HTTPS).
 .PP
 The \f[B]\f[CB]chargingchange\f[B]\f[R] event of the

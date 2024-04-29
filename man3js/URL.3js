@@ -4,7 +4,7 @@
 .SH NAME
 URL \- URL
 .SH SYNOPSIS
-This feature is available in Web Workers.
+\f[B]Note:\f[R] This feature is available in Web Workers.
 .PP
 The \f[B]\f[CB]URL\f[B]\f[R] interface is used to parse, construct,
 normalize, and encode URLs.

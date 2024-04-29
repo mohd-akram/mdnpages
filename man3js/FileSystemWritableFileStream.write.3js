@@ -5,8 +5,10 @@
 FileSystemWritableFileStream.write \- FileSystemWritableFileStream:
 write() method
 .SH SYNOPSIS
-\f[B]Secure context\f[R]: This feature is available only in secure
-contexts (HTTPS).This feature is available in Web Workers.
+\f[B]Secure context:\f[R] This feature is available only in secure
+contexts (HTTPS).
+.PP
+\f[B]Note:\f[R] This feature is available in Web Workers.
 .PP
 The \f[B]\f[CB]write()\f[B]\f[R] method of the
 \f[CR]FileSystemWritableFileStream\f[R] interface writes content into

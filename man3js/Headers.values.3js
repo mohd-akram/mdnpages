@@ -4,7 +4,7 @@
 .SH NAME
 Headers.values \- Headers: values() method
 .SH SYNOPSIS
-This feature is available in Web Workers.
+\f[B]Note:\f[R] This feature is available in Web Workers.
 .PP
 The \f[B]\f[CB]Headers.values()\f[B]\f[R] method returns an
 \f[CR]iterator\f[R] allowing to go through all values contained in this

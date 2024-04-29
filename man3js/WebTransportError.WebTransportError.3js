@@ -5,9 +5,10 @@
 WebTransportError.WebTransportError \- WebTransportError:
 WebTransportError() constructor
 .SH SYNOPSIS
-\f[B]Secure context\f[R]: This feature is available only in secure
+\f[B]Secure context:\f[R] This feature is available only in secure
 contexts (HTTPS).
-This feature is available in Web Workers.
+.PP
+\f[B]Note:\f[R] This feature is available in Web Workers.
 .PP
 The \f[B]\f[CB]WebTransportError()\f[B]\f[R] constructor creates a new
 \f[CR]WebTransportError\f[R] object instance.

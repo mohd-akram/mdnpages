@@ -5,7 +5,8 @@
 XMLHttpRequestUpload.loadend_event \- XMLHttpRequestUpload: loadend
 event
 .SH SYNOPSIS
-This feature is available in Web Workers, except for Service Workers.
+\f[B]Note:\f[R] This feature is available in Web Workers, except for
+Service Workers.
 .PP
 The \f[B]\f[CB]loadend\f[B]\f[R] event is fired when a request has
 completed, whether successfully (after \f[CR]load\f[R]) or

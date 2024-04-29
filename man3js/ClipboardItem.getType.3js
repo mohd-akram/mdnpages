@@ -4,7 +4,7 @@
 .SH NAME
 ClipboardItem.getType \- ClipboardItem: getType() method
 .SH SYNOPSIS
-\f[B]Secure context\f[R]: This feature is available only in secure
+\f[B]Secure context:\f[R] This feature is available only in secure
 contexts (HTTPS).
 .PP
 The \f[B]\f[CB]getType()\f[B]\f[R] method of the

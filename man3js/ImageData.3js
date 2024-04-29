@@ -4,7 +4,7 @@
 .SH NAME
 ImageData \- ImageData
 .SH SYNOPSIS
-This feature is available in Web Workers.
+\f[B]Note:\f[R] This feature is available in Web Workers.
 .PP
 The \f[B]\f[CB]ImageData\f[B]\f[R] interface represents the underlying
 pixel data of an area of a \f[CR]<canvas>\f[R] element.

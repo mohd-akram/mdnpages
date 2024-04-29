@@ -4,7 +4,7 @@
 .SH NAME
 IDBCursor \- IDBCursor
 .SH SYNOPSIS
-This feature is available in Web Workers.
+\f[B]Note:\f[R] This feature is available in Web Workers.
 .RS
 .PP
 \f[B]Note:\f[R] Not to be confused with \f[CR]IDBCursorWithValue\f[R]
@@ -84,7 +84,7 @@ updates the value at the current position of the cursor in the object
 store.
 This can be used to update specific records.
 .SH CONSTANTS
-\f[B]Deprecated\f[R]: This feature is no longer recommended.
+\f[B]Deprecated:\f[R] This feature is no longer recommended.
 .RS
 .PP
 \f[B]Warning:\f[R] These constants are no longer available \[em] they

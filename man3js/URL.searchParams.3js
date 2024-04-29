@@ -4,7 +4,7 @@
 .SH NAME
 URL.searchParams \- URL: searchParams property
 .SH SYNOPSIS
-This feature is available in Web Workers.
+\f[B]Note:\f[R] This feature is available in Web Workers.
 .PP
 The \f[B]\f[CB]searchParams\f[B]\f[R] read\-only property of the
 \f[CR]URL\f[R] interface returns a \f[CR]URLSearchParams\f[R] object

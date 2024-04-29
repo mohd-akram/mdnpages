@@ -5,7 +5,8 @@
 .SH NAME
 XMLHttpRequest.readyState \- XMLHttpRequest: readyState property
 .SH SYNOPSIS
-This feature is available in Web Workers, except for Service Workers.
+\f[B]Note:\f[R] This feature is available in Web Workers, except for
+Service Workers.
 .PP
 The \f[B]XMLHttpRequest.readyState\f[R] property returns the state an
 XMLHttpRequest client is in.

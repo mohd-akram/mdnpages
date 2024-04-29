@@ -5,7 +5,7 @@
 .SH NAME
 IDBIndex.multiEntry \- IDBIndex: multiEntry property
 .SH SYNOPSIS
-This feature is available in Web Workers.
+\f[B]Note:\f[R] This feature is available in Web Workers.
 .PP
 The \f[B]\f[CB]multiEntry\f[B]\f[R] read\-only property of the
 \f[CR]IDBIndex\f[R] interface returns a boolean value that affects how

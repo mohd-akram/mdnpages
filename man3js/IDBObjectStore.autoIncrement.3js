@@ -5,7 +5,7 @@
 .SH NAME
 IDBObjectStore.autoIncrement \- IDBObjectStore: autoIncrement property
 .SH SYNOPSIS
-This feature is available in Web Workers.
+\f[B]Note:\f[R] This feature is available in Web Workers.
 .PP
 The \f[B]\f[CB]autoIncrement\f[B]\f[R] read\-only property of the
 \f[CR]IDBObjectStore\f[R] interface returns the value of the auto

@@ -5,9 +5,10 @@
 Notification.permission_static \- Notification: permission static
 property
 .SH SYNOPSIS
-\f[B]Secure context\f[R]: This feature is available only in secure
+\f[B]Secure context:\f[R] This feature is available only in secure
 contexts (HTTPS).
-This feature is available in Web Workers.
+.PP
+\f[B]Note:\f[R] This feature is available in Web Workers.
 .PP
 The \f[B]\f[CB]permission\f[B]\f[R] read\-only static property of the
 \f[CR]Notification\f[R] interface indicates the current permission

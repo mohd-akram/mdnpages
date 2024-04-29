@@ -4,7 +4,7 @@
 .SH NAME
 IDBKeyRange.includes \- IDBKeyRange: includes() method
 .SH SYNOPSIS
-This feature is available in Web Workers.
+\f[B]Note:\f[R] This feature is available in Web Workers.
 .PP
 The \f[CR]includes()\f[R] method of the \f[CR]IDBKeyRange\f[R] interface
 returns a boolean indicating whether a specified key is inside the key

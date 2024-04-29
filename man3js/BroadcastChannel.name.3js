@@ -4,7 +4,7 @@
 .SH NAME
 BroadcastChannel.name \- BroadcastChannel: name property
 .SH SYNOPSIS
-This feature is available in Web Workers.
+\f[B]Note:\f[R] This feature is available in Web Workers.
 .PP
 The read\-only \f[B]\f[CB]BroadcastChannel.name\f[B]\f[R] property
 returns a string, which uniquely identifies the given channel with its

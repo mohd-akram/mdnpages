@@ -4,7 +4,7 @@
 .SH NAME
 FileReader.abort_event \- FileReader: abort event
 .SH SYNOPSIS
-This feature is available in Web Workers.
+\f[B]Note:\f[R] This feature is available in Web Workers.
 .PP
 The \f[B]\f[CB]abort\f[B]\f[R] event is fired when a read has been
 aborted: for instance because the program called

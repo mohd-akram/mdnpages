@@ -5,7 +5,7 @@
 .SH NAME
 performance_property \- performance global property
 .SH SYNOPSIS
-This feature is available in Web Workers.
+\f[B]Note:\f[R] This feature is available in Web Workers.
 .PP
 The global \f[B]\f[CB]performance\f[B]\f[R] property returns a
 \f[CR]Performance\f[R] object, which can be used to gather performance

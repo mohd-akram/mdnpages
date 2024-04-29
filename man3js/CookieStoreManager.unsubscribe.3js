@@ -5,8 +5,10 @@
 CookieStoreManager.unsubscribe \- CookieStoreManager: unsubscribe()
 method
 .SH SYNOPSIS
-\f[B]Secure context\f[R]: This feature is available only in secure
-contexts (HTTPS).This feature is available in Service Workers.
+\f[B]Secure context:\f[R] This feature is available only in secure
+contexts (HTTPS).
+.PP
+\f[B]Note:\f[R] This feature is available in Service Workers.
 .PP
 The \f[B]\f[CB]unsubscribe()\f[B]\f[R] method of the
 \f[CR]CookieStoreManager\f[R] interface stops the

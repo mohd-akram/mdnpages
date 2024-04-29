@@ -4,7 +4,7 @@
 .SH NAME
 Path2D \- Path2D
 .SH SYNOPSIS
-This feature is available in Web Workers.
+\f[B]Note:\f[R] This feature is available in Web Workers.
 .PP
 The \f[B]\f[CB]Path2D\f[B]\f[R] interface of the Canvas 2D API is used
 to declare a path that can then be used on a

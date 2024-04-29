@@ -4,7 +4,7 @@
 .SH NAME
 console.timelog_static \- console: timeLog() static method
 .SH SYNOPSIS
-This feature is available in Web Workers.
+\f[B]Note:\f[R] This feature is available in Web Workers.
 .PP
 The \f[B]\f[CB]console.timeLog()\f[B]\f[R] static method logs the
 current value of a timer that was previously started by calling

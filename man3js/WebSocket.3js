@@ -4,7 +4,7 @@
 .SH NAME
 WebSocket \- WebSocket
 .SH SYNOPSIS
-This feature is available in Web Workers.
+\f[B]Note:\f[R] This feature is available in Web Workers.
 .PP
 The \f[CR]WebSocket\f[R] object provides the API for creating and
 managing a WebSocket connection to a server, as well as for sending and

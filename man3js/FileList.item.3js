@@ -4,7 +4,7 @@
 .SH NAME
 FileList.item \- FileList: item() method
 .SH SYNOPSIS
-This feature is available in Web Workers.
+\f[B]Note:\f[R] This feature is available in Web Workers.
 .PP
 The \f[B]\f[CB]item()\f[B]\f[R] method of the \f[CR]FileList\f[R]
 interface returns a \f[CR]File\f[R] object representing the file at the

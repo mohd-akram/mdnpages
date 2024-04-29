@@ -4,7 +4,7 @@
 .SH NAME
 WritableStream.getWriter \- WritableStream: getWriter() method
 .SH SYNOPSIS
-This feature is available in Web Workers.
+\f[B]Note:\f[R] This feature is available in Web Workers.
 .PP
 The \f[B]\f[CB]getWriter()\f[B]\f[R] method of the
 \f[CR]WritableStream\f[R] interface returns a new instance of

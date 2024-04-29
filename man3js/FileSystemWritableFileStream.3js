@@ -4,8 +4,10 @@
 .SH NAME
 FileSystemWritableFileStream \- FileSystemWritableFileStream
 .SH SYNOPSIS
-\f[B]Secure context\f[R]: This feature is available only in secure
-contexts (HTTPS).This feature is available in Web Workers.
+\f[B]Secure context:\f[R] This feature is available only in secure
+contexts (HTTPS).
+.PP
+\f[B]Note:\f[R] This feature is available in Web Workers.
 .PP
 The \f[B]\f[CB]FileSystemWritableFileStream\f[B]\f[R] interface of the
 File System API is a \f[CR]WritableStream\f[R] object with additional

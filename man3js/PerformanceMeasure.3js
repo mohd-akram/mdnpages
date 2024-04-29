@@ -4,7 +4,7 @@
 .SH NAME
 PerformanceMeasure \- PerformanceMeasure
 .SH SYNOPSIS
-This feature is available in Web Workers.
+\f[B]Note:\f[R] This feature is available in Web Workers.
 .PP
 \f[B]\f[CB]PerformanceMeasure\f[B]\f[R] is an \f[I]abstract\f[R]
 interface for \f[CR]PerformanceEntry\f[R] objects with an

@@ -4,7 +4,7 @@
 .SH NAME
 console.groupend_static \- console: groupEnd() static method
 .SH SYNOPSIS
-This feature is available in Web Workers.
+\f[B]Note:\f[R] This feature is available in Web Workers.
 .PP
 The \f[B]\f[CB]console.groupEnd()\f[B]\f[R] static method exits the
 current inline group in the console.

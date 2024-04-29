@@ -5,7 +5,7 @@
 .SH NAME
 IDBKeyRange.lowerOpen \- IDBKeyRange: lowerOpen property
 .SH SYNOPSIS
-This feature is available in Web Workers.
+\f[B]Note:\f[R] This feature is available in Web Workers.
 .PP
 The \f[B]\f[CB]lowerOpen\f[B]\f[R] read\-only property of the
 \f[CR]IDBKeyRange\f[R] interface returns a boolean indicating whether

@@ -4,7 +4,7 @@
 .SH NAME
 URL.protocol \- URL: protocol property
 .SH SYNOPSIS
-This feature is available in Web Workers.
+\f[B]Note:\f[R] This feature is available in Web Workers.
 .PP
 The \f[B]\f[CB]protocol\f[B]\f[R] property of the \f[CR]URL\f[R]
 interface is a string representing the protocol scheme of the URL,

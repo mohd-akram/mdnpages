@@ -4,8 +4,10 @@
 .SH NAME
 FileSystemHandle \- FileSystemHandle
 .SH SYNOPSIS
-\f[B]Secure context\f[R]: This feature is available only in secure
-contexts (HTTPS).This feature is available in Web Workers.
+\f[B]Secure context:\f[R] This feature is available only in secure
+contexts (HTTPS).
+.PP
+\f[B]Note:\f[R] This feature is available in Web Workers.
 .PP
 The \f[B]\f[CB]FileSystemHandle\f[B]\f[R] interface of the
 \f[CR]File System API\f[R] is an object which represents a file or

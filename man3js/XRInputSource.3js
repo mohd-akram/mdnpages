@@ -4,7 +4,7 @@
 .SH NAME
 XRInputSource \- XRInputSource
 .SH SYNOPSIS
-\f[B]Secure context\f[R]: This feature is available only in secure
+\f[B]Secure context:\f[R] This feature is available only in secure
 contexts (HTTPS).
 .PP
 The WebXR Device API\[cq]s \f[B]\f[CB]XRInputSource\f[B]\f[R] interface

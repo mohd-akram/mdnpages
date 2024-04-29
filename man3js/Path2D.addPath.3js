@@ -4,7 +4,7 @@
 .SH NAME
 Path2D.addPath \- Path2D: addPath() method
 .SH SYNOPSIS
-This feature is available in Web Workers.
+\f[B]Note:\f[R] This feature is available in Web Workers.
 .PP
 The \f[B]\f[CB]Path2D.addPath()\f[B]\f[R] method of the Canvas 2D API
 adds one \f[CR]Path2D\f[R] object to another \f[CR]Path2D\f[R] object.

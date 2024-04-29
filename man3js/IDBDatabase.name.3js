@@ -4,7 +4,7 @@
 .SH NAME
 IDBDatabase.name \- IDBDatabase: name property
 .SH SYNOPSIS
-This feature is available in Web Workers.
+\f[B]Note:\f[R] This feature is available in Web Workers.
 .PP
 The \f[B]\f[CB]name\f[B]\f[R] read\-only property of the
 \f[CR]IDBDatabase\f[R] interface is a string that contains the name of

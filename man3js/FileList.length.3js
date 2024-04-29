@@ -4,7 +4,7 @@
 .SH NAME
 FileList.length \- FileList: length property
 .SH SYNOPSIS
-This feature is available in Web Workers.
+\f[B]Note:\f[R] This feature is available in Web Workers.
 .PP
 The \f[B]\f[CB]length\f[B]\f[R] read\-only property of the
 \f[CR]FileList\f[R] interface returns the number of files in the

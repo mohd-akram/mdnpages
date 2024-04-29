@@ -4,7 +4,7 @@
 .SH NAME
 btoa \- btoa() global function
 .SH SYNOPSIS
-This feature is available in Web Workers.
+\f[B]Note:\f[R] This feature is available in Web Workers.
 .PP
 The \f[B]\f[CB]btoa()\f[B]\f[R] method creates a Base64\-encoded ASCII
 string from a \f[I]binary string\f[R] (i.e., a string in which each

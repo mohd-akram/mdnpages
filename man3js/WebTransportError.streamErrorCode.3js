@@ -5,9 +5,10 @@
 WebTransportError.streamErrorCode \- WebTransportError: streamErrorCode
 property
 .SH SYNOPSIS
-\f[B]Secure context\f[R]: This feature is available only in secure
+\f[B]Secure context:\f[R] This feature is available only in secure
 contexts (HTTPS).
-This feature is available in Web Workers.
+.PP
+\f[B]Note:\f[R] This feature is available in Web Workers.
 .PP
 The \f[B]\f[CB]streamErrorCode\f[B]\f[R] read\-only property of the
 \f[CR]WebTransportError\f[R] interface returns a number in the range

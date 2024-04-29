@@ -5,7 +5,7 @@
 URLSearchParams.URLSearchParams \- URLSearchParams: URLSearchParams()
 constructor
 .SH SYNOPSIS
-This feature is available in Web Workers.
+\f[B]Note:\f[R] This feature is available in Web Workers.
 .PP
 The \f[B]\f[CB]URLSearchParams()\f[B]\f[R] constructor creates and
 returns a new \f[CR]URLSearchParams\f[R] object.

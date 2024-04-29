@@ -4,7 +4,7 @@
 .SH NAME
 CanvasPattern \- CanvasPattern
 .SH SYNOPSIS
-This feature is available in Web Workers.
+\f[B]Note:\f[R] This feature is available in Web Workers.
 .PP
 The \f[B]\f[CB]CanvasPattern\f[B]\f[R] interface represents an \c
 .UR https://en.wikipedia.org/wiki/Opaque_data_type

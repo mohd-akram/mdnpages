@@ -4,7 +4,7 @@
 .SH NAME
 RTCEncodedAudioFrame \- RTCEncodedAudioFrame
 .SH SYNOPSIS
-This feature is available in Dedicated Web Workers.
+\f[B]Note:\f[R] This feature is available in Dedicated Web Workers.
 .PP
 The \f[B]\f[CB]RTCEncodedAudioFrame\f[B]\f[R] of the WebRTC API
 represents an encoded audio frame in the WebRTC receiver or sender

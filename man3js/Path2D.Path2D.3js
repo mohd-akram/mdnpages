@@ -4,7 +4,7 @@
 .SH NAME
 Path2D.Path2D \- Path2D: Path2D() constructor
 .SH SYNOPSIS
-This feature is available in Web Workers.
+\f[B]Note:\f[R] This feature is available in Web Workers.
 .PP
 The \f[B]\f[CB]Path2D()\f[B]\f[R] constructor returns a newly
 instantiated \f[CR]Path2D\f[R] object, optionally with another path as

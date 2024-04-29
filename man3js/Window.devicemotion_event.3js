@@ -4,7 +4,7 @@
 .SH NAME
 Window.devicemotion_event \- Window: devicemotion event
 .SH SYNOPSIS
-\f[B]Secure context\f[R]: This feature is available only in secure
+\f[B]Secure context:\f[R] This feature is available only in secure
 contexts (HTTPS).
 .PP
 The \f[B]\f[CB]devicemotion\f[B]\f[R] event is fired at a regular

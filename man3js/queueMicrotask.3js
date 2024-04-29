@@ -4,7 +4,7 @@
 .SH NAME
 queueMicrotask \- queueMicrotask() global function
 .SH SYNOPSIS
-This feature is available in Web Workers.
+\f[B]Note:\f[R] This feature is available in Web Workers.
 .PP
 The \f[B]\f[CB]queueMicrotask()\f[B]\f[R] method, which is exposed on
 the \f[CR]Window\f[R] or \f[CR]Worker\f[R] interface, queues a microtask

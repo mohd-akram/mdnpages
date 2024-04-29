@@ -4,7 +4,7 @@
 .SH NAME
 URL.host \- URL: host property
 .SH SYNOPSIS
-This feature is available in Web Workers.
+\f[B]Note:\f[R] This feature is available in Web Workers.
 .PP
 The \f[B]\f[CB]host\f[B]\f[R] property of the \f[CR]URL\f[R] interface
 is a string containing the host, that is the \f[CR]hostname\f[R], and

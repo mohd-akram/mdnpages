@@ -4,7 +4,7 @@
 .SH NAME
 IDBIndex.objectStore \- IDBIndex: objectStore property
 .SH SYNOPSIS
-This feature is available in Web Workers.
+\f[B]Note:\f[R] This feature is available in Web Workers.
 .PP
 The \f[B]\f[CB]objectStore\f[B]\f[R] property of the \f[CR]IDBIndex\f[R]
 interface returns the object store referenced by the current index.

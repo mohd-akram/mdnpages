@@ -5,7 +5,7 @@
 NotificationEvent.NotificationEvent \- NotificationEvent:
 NotificationEvent() constructor
 .SH SYNOPSIS
-This feature is only available in Service Workers.
+\f[B]Note:\f[R] This feature is only available in Service Workers.
 .PP
 The \f[B]\f[CB]NotificationEvent()\f[B]\f[R] constructor creates a new
 \f[CR]NotificationEvent\f[R] object.

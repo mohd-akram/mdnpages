@@ -4,7 +4,7 @@
 .SH NAME
 RTCEncodedVideoFrame \- RTCEncodedVideoFrame
 .SH SYNOPSIS
-This feature is available in Dedicated Web Workers.
+\f[B]Note:\f[R] This feature is available in Dedicated Web Workers.
 .PP
 The \f[B]\f[CB]RTCEncodedVideoFrame\f[B]\f[R] of the WebRTC API
 represents an encoded video frame in the WebRTC receiver or sender

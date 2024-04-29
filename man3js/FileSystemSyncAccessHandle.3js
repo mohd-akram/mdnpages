@@ -4,9 +4,10 @@
 .SH NAME
 FileSystemSyncAccessHandle \- FileSystemSyncAccessHandle
 .SH SYNOPSIS
-\f[B]Secure context\f[R]: This feature is available only in secure
-contexts (HTTPS).This feature is only available in Dedicated Web
-Workers.
+\f[B]Secure context:\f[R] This feature is available only in secure
+contexts (HTTPS).
+.PP
+\f[B]Note:\f[R] This feature is only available in Dedicated Web Workers.
 .PP
 The \f[B]\f[CB]FileSystemSyncAccessHandle\f[B]\f[R] interface of the
 File System API represents a synchronous handle to a file system entry.

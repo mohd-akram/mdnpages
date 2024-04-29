@@ -4,7 +4,7 @@
 .SH NAME
 ByteLengthQueuingStrategy \- ByteLengthQueuingStrategy
 .SH SYNOPSIS
-This feature is available in Web Workers.
+\f[B]Note:\f[R] This feature is available in Web Workers.
 .PP
 The \f[B]\f[CB]ByteLengthQueuingStrategy\f[B]\f[R] interface of the
 Streams API provides a built\-in byte length queuing strategy that can

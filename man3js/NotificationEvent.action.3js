@@ -4,7 +4,7 @@
 .SH NAME
 NotificationEvent.action \- NotificationEvent: action property
 .SH SYNOPSIS
-This feature is only available in Service Workers.
+\f[B]Note:\f[R] This feature is only available in Service Workers.
 .PP
 The \f[B]\f[CB]action\f[B]\f[R] read\-only property of the
 \f[CR]NotificationEvent\f[R] interface returns the string ID of the

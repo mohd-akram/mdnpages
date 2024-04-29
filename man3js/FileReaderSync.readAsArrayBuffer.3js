@@ -5,8 +5,8 @@
 FileReaderSync.readAsArrayBuffer \- FileReaderSync: readAsArrayBuffer()
 method
 .SH SYNOPSIS
-This feature is only available in Web Workers, except for Service
-Workers.
+\f[B]Note:\f[R] This feature is only available in Web Workers, except
+for Service Workers.
 .PP
 The \f[B]\f[CB]readAsArrayBuffer()\f[B]\f[R] method of the
 \f[CR]FileReaderSync\f[R] interface allows to read \f[CR]File\f[R] or

@@ -4,7 +4,7 @@
 .SH NAME
 MediaDevices.enumerateDevices \- MediaDevices: enumerateDevices() method
 .SH SYNOPSIS
-\f[B]Secure context\f[R]: This feature is available only in secure
+\f[B]Secure context:\f[R] This feature is available only in secure
 contexts (HTTPS).
 .PP
 The \f[B]\f[CB]enumerateDevices()\f[B]\f[R] method of the

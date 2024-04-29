@@ -4,7 +4,7 @@
 .SH NAME
 XRViewerPose.views \- XRViewerPose: views property
 .SH SYNOPSIS
-\f[B]Secure context\f[R]: This feature is available only in secure
+\f[B]Secure context:\f[R] This feature is available only in secure
 contexts (HTTPS).
 .PP
 The read\-only \f[CR]XRViewerPose\f[R] property

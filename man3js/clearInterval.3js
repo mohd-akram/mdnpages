@@ -4,7 +4,7 @@
 .SH NAME
 clearInterval \- clearInterval() global function
 .SH SYNOPSIS
-This feature is available in Web Workers.
+\f[B]Note:\f[R] This feature is available in Web Workers.
 .PP
 The global \f[B]\f[CB]clearInterval()\f[B]\f[R] method cancels a timed,
 repeating action which was previously established by a call to

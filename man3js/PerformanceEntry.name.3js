@@ -4,7 +4,7 @@
 .SH NAME
 PerformanceEntry.name \- PerformanceEntry: name property
 .SH SYNOPSIS
-This feature is available in Web Workers.
+\f[B]Note:\f[R] This feature is available in Web Workers.
 .PP
 The read\-only \f[B]\f[CB]name\f[B]\f[R] property of the
 \f[CR]PerformanceEntry\f[R] interface is a string representing the name

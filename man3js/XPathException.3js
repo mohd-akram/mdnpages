@@ -4,7 +4,7 @@
 .SH NAME
 XPathException \- XPathException
 .SH SYNOPSIS
-\f[B]Deprecated\f[R]: This feature is no longer recommended.
+\f[B]Deprecated:\f[R] This feature is no longer recommended.
 .PP
 In the DOM XPath API the \f[B]\f[CB]XPathException\f[B]\f[R] interface
 represents exception conditions that can be encountered while performing

@@ -4,7 +4,7 @@
 .SH NAME
 PerformanceResourceTiming \- PerformanceResourceTiming
 .SH SYNOPSIS
-This feature is available in Web Workers.
+\f[B]Note:\f[R] This feature is available in Web Workers.
 .PP
 The \f[B]\f[CB]PerformanceResourceTiming\f[B]\f[R] interface enables
 retrieval and analysis of detailed network timing data regarding the

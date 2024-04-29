@@ -68,7 +68,7 @@ the same position.
 \f[B]DataTransfer.setDragImage()\f[R]
 Set the image to be used for dragging if a custom one is desired.
 .SS Gecko methods
-\f[B]Non\-standard\f[R]: This feature is non\-standard and is not on a
+\f[B]Non\-standard:\f[R] This feature is non\-standard and is not on a
 standards track.
 .SH EXAMPLES
 Every method and property listed in this document has its own reference

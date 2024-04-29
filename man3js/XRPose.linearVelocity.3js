@@ -4,7 +4,7 @@
 .SH NAME
 XRPose.linearVelocity \- XRPose: linearVelocity property
 .SH SYNOPSIS
-\f[B]Secure context\f[R]: This feature is available only in secure
+\f[B]Secure context:\f[R] This feature is available only in secure
 contexts (HTTPS).
 .PP
 The \f[CR]linearVelocity\f[R] read\-only property of the

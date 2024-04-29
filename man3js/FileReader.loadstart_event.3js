@@ -4,7 +4,7 @@
 .SH NAME
 FileReader.loadstart_event \- FileReader: loadstart event
 .SH SYNOPSIS
-This feature is available in Web Workers.
+\f[B]Note:\f[R] This feature is available in Web Workers.
 .PP
 The \f[B]\f[CB]loadstart\f[B]\f[R] event is fired when a file read
 operation has begun.

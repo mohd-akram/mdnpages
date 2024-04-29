@@ -4,7 +4,7 @@
 .SH NAME
 NotificationEvent \- NotificationEvent
 .SH SYNOPSIS
-This feature is only available in Service Workers.
+\f[B]Note:\f[R] This feature is only available in Service Workers.
 .PP
 The \f[B]\f[CB]NotificationEvent\f[B]\f[R] interface of the
 Notifications API represents a notification event dispatched on the

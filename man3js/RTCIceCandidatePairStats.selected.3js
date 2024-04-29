@@ -5,7 +5,7 @@
 RTCIceCandidatePairStats.selected \- RTCIceCandidatePairStats: selected
 property
 .SH SYNOPSIS
-\f[B]Non\-standard\f[R]: This feature is non\-standard and is not on a
+\f[B]Non\-standard:\f[R] This feature is non\-standard and is not on a
 standards track.
 .PP
 The \f[I]non\-standard\f[R], Firefox\-specific

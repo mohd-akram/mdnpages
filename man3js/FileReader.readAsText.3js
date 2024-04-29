@@ -4,7 +4,7 @@
 .SH NAME
 FileReader.readAsText \- FileReader: readAsText() method
 .SH SYNOPSIS
-This feature is available in Web Workers.
+\f[B]Note:\f[R] This feature is available in Web Workers.
 .PP
 The \f[B]\f[CB]readAsText()\f[B]\f[R] method of the
 \f[CR]FileReader\f[R] interface is used to read the contents of the

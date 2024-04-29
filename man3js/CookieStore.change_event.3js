@@ -4,7 +4,7 @@
 .SH NAME
 CookieStore.change_event \- CookieStore: change event
 .SH SYNOPSIS
-\f[B]Secure context\f[R]: This feature is available only in secure
+\f[B]Secure context:\f[R] This feature is available only in secure
 contexts (HTTPS).
 .PP
 A \f[CR]change\f[R] event is fired at a \f[CR]CookieStore\f[R] object

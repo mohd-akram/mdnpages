@@ -4,7 +4,8 @@
 .SH NAME
 XMLHttpRequestUpload \- XMLHttpRequestUpload
 .SH SYNOPSIS
-This feature is available in Web Workers, except for Service Workers.
+\f[B]Note:\f[R] This feature is available in Web Workers, except for
+Service Workers.
 .PP
 The \f[B]\f[CB]XMLHttpRequestUpload\f[B]\f[R] interface represents the
 upload process for a specific \f[CR]XMLHttpRequest\f[R].

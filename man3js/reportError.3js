@@ -4,7 +4,7 @@
 .SH NAME
 reportError \- reportError() global function
 .SH SYNOPSIS
-This feature is available in Web Workers.
+\f[B]Note:\f[R] This feature is available in Web Workers.
 .PP
 The \f[B]\f[CB]reportError()\f[B]\f[R] global method may be used to
 report errors to the console or global event handlers, emulating an

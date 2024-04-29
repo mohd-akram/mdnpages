@@ -5,8 +5,10 @@
 FileSystemFileHandle.createWritable \- FileSystemFileHandle:
 createWritable() method
 .SH SYNOPSIS
-\f[B]Secure context\f[R]: This feature is available only in secure
-contexts (HTTPS).This feature is available in Web Workers.
+\f[B]Secure context:\f[R] This feature is available only in secure
+contexts (HTTPS).
+.PP
+\f[B]Note:\f[R] This feature is available in Web Workers.
 .PP
 The \f[B]\f[CB]createWritable()\f[B]\f[R] method of the
 \f[CR]FileSystemFileHandle\f[R] interface creates a

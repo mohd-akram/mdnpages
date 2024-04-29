@@ -4,7 +4,7 @@
 .SH NAME
 FormData.values \- FormData: values() method
 .SH SYNOPSIS
-This feature is available in Web Workers.
+\f[B]Note:\f[R] This feature is available in Web Workers.
 .PP
 The \f[B]\f[CB]FormData.values()\f[B]\f[R] method returns an iterator
 which iterates through all values contained in the \f[CR]FormData\f[R].

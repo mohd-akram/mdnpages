@@ -5,7 +5,7 @@
 ReadableStream.ReadableStream \- ReadableStream: ReadableStream()
 constructor
 .SH SYNOPSIS
-This feature is available in Web Workers.
+\f[B]Note:\f[R] This feature is available in Web Workers.
 .PP
 The \f[B]\f[CB]ReadableStream()\f[B]\f[R] constructor creates and
 returns a readable stream object from the given handlers.

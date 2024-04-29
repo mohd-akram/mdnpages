@@ -4,7 +4,7 @@
 .SH NAME
 BroadcastChannel.close \- BroadcastChannel: close() method
 .SH SYNOPSIS
-This feature is available in Web Workers.
+\f[B]Note:\f[R] This feature is available in Web Workers.
 .PP
 The \f[B]\f[CB]BroadcastChannel.close()\f[B]\f[R] terminates the
 connection to the underlying channel, allowing the object to be garbage

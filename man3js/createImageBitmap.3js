@@ -4,7 +4,7 @@
 .SH NAME
 createImageBitmap \- createImageBitmap() global function
 .SH SYNOPSIS
-This feature is available in Web Workers.
+\f[B]Note:\f[R] This feature is available in Web Workers.
 .PP
 The \f[B]\f[CB]createImageBitmap()\f[B]\f[R] method creates a bitmap
 from a given source, optionally cropped to contain only a portion of

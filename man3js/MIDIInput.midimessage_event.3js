@@ -4,7 +4,7 @@
 .SH NAME
 MIDIInput.midimessage_event \- MIDIInput: midimessage event
 .SH SYNOPSIS
-\f[B]Secure context\f[R]: This feature is available only in secure
+\f[B]Secure context:\f[R] This feature is available only in secure
 contexts (HTTPS).
 .PP
 The \f[CR]midimessage\f[R] event of the Web MIDI API is fired when the

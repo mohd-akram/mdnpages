@@ -4,7 +4,8 @@
 .SH NAME
 Worker \- Worker
 .SH SYNOPSIS
-This feature is available in Web Workers, except for Service Workers.
+\f[B]Note:\f[R] This feature is available in Web Workers, except for
+Service Workers.
 .PP
 The \f[B]\f[CB]Worker\f[B]\f[R] interface of the Web Workers API
 represents a background task that can be created via script, which can

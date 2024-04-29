@@ -4,7 +4,7 @@
 .SH NAME
 PermissionStatus \- PermissionStatus
 .SH SYNOPSIS
-This feature is available in Web Workers.
+\f[B]Note:\f[R] This feature is available in Web Workers.
 .PP
 The \f[B]\f[CB]PermissionStatus\f[B]\f[R] interface of the Permissions
 API provides the state of an object and an event handler for monitoring

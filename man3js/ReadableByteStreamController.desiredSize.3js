@@ -5,7 +5,7 @@
 ReadableByteStreamController.desiredSize \-
 ReadableByteStreamController: desiredSize property
 .SH SYNOPSIS
-This feature is available in Web Workers.
+\f[B]Note:\f[R] This feature is available in Web Workers.
 .PP
 The \f[B]\f[CB]desiredSize\f[B]\f[R] read\-only property of the
 \f[CR]ReadableByteStreamController\f[R] interface returns the number of

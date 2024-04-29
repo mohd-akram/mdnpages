@@ -65,7 +65,7 @@ str="(\"([^\"]+)\"|'([^']+)')"
 empty="(\"\"|'')"
 
 ref() {
-	echo "
+	printf '%s\n' "
 	s/{{$1\($str\)}}/\`\2\3\`/ig
 	s/{{$1\($str,$space$str\)}}/\`\5\6\`/ig
 	s/{{$1\($str,$space$empty,$space$str\)}}/\`\2\3\`/ig
@@ -78,25 +78,25 @@ ref() {
 }
 
 text() {
-	echo "
+	printf '%s\n' "
 	s/{{$1\($str\)}}/\2\3/ig
 	s/{{$1\($str,$space$str\)}}/\5\6/ig
 	"
 }
 
 element() {
-	echo "
+	printf '%s\n' "
 	s/{{$1\($space$str$space\)}}/\`<\2\3>\`/ig
 	s/{{$1\($str,$space$str\)}}/\`\5\6\`/ig
 	"
 }
 
 info() {
-	echo "s/{{$1(\(\))?}}/$2/ig"
+	printf '%s\n' "s/{{$1(\(\))?}}/$2/ig"
 }
 
 ignore() {
-	echo "s/{{$1(\(($str|$empty|[^)'\"]*)*\))?}}//ig"
+	printf '%s\n' "s/{{$1(\(($str|$empty|[^)'\"]*)*\))?}}//ig"
 }
 
 clean() {
@@ -152,16 +152,16 @@ $(get_name "$1") - $(get_title "$1")\\
 	$(ref SVGAttr)
 	$(ref WebExtAPIRef)
 
-	$(info AvailableInWorkers 'This feature is available in Web Workers.')
-	$(info deprecated_header '**Deprecated**: This feature is no longer recommended.')
+	$(info AvailableInWorkers '\n\n**Note:** This feature is available in Web Workers.')
+	$(info deprecated_header '\n\n**Deprecated:** This feature is no longer recommended.')
 	$(info Deprecated_Inline '*(deprecated)*')
 	$(info Experimental_Inline '*(experimental)*')
 	$(info NonStandardBadge '*(non-standard)*')
-	$(info non-standard_header '**Non-standard**: This feature is non-standard and is not on a standards track.')
+	$(info non-standard_header '\n\n**Non-standard:** This feature is non-standard and is not on a standards track.')
 	$(info non-standard_inline '*(non-standard)*')
 	$(info optional_inline '*(optional)*')
 	$(info ReadOnlyInline '*(read-only)*')
-	$(info securecontext_header '**Secure context**: This feature is available only in secure contexts (HTTPS).')
+	$(info securecontext_header '\n\n**Secure context:** This feature is available only in secure contexts (HTTPS).')
 	$(info SecureContext_Inline '*(secure context)*')
 
 	$(element HTMLElement)
@@ -171,12 +171,12 @@ $(get_name "$1") - $(get_title "$1")\\
 	$(text Glossary)
 	$(text LiveSampleLink)
 
-	s/{{AvailableInWorkers\(\"dedicated\"\)}}/This feature is only available in Dedicated Web Workers./ig
-	s/{{AvailableInWorkers\(\"service\"\)}}/This feature is only available in Service Workers./ig
-	s/{{AvailableInWorkers\(\"window_and_dedicated\"\)}}/This feature is available in Dedicated Web Workers./ig
-	s/{{AvailableInWorkers\(\"window_and_service\"\)}}/This feature is available in Service Workers./ig
-	s/{{AvailableInWorkers\(\"window_and_worker_except_service\"\)}}/This feature is available in Web Workers, except for Service Workers./ig
-	s/{{AvailableInWorkers\(\"worker_except_service\"\)}}/This feature is only available in Web Workers, except for Service Workers./ig
+	s/{{AvailableInWorkers\(\"dedicated\"\)}}/\n\n**Note:** This feature is only available in Dedicated Web Workers./ig
+	s/{{AvailableInWorkers\(\"service\"\)}}/\n\n**Note:** This feature is only available in Service Workers./ig
+	s/{{AvailableInWorkers\(\"window_and_dedicated\"\)}}/\n\n**Note:** This feature is available in Dedicated Web Workers./ig
+	s/{{AvailableInWorkers\(\"window_and_service\"\)}}/\n\n**Note:** This feature is available in Service Workers./ig
+	s/{{AvailableInWorkers\(\"window_and_worker_except_service\"\)}}/\n\n**Note:** This feature is available in Web Workers, except for Service Workers./ig
+	s/{{AvailableInWorkers\(\"worker_except_service\"\)}}/\n\n**Note:** This feature is only available in Web Workers, except for Service Workers./ig
 	s/{{RFC\(\"?([0-9]+)\"?\)}}/RFC \1/ig
 	s/{{RFC\(([0-9]+),$space$str\)}}/RFC \1: \3\4/ig
 	s/{{RFC\(([0-9]+),$space$empty,$space([0-9.]+)\)}}/RFC \1, section \3/ig

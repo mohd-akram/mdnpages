@@ -4,7 +4,7 @@
 .SH NAME
 OffscreenCanvas.height \- OffscreenCanvas: height property
 .SH SYNOPSIS
-This feature is available in Web Workers.
+\f[B]Note:\f[R] This feature is available in Web Workers.
 .PP
 The \f[B]\f[CB]height\f[B]\f[R] property returns and sets the height of
 an \f[CR]OffscreenCanvas\f[R] object.

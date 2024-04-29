@@ -5,8 +5,10 @@
 ServiceWorkerGlobalScope.pushsubscriptionchange_event \-
 ServiceWorkerGlobalScope: pushsubscriptionchange event
 .SH SYNOPSIS
-\f[B]Secure context\f[R]: This feature is available only in secure
-contexts (HTTPS).This feature is only available in Service Workers.
+\f[B]Secure context:\f[R] This feature is available only in secure
+contexts (HTTPS).
+.PP
+\f[B]Note:\f[R] This feature is only available in Service Workers.
 .PP
 The \f[B]\f[CB]pushsubscriptionchange\f[B]\f[R] event is sent to the
 global scope of a \f[CR]ServiceWorker\f[R] to indicate a change in push

@@ -4,7 +4,7 @@
 .SH NAME
 setTimeout \- setTimeout() global function
 .SH SYNOPSIS
-This feature is available in Web Workers.
+\f[B]Note:\f[R] This feature is available in Web Workers.
 .PP
 The global \f[B]\f[CB]setTimeout()\f[B]\f[R] method sets a timer which
 executes a function or specified piece of code once the timer expires.

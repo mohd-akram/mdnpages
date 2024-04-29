@@ -4,7 +4,7 @@
 .SH NAME
 console.log_static \- console: log() static method
 .SH SYNOPSIS
-This feature is available in Web Workers.
+\f[B]Note:\f[R] This feature is available in Web Workers.
 .PP
 The \f[B]\f[CB]console.log()\f[B]\f[R] static method outputs a message
 to the console.

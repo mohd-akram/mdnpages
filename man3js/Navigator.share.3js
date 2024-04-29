@@ -4,7 +4,7 @@
 .SH NAME
 Navigator.share \- Navigator: share() method
 .SH SYNOPSIS
-\f[B]Secure context\f[R]: This feature is available only in secure
+\f[B]Secure context:\f[R] This feature is available only in secure
 contexts (HTTPS).
 .PP
 The \f[B]\f[CB]share()\f[B]\f[R] method of the \f[CR]Navigator\f[R]

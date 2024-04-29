@@ -4,7 +4,7 @@
 .SH NAME
 ImageData.data \- ImageData: data property
 .SH SYNOPSIS
-This feature is available in Web Workers.
+\f[B]Note:\f[R] This feature is available in Web Workers.
 .PP
 The readonly \f[B]\f[CB]ImageData.data\f[B]\f[R] property returns a
 \f[CR]Uint8ClampedArray\f[R] that contains the \f[CR]ImageData\f[R]

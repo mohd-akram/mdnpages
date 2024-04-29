@@ -5,8 +5,10 @@
 ServiceWorkerGlobalScope.notificationclose_event \-
 ServiceWorkerGlobalScope: notificationclose event
 .SH SYNOPSIS
-\f[B]Secure context\f[R]: This feature is available only in secure
-contexts (HTTPS).This feature is only available in Service Workers.
+\f[B]Secure context:\f[R] This feature is available only in secure
+contexts (HTTPS).
+.PP
+\f[B]Note:\f[R] This feature is only available in Service Workers.
 .PP
 The \f[B]\f[CB]notificationclose\f[B]\f[R] event of the
 \f[CR]ServiceWorkerGlobalScope\f[R] interface fires when a user closes a

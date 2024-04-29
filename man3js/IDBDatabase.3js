@@ -4,7 +4,7 @@
 .SH NAME
 IDBDatabase \- IDBDatabase
 .SH SYNOPSIS
-This feature is available in Web Workers.
+\f[B]Note:\f[R] This feature is available in Web Workers.
 .PP
 The \f[B]\f[CB]IDBDatabase\f[B]\f[R] interface of the IndexedDB API
 provides a connection to a database; you can use an

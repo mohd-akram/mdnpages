@@ -4,7 +4,7 @@
 .SH NAME
 XRSpace \- XRSpace
 .SH SYNOPSIS
-\f[B]Secure context\f[R]: This feature is available only in secure
+\f[B]Secure context:\f[R] This feature is available only in secure
 contexts (HTTPS).
 .PP
 The \f[B]\f[CB]XRSpace\f[B]\f[R] interface of the WebXR Device API is an

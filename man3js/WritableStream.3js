@@ -4,7 +4,7 @@
 .SH NAME
 WritableStream \- WritableStream
 .SH SYNOPSIS
-This feature is available in Web Workers.
+\f[B]Note:\f[R] This feature is available in Web Workers.
 .PP
 The \f[B]\f[CB]WritableStream\f[B]\f[R] interface of the Streams API
 provides a standard abstraction for writing streaming data to a

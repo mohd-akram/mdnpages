@@ -4,7 +4,7 @@
 .SH NAME
 structuredClone \- structuredClone() global function
 .SH SYNOPSIS
-This feature is available in Web Workers.
+\f[B]Note:\f[R] This feature is available in Web Workers.
 .PP
 The global \f[B]\f[CB]structuredClone()\f[B]\f[R] method creates a deep
 clone of a given value using the structured clone algorithm.

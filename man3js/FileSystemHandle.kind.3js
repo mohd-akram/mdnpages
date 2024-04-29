@@ -4,8 +4,10 @@
 .SH NAME
 FileSystemHandle.kind \- FileSystemHandle: kind property
 .SH SYNOPSIS
-\f[B]Secure context\f[R]: This feature is available only in secure
-contexts (HTTPS).This feature is available in Web Workers.
+\f[B]Secure context:\f[R] This feature is available only in secure
+contexts (HTTPS).
+.PP
+\f[B]Note:\f[R] This feature is available in Web Workers.
 .PP
 The \f[B]\f[CB]kind\f[B]\f[R] read\-only property of the
 \f[CR]FileSystemHandle\f[R] interface returns the type of entry.

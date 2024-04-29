@@ -4,7 +4,7 @@
 .SH NAME
 Sensor.reading_event \- Sensor: reading event
 .SH SYNOPSIS
-\f[B]Secure context\f[R]: This feature is available only in secure
+\f[B]Secure context:\f[R] This feature is available only in secure
 contexts (HTTPS).
 .PP
 The \f[B]\f[CB]reading\f[B]\f[R] event is fired when a new reading is

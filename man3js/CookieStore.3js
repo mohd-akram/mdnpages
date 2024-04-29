@@ -4,8 +4,10 @@
 .SH NAME
 CookieStore \- CookieStore
 .SH SYNOPSIS
-\f[B]Secure context\f[R]: This feature is available only in secure
-contexts (HTTPS).This feature is available in Service Workers.
+\f[B]Secure context:\f[R] This feature is available only in secure
+contexts (HTTPS).
+.PP
+\f[B]Note:\f[R] This feature is available in Service Workers.
 .PP
 The \f[B]\f[CB]CookieStore\f[B]\f[R] interface of the Cookie Store API
 provides methods for getting and setting cookies asynchronously from

@@ -5,7 +5,7 @@
 DeviceMotionEventAcceleration.y \- DeviceMotionEventAcceleration: y
 property
 .SH SYNOPSIS
-\f[B]Secure context\f[R]: This feature is available only in secure
+\f[B]Secure context:\f[R] This feature is available only in secure
 contexts (HTTPS).
 .PP
 The \f[B]\f[CB]y\f[B]\f[R] read\-only property of the

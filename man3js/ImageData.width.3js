@@ -4,7 +4,7 @@
 .SH NAME
 ImageData.width \- ImageData: width property
 .SH SYNOPSIS
-This feature is available in Web Workers.
+\f[B]Note:\f[R] This feature is available in Web Workers.
 .PP
 The readonly \f[B]\f[CB]ImageData.width\f[B]\f[R] property returns the
 number of pixels per row in the \f[CR]ImageData\f[R] object.

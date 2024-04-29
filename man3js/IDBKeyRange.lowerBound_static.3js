@@ -4,7 +4,7 @@
 .SH NAME
 IDBKeyRange.lowerBound_static \- IDBKeyRange: lowerBound() static method
 .SH SYNOPSIS
-This feature is available in Web Workers.
+\f[B]Note:\f[R] This feature is available in Web Workers.
 .PP
 The \f[B]\f[CB]lowerBound()\f[B]\f[R] static method of the
 \f[CR]IDBKeyRange\f[R] interface creates a new key range with only a

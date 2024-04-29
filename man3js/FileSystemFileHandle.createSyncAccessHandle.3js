@@ -5,9 +5,10 @@
 FileSystemFileHandle.createSyncAccessHandle \- FileSystemFileHandle:
 createSyncAccessHandle() method
 .SH SYNOPSIS
-\f[B]Secure context\f[R]: This feature is available only in secure
-contexts (HTTPS).This feature is only available in Dedicated Web
-Workers.
+\f[B]Secure context:\f[R] This feature is available only in secure
+contexts (HTTPS).
+.PP
+\f[B]Note:\f[R] This feature is only available in Dedicated Web Workers.
 .PP
 The \f[B]\f[CB]createSyncAccessHandle()\f[B]\f[R] method of the
 \f[CR]FileSystemFileHandle\f[R] interface returns a \f[CR]Promise\f[R]

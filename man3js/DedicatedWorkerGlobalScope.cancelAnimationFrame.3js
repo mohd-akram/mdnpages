@@ -5,7 +5,7 @@
 DedicatedWorkerGlobalScope.cancelAnimationFrame \-
 DedicatedWorkerGlobalScope: cancelAnimationFrame() method
 .SH SYNOPSIS
-This feature is only available in Dedicated Web Workers.
+\f[B]Note:\f[R] This feature is only available in Dedicated Web Workers.
 .PP
 The \f[B]\f[CB]cancelAnimationFrame()\f[B]\f[R] method of the
 \f[CR]DedicatedWorkerGlobalScope\f[R] interface cancels an animation

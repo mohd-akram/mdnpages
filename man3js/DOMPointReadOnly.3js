@@ -4,7 +4,7 @@
 .SH NAME
 DOMPointReadOnly \- DOMPointReadOnly
 .SH SYNOPSIS
-This feature is available in Web Workers.
+\f[B]Note:\f[R] This feature is available in Web Workers.
 .PP
 The \f[B]\f[CB]DOMPointReadOnly\f[B]\f[R] interface specifies the
 coordinate and perspective fields used by \f[CR]DOMPoint\f[R] to define

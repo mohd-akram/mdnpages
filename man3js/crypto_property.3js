@@ -4,7 +4,7 @@
 .SH NAME
 crypto_property \- crypto global property
 .SH SYNOPSIS
-This feature is available in Web Workers.
+\f[B]Note:\f[R] This feature is available in Web Workers.
 .PP
 The global read\-only \f[B]\f[CB]crypto\f[B]\f[R] property returns the
 \f[CR]Crypto\f[R] object associated to the global object.

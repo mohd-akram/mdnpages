@@ -4,7 +4,7 @@
 .SH NAME
 setInterval \- setInterval() global function
 .SH SYNOPSIS
-This feature is available in Web Workers.
+\f[B]Note:\f[R] This feature is available in Web Workers.
 .PP
 The \f[B]\f[CB]setInterval()\f[B]\f[R] method, offered on the
 \f[CR]Window\f[R] and \f[CR]WorkerGlobalScope\f[R] interfaces,

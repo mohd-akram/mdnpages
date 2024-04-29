@@ -4,8 +4,10 @@
 .SH NAME
 FileSystemDirectoryHandle \- FileSystemDirectoryHandle
 .SH SYNOPSIS
-\f[B]Secure context\f[R]: This feature is available only in secure
-contexts (HTTPS).This feature is available in Web Workers.
+\f[B]Secure context:\f[R] This feature is available only in secure
+contexts (HTTPS).
+.PP
+\f[B]Note:\f[R] This feature is available in Web Workers.
 .PP
 The \f[B]\f[CB]FileSystemDirectoryHandle\f[B]\f[R] interface of the File
 System API provides a handle to a file system directory.

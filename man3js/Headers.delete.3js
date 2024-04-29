@@ -4,7 +4,7 @@
 .SH NAME
 Headers.delete \- Headers: delete() method
 .SH SYNOPSIS
-This feature is available in Web Workers.
+\f[B]Note:\f[R] This feature is available in Web Workers.
 .PP
 The \f[B]\f[CB]delete()\f[B]\f[R] method of the \f[CR]Headers\f[R]
 interface deletes a header from the current \f[CR]Headers\f[R] object.

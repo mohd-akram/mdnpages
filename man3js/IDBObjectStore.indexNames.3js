@@ -4,7 +4,7 @@
 .SH NAME
 IDBObjectStore.indexNames \- IDBObjectStore: indexNames property
 .SH SYNOPSIS
-This feature is available in Web Workers.
+\f[B]Note:\f[R] This feature is available in Web Workers.
 .PP
 The \f[B]\f[CB]indexNames\f[B]\f[R] read\-only property of the
 \f[CR]IDBObjectStore\f[R] interface returns a list of the names of

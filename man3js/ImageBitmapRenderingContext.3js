@@ -4,7 +4,7 @@
 .SH NAME
 ImageBitmapRenderingContext \- ImageBitmapRenderingContext
 .SH SYNOPSIS
-This feature is available in Web Workers.
+\f[B]Note:\f[R] This feature is available in Web Workers.
 .PP
 The \f[B]\f[CB]ImageBitmapRenderingContext\f[B]\f[R] interface is a
 canvas rendering context that provides the functionality to replace the

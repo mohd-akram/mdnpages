@@ -4,7 +4,7 @@
 .SH NAME
 FileReader.loadend_event \- FileReader: loadend event
 .SH SYNOPSIS
-This feature is available in Web Workers.
+\f[B]Note:\f[R] This feature is available in Web Workers.
 .PP
 The \f[B]\f[CB]loadend\f[B]\f[R] event is fired when a file read has
 completed, successfully or not.

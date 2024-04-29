@@ -4,7 +4,7 @@
 .SH NAME
 MediaKeySession.close \- MediaKeySession: close() method
 .SH SYNOPSIS
-\f[B]Secure context\f[R]: This feature is available only in secure
+\f[B]Secure context:\f[R] This feature is available only in secure
 contexts (HTTPS).
 .PP
 The \f[CR]MediaKeySession.close()\f[R] method notifies that the current

@@ -4,7 +4,8 @@
 .SH NAME
 Worker.Worker \- Worker: Worker() constructor
 .SH SYNOPSIS
-This feature is available in Web Workers, except for Service Workers.
+\f[B]Note:\f[R] This feature is available in Web Workers, except for
+Service Workers.
 .PP
 The \f[B]\f[CB]Worker()\f[B]\f[R] constructor creates a
 \f[CR]Worker\f[R] object that executes the script at the specified URL.

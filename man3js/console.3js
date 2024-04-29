@@ -4,7 +4,7 @@
 .SH NAME
 console \- console
 .SH SYNOPSIS
-This feature is available in Web Workers.
+\f[B]Note:\f[R] This feature is available in Web Workers.
 .PP
 The \f[B]\f[CB]console\f[B]\f[R] object provides access to the debugging
 console (e.g., the \c

@@ -4,7 +4,8 @@
 .SH NAME
 XMLHttpRequest.upload \- XMLHttpRequest: upload property
 .SH SYNOPSIS
-This feature is available in Web Workers, except for Service Workers.
+\f[B]Note:\f[R] This feature is available in Web Workers, except for
+Service Workers.
 .PP
 The \f[CR]XMLHttpRequest\f[R] \f[CR]upload\f[R] property returns an
 \f[CR]XMLHttpRequestUpload\f[R] object that can be observed to monitor

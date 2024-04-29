@@ -4,7 +4,7 @@
 .SH NAME
 crossOriginIsolated \- crossOriginIsolated global property
 .SH SYNOPSIS
-This feature is available in Web Workers.
+\f[B]Note:\f[R] This feature is available in Web Workers.
 .PP
 The global \f[B]\f[CB]crossOriginIsolated\f[B]\f[R] read\-only property
 returns a boolean value that indicates whether the website is in a

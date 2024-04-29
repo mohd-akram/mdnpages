@@ -4,14 +4,14 @@
 .SH NAME
 caches \- caches global property
 .SH SYNOPSIS
-This feature is available in Web Workers.
+\f[B]Note:\f[R] This feature is available in Web Workers.
 .PP
 The global \f[B]\f[CB]caches\f[B]\f[R] read\-only property returns the
 \f[CR]CacheStorage\f[R] object associated with the current context.
 This object enables functionality such as storing assets for offline
 use, and generating custom responses to requests.
 .PP
-\f[B]Secure context\f[R]: This feature is available only in secure
+\f[B]Secure context:\f[R] This feature is available only in secure
 contexts (HTTPS).
 .SH VALUE
 A \f[CR]CacheStorage\f[R] object.

@@ -4,7 +4,7 @@
 .SH NAME
 console.timeend_static \- console: timeEnd() static method
 .SH SYNOPSIS
-This feature is available in Web Workers.
+\f[B]Note:\f[R] This feature is available in Web Workers.
 .PP
 The \f[B]\f[CB]console.timeEnd()\f[B]\f[R] static method stops a timer
 that was previously started by calling \f[CR]console.time()\f[R].

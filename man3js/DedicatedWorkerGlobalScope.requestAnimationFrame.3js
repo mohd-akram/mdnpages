@@ -5,7 +5,7 @@
 DedicatedWorkerGlobalScope.requestAnimationFrame \-
 DedicatedWorkerGlobalScope: requestAnimationFrame() method
 .SH SYNOPSIS
-This feature is only available in Dedicated Web Workers.
+\f[B]Note:\f[R] This feature is only available in Dedicated Web Workers.
 .PP
 The \f[B]\f[CB]requestAnimationFrame()\f[B]\f[R] method of the
 \f[CR]DedicatedWorkerGlobalScope\f[R] interface tells the browser you

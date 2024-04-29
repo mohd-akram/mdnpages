@@ -5,7 +5,7 @@
 .SH NAME
 SVGEvent \- SVGEvent
 .SH SYNOPSIS
-\f[B]Deprecated\f[R]: This feature is no longer recommended.
+\f[B]Deprecated:\f[R] This feature is no longer recommended.
 .PP
 The \f[CR]SVGEvent\f[R] interface represents the event object for most
 SVG\-related events.

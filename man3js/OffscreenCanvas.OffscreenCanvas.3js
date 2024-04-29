@@ -5,7 +5,7 @@
 OffscreenCanvas.OffscreenCanvas \- OffscreenCanvas: OffscreenCanvas()
 constructor
 .SH SYNOPSIS
-This feature is available in Web Workers.
+\f[B]Note:\f[R] This feature is available in Web Workers.
 .PP
 The \f[B]\f[CB]OffscreenCanvas()\f[B]\f[R] constructor returns a newly
 instantiated \f[CR]OffscreenCanvas\f[R] object.

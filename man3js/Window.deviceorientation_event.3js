@@ -4,7 +4,7 @@
 .SH NAME
 Window.deviceorientation_event \- Window: deviceorientation event
 .SH SYNOPSIS
-\f[B]Secure context\f[R]: This feature is available only in secure
+\f[B]Secure context:\f[R] This feature is available only in secure
 contexts (HTTPS).
 .PP
 The \f[B]\f[CB]deviceorientation\f[B]\f[R] event is fired when fresh

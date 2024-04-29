@@ -4,7 +4,7 @@
 .SH NAME
 PerformanceObserver \- PerformanceObserver
 .SH SYNOPSIS
-This feature is available in Web Workers.
+\f[B]Note:\f[R] This feature is available in Web Workers.
 .PP
 The \f[B]\f[CB]PerformanceObserver\f[B]\f[R] interface is used to
 observe performance measurement events and be notified of new

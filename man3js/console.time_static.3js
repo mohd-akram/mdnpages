@@ -4,7 +4,7 @@
 .SH NAME
 console.time_static \- console: time() static method
 .SH SYNOPSIS
-This feature is available in Web Workers.
+\f[B]Note:\f[R] This feature is available in Web Workers.
 .PP
 The \f[B]\f[CB]console.time()\f[B]\f[R] static method starts a timer you
 can use to track how long an operation takes.

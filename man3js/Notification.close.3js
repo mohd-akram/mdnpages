@@ -4,9 +4,10 @@
 .SH NAME
 Notification.close \- Notification: close() method
 .SH SYNOPSIS
-\f[B]Secure context\f[R]: This feature is available only in secure
+\f[B]Secure context:\f[R] This feature is available only in secure
 contexts (HTTPS).
-This feature is available in Web Workers.
+.PP
+\f[B]Note:\f[R] This feature is available in Web Workers.
 .PP
 The \f[B]\f[CB]close()\f[B]\f[R] method of the \f[CR]Notification\f[R]
 interface is used to close/remove a previously displayed notification.

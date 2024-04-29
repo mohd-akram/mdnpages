@@ -4,7 +4,7 @@
 .SH NAME
 MediaKeySession.sessionId \- MediaKeySession: sessionId property
 .SH SYNOPSIS
-\f[B]Secure context\f[R]: This feature is available only in secure
+\f[B]Secure context:\f[R] This feature is available only in secure
 contexts (HTTPS).
 .PP
 The \f[B]\f[CB]MediaKeySession.sessionId\f[B]\f[R] is a read\-only

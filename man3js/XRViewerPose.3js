@@ -4,7 +4,7 @@
 .SH NAME
 XRViewerPose \- XRViewerPose
 .SH SYNOPSIS
-\f[B]Secure context\f[R]: This feature is available only in secure
+\f[B]Secure context:\f[R] This feature is available only in secure
 contexts (HTTPS).
 .PP
 The WebXR Device API interface \f[B]\f[CB]XRViewerPose\f[B]\f[R]

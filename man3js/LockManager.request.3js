@@ -4,9 +4,10 @@
 .SH NAME
 LockManager.request \- LockManager: request() method
 .SH SYNOPSIS
-\f[B]Secure context\f[R]: This feature is available only in secure
+\f[B]Secure context:\f[R] This feature is available only in secure
 contexts (HTTPS).
-This feature is available in Web Workers.
+.PP
+\f[B]Note:\f[R] This feature is available in Web Workers.
 .PP
 The \f[B]\f[CB]request()\f[B]\f[R] method of the \f[CR]LockManager\f[R]
 interface requests a \f[CR]Lock\f[R] object with parameters specifying

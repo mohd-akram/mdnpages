@@ -4,7 +4,7 @@
 .SH NAME
 TextMetrics \- TextMetrics
 .SH SYNOPSIS
-This feature is available in Web Workers.
+\f[B]Note:\f[R] This feature is available in Web Workers.
 .PP
 The \f[B]\f[CB]TextMetrics\f[B]\f[R] interface represents the dimensions
 of a piece of text in the canvas; a \f[CR]TextMetrics\f[R] instance can

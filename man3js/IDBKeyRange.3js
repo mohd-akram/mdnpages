@@ -5,7 +5,7 @@
 .SH NAME
 IDBKeyRange \- IDBKeyRange
 .SH SYNOPSIS
-This feature is available in Web Workers.
+\f[B]Note:\f[R] This feature is available in Web Workers.
 .PP
 The \f[B]\f[CB]IDBKeyRange\f[B]\f[R] interface of the IndexedDB API
 represents a continuous interval over some data type that is used for

@@ -5,7 +5,7 @@
 XPathResult.invalidIteratorState \- XPathResult: invalidIteratorState
 property
 .SH SYNOPSIS
-This feature is available in Web Workers.
+\f[B]Note:\f[R] This feature is available in Web Workers.
 .PP
 The read\-only \f[B]\f[CB]invalidIteratorState\f[B]\f[R] property of the
 \f[CR]XPathResult\f[R] interface signifies that the iterator has become

@@ -4,7 +4,7 @@
 .SH NAME
 OffscreenCanvas.convertToBlob \- OffscreenCanvas: convertToBlob() method
 .SH SYNOPSIS
-This feature is available in Web Workers.
+\f[B]Note:\f[R] This feature is available in Web Workers.
 .PP
 The \f[B]\f[CB]OffscreenCanvas.convertToBlob()\f[B]\f[R] method creates
 a \f[CR]Blob\f[R] object representing the image contained in the canvas.

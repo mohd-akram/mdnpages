@@ -4,7 +4,7 @@
 .SH NAME
 NetworkInformation.saveData \- NetworkInformation: saveData property
 .SH SYNOPSIS
-This feature is available in Web Workers.
+\f[B]Note:\f[R] This feature is available in Web Workers.
 .PP
 The \f[B]\f[CB]saveData\f[B]\f[R] read\-only property of the
 \f[CR]NetworkInformation\f[R] interface returns \f[CR]true\f[R] if the

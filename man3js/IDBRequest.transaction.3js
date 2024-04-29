@@ -4,7 +4,7 @@
 .SH NAME
 IDBRequest.transaction \- IDBRequest: transaction property
 .SH SYNOPSIS
-This feature is available in Web Workers.
+\f[B]Note:\f[R] This feature is available in Web Workers.
 .PP
 The \f[B]\f[CB]transaction\f[B]\f[R] read\-only property of the
 IDBRequest interface returns the transaction for the request, that is,

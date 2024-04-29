@@ -5,7 +5,7 @@
 DedicatedWorkerGlobalScope.messageerror_event \-
 DedicatedWorkerGlobalScope: messageerror event
 .SH SYNOPSIS
-This feature is only available in Dedicated Web Workers.
+\f[B]Note:\f[R] This feature is only available in Dedicated Web Workers.
 .PP
 The \f[CR]messageerror\f[R] event is fired on a
 \f[CR]DedicatedWorkerGlobalScope\f[R] object when it receives a message

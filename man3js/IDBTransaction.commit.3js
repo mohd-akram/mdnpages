@@ -4,7 +4,7 @@
 .SH NAME
 IDBTransaction.commit \- IDBTransaction: commit() method
 .SH SYNOPSIS
-This feature is available in Web Workers.
+\f[B]Note:\f[R] This feature is available in Web Workers.
 .PP
 The \f[B]\f[CB]commit()\f[B]\f[R] method of the
 \f[CR]IDBTransaction\f[R] interface commits the transaction if it is

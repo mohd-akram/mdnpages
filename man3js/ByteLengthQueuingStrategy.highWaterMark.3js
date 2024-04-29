@@ -5,7 +5,7 @@
 ByteLengthQueuingStrategy.highWaterMark \- ByteLengthQueuingStrategy:
 highWaterMark property
 .SH SYNOPSIS
-This feature is available in Web Workers.
+\f[B]Note:\f[R] This feature is available in Web Workers.
 .PP
 The read\-only
 \f[B]\f[CB]ByteLengthQueuingStrategy.highWaterMark\f[B]\f[R] property

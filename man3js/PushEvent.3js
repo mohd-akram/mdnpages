@@ -4,8 +4,10 @@
 .SH NAME
 PushEvent \- PushEvent
 .SH SYNOPSIS
-\f[B]Secure context\f[R]: This feature is available only in secure
-contexts (HTTPS).This feature is only available in Service Workers.
+\f[B]Secure context:\f[R] This feature is available only in secure
+contexts (HTTPS).
+.PP
+\f[B]Note:\f[R] This feature is only available in Service Workers.
 .PP
 The \f[B]\f[CB]PushEvent\f[B]\f[R] interface of the Push API represents
 a push message that has been received.

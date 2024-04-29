@@ -4,7 +4,7 @@
 .SH NAME
 Gamepad.id \- Gamepad: id property
 .SH SYNOPSIS
-\f[B]Secure context\f[R]: This feature is available only in secure
+\f[B]Secure context:\f[R] This feature is available only in secure
 contexts (HTTPS).
 .PP
 The \f[B]\f[CB]Gamepad.id\f[B]\f[R] property of the \f[CR]Gamepad\f[R]

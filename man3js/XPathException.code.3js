@@ -4,7 +4,7 @@
 .SH NAME
 XPathException.code \- XPathException: code property
 .SH SYNOPSIS
-\f[B]Deprecated\f[R]: This feature is no longer recommended.
+\f[B]Deprecated:\f[R] This feature is no longer recommended.
 .PP
 The \f[B]\f[CB]code\f[B]\f[R] read\-only property of the
 \f[CR]XPathException\f[R] interface returns a \f[CR]short\f[R] that

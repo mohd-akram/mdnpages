@@ -4,7 +4,7 @@
 .SH NAME
 SyncEvent.tag \- SyncEvent: tag property
 .SH SYNOPSIS
-This feature is only available in Service Workers.
+\f[B]Note:\f[R] This feature is only available in Service Workers.
 .PP
 The \f[B]\f[CB]tag\f[B]\f[R] read\-only property of the
 \f[CR]SyncEvent\f[R] interface returns the developer\-defined identifier

@@ -5,7 +5,7 @@
 RTCEncodedVideoFrame.getMetadata \- RTCEncodedVideoFrame: getMetadata()
 method
 .SH SYNOPSIS
-This feature is available in Dedicated Web Workers.
+\f[B]Note:\f[R] This feature is available in Dedicated Web Workers.
 .PP
 The \f[B]\f[CB]getMetadata()\f[B]\f[R] method of the
 \f[CR]RTCEncodedVideoFrame\f[R] interface returns an object containing

@@ -4,7 +4,8 @@
 .SH NAME
 XMLHttpRequest.loadstart_event \- XMLHttpRequest: loadstart event
 .SH SYNOPSIS
-This feature is available in Web Workers, except for Service Workers.
+\f[B]Note:\f[R] This feature is available in Web Workers, except for
+Service Workers.
 .PP
 The \f[B]\f[CB]loadstart\f[B]\f[R] event is fired when a request has
 started to load data.

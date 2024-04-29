@@ -4,7 +4,7 @@
 .SH NAME
 CanvasGradient.addColorStop \- CanvasGradient: addColorStop() method
 .SH SYNOPSIS
-This feature is available in Web Workers.
+\f[B]Note:\f[R] This feature is available in Web Workers.
 .PP
 The \f[B]\f[CB]CanvasGradient.addColorStop()\f[B]\f[R] method adds a new
 color stop, defined by an \f[CR]offset\f[R] and a \f[CR]color\f[R], to a

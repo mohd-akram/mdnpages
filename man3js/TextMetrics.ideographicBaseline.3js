@@ -5,7 +5,7 @@
 TextMetrics.ideographicBaseline \- TextMetrics: ideographicBaseline
 property
 .SH SYNOPSIS
-This feature is available in Web Workers.
+\f[B]Note:\f[R] This feature is available in Web Workers.
 .PP
 The read\-only \f[CR]ideographicBaseline\f[R] property of the
 \f[CR]TextMetrics\f[R] interface is a \f[CR]double\f[R] giving the

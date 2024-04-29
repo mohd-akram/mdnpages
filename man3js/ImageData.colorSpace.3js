@@ -4,7 +4,7 @@
 .SH NAME
 ImageData.colorSpace \- ImageData: colorSpace property
 .SH SYNOPSIS
-This feature is available in Web Workers.
+\f[B]Note:\f[R] This feature is available in Web Workers.
 .PP
 The read\-only \f[B]\f[CB]ImageData.colorSpace\f[B]\f[R] property is a
 string indicating the color space of the image data.

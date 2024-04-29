@@ -5,9 +5,10 @@
 FileSystemSyncAccessHandle.write \- FileSystemSyncAccessHandle: write()
 method
 .SH SYNOPSIS
-\f[B]Secure context\f[R]: This feature is available only in secure
-contexts (HTTPS).This feature is only available in Dedicated Web
-Workers.
+\f[B]Secure context:\f[R] This feature is available only in secure
+contexts (HTTPS).
+.PP
+\f[B]Note:\f[R] This feature is only available in Dedicated Web Workers.
 .PP
 The \f[B]\f[CB]write()\f[B]\f[R] method of the
 \f[CR]FileSystemSyncAccessHandle\f[R] interface writes the content of a

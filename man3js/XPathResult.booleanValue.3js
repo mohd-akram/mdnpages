@@ -4,7 +4,7 @@
 .SH NAME
 XPathResult.booleanValue \- XPathResult: booleanValue property
 .SH SYNOPSIS
-This feature is available in Web Workers.
+\f[B]Note:\f[R] This feature is available in Web Workers.
 .PP
 The read\-only \f[B]\f[CB]booleanValue\f[B]\f[R] property of the
 \f[CR]XPathResult\f[R] interface returns the boolean value of a result

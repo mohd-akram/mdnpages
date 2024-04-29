@@ -4,7 +4,7 @@
 .SH NAME
 ReadableStream.pipeTo \- ReadableStream: pipeTo() method
 .SH SYNOPSIS
-This feature is available in Web Workers.
+\f[B]Note:\f[R] This feature is available in Web Workers.
 .PP
 The \f[B]\f[CB]pipeTo()\f[B]\f[R] method of the
 \f[CR]ReadableStream\f[R] interface pipes the current

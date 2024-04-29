@@ -4,7 +4,7 @@
 .SH NAME
 ServiceWorker.error_event \- ServiceWorker: error event
 .SH SYNOPSIS
-\f[B]Secure context\f[R]: This feature is available only in secure
+\f[B]Secure context:\f[R] This feature is available only in secure
 contexts (HTTPS).
 .PP
 The \f[CR]error\f[R] event fires whenever an error occurs in the service

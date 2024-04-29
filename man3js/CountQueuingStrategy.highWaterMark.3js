@@ -5,7 +5,7 @@
 CountQueuingStrategy.highWaterMark \- CountQueuingStrategy:
 highWaterMark property
 .SH SYNOPSIS
-This feature is available in Web Workers.
+\f[B]Note:\f[R] This feature is available in Web Workers.
 .PP
 The read\-only \f[B]\f[CB]CountQueuingStrategy.highWaterMark\f[B]\f[R]
 property returns the total number of chunks that can be contained in the

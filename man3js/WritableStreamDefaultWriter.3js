@@ -4,7 +4,7 @@
 .SH NAME
 WritableStreamDefaultWriter \- WritableStreamDefaultWriter
 .SH SYNOPSIS
-This feature is available in Web Workers.
+\f[B]Note:\f[R] This feature is available in Web Workers.
 .PP
 The \f[B]\f[CB]WritableStreamDefaultWriter\f[B]\f[R] interface of the
 Streams API is the object returned by

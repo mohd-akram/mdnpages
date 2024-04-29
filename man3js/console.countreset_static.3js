@@ -4,7 +4,7 @@
 .SH NAME
 console.countreset_static \- console: countReset() static method
 .SH SYNOPSIS
-This feature is available in Web Workers.
+\f[B]Note:\f[R] This feature is available in Web Workers.
 .PP
 The \f[B]\f[CB]console.countReset()\f[B]\f[R] static method resets
 counter used with \f[CR]console.count()\f[R].

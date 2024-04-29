@@ -4,7 +4,7 @@
 .SH NAME
 CanvasPattern.setTransform \- CanvasPattern: setTransform() method
 .SH SYNOPSIS
-This feature is available in Web Workers.
+\f[B]Note:\f[R] This feature is available in Web Workers.
 .PP
 The \f[B]\f[CB]CanvasPattern.setTransform()\f[B]\f[R] method uses a
 \f[CR]DOMMatrix\f[R] object as the pattern\[cq]s transformation matrix

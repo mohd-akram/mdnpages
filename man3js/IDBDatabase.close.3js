@@ -4,7 +4,7 @@
 .SH NAME
 IDBDatabase.close \- IDBDatabase: close() method
 .SH SYNOPSIS
-This feature is available in Web Workers.
+\f[B]Note:\f[R] This feature is available in Web Workers.
 .PP
 The \f[B]\f[CB]close()\f[B]\f[R] method of the \f[CR]IDBDatabase\f[R]
 interface returns immediately and closes the connection in a separate

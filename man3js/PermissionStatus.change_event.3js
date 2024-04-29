@@ -4,7 +4,7 @@
 .SH NAME
 PermissionStatus.change_event \- PermissionStatus: change event
 .SH SYNOPSIS
-This feature is available in Web Workers.
+\f[B]Note:\f[R] This feature is available in Web Workers.
 .PP
 The \f[B]\f[CB]change\f[B]\f[R] event of the \f[CR]PermissionStatus\f[R]
 interface fires whenever the \f[CR]PermissionStatus.state\f[R] property

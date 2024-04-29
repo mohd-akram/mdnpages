@@ -4,7 +4,7 @@
 .SH NAME
 XRPose.transform \- XRPose: transform property
 .SH SYNOPSIS
-\f[B]Secure context\f[R]: This feature is available only in secure
+\f[B]Secure context:\f[R] This feature is available only in secure
 contexts (HTTPS).
 .PP
 The \f[CR]transform\f[R] read\-only attribute of the \f[CR]XRPose\f[R]

@@ -5,9 +5,10 @@
 ServiceWorkerRegistration.update \- ServiceWorkerRegistration: update()
 method
 .SH SYNOPSIS
-\f[B]Secure context\f[R]: This feature is available only in secure
+\f[B]Secure context:\f[R] This feature is available only in secure
 contexts (HTTPS).
-This feature is available in Web Workers.
+.PP
+\f[B]Note:\f[R] This feature is available in Web Workers.
 .PP
 The \f[B]\f[CB]update()\f[B]\f[R] method of the
 \f[CR]ServiceWorkerRegistration\f[R] interface attempts to update the

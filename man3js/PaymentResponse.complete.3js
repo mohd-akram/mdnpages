@@ -4,7 +4,7 @@
 .SH NAME
 PaymentResponse.complete \- PaymentResponse: complete() method
 .SH SYNOPSIS
-\f[B]Secure context\f[R]: This feature is available only in secure
+\f[B]Secure context:\f[R] This feature is available only in secure
 contexts (HTTPS).
 .PP
 The \f[CR]PaymentRequest\f[R] method \f[B]\f[CB]complete()\f[B]\f[R] of

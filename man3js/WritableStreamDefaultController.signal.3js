@@ -5,7 +5,7 @@
 WritableStreamDefaultController.signal \-
 WritableStreamDefaultController: signal property
 .SH SYNOPSIS
-This feature is available in Web Workers.
+\f[B]Note:\f[R] This feature is available in Web Workers.
 .PP
 The read\-only \f[B]\f[CB]signal\f[B]\f[R] property of the
 \f[CR]WritableStreamDefaultController\f[R] interface returns the

@@ -4,8 +4,10 @@
 .SH NAME
 Cache \- Cache
 .SH SYNOPSIS
-\f[B]Secure context\f[R]: This feature is available only in secure
-contexts (HTTPS).This feature is available in Web Workers.
+\f[B]Secure context:\f[R] This feature is available only in secure
+contexts (HTTPS).
+.PP
+\f[B]Note:\f[R] This feature is available in Web Workers.
 .PP
 The \f[B]\f[CB]Cache\f[B]\f[R] interface provides a persistent storage
 mechanism for \f[CR]Request\f[R] / \f[CR]Response\f[R] object pairs that

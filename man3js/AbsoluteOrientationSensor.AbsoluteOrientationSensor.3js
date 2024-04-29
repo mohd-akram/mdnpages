@@ -5,7 +5,7 @@
 AbsoluteOrientationSensor.AbsoluteOrientationSensor \-
 AbsoluteOrientationSensor: AbsoluteOrientationSensor() constructor
 .SH SYNOPSIS
-\f[B]Secure context\f[R]: This feature is available only in secure
+\f[B]Secure context:\f[R] This feature is available only in secure
 contexts (HTTPS).
 .PP
 The \f[B]\f[CB]AbsoluteOrientationSensor()\f[B]\f[R] constructor creates
