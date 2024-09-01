@@ -27,7 +27,8 @@ the `-S` flag to specify it as a section:
     man -S 3js Array.splice
 
 For convenience, you can also add an alias to your shell profile, eg.
-`alias mdn="man -S3js"` and then access the man pages via, eg. `mdn fetch`.
+`alias mdn="man -S3js"` and then access the man pages via, eg.
+`mdn Window.fetch`.
 
 ## Build
 
