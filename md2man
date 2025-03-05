@@ -116,8 +116,9 @@ $(get_name "$1") - $(get_title "$1")\\
 
 	/^## Specifications/,/{{Specifications}}/d
 	/^## Browser compatibility/,/{{Compat}}/d
-	/^[>[:space:]]*\`\`\`[^[:space:]]+ hidden$/,/^[>[:space:]]*\`\`\`$/d
+	/^[>[:space:]]*\`\`\`[^[:space:]]+ hidden/,/^[>[:space:]]*\`\`\`$/d
 
+	s/^([>[:space:]]*)(\`\`\`[^[:space:]]+) (interactive-example|live-sample)/\1\2/
 	s/^([>[:space:]]*)(\`\`\`[^[:space:]]+) example-bad$/\1**Bad**\n\1\2/
 	s/^([>[:space:]]*)(\`\`\`[^[:space:]]+) example-good$/\1**Good**\n\1\2/
 
@@ -137,6 +138,7 @@ $(get_name "$1") - $(get_title "$1")\\
 	$(ignore EmbedGHLiveSample)
 	$(ignore EmbedLiveSample)
 	$(ignore InheritanceDiagram)
+	$(ignore InteractiveExample)
 	$(ignore JSRef)
 	$(ignore jsSidebar)
 	$(ignore HTTPSidebar)
@@ -179,7 +181,7 @@ $(get_name "$1") - $(get_title "$1")\\
 	s/{{AvailableInWorkers\(\"worker\"\)}}/\n\n**Note:** This feature is only available in Web Workers./ig
 	s/{{AvailableInWorkers\(\"worker_except_service\"\)}}/\n\n**Note:** This feature is only available in Web Workers, except for Service Workers./ig
 	s/{{RFC\(\"?([0-9]+)\"?\)}}/RFC \1/ig
-	s/{{RFC\(([0-9]+),$space$str\)}}/RFC \1: \3\4/ig
+	s/{{RFC\(\"?([0-9]+)\"?,$space$str\)}}/RFC \1: \3\4/ig
 	s/{{RFC\(([0-9]+),$space$empty,$space([0-9.]+)\)}}/RFC \1, section \3/ig
 	s/{{RFC\(\"?([0-9]+)\"?,$space$empty,$space$str\)}}/RFC \1, section \4\5)/ig
 	s/{{RFC\(\"?([0-9]+)\"?,$space$str,$space$str\)}}/RFC \1, section \6\7: \3\4/ig
