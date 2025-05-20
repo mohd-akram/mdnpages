@@ -103,10 +103,7 @@ clean() {
 	sed -E "
 	/^---$/,/^---$/c\\
 ---\\
-title: $(get_name "$1")\\
-section: JS\\
-header: JavaScript Reference Manual\\
-footer: JavaScript\\
+title: $(get_name "$1" | tr '[:lower:]' '[:upper:]')\\
 date: $(get_date "$1")\\
 ---\\
 # Name\\
@@ -195,10 +192,11 @@ $(get_name "$1") - $(get_title "$1")\\
 
 convert() {
 	pandoc --fail-if-warnings --lua-filter=filter.lua -s \
-		-f markdown-table_captions-markdown_in_html_blocks -t man
+		-f markdown-table_captions-markdown_in_html_blocks -t man "$@"
 }
 
 cleaned="$(clean $1)"
+shift
 
 unknown=$(printf %s "$cleaned" | { grep -o '{{[^}]*}}' || :; } | sort | uniq)
 
@@ -207,4 +205,4 @@ if [ "$unknown" ]; then
 	exit 1
 fi
 
-printf %s "$cleaned" | convert
+printf %s "$cleaned" | convert "$@"

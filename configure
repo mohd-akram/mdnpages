@@ -32,8 +32,7 @@ get_files() (
 		esac
 		o='$(mansectdir)'/$name.'$(mansect)'
 		printf ' %s' "$o"
-		printf '%s: %s\n\t$(MD2MAN) %s > $@ || { $(RM) $@; false; }\n' \
-			"$o" "$f" "$f" >> "$m"
+		printf '%s: %s\n\t$(convert)\n' "$o" "$f" >> "$m"
 	done
 )
 
