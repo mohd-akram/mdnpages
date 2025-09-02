@@ -17,7 +17,7 @@ communications over WebRTC.
 Packet jitter, in seconds.
 .PP
 The value is calculated using the \(lqinterarrival jitter\(rq algorithm
-described in RFC 3550, section 6.4.1).
+described in RFC 3550, section 6.4.1.
 .SH SEE ALSO
 .IP \(bu 2
 \f[CR]RTCRemoteInboundRtpStreamStats.ssrc\f[R]

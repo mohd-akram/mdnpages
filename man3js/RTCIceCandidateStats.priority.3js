@@ -44,5 +44,5 @@ local IP, and the component ID into various bit ranges within the
 32\-bit \f[CR]priority\f[R] value.
 .SH SEE ALSO
 .IP \(bu 2
-RFC 5245, section 4.1.2.1): Recommended Formula section in the ICE
+RFC 5245, section 4.1.2.1: Recommended Formula section in the ICE
 specification

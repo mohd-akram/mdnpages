@@ -16,7 +16,7 @@ The exact meaning varies depending on the type of candidate:
 .TP
 Local candidate
 A value of \f[CR]true\f[R] means the candidate has been deleted as
-described by RFC 5245, section 8.3).
+described by RFC 5245, section 8.3.
 .TP
 Host candidate
 A value of \f[CR]true\f[R] indicates that the candidate\(cqs network

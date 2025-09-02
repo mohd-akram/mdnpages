@@ -16,4 +16,4 @@ with its \f[CR]errorDetail\f[R] property set to
 \f[CR]sctp\-failure\f[R].
 .PP
 The standard SCTP error cause codes, numbered 1\-13, are defined in the
-SCTP specification: RFC 4960, section 3.3.10).
+SCTP specification: RFC 4960, section 3.3.10.

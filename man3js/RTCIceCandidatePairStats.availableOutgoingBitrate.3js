@@ -40,5 +40,5 @@ underlying protocols, including IP, UDP, or TCP.
 .PP
 \f[B]Note:\f[R] The returned value is computed using a method
 similar\(embut not identical\(emto the Transport Independent Application
-Specific Maximum (TIAS) described in RFC 3890, section 6.2).
+Specific Maximum (TIAS) described in RFC 3890, section 6.2.
 .RE

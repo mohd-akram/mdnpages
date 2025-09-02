@@ -20,7 +20,7 @@ assumes that all packets only need to be sent once (based on sequence
 numbers), while the number of packets received also includes any packets
 that had to be resent (and hence may be bigger).
 For more information see the \(lqcumulative number of packets lost\(rq
-section in RFC 3550, section 6.4.1).
+section in RFC 3550, section 6.4.1.
 .SH SEE ALSO
 .IP \(bu 2
 \f[CR]RTCRemoteInboundRtpStreamStats.ssrc\f[R]

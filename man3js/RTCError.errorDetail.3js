@@ -47,7 +47,7 @@ fatal error.
 The SCTP cause code can be found in the \f[CR]RTCError\f[R] object\(cqs
 \f[CR]sctpCauseCode\f[R].
 SCTP error cause codes 1\-13 are defined in the SCTP specification: RFC
-4960, section 3.3.10).
+4960, section 3.3.10.
 .TP
 \f[B]sdp\-syntax\-error\f[R]
 The SDP syntax is invalid.

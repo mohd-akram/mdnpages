@@ -50,7 +50,7 @@ this.
 Also, the exact meaning of the QP value depends on the codec being used.
 For example, for the VP8 codec, the QP value can be anywhere from 1 to
 127 and is found in the frame header element \f[CR]\(dqy_ac_qi\(dq\f[R],
-whose value is defined in RFC 6386, section 19.2).
+whose value is defined in RFC 6386, section 19.2.
 H.264 uses a QP which ranges from 0 to 51; in this case, it\(cqs an
 index used to derive a scaling matrix used during the quantization
 process.

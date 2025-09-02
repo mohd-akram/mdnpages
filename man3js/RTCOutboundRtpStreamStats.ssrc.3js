@@ -26,7 +26,7 @@ specification, although it does make recommendations.
 You should not make any assumptions based on the value of
 \f[CR]ssrc\f[R] other than that any two objects with the same
 \f[CR]ssrc\f[R] value refer to the same source.
-See RFC 3550, section 8) for additional information about
+See RFC 3550, section 8 for additional information about
 \f[CR]ssrc\f[R].
 .RS
 .PP
