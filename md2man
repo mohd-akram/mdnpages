@@ -67,6 +67,7 @@ empty="(\"\"|'')"
 ref() {
 	printf '%s\n' "
 	s/{{$1\($str\)}}/\`\2\3\`/ig
+	s/{{$1\(([0-9]+),$space$str$space\)}}/\`\3\4\`/ig
 	s/{{$1\($str,$space$str$space\)}}/\`\5\6\`/ig
 	s/{{$1\($str,$space$empty,$space$str\)}}/\`\2\3\`/ig
 	s/{{$1\($str,$space$str,$space$str\)}}/\`\5\6\`/ig
